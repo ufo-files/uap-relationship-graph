@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-26T22:55:18.965746+00:00",
+  "generated_at": "2026-06-26T22:59:39.784074+00:00",
   "pipeline": "transcript-intelligence-v2",
   "reproducibility": {
     "no_openai_api": true,
@@ -68,7 +68,7 @@
     "why-the-pentagon-tried-to-censor-this-uf.tsv": "e66f4d3cc4202e0fd4d4986c5a4dc2a618df86798adc396d5fc333b004509b23"
   },
   "registry_hash": "5a85b27d9d5da2b1e7b9477b0086794bffcadab4ca5b0ce3cc4b54577805fbd0",
-  "pipeline_hash": "26cd6f05376b11a45097faa44cc488db860328618ff6e7e5c81aa1b739525492",
+  "pipeline_hash": "3de0613264b341f598a2820e383d836469259c482bb620930c06ad6b1ddd59ca",
   "review_counts": {
     "reclassifications": 21,
     "name_reclassifications": 21,

@@ -1221,18 +1221,38 @@
       return merged;
     }
 
+    function sameReviewValue(left, right) {
+      return JSON.stringify(left) === JSON.stringify(right);
+    }
+
+    function removeBuiltReviewEntries(review) {
+      const cleaned = normalizeReview(review);
+      let changed = false;
+      for (const key of ["reclassifications", "nameReclassifications", "falsePositives", "omissions", "aliases", "merges", "nameMerges"]) {
+        for (const [id, value] of Object.entries(cleaned[key] || {})) {
+          if (Object.prototype.hasOwnProperty.call(BUILT_REVIEW[key] || {}, id) && sameReviewValue(value, BUILT_REVIEW[key][id])) {
+            delete cleaned[key][id];
+            changed = true;
+          }
+        }
+      }
+      return { cleaned, changed };
+    }
+
     function initializeReviewStorage() {
       const storedRaw = localStorage.getItem(REVIEW_KEY);
-      if (!storedRaw) {
-        if (hasReviewDecisions(BUILT_REVIEW)) saveReview(BUILT_REVIEW);
-        return;
-      }
+      if (!storedRaw) return;
       try {
-        const stored = JSON.parse(storedRaw);
-        const merged = mergeReviews(BUILT_REVIEW, stored);
-        if (JSON.stringify(merged) !== JSON.stringify(stored)) saveReview(merged);
+        const { cleaned, changed } = removeBuiltReviewEntries(JSON.parse(storedRaw));
+        if (changed) {
+          if (hasReviewDecisions(cleaned)) {
+            localStorage.setItem(REVIEW_KEY, JSON.stringify(cleaned));
+          } else {
+            localStorage.removeItem(REVIEW_KEY);
+          }
+        }
       } catch {
-        saveReview(BUILT_REVIEW);
+        localStorage.removeItem(REVIEW_KEY);
       }
     }
 
@@ -1270,7 +1290,7 @@
       const review = readReview();
       const count = reviewDecisionCount(review);
       if (button) button.hidden = count === 0;
-      if (reviewStatusEl) reviewStatusEl.textContent = count ? count.toLocaleString() + " review decisions in browser" : "";
+      if (reviewStatusEl) reviewStatusEl.textContent = count ? count.toLocaleString() + " new reclass changes" : "";
     }
 
     function download(filename, payload) {
@@ -1497,7 +1517,7 @@
       if (event.key === "Enter") searchGraph();
     });
     document.getElementById("download-review").addEventListener("click", () => {
-      const review = readReview();
+      const review = mergeReviews(BUILT_REVIEW, readReview());
       review.generatedAt = new Date().toISOString();
       review.note = "Place this file at reclass.json in the project root before rebuilding.";
       download("reclass.json", review);
