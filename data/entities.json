@@ -400,6 +400,44 @@
     ]
   },
   {
+    "id": "whistleblowers:bob-lazar",
+    "name": "Bob Lazar",
+    "canonical_name": "Bob Lazar",
+    "category": "whistleblowers",
+    "category_label": "Whistleblowers",
+    "count": 72,
+    "confidence": 0.917,
+    "transcripts": [
+      "A Weekend With Bob Lazar Inside Area51s",
+      "Army Captures Live Alien Hospital Report",
+      "Cia Historian Aliens Are Controlling Hum",
+      "Dmt Opens The Alien Realm Neuroscientist",
+      "Eric Weinstein Demands Ufo Secrets From",
+      "Hollywood The Cia And Ufos The History Bey",
+      "If You Knew What I Knew Jeremy Corbell U",
+      "Joe Rogan The Truth About Aliens He Fina",
+      "Meet The Scientist Who Studies Alien Imp",
+      "The Pentagons Ufo Program Is Real Here",
+      "We Captured A 12 Foot Giant In Afghanist",
+      "Why The Pentagon Tried To Censor This Uf"
+    ],
+    "significance": "Bob Lazar appears as whistleblowers with 72 mention(s) across 12 transcripts; detected by gazetteer, heuristic:person_name.",
+    "detectors": [
+      "gazetteer",
+      "heuristic:person_name"
+    ],
+    "evidence_ids": [
+      "m-0000152",
+      "m-0000153",
+      "m-0000154",
+      "m-0000155",
+      "m-0000156",
+      "m-0000157",
+      "m-0000158",
+      "m-0000168"
+    ]
+  },
+  {
     "id": "government_agencies:nro",
     "name": "NRO",
     "canonical_name": "NRO",
@@ -467,44 +505,6 @@
       "m-0001206",
       "m-0001209",
       "m-0001227"
-    ]
-  },
-  {
-    "id": "whistleblowers:bob-lazar",
-    "name": "Bob Lazar",
-    "canonical_name": "Bob Lazar",
-    "category": "whistleblowers",
-    "category_label": "Whistleblowers",
-    "count": 70,
-    "confidence": 0.917,
-    "transcripts": [
-      "A Weekend With Bob Lazar Inside Area51s",
-      "Army Captures Live Alien Hospital Report",
-      "Cia Historian Aliens Are Controlling Hum",
-      "Dmt Opens The Alien Realm Neuroscientist",
-      "Eric Weinstein Demands Ufo Secrets From",
-      "Hollywood The Cia And Ufos The History Bey",
-      "If You Knew What I Knew Jeremy Corbell U",
-      "Joe Rogan The Truth About Aliens He Fina",
-      "Meet The Scientist Who Studies Alien Imp",
-      "The Pentagons Ufo Program Is Real Here",
-      "We Captured A 12 Foot Giant In Afghanist",
-      "Why The Pentagon Tried To Censor This Uf"
-    ],
-    "significance": "Bob Lazar appears as whistleblowers with 70 mention(s) across 12 transcripts; detected by gazetteer, heuristic:person_name.",
-    "detectors": [
-      "gazetteer",
-      "heuristic:person_name"
-    ],
-    "evidence_ids": [
-      "m-0000152",
-      "m-0000155",
-      "m-0000156",
-      "m-0000157",
-      "m-0000158",
-      "m-0000168",
-      "m-0000171",
-      "m-0000176"
     ]
   },
   {
@@ -579,6 +579,38 @@
     ]
   },
   {
+    "id": "military_bases:s-4",
+    "name": "S-4",
+    "canonical_name": "S-4",
+    "category": "military_bases",
+    "category_label": "Military bases",
+    "count": 67,
+    "confidence": 0.92,
+    "transcripts": [
+      "A Weekend With Bob Lazar Inside Area51s",
+      "Eric Weinstein Demands Ufo Secrets From",
+      "If You Knew What I Knew Jeremy Corbell U",
+      "Joe Rogan The Truth About Aliens He Fina",
+      "The Pentagons Ufo Program Is Real Here",
+      "We Captured A 12 Foot Giant In Afghanist",
+      "Why The Pentagon Tried To Censor This Uf"
+    ],
+    "significance": "S-4 appears as military bases with 67 mention(s) across 7 transcripts; detected by gazetteer.",
+    "detectors": [
+      "gazetteer"
+    ],
+    "evidence_ids": [
+      "m-0000149",
+      "m-0000167",
+      "m-0000169",
+      "m-0000175",
+      "m-0000208",
+      "m-0000221",
+      "m-0000229",
+      "m-0000248"
+    ]
+  },
+  {
     "id": "key_terms:crash-retrieval",
     "name": "crash retrieval",
     "canonical_name": "crash retrieval",
@@ -618,37 +650,6 @@
       "m-0000784",
       "m-0000903",
       "m-0000967"
-    ]
-  },
-  {
-    "id": "military_bases:s4",
-    "name": "S4",
-    "canonical_name": "S4",
-    "category": "military_bases",
-    "category_label": "Military bases",
-    "count": 61,
-    "confidence": 0.92,
-    "transcripts": [
-      "A Weekend With Bob Lazar Inside Area51s",
-      "Eric Weinstein Demands Ufo Secrets From",
-      "If You Knew What I Knew Jeremy Corbell U",
-      "Joe Rogan The Truth About Aliens He Fina",
-      "The Pentagons Ufo Program Is Real Here",
-      "We Captured A 12 Foot Giant In Afghanist"
-    ],
-    "significance": "S4 appears as military bases with 61 mention(s) across 6 transcripts; detected by gazetteer.",
-    "detectors": [
-      "gazetteer"
-    ],
-    "evidence_ids": [
-      "m-0000149",
-      "m-0000167",
-      "m-0000169",
-      "m-0000175",
-      "m-0000208",
-      "m-0000221",
-      "m-0000229",
-      "m-0000269"
     ]
   },
   {
@@ -756,6 +757,47 @@
       "m-0000548",
       "m-0000552",
       "m-0000554"
+    ]
+  },
+  {
+    "id": "locations:new-york",
+    "name": "New York",
+    "canonical_name": "New York",
+    "category": "locations",
+    "category_label": "Locations",
+    "count": 53,
+    "confidence": 0.564,
+    "transcripts": [
+      "A Weekend With Bob Lazar Inside Area51s",
+      "Army Captures Live Alien Hospital Report",
+      "Breaking Brazils Defense Minister Says",
+      "Cia Historian Aliens Are Controlling Hum",
+      "Eric Weinstein Demands Ufo Secrets From",
+      "Exposing The Cias Darkest Mind Control",
+      "Hollywood The Cia And Ufos The History Bey",
+      "I Was Taken By Aliens In 1997 President",
+      "I Was Taken By The Ufo Program As A Kid",
+      "My Hospital Operated On An Alien Top Sur",
+      "Nasa Chief We Just Built Antigravity Pro",
+      "Nasa Whistleblower We Systematically Sup",
+      "The Cia Scientist That Contacted An Alie",
+      "The Pentagons Ufo Program Is Real Here",
+      "We Captured A 12 Foot Giant In Afghanist",
+      "Why Nasa Studies This Man He Attracts Uf"
+    ],
+    "significance": "New York appears as locations with 53 mention(s) across 16 transcripts; detected by heuristic:person_name.",
+    "detectors": [
+      "heuristic:person_name"
+    ],
+    "evidence_ids": [
+      "m-0002050",
+      "m-0002106",
+      "m-0003007",
+      "m-0003011",
+      "m-0007579",
+      "m-0007607",
+      "m-0007609",
+      "m-0010208"
     ]
   },
   {
@@ -1082,47 +1124,6 @@
     ]
   },
   {
-    "id": "people:new-york",
-    "name": "New York",
-    "canonical_name": "New York",
-    "category": "people",
-    "category_label": "People and their significance",
-    "count": 44,
-    "confidence": 0.54,
-    "transcripts": [
-      "A Weekend With Bob Lazar Inside Area51s",
-      "Army Captures Live Alien Hospital Report",
-      "Breaking Brazils Defense Minister Says",
-      "Cia Historian Aliens Are Controlling Hum",
-      "Eric Weinstein Demands Ufo Secrets From",
-      "Exposing The Cias Darkest Mind Control",
-      "Hollywood The Cia And Ufos The History Bey",
-      "I Was Taken By Aliens In 1997 President",
-      "I Was Taken By The Ufo Program As A Kid",
-      "My Hospital Operated On An Alien Top Sur",
-      "Nasa Chief We Just Built Antigravity Pro",
-      "Nasa Whistleblower We Systematically Sup",
-      "The Cia Scientist That Contacted An Alie",
-      "The Pentagons Ufo Program Is Real Here",
-      "We Captured A 12 Foot Giant In Afghanist",
-      "Why Nasa Studies This Man He Attracts Uf"
-    ],
-    "significance": "New York appears as people and their significance with 44 mention(s) across 16 transcripts; detected by heuristic:person_name.",
-    "detectors": [
-      "heuristic:person_name"
-    ],
-    "evidence_ids": [
-      "m-0000185",
-      "m-0000836",
-      "m-0001142",
-      "m-0001869",
-      "m-0001877",
-      "m-0001878",
-      "m-0002051",
-      "m-0002054"
-    ]
-  },
-  {
     "id": "universities:mit",
     "name": "MIT",
     "canonical_name": "MIT",
@@ -1341,6 +1342,38 @@
     ]
   },
   {
+    "id": "locations:soviet-union",
+    "name": "Soviet Union",
+    "canonical_name": "Soviet Union",
+    "category": "locations",
+    "category_label": "Locations",
+    "count": 39,
+    "confidence": 0.551,
+    "transcripts": [
+      "Breaking Brazils Defense Minister Says",
+      "Cia Chief Im A Time Traveler",
+      "Cia Historian Aliens Are Controlling Hum",
+      "I Found Hitlers Secret Ufo Program Jaso",
+      "I Was Taken By Aliens In 1997 President",
+      "Nasa Whistleblower We Systematically Sup",
+      "The Pentagons Ufo Program Is Real Here"
+    ],
+    "significance": "Soviet Union appears as locations with 39 mention(s) across 7 transcripts; detected by heuristic:person_name.",
+    "detectors": [
+      "heuristic:person_name"
+    ],
+    "evidence_ids": [
+      "m-0002292",
+      "m-0004767",
+      "m-0004771",
+      "m-0001141",
+      "m-0001295",
+      "m-0001437",
+      "m-0001438",
+      "m-0001441"
+    ]
+  },
+  {
     "id": "professors:hal-puthoff",
     "name": "Hal Puthoff",
     "canonical_name": "Hal Puthoff",
@@ -1490,38 +1523,6 @@
       "m-0001413",
       "m-0001417",
       "m-0001423"
-    ]
-  },
-  {
-    "id": "people:soviet-union",
-    "name": "Soviet Union",
-    "canonical_name": "Soviet Union",
-    "category": "people",
-    "category_label": "People and their significance",
-    "count": 36,
-    "confidence": 0.54,
-    "transcripts": [
-      "Breaking Brazils Defense Minister Says",
-      "Cia Chief Im A Time Traveler",
-      "Cia Historian Aliens Are Controlling Hum",
-      "I Found Hitlers Secret Ufo Program Jaso",
-      "I Was Taken By Aliens In 1997 President",
-      "Nasa Whistleblower We Systematically Sup",
-      "The Pentagons Ufo Program Is Real Here"
-    ],
-    "significance": "Soviet Union appears as people and their significance with 36 mention(s) across 7 transcripts; detected by heuristic:person_name.",
-    "detectors": [
-      "heuristic:person_name"
-    ],
-    "evidence_ids": [
-      "m-0001141",
-      "m-0001295",
-      "m-0001437",
-      "m-0001438",
-      "m-0001441",
-      "m-0001456",
-      "m-0001489",
-      "m-0001731"
     ]
   },
   {
@@ -2141,6 +2142,46 @@
     ]
   },
   {
+    "id": "government_agencies:white-house",
+    "name": "White House",
+    "canonical_name": "White House",
+    "category": "government_agencies",
+    "category_label": "Government agencies",
+    "count": 24,
+    "confidence": 0.546,
+    "transcripts": [
+      "100 000 Ufos Are Surrounding Earth Ft To",
+      "Army Captures Live Alien Hospital Report",
+      "Cia Chief Im A Time Traveler",
+      "Eric Weinstein Demands Ufo Secrets From",
+      "Exposing The Cias Darkest Mind Control",
+      "Former Nsa Director Breaks Silence On Uf",
+      "Hollywood The Cia And Ufos The History Bey",
+      "I Was Taken By Aliens In 1997 President",
+      "If You Knew What I Knew Jeremy Corbell U",
+      "Nasa Whistleblower We Systematically Sup",
+      "The Lone Hacker That Found Nasas Secret",
+      "The Pentagons Ufo Program Is Real Here",
+      "Why Americas Top Scientists Are Going M",
+      "Why Nasa Studies This Man He Attracts Uf",
+      "Why The Pentagon Tried To Censor This Uf"
+    ],
+    "significance": "White House appears as government agencies with 24 mention(s) across 15 transcripts; detected by heuristic:person_name.",
+    "detectors": [
+      "heuristic:person_name"
+    ],
+    "evidence_ids": [
+      "m-0000995",
+      "m-0000018",
+      "m-0001465",
+      "m-0001488",
+      "m-0002907",
+      "m-0002908",
+      "m-0002917",
+      "m-0003107"
+    ]
+  },
+  {
     "id": "locations:florida",
     "name": "Florida",
     "canonical_name": "Florida",
@@ -2273,6 +2314,33 @@
     ]
   },
   {
+    "id": "locations:baltic-sea",
+    "name": "Baltic Sea",
+    "canonical_name": "Baltic Sea",
+    "category": "locations",
+    "category_label": "Locations",
+    "count": 23,
+    "confidence": 0.54,
+    "transcripts": [
+      "I Was Taken By Aliens In 1997 President",
+      "Theres A Ufo On The Seafloor Treasure H"
+    ],
+    "significance": "Baltic Sea appears as locations with 23 mention(s) across 2 transcripts; detected by heuristic:person_name.",
+    "detectors": [
+      "heuristic:person_name"
+    ],
+    "evidence_ids": [
+      "m-0005287",
+      "m-0005291",
+      "m-0009198",
+      "m-0009201",
+      "m-0009204",
+      "m-0009205",
+      "m-0009208",
+      "m-0009210"
+    ]
+  },
+  {
     "id": "medical_conditions:cancer",
     "name": "cancer",
     "canonical_name": "cancer",
@@ -2306,72 +2374,6 @@
       "m-0004032",
       "m-0004323",
       "m-0004324"
-    ]
-  },
-  {
-    "id": "people:baltic-sea",
-    "name": "Baltic Sea",
-    "canonical_name": "Baltic Sea",
-    "category": "people",
-    "category_label": "People and their significance",
-    "count": 23,
-    "confidence": 0.54,
-    "transcripts": [
-      "I Was Taken By Aliens In 1997 President",
-      "Theres A Ufo On The Seafloor Treasure H"
-    ],
-    "significance": "Baltic Sea appears as people and their significance with 23 mention(s) across 2 transcripts; detected by heuristic:person_name.",
-    "detectors": [
-      "heuristic:person_name"
-    ],
-    "evidence_ids": [
-      "m-0005287",
-      "m-0005291",
-      "m-0009198",
-      "m-0009201",
-      "m-0009204",
-      "m-0009205",
-      "m-0009208",
-      "m-0009210"
-    ]
-  },
-  {
-    "id": "people:white-house",
-    "name": "White House",
-    "canonical_name": "White House",
-    "category": "people",
-    "category_label": "People and their significance",
-    "count": 23,
-    "confidence": 0.54,
-    "transcripts": [
-      "100 000 Ufos Are Surrounding Earth Ft To",
-      "Cia Chief Im A Time Traveler",
-      "Eric Weinstein Demands Ufo Secrets From",
-      "Exposing The Cias Darkest Mind Control",
-      "Former Nsa Director Breaks Silence On Uf",
-      "Hollywood The Cia And Ufos The History Bey",
-      "I Was Taken By Aliens In 1997 President",
-      "If You Knew What I Knew Jeremy Corbell U",
-      "Nasa Whistleblower We Systematically Sup",
-      "The Lone Hacker That Found Nasas Secret",
-      "The Pentagons Ufo Program Is Real Here",
-      "Why Americas Top Scientists Are Going M",
-      "Why Nasa Studies This Man He Attracts Uf",
-      "Why The Pentagon Tried To Censor This Uf"
-    ],
-    "significance": "White House appears as people and their significance with 23 mention(s) across 14 transcripts; detected by heuristic:person_name.",
-    "detectors": [
-      "heuristic:person_name"
-    ],
-    "evidence_ids": [
-      "m-0000018",
-      "m-0001465",
-      "m-0001488",
-      "m-0002907",
-      "m-0002908",
-      "m-0002917",
-      "m-0003107",
-      "m-0003112"
     ]
   },
   {
@@ -2502,6 +2504,70 @@
     ]
   },
   {
+    "id": "events:world-war",
+    "name": "World War",
+    "canonical_name": "World War",
+    "category": "events",
+    "category_label": "Events",
+    "count": 21,
+    "confidence": 0.547,
+    "transcripts": [
+      "100 000 Ufos Are Surrounding Earth Ft To",
+      "Breaking Brazils Defense Minister Says",
+      "Cia Chief Im A Time Traveler",
+      "Cia Historian Aliens Are Controlling Hum",
+      "Exposing The Cias Darkest Mind Control",
+      "Hollywood The Cia And Ufos The History Bey",
+      "I Found Hitlers Secret Ufo Program Jaso",
+      "I Operated A Ufo Its Not What You Think",
+      "The Man Sitting On More Ufo Evidence Tha",
+      "The Pentagons Ufo Program Is Real Here",
+      "We Captured A 12 Foot Giant In Afghanist",
+      "Why Americas Top Scientists Are Going M",
+      "Why Nasa Studies This Man He Attracts Uf"
+    ],
+    "significance": "World War appears as events with 21 mention(s) across 13 transcripts; detected by heuristic:person_name.",
+    "detectors": [
+      "heuristic:person_name"
+    ],
+    "evidence_ids": [
+      "m-0010005",
+      "m-0000106",
+      "m-0001138",
+      "m-0001186",
+      "m-0001187",
+      "m-0001521",
+      "m-0002215",
+      "m-0002293"
+    ]
+  },
+  {
+    "id": "locations:mount-athos",
+    "name": "Mount Athos",
+    "canonical_name": "Mount Athos",
+    "category": "locations",
+    "category_label": "Locations",
+    "count": 21,
+    "confidence": 0.58,
+    "transcripts": [
+      "Cia Chief Im A Time Traveler"
+    ],
+    "significance": "Mount Athos appears as locations with 21 mention(s) across 1 transcript; detected by heuristic:person_name.",
+    "detectors": [
+      "heuristic:person_name"
+    ],
+    "evidence_ids": [
+      "m-0001549",
+      "m-0001557",
+      "m-0001573",
+      "m-0001580",
+      "m-0001582",
+      "m-0001621",
+      "m-0001407",
+      "m-0001408"
+    ]
+  },
+  {
     "id": "materials:magnesium",
     "name": "magnesium",
     "canonical_name": "magnesium",
@@ -2535,49 +2601,6 @@
     ]
   },
   {
-    "id": "websites:americanalchemymerch-com",
-    "name": "AmericanAlchemyMerch.com",
-    "canonical_name": "americanalchemymerch.com",
-    "category": "websites",
-    "category_label": "Websites",
-    "count": 21,
-    "confidence": 0.98,
-    "transcripts": [
-      "100 000 Ufos Are Surrounding Earth Ft To",
-      "A Weekend With Bob Lazar Inside Area51s",
-      "Army Captures Live Alien Hospital Report",
-      "Breaking Brazils Defense Minister Says",
-      "Breaking Massive Energy Grid Found Benea",
-      "Cia Chief Im A Time Traveler",
-      "Cia Historian Aliens Are Controlling Hum",
-      "Former Nsa Director Breaks Silence On Uf",
-      "I Found Hitlers Secret Ufo Program Jaso",
-      "I Operated A Ufo Its Not What You Think",
-      "I Was Taken By Aliens In 1997 President",
-      "Joe Rogan The Truth About Aliens He Fina",
-      "Meet The Scientist Who Scanned Beneath T",
-      "Nasa Whistleblower We Systematically Sup",
-      "The Bizarre Alien Abduction Details The",
-      "The Cia Scientist That Contacted An Alie",
-      "The Pentagons Ufo Program Is Real Here",
-      "Why Americas Top Scientists Are Going M"
-    ],
-    "significance": "AmericanAlchemyMerch.com appears as websites with 21 mention(s) across 18 transcripts; detected by regex:url.",
-    "detectors": [
-      "regex:url"
-    ],
-    "evidence_ids": [
-      "m-0000047",
-      "m-0000647",
-      "m-0000691",
-      "m-0001062",
-      "m-0001080",
-      "m-0001337",
-      "m-0001507",
-      "m-0002090"
-    ]
-  },
-  {
     "id": "government_agencies:dia",
     "name": "DIA",
     "canonical_name": "DIA",
@@ -2608,44 +2631,6 @@
       "m-0002897",
       "m-0002921",
       "m-0002922"
-    ]
-  },
-  {
-    "id": "people:world-war",
-    "name": "World War",
-    "canonical_name": "World War",
-    "category": "people",
-    "category_label": "People and their significance",
-    "count": 20,
-    "confidence": 0.54,
-    "transcripts": [
-      "100 000 Ufos Are Surrounding Earth Ft To",
-      "Breaking Brazils Defense Minister Says",
-      "Cia Chief Im A Time Traveler",
-      "Cia Historian Aliens Are Controlling Hum",
-      "Exposing The Cias Darkest Mind Control",
-      "Hollywood The Cia And Ufos The History Bey",
-      "I Found Hitlers Secret Ufo Program Jaso",
-      "I Operated A Ufo Its Not What You Think",
-      "The Man Sitting On More Ufo Evidence Tha",
-      "The Pentagons Ufo Program Is Real Here",
-      "We Captured A 12 Foot Giant In Afghanist",
-      "Why Americas Top Scientists Are Going M",
-      "Why Nasa Studies This Man He Attracts Uf"
-    ],
-    "significance": "World War appears as people and their significance with 20 mention(s) across 13 transcripts; detected by heuristic:person_name.",
-    "detectors": [
-      "heuristic:person_name"
-    ],
-    "evidence_ids": [
-      "m-0000106",
-      "m-0001138",
-      "m-0001186",
-      "m-0001187",
-      "m-0001521",
-      "m-0002215",
-      "m-0002293",
-      "m-0002294"
     ]
   },
   {
@@ -2774,6 +2759,37 @@
       "m-0006678",
       "m-0006689",
       "m-0006700"
+    ]
+  },
+  {
+    "id": "locations:middle-east",
+    "name": "Middle East",
+    "canonical_name": "Middle East",
+    "category": "locations",
+    "category_label": "Locations",
+    "count": 18,
+    "confidence": 0.548,
+    "transcripts": [
+      "Cia Chief Im A Time Traveler",
+      "Cia Historian Aliens Are Controlling Hum",
+      "Exposing The Cias Darkest Mind Control",
+      "The Cia Scientist That Contacted An Alie",
+      "The Man Sitting On More Ufo Evidence Tha",
+      "We Captured A 12 Foot Giant In Afghanist"
+    ],
+    "significance": "Middle East appears as locations with 18 mention(s) across 6 transcripts; detected by heuristic:person_name.",
+    "detectors": [
+      "heuristic:person_name"
+    ],
+    "evidence_ids": [
+      "m-0001707",
+      "m-0001439",
+      "m-0001440",
+      "m-0001442",
+      "m-0001615",
+      "m-0001640",
+      "m-0001645",
+      "m-0001646"
     ]
   },
   {
@@ -2934,6 +2950,36 @@
     ]
   },
   {
+    "id": "government_agencies:naval-intelligence",
+    "name": "Naval Intelligence",
+    "canonical_name": "Naval Intelligence",
+    "category": "government_agencies",
+    "category_label": "Government agencies",
+    "count": 17,
+    "confidence": 0.565,
+    "transcripts": [
+      "A Weekend With Bob Lazar Inside Area51s",
+      "Hollywood The Cia And Ufos The History Bey",
+      "The Cia Scientist That Contacted An Alie",
+      "The Lone Hacker That Found Nasas Secret",
+      "The Pentagons Ufo Program Is Real Here"
+    ],
+    "significance": "Naval Intelligence appears as government agencies with 17 mention(s) across 5 transcripts; detected by heuristic:person_name.",
+    "detectors": [
+      "heuristic:person_name"
+    ],
+    "evidence_ids": [
+      "m-0004186",
+      "m-0007815",
+      "m-0007912",
+      "m-0000250",
+      "m-0004040",
+      "m-0004071",
+      "m-0004072",
+      "m-0004185"
+    ]
+  },
+  {
     "id": "people:dylan-borland",
     "name": "Dylan Borland",
     "canonical_name": "Dylan Borland",
@@ -2958,37 +3004,6 @@
       "m-0005735",
       "m-0005847",
       "m-0005853"
-    ]
-  },
-  {
-    "id": "people:middle-east",
-    "name": "Middle East",
-    "canonical_name": "Middle East",
-    "category": "people",
-    "category_label": "People and their significance",
-    "count": 17,
-    "confidence": 0.54,
-    "transcripts": [
-      "Cia Chief Im A Time Traveler",
-      "Cia Historian Aliens Are Controlling Hum",
-      "Exposing The Cias Darkest Mind Control",
-      "The Cia Scientist That Contacted An Alie",
-      "The Man Sitting On More Ufo Evidence Tha",
-      "We Captured A 12 Foot Giant In Afghanist"
-    ],
-    "significance": "Middle East appears as people and their significance with 17 mention(s) across 6 transcripts; detected by heuristic:person_name.",
-    "detectors": [
-      "heuristic:person_name"
-    ],
-    "evidence_ids": [
-      "m-0001439",
-      "m-0001440",
-      "m-0001442",
-      "m-0001615",
-      "m-0001640",
-      "m-0001645",
-      "m-0001646",
-      "m-0001704"
     ]
   },
   {
@@ -3118,32 +3133,6 @@
     ]
   },
   {
-    "id": "people:mount-athos",
-    "name": "Mount Athos",
-    "canonical_name": "Mount Athos",
-    "category": "people",
-    "category_label": "People and their significance",
-    "count": 15,
-    "confidence": 0.54,
-    "transcripts": [
-      "Cia Chief Im A Time Traveler"
-    ],
-    "significance": "Mount Athos appears as people and their significance with 15 mention(s) across 1 transcript; detected by heuristic:person_name.",
-    "detectors": [
-      "heuristic:person_name"
-    ],
-    "evidence_ids": [
-      "m-0001407",
-      "m-0001408",
-      "m-0001550",
-      "m-0001567",
-      "m-0001568",
-      "m-0001569",
-      "m-0001581",
-      "m-0001586"
-    ]
-  },
-  {
     "id": "people:steven-spielberg",
     "name": "Steven Spielberg",
     "canonical_name": "Steven Spielberg",
@@ -3200,6 +3189,36 @@
       "m-0006175",
       "m-0006176",
       "m-0007300"
+    ]
+  },
+  {
+    "id": "government_project_codenames:manhattan-project",
+    "name": "Manhattan Project",
+    "canonical_name": "Manhattan Project",
+    "category": "government_project_codenames",
+    "category_label": "Government project codenames",
+    "count": 14,
+    "confidence": 0.56,
+    "transcripts": [
+      "Eric Weinstein Demands Ufo Secrets From",
+      "Exposing The Cias Darkest Mind Control",
+      "Nasa Whistleblower We Systematically Sup",
+      "The Pentagons Ufo Program Is Real Here",
+      "Why Americas Top Scientists Are Going M"
+    ],
+    "significance": "Manhattan Project appears as government project codenames with 14 mention(s) across 5 transcripts; detected by heuristic:person_name.",
+    "detectors": [
+      "heuristic:person_name"
+    ],
+    "evidence_ids": [
+      "m-0003695",
+      "m-0008346",
+      "m-0002805",
+      "m-0002808",
+      "m-0002811",
+      "m-0002813",
+      "m-0002814",
+      "m-0002819"
     ]
   },
   {
@@ -3290,36 +3309,6 @@
     ]
   },
   {
-    "id": "people:naval-intelligence",
-    "name": "Naval Intelligence",
-    "canonical_name": "Naval Intelligence",
-    "category": "people",
-    "category_label": "People and their significance",
-    "count": 14,
-    "confidence": 0.54,
-    "transcripts": [
-      "A Weekend With Bob Lazar Inside Area51s",
-      "Hollywood The Cia And Ufos The History Bey",
-      "The Cia Scientist That Contacted An Alie",
-      "The Lone Hacker That Found Nasas Secret",
-      "The Pentagons Ufo Program Is Real Here"
-    ],
-    "significance": "Naval Intelligence appears as people and their significance with 14 mention(s) across 5 transcripts; detected by heuristic:person_name.",
-    "detectors": [
-      "heuristic:person_name"
-    ],
-    "evidence_ids": [
-      "m-0000250",
-      "m-0004040",
-      "m-0004071",
-      "m-0004072",
-      "m-0004185",
-      "m-0004187",
-      "m-0004305",
-      "m-0007811"
-    ]
-  },
-  {
     "id": "people:stephen-greer",
     "name": "Stephen Greer",
     "canonical_name": "Stephen Greer",
@@ -3347,6 +3336,67 @@
       "m-0008426",
       "m-0008808",
       "m-0008811"
+    ]
+  },
+  {
+    "id": "tv_shows:dark-skies",
+    "name": "Dark Skies",
+    "canonical_name": "Dark Skies",
+    "category": "tv_shows",
+    "category_label": "TV shows",
+    "count": 14,
+    "confidence": 0.56,
+    "transcripts": [
+      "Hollywood The Cia And Ufos The History Bey"
+    ],
+    "significance": "Dark Skies appears as tv shows with 14 mention(s) across 1 transcript; detected by heuristic:person_name.",
+    "detectors": [
+      "heuristic:person_name"
+    ],
+    "evidence_ids": [
+      "m-0004191",
+      "m-0004231",
+      "m-0004038",
+      "m-0004052",
+      "m-0004056",
+      "m-0004060",
+      "m-0004061",
+      "m-0004064"
+    ]
+  },
+  {
+    "id": "tv_shows:star-trek",
+    "name": "Star Trek",
+    "canonical_name": "Star Trek",
+    "category": "tv_shows",
+    "category_label": "TV shows",
+    "count": 14,
+    "confidence": 0.56,
+    "transcripts": [
+      "A Weekend With Bob Lazar Inside Area51s",
+      "Army Captures Live Alien Hospital Report",
+      "Cia Chief Im A Time Traveler",
+      "Exposing The Cias Darkest Mind Control",
+      "Former Nsa Director Breaks Silence On Uf",
+      "Meet The Scientist Who Studies Alien Imp",
+      "The Cia Scientist That Contacted An Alie",
+      "The Lone Hacker That Found Nasas Secret",
+      "We Captured A 12 Foot Giant In Afghanist",
+      "Why The Pentagon Tried To Censor This Uf"
+    ],
+    "significance": "Star Trek appears as tv shows with 14 mention(s) across 10 transcripts; detected by heuristic:person_name.",
+    "detectors": [
+      "heuristic:person_name"
+    ],
+    "evidence_ids": [
+      "m-0000182",
+      "m-0007422",
+      "m-0000181",
+      "m-0001009",
+      "m-0001830",
+      "m-0003733",
+      "m-0003822",
+      "m-0006424"
     ]
   },
   {
@@ -3437,11 +3487,40 @@
     ]
   },
   {
-    "id": "government_project_codenames:sentient",
+    "id": "institutes:palomar-observatory",
+    "name": "Palomar Observatory",
+    "canonical_name": "Palomar Observatory",
+    "category": "institutes",
+    "category_label": "Institutes",
+    "count": 13,
+    "confidence": 0.551,
+    "transcripts": [
+      "100 000 Ufos Are Surrounding Earth Ft To",
+      "Nasa Chief We Just Built Antigravity Pro",
+      "Nasa Whistleblower We Systematically Sup",
+      "Why Americas Top Scientists Are Going M"
+    ],
+    "significance": "Palomar Observatory appears as institutes with 13 mention(s) across 4 transcripts; detected by heuristic:person_name.",
+    "detectors": [
+      "heuristic:person_name"
+    ],
+    "evidence_ids": [
+      "m-0000005",
+      "m-0000001",
+      "m-0000023",
+      "m-0000024",
+      "m-0000027",
+      "m-0000069",
+      "m-0000078",
+      "m-0000079"
+    ]
+  },
+  {
+    "id": "key_terms:sentient",
     "name": "sentient",
     "canonical_name": "sentient",
-    "category": "government_project_codenames",
-    "category_label": "Government project codenames",
+    "category": "key_terms",
+    "category_label": "Key terms",
     "count": 13,
     "confidence": 0.92,
     "transcripts": [
@@ -3451,7 +3530,7 @@
       "The Pentagons Ufo Program Is Real Here",
       "We Captured A 12 Foot Giant In Afghanist"
     ],
-    "significance": "sentient appears as government project codenames with 13 mention(s) across 5 transcripts; detected by gazetteer.",
+    "significance": "sentient appears as key terms with 13 mention(s) across 5 transcripts; detected by gazetteer.",
     "detectors": [
       "gazetteer"
     ],
@@ -3737,6 +3816,32 @@
     ]
   },
   {
+    "id": "movies:disclosure-day",
+    "name": "Disclosure Day",
+    "canonical_name": "Disclosure Day",
+    "category": "movies",
+    "category_label": "Hollywood-produced movies",
+    "count": 12,
+    "confidence": 0.54,
+    "transcripts": [
+      "Hollywood The Cia And Ufos The History Bey"
+    ],
+    "significance": "Disclosure Day appears as hollywood-produced movies with 12 mention(s) across 1 transcript; detected by heuristic:person_name.",
+    "detectors": [
+      "heuristic:person_name"
+    ],
+    "evidence_ids": [
+      "m-0004042",
+      "m-0004050",
+      "m-0004218",
+      "m-0004235",
+      "m-0004237",
+      "m-0004320",
+      "m-0004371",
+      "m-0004375"
+    ]
+  },
+  {
     "id": "locations:skinwalker-ranch",
     "name": "Skinwalker Ranch",
     "canonical_name": "Skinwalker Ranch",
@@ -3799,58 +3904,6 @@
     ]
   },
   {
-    "id": "people:dark-skies",
-    "name": "Dark Skies",
-    "canonical_name": "Dark Skies",
-    "category": "people",
-    "category_label": "People and their significance",
-    "count": 12,
-    "confidence": 0.54,
-    "transcripts": [
-      "Hollywood The Cia And Ufos The History Bey"
-    ],
-    "significance": "Dark Skies appears as people and their significance with 12 mention(s) across 1 transcript; detected by heuristic:person_name.",
-    "detectors": [
-      "heuristic:person_name"
-    ],
-    "evidence_ids": [
-      "m-0004038",
-      "m-0004052",
-      "m-0004056",
-      "m-0004060",
-      "m-0004061",
-      "m-0004064",
-      "m-0004068",
-      "m-0004079"
-    ]
-  },
-  {
-    "id": "people:disclosure-day",
-    "name": "Disclosure Day",
-    "canonical_name": "Disclosure Day",
-    "category": "people",
-    "category_label": "People and their significance",
-    "count": 12,
-    "confidence": 0.54,
-    "transcripts": [
-      "Hollywood The Cia And Ufos The History Bey"
-    ],
-    "significance": "Disclosure Day appears as people and their significance with 12 mention(s) across 1 transcript; detected by heuristic:person_name.",
-    "detectors": [
-      "heuristic:person_name"
-    ],
-    "evidence_ids": [
-      "m-0004042",
-      "m-0004050",
-      "m-0004218",
-      "m-0004235",
-      "m-0004237",
-      "m-0004320",
-      "m-0004371",
-      "m-0004375"
-    ]
-  },
-  {
     "id": "people:john-alexander",
     "name": "John Alexander",
     "canonical_name": "John Alexander",
@@ -3877,63 +3930,6 @@
       "m-0002535",
       "m-0002762",
       "m-0008516"
-    ]
-  },
-  {
-    "id": "people:manhattan-project",
-    "name": "Manhattan Project",
-    "canonical_name": "Manhattan Project",
-    "category": "people",
-    "category_label": "People and their significance",
-    "count": 12,
-    "confidence": 0.54,
-    "transcripts": [
-      "Eric Weinstein Demands Ufo Secrets From",
-      "Nasa Whistleblower We Systematically Sup",
-      "Why Americas Top Scientists Are Going M"
-    ],
-    "significance": "Manhattan Project appears as people and their significance with 12 mention(s) across 3 transcripts; detected by heuristic:person_name.",
-    "detectors": [
-      "heuristic:person_name"
-    ],
-    "evidence_ids": [
-      "m-0002805",
-      "m-0002808",
-      "m-0002811",
-      "m-0002813",
-      "m-0002814",
-      "m-0002819",
-      "m-0002874",
-      "m-0002876"
-    ]
-  },
-  {
-    "id": "people:palomar-observatory",
-    "name": "Palomar Observatory",
-    "canonical_name": "Palomar Observatory",
-    "category": "people",
-    "category_label": "People and their significance",
-    "count": 12,
-    "confidence": 0.54,
-    "transcripts": [
-      "100 000 Ufos Are Surrounding Earth Ft To",
-      "Nasa Chief We Just Built Antigravity Pro",
-      "Nasa Whistleblower We Systematically Sup",
-      "Why Americas Top Scientists Are Going M"
-    ],
-    "significance": "Palomar Observatory appears as people and their significance with 12 mention(s) across 4 transcripts; detected by heuristic:person_name.",
-    "detectors": [
-      "heuristic:person_name"
-    ],
-    "evidence_ids": [
-      "m-0000001",
-      "m-0000023",
-      "m-0000024",
-      "m-0000027",
-      "m-0000069",
-      "m-0000078",
-      "m-0000079",
-      "m-0000120"
     ]
   },
   {
@@ -3966,38 +3962,30 @@
     ]
   },
   {
-    "id": "people:star-trek",
-    "name": "Star Trek",
-    "canonical_name": "Star Trek",
-    "category": "people",
-    "category_label": "People and their significance",
+    "id": "religious_texts:new-testament",
+    "name": "New Testament",
+    "canonical_name": "New Testament",
+    "category": "religious_texts",
+    "category_label": "Religious texts",
     "count": 12,
-    "confidence": 0.54,
+    "confidence": 0.563,
     "transcripts": [
-      "A Weekend With Bob Lazar Inside Area51s",
-      "Army Captures Live Alien Hospital Report",
       "Cia Chief Im A Time Traveler",
-      "Exposing The Cias Darkest Mind Control",
-      "Former Nsa Director Breaks Silence On Uf",
-      "Meet The Scientist Who Studies Alien Imp",
-      "The Cia Scientist That Contacted An Alie",
-      "The Lone Hacker That Found Nasas Secret",
-      "We Captured A 12 Foot Giant In Afghanist",
-      "Why The Pentagon Tried To Censor This Uf"
+      "We Captured A 12 Foot Giant In Afghanist"
     ],
-    "significance": "Star Trek appears as people and their significance with 12 mention(s) across 10 transcripts; detected by heuristic:person_name.",
+    "significance": "New Testament appears as religious texts with 12 mention(s) across 2 transcripts; detected by heuristic:person_name.",
     "detectors": [
       "heuristic:person_name"
     ],
     "evidence_ids": [
-      "m-0000181",
-      "m-0001009",
-      "m-0001830",
-      "m-0003733",
-      "m-0003822",
-      "m-0006424",
-      "m-0007659",
-      "m-0007951"
+      "m-0009319",
+      "m-0009324",
+      "m-0001450",
+      "m-0009296",
+      "m-0009301",
+      "m-0009302",
+      "m-0009308",
+      "m-0009309"
     ]
   },
   {
@@ -4059,6 +4047,67 @@
       "m-0005991",
       "m-0006069",
       "m-0006346"
+    ]
+  },
+  {
+    "id": "movies:star-wars",
+    "name": "Star Wars",
+    "canonical_name": "Star Wars",
+    "category": "movies",
+    "category_label": "Hollywood-produced movies",
+    "count": 11,
+    "confidence": 0.54,
+    "transcripts": [
+      "Cia Chief Im A Time Traveler",
+      "Cia Historian Aliens Are Controlling Hum",
+      "Exposing The Cias Darkest Mind Control",
+      "Hollywood The Cia And Ufos The History Bey",
+      "Nasa Whistleblower We Systematically Sup",
+      "The Lone Hacker That Found Nasas Secret",
+      "Theres A Ufo On The Seafloor Treasure H",
+      "Why Americas Top Scientists Are Going M",
+      "Why The Pentagon Tried To Censor This Uf"
+    ],
+    "significance": "Star Wars appears as hollywood-produced movies with 11 mention(s) across 9 transcripts; detected by heuristic:person_name.",
+    "detectors": [
+      "heuristic:person_name"
+    ],
+    "evidence_ids": [
+      "m-0001827",
+      "m-0002278",
+      "m-0003603",
+      "m-0004059",
+      "m-0007052",
+      "m-0007054",
+      "m-0007952",
+      "m-0009246"
+    ]
+  },
+  {
+    "id": "military_bases:vandenberg-air-force-base",
+    "name": "Vandenberg Air Force Base",
+    "canonical_name": "Vandenberg Air Force Base",
+    "category": "military_bases",
+    "category_label": "Military bases",
+    "count": 11,
+    "confidence": 0.553,
+    "transcripts": [
+      "Meet The Nuclear Missile Guard Abducted",
+      "The Cia Scientist That Contacted An Alie"
+    ],
+    "significance": "Vandenberg Air Force Base appears as military bases with 11 mention(s) across 2 transcripts; detected by heuristic:person_name.",
+    "detectors": [
+      "heuristic:person_name"
+    ],
+    "evidence_ids": [
+      "m-0006080",
+      "m-0006090",
+      "m-0006092",
+      "m-0006101",
+      "m-0006106",
+      "m-0006116",
+      "m-0006121",
+      "m-0006123"
     ]
   },
   {
@@ -4267,33 +4316,6 @@
     ]
   },
   {
-    "id": "people:old-testament",
-    "name": "Old Testament",
-    "canonical_name": "Old Testament",
-    "category": "people",
-    "category_label": "People and their significance",
-    "count": 11,
-    "confidence": 0.54,
-    "transcripts": [
-      "Cia Chief Im A Time Traveler",
-      "We Captured A 12 Foot Giant In Afghanist"
-    ],
-    "significance": "Old Testament appears as people and their significance with 11 mention(s) across 2 transcripts; detected by heuristic:person_name.",
-    "detectors": [
-      "heuristic:person_name"
-    ],
-    "evidence_ids": [
-      "m-0001616",
-      "m-0009300",
-      "m-0009303",
-      "m-0009304",
-      "m-0009310",
-      "m-0009312",
-      "m-0009313",
-      "m-0009323"
-    ]
-  },
-  {
     "id": "people:richard-bissell",
     "name": "Richard Bissell",
     "canonical_name": "Richard Bissell",
@@ -4378,37 +4400,30 @@
     ]
   },
   {
-    "id": "people:star-wars",
-    "name": "Star Wars",
-    "canonical_name": "Star Wars",
-    "category": "people",
-    "category_label": "People and their significance",
+    "id": "religious_texts:old-testament",
+    "name": "Old Testament",
+    "canonical_name": "Old Testament",
+    "category": "religious_texts",
+    "category_label": "Religious texts",
     "count": 11,
     "confidence": 0.54,
     "transcripts": [
       "Cia Chief Im A Time Traveler",
-      "Cia Historian Aliens Are Controlling Hum",
-      "Exposing The Cias Darkest Mind Control",
-      "Hollywood The Cia And Ufos The History Bey",
-      "Nasa Whistleblower We Systematically Sup",
-      "The Lone Hacker That Found Nasas Secret",
-      "Theres A Ufo On The Seafloor Treasure H",
-      "Why Americas Top Scientists Are Going M",
-      "Why The Pentagon Tried To Censor This Uf"
+      "We Captured A 12 Foot Giant In Afghanist"
     ],
-    "significance": "Star Wars appears as people and their significance with 11 mention(s) across 9 transcripts; detected by heuristic:person_name.",
+    "significance": "Old Testament appears as religious texts with 11 mention(s) across 2 transcripts; detected by heuristic:person_name.",
     "detectors": [
       "heuristic:person_name"
     ],
     "evidence_ids": [
-      "m-0001827",
-      "m-0002278",
-      "m-0003603",
-      "m-0004059",
-      "m-0007052",
-      "m-0007054",
-      "m-0007952",
-      "m-0009246"
+      "m-0001616",
+      "m-0009300",
+      "m-0009303",
+      "m-0009304",
+      "m-0009310",
+      "m-0009312",
+      "m-0009313",
+      "m-0009323"
     ]
   },
   {
@@ -4876,33 +4891,6 @@
     ]
   },
   {
-    "id": "people:new-testament",
-    "name": "New Testament",
-    "canonical_name": "New Testament",
-    "category": "people",
-    "category_label": "People and their significance",
-    "count": 10,
-    "confidence": 0.54,
-    "transcripts": [
-      "Cia Chief Im A Time Traveler",
-      "We Captured A 12 Foot Giant In Afghanist"
-    ],
-    "significance": "New Testament appears as people and their significance with 10 mention(s) across 2 transcripts; detected by heuristic:person_name.",
-    "detectors": [
-      "heuristic:person_name"
-    ],
-    "evidence_ids": [
-      "m-0001450",
-      "m-0009296",
-      "m-0009301",
-      "m-0009302",
-      "m-0009308",
-      "m-0009309",
-      "m-0009311",
-      "m-0009322"
-    ]
-  },
-  {
     "id": "people:north-carolina",
     "name": "North Carolina",
     "canonical_name": "North Carolina",
@@ -4931,33 +4919,6 @@
       "m-0010058",
       "m-0010242",
       "m-0010501"
-    ]
-  },
-  {
-    "id": "people:vandenberg-air-force-base",
-    "name": "Vandenberg Air Force Base",
-    "canonical_name": "Vandenberg Air Force Base",
-    "category": "people",
-    "category_label": "People and their significance",
-    "count": 10,
-    "confidence": 0.54,
-    "transcripts": [
-      "Meet The Nuclear Missile Guard Abducted",
-      "The Cia Scientist That Contacted An Alie"
-    ],
-    "significance": "Vandenberg Air Force Base appears as people and their significance with 10 mention(s) across 2 transcripts; detected by heuristic:person_name.",
-    "detectors": [
-      "heuristic:person_name"
-    ],
-    "evidence_ids": [
-      "m-0006090",
-      "m-0006092",
-      "m-0006101",
-      "m-0006106",
-      "m-0006116",
-      "m-0006121",
-      "m-0006123",
-      "m-0006137"
     ]
   },
   {
@@ -5051,6 +5012,33 @@
     ]
   },
   {
+    "id": "locations:cape-canaveral",
+    "name": "Cape Canaveral",
+    "canonical_name": "Cape Canaveral",
+    "category": "locations",
+    "category_label": "Locations",
+    "count": 9,
+    "confidence": 0.54,
+    "transcripts": [
+      "Nasa Chief We Just Built Antigravity Pro",
+      "Why Nasa Studies This Man He Attracts Uf"
+    ],
+    "significance": "Cape Canaveral appears as locations with 9 mention(s) across 2 transcripts; detected by heuristic:person_name.",
+    "detectors": [
+      "heuristic:person_name"
+    ],
+    "evidence_ids": [
+      "m-0006973",
+      "m-0010066",
+      "m-0010074",
+      "m-0010308",
+      "m-0010353",
+      "m-0010354",
+      "m-0010355",
+      "m-0010374"
+    ]
+  },
+  {
     "id": "locations:las-vegas",
     "name": "Las Vegas",
     "canonical_name": "Las Vegas",
@@ -5135,33 +5123,6 @@
       "m-0010799",
       "m-0010802",
       "m-0010805"
-    ]
-  },
-  {
-    "id": "people:cape-canaveral",
-    "name": "Cape Canaveral",
-    "canonical_name": "Cape Canaveral",
-    "category": "people",
-    "category_label": "People and their significance",
-    "count": 9,
-    "confidence": 0.54,
-    "transcripts": [
-      "Nasa Chief We Just Built Antigravity Pro",
-      "Why Nasa Studies This Man He Attracts Uf"
-    ],
-    "significance": "Cape Canaveral appears as people and their significance with 9 mention(s) across 2 transcripts; detected by heuristic:person_name.",
-    "detectors": [
-      "heuristic:person_name"
-    ],
-    "evidence_ids": [
-      "m-0006973",
-      "m-0010066",
-      "m-0010074",
-      "m-0010308",
-      "m-0010353",
-      "m-0010354",
-      "m-0010355",
-      "m-0010374"
     ]
   },
   {
@@ -5608,35 +5569,6 @@
       "m-0007575",
       "m-0007604",
       "m-0007809"
-    ]
-  },
-  {
-    "id": "websites:zbiotics-com",
-    "name": "zbiotics.com",
-    "canonical_name": "zbiotics.com",
-    "category": "websites",
-    "category_label": "Websites",
-    "count": 9,
-    "confidence": 0.98,
-    "transcripts": [
-      "Hollywood The Cia And Ufos The History Bey",
-      "I Operated A Ufo Its Not What You Think",
-      "Meet The Nuclear Missile Guard Abducted",
-      "The Cia Scientist That Contacted An Alie"
-    ],
-    "significance": "zbiotics.com appears as websites with 9 mention(s) across 4 transcripts; detected by regex:url.",
-    "detectors": [
-      "regex:url"
-    ],
-    "evidence_ids": [
-      "m-0004175",
-      "m-0004176",
-      "m-0004924",
-      "m-0004925",
-      "m-0006169",
-      "m-0006170",
-      "m-0006171",
-      "m-0007453"
     ]
   },
   {
@@ -7222,6 +7154,33 @@
     ]
   },
   {
+    "id": "books:american-cosmic",
+    "name": "American Cosmic",
+    "canonical_name": "American Cosmic",
+    "category": "books",
+    "category_label": "Books",
+    "count": 6,
+    "confidence": 0.54,
+    "transcripts": [
+      "Hollywood The Cia And Ufos The History Bey",
+      "Nasa Whistleblower We Systematically Sup",
+      "The Man Sitting On More Ufo Evidence Tha",
+      "Why Nasa Studies This Man He Attracts Uf"
+    ],
+    "significance": "American Cosmic appears as books with 6 mention(s) across 4 transcripts; detected by heuristic:person_name.",
+    "detectors": [
+      "heuristic:person_name"
+    ],
+    "evidence_ids": [
+      "m-0004350",
+      "m-0007127",
+      "m-0008137",
+      "m-0010154",
+      "m-0010202",
+      "m-0010320"
+    ]
+  },
+  {
     "id": "contractors:boeing",
     "name": "Boeing",
     "canonical_name": "Boeing",
@@ -7329,59 +7288,6 @@
       "m-0005781",
       "m-0005931",
       "m-0009724"
-    ]
-  },
-  {
-    "id": "military_bases:s-4",
-    "name": "S-4",
-    "canonical_name": "S-4",
-    "category": "military_bases",
-    "category_label": "Military bases",
-    "count": 6,
-    "confidence": 0.92,
-    "transcripts": [
-      "A Weekend With Bob Lazar Inside Area51s",
-      "The Pentagons Ufo Program Is Real Here",
-      "Why The Pentagon Tried To Censor This Uf"
-    ],
-    "significance": "S-4 appears as military bases with 6 mention(s) across 3 transcripts; detected by gazetteer.",
-    "detectors": [
-      "gazetteer"
-    ],
-    "evidence_ids": [
-      "m-0000248",
-      "m-0000251",
-      "m-0000253",
-      "m-0000406",
-      "m-0008398",
-      "m-0010639"
-    ]
-  },
-  {
-    "id": "people:american-cosmic",
-    "name": "American Cosmic",
-    "canonical_name": "American Cosmic",
-    "category": "people",
-    "category_label": "People and their significance",
-    "count": 6,
-    "confidence": 0.54,
-    "transcripts": [
-      "Hollywood The Cia And Ufos The History Bey",
-      "Nasa Whistleblower We Systematically Sup",
-      "The Man Sitting On More Ufo Evidence Tha",
-      "Why Nasa Studies This Man He Attracts Uf"
-    ],
-    "significance": "American Cosmic appears as people and their significance with 6 mention(s) across 4 transcripts; detected by heuristic:person_name.",
-    "detectors": [
-      "heuristic:person_name"
-    ],
-    "evidence_ids": [
-      "m-0004350",
-      "m-0007127",
-      "m-0008137",
-      "m-0010154",
-      "m-0010202",
-      "m-0010320"
     ]
   },
   {
@@ -8254,57 +8160,6 @@
     ]
   },
   {
-    "id": "websites:drinkag1-com",
-    "name": "drinkag1.com",
-    "canonical_name": "drinkag1.com",
-    "category": "websites",
-    "category_label": "Websites",
-    "count": 6,
-    "confidence": 0.98,
-    "transcripts": [
-      "My Hospital Operated On An Alien Top Sur",
-      "We Captured A 12 Foot Giant In Afghanist"
-    ],
-    "significance": "drinkag1.com appears as websites with 6 mention(s) across 2 transcripts; detected by regex:url.",
-    "detectors": [
-      "regex:url"
-    ],
-    "evidence_ids": [
-      "m-0006711",
-      "m-0006712",
-      "m-0006713",
-      "m-0009290",
-      "m-0009291",
-      "m-0009292"
-    ]
-  },
-  {
-    "id": "websites:theperfectgene-nyc",
-    "name": "theperfectgene.nyc",
-    "canonical_name": "theperfectgene.nyc",
-    "category": "websites",
-    "category_label": "Websites",
-    "count": 6,
-    "confidence": 0.98,
-    "transcripts": [
-      "Hollywood The Cia And Ufos The History Bey",
-      "My Hospital Operated On An Alien Top Sur",
-      "The Man Sitting On More Ufo Evidence Tha"
-    ],
-    "significance": "theperfectgene.nyc appears as websites with 6 mention(s) across 3 transcripts; detected by regex:url.",
-    "detectors": [
-      "regex:url"
-    ],
-    "evidence_ids": [
-      "m-0004177",
-      "m-0004178",
-      "m-0006739",
-      "m-0006740",
-      "m-0008109",
-      "m-0008110"
-    ]
-  },
-  {
     "id": "whistleblowers:david-fravor",
     "name": "David Fravor",
     "canonical_name": "David Fravor",
@@ -8354,32 +8209,6 @@
       "m-0003712",
       "m-0003714",
       "m-0003721"
-    ]
-  },
-  {
-    "id": "gps_coordinates:10-15",
-    "name": "10, 15",
-    "canonical_name": "10, 15",
-    "category": "gps_coordinates",
-    "category_label": "GPS coordinates",
-    "count": 5,
-    "confidence": 0.98,
-    "transcripts": [
-      "Cia Chief Im A Time Traveler",
-      "Cia Historian Aliens Are Controlling Hum",
-      "Nasa Chief We Just Built Antigravity Pro",
-      "The Man Sitting On More Ufo Evidence Tha"
-    ],
-    "significance": "10, 15 appears as gps coordinates with 5 mention(s) across 4 transcripts; detected by regex:gps.",
-    "detectors": [
-      "regex:gps"
-    ],
-    "evidence_ids": [
-      "m-0001736",
-      "m-0002236",
-      "m-0002545",
-      "m-0006974",
-      "m-0008074"
     ]
   },
   {
@@ -9784,84 +9613,6 @@
     ]
   },
   {
-    "id": "websites:jessymichaelsmedia-com",
-    "name": "jessymichaelsmedia.com",
-    "canonical_name": "jessymichaelsmedia.com",
-    "category": "websites",
-    "category_label": "Websites",
-    "count": 5,
-    "confidence": 0.98,
-    "transcripts": [
-      "Breaking Brazils Defense Minister Says",
-      "Hollywood The Cia And Ufos The History Bey",
-      "If You Knew What I Knew Jeremy Corbell U",
-      "Why The Pentagon Tried To Censor This Uf"
-    ],
-    "significance": "jessymichaelsmedia.com appears as websites with 5 mention(s) across 4 transcripts; detected by regex:url.",
-    "detectors": [
-      "regex:url"
-    ],
-    "evidence_ids": [
-      "m-0001312",
-      "m-0004475",
-      "m-0005915",
-      "m-0010840",
-      "m-0010841"
-    ]
-  },
-  {
-    "id": "websites:qualialife-com",
-    "name": "qualialife.com",
-    "canonical_name": "qualialife.com",
-    "category": "websites",
-    "category_label": "Websites",
-    "count": 5,
-    "confidence": 0.98,
-    "transcripts": [
-      "I Found Hitlers Secret Ufo Program Jaso",
-      "Meet The Scientist Who Scanned Beneath T",
-      "Mit Scientist Your Brain Evolved To Igno"
-    ],
-    "significance": "qualialife.com appears as websites with 5 mention(s) across 3 transcripts; detected by regex:url.",
-    "detectors": [
-      "regex:url"
-    ],
-    "evidence_ids": [
-      "m-0004605",
-      "m-0006265",
-      "m-0006266",
-      "m-0006267",
-      "m-0006527"
-    ]
-  },
-  {
-    "id": "websites:superpower-com",
-    "name": "superpower.com",
-    "canonical_name": "superpower.com",
-    "category": "websites",
-    "category_label": "Websites",
-    "count": 5,
-    "confidence": 0.98,
-    "transcripts": [
-      "Cia Chief Im A Time Traveler",
-      "Exposing The Cias Darkest Mind Control",
-      "Mit Scientist Your Brain Evolved To Igno",
-      "The Cia Scientist That Contacted An Alie",
-      "Why Nasa Studies This Man He Attracts Uf"
-    ],
-    "significance": "superpower.com appears as websites with 5 mention(s) across 5 transcripts; detected by regex:url.",
-    "detectors": [
-      "regex:url"
-    ],
-    "evidence_ids": [
-      "m-0001544",
-      "m-0003333",
-      "m-0006521",
-      "m-0007572",
-      "m-0010127"
-    ]
-  },
-  {
     "id": "whistleblowers:robert-salas",
     "name": "Robert Salas",
     "canonical_name": "Robert Salas",
@@ -9977,30 +9728,6 @@
       "m-0001638",
       "m-0001643",
       "m-0001651"
-    ]
-  },
-  {
-    "id": "gps_coordinates:1-100",
-    "name": "1,100",
-    "canonical_name": "1,100",
-    "category": "gps_coordinates",
-    "category_label": "GPS coordinates",
-    "count": 4,
-    "confidence": 0.98,
-    "transcripts": [
-      "Nasa Chief We Just Built Antigravity Pro",
-      "Nasa Whistleblower We Systematically Sup",
-      "We Captured A 12 Foot Giant In Afghanist"
-    ],
-    "significance": "1,100 appears as gps coordinates with 4 mention(s) across 3 transcripts; detected by regex:gps.",
-    "detectors": [
-      "regex:gps"
-    ],
-    "evidence_ids": [
-      "m-0006968",
-      "m-0007094",
-      "m-0007096",
-      "m-0009286"
     ]
   },
   {
@@ -12028,52 +11755,6 @@
     ]
   },
   {
-    "id": "websites:life-com",
-    "name": "life.com",
-    "canonical_name": "life.com",
-    "category": "websites",
-    "category_label": "Websites",
-    "count": 4,
-    "confidence": 0.98,
-    "transcripts": [
-      "Joe Rogan The Truth About Aliens He Fina",
-      "Mit Scientist Your Brain Evolved To Igno"
-    ],
-    "significance": "life.com appears as websites with 4 mention(s) across 2 transcripts; detected by regex:url.",
-    "detectors": [
-      "regex:url"
-    ],
-    "evidence_ids": [
-      "m-0005952",
-      "m-0005953",
-      "m-0005954",
-      "m-0006528"
-    ]
-  },
-  {
-    "id": "websites:mudwtr-com",
-    "name": "mudwtr.com",
-    "canonical_name": "mudwtr.com",
-    "category": "websites",
-    "category_label": "Websites",
-    "count": 4,
-    "confidence": 0.98,
-    "transcripts": [
-      "Breaking Massive Energy Grid Found Benea",
-      "Theres A Ufo On The Seafloor Treasure H"
-    ],
-    "significance": "mudwtr.com appears as websites with 4 mention(s) across 2 transcripts; detected by regex:url.",
-    "detectors": [
-      "regex:url"
-    ],
-    "evidence_ids": [
-      "m-0001364",
-      "m-0001365",
-      "m-0009230",
-      "m-0009231"
-    ]
-  },
-  {
     "id": "whistleblowers:philip-corso",
     "name": "Philip Corso",
     "canonical_name": "Philip Corso",
@@ -12274,6 +11955,28 @@
     ]
   },
   {
+    "id": "emerging_terminology:extra-low-frequency",
+    "name": "extra low frequency",
+    "canonical_name": "extra low frequency",
+    "category": "emerging_terminology",
+    "category_label": "Emerging terminology",
+    "count": 3,
+    "confidence": 0.88,
+    "transcripts": [
+      "Exposing The Cias Darkest Mind Control",
+      "The Cia Scientist That Contacted An Alie"
+    ],
+    "significance": "extra low frequency appears as emerging terminology with 3 mention(s) across 2 transcripts; detected by regex:frequency_band.",
+    "detectors": [
+      "regex:frequency_band"
+    ],
+    "evidence_ids": [
+      "m-0003705",
+      "m-0007601",
+      "m-0007808"
+    ]
+  },
+  {
     "id": "experiencers:barney-hill",
     "name": "Barney Hill",
     "canonical_name": "Barney Hill",
@@ -12317,28 +12020,6 @@
       "m-0008152",
       "m-0009282",
       "m-0010292"
-    ]
-  },
-  {
-    "id": "frequencies:extra-low-frequency",
-    "name": "extra low frequency",
-    "canonical_name": "extra low frequency",
-    "category": "frequencies",
-    "category_label": "Frequencies",
-    "count": 3,
-    "confidence": 0.88,
-    "transcripts": [
-      "Exposing The Cias Darkest Mind Control",
-      "The Cia Scientist That Contacted An Alie"
-    ],
-    "significance": "extra low frequency appears as frequencies with 3 mention(s) across 2 transcripts; detected by regex:frequency_band.",
-    "detectors": [
-      "regex:frequency_band"
-    ],
-    "evidence_ids": [
-      "m-0003705",
-      "m-0007601",
-      "m-0007808"
     ]
   },
   {
@@ -12432,27 +12113,6 @@
     ]
   },
   {
-    "id": "friendly_people:mount-athos",
-    "name": "Mount Athos",
-    "canonical_name": "Mount Athos",
-    "category": "friendly_people",
-    "category_label": "Friendly people",
-    "count": 3,
-    "confidence": 0.68,
-    "transcripts": [
-      "Cia Chief Im A Time Traveler"
-    ],
-    "significance": "Mount Athos appears as friendly people with 3 mention(s) across 1 transcript; detected by heuristic:person_name.",
-    "detectors": [
-      "heuristic:person_name"
-    ],
-    "evidence_ids": [
-      "m-0001557",
-      "m-0001580",
-      "m-0001621"
-    ]
-  },
-  {
     "id": "friendly_people:saddam-hussein",
     "name": "Saddam Hussein",
     "canonical_name": "Saddam Hussein",
@@ -12495,121 +12155,6 @@
       "m-0006944",
       "m-0007510",
       "m-0007836"
-    ]
-  },
-  {
-    "id": "gps_coordinates:10-10",
-    "name": "10, 10",
-    "canonical_name": "10, 10",
-    "category": "gps_coordinates",
-    "category_label": "GPS coordinates",
-    "count": 3,
-    "confidence": 0.98,
-    "transcripts": [
-      "Army Captures Live Alien Hospital Report",
-      "Former Nsa Director Breaks Silence On Uf",
-      "Meet The Scientist Who Studies Alien Imp"
-    ],
-    "significance": "10, 10 appears as gps coordinates with 3 mention(s) across 3 transcripts; detected by regex:gps.",
-    "detectors": [
-      "regex:gps"
-    ],
-    "evidence_ids": [
-      "m-0000821",
-      "m-0004016",
-      "m-0006423"
-    ]
-  },
-  {
-    "id": "gps_coordinates:15-16",
-    "name": "15, 16",
-    "canonical_name": "15, 16",
-    "category": "gps_coordinates",
-    "category_label": "GPS coordinates",
-    "count": 3,
-    "confidence": 0.98,
-    "transcripts": [
-      "100 000 Ufos Are Surrounding Earth Ft To",
-      "My Hospital Operated On An Alien Top Sur",
-      "We Captured A 12 Foot Giant In Afghanist"
-    ],
-    "significance": "15, 16 appears as gps coordinates with 3 mention(s) across 3 transcripts; detected by regex:gps.",
-    "detectors": [
-      "regex:gps"
-    ],
-    "evidence_ids": [
-      "m-0000138",
-      "m-0006698",
-      "m-0009570"
-    ]
-  },
-  {
-    "id": "gps_coordinates:15-20",
-    "name": "15, 20",
-    "canonical_name": "15, 20",
-    "category": "gps_coordinates",
-    "category_label": "GPS coordinates",
-    "count": 3,
-    "confidence": 0.98,
-    "transcripts": [
-      "Meet The Nuclear Missile Guard Abducted",
-      "Nasa Chief We Just Built Antigravity Pro",
-      "Theres A Ufo On The Seafloor Treasure H"
-    ],
-    "significance": "15, 20 appears as gps coordinates with 3 mention(s) across 3 transcripts; detected by regex:gps.",
-    "detectors": [
-      "regex:gps"
-    ],
-    "evidence_ids": [
-      "m-0006114",
-      "m-0007021",
-      "m-0009206"
-    ]
-  },
-  {
-    "id": "gps_coordinates:19-20",
-    "name": "19, 20",
-    "canonical_name": "19, 20",
-    "category": "gps_coordinates",
-    "category_label": "GPS coordinates",
-    "count": 3,
-    "confidence": 0.98,
-    "transcripts": [
-      "Cia Chief Im A Time Traveler",
-      "Cia Historian Aliens Are Controlling Hum",
-      "Why Nasa Studies This Man He Attracts Uf"
-    ],
-    "significance": "19, 20 appears as gps coordinates with 3 mention(s) across 3 transcripts; detected by regex:gps.",
-    "detectors": [
-      "regex:gps"
-    ],
-    "evidence_ids": [
-      "m-0001501",
-      "m-0002332",
-      "m-0010237"
-    ]
-  },
-  {
-    "id": "gps_coordinates:30-40",
-    "name": "30, 40",
-    "canonical_name": "30, 40",
-    "category": "gps_coordinates",
-    "category_label": "GPS coordinates",
-    "count": 3,
-    "confidence": 0.98,
-    "transcripts": [
-      "Dmt Opens The Alien Realm Neuroscientist",
-      "The Lone Hacker That Found Nasas Secret",
-      "We Captured A 12 Foot Giant In Afghanist"
-    ],
-    "significance": "30, 40 appears as gps coordinates with 3 mention(s) across 3 transcripts; detected by regex:gps.",
-    "detectors": [
-      "regex:gps"
-    ],
-    "evidence_ids": [
-      "m-0002655",
-      "m-0007911",
-      "m-0009659"
     ]
   },
   {
@@ -16031,28 +15576,6 @@
     ]
   },
   {
-    "id": "professors:new-york",
-    "name": "New York",
-    "canonical_name": "New York",
-    "category": "professors",
-    "category_label": "Professors",
-    "count": 3,
-    "confidence": 0.68,
-    "transcripts": [
-      "Eric Weinstein Demands Ufo Secrets From",
-      "Why Nasa Studies This Man He Attracts Uf"
-    ],
-    "significance": "New York appears as professors with 3 mention(s) across 2 transcripts; detected by heuristic:person_name.",
-    "detectors": [
-      "heuristic:person_name"
-    ],
-    "evidence_ids": [
-      "m-0003007",
-      "m-0003011",
-      "m-0010208"
-    ]
-  },
-  {
     "id": "professors:north-carolina-chapel-hill",
     "name": "North Carolina Chapel Hill",
     "canonical_name": "North Carolina Chapel Hill",
@@ -16247,51 +15770,6 @@
       "m-0003085",
       "m-0006897",
       "m-0007722"
-    ]
-  },
-  {
-    "id": "websites:expressvpn-com",
-    "name": "expressvpn.com",
-    "canonical_name": "expressvpn.com",
-    "category": "websites",
-    "category_label": "Websites",
-    "count": 3,
-    "confidence": 0.98,
-    "transcripts": [
-      "Meet The Scientist Who Studies Alien Imp",
-      "The Lone Hacker That Found Nasas Secret"
-    ],
-    "significance": "expressvpn.com appears as websites with 3 mention(s) across 2 transcripts; detected by regex:url.",
-    "detectors": [
-      "regex:url"
-    ],
-    "evidence_ids": [
-      "m-0006366",
-      "m-0007833",
-      "m-0007834"
-    ]
-  },
-  {
-    "id": "websites:factormeals-com",
-    "name": "factormeals.com",
-    "canonical_name": "factormeals.com",
-    "category": "websites",
-    "category_label": "Websites",
-    "count": 3,
-    "confidence": 0.98,
-    "transcripts": [
-      "Former Nsa Director Breaks Silence On Uf",
-      "Meet The Scientist Who Studies Alien Imp",
-      "Mit Scientist Your Brain Evolved To Igno"
-    ],
-    "significance": "factormeals.com appears as websites with 3 mention(s) across 3 transcripts; detected by regex:url.",
-    "detectors": [
-      "regex:url"
-    ],
-    "evidence_ids": [
-      "m-0003816",
-      "m-0006329",
-      "m-0006503"
     ]
   },
   {
@@ -16971,27 +16449,6 @@
     ]
   },
   {
-    "id": "friendly_people:naval-intelligence",
-    "name": "Naval Intelligence",
-    "canonical_name": "Naval Intelligence",
-    "category": "friendly_people",
-    "category_label": "Friendly people",
-    "count": 2,
-    "confidence": 0.68,
-    "transcripts": [
-      "Hollywood The Cia And Ufos The History Bey",
-      "The Cia Scientist That Contacted An Alie"
-    ],
-    "significance": "Naval Intelligence appears as friendly people with 2 mention(s) across 2 transcripts; detected by heuristic:person_name.",
-    "detectors": [
-      "heuristic:person_name"
-    ],
-    "evidence_ids": [
-      "m-0004186",
-      "m-0007815"
-    ]
-  },
-  {
     "id": "friendly_people:on-mars",
     "name": "On Mars",
     "canonical_name": "On Mars",
@@ -17053,26 +16510,6 @@
     ]
   },
   {
-    "id": "friendly_people:soviet-union",
-    "name": "Soviet Union",
-    "canonical_name": "Soviet Union",
-    "category": "friendly_people",
-    "category_label": "Friendly people",
-    "count": 2,
-    "confidence": 0.68,
-    "transcripts": [
-      "I Found Hitlers Secret Ufo Program Jaso"
-    ],
-    "significance": "Soviet Union appears as friendly people with 2 mention(s) across 1 transcript; detected by heuristic:person_name.",
-    "detectors": [
-      "heuristic:person_name"
-    ],
-    "evidence_ids": [
-      "m-0004767",
-      "m-0004771"
-    ]
-  },
-  {
     "id": "friendly_people:tic-tac",
     "name": "Tic Tac",
     "canonical_name": "Tic Tac",
@@ -17111,151 +16548,6 @@
     "evidence_ids": [
       "m-0007587",
       "m-0007685"
-    ]
-  },
-  {
-    "id": "gps_coordinates:10-11",
-    "name": "10, 11",
-    "canonical_name": "10, 11",
-    "category": "gps_coordinates",
-    "category_label": "GPS coordinates",
-    "count": 2,
-    "confidence": 0.98,
-    "transcripts": [
-      "We Captured A 12 Foot Giant In Afghanist"
-    ],
-    "significance": "10, 11 appears as gps coordinates with 2 mention(s) across 1 transcript; detected by regex:gps.",
-    "detectors": [
-      "regex:gps"
-    ],
-    "evidence_ids": [
-      "m-0009576",
-      "m-0009581"
-    ]
-  },
-  {
-    "id": "gps_coordinates:10-20",
-    "name": "10, 20",
-    "canonical_name": "10, 20",
-    "category": "gps_coordinates",
-    "category_label": "GPS coordinates",
-    "count": 2,
-    "confidence": 0.98,
-    "transcripts": [
-      "Meet The Scientist Who Scanned Beneath T",
-      "The Lone Hacker That Found Nasas Secret"
-    ],
-    "significance": "10, 20 appears as gps coordinates with 2 mention(s) across 2 transcripts; detected by regex:gps.",
-    "detectors": [
-      "regex:gps"
-    ],
-    "evidence_ids": [
-      "m-0006254",
-      "m-0007990"
-    ]
-  },
-  {
-    "id": "gps_coordinates:13-14",
-    "name": "13, 14",
-    "canonical_name": "13, 14",
-    "category": "gps_coordinates",
-    "category_label": "GPS coordinates",
-    "count": 2,
-    "confidence": 0.98,
-    "transcripts": [
-      "My Hospital Operated On An Alien Top Sur",
-      "We Captured A 12 Foot Giant In Afghanist"
-    ],
-    "significance": "13, 14 appears as gps coordinates with 2 mention(s) across 2 transcripts; detected by regex:gps.",
-    "detectors": [
-      "regex:gps"
-    ],
-    "evidence_ids": [
-      "m-0006697",
-      "m-0009569"
-    ]
-  },
-  {
-    "id": "gps_coordinates:20-30",
-    "name": "20, 30",
-    "canonical_name": "20, 30",
-    "category": "gps_coordinates",
-    "category_label": "GPS coordinates",
-    "count": 2,
-    "confidence": 0.98,
-    "transcripts": [
-      "I Operated A Ufo Its Not What You Think",
-      "I Was Taken By Aliens In 1997 President"
-    ],
-    "significance": "20, 30 appears as gps coordinates with 2 mention(s) across 2 transcripts; detected by regex:gps.",
-    "detectors": [
-      "regex:gps"
-    ],
-    "evidence_ids": [
-      "m-0005093",
-      "m-0005299"
-    ]
-  },
-  {
-    "id": "gps_coordinates:42-164",
-    "name": "42,164",
-    "canonical_name": "42,164",
-    "category": "gps_coordinates",
-    "category_label": "GPS coordinates",
-    "count": 2,
-    "confidence": 0.98,
-    "transcripts": [
-      "100 000 Ufos Are Surrounding Earth Ft To",
-      "Meet The Scientist Who Scanned Beneath T"
-    ],
-    "significance": "42,164 appears as gps coordinates with 2 mention(s) across 2 transcripts; detected by regex:gps.",
-    "detectors": [
-      "regex:gps"
-    ],
-    "evidence_ids": [
-      "m-0000025",
-      "m-0006317"
-    ]
-  },
-  {
-    "id": "gps_coordinates:62-63",
-    "name": "62, 63",
-    "canonical_name": "62, 63",
-    "category": "gps_coordinates",
-    "category_label": "GPS coordinates",
-    "count": 2,
-    "confidence": 0.98,
-    "transcripts": [
-      "The Cia Scientist That Contacted An Alie"
-    ],
-    "significance": "62, 63 appears as gps coordinates with 2 mention(s) across 1 transcript; detected by regex:gps.",
-    "detectors": [
-      "regex:gps"
-    ],
-    "evidence_ids": [
-      "m-0007528",
-      "m-0007535"
-    ]
-  },
-  {
-    "id": "gps_coordinates:73-74",
-    "name": "73, 74",
-    "canonical_name": "73, 74",
-    "category": "gps_coordinates",
-    "category_label": "GPS coordinates",
-    "count": 2,
-    "confidence": 0.98,
-    "transcripts": [
-      "Eric Weinstein Demands Ufo Secrets From",
-      "The Cia Scientist That Contacted An Alie"
-    ],
-    "significance": "73, 74 appears as gps coordinates with 2 mention(s) across 2 transcripts; detected by regex:gps.",
-    "detectors": [
-      "regex:gps"
-    ],
-    "evidence_ids": [
-      "m-0002981",
-      "m-0007677"
     ]
   },
   {
@@ -17318,47 +16610,6 @@
     "evidence_ids": [
       "m-0005192",
       "m-0008565"
-    ]
-  },
-  {
-    "id": "likely_spies:mount-athos",
-    "name": "Mount Athos",
-    "canonical_name": "Mount Athos",
-    "category": "likely_spies",
-    "category_label": "Likely spies",
-    "count": 2,
-    "confidence": 0.68,
-    "transcripts": [
-      "Cia Chief Im A Time Traveler"
-    ],
-    "significance": "Mount Athos appears as likely spies with 2 mention(s) across 1 transcript; detected by heuristic:person_name.",
-    "detectors": [
-      "heuristic:person_name"
-    ],
-    "evidence_ids": [
-      "m-0001549",
-      "m-0001573"
-    ]
-  },
-  {
-    "id": "likely_spies:new-york",
-    "name": "New York",
-    "canonical_name": "New York",
-    "category": "likely_spies",
-    "category_label": "Likely spies",
-    "count": 2,
-    "confidence": 0.68,
-    "transcripts": [
-      "Cia Historian Aliens Are Controlling Hum",
-      "The Cia Scientist That Contacted An Alie"
-    ],
-    "significance": "New York appears as likely spies with 2 mention(s) across 2 transcripts; detected by heuristic:person_name.",
-    "detectors": [
-      "heuristic:person_name"
-    ],
-    "evidence_ids": [
-      "m-0002106",
-      "m-0007579"
     ]
   },
   {
@@ -25341,46 +24592,6 @@
     ]
   },
   {
-    "id": "websites:ag1-com",
-    "name": "ag1.com",
-    "canonical_name": "ag1.com",
-    "category": "websites",
-    "category_label": "Websites",
-    "count": 2,
-    "confidence": 0.98,
-    "transcripts": [
-      "The Bizarre Alien Abduction Details The"
-    ],
-    "significance": "ag1.com appears as websites with 2 mention(s) across 1 transcript; detected by regex:url.",
-    "detectors": [
-      "regex:url"
-    ],
-    "evidence_ids": [
-      "m-0007359",
-      "m-0007360"
-    ]
-  },
-  {
-    "id": "websites:alaskan-com",
-    "name": "alaskan.com",
-    "canonical_name": "alaskan.com",
-    "category": "websites",
-    "category_label": "Websites",
-    "count": 2,
-    "confidence": 0.98,
-    "transcripts": [
-      "My Hospital Operated On An Alien Top Sur"
-    ],
-    "significance": "alaskan.com appears as websites with 2 mention(s) across 1 transcript; detected by regex:url.",
-    "detectors": [
-      "regex:url"
-    ],
-    "evidence_ids": [
-      "m-0006672",
-      "m-0006673"
-    ]
-  },
-  {
     "id": "websites:aliens-gov",
     "name": "aliens.gov",
     "canonical_name": "aliens.gov",
@@ -25421,47 +24632,6 @@
     ]
   },
   {
-    "id": "websites:cape-co",
-    "name": "cape.co",
-    "canonical_name": "cape.co",
-    "category": "websites",
-    "category_label": "Websites",
-    "count": 2,
-    "confidence": 0.98,
-    "transcripts": [
-      "I Operated A Ufo Its Not What You Think"
-    ],
-    "significance": "cape.co appears as websites with 2 mention(s) across 1 transcript; detected by regex:url.",
-    "detectors": [
-      "regex:url"
-    ],
-    "evidence_ids": [
-      "m-0004901",
-      "m-0004902"
-    ]
-  },
-  {
-    "id": "websites:chubbiesshorts-com",
-    "name": "chubbiesshorts.com",
-    "canonical_name": "chubbiesshorts.com",
-    "category": "websites",
-    "category_label": "Websites",
-    "count": 2,
-    "confidence": 0.98,
-    "transcripts": [
-      "I Operated A Ufo Its Not What You Think",
-      "My Hospital Operated On An Alien Top Sur"
-    ],
-    "significance": "chubbiesshorts.com appears as websites with 2 mention(s) across 2 transcripts; detected by regex:url.",
-    "detectors": [
-      "regex:url"
-    ],
-    "evidence_ids": [
-      "m-0004965",
-      "m-0006714"
-    ]
-  },
-  {
     "id": "websites:covepure-com",
     "name": "covepure.com",
     "canonical_name": "covepure.com",
@@ -25479,47 +24649,6 @@
     "evidence_ids": [
       "m-0006179",
       "m-0006180"
-    ]
-  },
-  {
-    "id": "websites:cowboycolostrum-com",
-    "name": "cowboycolostrum.com",
-    "canonical_name": "cowboycolostrum.com",
-    "category": "websites",
-    "category_label": "Websites",
-    "count": 2,
-    "confidence": 0.98,
-    "transcripts": [
-      "Breaking Brazils Defense Minister Says"
-    ],
-    "significance": "cowboycolostrum.com appears as websites with 2 mention(s) across 1 transcript; detected by regex:url.",
-    "detectors": [
-      "regex:url"
-    ],
-    "evidence_ids": [
-      "m-0001082",
-      "m-0001083"
-    ]
-  },
-  {
-    "id": "websites:gmail-com",
-    "name": "gmail.com",
-    "canonical_name": "gmail.com",
-    "category": "websites",
-    "category_label": "Websites",
-    "count": 2,
-    "confidence": 0.98,
-    "transcripts": [
-      "Nasa Chief We Just Built Antigravity Pro",
-      "The Pentagons Ufo Program Is Real Here"
-    ],
-    "significance": "gmail.com appears as websites with 2 mention(s) across 2 transcripts; detected by regex:url.",
-    "detectors": [
-      "regex:url"
-    ],
-    "evidence_ids": [
-      "m-0006952",
-      "m-0008838"
     ]
   },
   {
@@ -25543,26 +24672,6 @@
     ]
   },
   {
-    "id": "websites:irisstore-com",
-    "name": "irisstore.com",
-    "canonical_name": "irisstore.com",
-    "category": "websites",
-    "category_label": "Websites",
-    "count": 2,
-    "confidence": 0.98,
-    "transcripts": [
-      "Meet The Nuclear Missile Guard Abducted"
-    ],
-    "significance": "irisstore.com appears as websites with 2 mention(s) across 1 transcript; detected by regex:url.",
-    "detectors": [
-      "regex:url"
-    ],
-    "evidence_ids": [
-      "m-0006159",
-      "m-0006160"
-    ]
-  },
-  {
     "id": "websites:iristore-com",
     "name": "iristore.com",
     "canonical_name": "iristore.com",
@@ -25580,26 +24689,6 @@
     "evidence_ids": [
       "m-0009218",
       "m-0009219"
-    ]
-  },
-  {
-    "id": "websites:masachips-com",
-    "name": "masachips.com",
-    "canonical_name": "masachips.com",
-    "category": "websites",
-    "category_label": "Websites",
-    "count": 2,
-    "confidence": 0.98,
-    "transcripts": [
-      "Dmt Opens The Alien Realm Neuroscientist"
-    ],
-    "significance": "masachips.com appears as websites with 2 mention(s) across 1 transcript; detected by regex:url.",
-    "detectors": [
-      "regex:url"
-    ],
-    "evidence_ids": [
-      "m-0002627",
-      "m-0002628"
     ]
   },
   {
@@ -25660,66 +24749,6 @@
     "evidence_ids": [
       "m-0009062",
       "m-0009193"
-    ]
-  },
-  {
-    "id": "websites:wildalaskan-com",
-    "name": "wildalaskan.com",
-    "canonical_name": "wildalaskan.com",
-    "category": "websites",
-    "category_label": "Websites",
-    "count": 2,
-    "confidence": 0.98,
-    "transcripts": [
-      "Nasa Chief We Just Built Antigravity Pro"
-    ],
-    "significance": "wildalaskan.com appears as websites with 2 mention(s) across 1 transcript; detected by regex:url.",
-    "detectors": [
-      "regex:url"
-    ],
-    "evidence_ids": [
-      "m-0006851",
-      "m-0006852"
-    ]
-  },
-  {
-    "id": "whistleblowers:new-york",
-    "name": "New York",
-    "canonical_name": "New York",
-    "category": "whistleblowers",
-    "category_label": "Whistleblowers",
-    "count": 2,
-    "confidence": 0.68,
-    "transcripts": [
-      "The Cia Scientist That Contacted An Alie"
-    ],
-    "significance": "New York appears as whistleblowers with 2 mention(s) across 1 transcript; detected by heuristic:person_name.",
-    "detectors": [
-      "heuristic:person_name"
-    ],
-    "evidence_ids": [
-      "m-0007607",
-      "m-0007609"
-    ]
-  },
-  {
-    "id": "whistleblowers:robert-lazar",
-    "name": "Robert Lazar",
-    "canonical_name": "Robert Lazar",
-    "category": "whistleblowers",
-    "category_label": "Whistleblowers",
-    "count": 2,
-    "confidence": 0.92,
-    "transcripts": [
-      "A Weekend With Bob Lazar Inside Area51s"
-    ],
-    "significance": "Robert Lazar appears as whistleblowers with 2 mention(s) across 1 transcript; detected by gazetteer.",
-    "detectors": [
-      "gazetteer"
-    ],
-    "evidence_ids": [
-      "m-0000153",
-      "m-0000154"
     ]
   },
   {
@@ -26844,25 +25873,6 @@
     ]
   },
   {
-    "id": "experiencers:dark-skies",
-    "name": "Dark Skies",
-    "canonical_name": "Dark Skies",
-    "category": "experiencers",
-    "category_label": "Experiencers",
-    "count": 1,
-    "confidence": 0.68,
-    "transcripts": [
-      "Hollywood The Cia And Ufos The History Bey"
-    ],
-    "significance": "Dark Skies appears as experiencers with 1 mention(s) across 1 transcript; detected by heuristic:person_name.",
-    "detectors": [
-      "heuristic:person_name"
-    ],
-    "evidence_ids": [
-      "m-0004231"
-    ]
-  },
-  {
     "id": "experiencers:dave-grush",
     "name": "Dave Grush",
     "canonical_name": "Dave Grush",
@@ -27357,44 +26367,6 @@
     ]
   },
   {
-    "id": "experiencers:mount-athos",
-    "name": "Mount Athos",
-    "canonical_name": "Mount Athos",
-    "category": "experiencers",
-    "category_label": "Experiencers",
-    "count": 1,
-    "confidence": 0.68,
-    "transcripts": [
-      "Cia Chief Im A Time Traveler"
-    ],
-    "significance": "Mount Athos appears as experiencers with 1 mention(s) across 1 transcript; detected by heuristic:person_name.",
-    "detectors": [
-      "heuristic:person_name"
-    ],
-    "evidence_ids": [
-      "m-0001582"
-    ]
-  },
-  {
-    "id": "experiencers:naval-intelligence",
-    "name": "Naval Intelligence",
-    "canonical_name": "Naval Intelligence",
-    "category": "experiencers",
-    "category_label": "Experiencers",
-    "count": 1,
-    "confidence": 0.68,
-    "transcripts": [
-      "The Lone Hacker That Found Nasas Secret"
-    ],
-    "significance": "Naval Intelligence appears as experiencers with 1 mention(s) across 1 transcript; detected by heuristic:person_name.",
-    "detectors": [
-      "heuristic:person_name"
-    ],
-    "evidence_ids": [
-      "m-0007912"
-    ]
-  },
-  {
     "id": "experiencers:nellis-air-force-base",
     "name": "Nellis Air Force Base",
     "canonical_name": "Nellis Air Force Base",
@@ -27430,44 +26402,6 @@
     ],
     "evidence_ids": [
       "m-0007070"
-    ]
-  },
-  {
-    "id": "experiencers:new-testament",
-    "name": "New Testament",
-    "canonical_name": "New Testament",
-    "category": "experiencers",
-    "category_label": "Experiencers",
-    "count": 1,
-    "confidence": 0.68,
-    "transcripts": [
-      "We Captured A 12 Foot Giant In Afghanist"
-    ],
-    "significance": "New Testament appears as experiencers with 1 mention(s) across 1 transcript; detected by heuristic:person_name.",
-    "detectors": [
-      "heuristic:person_name"
-    ],
-    "evidence_ids": [
-      "m-0009324"
-    ]
-  },
-  {
-    "id": "experiencers:new-york",
-    "name": "New York",
-    "canonical_name": "New York",
-    "category": "experiencers",
-    "category_label": "Experiencers",
-    "count": 1,
-    "confidence": 0.68,
-    "transcripts": [
-      "Why Nasa Studies This Man He Attracts Uf"
-    ],
-    "significance": "New York appears as experiencers with 1 mention(s) across 1 transcript; detected by heuristic:person_name.",
-    "detectors": [
-      "heuristic:person_name"
-    ],
-    "evidence_ids": [
-      "m-0010468"
     ]
   },
   {
@@ -28836,25 +27770,6 @@
     ],
     "evidence_ids": [
       "m-0010359"
-    ]
-  },
-  {
-    "id": "friendly_people:dark-skies",
-    "name": "Dark Skies",
-    "canonical_name": "Dark Skies",
-    "category": "friendly_people",
-    "category_label": "Friendly people",
-    "count": 1,
-    "confidence": 0.68,
-    "transcripts": [
-      "Hollywood The Cia And Ufos The History Bey"
-    ],
-    "significance": "Dark Skies appears as friendly people with 1 mention(s) across 1 transcript; detected by heuristic:person_name.",
-    "detectors": [
-      "heuristic:person_name"
-    ],
-    "evidence_ids": [
-      "m-0004191"
     ]
   },
   {
@@ -30321,25 +29236,6 @@
     ]
   },
   {
-    "id": "friendly_people:manhattan-project",
-    "name": "Manhattan Project",
-    "canonical_name": "Manhattan Project",
-    "category": "friendly_people",
-    "category_label": "Friendly people",
-    "count": 1,
-    "confidence": 0.68,
-    "transcripts": [
-      "The Pentagons Ufo Program Is Real Here"
-    ],
-    "significance": "Manhattan Project appears as friendly people with 1 mention(s) across 1 transcript; detected by heuristic:person_name.",
-    "detectors": [
-      "heuristic:person_name"
-    ],
-    "evidence_ids": [
-      "m-0008346"
-    ]
-  },
-  {
     "id": "friendly_people:marco-scheresi",
     "name": "Marco Scheresi",
     "canonical_name": "Marco Scheresi",
@@ -30451,25 +29347,6 @@
     ],
     "evidence_ids": [
       "m-0003723"
-    ]
-  },
-  {
-    "id": "friendly_people:middle-east",
-    "name": "Middle East",
-    "canonical_name": "Middle East",
-    "category": "friendly_people",
-    "category_label": "Friendly people",
-    "count": 1,
-    "confidence": 0.68,
-    "transcripts": [
-      "Cia Chief Im A Time Traveler"
-    ],
-    "significance": "Middle East appears as friendly people with 1 mention(s) across 1 transcript; detected by heuristic:person_name.",
-    "detectors": [
-      "heuristic:person_name"
-    ],
-    "evidence_ids": [
-      "m-0001707"
     ]
   },
   {
@@ -30622,25 +29499,6 @@
     ],
     "evidence_ids": [
       "m-0001914"
-    ]
-  },
-  {
-    "id": "friendly_people:new-york",
-    "name": "New York",
-    "canonical_name": "New York",
-    "category": "friendly_people",
-    "category_label": "Friendly people",
-    "count": 1,
-    "confidence": 0.68,
-    "transcripts": [
-      "Cia Historian Aliens Are Controlling Hum"
-    ],
-    "significance": "New York appears as friendly people with 1 mention(s) across 1 transcript; detected by heuristic:person_name.",
-    "detectors": [
-      "heuristic:person_name"
-    ],
-    "evidence_ids": [
-      "m-0002050"
     ]
   },
   {
@@ -31537,25 +30395,6 @@
     ]
   },
   {
-    "id": "friendly_people:star-trek",
-    "name": "Star Trek",
-    "canonical_name": "Star Trek",
-    "category": "friendly_people",
-    "category_label": "Friendly people",
-    "count": 1,
-    "confidence": 0.68,
-    "transcripts": [
-      "The Cia Scientist That Contacted An Alie"
-    ],
-    "significance": "Star Trek appears as friendly people with 1 mention(s) across 1 transcript; detected by heuristic:person_name.",
-    "detectors": [
-      "heuristic:person_name"
-    ],
-    "evidence_ids": [
-      "m-0007422"
-    ]
-  },
-  {
     "id": "friendly_people:stephen-greer",
     "name": "Stephen Greer",
     "canonical_name": "Stephen Greer",
@@ -31955,25 +30794,6 @@
     ]
   },
   {
-    "id": "friendly_people:white-house",
-    "name": "White House",
-    "canonical_name": "White House",
-    "category": "friendly_people",
-    "category_label": "Friendly people",
-    "count": 1,
-    "confidence": 0.68,
-    "transcripts": [
-      "Army Captures Live Alien Hospital Report"
-    ],
-    "significance": "White House appears as friendly people with 1 mention(s) across 1 transcript; detected by heuristic:person_name.",
-    "detectors": [
-      "heuristic:person_name"
-    ],
-    "evidence_ids": [
-      "m-0000995"
-    ]
-  },
-  {
     "id": "friendly_people:white-sands",
     "name": "White Sands",
     "canonical_name": "White Sands",
@@ -32085,709 +30905,6 @@
     ],
     "evidence_ids": [
       "m-0006305"
-    ]
-  },
-  {
-    "id": "gps_coordinates:3-1",
-    "name": "-3, 1",
-    "canonical_name": "-3, 1",
-    "category": "gps_coordinates",
-    "category_label": "GPS coordinates",
-    "count": 1,
-    "confidence": 0.98,
-    "transcripts": [
-      "Meet The Nuclear Missile Guard Abducted"
-    ],
-    "significance": "-3, 1 appears as gps coordinates with 1 mention(s) across 1 transcript; detected by regex:gps.",
-    "detectors": [
-      "regex:gps"
-    ],
-    "evidence_ids": [
-      "m-0006103"
-    ]
-  },
-  {
-    "id": "gps_coordinates:1-15",
-    "name": "1, 15",
-    "canonical_name": "1, 15",
-    "category": "gps_coordinates",
-    "category_label": "GPS coordinates",
-    "count": 1,
-    "confidence": 0.98,
-    "transcripts": [
-      "We Captured A 12 Foot Giant In Afghanist"
-    ],
-    "significance": "1, 15 appears as gps coordinates with 1 mention(s) across 1 transcript; detected by regex:gps.",
-    "detectors": [
-      "regex:gps"
-    ],
-    "evidence_ids": [
-      "m-0009628"
-    ]
-  },
-  {
-    "id": "gps_coordinates:10-12",
-    "name": "10, 12",
-    "canonical_name": "10, 12",
-    "category": "gps_coordinates",
-    "category_label": "GPS coordinates",
-    "count": 1,
-    "confidence": 0.98,
-    "transcripts": [
-      "Why Nasa Studies This Man He Attracts Uf"
-    ],
-    "significance": "10, 12 appears as gps coordinates with 1 mention(s) across 1 transcript; detected by regex:gps.",
-    "detectors": [
-      "regex:gps"
-    ],
-    "evidence_ids": [
-      "m-0010227"
-    ]
-  },
-  {
-    "id": "gps_coordinates:10-24",
-    "name": "10, 24",
-    "canonical_name": "10, 24",
-    "category": "gps_coordinates",
-    "category_label": "GPS coordinates",
-    "count": 1,
-    "confidence": 0.98,
-    "transcripts": [
-      "The Lone Hacker That Found Nasas Secret"
-    ],
-    "significance": "10, 24 appears as gps coordinates with 1 mention(s) across 1 transcript; detected by regex:gps.",
-    "detectors": [
-      "regex:gps"
-    ],
-    "evidence_ids": [
-      "m-0007910"
-    ]
-  },
-  {
-    "id": "gps_coordinates:12-18",
-    "name": "12, 18",
-    "canonical_name": "12, 18",
-    "category": "gps_coordinates",
-    "category_label": "GPS coordinates",
-    "count": 1,
-    "confidence": 0.98,
-    "transcripts": [
-      "Cia Chief Im A Time Traveler"
-    ],
-    "significance": "12, 18 appears as gps coordinates with 1 mention(s) across 1 transcript; detected by regex:gps.",
-    "detectors": [
-      "regex:gps"
-    ],
-    "evidence_ids": [
-      "m-0001500"
-    ]
-  },
-  {
-    "id": "gps_coordinates:18-19",
-    "name": "18, 19",
-    "canonical_name": "18, 19",
-    "category": "gps_coordinates",
-    "category_label": "GPS coordinates",
-    "count": 1,
-    "confidence": 0.98,
-    "transcripts": [
-      "Exposing The Cias Darkest Mind Control"
-    ],
-    "significance": "18, 19 appears as gps coordinates with 1 mention(s) across 1 transcript; detected by regex:gps.",
-    "detectors": [
-      "regex:gps"
-    ],
-    "evidence_ids": [
-      "m-0003619"
-    ]
-  },
-  {
-    "id": "gps_coordinates:19-93",
-    "name": "19, 93",
-    "canonical_name": "19, 93",
-    "category": "gps_coordinates",
-    "category_label": "GPS coordinates",
-    "count": 1,
-    "confidence": 0.98,
-    "transcripts": [
-      "Cia Chief Im A Time Traveler"
-    ],
-    "significance": "19, 93 appears as gps coordinates with 1 mention(s) across 1 transcript; detected by regex:gps.",
-    "detectors": [
-      "regex:gps"
-    ],
-    "evidence_ids": [
-      "m-0001697"
-    ]
-  },
-  {
-    "id": "gps_coordinates:20-15",
-    "name": "20, 15",
-    "canonical_name": "20, 15",
-    "category": "gps_coordinates",
-    "category_label": "GPS coordinates",
-    "count": 1,
-    "confidence": 0.98,
-    "transcripts": [
-      "Why Nasa Studies This Man He Attracts Uf"
-    ],
-    "significance": "20, 15 appears as gps coordinates with 1 mention(s) across 1 transcript; detected by regex:gps.",
-    "detectors": [
-      "regex:gps"
-    ],
-    "evidence_ids": [
-      "m-0010318"
-    ]
-  },
-  {
-    "id": "gps_coordinates:20-20",
-    "name": "20, 20",
-    "canonical_name": "20, 20",
-    "category": "gps_coordinates",
-    "category_label": "GPS coordinates",
-    "count": 1,
-    "confidence": 0.98,
-    "transcripts": [
-      "If You Knew What I Knew Jeremy Corbell U"
-    ],
-    "significance": "20, 20 appears as gps coordinates with 1 mention(s) across 1 transcript; detected by regex:gps.",
-    "detectors": [
-      "regex:gps"
-    ],
-    "evidence_ids": [
-      "m-0005835"
-    ]
-  },
-  {
-    "id": "gps_coordinates:20-21",
-    "name": "20, 21",
-    "canonical_name": "20, 21",
-    "category": "gps_coordinates",
-    "category_label": "GPS coordinates",
-    "count": 1,
-    "confidence": 0.98,
-    "transcripts": [
-      "Hollywood The Cia And Ufos The History Bey"
-    ],
-    "significance": "20, 21 appears as gps coordinates with 1 mention(s) across 1 transcript; detected by regex:gps.",
-    "detectors": [
-      "regex:gps"
-    ],
-    "evidence_ids": [
-      "m-0004169"
-    ]
-  },
-  {
-    "id": "gps_coordinates:20-26",
-    "name": "20, 26",
-    "canonical_name": "20, 26",
-    "category": "gps_coordinates",
-    "category_label": "GPS coordinates",
-    "count": 1,
-    "confidence": 0.98,
-    "transcripts": [
-      "If You Knew What I Knew Jeremy Corbell U"
-    ],
-    "significance": "20, 26 appears as gps coordinates with 1 mention(s) across 1 transcript; detected by regex:gps.",
-    "detectors": [
-      "regex:gps"
-    ],
-    "evidence_ids": [
-      "m-0005834"
-    ]
-  },
-  {
-    "id": "gps_coordinates:24-95",
-    "name": "24, 95",
-    "canonical_name": "24, 95",
-    "category": "gps_coordinates",
-    "category_label": "GPS coordinates",
-    "count": 1,
-    "confidence": 0.98,
-    "transcripts": [
-      "I Was Taken By Aliens In 1997 President"
-    ],
-    "significance": "24, 95 appears as gps coordinates with 1 mention(s) across 1 transcript; detected by regex:gps.",
-    "detectors": [
-      "regex:gps"
-    ],
-    "evidence_ids": [
-      "m-0005311"
-    ]
-  },
-  {
-    "id": "gps_coordinates:25-30",
-    "name": "25, 30",
-    "canonical_name": "25, 30",
-    "category": "gps_coordinates",
-    "category_label": "GPS coordinates",
-    "count": 1,
-    "confidence": 0.98,
-    "transcripts": [
-      "Exposing The Cias Darkest Mind Control"
-    ],
-    "significance": "25, 30 appears as gps coordinates with 1 mention(s) across 1 transcript; detected by regex:gps.",
-    "detectors": [
-      "regex:gps"
-    ],
-    "evidence_ids": [
-      "m-0003697"
-    ]
-  },
-  {
-    "id": "gps_coordinates:29-30",
-    "name": "29, 30",
-    "canonical_name": "29, 30",
-    "category": "gps_coordinates",
-    "category_label": "GPS coordinates",
-    "count": 1,
-    "confidence": 0.98,
-    "transcripts": [
-      "Mit Scientist Your Brain Evolved To Igno"
-    ],
-    "significance": "29, 30 appears as gps coordinates with 1 mention(s) across 1 transcript; detected by regex:gps.",
-    "detectors": [
-      "regex:gps"
-    ],
-    "evidence_ids": [
-      "m-0006651"
-    ]
-  },
-  {
-    "id": "gps_coordinates:30-10",
-    "name": "30, 10",
-    "canonical_name": "30, 10",
-    "category": "gps_coordinates",
-    "category_label": "GPS coordinates",
-    "count": 1,
-    "confidence": 0.98,
-    "transcripts": [
-      "Nasa Chief We Just Built Antigravity Pro"
-    ],
-    "significance": "30, 10 appears as gps coordinates with 1 mention(s) across 1 transcript; detected by regex:gps.",
-    "detectors": [
-      "regex:gps"
-    ],
-    "evidence_ids": [
-      "m-0006972"
-    ]
-  },
-  {
-    "id": "gps_coordinates:30-36",
-    "name": "30, 36",
-    "canonical_name": "30, 36",
-    "category": "gps_coordinates",
-    "category_label": "GPS coordinates",
-    "count": 1,
-    "confidence": 0.98,
-    "transcripts": [
-      "If You Knew What I Knew Jeremy Corbell U"
-    ],
-    "significance": "30, 36 appears as gps coordinates with 1 mention(s) across 1 transcript; detected by regex:gps.",
-    "detectors": [
-      "regex:gps"
-    ],
-    "evidence_ids": [
-      "m-0005836"
-    ]
-  },
-  {
-    "id": "gps_coordinates:33-37",
-    "name": "33, 37",
-    "canonical_name": "33, 37",
-    "category": "gps_coordinates",
-    "category_label": "GPS coordinates",
-    "count": 1,
-    "confidence": 0.98,
-    "transcripts": [
-      "Meet The Scientist Who Scanned Beneath T"
-    ],
-    "significance": "33, 37 appears as gps coordinates with 1 mention(s) across 1 transcript; detected by regex:gps.",
-    "detectors": [
-      "regex:gps"
-    ],
-    "evidence_ids": [
-      "m-0006296"
-    ]
-  },
-  {
-    "id": "gps_coordinates:35-40",
-    "name": "35, 40",
-    "canonical_name": "35, 40",
-    "category": "gps_coordinates",
-    "category_label": "GPS coordinates",
-    "count": 1,
-    "confidence": 0.98,
-    "transcripts": [
-      "Why Nasa Studies This Man He Attracts Uf"
-    ],
-    "significance": "35, 40 appears as gps coordinates with 1 mention(s) across 1 transcript; detected by regex:gps.",
-    "detectors": [
-      "regex:gps"
-    ],
-    "evidence_ids": [
-      "m-0010275"
-    ]
-  },
-  {
-    "id": "gps_coordinates:40-30",
-    "name": "40, 30",
-    "canonical_name": "40, 30",
-    "category": "gps_coordinates",
-    "category_label": "GPS coordinates",
-    "count": 1,
-    "confidence": 0.98,
-    "transcripts": [
-      "Why Nasa Studies This Man He Attracts Uf"
-    ],
-    "significance": "40, 30 appears as gps coordinates with 1 mention(s) across 1 transcript; detected by regex:gps.",
-    "detectors": [
-      "regex:gps"
-    ],
-    "evidence_ids": [
-      "m-0010514"
-    ]
-  },
-  {
-    "id": "gps_coordinates:40-40",
-    "name": "40, 40",
-    "canonical_name": "40, 40",
-    "category": "gps_coordinates",
-    "category_label": "GPS coordinates",
-    "count": 1,
-    "confidence": 0.98,
-    "transcripts": [
-      "Hollywood The Cia And Ufos The History Bey"
-    ],
-    "significance": "40, 40 appears as gps coordinates with 1 mention(s) across 1 transcript; detected by regex:gps.",
-    "detectors": [
-      "regex:gps"
-    ],
-    "evidence_ids": [
-      "m-0004069"
-    ]
-  },
-  {
-    "id": "gps_coordinates:46-47",
-    "name": "46, 47",
-    "canonical_name": "46, 47",
-    "category": "gps_coordinates",
-    "category_label": "GPS coordinates",
-    "count": 1,
-    "confidence": 0.98,
-    "transcripts": [
-      "The Man Sitting On More Ufo Evidence Tha"
-    ],
-    "significance": "46, 47 appears as gps coordinates with 1 mention(s) across 1 transcript; detected by regex:gps.",
-    "detectors": [
-      "regex:gps"
-    ],
-    "evidence_ids": [
-      "m-0008191"
-    ]
-  },
-  {
-    "id": "gps_coordinates:49-50",
-    "name": "49, 50",
-    "canonical_name": "49, 50",
-    "category": "gps_coordinates",
-    "category_label": "GPS coordinates",
-    "count": 1,
-    "confidence": 0.98,
-    "transcripts": [
-      "The Cia Scientist That Contacted An Alie"
-    ],
-    "significance": "49, 50 appears as gps coordinates with 1 mention(s) across 1 transcript; detected by regex:gps.",
-    "detectors": [
-      "regex:gps"
-    ],
-    "evidence_ids": [
-      "m-0007442"
-    ]
-  },
-  {
-    "id": "gps_coordinates:5-15-5-30",
-    "name": "5.15, 5.30",
-    "canonical_name": "5.15, 5.30",
-    "category": "gps_coordinates",
-    "category_label": "GPS coordinates",
-    "count": 1,
-    "confidence": 0.98,
-    "transcripts": [
-      "Why Nasa Studies This Man He Attracts Uf"
-    ],
-    "significance": "5.15, 5.30 appears as gps coordinates with 1 mention(s) across 1 transcript; detected by regex:gps.",
-    "detectors": [
-      "regex:gps"
-    ],
-    "evidence_ids": [
-      "m-0010241"
-    ]
-  },
-  {
-    "id": "gps_coordinates:50-70",
-    "name": "50, 70",
-    "canonical_name": "50, 70",
-    "category": "gps_coordinates",
-    "category_label": "GPS coordinates",
-    "count": 1,
-    "confidence": 0.98,
-    "transcripts": [
-      "Why Nasa Studies This Man He Attracts Uf"
-    ],
-    "significance": "50, 70 appears as gps coordinates with 1 mention(s) across 1 transcript; detected by regex:gps.",
-    "detectors": [
-      "regex:gps"
-    ],
-    "evidence_ids": [
-      "m-0010389"
-    ]
-  },
-  {
-    "id": "gps_coordinates:55-56",
-    "name": "55, 56",
-    "canonical_name": "55, 56",
-    "category": "gps_coordinates",
-    "category_label": "GPS coordinates",
-    "count": 1,
-    "confidence": 0.98,
-    "transcripts": [
-      "Cia Chief Im A Time Traveler"
-    ],
-    "significance": "55, 56 appears as gps coordinates with 1 mention(s) across 1 transcript; detected by regex:gps.",
-    "detectors": [
-      "regex:gps"
-    ],
-    "evidence_ids": [
-      "m-0001502"
-    ]
-  },
-  {
-    "id": "gps_coordinates:56-57",
-    "name": "56, 57",
-    "canonical_name": "56, 57",
-    "category": "gps_coordinates",
-    "category_label": "GPS coordinates",
-    "count": 1,
-    "confidence": 0.98,
-    "transcripts": [
-      "100 000 Ufos Are Surrounding Earth Ft To"
-    ],
-    "significance": "56, 57 appears as gps coordinates with 1 mention(s) across 1 transcript; detected by regex:gps.",
-    "detectors": [
-      "regex:gps"
-    ],
-    "evidence_ids": [
-      "m-0000104"
-    ]
-  },
-  {
-    "id": "gps_coordinates:60-61",
-    "name": "60, 61",
-    "canonical_name": "60, 61",
-    "category": "gps_coordinates",
-    "category_label": "GPS coordinates",
-    "count": 1,
-    "confidence": 0.98,
-    "transcripts": [
-      "The Cia Scientist That Contacted An Alie"
-    ],
-    "significance": "60, 61 appears as gps coordinates with 1 mention(s) across 1 transcript; detected by regex:gps.",
-    "detectors": [
-      "regex:gps"
-    ],
-    "evidence_ids": [
-      "m-0007584"
-    ]
-  },
-  {
-    "id": "gps_coordinates:60-63",
-    "name": "60, 63",
-    "canonical_name": "60, 63",
-    "category": "gps_coordinates",
-    "category_label": "GPS coordinates",
-    "count": 1,
-    "confidence": 0.98,
-    "transcripts": [
-      "I Operated A Ufo Its Not What You Think"
-    ],
-    "significance": "60, 63 appears as gps coordinates with 1 mention(s) across 1 transcript; detected by regex:gps.",
-    "detectors": [
-      "regex:gps"
-    ],
-    "evidence_ids": [
-      "m-0005057"
-    ]
-  },
-  {
-    "id": "gps_coordinates:63-64",
-    "name": "63, 64",
-    "canonical_name": "63, 64",
-    "category": "gps_coordinates",
-    "category_label": "GPS coordinates",
-    "count": 1,
-    "confidence": 0.98,
-    "transcripts": [
-      "The Cia Scientist That Contacted An Alie"
-    ],
-    "significance": "63, 64 appears as gps coordinates with 1 mention(s) across 1 transcript; detected by regex:gps.",
-    "detectors": [
-      "regex:gps"
-    ],
-    "evidence_ids": [
-      "m-0007769"
-    ]
-  },
-  {
-    "id": "gps_coordinates:72-73",
-    "name": "72, 73",
-    "canonical_name": "72, 73",
-    "category": "gps_coordinates",
-    "category_label": "GPS coordinates",
-    "count": 1,
-    "confidence": 0.98,
-    "transcripts": [
-      "Army Captures Live Alien Hospital Report"
-    ],
-    "significance": "72, 73 appears as gps coordinates with 1 mention(s) across 1 transcript; detected by regex:gps.",
-    "detectors": [
-      "regex:gps"
-    ],
-    "evidence_ids": [
-      "m-0001035"
-    ]
-  },
-  {
-    "id": "gps_coordinates:77-70",
-    "name": "77, 70",
-    "canonical_name": "77, 70",
-    "category": "gps_coordinates",
-    "category_label": "GPS coordinates",
-    "count": 1,
-    "confidence": 0.98,
-    "transcripts": [
-      "The Cia Scientist That Contacted An Alie"
-    ],
-    "significance": "77, 70 appears as gps coordinates with 1 mention(s) across 1 transcript; detected by regex:gps.",
-    "detectors": [
-      "regex:gps"
-    ],
-    "evidence_ids": [
-      "m-0007804"
-    ]
-  },
-  {
-    "id": "gps_coordinates:78-79",
-    "name": "78, 79",
-    "canonical_name": "78, 79",
-    "category": "gps_coordinates",
-    "category_label": "GPS coordinates",
-    "count": 1,
-    "confidence": 0.98,
-    "transcripts": [
-      "The Lone Hacker That Found Nasas Secret"
-    ],
-    "significance": "78, 79 appears as gps coordinates with 1 mention(s) across 1 transcript; detected by regex:gps.",
-    "detectors": [
-      "regex:gps"
-    ],
-    "evidence_ids": [
-      "m-0007840"
-    ]
-  },
-  {
-    "id": "gps_coordinates:79-77",
-    "name": "79, 77",
-    "canonical_name": "79, 77",
-    "category": "gps_coordinates",
-    "category_label": "GPS coordinates",
-    "count": 1,
-    "confidence": 0.98,
-    "transcripts": [
-      "Eric Weinstein Demands Ufo Secrets From"
-    ],
-    "significance": "79, 77 appears as gps coordinates with 1 mention(s) across 1 transcript; detected by regex:gps.",
-    "detectors": [
-      "regex:gps"
-    ],
-    "evidence_ids": [
-      "m-0002991"
-    ]
-  },
-  {
-    "id": "gps_coordinates:80-85",
-    "name": "80, 85",
-    "canonical_name": "80, 85",
-    "category": "gps_coordinates",
-    "category_label": "GPS coordinates",
-    "count": 1,
-    "confidence": 0.98,
-    "transcripts": [
-      "The Man Sitting On More Ufo Evidence Tha"
-    ],
-    "significance": "80, 85 appears as gps coordinates with 1 mention(s) across 1 transcript; detected by regex:gps.",
-    "detectors": [
-      "regex:gps"
-    ],
-    "evidence_ids": [
-      "m-0008072"
-    ]
-  },
-  {
-    "id": "gps_coordinates:82-83",
-    "name": "82, 83",
-    "canonical_name": "82, 83",
-    "category": "gps_coordinates",
-    "category_label": "GPS coordinates",
-    "count": 1,
-    "confidence": 0.98,
-    "transcripts": [
-      "Eric Weinstein Demands Ufo Secrets From"
-    ],
-    "significance": "82, 83 appears as gps coordinates with 1 mention(s) across 1 transcript; detected by regex:gps.",
-    "detectors": [
-      "regex:gps"
-    ],
-    "evidence_ids": [
-      "m-0003144"
-    ]
-  },
-  {
-    "id": "gps_coordinates:90-80",
-    "name": "90, 80",
-    "canonical_name": "90, 80",
-    "category": "gps_coordinates",
-    "category_label": "GPS coordinates",
-    "count": 1,
-    "confidence": 0.98,
-    "transcripts": [
-      "The Pentagons Ufo Program Is Real Here"
-    ],
-    "significance": "90, 80 appears as gps coordinates with 1 mention(s) across 1 transcript; detected by regex:gps.",
-    "detectors": [
-      "regex:gps"
-    ],
-    "evidence_ids": [
-      "m-0008345"
-    ]
-  },
-  {
-    "id": "gps_coordinates:90-92",
-    "name": "90, 92",
-    "canonical_name": "90, 92",
-    "category": "gps_coordinates",
-    "category_label": "GPS coordinates",
-    "count": 1,
-    "confidence": 0.98,
-    "transcripts": [
-      "Why Nasa Studies This Man He Attracts Uf"
-    ],
-    "significance": "90, 92 appears as gps coordinates with 1 mention(s) across 1 transcript; detected by regex:gps.",
-    "detectors": [
-      "regex:gps"
-    ],
-    "evidence_ids": [
-      "m-0010406"
     ]
   },
   {
@@ -33684,25 +31801,6 @@
     ]
   },
   {
-    "id": "likely_spies:new-testament",
-    "name": "New Testament",
-    "canonical_name": "New Testament",
-    "category": "likely_spies",
-    "category_label": "Likely spies",
-    "count": 1,
-    "confidence": 0.68,
-    "transcripts": [
-      "We Captured A 12 Foot Giant In Afghanist"
-    ],
-    "significance": "New Testament appears as likely spies with 1 mention(s) across 1 transcript; detected by heuristic:person_name.",
-    "detectors": [
-      "heuristic:person_name"
-    ],
-    "evidence_ids": [
-      "m-0009319"
-    ]
-  },
-  {
     "id": "likely_spies:palmdale-station-jail",
     "name": "Palmdale Station Jail",
     "canonical_name": "Palmdale Station Jail",
@@ -33757,25 +31855,6 @@
     ],
     "evidence_ids": [
       "m-0009589"
-    ]
-  },
-  {
-    "id": "likely_spies:vandenberg-air-force-base",
-    "name": "Vandenberg Air Force Base",
-    "canonical_name": "Vandenberg Air Force Base",
-    "category": "likely_spies",
-    "category_label": "Likely spies",
-    "count": 1,
-    "confidence": 0.68,
-    "transcripts": [
-      "Meet The Nuclear Missile Guard Abducted"
-    ],
-    "significance": "Vandenberg Air Force Base appears as likely spies with 1 mention(s) across 1 transcript; detected by heuristic:person_name.",
-    "detectors": [
-      "heuristic:person_name"
-    ],
-    "evidence_ids": [
-      "m-0006080"
     ]
   },
   {
@@ -78144,25 +76223,6 @@
     ]
   },
   {
-    "id": "professors:manhattan-project",
-    "name": "Manhattan Project",
-    "canonical_name": "Manhattan Project",
-    "category": "professors",
-    "category_label": "Professors",
-    "count": 1,
-    "confidence": 0.68,
-    "transcripts": [
-      "Exposing The Cias Darkest Mind Control"
-    ],
-    "significance": "Manhattan Project appears as professors with 1 mention(s) across 1 transcript; detected by heuristic:person_name.",
-    "detectors": [
-      "heuristic:person_name"
-    ],
-    "evidence_ids": [
-      "m-0003695"
-    ]
-  },
-  {
     "id": "professors:marcos-vinicio-neves",
     "name": "Marcos Vinicio Neves",
     "canonical_name": "Marcos Vinicio Neves",
@@ -78521,25 +76581,6 @@
     ],
     "evidence_ids": [
       "m-0003647"
-    ]
-  },
-  {
-    "id": "professors:palomar-observatory",
-    "name": "Palomar Observatory",
-    "canonical_name": "Palomar Observatory",
-    "category": "professors",
-    "category_label": "Professors",
-    "count": 1,
-    "confidence": 0.68,
-    "transcripts": [
-      "100 000 Ufos Are Surrounding Earth Ft To"
-    ],
-    "significance": "Palomar Observatory appears as professors with 1 mention(s) across 1 transcript; detected by heuristic:person_name.",
-    "detectors": [
-      "heuristic:person_name"
-    ],
-    "evidence_ids": [
-      "m-0000005"
     ]
   },
   {
@@ -79018,25 +77059,6 @@
     ]
   },
   {
-    "id": "professors:soviet-union",
-    "name": "Soviet Union",
-    "canonical_name": "Soviet Union",
-    "category": "professors",
-    "category_label": "Professors",
-    "count": 1,
-    "confidence": 0.68,
-    "transcripts": [
-      "Cia Historian Aliens Are Controlling Hum"
-    ],
-    "significance": "Soviet Union appears as professors with 1 mention(s) across 1 transcript; detected by heuristic:person_name.",
-    "detectors": [
-      "heuristic:person_name"
-    ],
-    "evidence_ids": [
-      "m-0002292"
-    ]
-  },
-  {
     "id": "professors:stanford-research-institute",
     "name": "Stanford Research Institute",
     "canonical_name": "Stanford Research Institute",
@@ -79072,25 +77094,6 @@
     ],
     "evidence_ids": [
       "m-0000486"
-    ]
-  },
-  {
-    "id": "professors:star-trek",
-    "name": "Star Trek",
-    "canonical_name": "Star Trek",
-    "category": "professors",
-    "category_label": "Professors",
-    "count": 1,
-    "confidence": 0.68,
-    "transcripts": [
-      "A Weekend With Bob Lazar Inside Area51s"
-    ],
-    "significance": "Star Trek appears as professors with 1 mention(s) across 1 transcript; detected by heuristic:person_name.",
-    "detectors": [
-      "heuristic:person_name"
-    ],
-    "evidence_ids": [
-      "m-0000182"
     ]
   },
   {
@@ -79474,25 +77477,6 @@
     ]
   },
   {
-    "id": "professors:world-war",
-    "name": "World War",
-    "canonical_name": "World War",
-    "category": "professors",
-    "category_label": "Professors",
-    "count": 1,
-    "confidence": 0.68,
-    "transcripts": [
-      "Why Americas Top Scientists Are Going M"
-    ],
-    "significance": "World War appears as professors with 1 mention(s) across 1 transcript; detected by heuristic:person_name.",
-    "detectors": [
-      "heuristic:person_name"
-    ],
-    "evidence_ids": [
-      "m-0010005"
-    ]
-  },
-  {
     "id": "professors:zora-ranch",
     "name": "Zora Ranch",
     "canonical_name": "Zora Ranch",
@@ -79607,25 +77591,6 @@
     ]
   },
   {
-    "id": "websites:americanalchemy-com",
-    "name": "AmericanAlchemy.com",
-    "canonical_name": "americanalchemy.com",
-    "category": "websites",
-    "category_label": "Websites",
-    "count": 1,
-    "confidence": 0.98,
-    "transcripts": [
-      "Why The Pentagon Tried To Censor This Uf"
-    ],
-    "significance": "AmericanAlchemy.com appears as websites with 1 mention(s) across 1 transcript; detected by regex:url.",
-    "detectors": [
-      "regex:url"
-    ],
-    "evidence_ids": [
-      "m-0010551"
-    ]
-  },
-  {
     "id": "websites:ancestry-com",
     "name": "ancestry.com",
     "canonical_name": "ancestry.com",
@@ -79664,25 +77629,6 @@
     ]
   },
   {
-    "id": "websites:buyraycon-com",
-    "name": "buyraycon.com",
-    "canonical_name": "buyraycon.com",
-    "category": "websites",
-    "category_label": "Websites",
-    "count": 1,
-    "confidence": 0.98,
-    "transcripts": [
-      "Nasa Whistleblower We Systematically Sup"
-    ],
-    "significance": "buyraycon.com appears as websites with 1 mention(s) across 1 transcript; detected by regex:url.",
-    "detectors": [
-      "regex:url"
-    ],
-    "evidence_ids": [
-      "m-0007047"
-    ]
-  },
-  {
     "id": "websites:center-com",
     "name": "center.com",
     "canonical_name": "center.com",
@@ -79699,25 +77645,6 @@
     ],
     "evidence_ids": [
       "m-0005572"
-    ]
-  },
-  {
-    "id": "websites:dosedaily-co",
-    "name": "dosedaily.co",
-    "canonical_name": "dosedaily.co",
-    "category": "websites",
-    "category_label": "Websites",
-    "count": 1,
-    "confidence": 0.98,
-    "transcripts": [
-      "If You Knew What I Knew Jeremy Corbell U"
-    ],
-    "significance": "dosedaily.co appears as websites with 1 mention(s) across 1 transcript; detected by regex:url.",
-    "detectors": [
-      "regex:url"
-    ],
-    "evidence_ids": [
-      "m-0005587"
     ]
   },
   {
@@ -79759,25 +77686,6 @@
     ]
   },
   {
-    "id": "websites:jessemichaelsmedia-com",
-    "name": "jessemichaelsmedia.com",
-    "canonical_name": "jessemichaelsmedia.com",
-    "category": "websites",
-    "category_label": "Websites",
-    "count": 1,
-    "confidence": 0.98,
-    "transcripts": [
-      "I Was Taken By The Ufo Program As A Kid"
-    ],
-    "significance": "jessemichaelsmedia.com appears as websites with 1 mention(s) across 1 transcript; detected by regex:url.",
-    "detectors": [
-      "regex:url"
-    ],
-    "evidence_ids": [
-      "m-0005576"
-    ]
-  },
-  {
     "id": "websites:jordanjozak-com",
     "name": "jordanjozak.com",
     "canonical_name": "jordanjozak.com",
@@ -79794,63 +77702,6 @@
     ],
     "evidence_ids": [
       "m-0005573"
-    ]
-  },
-  {
-    "id": "websites:m-e-r-c-h-com",
-    "name": "M-E-R-C-H.com",
-    "canonical_name": "m-e-r-c-h.com",
-    "category": "websites",
-    "category_label": "Websites",
-    "count": 1,
-    "confidence": 0.98,
-    "transcripts": [
-      "Cia Historian Aliens Are Controlling Hum"
-    ],
-    "significance": "M-E-R-C-H.com appears as websites with 1 mention(s) across 1 transcript; detected by regex:url.",
-    "detectors": [
-      "regex:url"
-    ],
-    "evidence_ids": [
-      "m-0002091"
-    ]
-  },
-  {
-    "id": "websites:mon-aisy",
-    "name": "Mon.aisy",
-    "canonical_name": "mon.aisy",
-    "category": "websites",
-    "category_label": "Websites",
-    "count": 1,
-    "confidence": 0.98,
-    "transcripts": [
-      "Eric Weinstein Demands Ufo Secrets From"
-    ],
-    "significance": "Mon.aisy appears as websites with 1 mention(s) across 1 transcript; detected by regex:url.",
-    "detectors": [
-      "regex:url"
-    ],
-    "evidence_ids": [
-      "m-0003321"
-    ]
-  },
-  {
-    "id": "websites:plod-ai",
-    "name": "plod.ai",
-    "canonical_name": "plod.ai",
-    "category": "websites",
-    "category_label": "Websites",
-    "count": 1,
-    "confidence": 0.98,
-    "transcripts": [
-      "Why The Pentagon Tried To Censor This Uf"
-    ],
-    "significance": "plod.ai appears as websites with 1 mention(s) across 1 transcript; detected by regex:url.",
-    "detectors": [
-      "regex:url"
-    ],
-    "evidence_ids": [
-      "m-0010598"
     ]
   },
   {
@@ -79908,63 +77759,6 @@
     ],
     "evidence_ids": [
       "m-0007372"
-    ]
-  },
-  {
-    "id": "websites:trueclassic-com",
-    "name": "trueclassic.com",
-    "canonical_name": "trueclassic.com",
-    "category": "websites",
-    "category_label": "Websites",
-    "count": 1,
-    "confidence": 0.98,
-    "transcripts": [
-      "Why Nasa Studies This Man He Attracts Uf"
-    ],
-    "significance": "trueclassic.com appears as websites with 1 mention(s) across 1 transcript; detected by regex:url.",
-    "detectors": [
-      "regex:url"
-    ],
-    "evidence_ids": [
-      "m-0010214"
-    ]
-  },
-  {
-    "id": "websites:unity-com",
-    "name": "unity.com",
-    "canonical_name": "unity.com",
-    "category": "websites",
-    "category_label": "Websites",
-    "count": 1,
-    "confidence": 0.98,
-    "transcripts": [
-      "The Lone Hacker That Found Nasas Secret"
-    ],
-    "significance": "unity.com appears as websites with 1 mention(s) across 1 transcript; detected by regex:url.",
-    "detectors": [
-      "regex:url"
-    ],
-    "evidence_ids": [
-      "m-0008025"
-    ]
-  },
-  {
-    "id": "websites:usa-alchemy",
-    "name": "usa.alchemy",
-    "canonical_name": "usa.alchemy",
-    "category": "websites",
-    "category_label": "Websites",
-    "count": 1,
-    "confidence": 0.98,
-    "transcripts": [
-      "Nasa Chief We Just Built Antigravity Pro"
-    ],
-    "significance": "usa.alchemy appears as websites with 1 mention(s) across 1 transcript; detected by regex:url.",
-    "detectors": [
-      "regex:url"
-    ],
-    "evidence_ids": [
-      "m-0006951"
     ]
   },
   {

@@ -1,9 +1,501 @@
 {
-  "aliases": {},
-  "falsePositives": {},
-  "merges": {},
-  "nameMerges": {},
-  "nameReclassifications": {},
+  "reclassifications": {
+    "people:star-trek": "tv_shows",
+    "people:new-york": "locations",
+    "people:naval-intelligence": "government_agencies",
+    "people:vandenberg-air-force-base": "military_bases",
+    "people:dark-skies": "tv_shows",
+    "people:star-wars": "movies",
+    "frequencies:extra-low-frequency": "emerging_terminology",
+    "government_project_codenames:sentient": "key_terms",
+    "people:disclosure-day": "movies",
+    "people:manhattan-project": "government_project_codenames",
+    "people:american-cosmic": "books",
+    "people:palomar-observatory": "institutes",
+    "people:mount-athos": "locations",
+    "people:world-war": "events",
+    "people:middle-east": "locations",
+    "people:baltic-sea": "locations",
+    "people:soviet-union": "locations",
+    "people:white-house": "government_agencies",
+    "people:cape-canaveral": "locations",
+    "people:old-testament": "religious_texts",
+    "people:new-testament": "religious_texts"
+  },
+  "nameReclassifications": {
+    "extra low frequency": "emerging_terminology",
+    "sentient": "key_terms",
+    "disclosure day": "movies",
+    "manhattan project": "government_project_codenames",
+    "american cosmic": "books",
+    "palomar observatory": "institutes",
+    "mount athos": "locations",
+    "world war": "events",
+    "middle east": "locations",
+    "baltic sea": "locations",
+    "soviet union": "locations",
+    "white house": "government_agencies",
+    "cape canaveral": "locations",
+    "old testament": "religious_texts",
+    "new testament": "religious_texts",
+    "star trek": "tv_shows",
+    "new york": "locations",
+    "naval intelligence": "government_agencies",
+    "vandenberg air force base": "military_bases",
+    "dark skies": "tv_shows",
+    "star wars": "movies"
+  },
+  "falsePositives": {
+    "gps_coordinates:24-95": {
+      "name": "24, 95",
+      "category": "gps_coordinates",
+      "categoryLabel": "GPS coordinates"
+    },
+    "dates_times:maybe-10-15": {
+      "name": "maybe 10, 15",
+      "category": "dates_times",
+      "categoryLabel": "Dates and times"
+    },
+    "websites:life-com": {
+      "name": "life.com",
+      "category": "websites",
+      "categoryLabel": "Websites"
+    },
+    "websites:jessymichaelsmedia-com": {
+      "name": "jessymichaelsmedia.com",
+      "category": "websites",
+      "categoryLabel": "Websites"
+    },
+    "websites:mudwtr-com": {
+      "name": "mudwtr.com",
+      "category": "websites",
+      "categoryLabel": "Websites"
+    },
+    "websites:qualialife-com": {
+      "name": "qualialife.com",
+      "category": "websites",
+      "categoryLabel": "Websites"
+    },
+    "websites:superpower-com": {
+      "name": "superpower.com",
+      "category": "websites",
+      "categoryLabel": "Websites"
+    },
+    "websites:zbiotics-com": {
+      "name": "zbiotics.com",
+      "category": "websites",
+      "categoryLabel": "Websites"
+    },
+    "websites:drinkag1-com": {
+      "name": "drinkag1.com",
+      "category": "websites",
+      "categoryLabel": "Websites"
+    },
+    "websites:alaskan-com": {
+      "name": "alaskan.com",
+      "category": "websites",
+      "categoryLabel": "Websites"
+    },
+    "websites:theperfectgene-nyc": {
+      "name": "theperfectgene.nyc",
+      "category": "websites",
+      "categoryLabel": "Websites"
+    },
+    "websites:jessemichaelsmedia-com": {
+      "name": "jessemichaelsmedia.com",
+      "category": "websites",
+      "categoryLabel": "Websites"
+    },
+    "websites:buyraycon-com": {
+      "name": "buyraycon.com",
+      "category": "websites",
+      "categoryLabel": "Websites"
+    },
+    "websites:ag1-com": {
+      "name": "ag1.com",
+      "category": "websites",
+      "categoryLabel": "Websites"
+    },
+    "websites:chubbiesshorts-com": {
+      "name": "chubbiesshorts.com",
+      "category": "websites",
+      "categoryLabel": "Websites"
+    },
+    "websites:cowboycolostrum-com": {
+      "name": "cowboycolostrum.com",
+      "category": "websites",
+      "categoryLabel": "Websites"
+    },
+    "websites:irisstore-com": {
+      "name": "irisstore.com",
+      "category": "websites",
+      "categoryLabel": "Websites"
+    },
+    "websites:cape-co": {
+      "name": "cape.co",
+      "category": "websites",
+      "categoryLabel": "Websites"
+    },
+    "websites:wildalaskan-com": {
+      "name": "wildalaskan.com",
+      "category": "websites",
+      "categoryLabel": "Websites"
+    },
+    "websites:dosedaily-co": {
+      "name": "dosedaily.co",
+      "category": "websites",
+      "categoryLabel": "Websites"
+    },
+    "websites:factormeals-com": {
+      "name": "factormeals.com",
+      "category": "websites",
+      "categoryLabel": "Websites"
+    },
+    "websites:expressvpn-com": {
+      "name": "expressvpn.com",
+      "category": "websites",
+      "categoryLabel": "Websites"
+    },
+    "websites:m-e-r-c-h-com": {
+      "name": "M-E-R-C-H.com",
+      "category": "websites",
+      "categoryLabel": "Websites"
+    },
+    "websites:plod-ai": {
+      "name": "plod.ai",
+      "category": "websites",
+      "categoryLabel": "Websites"
+    },
+    "websites:unity-com": {
+      "name": "unity.com",
+      "category": "websites",
+      "categoryLabel": "Websites"
+    },
+    "websites:americanalchemy-com": {
+      "name": "AmericanAlchemy.com",
+      "category": "websites",
+      "categoryLabel": "Websites"
+    },
+    "websites:usa-alchemy": {
+      "name": "usa.alchemy",
+      "category": "websites",
+      "categoryLabel": "Websites"
+    },
+    "gps_coordinates:19-20": {
+      "name": "19, 20",
+      "category": "gps_coordinates",
+      "categoryLabel": "GPS coordinates"
+    },
+    "gps_coordinates:20-30": {
+      "name": "20, 30",
+      "category": "gps_coordinates",
+      "categoryLabel": "GPS coordinates"
+    },
+    "gps_coordinates:30-40": {
+      "name": "30, 40",
+      "category": "gps_coordinates",
+      "categoryLabel": "GPS coordinates"
+    },
+    "gps_coordinates:62-63": {
+      "name": "62, 63",
+      "category": "gps_coordinates",
+      "categoryLabel": "GPS coordinates"
+    },
+    "gps_coordinates:10-10": {
+      "name": "10, 10",
+      "category": "gps_coordinates",
+      "categoryLabel": "GPS coordinates"
+    },
+    "gps_coordinates:10-11": {
+      "name": "10, 11",
+      "category": "gps_coordinates",
+      "categoryLabel": "GPS coordinates"
+    },
+    "gps_coordinates:73-74": {
+      "name": "73, 74",
+      "category": "gps_coordinates",
+      "categoryLabel": "GPS coordinates"
+    },
+    "gps_coordinates:1-15": {
+      "name": "1, 15",
+      "category": "gps_coordinates",
+      "categoryLabel": "GPS coordinates"
+    },
+    "gps_coordinates:10-24": {
+      "name": "10, 24",
+      "category": "gps_coordinates",
+      "categoryLabel": "GPS coordinates"
+    },
+    "gps_coordinates:12-18": {
+      "name": "12, 18",
+      "category": "gps_coordinates",
+      "categoryLabel": "GPS coordinates"
+    },
+    "gps_coordinates:3-1": {
+      "name": "-3, 1",
+      "category": "gps_coordinates",
+      "categoryLabel": "GPS coordinates"
+    },
+    "gps_coordinates:19-93": {
+      "name": "19, 93",
+      "category": "gps_coordinates",
+      "categoryLabel": "GPS coordinates"
+    },
+    "gps_coordinates:20-20": {
+      "name": "20, 20",
+      "category": "gps_coordinates",
+      "categoryLabel": "GPS coordinates"
+    },
+    "gps_coordinates:15-20": {
+      "name": "15, 20",
+      "category": "gps_coordinates",
+      "categoryLabel": "GPS coordinates"
+    },
+    "gps_coordinates:15-16": {
+      "name": "15, 16",
+      "category": "gps_coordinates",
+      "categoryLabel": "GPS coordinates"
+    },
+    "gps_coordinates:10-20": {
+      "name": "10, 20",
+      "category": "gps_coordinates",
+      "categoryLabel": "GPS coordinates"
+    },
+    "gps_coordinates:29-30": {
+      "name": "29, 30",
+      "category": "gps_coordinates",
+      "categoryLabel": "GPS coordinates"
+    },
+    "gps_coordinates:25-30": {
+      "name": "25, 30",
+      "category": "gps_coordinates",
+      "categoryLabel": "GPS coordinates"
+    },
+    "gps_coordinates:30-36": {
+      "name": "30, 36",
+      "category": "gps_coordinates",
+      "categoryLabel": "GPS coordinates"
+    },
+    "gps_coordinates:33-37": {
+      "name": "33, 37",
+      "category": "gps_coordinates",
+      "categoryLabel": "GPS coordinates"
+    },
+    "gps_coordinates:40-40": {
+      "name": "40, 40",
+      "category": "gps_coordinates",
+      "categoryLabel": "GPS coordinates"
+    },
+    "gps_coordinates:42-164": {
+      "name": "42,164",
+      "category": "gps_coordinates",
+      "categoryLabel": "GPS coordinates"
+    },
+    "gps_coordinates:46-47": {
+      "name": "46, 47",
+      "category": "gps_coordinates",
+      "categoryLabel": "GPS coordinates"
+    },
+    "gps_coordinates:49-50": {
+      "name": "49, 50",
+      "category": "gps_coordinates",
+      "categoryLabel": "GPS coordinates"
+    },
+    "gps_coordinates:55-56": {
+      "name": "55, 56",
+      "category": "gps_coordinates",
+      "categoryLabel": "GPS coordinates"
+    },
+    "gps_coordinates:60-61": {
+      "name": "60, 61",
+      "category": "gps_coordinates",
+      "categoryLabel": "GPS coordinates"
+    },
+    "gps_coordinates:60-63": {
+      "name": "60, 63",
+      "category": "gps_coordinates",
+      "categoryLabel": "GPS coordinates"
+    },
+    "gps_coordinates:63-64": {
+      "name": "63, 64",
+      "category": "gps_coordinates",
+      "categoryLabel": "GPS coordinates"
+    },
+    "gps_coordinates:72-73": {
+      "name": "72, 73",
+      "category": "gps_coordinates",
+      "categoryLabel": "GPS coordinates"
+    },
+    "gps_coordinates:77-70": {
+      "name": "77, 70",
+      "category": "gps_coordinates",
+      "categoryLabel": "GPS coordinates"
+    },
+    "gps_coordinates:78-79": {
+      "name": "78, 79",
+      "category": "gps_coordinates",
+      "categoryLabel": "GPS coordinates"
+    },
+    "gps_coordinates:79-77": {
+      "name": "79, 77",
+      "category": "gps_coordinates",
+      "categoryLabel": "GPS coordinates"
+    },
+    "gps_coordinates:80-85": {
+      "name": "80, 85",
+      "category": "gps_coordinates",
+      "categoryLabel": "GPS coordinates"
+    },
+    "gps_coordinates:82-83": {
+      "name": "82, 83",
+      "category": "gps_coordinates",
+      "categoryLabel": "GPS coordinates"
+    },
+    "gps_coordinates:90-80": {
+      "name": "90, 80",
+      "category": "gps_coordinates",
+      "categoryLabel": "GPS coordinates"
+    },
+    "gps_coordinates:30-10": {
+      "name": "30, 10",
+      "category": "gps_coordinates",
+      "categoryLabel": "GPS coordinates"
+    },
+    "gps_coordinates:20-26": {
+      "name": "20, 26",
+      "category": "gps_coordinates",
+      "categoryLabel": "GPS coordinates"
+    },
+    "gps_coordinates:20-21": {
+      "name": "20, 21",
+      "category": "gps_coordinates",
+      "categoryLabel": "GPS coordinates"
+    },
+    "gps_coordinates:18-19": {
+      "name": "18, 19",
+      "category": "gps_coordinates",
+      "categoryLabel": "GPS coordinates"
+    },
+    "gps_coordinates:13-14": {
+      "name": "13, 14",
+      "category": "gps_coordinates",
+      "categoryLabel": "GPS coordinates"
+    },
+    "gps_coordinates:10-15": {
+      "name": "10, 15",
+      "category": "gps_coordinates",
+      "categoryLabel": "GPS coordinates"
+    },
+    "gps_coordinates:1-100": {
+      "name": "1,100",
+      "category": "gps_coordinates",
+      "categoryLabel": "GPS coordinates"
+    },
+    "websites:trueclassic-com": {
+      "name": "trueclassic.com",
+      "category": "websites",
+      "categoryLabel": "Websites"
+    },
+    "gps_coordinates:50-70": {
+      "name": "50, 70",
+      "category": "gps_coordinates",
+      "categoryLabel": "GPS coordinates"
+    },
+    "gps_coordinates:90-92": {
+      "name": "90, 92",
+      "category": "gps_coordinates",
+      "categoryLabel": "GPS coordinates"
+    },
+    "gps_coordinates:56-57": {
+      "name": "56, 57",
+      "category": "gps_coordinates",
+      "categoryLabel": "GPS coordinates"
+    },
+    "gps_coordinates:5-15-5-30": {
+      "name": "5.15, 5.30",
+      "category": "gps_coordinates",
+      "categoryLabel": "GPS coordinates"
+    },
+    "gps_coordinates:40-30": {
+      "name": "40, 30",
+      "category": "gps_coordinates",
+      "categoryLabel": "GPS coordinates"
+    },
+    "gps_coordinates:35-40": {
+      "name": "35, 40",
+      "category": "gps_coordinates",
+      "categoryLabel": "GPS coordinates"
+    },
+    "gps_coordinates:20-15": {
+      "name": "20, 15",
+      "category": "gps_coordinates",
+      "categoryLabel": "GPS coordinates"
+    },
+    "gps_coordinates:10-12": {
+      "name": "10, 12",
+      "category": "gps_coordinates",
+      "categoryLabel": "GPS coordinates"
+    },
+    "websites:masachips-com": {
+      "name": "masachips.com",
+      "category": "websites",
+      "categoryLabel": "Websites"
+    },
+    "websites:gmail-com": {
+      "name": "gmail.com",
+      "category": "websites",
+      "categoryLabel": "Websites"
+    },
+    "websites:americanalchemymerch-com": {
+      "name": "AmericanAlchemyMerch.com",
+      "category": "websites",
+      "categoryLabel": "Websites"
+    },
+    "websites:mon-aisy": {
+      "name": "Mon.aisy",
+      "category": "websites",
+      "categoryLabel": "Websites"
+    }
+  },
   "omissions": {},
-  "reclassifications": {}
+  "aliases": {},
+  "merges": {
+    "whistleblowers:robert-lazar": {
+      "sourceId": "whistleblowers:robert-lazar",
+      "sourceName": "Robert Lazar",
+      "sourceCategory": "whistleblowers",
+      "targetId": "whistleblowers:bob-lazar",
+      "targetName": "Bob Lazar",
+      "targetCategory": "whistleblowers"
+    },
+    "military_bases:s4": {
+      "sourceId": "military_bases:s4",
+      "sourceName": "S4",
+      "sourceCategory": "military_bases",
+      "targetId": "military_bases:s-4",
+      "targetName": "S-4",
+      "targetCategory": "military_bases"
+    }
+  },
+  "nameMerges": {
+    "robert lazar": {
+      "sourceId": "whistleblowers:robert-lazar",
+      "sourceName": "Robert Lazar",
+      "sourceCategory": "whistleblowers",
+      "targetId": "whistleblowers:bob-lazar",
+      "targetName": "Bob Lazar",
+      "targetCategory": "whistleblowers"
+    },
+    "s4": {
+      "sourceId": "military_bases:s4",
+      "sourceName": "S4",
+      "sourceCategory": "military_bases",
+      "targetId": "military_bases:s-4",
+      "targetName": "S-4",
+      "targetCategory": "military_bases"
+    }
+  },
+  "notes": {},
+  "generatedAt": "2026-06-26T22:50:55.191Z",
+  "note": "Place this file at reclass.json in the project root before rebuilding."
 }
