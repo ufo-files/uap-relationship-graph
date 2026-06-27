@@ -1,0 +1,11 @@
+{
+  "name": "uap-relationship-graph",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "test:a11y": "playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.53.0"
+  }
+}

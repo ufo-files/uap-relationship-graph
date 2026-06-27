@@ -55,4 +55,5 @@ python -m unittest discover -s tests -v
 python scripts/validate_repo.py
 python scripts/audit_accessibility.py
 python build_graph.py
+npm run test:a11y
 ```
