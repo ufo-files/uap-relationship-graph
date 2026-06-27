@@ -51,3 +51,46 @@ test("search submits without mouse and moves focus to a result", async ({ page }
   await expect(page.locator("#status")).toContainText("direct relationship graph");
   await expect(page.locator(".html-graph-label[aria-current='true']")).toBeFocused();
 });
+
+test("direct relationship graph renders one label per entity", async ({ page }) => {
+  await page.goto("/");
+
+  const search = page.getByRole("searchbox", { name: "Search entity or category" });
+  await search.fill("CIA");
+  await search.press("Enter");
+
+  await expect(page.locator("#status")).toContainText("direct relationship graph");
+  const duplicates = await page.locator(".html-graph-label[data-label-entity]").evaluateAll((labels) => {
+    const seen = new Set();
+    const repeated = new Set();
+    for (const label of labels) {
+      const id = label.getAttribute("data-label-entity");
+      if (!id) continue;
+      if (seen.has(id)) repeated.add(id);
+      seen.add(id);
+    }
+    return Array.from(repeated);
+  });
+  expect(duplicates).toEqual([]);
+});
+
+test("merge duplicate target is selected through search results", async ({ page }) => {
+  await page.goto("/");
+
+  const search = page.getByRole("searchbox", { name: "Search entity or category" });
+  await search.fill("CIA");
+  await search.press("Enter");
+
+  const mergeSearch = page.getByRole("searchbox", { name: "Find entity to merge into" });
+  await expect(mergeSearch).toBeVisible();
+  await expect(page.getByRole("button", { name: "Merge" })).toBeDisabled();
+
+  await mergeSearch.fill("Roswell");
+  const roswell = page.locator("[data-merge-target='locations:roswell']");
+  await expect(roswell).toBeVisible();
+  await roswell.click();
+
+  await expect(mergeSearch).toHaveValue("Roswell");
+  await expect(roswell).toHaveAttribute("aria-pressed", "true");
+  await expect(page.getByRole("button", { name: "Merge" })).toBeEnabled();
+});

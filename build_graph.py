@@ -2626,7 +2626,8 @@ def render_html() -> str:
       color: var(--muted);
       font-size: 12px;
     }
-    .card-field select {
+    .card-field select,
+    .card-field input {
       width: 100%;
     }
     .false-positive-actions {
@@ -2636,9 +2637,25 @@ def render_html() -> str:
     .node-card h3.false-positive-heading {
       margin-top: 14px;
     }
-    #merge-target {
-      flex-basis: 100%;
+    .merge-results {
+      display: grid;
+      gap: 4px;
       width: 100%;
+      max-height: 150px;
+      overflow-y: auto;
+      overflow-x: hidden;
+      padding: 4px 0;
+    }
+    .merge-results button {
+      width: 100%;
+      height: auto;
+      min-height: 32px;
+      text-align: left;
+      white-space: normal;
+    }
+    .merge-results button[aria-pressed="true"] {
+      background: var(--chip);
+      border-color: var(--ink);
     }
     .relationship-list {
       display: grid;
@@ -3151,10 +3168,13 @@ def render_html() -> str:
     function renderNeighborhood(entity) {
       const theme = currentTheme();
       const rels = (relationshipsByEntity.get(entity.id) || []).slice().sort((a, b) => b.weight - a.weight).slice(0, 26);
-      const related = rels.map((relationship) => {
+      const relatedById = new Map();
+      for (const relationship of rels) {
         const otherId = relationship.source === entity.id ? relationship.target : relationship.source;
-        return entitiesById.get(otherId);
-      }).filter(Boolean);
+        const relatedEntity = entitiesById.get(otherId);
+        if (relatedEntity && !relatedById.has(relatedEntity.id)) relatedById.set(relatedEntity.id, relatedEntity);
+      }
+      const related = Array.from(relatedById.values());
       const nodes = radialNodes(related, 1100, 750, 380, 660, (item) => item.count || 1);
       const nodeById = new Map(nodes.map((node) => [node.id, node]));
       const center = { id: entity.id, x: 1100, y: 750, r: 46, raw: entity };
@@ -3254,11 +3274,14 @@ def render_html() -> str:
         .slice(0, 80);
     }
 
-    function mergeTargetOptions(entity, query = "") {
+    function mergeResultButtons(entity, query = "") {
       const candidates = mergeCandidates(entity, query);
-      if (!candidates.length) return '<option value="">No matches</option>';
-      return candidates.map((candidate) => {
-        return '<option value="' + esc(candidate.id) + '">' + esc(candidate.name) + ' · ' + esc(candidate.categoryLabel) + ' · ' + (candidate.count || 0).toLocaleString() + '</option>';
+      if (!candidates.length) return '<div class="meta">No matches.</div>';
+      return candidates.slice(0, 8).map((candidate) => {
+        return '<button type="button" data-merge-target="' + esc(candidate.id) + '" aria-pressed="false">' +
+          esc(candidate.name) +
+          '<div class="meta">' + esc(candidate.categoryLabel) + ' · ' + (candidate.count || 0).toLocaleString() + ' mentions</div>' +
+        '</button>';
       }).join("");
     }
 
@@ -3285,7 +3308,7 @@ def render_html() -> str:
         '<h3 class="action-heading false-positive-heading">False positive</h3>' +
         '<div class="card-actions false-positive-actions"><button id="false-positive">Mark false positive</button></div>' +
         '<h3 class="merge-heading">Merge duplicate</h3>' +
-        '<div class="card-actions"><label class="card-field"><span>Merge into</span><select id="merge-target">' + mergeTargetOptions(entity) + '</select></label><button id="merge-entity">Merge</button></div>';
+        '<div class="card-actions"><label class="card-field"><span>Find entity to merge into</span><input id="merge-target-search" type="search" autocomplete="off" aria-controls="merge-results" placeholder="Search by name or category"></label><div id="merge-results" class="merge-results" aria-label="Merge target results">' + mergeResultButtons(entity) + '</div><button id="merge-entity" disabled>Merge</button></div>';
       cardEl.querySelectorAll("[data-card-entity]").forEach((button) => {
         button.addEventListener("click", () => {
           selectedEntityId = button.dataset.cardEntity;
@@ -3322,9 +3345,44 @@ def render_html() -> str:
         rebuildIndexes();
         render();
       });
-      const mergeTarget = document.getElementById("merge-target");
+      const mergeSearch = document.getElementById("merge-target-search");
+      const mergeResults = document.getElementById("merge-results");
+      const mergeButton = document.getElementById("merge-entity");
+      let selectedMergeTargetId = "";
+
+      function selectMergeTarget(targetId) {
+        const target = entitiesById.get(targetId);
+        selectedMergeTargetId = target ? target.id : "";
+        mergeButton.disabled = !selectedMergeTargetId;
+        mergeResults.querySelectorAll("[data-merge-target]").forEach((button) => {
+          const selected = button.dataset.mergeTarget === selectedMergeTargetId;
+          button.setAttribute("aria-pressed", selected ? "true" : "false");
+        });
+        if (target) mergeSearch.value = target.name;
+      }
+
+      function wireMergeResults() {
+        mergeResults.querySelectorAll("[data-merge-target]").forEach((button) => {
+          button.addEventListener("click", () => selectMergeTarget(button.dataset.mergeTarget));
+        });
+      }
+
+      mergeSearch.addEventListener("input", () => {
+        selectedMergeTargetId = "";
+        mergeButton.disabled = true;
+        mergeResults.innerHTML = mergeResultButtons(entity, mergeSearch.value);
+        wireMergeResults();
+      });
+      mergeSearch.addEventListener("keydown", (event) => {
+        if (event.key !== "Enter") return;
+        const first = mergeResults.querySelector("[data-merge-target]");
+        if (!first) return;
+        event.preventDefault();
+        selectMergeTarget(first.dataset.mergeTarget);
+      });
+      wireMergeResults();
       document.getElementById("merge-entity").addEventListener("click", () => {
-        const target = entitiesById.get(mergeTarget.value);
+        const target = entitiesById.get(selectedMergeTargetId);
         if (!target || target.id === entity.id) return;
         const review = readReview();
         review.merges = review.merges || {};
