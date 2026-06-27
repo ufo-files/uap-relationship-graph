@@ -724,6 +724,11 @@
       "name": "True Classic",
       "category": "people",
       "categoryLabel": "People"
+    },
+    "people:before-diana": {
+      "name": "Before Diana",
+      "category": "people",
+      "categoryLabel": "People"
     }
   },
   "omissions": {},
@@ -1586,8 +1591,8 @@
       "sourceId": "people:diana-pasolka",
       "sourceName": "Diana Pasolka",
       "sourceCategory": "people",
-      "targetId": "professors:diana-pasolka",
-      "targetName": "Diana Pasolka",
+      "targetId": "professors:diana-pasulka",
+      "targetName": "Diana Pasulka",
       "targetCategory": "professors"
     },
     "professors:diana-pasolka": {
@@ -1597,6 +1602,14 @@
       "targetId": "experiencers:diana-pasolka",
       "targetName": "Diana Pasolka",
       "targetCategory": "experiencers"
+    },
+    "experiencers:diana-pasolka": {
+      "sourceId": "experiencers:diana-pasolka",
+      "sourceName": "Diana Pasolka",
+      "sourceCategory": "experiencers",
+      "targetId": "people:diana-pasolka",
+      "targetName": "Diana Pasolka",
+      "targetCategory": "people"
     }
   },
   "nameMerges": {
@@ -2329,15 +2342,15 @@
       "targetCategory": "people"
     },
     "diana pasolka": {
-      "sourceId": "professors:diana-pasolka",
+      "sourceId": "people:diana-pasolka",
       "sourceName": "Diana Pasolka",
-      "sourceCategory": "professors",
-      "targetId": "experiencers:diana-pasolka",
-      "targetName": "Diana Pasolka",
-      "targetCategory": "experiencers"
+      "sourceCategory": "people",
+      "targetId": "professors:diana-pasulka",
+      "targetName": "Diana Pasulka",
+      "targetCategory": "professors"
     }
   },
   "notes": {},
-  "generatedAt": "2026-06-27T07:16:22.162Z",
+  "generatedAt": "2026-06-27T07:21:30.044Z",
   "note": "Replace data/reclass.json with this file before rebuilding."
 }
