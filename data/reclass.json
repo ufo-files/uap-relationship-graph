@@ -593,7 +593,26 @@
     "bill moore": "people",
     "for skinwalker": "tv_shows",
     "uinta basin": "locations",
-    "history channel": "tv_shows"
+    "history channel": "tv_shows",
+    "in switzerland": "locations",
+    "plasma science": "university_departments",
+    "technology group": "companies",
+    "camp street": "locations",
+    "like kash patel": "politicians",
+    "donald j trump": "politicians",
+    "let espresso": "newsrooms",
+    "on may": "dates_times",
+    "wild pendulum": "books",
+    "secret machines": "books",
+    "mount waterman": "locations",
+    "president obama": "politicians",
+    "hal poppenmeyer": "authors",
+    "federal republic": "locations",
+    "president kirsan": "politicians",
+    "guinness book": "books",
+    "bulgarian academy": "government_agencies",
+    "french academy": "government_agencies",
+    "george h": "politicians"
   },
   "falsePositives": {
     "gps_coordinates:24-95": {
