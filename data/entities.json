@@ -4681,40 +4681,6 @@
     ]
   },
   {
-    "id": "professors:diana-pasulka",
-    "name": "Diana Pasulka",
-    "canonical_name": "Diana Pasulka",
-    "category": "professors",
-    "category_label": "Professors",
-    "count": 13,
-    "confidence": 0.591,
-    "transcripts": [
-      "Aliens Invented Religion To Control Huma",
-      "Cia Chief Im A Time Traveler",
-      "Jeffrey Epstein Aliens The Global Sata",
-      "Nasa Whistleblower We Systematically Sup",
-      "The Man Sitting On More Ufo Evidence Tha",
-      "We Captured A 12 Foot Giant In Afghanist",
-      "Why Nasa Studies This Man He Attracts Uf",
-      "Why The Pentagon Tried To Censor This Uf"
-    ],
-    "significance": "Diana Pasulka appears as professors with 13 mention(s) across 8 transcripts; detected by gazetteer, heuristic:person_name.",
-    "detectors": [
-      "gazetteer",
-      "heuristic:person_name"
-    ],
-    "evidence_ids": [
-      "m-0002123",
-      "m-0002124",
-      "m-0012459",
-      "m-0000713",
-      "m-0006802",
-      "m-0008549",
-      "m-0010219",
-      "m-0011751"
-    ]
-  },
-  {
     "id": "research_groups:mufon",
     "name": "MUFON",
     "canonical_name": "MUFON",
@@ -5808,6 +5774,38 @@
       "m-0012596",
       "m-0012722",
       "m-0012723"
+    ]
+  },
+  {
+    "id": "people:diana-basoka",
+    "name": "Diana Basoka",
+    "canonical_name": "Diana Basoka",
+    "category": "people",
+    "category_label": "People",
+    "count": 10,
+    "confidence": 0.54,
+    "transcripts": [
+      "Aliens Invented Religion To Control Huma",
+      "Jeffrey Epstein Aliens The Global Sata",
+      "Nasa Whistleblower We Systematically Sup",
+      "The Man Sitting On More Ufo Evidence Tha",
+      "We Captured A 12 Foot Giant In Afghanist",
+      "Why Nasa Studies This Man He Attracts Uf",
+      "Why The Pentagon Tried To Censor This Uf"
+    ],
+    "significance": "Diana Basoka appears as people with 10 mention(s) across 7 transcripts; detected by heuristic:person_name.",
+    "detectors": [
+      "heuristic:person_name"
+    ],
+    "evidence_ids": [
+      "m-0000713",
+      "m-0006802",
+      "m-0008549",
+      "m-0010219",
+      "m-0011751",
+      "m-0012408",
+      "m-0012411",
+      "m-0012562"
     ]
   },
   {
@@ -14426,6 +14424,28 @@
     ]
   },
   {
+    "id": "experiencers:diana-pasolka",
+    "name": "Diana Pasolka",
+    "canonical_name": "Diana Pasolka",
+    "category": "experiencers",
+    "category_label": "Experiencers",
+    "count": 3,
+    "confidence": 0.633,
+    "transcripts": [
+      "Hollywood The Cia And Ufos The History Bey",
+      "Why Nasa Studies This Man He Attracts Uf"
+    ],
+    "significance": "Diana Pasolka appears as experiencers with 3 mention(s) across 2 transcripts; detected by heuristic:person_name.",
+    "detectors": [
+      "heuristic:person_name"
+    ],
+    "evidence_ids": [
+      "m-0005017",
+      "m-0012336",
+      "m-0012589"
+    ]
+  },
+  {
     "id": "experiencers:eric-davis",
     "name": "Eric Davis",
     "canonical_name": "Eric Davis",
@@ -18684,6 +18704,29 @@
     ]
   },
   {
+    "id": "professors:diana-pasulka",
+    "name": "Diana Pasulka",
+    "canonical_name": "Diana Pasulka",
+    "category": "professors",
+    "category_label": "Professors",
+    "count": 3,
+    "confidence": 0.713,
+    "transcripts": [
+      "Cia Chief Im A Time Traveler",
+      "Jeffrey Epstein Aliens The Global Sata"
+    ],
+    "significance": "Diana Pasulka appears as professors with 3 mention(s) across 2 transcripts; detected by gazetteer, heuristic:person_name.",
+    "detectors": [
+      "gazetteer",
+      "heuristic:person_name"
+    ],
+    "evidence_ids": [
+      "m-0002123",
+      "m-0002124",
+      "m-0006923"
+    ]
+  },
+  {
     "id": "professors:eric-hazeltine",
     "name": "Eric Hazeltine",
     "canonical_name": "Eric Hazeltine",
@@ -19473,27 +19516,6 @@
     "evidence_ids": [
       "m-0001381",
       "m-0001550"
-    ]
-  },
-  {
-    "id": "experiencers:diana-pasolka",
-    "name": "Diana Pasolka",
-    "canonical_name": "Diana Pasolka",
-    "category": "experiencers",
-    "category_label": "Experiencers",
-    "count": 2,
-    "confidence": 0.68,
-    "transcripts": [
-      "Hollywood The Cia And Ufos The History Bey",
-      "Why Nasa Studies This Man He Attracts Uf"
-    ],
-    "significance": "Diana Pasolka appears as experiencers with 2 mention(s) across 2 transcripts; detected by heuristic:person_name.",
-    "detectors": [
-      "heuristic:person_name"
-    ],
-    "evidence_ids": [
-      "m-0005017",
-      "m-0012336"
     ]
   },
   {
@@ -22918,6 +22940,26 @@
     "evidence_ids": [
       "m-0011440",
       "m-0011446"
+    ]
+  },
+  {
+    "id": "people:diana-pasolka",
+    "name": "Diana Pasolka",
+    "canonical_name": "Diana Pasolka",
+    "category": "people",
+    "category_label": "People",
+    "count": 2,
+    "confidence": 0.61,
+    "transcripts": [
+      "Why Nasa Studies This Man He Attracts Uf"
+    ],
+    "significance": "Diana Pasolka appears as people with 2 mention(s) across 1 transcript; detected by heuristic:person_name.",
+    "detectors": [
+      "heuristic:person_name"
+    ],
+    "evidence_ids": [
+      "m-0012459",
+      "m-0012402"
     ]
   },
   {
@@ -29770,6 +29812,25 @@
     ],
     "evidence_ids": [
       "m-0008277"
+    ]
+  },
+  {
+    "id": "books:book-of-enoch",
+    "name": "Book of Enoch",
+    "canonical_name": "Book of Enoch",
+    "category": "books",
+    "category_label": "Books",
+    "count": 1,
+    "confidence": 0.54,
+    "transcripts": [
+      "Aliens Invented Religion To Control Huma"
+    ],
+    "significance": "Book of Enoch appears as books with 1 mention(s) across 1 transcript; detected by heuristic:person_name.",
+    "detectors": [
+      "heuristic:person_name"
+    ],
+    "evidence_ids": [
+      "m-0000712"
     ]
   },
   {
@@ -44137,25 +44198,6 @@
     ]
   },
   {
-    "id": "people:book-of-enoch",
-    "name": "Book of Enoch",
-    "canonical_name": "Book of Enoch",
-    "category": "people",
-    "category_label": "People",
-    "count": 1,
-    "confidence": 0.54,
-    "transcripts": [
-      "Aliens Invented Religion To Control Huma"
-    ],
-    "significance": "Book of Enoch appears as people with 1 mention(s) across 1 transcript; detected by heuristic:person_name.",
-    "detectors": [
-      "heuristic:person_name"
-    ],
-    "evidence_ids": [
-      "m-0000712"
-    ]
-  },
-  {
     "id": "people:booz-allen-hamilton",
     "name": "Booz Allen Hamilton",
     "canonical_name": "Booz Allen Hamilton",
@@ -47611,63 +47653,6 @@
     ],
     "evidence_ids": [
       "m-0003702"
-    ]
-  },
-  {
-    "id": "people:diana-basoka",
-    "name": "Diana Basoka",
-    "canonical_name": "Diana Basoka",
-    "category": "people",
-    "category_label": "People",
-    "count": 1,
-    "confidence": 0.54,
-    "transcripts": [
-      "Jeffrey Epstein Aliens The Global Sata"
-    ],
-    "significance": "Diana Basoka appears as people with 1 mention(s) across 1 transcript; detected by heuristic:person_name.",
-    "detectors": [
-      "heuristic:person_name"
-    ],
-    "evidence_ids": [
-      "m-0006923"
-    ]
-  },
-  {
-    "id": "people:diana-pasolka",
-    "name": "Diana Pasolka",
-    "canonical_name": "Diana Pasolka",
-    "category": "people",
-    "category_label": "People",
-    "count": 1,
-    "confidence": 0.54,
-    "transcripts": [
-      "Why Nasa Studies This Man He Attracts Uf"
-    ],
-    "significance": "Diana Pasolka appears as people with 1 mention(s) across 1 transcript; detected by heuristic:person_name.",
-    "detectors": [
-      "heuristic:person_name"
-    ],
-    "evidence_ids": [
-      "m-0012402"
-    ]
-  },
-  {
-    "id": "people:diana-posolka",
-    "name": "Diana Posolka",
-    "canonical_name": "Diana Posolka",
-    "category": "people",
-    "category_label": "People",
-    "count": 1,
-    "confidence": 0.54,
-    "transcripts": [
-      "Why Nasa Studies This Man He Attracts Uf"
-    ],
-    "significance": "Diana Posolka appears as people with 1 mention(s) across 1 transcript; detected by heuristic:person_name.",
-    "detectors": [
-      "heuristic:person_name"
-    ],
-    "evidence_ids": [
-      "m-0012589"
     ]
   },
   {
