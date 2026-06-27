@@ -22,7 +22,11 @@
     "people:old-testament": "religious_texts",
     "people:new-testament": "religious_texts",
     "people:santa-barbara": "locations",
-    "people:los-angeles": "locations"
+    "people:los-angeles": "locations",
+    "professors:ross-coldhart": "journalists",
+    "people:secret-mountain": "locations",
+    "people:giza-plateau": "locations",
+    "people:oak-ridge": "locations"
   },
   "nameReclassifications": {
     "extra low frequency": "emerging_terminology",
@@ -47,7 +51,11 @@
     "dark skies": "tv_shows",
     "star wars": "movies",
     "santa barbara": "locations",
-    "los angeles": "locations"
+    "los angeles": "locations",
+    "ross coldhart": "journalists",
+    "secret mountain": "locations",
+    "giza plateau": "locations",
+    "oak ridge": "locations"
   },
   "falsePositives": {
     "gps_coordinates:24-95": {
@@ -459,6 +467,11 @@
       "name": "Mon.aisy",
       "category": "websites",
       "categoryLabel": "Websites"
+    },
+    "friendly_people:darth-vader": {
+      "name": "Darth Vader",
+      "category": "friendly_people",
+      "categoryLabel": "Friendly people"
     }
   },
   "omissions": {},
@@ -487,6 +500,86 @@
       "targetId": "military_bases:vandenberg-air-force-base",
       "targetName": "Vandenberg Air Force Base",
       "targetCategory": "military_bases"
+    },
+    "journalists:george-knapp": {
+      "sourceId": "journalists:george-knapp",
+      "sourceName": "George Knapp",
+      "sourceCategory": "journalists",
+      "targetId": "whistleblowers:george-knapp",
+      "targetName": "George Knapp",
+      "targetCategory": "whistleblowers"
+    },
+    "whistleblowers:george-knapp": {
+      "sourceId": "whistleblowers:george-knapp",
+      "sourceName": "George Knapp",
+      "sourceCategory": "whistleblowers",
+      "targetId": "whistleblowers:bob-lazar",
+      "targetName": "Bob Lazar",
+      "targetCategory": "whistleblowers"
+    },
+    "chemical_elements:bismuth": {
+      "sourceId": "chemical_elements:bismuth",
+      "sourceName": "bismuth",
+      "sourceCategory": "chemical_elements",
+      "targetId": "materials:bismuth",
+      "targetName": "bismuth",
+      "targetCategory": "materials"
+    },
+    "chemical_elements:magnesium": {
+      "sourceId": "chemical_elements:magnesium",
+      "sourceName": "magnesium",
+      "sourceCategory": "chemical_elements",
+      "targetId": "materials:magnesium",
+      "targetName": "magnesium",
+      "targetCategory": "materials"
+    },
+    "people:harold-malmgren": {
+      "sourceId": "people:harold-malmgren",
+      "sourceName": "Harold Malmgren",
+      "sourceCategory": "people",
+      "targetId": "friendly_people:harold-malmgren",
+      "targetName": "Harold Malmgren",
+      "targetCategory": "friendly_people"
+    },
+    "whistleblowers:david-grush": {
+      "sourceId": "whistleblowers:david-grush",
+      "sourceName": "David Grush",
+      "sourceCategory": "whistleblowers",
+      "targetId": "people:dave-grush",
+      "targetName": "Dave Grush",
+      "targetCategory": "people"
+    },
+    "people:so-david-grush": {
+      "sourceId": "people:so-david-grush",
+      "sourceName": "So David Grush",
+      "sourceCategory": "people",
+      "targetId": "people:dave-grush",
+      "targetName": "Dave Grush",
+      "targetCategory": "people"
+    },
+    "alien_species:grey": {
+      "sourceId": "alien_species:grey",
+      "sourceName": "grey",
+      "sourceCategory": "alien_species",
+      "targetId": "alien_species:greys",
+      "targetName": "greys",
+      "targetCategory": "alien_species"
+    },
+    "government_project_codenames:mkultra": {
+      "sourceId": "government_project_codenames:mkultra",
+      "sourceName": "MKUltra",
+      "sourceCategory": "government_project_codenames",
+      "targetId": "government_project_codenames:mk-ultra",
+      "targetName": "MK ultra",
+      "targetCategory": "government_project_codenames"
+    },
+    "document_names:mj-12": {
+      "sourceId": "document_names:mj-12",
+      "sourceName": "MJ-12",
+      "sourceCategory": "document_names",
+      "targetId": "document_names:majestic-12",
+      "targetName": "majestic 12",
+      "targetCategory": "document_names"
     }
   },
   "nameMerges": {
@@ -513,9 +606,81 @@
       "targetId": "military_bases:vandenberg-air-force-base",
       "targetName": "Vandenberg Air Force Base",
       "targetCategory": "military_bases"
+    },
+    "george knapp": {
+      "sourceId": "whistleblowers:george-knapp",
+      "sourceName": "George Knapp",
+      "sourceCategory": "whistleblowers",
+      "targetId": "whistleblowers:bob-lazar",
+      "targetName": "Bob Lazar",
+      "targetCategory": "whistleblowers"
+    },
+    "bismuth": {
+      "sourceId": "chemical_elements:bismuth",
+      "sourceName": "bismuth",
+      "sourceCategory": "chemical_elements",
+      "targetId": "materials:bismuth",
+      "targetName": "bismuth",
+      "targetCategory": "materials"
+    },
+    "magnesium": {
+      "sourceId": "chemical_elements:magnesium",
+      "sourceName": "magnesium",
+      "sourceCategory": "chemical_elements",
+      "targetId": "materials:magnesium",
+      "targetName": "magnesium",
+      "targetCategory": "materials"
+    },
+    "harold malmgren": {
+      "sourceId": "people:harold-malmgren",
+      "sourceName": "Harold Malmgren",
+      "sourceCategory": "people",
+      "targetId": "friendly_people:harold-malmgren",
+      "targetName": "Harold Malmgren",
+      "targetCategory": "friendly_people"
+    },
+    "david grush": {
+      "sourceId": "whistleblowers:david-grush",
+      "sourceName": "David Grush",
+      "sourceCategory": "whistleblowers",
+      "targetId": "people:dave-grush",
+      "targetName": "Dave Grush",
+      "targetCategory": "people"
+    },
+    "so david grush": {
+      "sourceId": "people:so-david-grush",
+      "sourceName": "So David Grush",
+      "sourceCategory": "people",
+      "targetId": "people:dave-grush",
+      "targetName": "Dave Grush",
+      "targetCategory": "people"
+    },
+    "grey": {
+      "sourceId": "alien_species:grey",
+      "sourceName": "grey",
+      "sourceCategory": "alien_species",
+      "targetId": "alien_species:greys",
+      "targetName": "greys",
+      "targetCategory": "alien_species"
+    },
+    "mkultra": {
+      "sourceId": "government_project_codenames:mkultra",
+      "sourceName": "MKUltra",
+      "sourceCategory": "government_project_codenames",
+      "targetId": "government_project_codenames:mk-ultra",
+      "targetName": "MK ultra",
+      "targetCategory": "government_project_codenames"
+    },
+    "mj 12": {
+      "sourceId": "document_names:mj-12",
+      "sourceName": "MJ-12",
+      "sourceCategory": "document_names",
+      "targetId": "document_names:majestic-12",
+      "targetName": "majestic 12",
+      "targetCategory": "document_names"
     }
   },
   "notes": {},
-  "generatedAt": "2026-06-27T00:08:35.670Z",
+  "generatedAt": "2026-06-27T00:48:39.526Z",
   "note": "Replace data/reclass.json with this file before rebuilding."
 }
