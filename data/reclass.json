@@ -159,7 +159,12 @@
     "people:in-portsmouth": "locations",
     "people:hawley-engineering-building": "university_departments",
     "friendly_people:philip-j-corso": "people",
-    "people:in-enoch": "books"
+    "people:in-enoch": "books",
+    "people:cold-war": "events",
+    "people:on-october": "dates_times",
+    "experiencers:phoenix-lights": "events",
+    "people:sunset-drive": "locations",
+    "people:in-january": "dates_times"
   },
   "nameReclassifications": {
     "extra low frequency": "emerging_terminology",
@@ -352,7 +357,12 @@
     "in portsmouth": "locations",
     "philip j corso": "people",
     "book of enoch": "books",
-    "in enoch": "books"
+    "in enoch": "books",
+    "cold war": "events",
+    "october 30, 1993": "dates_times",
+    "phoenix lights": "events",
+    "sunset drive": "locations",
+    "in january": "dates_times"
   },
   "falsePositives": {
     "gps_coordinates:24-95": {
@@ -864,6 +874,16 @@
       "name": "Nissan Sentra",
       "category": "people",
       "categoryLabel": "People"
+    },
+    "people:forrest-gump": {
+      "name": "Forrest Gump",
+      "category": "people",
+      "categoryLabel": "People"
+    },
+    "people:spielberg-amblin": {
+      "name": "Spielberg Amblin",
+      "category": "people",
+      "categoryLabel": "People"
     }
   },
   "omissions": {},
@@ -939,7 +959,11 @@
     "people:on-december": "December 20, 2025",
     "on december": "December 20, 2025",
     "people:in-portsmouth": "Portsmouth",
-    "in portsmouth": "Portsmouth"
+    "in portsmouth": "Portsmouth",
+    "people:on-october": "October 30, 1993",
+    "on october": "October 30, 1993",
+    "people:in-january": "January, 2007",
+    "in january": "January, 2007"
   },
   "merges": {
     "whistleblowers:robert-lazar": {
@@ -2109,6 +2133,118 @@
       "targetId": "professors:diana-pasulka",
       "targetName": "Diana Pasulka",
       "targetCategory": "professors"
+    },
+    "people:bob-jacobs": {
+      "sourceId": "people:bob-jacobs",
+      "sourceName": "Bob Jacobs",
+      "sourceCategory": "people",
+      "targetId": "people:so-jacobs",
+      "targetName": "So Jacobs",
+      "targetCategory": "people"
+    },
+    "people:jack-ruby": {
+      "sourceId": "people:jack-ruby",
+      "sourceName": "Jack Ruby",
+      "sourceCategory": "people",
+      "targetId": "dangerous_people:jack-ruby",
+      "targetName": "Jack Ruby",
+      "targetCategory": "dangerous_people"
+    },
+    "dangerous_people:jack-ruby": {
+      "sourceId": "dangerous_people:jack-ruby",
+      "sourceName": "Jack Ruby",
+      "sourceCategory": "dangerous_people",
+      "targetId": "friendly_people:jack-ruby",
+      "targetName": "Jack Ruby",
+      "targetCategory": "friendly_people"
+    },
+    "friendly_people:jack-ruby": {
+      "sourceId": "friendly_people:jack-ruby",
+      "sourceName": "Jack Ruby",
+      "sourceCategory": "friendly_people",
+      "targetId": "dangerous_people:so-jack-ruby",
+      "targetName": "So Jack Ruby",
+      "targetCategory": "dangerous_people"
+    },
+    "people:timothy-taylor": {
+      "sourceId": "people:timothy-taylor",
+      "sourceName": "Timothy Taylor",
+      "sourceCategory": "people",
+      "targetId": "people:tim-taylor",
+      "targetName": "Tim Taylor",
+      "targetCategory": "people"
+    },
+    "experiencers:barack-obama": {
+      "sourceId": "experiencers:barack-obama",
+      "sourceName": "Barack Obama",
+      "sourceCategory": "experiencers",
+      "targetId": "people:barack-obama",
+      "targetName": "Barack Obama",
+      "targetCategory": "people"
+    },
+    "people:linda-moulton": {
+      "sourceId": "people:linda-moulton",
+      "sourceName": "Linda Moulton",
+      "sourceCategory": "people",
+      "targetId": "people:linda-moultonow",
+      "targetName": "Linda Moultonow",
+      "targetCategory": "people"
+    },
+    "people:linda-moultonow": {
+      "sourceId": "people:linda-moultonow",
+      "sourceName": "Linda Moultonow",
+      "sourceCategory": "people",
+      "targetId": "people:linda-moulton-howe",
+      "targetName": "Linda Moulton Howe",
+      "targetCategory": "people"
+    },
+    "locations:los-alamos": {
+      "sourceId": "locations:los-alamos",
+      "sourceName": "Los Alamos",
+      "sourceCategory": "locations",
+      "targetId": "research_groups:los-alamos-national-labs",
+      "targetName": "Los Alamos National Labs",
+      "targetCategory": "research_groups"
+    },
+    "research_groups:los-alamos-national-labs": {
+      "sourceId": "research_groups:los-alamos-national-labs",
+      "sourceName": "Los Alamos National Labs",
+      "sourceCategory": "research_groups",
+      "targetId": "research_groups:los-alamos-national-lab",
+      "targetName": "Los Alamos National Lab",
+      "targetCategory": "research_groups"
+    },
+    "research_groups:los-alamos-national-lab": {
+      "sourceId": "research_groups:los-alamos-national-lab",
+      "sourceName": "Los Alamos National Lab",
+      "sourceCategory": "research_groups",
+      "targetId": "research_groups:los-alamos-national-laboratory",
+      "targetName": "Los Alamos National Laboratory",
+      "targetCategory": "research_groups"
+    },
+    "people:no-casillas": {
+      "sourceId": "people:no-casillas",
+      "sourceName": "No Casillas",
+      "sourceCategory": "people",
+      "targetId": "people:melissa-casillas",
+      "targetName": "Melissa Casillas",
+      "targetCategory": "people"
+    },
+    "people:so-edward-teller": {
+      "sourceId": "people:so-edward-teller",
+      "sourceName": "So Edward Teller",
+      "sourceCategory": "people",
+      "targetId": "people:edward-teller",
+      "targetName": "Edward Teller",
+      "targetCategory": "people"
+    },
+    "people:christopher-bledsoe": {
+      "sourceId": "people:christopher-bledsoe",
+      "sourceName": "Christopher Bledsoe",
+      "sourceCategory": "people",
+      "targetId": "experiencers:chris-bledsoe",
+      "targetName": "Chris Bledsoe",
+      "targetCategory": "experiencers"
     }
   },
   "nameMerges": {
@@ -3103,9 +3239,105 @@
       "targetId": "professors:diana-pasulka",
       "targetName": "Diana Pasulka",
       "targetCategory": "professors"
+    },
+    "bob jacobs": {
+      "sourceId": "people:bob-jacobs",
+      "sourceName": "Bob Jacobs",
+      "sourceCategory": "people",
+      "targetId": "people:so-jacobs",
+      "targetName": "So Jacobs",
+      "targetCategory": "people"
+    },
+    "jack ruby": {
+      "sourceId": "friendly_people:jack-ruby",
+      "sourceName": "Jack Ruby",
+      "sourceCategory": "friendly_people",
+      "targetId": "dangerous_people:so-jack-ruby",
+      "targetName": "So Jack Ruby",
+      "targetCategory": "dangerous_people"
+    },
+    "timothy taylor": {
+      "sourceId": "people:timothy-taylor",
+      "sourceName": "Timothy Taylor",
+      "sourceCategory": "people",
+      "targetId": "people:tim-taylor",
+      "targetName": "Tim Taylor",
+      "targetCategory": "people"
+    },
+    "barack obama": {
+      "sourceId": "experiencers:barack-obama",
+      "sourceName": "Barack Obama",
+      "sourceCategory": "experiencers",
+      "targetId": "people:barack-obama",
+      "targetName": "Barack Obama",
+      "targetCategory": "people"
+    },
+    "linda moulton": {
+      "sourceId": "people:linda-moulton",
+      "sourceName": "Linda Moulton",
+      "sourceCategory": "people",
+      "targetId": "people:linda-moultonow",
+      "targetName": "Linda Moultonow",
+      "targetCategory": "people"
+    },
+    "linda moultonow": {
+      "sourceId": "people:linda-moultonow",
+      "sourceName": "Linda Moultonow",
+      "sourceCategory": "people",
+      "targetId": "people:linda-moulton-howe",
+      "targetName": "Linda Moulton Howe",
+      "targetCategory": "people"
+    },
+    "los alamos": {
+      "sourceId": "locations:los-alamos",
+      "sourceName": "Los Alamos",
+      "sourceCategory": "locations",
+      "targetId": "research_groups:los-alamos-national-labs",
+      "targetName": "Los Alamos National Labs",
+      "targetCategory": "research_groups"
+    },
+    "los alamos national labs": {
+      "sourceId": "research_groups:los-alamos-national-labs",
+      "sourceName": "Los Alamos National Labs",
+      "sourceCategory": "research_groups",
+      "targetId": "research_groups:los-alamos-national-lab",
+      "targetName": "Los Alamos National Lab",
+      "targetCategory": "research_groups"
+    },
+    "los alamos national lab": {
+      "sourceId": "research_groups:los-alamos-national-lab",
+      "sourceName": "Los Alamos National Lab",
+      "sourceCategory": "research_groups",
+      "targetId": "research_groups:los-alamos-national-laboratory",
+      "targetName": "Los Alamos National Laboratory",
+      "targetCategory": "research_groups"
+    },
+    "no casillas": {
+      "sourceId": "people:no-casillas",
+      "sourceName": "No Casillas",
+      "sourceCategory": "people",
+      "targetId": "people:melissa-casillas",
+      "targetName": "Melissa Casillas",
+      "targetCategory": "people"
+    },
+    "so edward teller": {
+      "sourceId": "people:so-edward-teller",
+      "sourceName": "So Edward Teller",
+      "sourceCategory": "people",
+      "targetId": "people:edward-teller",
+      "targetName": "Edward Teller",
+      "targetCategory": "people"
+    },
+    "christopher bledsoe": {
+      "sourceId": "people:christopher-bledsoe",
+      "sourceName": "Christopher Bledsoe",
+      "sourceCategory": "people",
+      "targetId": "experiencers:chris-bledsoe",
+      "targetName": "Chris Bledsoe",
+      "targetCategory": "experiencers"
     }
   },
   "notes": {},
-  "generatedAt": "2026-06-27T08:57:44.070888Z",
-  "note": "Merged from PR #16 without deleting existing reclassification history. Replace data/reclass.json with downloaded app exports only after preserving existing keys."
+  "generatedAt": "2026-06-27T17:30:32.492Z",
+  "note": "Replace data/reclass.json with this file before rebuilding."
 }
