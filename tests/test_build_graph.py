@@ -75,6 +75,36 @@ class BuildGraphParsingTests(unittest.TestCase):
         self.assertEqual(reviewed[0].name, "DOE")
         self.assertEqual(reviewed[0].entity_id, "people:doe")
 
+    def test_person_heuristic_skips_us_service_fragments(self) -> None:
+        segment = build_graph.Segment(
+            id="s-1",
+            transcript_id="t-1",
+            transcript_title="Sample",
+            source_file="sample.txt",
+            start_ms=0,
+            end_ms=1000,
+            text="The U.S. Army and U.S. Navy reviewed the U.S. Air Force report.",
+        )
+        names = {item["name"] for item in build_graph.person_mentions(segment, set())}
+        self.assertNotIn("S. Army", names)
+        self.assertNotIn("S. Navy", names)
+        self.assertNotIn("S. Air Force", names)
+
+    def test_organization_shaped_names_do_not_become_people(self) -> None:
+        segment = build_graph.Segment(
+            id="s-1",
+            transcript_id="t-1",
+            transcript_title="Sample",
+            source_file="sample.txt",
+            start_ms=0,
+            end_ms=1000,
+            text="New York Times covered Battelle Memorial Institute and Intelligence Officers in the report.",
+        )
+        categories = {item["name"]: item["category"] for item in build_graph.person_mentions(segment, set())}
+        self.assertEqual(categories["New York Times"], "newsrooms")
+        self.assertEqual(categories["Battelle Memorial Institute"], "institutes")
+        self.assertEqual(categories["Intelligence Officers"], "government_agencies")
+
 
 if __name__ == "__main__":
     unittest.main()

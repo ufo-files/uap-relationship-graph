@@ -1,0 +1,44 @@
+1
+00:00:00,000 --> 00:00:22,000
+I have some more of the white particles in view below the capsule. They appear to be traveling exactly my speed. There is one drifting off. It's going faster than I am, as a matter of fact.
+
+2
+00:00:22,000 --> 00:00:40,000
+Roger. Understand. I haven't seen the great numbers of these particles, but I have seen a few of them. Their motion is random. They look exactly like snowflakes to me.
+
+3
+00:00:40,000 --> 00:00:50,000
+Roger. Have you tried returning? Negative. Let me get within scanner limits first.
+
+4
+00:00:50,000 --> 00:01:00,000
+Say yes. I must adjust my attitude to within scanner limits first.
+
+5
+00:01:00,000 --> 00:01:02,000
+Roger.
+
+6
+00:01:20,000 --> 00:01:38,000
+There were some more of those little particles. They definitely look like snowflakes this time.
+
+7
+00:01:38,000 --> 00:01:46,000
+Roger. I understand your particles look like definite snowflakes. However...
+
+8
+00:01:46,000 --> 00:01:48,000
+Mr. Scott? Roger.
+
+9
+00:01:48,000 --> 00:01:56,000
+Mr. Scott?
+
+10
+00:01:56,000 --> 00:01:58,000
+Mr. Scott?
+
+11
+00:01:58,000 --> 00:02:00,000
+Mr. Scott?
+

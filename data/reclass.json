@@ -52,12 +52,12 @@
     "friendly_people:bell-labs": "research_groups",
     "people:air-force-research-lab": "government_agencies",
     "experiencers:john-alexander": "people",
-    "politicians:wall-street-journal": "journalists",
-    "people:washington-post": "journalists",
+    "politicians:wall-street-journal": "newsrooms",
+    "people:washington-post": "newsrooms",
     "people:west-virginia": "locations",
     "people:greenbrier-inn": "locations",
-    "people:russia-today": "journalists",
-    "people:al-jazeera": "journalists",
+    "people:russia-today": "newsrooms",
+    "people:al-jazeera": "newsrooms",
     "people:city-hall": "locations",
     "people:saint-petersburg": "locations",
     "people:defense-nuclear-security": "government_agencies",
@@ -70,7 +70,48 @@
     "people:commander-david-fravor": "whistleblowers",
     "whistleblowers:george-knapp": "journalists",
     "people:baghdad-phantom": "events",
-    "people:tic-tac": "events"
+    "people:tic-tac": "events",
+    "people:san-francisco": "locations",
+    "friendly_people:national-security-council": "government_agencies",
+    "friendly_people:atomic-energy-commission": "government_agencies",
+    "people:montauk-long-island": "locations",
+    "professors:nazi-germany": "locations",
+    "people:launch-fever": "books",
+    "people:nobel-prize": "institutes",
+    "people:between-september": "events",
+    "likely_spies:on-march": "dates_times",
+    "friendly_people:public-standards": "government_agencies",
+    "people:space-force": "government_agencies",
+    "people:resolute-sentinel": "government_project_codenames",
+    "people:pine-gap": "locations",
+    "people:fukushima-prefecture": "locations",
+    "people:brookgate-strip-mall": "locations",
+    "people:national-reconnaissance": "government_agencies",
+    "people:acquisition-technology": "government_agencies",
+    "people:third-world-war": "events",
+    "people:rick-doty": "hoaxers",
+    "people:black-world": "emerging_terminology",
+    "people:energy-intelligence": "government_agencies",
+    "people:national-science-foundation": "government_agencies",
+    "research_groups:naval-research-lab": "government_project_codenames",
+    "people:test-wing": "government_agencies",
+    "people:dugway-proving-ground": "military_bases",
+    "people:patuxent-river": "military_bases",
+    "people:china-lake": "military_bases",
+    "people:legacy-program": "government_project_codenames",
+    "politicians:senate-select-committee": "government_agencies",
+    "people:pacific-northwest": "locations",
+    "people:puget-sound": "locations",
+    "people:maury-island": "locations",
+    "people:x-it": "tv_shows",
+    "people:northern-illinois": "locations",
+    "people:big-rock": "locations",
+    "friendly_people:weimar-germany": "locations",
+    "professors:north-carolina-chapel-hill": "universities",
+    "people:eagle-works": "government_agencies",
+    "politicians:united-states-congress": "government_agencies",
+    "people:colorado-springs": "locations",
+    "people:foster-ranch": "locations"
   },
   "nameReclassifications": {
     "extra low frequency": "emerging_terminology",
@@ -128,12 +169,12 @@
     "bell labs": "research_groups",
     "air force research lab": "government_agencies",
     "john alexander": "people",
-    "wall street journal": "journalists",
-    "washington post": "journalists",
+    "wall street journal": "newsrooms",
+    "washington post": "newsrooms",
     "west virginia": "locations",
     "greenbrier inn": "locations",
-    "russia today": "journalists",
-    "al jazeera": "journalists",
+    "russia today": "newsrooms",
+    "al jazeera": "newsrooms",
     "city hall": "locations",
     "saint petersburg": "locations",
     "defense nuclear security": "government_agencies",
@@ -150,7 +191,63 @@
     "george knapp": "journalists",
     "baghdad phantom": "events",
     "tic tac": "events",
-    "s army": "government_agencies"
+    "s army": "government_agencies",
+    "san francisco": "locations",
+    "national security council": "government_agencies",
+    "atomic energy commission": "government_agencies",
+    "montauk long island": "locations",
+    "nazi germany": "locations",
+    "launch fever": "books",
+    "nobel prize": "institutes",
+    "malmstrom base": "military_bases",
+    "lost missiles": "events",
+    "march 24th, 1967": "dates_times",
+    "harvard observatory": "university_departments",
+    "bureau of public standards": "government_agencies",
+    "united states space force": "government_agencies",
+    "resolute sentinel": "government_project_codenames",
+    "pine gap": "locations",
+    "fukushima prefecture": "locations",
+    "brook park strip mall": "locations",
+    "brook park": "locations",
+    "brookgate strip mall": "locations",
+    "national reconnaissance office": "government_agencies",
+    "acquisition technology": "government_agencies",
+    "third world war": "events",
+    "rick doty": "hoaxers",
+    "black world": "emerging_terminology",
+    "energy intelligence": "government_agencies",
+    "defense advanced research project": "government_agencies",
+    "national science foundation": "government_agencies",
+    "naval research": "government_agencies",
+    "naval research lab": "government_project_codenames",
+    "test wing": "government_agencies",
+    "dugway proving ground": "military_bases",
+    "patuxent river": "military_bases",
+    "china lake": "military_bases",
+    "legacy program": "government_project_codenames",
+    "senate select committee": "government_agencies",
+    "pacific northwest": "locations",
+    "puget sound": "locations",
+    "maury island": "locations",
+    "x-files": "tv_shows",
+    "northern illinois": "locations",
+    "big rock": "locations",
+    "weimar, germany": "locations",
+    "north carolina chapel hill": "universities",
+    "when roswell": "locations",
+    "nasa eagle works": "government_agencies",
+    "united states congress": "government_agencies",
+    "colorado springs": "locations",
+    "foster ranch": "locations",
+    "between september": "events",
+    "on march": "dates_times",
+    "public standards": "government_agencies",
+    "space force": "government_agencies",
+    "national reconnaissance": "government_agencies",
+    "x it": "tv_shows",
+    "weimar germany": "locations",
+    "eagle works": "government_agencies"
   },
   "falsePositives": {
     "gps_coordinates:24-95": {
@@ -577,10 +674,105 @@
       "name": "Aerospace Corporation",
       "category": "people",
       "categoryLabel": "People"
+    },
+    "people:s-so": {
+      "name": "S. So",
+      "category": "people",
+      "categoryLabel": "People"
+    },
+    "people:founded-area": {
+      "name": "Founded Area",
+      "category": "people",
+      "categoryLabel": "People"
+    },
+    "people:lieutenant-colonel": {
+      "name": "Lieutenant Colonel",
+      "category": "people",
+      "categoryLabel": "People"
+    },
+    "people:intelligence-community": {
+      "name": "Intelligence Community",
+      "category": "people",
+      "categoryLabel": "People"
+    },
+    "likely_spies:james-bond": {
+      "name": "James Bond",
+      "category": "likely_spies",
+      "categoryLabel": "Likely spies"
+    },
+    "people:deputy-director": {
+      "name": "Deputy Director",
+      "category": "people",
+      "categoryLabel": "People"
+    },
+    "friendly_people:apparently-dulles": {
+      "name": "Apparently Dulles",
+      "category": "friendly_people",
+      "categoryLabel": "Friendly people"
+    },
+    "people:heil-hitler": {
+      "name": "Heil Hitler",
+      "category": "people",
+      "categoryLabel": "People"
+    },
+    "people:world-championship": {
+      "name": "World Championship",
+      "category": "people",
+      "categoryLabel": "People"
+    },
+    "people:true-classic": {
+      "name": "True Classic",
+      "category": "people",
+      "categoryLabel": "People"
     }
   },
   "omissions": {},
-  "aliases": {},
+  "aliases": {
+    "government_agencies:u-s-army": "United States Army",
+    "u s army": "United States Army",
+    "people:between-september": "Lost Missiles",
+    "between september": "Lost Missiles",
+    "likely_spies:on-march": "March 24th, 1967",
+    "on march": "March 24th, 1967",
+    "friendly_people:public-standards": "Bureau of Public Standards",
+    "public standards": "Bureau of Public Standards",
+    "people:space-force": "United States Space Force",
+    "space force": "United States Space Force",
+    "government_agencies:coast-guard": "United States Coast Guard",
+    "coast guard": "United States Coast Guard",
+    "people:national-reconnaissance": "National Reconnaissance Office",
+    "national reconnaissance": "National Reconnaissance Office",
+    "research_groups:research-center": "John Glenn NASA Research Center",
+    "research center": "John Glenn NASA Research Center",
+    "people:acquisition-technology": "National Intelligence for Acquisition Technology and Facilities",
+    "acquisition technology": "National Intelligence for Acquisition Technology and Facilities",
+    "people:rick-doty": "Richard Doti",
+    "rick doty": "Richard Doti",
+    "people:air-force-colonel-roy": "Colonel Roy Jonkers",
+    "air force colonel roy": "Colonel Roy Jonkers",
+    "people:energy-intelligence": "Office of Intelligence and Counterintelligence",
+    "energy intelligence": "Office of Intelligence and Counterintelligence",
+    "people:intelligence-directorate": "Security and Intelligence Directorate",
+    "intelligence directorate": "Security and Intelligence Directorate",
+    "government_agencies:army-test": "Army Test and Evaluation Command",
+    "army test": "Army Test and Evaluation Command",
+    "people:test-wing": "Edwards 412th Test Wing",
+    "test wing": "Edwards 412th Test Wing",
+    "people:x-it": "X-Files",
+    "x it": "X-Files",
+    "people:with-tom": "Tom DeLonge",
+    "with tom": "Tom DeLonge",
+    "friendly_people:weimar-germany": "Weimar, Germany",
+    "weimar germany": "Weimar, Germany",
+    "people:like-curtis": "Curtis LeMay",
+    "like curtis": "Curtis LeMay",
+    "military_bases:wright-patterson-air-force-base": "Wright-Patterson Air Force Base",
+    "wright patterson air force base": "Wright-Patterson Air Force Base",
+    "people:eagle-works": "NASA Eagle Works",
+    "eagle works": "NASA Eagle Works",
+    "experiencers:diana-pasolka": "Diana Pasulka",
+    "diana pasolka": "Diana Pasulka"
+  },
   "merges": {
     "whistleblowers:robert-lazar": {
       "sourceId": "whistleblowers:robert-lazar",
@@ -1029,6 +1221,382 @@
       "targetId": "people:tic-tac",
       "targetName": "Tic Tac",
       "targetCategory": "people"
+    },
+    "chemicals:dimethyltryptamine": {
+      "sourceId": "chemicals:dimethyltryptamine",
+      "sourceName": "dimethyltryptamine",
+      "sourceCategory": "chemicals",
+      "targetId": "chemicals:dmt",
+      "targetName": "DMT",
+      "targetCategory": "chemicals"
+    },
+    "friendly_people:vice-president-dick-cheney": {
+      "sourceId": "friendly_people:vice-president-dick-cheney",
+      "sourceName": "Vice President Dick Cheney",
+      "sourceCategory": "friendly_people",
+      "targetId": "people:dick-cheney",
+      "targetName": "Dick Cheney",
+      "targetCategory": "people"
+    },
+    "people:vice-president-dick-cheney": {
+      "sourceId": "people:vice-president-dick-cheney",
+      "sourceName": "Vice President Dick Cheney",
+      "sourceCategory": "people",
+      "targetId": "people:dick-cheney",
+      "targetName": "Dick Cheney",
+      "targetCategory": "people"
+    },
+    "newsrooms:wall-street-journal": {
+      "sourceId": "newsrooms:wall-street-journal",
+      "sourceName": "Wall Street Journal",
+      "sourceCategory": "newsrooms",
+      "targetId": "newsrooms:the-wall-street-journal",
+      "targetName": "the Wall Street Journal",
+      "targetCategory": "newsrooms"
+    },
+    "newsrooms:new-york-times": {
+      "sourceId": "newsrooms:new-york-times",
+      "sourceName": "New York Times",
+      "sourceCategory": "newsrooms",
+      "targetId": "newsrooms:the-new-york-times",
+      "targetName": "the new york times",
+      "targetCategory": "newsrooms"
+    },
+    "government_agencies:air-force": {
+      "sourceId": "government_agencies:air-force",
+      "sourceName": "Air Force",
+      "sourceCategory": "government_agencies",
+      "targetId": "government_agencies:united-states-air-force",
+      "targetName": "United States Air Force",
+      "targetCategory": "government_agencies"
+    },
+    "government_agencies:u-s-air-force": {
+      "sourceId": "government_agencies:u-s-air-force",
+      "sourceName": "U.S. Air Force",
+      "sourceCategory": "government_agencies",
+      "targetId": "government_agencies:united-states-air-force",
+      "targetName": "United States Air Force",
+      "targetCategory": "government_agencies"
+    },
+    "government_agencies:cia": {
+      "sourceId": "government_agencies:cia",
+      "sourceName": "CIA",
+      "sourceCategory": "government_agencies",
+      "targetId": "government_agencies:central-intelligence-agency",
+      "targetName": "Central Intelligence Agency",
+      "targetCategory": "government_agencies"
+    },
+    "government_agencies:u-s-navy": {
+      "sourceId": "government_agencies:u-s-navy",
+      "sourceName": "U.S. Navy",
+      "sourceCategory": "government_agencies",
+      "targetId": "government_agencies:united-states-navy",
+      "targetName": "united states navy",
+      "targetCategory": "government_agencies"
+    },
+    "people:bob-hastings": {
+      "sourceId": "people:bob-hastings",
+      "sourceName": "Bob Hastings",
+      "sourceCategory": "people",
+      "targetId": "whistleblowers:robert-hastings",
+      "targetName": "Robert Hastings",
+      "targetCategory": "whistleblowers"
+    },
+    "friendly_people:malmstrom-base": {
+      "sourceId": "friendly_people:malmstrom-base",
+      "sourceName": "Malmstrom Base",
+      "sourceCategory": "military_bases",
+      "targetId": "military_bases:malmstrom-air-force-base",
+      "targetName": "Malmstrom Air Force Base",
+      "targetCategory": "military_bases"
+    },
+    "military_bases:malstrom-air-force-base": {
+      "sourceId": "military_bases:malstrom-air-force-base",
+      "sourceName": "Malstrom Air Force Base",
+      "sourceCategory": "military_bases",
+      "targetId": "military_bases:malmstrom-air-force-base",
+      "targetName": "Malmstrom Air Force Base",
+      "targetCategory": "military_bases"
+    },
+    "people:harvard-observatory": {
+      "sourceId": "people:harvard-observatory",
+      "sourceName": "Harvard Observatory",
+      "sourceCategory": "university_departments",
+      "targetId": "friendly_people:harvard-observatory",
+      "targetName": "Harvard Observatory",
+      "targetCategory": "friendly_people"
+    },
+    "friendly_people:donald-menzel": {
+      "sourceId": "friendly_people:donald-menzel",
+      "sourceName": "Donald Menzel",
+      "sourceCategory": "friendly_people",
+      "targetId": "people:donald-menzel",
+      "targetName": "Donald Menzel",
+      "targetCategory": "people"
+    },
+    "people:donald-menzel": {
+      "sourceId": "people:donald-menzel",
+      "sourceName": "Donald Menzel",
+      "sourceCategory": "people",
+      "targetId": "professors:donald-menzel",
+      "targetName": "Donald Menzel",
+      "targetCategory": "professors"
+    },
+    "government_agencies:nro": {
+      "sourceId": "government_agencies:nro",
+      "sourceName": "NRO",
+      "sourceCategory": "government_agencies",
+      "targetId": "government_agencies:national-reconnaissance-office",
+      "targetName": "National Reconnaissance Office",
+      "targetCategory": "government_agencies"
+    },
+    "government_agencies:national-reconnaissance-office": {
+      "sourceId": "government_agencies:national-reconnaissance-office",
+      "sourceName": "National Reconnaissance Office",
+      "sourceCategory": "government_agencies",
+      "targetId": "people:national-reconnaissance",
+      "targetName": "National Reconnaissance",
+      "targetCategory": "people"
+    },
+    "people:g-he": {
+      "sourceId": "people:g-he",
+      "sourceName": "G. He",
+      "sourceCategory": "people",
+      "targetId": "contractors:eg-g",
+      "targetName": "EG&G",
+      "targetCategory": "contractors"
+    },
+    "military_bases:air-force-base": {
+      "sourceId": "military_bases:air-force-base",
+      "sourceName": "Air Force Base",
+      "sourceCategory": "military_bases",
+      "targetId": "government_agencies:united-states-air-force",
+      "targetName": "United States Air Force",
+      "targetCategory": "government_agencies"
+    },
+    "military_bases:army-base": {
+      "sourceId": "military_bases:army-base",
+      "sourceName": "Army Base",
+      "sourceCategory": "military_bases",
+      "targetId": "government_agencies:u-s-army",
+      "targetName": "United States Army",
+      "targetCategory": "government_agencies"
+    },
+    "friendly_people:brook-park": {
+      "sourceId": "friendly_people:brook-park",
+      "sourceName": "Brook Park",
+      "sourceCategory": "friendly_people",
+      "targetId": "people:brook-park",
+      "targetName": "Brook Park",
+      "targetCategory": "people"
+    },
+    "people:brook-park": {
+      "sourceId": "people:brook-park",
+      "sourceName": "Brook Park",
+      "sourceCategory": "locations",
+      "targetId": "people:brook-park-strip-mall",
+      "targetName": "Brook Park Strip Mall",
+      "targetCategory": "locations"
+    },
+    "people:brook-park-strip-mall": {
+      "sourceId": "people:brook-park-strip-mall",
+      "sourceName": "Brook Park Strip Mall",
+      "sourceCategory": "locations",
+      "targetId": "people:brookgate-strip-mall",
+      "targetName": "Brookgate Strip Mall",
+      "targetCategory": "people"
+    },
+    "people:baba-vanga": {
+      "sourceId": "people:baba-vanga",
+      "sourceName": "Baba Vanga",
+      "sourceCategory": "people",
+      "targetId": "friendly_people:baba-vanga",
+      "targetName": "Baba Vanga",
+      "targetCategory": "friendly_people"
+    },
+    "people:when-john-paul": {
+      "sourceId": "people:when-john-paul",
+      "sourceName": "When John Paul",
+      "sourceCategory": "people",
+      "targetId": "people:john-paul",
+      "targetName": "John Paul",
+      "targetCategory": "people"
+    },
+    "people:his-holiness": {
+      "sourceId": "people:his-holiness",
+      "sourceName": "His Holiness",
+      "sourceCategory": "people",
+      "targetId": "people:john-paul",
+      "targetName": "John Paul",
+      "targetCategory": "people"
+    },
+    "professors:nobel-prize": {
+      "sourceId": "professors:nobel-prize",
+      "sourceName": "Nobel Prize",
+      "sourceCategory": "professors",
+      "targetId": "people:nobel-prize",
+      "targetName": "Nobel Prize",
+      "targetCategory": "institutes"
+    },
+    "government_agencies:dia": {
+      "sourceId": "government_agencies:dia",
+      "sourceName": "DIA",
+      "sourceCategory": "government_agencies",
+      "targetId": "government_agencies:defense-intelligence-agency",
+      "targetName": "Defense Intelligence Agency",
+      "targetCategory": "government_agencies"
+    },
+    "people:defense-advanced-research-project": {
+      "sourceId": "people:defense-advanced-research-project",
+      "sourceName": "Defense Advanced Research Project",
+      "sourceCategory": "government_agencies",
+      "targetId": "government_agencies:darpa",
+      "targetName": "DARPA",
+      "targetCategory": "government_agencies"
+    },
+    "government_agencies:energy-office": {
+      "sourceId": "government_agencies:energy-office",
+      "sourceName": "Energy Office",
+      "sourceCategory": "government_agencies",
+      "targetId": "government_agencies:department-of-energy",
+      "targetName": "Department of Energy",
+      "targetCategory": "government_agencies"
+    },
+    "people:naval-research": {
+      "sourceId": "people:naval-research",
+      "sourceName": "Naval Research",
+      "sourceCategory": "government_agencies",
+      "targetId": "research_groups:naval-research-lab",
+      "targetName": "Naval Research Lab",
+      "targetCategory": "research_groups"
+    },
+    "universities:stanford": {
+      "sourceId": "universities:stanford",
+      "sourceName": "Stanford",
+      "sourceCategory": "universities",
+      "targetId": "universities:stanford-university",
+      "targetName": "Stanford University",
+      "targetCategory": "universities"
+    },
+    "movies:closer-encounters": {
+      "sourceId": "movies:closer-encounters",
+      "sourceName": "Closer Encounters",
+      "sourceCategory": "movies",
+      "targetId": "movies:close-encounters",
+      "targetName": "Close Encounters",
+      "targetCategory": "movies"
+    },
+    "people:nordic-nazi": {
+      "sourceId": "people:nordic-nazi",
+      "sourceName": "Nordic Nazi",
+      "sourceCategory": "people",
+      "targetId": "alien_species:nordic",
+      "targetName": "Nordic",
+      "targetCategory": "alien_species"
+    },
+    "people:these-nordics": {
+      "sourceId": "people:these-nordics",
+      "sourceName": "These Nordics",
+      "sourceCategory": "people",
+      "targetId": "alien_species:nordic",
+      "targetName": "Nordic",
+      "targetCategory": "alien_species"
+    },
+    "people:so-brown": {
+      "sourceId": "people:so-brown",
+      "sourceName": "So Brown",
+      "sourceCategory": "people",
+      "targetId": "people:thomas-townsend-brown",
+      "targetName": "Thomas Townsend Brown",
+      "targetCategory": "people"
+    },
+    "people:wright-field": {
+      "sourceId": "people:wright-field",
+      "sourceName": "Wright Field",
+      "sourceCategory": "people",
+      "targetId": "people:wright-patterson",
+      "targetName": "Wright Patterson",
+      "targetCategory": "people"
+    },
+    "people:wright-airfield": {
+      "sourceId": "people:wright-airfield",
+      "sourceName": "Wright Airfield",
+      "sourceCategory": "people",
+      "targetId": "military_bases:wright-patterson-air-force-base",
+      "targetName": "Wright-Patterson Air Force base",
+      "targetCategory": "military_bases"
+    },
+    "people:wright-patterson": {
+      "sourceId": "people:wright-patterson",
+      "sourceName": "Wright Patterson",
+      "sourceCategory": "people",
+      "targetId": "military_bases:wright-patterson-air-force-base",
+      "targetName": "Wright-Patterson Air Force base",
+      "targetCategory": "military_bases"
+    },
+    "government_agencies:patterson-air-force": {
+      "sourceId": "government_agencies:patterson-air-force",
+      "sourceName": "Patterson Air Force",
+      "sourceCategory": "government_agencies",
+      "targetId": "military_bases:wright-patterson-air-force-base",
+      "targetName": "Wright-Patterson Air Force base",
+      "targetCategory": "military_bases"
+    },
+    "experiencers:wright-airfield": {
+      "sourceId": "experiencers:wright-airfield",
+      "sourceName": "Wright Airfield",
+      "sourceCategory": "experiencers",
+      "targetId": "military_bases:wright-patterson-air-force-base",
+      "targetName": "Wright-Patterson Air Force Base",
+      "targetCategory": "military_bases"
+    },
+    "people:when-roswell": {
+      "sourceId": "people:when-roswell",
+      "sourceName": "When Roswell",
+      "sourceCategory": "locations",
+      "targetId": "locations:roswell",
+      "targetName": "Roswell",
+      "targetCategory": "locations"
+    },
+    "friendly_people:at-wright": {
+      "sourceId": "friendly_people:at-wright",
+      "sourceName": "At Wright",
+      "sourceCategory": "friendly_people",
+      "targetId": "military_bases:wright-patterson-air-force-base",
+      "targetName": "Wright-Patterson Air Force Base",
+      "targetCategory": "military_bases"
+    },
+    "whistleblowers:eagle-works": {
+      "sourceId": "whistleblowers:eagle-works",
+      "sourceName": "Eagle Works",
+      "sourceCategory": "whistleblowers",
+      "targetId": "people:eagle-works",
+      "targetName": "Eagle Works",
+      "targetCategory": "people"
+    },
+    "people:dana-posulka": {
+      "sourceId": "people:dana-posulka",
+      "sourceName": "Dana Posulka",
+      "sourceCategory": "people",
+      "targetId": "people:diana-pasolka",
+      "targetName": "Diana Pasolka",
+      "targetCategory": "people"
+    },
+    "people:diana-pasolka": {
+      "sourceId": "people:diana-pasolka",
+      "sourceName": "Diana Pasolka",
+      "sourceCategory": "people",
+      "targetId": "professors:diana-pasolka",
+      "targetName": "Diana Pasolka",
+      "targetCategory": "professors"
+    },
+    "professors:diana-pasolka": {
+      "sourceId": "professors:diana-pasolka",
+      "sourceName": "Diana Pasolka",
+      "sourceCategory": "professors",
+      "targetId": "experiencers:diana-pasolka",
+      "targetName": "Diana Pasolka",
+      "targetCategory": "experiencers"
     }
   },
   "nameMerges": {
@@ -1153,10 +1721,10 @@
       "targetCategory": "experiencers"
     },
     "closer encounters": {
-      "sourceId": "experiencers:closer-encounters",
+      "sourceId": "movies:closer-encounters",
       "sourceName": "Closer Encounters",
       "sourceCategory": "movies",
-      "targetId": "experiencers:close-encounters",
+      "targetId": "movies:close-encounters",
       "targetName": "Close Encounters",
       "targetCategory": "movies"
     },
@@ -1439,9 +2007,337 @@
       "targetId": "people:tic-tac",
       "targetName": "Tic Tac",
       "targetCategory": "people"
+    },
+    "dimethyltryptamine": {
+      "sourceId": "chemicals:dimethyltryptamine",
+      "sourceName": "dimethyltryptamine",
+      "sourceCategory": "chemicals",
+      "targetId": "chemicals:dmt",
+      "targetName": "DMT",
+      "targetCategory": "chemicals"
+    },
+    "vice president dick cheney": {
+      "sourceId": "people:vice-president-dick-cheney",
+      "sourceName": "Vice President Dick Cheney",
+      "sourceCategory": "people",
+      "targetId": "people:dick-cheney",
+      "targetName": "Dick Cheney",
+      "targetCategory": "people"
+    },
+    "wall street journal": {
+      "sourceId": "newsrooms:wall-street-journal",
+      "sourceName": "Wall Street Journal",
+      "sourceCategory": "newsrooms",
+      "targetId": "newsrooms:the-wall-street-journal",
+      "targetName": "the Wall Street Journal",
+      "targetCategory": "newsrooms"
+    },
+    "new york times": {
+      "sourceId": "newsrooms:new-york-times",
+      "sourceName": "New York Times",
+      "sourceCategory": "newsrooms",
+      "targetId": "newsrooms:the-new-york-times",
+      "targetName": "the new york times",
+      "targetCategory": "newsrooms"
+    },
+    "air force": {
+      "sourceId": "government_agencies:air-force",
+      "sourceName": "Air Force",
+      "sourceCategory": "government_agencies",
+      "targetId": "government_agencies:united-states-air-force",
+      "targetName": "United States Air Force",
+      "targetCategory": "government_agencies"
+    },
+    "u s air force": {
+      "sourceId": "government_agencies:u-s-air-force",
+      "sourceName": "U.S. Air Force",
+      "sourceCategory": "government_agencies",
+      "targetId": "government_agencies:united-states-air-force",
+      "targetName": "United States Air Force",
+      "targetCategory": "government_agencies"
+    },
+    "cia": {
+      "sourceId": "government_agencies:cia",
+      "sourceName": "CIA",
+      "sourceCategory": "government_agencies",
+      "targetId": "government_agencies:central-intelligence-agency",
+      "targetName": "Central Intelligence Agency",
+      "targetCategory": "government_agencies"
+    },
+    "u s navy": {
+      "sourceId": "government_agencies:u-s-navy",
+      "sourceName": "U.S. Navy",
+      "sourceCategory": "government_agencies",
+      "targetId": "government_agencies:united-states-navy",
+      "targetName": "united states navy",
+      "targetCategory": "government_agencies"
+    },
+    "bob hastings": {
+      "sourceId": "people:bob-hastings",
+      "sourceName": "Bob Hastings",
+      "sourceCategory": "people",
+      "targetId": "whistleblowers:robert-hastings",
+      "targetName": "Robert Hastings",
+      "targetCategory": "whistleblowers"
+    },
+    "malmstrom base": {
+      "sourceId": "friendly_people:malmstrom-base",
+      "sourceName": "Malmstrom Base",
+      "sourceCategory": "military_bases",
+      "targetId": "military_bases:malmstrom-air-force-base",
+      "targetName": "Malmstrom Air Force Base",
+      "targetCategory": "military_bases"
+    },
+    "malstrom air force base": {
+      "sourceId": "military_bases:malstrom-air-force-base",
+      "sourceName": "Malstrom Air Force Base",
+      "sourceCategory": "military_bases",
+      "targetId": "military_bases:malmstrom-air-force-base",
+      "targetName": "Malmstrom Air Force Base",
+      "targetCategory": "military_bases"
+    },
+    "harvard observatory": {
+      "sourceId": "people:harvard-observatory",
+      "sourceName": "Harvard Observatory",
+      "sourceCategory": "university_departments",
+      "targetId": "friendly_people:harvard-observatory",
+      "targetName": "Harvard Observatory",
+      "targetCategory": "friendly_people"
+    },
+    "donald menzel": {
+      "sourceId": "people:donald-menzel",
+      "sourceName": "Donald Menzel",
+      "sourceCategory": "people",
+      "targetId": "professors:donald-menzel",
+      "targetName": "Donald Menzel",
+      "targetCategory": "professors"
+    },
+    "nro": {
+      "sourceId": "government_agencies:nro",
+      "sourceName": "NRO",
+      "sourceCategory": "government_agencies",
+      "targetId": "government_agencies:national-reconnaissance-office",
+      "targetName": "National Reconnaissance Office",
+      "targetCategory": "government_agencies"
+    },
+    "national reconnaissance office": {
+      "sourceId": "government_agencies:national-reconnaissance-office",
+      "sourceName": "National Reconnaissance Office",
+      "sourceCategory": "government_agencies",
+      "targetId": "people:national-reconnaissance",
+      "targetName": "National Reconnaissance",
+      "targetCategory": "people"
+    },
+    "g he": {
+      "sourceId": "people:g-he",
+      "sourceName": "G. He",
+      "sourceCategory": "people",
+      "targetId": "contractors:eg-g",
+      "targetName": "EG&G",
+      "targetCategory": "contractors"
+    },
+    "air force base": {
+      "sourceId": "military_bases:air-force-base",
+      "sourceName": "Air Force Base",
+      "sourceCategory": "military_bases",
+      "targetId": "government_agencies:united-states-air-force",
+      "targetName": "United States Air Force",
+      "targetCategory": "government_agencies"
+    },
+    "army base": {
+      "sourceId": "military_bases:army-base",
+      "sourceName": "Army Base",
+      "sourceCategory": "military_bases",
+      "targetId": "government_agencies:u-s-army",
+      "targetName": "United States Army",
+      "targetCategory": "government_agencies"
+    },
+    "brook park": {
+      "sourceId": "people:brook-park",
+      "sourceName": "Brook Park",
+      "sourceCategory": "locations",
+      "targetId": "people:brook-park-strip-mall",
+      "targetName": "Brook Park Strip Mall",
+      "targetCategory": "locations"
+    },
+    "brook park strip mall": {
+      "sourceId": "people:brook-park-strip-mall",
+      "sourceName": "Brook Park Strip Mall",
+      "sourceCategory": "locations",
+      "targetId": "people:brookgate-strip-mall",
+      "targetName": "Brookgate Strip Mall",
+      "targetCategory": "people"
+    },
+    "baba vanga": {
+      "sourceId": "people:baba-vanga",
+      "sourceName": "Baba Vanga",
+      "sourceCategory": "people",
+      "targetId": "friendly_people:baba-vanga",
+      "targetName": "Baba Vanga",
+      "targetCategory": "friendly_people"
+    },
+    "when john paul": {
+      "sourceId": "people:when-john-paul",
+      "sourceName": "When John Paul",
+      "sourceCategory": "people",
+      "targetId": "people:john-paul",
+      "targetName": "John Paul",
+      "targetCategory": "people"
+    },
+    "his holiness": {
+      "sourceId": "people:his-holiness",
+      "sourceName": "His Holiness",
+      "sourceCategory": "people",
+      "targetId": "people:john-paul",
+      "targetName": "John Paul",
+      "targetCategory": "people"
+    },
+    "nobel prize": {
+      "sourceId": "professors:nobel-prize",
+      "sourceName": "Nobel Prize",
+      "sourceCategory": "professors",
+      "targetId": "people:nobel-prize",
+      "targetName": "Nobel Prize",
+      "targetCategory": "institutes"
+    },
+    "dia": {
+      "sourceId": "government_agencies:dia",
+      "sourceName": "DIA",
+      "sourceCategory": "government_agencies",
+      "targetId": "government_agencies:defense-intelligence-agency",
+      "targetName": "Defense Intelligence Agency",
+      "targetCategory": "government_agencies"
+    },
+    "defense advanced research project": {
+      "sourceId": "people:defense-advanced-research-project",
+      "sourceName": "Defense Advanced Research Project",
+      "sourceCategory": "government_agencies",
+      "targetId": "government_agencies:darpa",
+      "targetName": "DARPA",
+      "targetCategory": "government_agencies"
+    },
+    "energy office": {
+      "sourceId": "government_agencies:energy-office",
+      "sourceName": "Energy Office",
+      "sourceCategory": "government_agencies",
+      "targetId": "government_agencies:department-of-energy",
+      "targetName": "Department of Energy",
+      "targetCategory": "government_agencies"
+    },
+    "naval research": {
+      "sourceId": "people:naval-research",
+      "sourceName": "Naval Research",
+      "sourceCategory": "government_agencies",
+      "targetId": "research_groups:naval-research-lab",
+      "targetName": "Naval Research Lab",
+      "targetCategory": "research_groups"
+    },
+    "stanford": {
+      "sourceId": "universities:stanford",
+      "sourceName": "Stanford",
+      "sourceCategory": "universities",
+      "targetId": "universities:stanford-university",
+      "targetName": "Stanford University",
+      "targetCategory": "universities"
+    },
+    "nordic nazi": {
+      "sourceId": "people:nordic-nazi",
+      "sourceName": "Nordic Nazi",
+      "sourceCategory": "people",
+      "targetId": "alien_species:nordic",
+      "targetName": "Nordic",
+      "targetCategory": "alien_species"
+    },
+    "these nordics": {
+      "sourceId": "people:these-nordics",
+      "sourceName": "These Nordics",
+      "sourceCategory": "people",
+      "targetId": "alien_species:nordic",
+      "targetName": "Nordic",
+      "targetCategory": "alien_species"
+    },
+    "so brown": {
+      "sourceId": "people:so-brown",
+      "sourceName": "So Brown",
+      "sourceCategory": "people",
+      "targetId": "people:thomas-townsend-brown",
+      "targetName": "Thomas Townsend Brown",
+      "targetCategory": "people"
+    },
+    "wright field": {
+      "sourceId": "people:wright-field",
+      "sourceName": "Wright Field",
+      "sourceCategory": "people",
+      "targetId": "people:wright-patterson",
+      "targetName": "Wright Patterson",
+      "targetCategory": "people"
+    },
+    "wright airfield": {
+      "sourceId": "experiencers:wright-airfield",
+      "sourceName": "Wright Airfield",
+      "sourceCategory": "experiencers",
+      "targetId": "military_bases:wright-patterson-air-force-base",
+      "targetName": "Wright-Patterson Air Force Base",
+      "targetCategory": "military_bases"
+    },
+    "wright patterson": {
+      "sourceId": "people:wright-patterson",
+      "sourceName": "Wright Patterson",
+      "sourceCategory": "people",
+      "targetId": "military_bases:wright-patterson-air-force-base",
+      "targetName": "Wright-Patterson Air Force base",
+      "targetCategory": "military_bases"
+    },
+    "patterson air force": {
+      "sourceId": "government_agencies:patterson-air-force",
+      "sourceName": "Patterson Air Force",
+      "sourceCategory": "government_agencies",
+      "targetId": "military_bases:wright-patterson-air-force-base",
+      "targetName": "Wright-Patterson Air Force base",
+      "targetCategory": "military_bases"
+    },
+    "when roswell": {
+      "sourceId": "people:when-roswell",
+      "sourceName": "When Roswell",
+      "sourceCategory": "locations",
+      "targetId": "locations:roswell",
+      "targetName": "Roswell",
+      "targetCategory": "locations"
+    },
+    "at wright": {
+      "sourceId": "friendly_people:at-wright",
+      "sourceName": "At Wright",
+      "sourceCategory": "friendly_people",
+      "targetId": "military_bases:wright-patterson-air-force-base",
+      "targetName": "Wright-Patterson Air Force Base",
+      "targetCategory": "military_bases"
+    },
+    "eagle works": {
+      "sourceId": "whistleblowers:eagle-works",
+      "sourceName": "Eagle Works",
+      "sourceCategory": "whistleblowers",
+      "targetId": "people:eagle-works",
+      "targetName": "Eagle Works",
+      "targetCategory": "people"
+    },
+    "dana posulka": {
+      "sourceId": "people:dana-posulka",
+      "sourceName": "Dana Posulka",
+      "sourceCategory": "people",
+      "targetId": "people:diana-pasolka",
+      "targetName": "Diana Pasolka",
+      "targetCategory": "people"
+    },
+    "diana pasolka": {
+      "sourceId": "professors:diana-pasolka",
+      "sourceName": "Diana Pasolka",
+      "sourceCategory": "professors",
+      "targetId": "experiencers:diana-pasolka",
+      "targetName": "Diana Pasolka",
+      "targetCategory": "experiencers"
     }
   },
   "notes": {},
-  "generatedAt": "2026-06-27T02:57:30.451Z",
+  "generatedAt": "2026-06-27T07:16:22.162Z",
   "note": "Replace data/reclass.json with this file before rebuilding."
 }

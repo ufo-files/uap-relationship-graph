@@ -1,0 +1,1252 @@
+First of all, let me say thank you from SNAD for the scientific help on Apollo 16.
+I personally think that you all did a very credible job in helping the science support
+room and preflighting to get all the experiments ready to prepare the crew and the flight for
+Apollo 16.
+I think that looking back on it now we can say we had a very successful mission, that we
+obtained a tremendous amount of information from the flight.
+I know that the rock boxes back there at the curatorial facility are bursting at their
+seams and the geologists are going to have a lot to do.
+I think also that because of the problems that arose and the necessity to change the
+flight plan that you responded quite well to get the maximum science out of the time that
+we had available.
+I realize that in all of our flights there hasn't been one flight yet that ran according
+to schedule and I am very sure that Apollo 17 will be in the same boat, that we will have
+to change things real time to get the maximum science out of the mission.
+And I think the response on this flight was superb.
+Now today the briefing here is in two parts and for two purposes.
+First of all I like each principal investigator to briefly describe the results so far obtained
+from his work.
+This is to sort of educate the crew on what we obtained so far from Apollo 16 so that they
+might have information along that line.
+Also I like to have him describe any anomalies that might have occurred that we do not know
+about now.
+And second, then we like to have the PI with the crew working with them to answer, have the
+crew answer any questions that might still be puzzling him so that he might further his analysis
+of the data.
+We have a lot of people to go through today, a lot of science to cover, so we like to keep
+each briefing short and we don't want to cover things that are pretty well, that are general
+knowledge as of today.
+And we can start right out.
+First one is Palmer Dial, Lunar Service Magnetometer.
+After each experimenter describes his experiment we'll have questions Palmer so we'll, we can
+ask the crew any questions after your particular talk.
+There's a mic, mic right over there.
+You may sit, stand, anything you want to do.
+The, I guess the main functions of both instruments went nominally.
+The, I'd like to cover both the portable and the surface, if that's acceptable.
+The, the, the ALSEP instrument, the surface magnetometer that you deployed first looked like
+it went according to plan.
+The field that we measured as soon as it was turned on, I think it was turned on about 15
+minutes or so after you deployed it, was 230 gamma and in a downward direction.
+And at that particular time that was the highest field that we'd ever measured on the, on the
+lunar surface.
+The calibration of the instrument went straight forward.
+We did do a gradient determination of the field at the site that, the site survey as we
+call it, uh, function normally, the, um, it's, uh, thermal control subsystem is the best that
+we've put on the moon so far.
+We have a delta T from a lunar day to lunar night of, uh, 51 degrees centigrade, which is
+a factor of two better than our Apollo 12 thermal subsystem.
+The, uh, leveling of the device was, uh, I noticed in the photograph yesterday that, uh, the bubble
+level was right in the center ring, the, uh, level sensors that we have are accurate to
+a quarter of a degree and they show that, uh, uh, that the instrument, um, is level to one
+degree accuracy right now.
+The, um, um, um, the instrument has new sensors in it.
+These are more stable and, uh, it's really the first chance we have of doing network type
+measurements of the fields on the moon.
+We do see whole moon, we have seen simultaneous data now from 15 and 16.
+We see the magnetic fields due to eddy currents that are driven in the entire lunar sphere.
+And, uh, for the first time experimentally, we have always made that assumption that we've
+got an instrument that's setting on a, at one point on a sphere and that we're looking
+at the properties of a whole sphere.
+And we had some experimental evidence that that was the case.
+Now we have unambiguously shown with this second instrument that that is indeed the case
+and that the assumption is correct that we are looking at a whole spherical response
+of the moon.
+The, um.
+You mean you're seeing eddy currents all the way through the moon, huh?
+We're seeing eddy currents that go travel around the whole sphere, but, uh, with these
+new sensors now and with long-term data, what we, what we're going to try and do is look,
+as you say, right at the center of the moon as they go all the way through.
+Now that's, uh, what we're waiting for during the lunar night is a nice step function and
+a long-term, uh, both before and after so we can see, uh, this, these currents diffuse
+right through the center of the moon.
+The, um.
+The other thing that I think that is, uh, unique about this instrument that, that now
+we have a chance to look at the, uh, as mutual variations in conductivity.
+We can not only look at radial, uh, dependence of the electrical conductivity and calculate a temperature,
+but now we can look at the, uh, uh, azimuthal or angular variations between, uh, Apollo 15
+and Apollo 16 side.
+And those, and that spread is far enough so that we ought to be able to extrapolate those
+measurements to a great circle around the whole moon as far as azimuthal dependence.
+The, uh, portable magnetometer was really exciting.
+Um, first of all, uh, the, uh, field that, uh, the first field I think you measured was 180
+gamma down and in the Cayley it looked like that all the fields were, uh, in essence pointed
+in a downward direction and, um, uh, at the ALSEP side it was 230 gamma, up near Spook it was
+180 gamma and then on the other side of the LEM where you parked the rover at, um, um, at
+the last, uh, station it was 120 gamma and at that station you put a, um, a rock on it
+and it looks like we measured about 4.7 gamma from that rock.
+So the rock was large enough and it hasn't large enough moment that it looks like we did
+see a difference.
+These measurements do have an air bar on them that is like plus or minus, uh, uh, as much
+now as, uh, 5 to 10 gamma because the solar wind and all the other inductive fields that
+are around that have to be subtracted out of the measurements from our, uh, magnetic, uh,
+from the tape and data reduction.
+The, um, the measurements at, uh, at, um, station five, uh, were, uh, pointed upward, uh, that
+was a, and, uh, the measurements up near North, uh, Ray crater were pointed downward at 318 gamma.
+I think that there we, they, there are some, uh, things that we would, uh, we could probably
+say, uh, uh, making a lot of assumptions, but it looks like if this highland material is
+older than the other, it looks like that we have a, at least a chance of looking at the
+paleomagnetic history of the, of the lunar crust from these measurements.
+The high fields indicate that, uh, that either the, uh, the perming source, the source of
+this field was, um, uh, if it remains stable over the time period that the Maria was, uh,
+were cooling, then the, uh, highland material would indicate this high field would indicate
+that it, it, uh, that it indeed had a time variation in its magnitude or that the Maria,
+the, the flooding of the Maria basins or whatever caused the, uh, Maria basins to be as they are
+today, uh, demagnetized the material that, that had been there originally.
+It's, in other words, the Maria material is less magnetic, it seems, than this material.
+The, um, interesting thing too is that the, uh, that the samples, as you know, are from the,
+uh, the regolith and they've really physically been modified over the years.
+And I think that the measurements that we've obtained over, uh, over scale size in the order
+of 10 kilometers indicate that we're looking at a depth below, well below the regolith and
+that, that this is indicative of, uh, of fields that were at the moon during a, at a time period,
+uh, uh, before in the order of three to four billion years ago, the, uh, direction and the,
+the other thing that we can say now from the, um, from measurements of the solar wind, simultaneous
+measurements of solar wind and magnetic fields at the Apollo 12 and 15 site, we can say that
+these high fields that you measured at the Apollo 16 site modifies drastically the, uh, the direction
+and, uh, interaction of the solar wind with the moon at these places.
+It should, uh, channel and charge particles and, uh, either, uh, uh, at different locations,
+uh, asymmetrically on the lunar surface in these areas.
+And in some cases that one could now, uh, state that, uh, the scale size of the field are large
+enough so that you could form a, uh, shock and actually stand off the solar wind over small
+regions of the moon.
+Um, yes, that's covers both of them.
+Do you have any questions you want to ask the crew concerning, uh, anything about the deployment
+or any of the experiment that you didn't know about?
+Um, Palmer, let me ask you, what is the effect of that rock out there by the big LSM?
+Did that hurt it much?
+No, first, uh, where you, where you parked the rover the first time in the TV camera, we
+were, uh, extremely disturbed because the angle was such, it looked like that rock was as big
+as the electronics box.
+And it looks like that the PRAs were, were, uh, oriented.
+Shining right into them and all the IR radiation would really heat us up during the daytime.
+Uh, but then the other view, uh, showed that the rock was relatively small compared to the
+dimensions of the box and, uh, didn't affect the, uh, thermal, uh, subsystem at all.
+And magnetically, it didn't, uh, they really don't, uh, contain that much oriented field
+to do anything.
+I guess, uh, one of the things I'd like to say is this, what we intended to do was we
+intended to drive a hundred yards away from the, out in front of the lunar module with
+the, uh, with a rover and, and do a sort of a north-south traverse looking for the best
+place to deploy ALSEP to, to get it away from all these things.
+Uh, the, we ran into problems with it, with the UV, uh, and that it took longer to do that
+last, uh, measurements than anticipated and we couldn't do that.
+Uh, and I'm sure that somebody looking at the photos can find a better place out in front
+of the lunar module to put the total package.
+But I like to say that package is so big and that surface was so blocky and so full
+of craters that under the circumstances, I almost believe we had to take what we got.
+I hate to say that, but, man, I just wouldn't believe that that surface was as rough and
+covered with blocks as it turned out to be.
+I think I could have still been walking up there with that package if I'd have been looking
+for a, uh, level spot.
+I got up on top of the ridge and I looked over and said, well, there's a good place over
+there and I ran over there and it didn't look any better than the place I'd just been.
+And I, well, there's a good place over there and I ran over there and finally after about
+the third time I said, well, look, I'm just going to put this thing down here at best we
+got.
+But it's really blocky and a lot of fresh craters there, secondary.
+Well, but I, but I think that the, uh, if, uh, if you look at the, at least the magnetometers,
+if I looked at each of the photos that I could find where you'd taken a picture of both
+the, uh, LSEP magnetometer and the portable, uh, you picked, uh, you didn't put the thing
+next to rocks or craters on the scale size that was big enough to affect the instrument.
+I, I think that's the main criteria, which was, uh, observed during that.
+John, did you know the rationale for doing that unplanned, uh, portable magnetometer reading?
+No, but it doesn't make any difference.
+I mean, we did it.
+You can't explain it in real time.
+That's all right.
+Uh, one, uh, on the hardware, uh, the sun shield on the, uh, LSM, the latch didn't come
+loose and I kept pulling the, the arms up to try to get that latch loose.
+And I finally had to hold the arm down and, and, uh, get the latch, uh, loose with the
+other hand.
+And then, and then as I tried to lock the thing, the latch didn't fall off.
+It, it tangled up into that little wire that locks into the little ball.
+Yes.
+And, uh, that was, uh, uh, I almost left it, uh, like that without locking it.
+And I mean, in fact, Houston said, go ahead, uh, and leave it.
+But, uh, one more little effort, the thing finally dropped off.
+And I thought I was going to disturb the level.
+But if you're, it seems like you're satisfied with the level of those.
+Yeah.
+The, uh, the only thing I worry about there is that we've got a level sensor in the thing.
+And if you disturb that, you can sort of see that jiggle.
+But the, uh, the azimuth, you know, when you read that shadow graph off, that's the only
+measurement we get in azimuth ever.
+Yeah.
+And, uh, so as long as you could, you didn't disturb the, uh, twisting of it, then, uh, it's
+fine.
+Okay.
+Thank you, Palmer.
+Next experimenter will be, uh, Dr. Gary Latham.
+Passes the size of the experiment.
+Yes.
+Yes, go ahead.
+Question, I was talking about what, what do you wish on the field radians from there?
+Do you want to talk about that?
+Um, gradians from which institute?
+Oh, yeah.
+Oh, we don't have the, uh, you know, we've got to take out the fluctuations and so we're
+in from the other institute using the policy team.
+No, we don't have that, uh, to take some of that.
+Yeah.
+Sorry, Matt.
+The actual photo you took of the LSI was taken out after you had deployed the substitute,
+right?
+I, uh, the three-footer, I think, was, that's correct, yes.
+Well, there wasn't any disturbance.
+And we didn't touch it after that.
+Right.
+If there are any questions before or any time after the discussion, feel free to just raise
+your hand.
+Thank you, Mark.
+Mark, our fund began, as you know, with the S-4B impact on this mission.
+You also know we lost tracking on it prematurely, which, which, uh, meant that we were not able
+to get the coordinates and time of the impact independent of our own measurements.
+Nevertheless, we could locate it fairly well from the two near stations, 12 and 14, which
+made it a useful impact at the greater range up to station 15.
+And, uh, we are looking at those signals now.
+It, it, I think we can say that this, uh, peculiarly high velocity mantle, as we called it, that we
+had found in the 12 and 14 region can't be a global feature unless it is exceedingly thin,
+a thin slab of this high velocity stuff.
+Uh, the signals we got, and I must say this, that, that, that there's always the uncertainty
+that we really didn't see the first arrival up there because it was at 1100 kilometers.
+And the first signal you see is quite weak.
+There's always the uncertainty as to whether or not it is the first, the fastest traveling
+wave in the moment and not something else.
+But if it is, uh, then this very high velocity material that we called mantle is not global or
+an exceedingly thin layer, looks as though we get velocities approaching eight kilometers
+per second at depths of the moon of, of the order of a hundred kilometers, not nine kilometers
+per second as we had in the 12 and 14 region.
+There's also very weak evidence from that signal.
+And I haven't convinced my colleagues of this yet nor myself really, but, uh, the possibility
+of a, of a reflection from a very deep interface, perhaps a 550 kilometers deep, uh, is there.
+And we're looking for ways to see whether or not that can be verified.
+In other words, a primitive core perhaps or some other reflector at very great depth.
+So this impact, uh, will I think provide very, very useful data despite the loss of tracking.
+We would have been, of course, much better off had we been able to photograph that impact
+area.
+And I, I understand that the curtailed time in orbit precluded that.
+Is that right, Drew?
+We did not photograph it in that S-4B, yeah.
+The deployment was good.
+I think the pictures tell the story.
+As far as I'm concerned, the, uh, instrument does get hot during a lunar day as the other
+instruments have.
+This has been the case in every one.
+I think it's a matter of just, it's just not possible to keep dust off of that shroud.
+I think when you have to work that close to it and, uh, that that degrades the, the thermal
+control some, it does not degrade the seismic data.
+It simply means that the, uh, controllers have more work to do trying to, to maintain the thermal
+stability.
+And, uh, it's a problem we faced in every, every one of the missions.
+So it's not.
+In fact, I thought the deployment, uh, uh, the configuration of the shroud that I saw
+and so on, uh, look, look very, very good.
+There's one little place where it's raised up is where the cable comes out underneath.
+It's turned on its age a little bit and, uh, uh, that of course is something of a heat loss,
+but it's not, not serious at all.
+Yeah.
+We, we patted that rascal down because of the 15 problems, but maybe it's, uh, before
+a guy leaves at, uh, ALSEP site, if he's got a problem like it, maybe it, is ALSEP on 17?
+Probably not.
+It's not.
+ALSEP is on the seismic.
+Seismic.
+Okay.
+Uh, those rascally things, uh, assume some different kind of, uh, orientation than they
+did before, before we left, before we left, and maybe you ought to go back one more time
+and make sure those things are, haven't changed.
+Don't ask me, uh, I think maybe they outgas a little and then take up a different shape.
+Well, it's not only, it's not only your, your near activities.
+I think when we saw that, that, uh, TV picture degrade on LEM ASSEN, it's obvious that a lot
+of debris is being thrown around and you just can't avoid a good dusting down from that source.
+So our, our carefully prepared thermal surfaces act more like black bodies than anybody figured
+on as a result of all of this.
+Then we saw your rover signals, which this time, uh, provided, uh, very, very interesting
+data, uh, in that they showed rather abrupt changes in signal level as you moved around.
+Uh, we're not sure yet what to make of that.
+We're going to work with Bill Mulberger and his crew carefully on the traverse to see whether
+or not we can identify specific provinces in which the signal level is quite a bit higher.
+I guess I, I would like to ask your impression, uh, as you were rolling along and given, along
+the given EVAs that you, you felt at, at given times that the rover was bouncing, uh, noticeably
+more than at other times that might have generated higher signal levels.
+Sometimes she was off the ground.
+There's no doubt about that.
+To the, uh, south, uh, EVA 2, that area was a lot rougher than the, uh, traverse route to
+North Ray Crater.
+My impression of North Ray Crater traverse once we passed Palmetto was, it was really boulder-free
+area.
+Very subdued, old craters, and the rover just sped along, and much like, uh, West Texas-type
+terrain.
+Whereas to the south, it was, uh, really rough.
+John had to maneuver.
+And particularly on Survey Ridge, when we were traversing that area with all the secondaries
+and blocks, uh, we managed to be up in here quite a bit, uh, simply because there were so
+many secondaries and blocks that we had to hit some small ones to avoid the big ones.
+The, uh, subjective opinion of mine also is that around, at least at stop 13 where we
+actually got off the rover, uh, the regolith did not seem as, as loosely compacted as to
+the south.
+And, in fact, at North Ray Crater, at Station 11 and 12, it was no more than a couple inches
+deep because we couldn't get the rake in without bending the tines of the rake.
+So the regolith up there was very thin, uh, and I don't know whether that means there's
+a, just some very cobbly, uh, densely compacted blocks under there from, that were thrown out
+or, or that are now that much covered or whether we just picked some bad sites.
+But we tried to rake twice and both times the only luck we had was kicking stuff into the
+rake.
+We couldn't pull the rake through the regolith.
+And you couldn't stick the tongs in either.
+And the tongs wouldn't go in.
+And every other place you could take the tongs and stick into the ground, they'd stand
+up for you.
+Well, you know, in general, this area from, from the general character of our signals,
+it gives the appearance of being the thickest pile of, of what we can quite loosely call regolith
+of any of the sites.
+And I guess Bob Kovach will talk on his results on, on that.
+And, and of course we await his, his, uh, motor firing to give us a little more information
+on that.
+Well, we'll be looking at these rover signals and see if we can, we can somehow pin them
+down to, to roughness of terrain or, or just what, uh, from the pictures that you took
+along the way.
+Uh, we now have the, the quiet nighttime period and we're waiting for the first moonquake
+of this session, which, which, uh, ought to be, well, I was hoping it would be in the
+last 24 hours.
+It wasn't, uh, but should be before May 12th.
+So in the next few days, and, and of course with this last station, we now have completed
+a very nice triangular array.
+The other three gave us a very narrow base thing.
+Now we have a thing with a thousand kilometer baseline, which, which if it lasts for as long
+as, uh, uh, they appear to be lasting, will give us the tools to really do the job over
+the next couple of years.
+Uh, and of course we'll be using that in the S-IVB impact from the next mission.
+I'd like to turn to, to one observation reported from orbit that, that has interested us a great
+deal. And that was the flash that was reported. I, I haven't seen, I understand the transcript
+is now, it hasn't yet been typed.
+I haven't seen it yet. So I, that's my only hope for pinning down the time.
+If you can, if you can help us pin down the time and roughly the location, and we'll certainly
+look at our records and that would be a, an important piece of data if we, if we recorded
+that. I would like to ask, was this a colored flash or a white flash?
+Yes.
+Uh, what was your, how does it differ from the kind of thing you get with a cosmic ray impact
+on your brain?
+I didn't see any of those.
+He didn't see any of those.
+I see.
+Redhead.
+Well, we're, we're very much excited by that. As far as I know, it's the first report
+of a transient event of some nature that's been seen from orbit.
+I, I just have to wait for the, I should have written it down and it just didn't occur
+to me to write it down.
+Do we get a time on it at all, Ken?
+It's on the DSE.
+It's on the DSE.
+If I ever get that off.
+Well then it would correlate any information we get to the seismic interfaces.
+You know, how about its persistence? Did it just, no, it was just, it was just a flash.
+And, and the way I happened to notice it, I was looking at a, at a horizon that was showing
+up from solar corona or zodiacal light, whatever you want to call it in that region.
+It was very shortly after we lost the signal from earth and I was watching stars pop up
+over the horizon and got this flash which was in size was about, I didn't, I didn't, I wasn't
+looking directly at it at the time, it hadn't been happening down in the side of my vision,
+but it was brighter than the, than the brightest star that I had in the field of view at the
+time.
+And I had the feeling that it was a, in physical or angular size, it was equivalent to the
+size of the larger stars in, in my perceived vision.
+But it was just a, it was just an instantaneous flash and that it took us a couple of seconds
+for it to soak into me that it wasn't just a star popping up over the horizon, but rather,
+it had been distinctly below the horizon.
+Is there a way for me to get that transcript?
+I don't know if I would normally get it.
+I'm glad, I'm glad you asked.
+Oh, that's it?
+And I forgot to mention this in the opening remarks, but we have about 50 copies of this
+technical air to ground voice transcript right back there and for the PIs and the COIs
+and there's a copy for you, Gary Beck.
+Gary, that's not what you're after.
+It won't be on now.
+I need the tape recorder.
+It won't be on now.
+Yeah.
+Oh, the DSE.
+It's on the DSE.
+And that hasn't been completed as far as I know.
+Okay.
+One other thing that I'd like to mention, from orbit it appeared to me that there was a distinctly
+different unit up around North Ray in an area that probably, I'd say, a third or a half
+of the traverse to North Ray went across.
+And that may or may not fit in with your seismic deltas.
+That at some point between North Ray and LM, they would cross a contact of some kind.
+Yes, sir.
+Well, except to add my thanks for a very fine deployment, that's all I have.
+Thank you.
+Any questions from the floor?
+Well, I don't know where the S4B hit, but this is on the backside of the limb, so I would
+assume that the S4B didn't hit there.
+And it was well after that, like a couple of days, lunar days.
+Where did the S4B impact?
+Oh, it hit about 150 kilometers north of Station 12.
+No.
+The time I was doing this, I was looking out the window, and I had darkened the cockpit
+in preparation for one of the low light level photographic exercises.
+And that's how I happened to be noticing that there was this distinct horizon which surprised
+me.
+And I just happened to be kind of puzzling over that at the time.
+Okay.
+Any other questions?
+No.
+Not when your visor's down.
+Your visor's up?
+I never looked with the visor.
+Supposed to do that.
+I suspect, from what we saw on EVA on the way home, that the inner visor alone has sufficient
+attenuation to block out the stars.
+But you could see them through the AOT in the lunar module.
+And, of course, that has a light shield around it.
+On our last alignment, even with a crescent Earth in the AOT, we could see Arknar.
+It was really so good that we didn't even have to roll up the window shades in the cockpit.
+So, with a proper, if you look through a tube, I'm sure you could see every star up there?
+The only thing we saw on the lunar surface was the Earth.
+And you had to, it was directly overhead.
+That was the only thing I saw in the sky.
+John, when you were looking through the sight of the camera, did you see anything beside the camera?
+You see your helmet reflected.
+That's what you see.
+You have to raise your visor to get all that, so you can get rid of all those reflections.
+Okay, next one is active seismic experiment.
+Dr. Kovach?
+Well, we had several objectives on this experiment.
+I'd like to summarize these basic questions like how thick is the seismic regolith would be one question.
+What were the in-situ physical properties of the lunar near-surface material?
+And thirdly, are there any distinct seismic horizons?
+And how do they correlate with our estimates to geological horizons?
+And finally, were there any regional differences in seismic velocities, i.e. something characteristically different between the Mari and the Highlands?
+Well, the deployment and the execution of the thumper experiment was outstanding.
+I mean, the records are clearer, and the background noise was sufficiently low.
+I mean, we got clean first breaks completely down the geophone line.
+Couldn't have asked for better.
+I'm sorry about that first one.
+I was so really happy when that rascal worked that I stopped walking.
+I started walking to the next one.
+Well, the record shows that for some reason you inadvertently didn't hold it in a charged position.
+sufficiently long enough, and that's the reason when you did it the second time it worked.
+No, I thought I started walking too soon after the first one went off.
+The one that failed, yeah, that was pure procedure there.
+Well, if you walked too soon, it didn't hurt us any.
+Didn't bother you? Okay.
+The data needs yet to be corrected for topographic effects.
+There's some severe undulations in the topography, and we can see this in the data,
+but I can give you some first impressions of our results.
+Number one, there's certainly no variability in the first arrival velocities across the geophone array,
+and the apparent velocity, or the velocity, is again very close to 100 meters per second,
+which seems to be the magic number for the regolith at many different places now on the moon,
+i.e. out in the Maury and now up here and finally up in this highland site.
+There are no evidence of flows beneath this geophone line.
+I feel sufficiently confident we would have recognized that.
+Now, the fact that we didn't recognize any variability in the velocity,
+we were able to say one more thing, because we recorded the limb ascent when we turned on the geophone line,
+and that was positioned some 140 meters away from our first geophone.
+And we did get a faster apparent velocity, and it's very close to the value measure for Fra Amaro for Breccius.
+And so, with this type of a number now, i.e. 200 to 300 meters per second underlying this regolith,
+we can put a thickness bound on the regolith at this site, and it is indeed very thick, at least 40 meters.
+And I'll be able to refine that number a little bit when we get the mortars fired.
+We also did turn on the ASE geophone array and recorded, you know, your rover approaching the limb during the end of EVA 3,
+and we also got very interesting signals, and we hope to analyze these in an analogous way, as Gary has suggested.
+And that's about all I can say for the quick look of our date at this point.
+We do have the concern, of course, I do have the concern about the grenade box deployment, I'm sure I've asked you that.
+I haven't seen any of the pictures yet, so maybe it'll be self-explained, but maybe you could reassure me that it's level.
+It's level, I guarantee you.
+In fact, that was probably the only level place we had it around there.
+And I was really pleased to see when we got out to where we could deploy it that it would be level.
+It's really good. And I reported the, I don't remember what azimuth heading that we put it on.
+It was very close. It seemed like it was 3-3-0 as opposed to 3-3-3 that it should have been on.
+That's off the top of my head. We had to go back and look, but I reported it.
+And I found out later that you could break that pin by pulling on the leg, but I certainly didn't know that.
+If somebody told me that doing the training, why it had gone right over my head.
+But we do have three good legs in there, and I'll bet you that rascal can't get out of the ground,
+because the way it went in, it's sort of like pushing it into quicksand.
+And once it gets in there, I defy anybody to get that mortar box back out of there,
+because it really grabbed ahold of it.
+Well, again, I'd like to offer my thanks for an outstanding execution of the experiment.
+We couldn't ask for anything better.
+Thank you. It was our pleasure. Boy, it really worked good. I was really pleased.
+Any questions from the forest?
+How do you define the regular size?
+Well, we define the regular, I don't know how the geologist may not agree with what you define,
+but we define it as material which apparently covers much of the lunar surface
+and has this characteristic velocity of 100 meters per second.
+And what comes up from that?
+Underneath this particular size, I am something that has velocities like the fraught marble, breaches.
+You said something about you were sure that there was no flow material underneath this.
+I guess I missed the conclusion.
+Well, we've done enough experiments on Earth,
+and I say that we've been able to recognize flows because the velocities are characteristically much higher.
+And if you want to argue that there may be very thin flows,
+i.e. thinner than our sampling wavelength, which is like two to three meters, they could be there.
+But we certainly, on the average, didn't see any big sequence of high velocity flows.
+When you say high velocity, this two or three hundred that you're talking about from the essence stage,
+that's not high enough.
+That's not high enough.
+Yes, every small crater that we looked into with exception, probably a Buster Crater,
+we never saw anything that looked like anything but, I mean, it just looked like more of the same,
+looked like regolith.
+I mean, you know, we never saw anything that looked like outcropper,
+and we were sure looking for it.
+This two to three hundred meter velocity,
+about the limb acid, that was the stretch of material that you say is underlying the regolith.
+Is that right?
+That's my first look, yeah.
+First look.
+When do you fire the mortars?
+Oh, that's another good question.
+What's the latest word on mortar firing?
+Do we have any idea about when?
+Well, there's a meeting at one o'clock this afternoon.
+I'm going to request to fire it on May the 23rd.
+Bastille Day, is that it?
+And it's armed, too.
+Okay, our next subject is the solar wind composition.
+Dr. Meister?
+Unfortunately, there is not much to tell about the solar wind composition experiment.
+The foil was transferred to Switzerland at the end of last week,
+and we don't have any results yet, of course.
+The foil was deployed during the first EVA
+and retrieved at the end of the third EVA
+with a total exposure time of 45 hours and five minutes.
+That's some three hours longer than the record of the previous missions,
+which was about 52 hours on Apollo 15.
+The main difference between the foil of Apollo 16
+and the ones of the previous missions
+is that some pieces of platinum foil have been attached to the previous design,
+which was composed of a pure aluminum foil.
+These platinum foil pieces can be cleaned by fluoridic acid,
+which allows to remove all the possible lunar dust contamination.
+This technique has been tested in the lab on bombarded foils
+and showed that you can remove essentially all the lunar dust contamination
+without losing any measurable amount of trapped rare gas ions or atoms of solar wind origin.
+This technique should allow us to determine the isotopic composition of the rare gas elements of solar wind origin
+up to the mass of possible krypton.
+The first visual inspection of the foil here at MSC showed that the foil is crimpled,
+but essentially free of lunar dust.
+That's of course only a visual observation.
+We don't know how the foil looks like under microscope.
+I would like to thank the crew for the proper deployment and retrieval of the foil.
+We are very pleased with what the foil looks like.
+Thank you very much.
+Can't miss when it tells you where the sun is.
+Yeah, point this at sun.
+The thing didn't roll up like I thought it was going to,
+and I'm sorry I had to crinkle it, but it was so big that I had to squeeze it down to get it into the bag,
+and it ripped once too.
+I guess you saw that.
+That's only a problem of aesthetics.
+It doesn't hurt the scientific value.
+Okay, good.
+I didn't think it did.
+Don?
+If the local magnetic fuel is standing off of a solar windier,
+it's going to overlap like that.
+We don't know yet that we have discrimination between the lighter and heavier elements in the solar wind.
+We have to check that maybe that there's a dependence on the height over the lunar surface of the composition
+between the heavier and lighter elements, but we have to check that first and see.
+The lighter particles would be deflected much more than the heavier ones.
+Can you see those, I don't know, this is probably a stupid question,
+but these particles that cause the light flashes, I was seeing them on the lunar surface during the sleep periods.
+Do those things register on your experiment?
+No, they have higher energies and they go through the foil.
+I see.
+Yeah.
+Huh?
+That was your question.
+While we were closer to thinking bulky, could you tell any difference in the materials between the time you deployed and the time you brought back?
+No.
+No difference there.
+Looking at it one time out the window, I thought I saw some white streaks on it,
+but that might have been just the way the sun was.
+It might have been those platinum strips that I'd never noticed when I emplaced it.
+I really don't know.
+So it just looked like it had a couple of randomly oriented streaks on it to me from the limb window.
+But when we rolled it back up again, instead of rolling straight up, it rolled out in a big long thing and I had to redo it again.
+And when that happened, I ripped it and then had to crunch it down.
+We don't see any difference between the foil we sent up and the foil that came down, except of some lunar dust on it.
+Nothing else.
+Can I ask the crew a question?
+Do you have an idea how the foil was oriented?
+Was it essentially vertical to the...
+The foregrounds.
+I mean along the gravitational force lines or was it reclined or inclined?
+It's hard to tell it from...
+I think I put it in almost parallel to the gravity vector there.
+It's on a slope, a little slope, but if I recall, it's aligned almost vertically.
+Okay.
+Thank you very much.
+Thank you.
+The next subject will be the cosmic ray detector, Dr. Bob Fleischer.
+See here?
+Oh.
+Okay.
+He's not here.
+The PIs could be here this morning.
+They're busily at home studying the data that they got back.
+I have some words from them that I'll pass along as to what they think they'll be able to see.
+They are very excited about the possibilities they have.
+Early in the mission there was a solar particle event that occurred which will enhance their data very significantly, they think.
+They think they'll have the opportunity to see particles from the sun that on an ordinary mission they would have never had the opportunity to see.
+When they got the experiment back, panel one did have considerable dust on it, and this, from the best we can tell without any analysis, came from the landing itself, from the blast up from the DPS.
+Panel one was hot.
+In the, taking the panels apart, panels two and three were cooler, and panel four was of the same order of temperatures as panel two and three.
+The cosmic ray data itself in the plastics appears to be degraded somewhat because of the temperature, but they're very hopeful that a great part of the data will be retrievable.
+At the first look on panel two, Dr. Flesher says that the number of particles they see on the plastics indeed are a great deal higher than they would have nominally anticipated indicating the effects of the solar particle event.
+And, uh, they really haven't, uh, in detail etched the plastics or analyzed them, they're just beginning to do that.
+They think they are usable?
+Yes, the plastics.
+I was really surprised because, uh, we had some lengthy discussions about this pre-flight, and I could never understand how we're gonna fly this rascal to the moon and get it there with this, with these long periods of attitude hold that we're going into where it might see plus 250 all the time.
+And, uh, of course, I'm sure those three revs in lunar orbit prior to landing didn't do any good, uh, either, because we were oriented, uh, many times so that we were facing with, uh, to maintain communications.
+We had the sun shining on that rascal, uh, all the way around.
+And, uh, I really think it, those 140 temperatures that we saw on the panels, if you go back and look at it thermally, you're gonna find out they were there.
+It had to be there long before we ever got the thing on the ground.
+Uh.
+You know, and I was really concerned about that as to why we didn't put some kind of shield in over it, but it was too late, I guess, to do that sort of thing.
+Well, the thermal design was such that it could sit, I believe, in direct sunlight almost indefinitely without any degradation.
+It's the IR heating off the lunar surface that really cooks it from, that's what the thermal people say.
+Uh, I think, and it's hard to say, and I, we did see the, the early picture did show that the temple labels had already changed, uh, early at the beginning of the EVA.
+They were black first time we looked at them.
+Right.
+And, uh, uh, a guess is the 15 hours, the, the thermal analysis says if there's like 15% dust on the panel after, uh, 20, uh, degrees of sun angle or so, you will sort of exceed the 140 degrees on the frame.
+Uh, it appeared that there was probably 50 or 60% dust on the lower part of the panel, or maybe even higher than that, and it spent about 15 hours on the surface.
+Uh, so it, it may have just turned out to be a, a number of problems that, uh, probably, uh, ones that could not be avoided under the circumstances that caused that lower panel to overheat.
+It was the hottest, and the next panel was, uh, about 20 degrees cooler, the best we can tell, and the panel, third panel up was 10 degrees cooler than the second panel.
+So it seemed to be a dust problem, but, uh, it doesn't seem to, to have hurt the data too much.
+Panel four was the one, uh, which, uh, was, uh, we were afraid wasn't going to be activated because of the anomaly on the red lanyard.
+But after they have taken the panel apart, apparently every portion of the experiment was activated to some degree or another.
+The neutron portion, uh, was partially, uh, deployed, and they think they will get some data from it.
+It's not, not as much data statistically as they wish they had.
+But, uh, uh, every portion of panel four, uh, uh, does look like it will provide some, uh, some useful data.
+And they, uh, have a lot, uh, higher hopes now than they did when they first saw the gear.
+Apparently the problem, and we haven't, again, haven't sent the hardware back to the manufacturer for analysis,
+but apparently was, uh, a malfunction in the assembly, uh, that caused that, uh, thing to jam.
+Well, we could have pulled, if I'd have known about it at the time, uh, we could have got that pair of pliers out of there and pulled harder.
+The investigator's opinion was it would have done no good.
+It was very severely jammed, and, uh, he doesn't think any additional effort would have, would have, uh, would have freed it.
+It was jammed pretty bad.
+Okay.
+But, uh, I think in all, they're, they're very excited about the data, and I think they're very optimistic now that they'll get a considerable amount of data from it.
+Tim, it's probably worth mentioning on all the plastic panels overheated, but they did have calibration plastics in there,
+and they'd be able to, but the effect would be overheated just to anneal the cracks and reduce the crack density,
+but with the calibration in there, they'd be, they'd almost have an effect.
+The other thing is that on panel four is that those experiments which are activated by pulling the cord
+are only a small fraction of the total part of the panel cord, so there's a lot of panel four that isn't involved at all.
+That's true.
+The, uh, that's for all practical purposes.
+Okay.
+I don't think we, uh, in fact, I'm sure we, you may find a fingerprint on there, but if there is, it, we, uh,
+we really were careful, uh, to get it out of there, and we didn't, uh, once we got it loose,
+we gave the usual 10-11 care and folded it up, so I don't think there's any crew fingerprints on the panel surfaces.
+Uh, that's correct. We looked at it very carefully, and it was, except for the bottom part of the panel one,
+that you could see it was a spray pattern, and, uh, it was very clean, and the PIs were very pleased about that.
+Okay.
+This, uh, cell type of event, did you notice more than that occurred?
+Yes, it started on about, uh, I believe Monday, which was the day after launch, and went through about Wednesday.
+It was about a two- or three-day type event. I think the peak was, uh, must have been about Tuesday.
+There are some satellite data available, and I don't have that on hand.
+It was a small event, but for this solar cycle, it was very surprising that it happened at all during the mission,
+that to have it during the portion when the cosmic ray was deployed, or available to accept data,
+the probability of that's very small, so it's a very gratifying thing to occur.
+I'm curious about the, uh, dust being kicked up by the DPS.
+Um, did you guys observe any dust on the thing, or any other part of the limb at that level?
+Because, uh, it's always been our impression that the dust is sent out in a pretty thin layer,
+but you don't get a billowing effect.
+Yeah, I'm sure it's sent out in a thin layer,
+but with all those frontal blocks around there, it's a possibility some of it could come back at you, that's for sure.
+Yeah.
+It was extremely hard to see, and when we photographed it, the lights are not similar to the sun,
+probably much less in intensity, but yet the photographic lights did wash out.
+It's a very pale, uh, kind of dust, but it's very predominant.
+And it came up from the corner, Dave, in a pattern that you would expect it to be blown,
+and there were some black streaks in there that appeared to be melted something or other on it.
+And I think they are going to attempt to chemically analyze the material on it,
+and try to find out what it is.
+How high above the surface, or up, down the left?
+That first panel must be about chest high, is it not?
+Okay.
+Yeah.
+Any other questions?
+One, just one comment.
+That was, uh, the frame of that thing was hot, really, it was hot.
+That was the only thing I felt through my gloves the whole state.
+Well, it was jammed, and John tried to pull it out, and I was holding the frame,
+and I started feeling it through my gloves.
+Did you get any feel for why it was jamming, or where it was jamming?
+Did you have any clue, or what caused it?
+It was jamming at the base.
+Yeah, not at the bottom.
+Right, right at the bottom part.
+Yeah, it was something that broke free right at the base,
+and then it just came out like it had grease on it.
+Maybe we spilled some orange juice on it or something.
+No way.
+That's the only thing we didn't spill orange juice on.
+It's not that you didn't try, huh?
+That's a good cement, you guys.
+You ought to start thinking about that.
+Dispose that stuff to vacuum, boy.
+Okay, our next experiment was the far-UV camera.
+Dr. Page?
+Well, for the benefit of some of the geologists here, I'll recount the goals and purposes of this experiment,
+which were to obtain photographs in the far ultraviolet of the geocorona in the upper atmosphere of the Earth.
+I should have said these photographs, of course, include spectra as well.
+And solar wind, clouds, possibly interstellar hydrogen, colors of stars in the far ultraviolet, and possibly intergalactic hydrogen.
+We had a lot of troubles, I guess John well knows.
+Before launch, the difficulty was to keep the camera dry because its optically sensitive surface would immediately run away if it got damp.
+And this was accomplished with a bag that caused Captain Young a little bit of trouble in the practices in advance,
+but apparently worked all right on the lunar surface.
+That's great.
+The second difficulty was getting through the Van Allen belts without fogging our film,
+and I'll show you in a moment that we did that all right with a rather small amount of shielding around the film cassette.
+Then we had some difficulty with the limb being in the way.
+This came about because of the delay in touchdown, high sun angle,
+and the necessity to keep the camera close to the limb so that it would be in the shadow.
+With its gold surface, it would have heated up very rapidly if it had been out in the full sunlight.
+The accomplishments that I will show you in a moment on the screen include 92 photographs in Limon Alpha imagery,
+and 53 spectra, some of them extending from 500 angstroms to 1550 angstroms.
+That's, I think, the farthest into the ultraviolet anybody's ever taken astronomical pictures.
+We may get evidence of gases in the lunar atmosphere from several of our pointings which were low across the lunar horizon.
+And if anything were coming out like geysers of water or whatever it is, we'll certainly pick it up.
+The data on these photographs are extremely numerous, and it'll take us an estimated six months to a year to get them all out,
+which will be done with the big computer here at the MSC.
+So, Dr. George Carruthers, who is the PI and who designed the camera,
+happened to be free today from work on an Arabi flight, and he's here,
+and will undoubtedly make comments whenever he sees something to comment on the photographs.
+Do we have the first slide?
+I might say that I got into trouble with the American Photographers' Union in thanking the prints of these,
+because I'm not a member of that unit, and they tried to throw me out of the dark over here.
+This is probably one of the most dramatic pictures of the Earth that shows auroral belt on the dark side.
+You're looking at the Earth with the sun off to your right.
+The south pole of the Earth is down, and that funny lip-like thing sticking off to the left at the bottom
+is aurora, we think, around the south magnetic pole.
+The most striking thing is the next lip up, which on the original you can see better than on this slide,
+goes around the full backside of the Earth.
+It's called the equatorial auroral belt, and disappears back of the dark side in the upper left corner.
+The third lip is another belt.
+It looks at first as if that was just all one, but there are two separate belts there,
+and it was quite unexpected.
+This photo...
+What's the dimension of the Earth's actual size?
+Well, you know, it's 8,000 miles cross.
+There's some halation here, and I guess I'm not too sure, and perhaps George knows.
+This is a special Eastman NTB3 emulsion, very, very thin.
+And, of course, the exposure was made with electrons, not with light.
+It's an electronographic camera.
+But the dimension works out right.
+You can't see it too well on this print.
+There's a ring or a limit to the field, which on the originals is 30 millimeters across.
+It's 20 degrees in the sky, and the Earth is 2 degrees, and it checks out.
+So the dimension you see there is 2 degrees across the full diameter of the Earth.
+You say this is the equatorial auroral belt.
+I think what I'm trying to say is that what is the third line from the bottom?
+Is that the back side you see, or...?
+No, you can't see through the Earth.
+That's why I asked you.
+Is the Earth's the power of the Earth?
+No.
+The geometry is such that that is probably inclined 30 degrees to the magnetic equator,
+and is an unexpected auroral belt.
+It'll take a little more figuring to figure this out.
+What was the latitude of that third belt?
+As I just said, my guess, looking at the picture, it hasn't been measured accurately,
+it's 30 degrees north.
+That's just the standard of bio gas realm.
+Okay.
+You'll notice on these pictures that they're overprinted.
+That's because I'm not a member of the Photographers' Union,
+and the originals have a good deal more on them.
+This picture was taken excluding hydrogen light, Lyman Alpha.
+We have two filters on the camera, and this one is taken in light between the wavelengths of 12, 30, and 1550 angstroms.
+Now, the next slide.
+Can I start?
+Yeah.
+Is the whole diameter you're seeing there, is that all the Earth, or is that twice what the Earth is?
+No, it's the Earth.
+Just the Earth.
+The whole thing you're seeing is the Earth.
+Right.
+Is that twice the image?
+No, no.
+It's, as I said, the little halation, which makes it a little bigger than it ought to be.
+It's only a few percent.
+Yeah, a few percent.
+Now, in this one, it's exactly the same view.
+It was taken after John so accurately pointed the camera at the Earth.
+The Earth is in the middle there, and if you look real hard, you can see the dark side of it off to your left.
+This is the geocorona.
+The streaks are an instrumental matter.
+Actually, we have a barrier membrane that George put very close in front of the film to keep visible light from getting in there.
+And the barrier membrane wasn't quite uniform, and that's where the streaks come from.
+The circular thing on the right is an overlap, another defect.
+The little motor that advanced the film between exposures didn't pull it quite far enough for this one.
+And those dust spikes, I guess, are my pipe tobacco on the slide.
+You know, Thornton, that Rastley thing was moving.
+And at first it wasn't moving.
+The wheels weren't going as far as they did toward the end.
+Yeah.
+No, we have a complete transcript of everything you said about it.
+Okay.
+And in looking at the film, which I've done in great detail, you can see the most serious defect in that film advance was during your short exposures on the Earth, John.
+Everywhere else it worked fine.
+And I have an idea that pushing the buttons so frequently sort of confused the motor, and it didn't turn as far as it should have.
+Well, in any case, you'll notice that the shape of the geocorona is as predicted by Dr. Meyer at the Naval Research Lab.
+It's got a dimple in the back, down sun.
+The sun is still to the right here.
+And our other photographs show that it extends at least twice as far as you see here off to the right.
+The print, of course, can be printed dark or light.
+And if I printed this one lighter, I'd have got the background all over the whole slide, and you wouldn't have been able to see as pretty a picture as this.
+Now, the next slide shows the one further to the right.
+The sun is still to your right.
+The Earth now is off the edge of the picture to the left.
+This was one of the sequence taken through the night between EBAs 2 and 3.
+You see a star background here.
+And again, the geocorona, those streaks which are not real, extending actually right across this frame,
+if you print the thing lighter.
+Now, the next slide shows the two of these combined.
+And that printed a lot darker.
+And I guess it's not as artistic an effort as I had hoped.
+The geocorona produces hydrogen in 1216 angstroms, lina alpha.
+And the next slide shows the spectrum actually taken on that first slide.
+The spectrum is, dispersion is vertical.
+And that white band across horizontally, roughly horizontally, is lina alpha.
+And you see how strong it is.
+The Earth is in the middle of this picture, and the spectrum of the upper atmosphere is spread out on that vertical line,
+from far ultraviolet down at the bottom to nearer ultraviolet up at the top.
+A bright line just above lina alpha is 1304, which is the oxygen line.
+And George, do you want to describe this in a little more detail?
+We've, so far, only made a very crude analysis of the spectra by comparison with the laboratory spectra made in the preflight calibrations.
+However, we have tentatively identified the 584 line of helium, the 834 line of ionized oxygen, the 1026 line of limon beta of hydrogen,
+these three lines are the first spectral measurements in the Earth's upper atmosphere.
+All previous measurements have been limited to wavelengths longward of 1,100 angstroms,
+which we also cover and which includes the Lyman alpha line in 1216, the 1304 and 1356 lines of atomic oxygen,
+and the Lyman-Berge-Hopfield bands of molecular nitrogen between 1,200 and 1,600 angstroms.
+The Lyman alpha line, of course, is by far the strongest emission that we have seen in any of our spectra,
+and it's the only one that we have conclusively identified in any of the spectra that do not include the Earth.
+However, by comparison of spectra taken with and without our lithium fluoride corrector plate, which cuts off at 1050 angstroms,
+we will be able to determine whether we see a general background in the 584 line of helium and the 1026 line of atomic oxygen hydrogen,
+as we expect, though they will be much weaker than the Lyman alpha line.
+We've got that other spectrum coming.
+In other words, can you hold on a minute?
+I think the order he's got him in has the Magellanic cloud, and we're probably taking too much time.
+Can we have the next slide?
+Oh, that's it. Go ahead.
+So this is without the corrector plate.
+You'll notice that the Lyman alpha here is broader.
+The definition is poorer, but as George was just saying, we get lines further down in the ultraviolet on spectra
+taken without the corrector plate than with it.
+And you see here, too, these other lines are not uniform.
+This is a spectrum that was obtained with the Earth off the edge here.
+So it shows that the geochrona goes right across this slide, as I said last time.
+By the way, that's 100,000 miles.
+And the other lines here show that either other materials in the geochrona or beyond the geochrona.
+I guess it's going to take a little while to figure out which are which.
+Go ahead. I didn't get a question.
+Is that any more to say about it?
+I guess, yes.
+The next two slides quickly show the, well, that's right.
+It's one.
+The Magellanic Clouds, which are, well, John was worried about what LNC meant,
+and this is the Large Magellanic Cloud, and that's the initial, what the initials referred to.
+The picture on the left is with hydrogen, with lamin alpha.
+And the picture on the right is without.
+In this far ultraviolet region, all that you are seeing here are the very hot blue stars.
+And over here you see the clouds of hydrogen gas.
+So the difference between these two photographs is hydrogen.
+And we get the record of, well, the Magellanic Clouds are nearby galaxies,
+so we have a galaxy with all of the stars and neutrons and whatnot spread out in front of us to study.
+Now, Carl Hennei has made special studies of these Magellanic Clouds and is very much interested
+and already has copies of these photographs for the study.
+You notice that the hydrogen is not just from the Magellanic Clouds.
+The stuff up here is out in the open sky, and just what caused that background, I don't know.
+Is there any other slide?
+That's the last one.
+We had a couple of questions for John.
+One was that sticking which had us worried.
+You talked about the instrument may flying Apollo 17.
+Robert, it's very Houston in it.
+So what was the sticking?
+Did it continue right through?
+You didn't mention it in EVA-3.
+It got worse all along.
+I just got the feeling there was some kind of hang-up in possibly long-term vacuum exposure
+or something to the operation of the way it was working in azimuth.
+And I never was able to, or never able to really...
+It never got better.
+No, it never got better.
+In fact, the longer it sat there, maybe the cold, it just seemed to get stickier and stickier.
+Toward the end there, every time I had to, every time I got to a new setting in azimuth,
+it completely destroyed the level.
+And we were unfortunate that we were on that slope right there under the foot pad of the limb.
+And so I had to go back and re-level it every time.
+And that was, we were really working at the limits of the level ability of the machinery, I think, there.
+You see that it didn't make much difference.
+That Magellanic Cloud should have been out in the middle.
+I know, I know.
+And you were off by that much because...
+But, well, that's...
+If we were on a level slope, there would have been no problem in getting a bubble right in the middle every time.
+And if the azimuth had worked easily, it would have remained level.
+But I sure don't know what it was.
+It couldn't have been dust that got in the...
+We thought that was impossible.
+No, I don't think we had any...
+In fact, I'm sure we didn't have any dust on the legs up that far.
+The film cassette you brought back had very little dust on it.
+In fact, it looked brand new.
+Well, I hope...
+If it got dust on it, it got it inside the limb.
+There was plenty in there once we got into zero gravity.
+Although, I don't know how to crawl through two bags.
+That's why I was quite surprised there was no dust in the bag.
+In fact, we're disappointed because we're going to collect a little bit of dust off it.
+I know.
+Any questions on the floor?
+Yes.
+And I'm sure it got some dust on it when I removed it, though.
+Well, I got a little...
+A very small amount, which I'm legally keeping it with this.
+Don't tell anybody.
+The FBI will be around to see you.
+Did you see evidence of the magneto sheet or a bow shot?
+So far, we have not seen any discontinuity in the up-sun geocorona, which would be indicative of that.
+It just sort of dribbles off the way.
+As you go sunward from the Earth, then there's no sharp drop.
+But we're really not as far as the...
+Ten or the radiation should have been in the middle of that up-sun.
+I know.
+I guess...
+Is it only...
+There's only ten.
+Twelve.
+Yeah.
+Okay.
+Any more questions?
+Okay.
+Next subject is the lunar geology investigation.
+Dr. Mulverter.
+Dr. Mulverter.
+Dr. Mulverter.
+Dr. Mulverter.
+Dr. Mulverter.
+For the benefit of the astrologer in the crowd, there's been very little evidence for water, and none so far for geysers.
+Our experiment may not be as far-reaching as theirs, but on the other hand, I think we've made a large step toward understanding the history of the moon, and therefore the Earth, and therefore the solar system.
+And if you guys can find any more, we're out there with you.
+So far, we've completed the mission itself, and all major objectives for the preplanned traverses were reached, and were sampled, and were described, and photographed.
+And as far as we can tell with our quick look at the photographs, all of these were done well.
+We've produced a so-called greenback at the end of the mission operations itself, which was a summary as of our knowledge at that time.
+It was based on crew observations, TV, and the pre-mission data.
+Included in that thing are station sample maps, which were derived from the TV in real time, and that was a very useful tool to us.
+A sample inventory, a film usage inventory, and a station locations, again, resected from the TV pans.
+By the end of last week, we've received black and white two-time enlargements of all film.
+These are the typical drugstore-quality prints, and sooner or later, we'll get good quality, so our analysis is very brief.
+We've assembled all the panoramas.
+Sample location studies are nearing completion.
+The film inventory is also nearing completion.
+The geological analysis is still in its infancy, and I suspect it should progress rapidly now that we've got all this inventorying over with.
+You guys took so damn many pictures, it takes time to get them organized.
+We've had one session with the crew in the LRL with samples, and most of our questions need samples in hand,
+and those I'm sure we'll be able to discuss later.
+And so the questions I've got relate more to surface observations that maybe we can amplify.
+And some of these are questions that we've asked you before, but I have a few polaroid prints of these photos that maybe can jostle our minds,
+and assist in refining some of the answers that we've gotten on the debriefs after the EVAs or on trans-Earth.
+Our photo-geological mapping group primarily talked about rays by their whiteness.
+There were a few spots where they thought they were seeing dark rays.
+You recognize both light and dark colored rays, particularly the south ray picture.
+If I could have slide one, please, which is the south ray panorama and the print I've just given to the crew a single frame from that.
+There I think we can see light and dark, and the real question I'm after is what led you to say that you were on or off a ray?
+And secondly, were there any visible differences in the rock types as you drove by or had a chance of sampling ray material?
+The hills are at the bottom.
+Yeah, I think the thumbprint goes in the upper right.
+Could the projectionist give that a 180, please, around a horizontal axis?
+That one's got the same problem. There we go.
+Now it's a hill instead of a hole.
+This is your pan from Station 4.
+You see that black line coming over the...
+This photo really doesn't do that same justice.
+Polaroid prints never do.
+Well, I mean, you really have to see it to believe it.
+That white is so much whiter than the contrast that we were able to get out of the photographs.
+I think when I looked at it, my assessment of this, which is kind of a bad place, was that it was a black ray coming out.
+The right rim there on the photograph.
+And it probably went right down that, as you know, the photograph that showed the black area coming out of South Ray.
+Right.
+And there's a series of black blocks.
+There's a bunch right there.
+Left edge.
+Yeah.
+And there's also...
+And Charlie described this in real time.
+There's some more black blocks in there.
+And they seem to come out in ray patterns, too.
+Don't you think, Charlie?
+Yeah.
+That rascally...
+That's one spectacular crater.
+That ray coming down the south right edge might have been the ray that made, or at least part of it, that made Survey Ridge.
+Because it just ran right across those wrecked trap craters, and we could see it going all the way down.
+Is that the bright ray you're talking about in the lower right?
+This ray right here, Bill, came right through Stubby, right up over, and right out of Survey Ridge.
+This one right here.
+So that was the source of your terrific block field there.
+Oh, man.
+And just amazing how much rocks a rascal laid down.
+I just couldn't believe it.
+Traffic ability in close to that thing would probably have been very interesting.
+We should have had another EVA to find out.
+I think it's a heat flow one.
+The reason we called we were on a ray was really an abundance of secondary craters and an abundance of blocks.
+And they thinned and thickened as we, I think, traverse raised, but we never did get totally out of blocks to the south, to the traverse to the south.
+There were always five, at least three to five percent of the surface had cobbles, and I say cobbles, 20 centimeter blocks, and larger.
+And the blocks were generally asymmetrical enough to the crater, or the crater shape was elongated, or just a great spattering of craters is why you're calling them secondaries?
+I think subjectively we felt they were oriented from south ray all the time.
+Right.
+It was really just a subjective field as we were driving by them.
+There were a lot of the blocks that were not associated with any craters.
+There would be a pile of a series of secondaries, but around for a couple of hundred meters, there'd be more blocks.
+In fact, as far as you could see, there'd be blocks just scattered over the surface that were not associated with any secondaries.
+But the true secondaries were, we did see some that were classic, where they were, you could, the ejector was down range from, and it pointed right to the south ray.
+Station four, for instance, was one that was...
+Can I have slide four, please?
+I might add that these black rays and the black blocks that you see here were also evident at baby ray.
+Can you rotate that one, too?
+And to a more, or to a lesser degree, the sampling at north ray had an appearance of being black and white matrixed, black and white rocks also.
+The north ray rocks.
+Do these black streaks go all into the crater themselves, down vertically down into the sides of the crater?
+At south ray, yeah. That one on the left that you saw there was, you could track it over the rim and back right across the rim.
+And Ken, could you see that from orbit? You can see a lot of these fresh, but like black streak craters.
+This one, south ray does not have nearly the obvious dark streaks that run down inside and outside that many of the other craters do.
+There was dark material, dark appearing material, it was very obvious, in the crater interior.
+But I never recognized it as being a ray that was thrown out with a radial dimension.
+Yeah, I think, looking at the photography, the feeling we got from looking at south ray was that that black streak was just an absence of any rays.
+But I think, from the blocks, it must be black ray material.
+Dark material.
+Maybe the dark matrix rocks would produce that darkening.
+It petered out a lot faster than the white rays, though.
+So, I mean, you know, within a quarter of a crater diameter.
+Yeah, I think it was from the bottom of it.
+From the bottom of it.
+Those could disappear just because of their general appearance.
+Could.
+Like the local regolith, the white ones being so obviously different, it would be easier to recognize.
+I suspect why the mappers did the same thing.
+Here's your pan, John, or part of it, looking up sun.
+And this crater you suggested was the secondary.
+And therefore, the sampling that you were doing primarily over there to the left corner is where the rover is,
+would be south ray ejecta as the principal source.
+There's one reason we wanted to move you on, and I think that was a good decision now that we look at your photographs and from what you had told us.
+Well, we sampled this crater up on this close-in rim and down the rim a little bit, but I, man, if that's not a classic secondary, I never saw one.
+That's type locality, if you pardon the geological verbiage.
+And you can see the debris from there. It's scattered all out in here, too.
+The rover's back over here.
+Yes.
+Down slope.
+You can see it right in the left corner, just the edge of it.
+Oh, yeah.
+And I think you're standing there, Charlie.
+Probably on my face.
+Okay.
+Okay, related to this are some of the craters that you called indurated and had clods around them.
+Can I have photo seven, please?
+And that'll probably need a 180, too.
+No, plumb.
+No, number seven.
+Oh, yeah, that's plumb.
+Okay.
+Now, that plumb's got a little bench in it, and on the pre-mission work, there were quite a lot of them that had benches
+suggested that there was an indurated layer that was shallow compared to what the crater counts said that the age of that whole surface had to be.
+We just heard Kovacs tell us there's a very thick regolith here, which is what it should have had by the cratering stories, and yet there was always this little bench.
+We're wondering now whether that bench has some relationship to the ejecta from the south ray and north ray craters, and therefore might be what you've brought up here on the rim of plumb as some of the pre-ray indurated regolith.
+Do you have any thoughts that could go into that?
+That wasn't what I was calling the indurated regolith, Phil.
+Wasn't it?
+No.
+What was that?
+The indurated regolith I was talking about was two-meter-sized craters.
+Two-meter.
+Yeah, two-meter-sized, and there were little teeny clods, no bigger than a grapefruit, and that were symmetrically around a very shallow crater that had a hackly black glass right in the center of these little craters.
+And the biggest one was no more than two meters in.
+You see down in the plumb, see that outline of rocks down in there?
+No, keep going down.
+Right here?
+No, over here.
+To the left.
+Okay.
+See those rocks right in there?
+I think...
+Near the bottom of the view.
+I wouldn't be surprised, but what the most likely candidate for a rock that was from down either in the bottom of plumb or from the lower part of flag was that piece of rock that we chipped off of.
+It's located right in this area.
+Yeah, it's just outside of the view of the picture.
+And I...
+Because that had been...
+That was well under the...
+I mean, it was a submerged rock, and I got the feeling that it was sort of local to the area.
+I mean, I don't see how it could have been from South Ray or unless that was extremely soft when it plunked in there.
+I didn't rule out that, but I mean, that would be the most likely candidate of the ones we could get to.
+We could...
+There's no way we could have got down in there and got those rocks.
+That's true.
+And gotten back.
+Since they took your tether away from you, I don't imagine you want to explore those craters.
+Okay, the Buster Crater...
+Photo 8, please.
+This is your partial pan of Buster.
+Again, not a winner for photographic work.
+It's at least as good as the astrologer's pictures, though.
+You described that there was a southwest and northeast bouldery field in here.
+We're looking almost down the sun, and I'm wondering...
+I can't tell in these photographs.
+Could you tell whether there are blocks over in there, and therefore your impression of this streak across it could not be salted because you're looking down sun?
+Well, I might have been...
+I didn't really mean to say southeast-northwest.
+This...
+The predominance of blocks in Buster were oriented in this direction, across out this way, which is northeast-southwest.
+Yeah.
+And...
+That's what you said.
+Yeah.
+And...
+You're reconfirming that.
+Reconfirm that.
+And over in this area, you can see some of the blocks, but not nearly as many as here.
+Now, we can barely see the bottom of Buster, but the bottom of Buster is covered with blocks that were up to two meters across, and showed no orientation in any direction.
+My feeling over here, due to the...
+There were blocks in this area, but they're not...
+They were not as numerous as this pattern in here.
+All right.
+So the blocks that you're... on the side you were standing would have been derived primarily from that hole, and not from the impacting material that...
+It has the appearance of a secondary from South Ray in this kind of a photograph.
+Sure.
+Your description of it, do you not go with that interpretation?
+Well, if it is, it's the biggest one that we saw.
+It's a big one.
+That is a big crater.
+From here to here, it was at least 50 meters.
+At least, yeah.
+And the size of those blocks and the depth of that crater, and South Ray is six kilometers away, that had to be one big block that pounded into there.
+Yeah.
+And I don't know whether you can even excavate something that large.
+It's much too large to be...
+I don't really think it's a secondary.
+Well, that's my feeling that looking at it, it was a primary, because I couldn't conceive of how you'd get one from...
+Of course, it could have maybe been a secondary from one of those big craters way down south.
+I think that's a possibility.
+Yeah.
+So that's either local bedrock or some of the flap or the thrown out material from spook that we're seeing there in the floor and the walls.
+Great.
+Spook didn't look like that at all.
+This was a lot fresher crater than spook.
+I hate to oversimplify this business.
+Man, because it...
+Don't tell them where that rascal came from.
+Okay, I'd like to have slide nine, please.
+This is North Ray Crater.
+And there were arguments among you guys and there were arguments among ours as to whether we're seeing layering in there.
+And I think the layering that you were talking about, John, is over in the right part where there's a dominance of blocks.
+Is that...
+Yes, sir.
+...a true statement?
+Right there.
+Yeah, that's certainly one of the best candidates for...
+Yeah, I just...
+It's just hard to imagine how the blocks would either all slump down there and end up at that spot or...
+Yeah, slump down there and end up there.
+You know, in our geology trips we ran across a lot of contacts that was a great deal more subtle than that one right there.
+And that's why I picked it.
+There's a better view of that as you get on further to the north, Bill.
+I think it shows it a little bit deeper down.
+But there's...
+Certainly if there is any...
+The right polarimetric pan is what I should have had rather than the left.
+Okay.
+It was in use when I needed to make the picture.
+You know, up at...
+Going up Stone Mountain there was one other crater that we were looking into as we were driving up Stone Mountain
+where we could see what looked to be more like an outcrop than anything I've seen so far.
+In that it was the same kind of thing, only it wasn't broken up like that.
+It was just one solid piece.
+I don't think there was any way we'd have gotten up the hill to it.
+And we've got some photographs of that.
+And it shows up on a 16mm photography as we're driving up there.
+And I can point it out to you.
+But it was about that, you know, one third of the way down from the top to the floor.
+The same kind of...
+The rover...
+But that's the only two places where I'd really call out...
+I would hazard a guess that that was outcrop.
+That was outcrop.
+Off to the left there, you can see a vertical string of blocks right in the middle.
+Right here?
+The far wall, yeah.
+And were there any visual observations you made of that that...
+Well, again, I got the impression we had areas, white areas, and dark areas.
+Now, maybe the darkening was just because of the shadows caused by the rocks.
+Now, I got the feeling those were the dark blocks like house rock, just like Charlie does.
+And I got the feeling there were places where there were strings of white blocks, too.
+These rocks right here that are more buried are...
+And the regolith is deeper in this area, are all white matrixed rocks.
+Yeah.
+Around this way, and really right out from this little block here, is house rock sits here.
+Right.
+And that is predominantly a black matrixed rock.
+And I counted nine radial block trails out of that crater.
+One, two, three, four, five, six, seven, and there's a couple over in here.
+It gave you the impression that you could track them from the floor all the way out over the rim,
+at least as far as we could see.
+Distinct zones of blocks.
+Good.
+As rascally, actual craters don't really exhibit the classic overturned flap that we've been looking at.
+They are more complicated than that when they all get shuffling around on themselves.
+In here, as I said, we had an impression that the regolith was more loosely consolidated
+because of a footprint impression I had.
+Down at South Ray, correction, down at House Rock, we already commented that we couldn't even get the tongs or the shovel,
+or the scoop in.
+And around the rover, which was sitting right back out here, we had the same problem.
+And you don't get the impression from here, but the slope going down to that block where we'd have to go down to
+to get a picture of the bottom of the crater was not the kind of thing I'd want Charlie to be doing
+without having that hundred-foot line on us.
+So we didn't get any pictures of the bottom of it.
+Well, we'll wait until we get the pan camera stuff to look into the bottom, I guess.
+Or Ken's words on it.
+I wouldn't mind him going down there, but I'd like to be able to get him back.
+Yeah, me too.
+As you can see here, the white matrix rocks had more filleted and appeared to be more covered with regolith
+than the larger rocks around over here to the north where the black matrix rocks, the house rock was.
+It had some filleting, but it was not nearly so pronounced as this area up to the south.
+Would the house rock TV pan do you any things you'd want to point at?
+I've got that up there in the slide if you'd want to.
+It's lousy, but it's...
+I don't think so.
+It's a big one.
+I guess it's a quarter of the way down to the bottom.
+Well, it's really hard to tell.
+You know, that rascal is half a mile across.
+So some of those rocks sitting in there must be almost as big as house rock.
+Yeah, that's right.
+It's really hard to say.
+We didn't ever see the bottom, and it's about a quarter of the way down from where we could
+see.
+I would imagine that the bottom of North Ray looks very much like Buster, the bottom of
+Buster, with bigger blocks.
+Yeah.
+Hopefully the pan camera will show that.
+But we never...
+Pre-mission photography.
+You had a feeling you didn't want to get close to that beauty, right in this area.
+There was a bench down in here that you could probably have walked out on and seen a bottom,
+but you'd have fallen off.
+It would have spoiled your whole day.
+I'm sorry that you get the flight controllers mad because you didn't get back to the limb on
+time.
+Yeah.

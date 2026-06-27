@@ -40,6 +40,28 @@
       "Tim McMillan",
       "Billy Cox"
     ],
+    "newsrooms": [
+      "The Wall Street Journal",
+      "Wall Street Journal",
+      "The New York Times",
+      "New York Times",
+      "The Washington Post",
+      "Washington Post",
+      "Reuters",
+      "Associated Press",
+      "AP News",
+      "Al Jazeera",
+      "Russia Today",
+      "CNN",
+      "Fox News",
+      "NewsNation",
+      "Politico",
+      "The Debrief",
+      "Liberation Times",
+      "Daily Mail",
+      "The Guardian",
+      "BBC"
+    ],
     "professors": [
       "Eric Weinstein",
       "Garry Nolan",

@@ -67,6 +67,7 @@ CATEGORY_LABELS = {
     "books": "Books",
     "authors": "Authors",
     "journalists": "Journalists",
+    "newsrooms": "Newsrooms",
     "frequencies": "Frequencies",
     "locations": "Locations",
     "people": "People",
@@ -126,6 +127,7 @@ CATEGORY_LABELS = {
 
 TOP_CATEGORY_LABELS = {
     "people": "People",
+    "news_media": "News Media",
     "institutions_programs": "Institutions & Programs",
     "places": "Places",
     "documents_media": "Documents & Media",
@@ -141,7 +143,8 @@ CATEGORY_TO_TOP = {
     "whistleblowers": "people",
     "experiencers": "people",
     "professors": "people",
-    "journalists": "people",
+    "journalists": "news_media",
+    "newsrooms": "news_media",
     "politicians": "people",
     "directors": "people",
     "producers": "people",
@@ -231,6 +234,19 @@ DEFAULT_TERMS = {
         "NGA",
         "Pentagon",
         "ODNI",
+        "U.S. Army",
+        "US Army",
+        "United States Army",
+        "U.S. Navy",
+        "US Navy",
+        "United States Navy",
+        "U.S. Air Force",
+        "US Air Force",
+        "United States Air Force",
+        "Air Force Research Laboratory",
+        "Air Force Research Lab",
+        "Army Futures Command",
+        "Army Corps of Engineers",
     ],
     "government_project_codenames": [
         "Project Blue Book",
@@ -324,6 +340,28 @@ DEFAULT_TERMS = {
         "Steven Greenstreet",
         "Christopher Sharp",
         "Tim McMillan",
+    ],
+    "newsrooms": [
+        "The Wall Street Journal",
+        "Wall Street Journal",
+        "The New York Times",
+        "New York Times",
+        "The Washington Post",
+        "Washington Post",
+        "Reuters",
+        "Associated Press",
+        "AP News",
+        "Al Jazeera",
+        "Russia Today",
+        "CNN",
+        "Fox News",
+        "NewsNation",
+        "Politico",
+        "The Debrief",
+        "Liberation Times",
+        "Daily Mail",
+        "The Guardian",
+        "BBC",
     ],
     "professors": [
         "Eric Weinstein",
@@ -522,6 +560,50 @@ DATE_RE = re.compile(
 BLOOD_RE = re.compile(r"\b(?:A|B|AB|O)[+-]\b")
 PATENT_RE = re.compile(r"\b(?:US\s*)?(?:Patent|patent)\s*(?:No\.?\s*)?(?:\d{4,}[A-Z0-9-]*)?\b", re.I)
 PERSON_RE = re.compile(r"\b(?:Dr\.|Mr\.|Ms\.|Sen\.|Rep\.)?\s*(?:[A-Z][a-z]+|[A-Z]\.)\s+(?:[A-Z][a-z]+|[A-Z]\.)(?:\s+(?:[A-Z][a-z]+|[A-Z]\.)){0,2}\b")
+MALFORMED_SERVICE_FRAGMENT_RE = re.compile(r"^S\.\s+(?:Army|Navy|Air\s+Force|Airforce|Aircraft)$", re.I)
+MILITARY_BASE_NAME_RE = re.compile(r"\b(?:Air\s+Force|Army|Naval|Navy)\s+Base\b", re.I)
+MILITARY_ORG_NAME_RE = re.compile(r"\b(?:Army|Navy|Air\s+Force|Marine\s+Corps|Coast\s+Guard)\b", re.I)
+MILITARY_PERSON_ROLE_RE = re.compile(r"\b(?:Admiral|Brigadier|Captain|Chief|Colonel|General|Lieutenant|Minister|Sergeant)\b", re.I)
+NEWSROOM_NAME_RE = re.compile(
+    r"\b(?:Journal|Times|Post|News|Network|Press|Reuters|Associated\s+Press|BBC|CNN|Guardian|Jazeera|Politico|Debrief|Mail)\b",
+    re.I,
+)
+INSTITUTE_NAME_RE = re.compile(r"\b(?:Institute|Institutes)\b", re.I)
+UNIVERSITY_NAME_RE = re.compile(r"\b(?:University|College|School)\b", re.I)
+RESEARCH_ORG_NAME_RE = re.compile(r"\b(?:Laboratory|Laboratories|Labs?|Research\s+Center|Research\s+Institute)\b", re.I)
+GOVERNMENT_ORG_NAME_RE = re.compile(
+    r"\b(?:Department|Agency|Administration|Bureau|Office|Ministry|Command|Secretary|Forest\s+Service|Geological\s+Service|"
+    r"Health\s+Service|Selective\s+Service|Strategic\s+Services|Technical\s+Services)\b",
+    re.I,
+)
+COMPANY_ORG_NAME_RE = re.compile(r"\b(?:Corporation|Company|Companies|Inc\.?|LLC|Ltd\.?|Limited|Aerospace|Aircraft|Technologies|Systems)\b", re.I)
+GOVERNMENT_ROLE_GROUP_RE = re.compile(r"\b(?:Officers|Officials|Agents|Postal\s+Service|Secret\s+Service)\b", re.I)
+RESEARCH_ROLE_GROUP_RE = re.compile(r"\b(?:Scientists|Researchers|Technicians|Engineers)\b", re.I)
+GENERAL_ORG_NAME_RE = re.compile(r"\b(?:Service|Services|Division|Center|Centre|Staff)\b", re.I)
+NON_PERSON_TOP_CATEGORIES = {
+    "companies",
+    "contractors",
+    "government_agencies",
+    "institutes",
+    "newsrooms",
+    "research_groups",
+    "universities",
+}
+PERSON_LIKE_CATEGORIES = {
+    "people",
+    "whistleblowers",
+    "experiencers",
+    "professors",
+    "journalists",
+    "politicians",
+    "directors",
+    "producers",
+    "authors",
+    "hoaxers",
+    "dangerous_people",
+    "friendly_people",
+    "likely_spies",
+}
 
 PERSON_STOPWORDS = {
     "United States",
@@ -538,6 +620,21 @@ PERSON_STOPWORDS = {
     "New Science",
     "You Tube",
     "Thank You",
+    "Wall Street Journal",
+    "The Wall Street Journal",
+    "New York Times",
+    "The New York Times",
+    "Washington Post",
+    "The Washington Post",
+    "Associated Press",
+    "AP News",
+    "Al Jazeera",
+    "Russia Today",
+    "Fox News",
+    "Daily Mail",
+    "The Guardian",
+    "The Debrief",
+    "Liberation Times",
 }
 
 CLASSIFY_HINTS = {
@@ -559,6 +656,7 @@ RELATION_RULES = [
     (("government_agencies", "government_project_codenames"), "operates_or_oversees"),
     (("contractors", "government_agencies"), "contracts_with"),
     (("document_names", "people"), "mentions_or_authored_by"),
+    (("journalists", "newsrooms"), "reports_for_or_published_by"),
     (("military_bases", "locations"), "located_near"),
 ]
 
@@ -917,6 +1015,7 @@ def extract_mentions(segments: list[Segment], dictionaries: dict[str, list[str]]
 def resolve_competing_mentions(mentions: list[Mention]) -> list[Mention]:
     priority = {
         "whistleblowers": 100,
+        "newsrooms": 97,
         "journalists": 96,
         "professors": 94,
         "politicians": 92,
@@ -987,11 +1086,41 @@ def person_mentions(segment: Segment, omit_terms: set[str]) -> list[dict[str, An
     for match in PERSON_RE.finditer(text):
         raw = re.sub(r"^(Dr\.|Mr\.|Ms\.|Sen\.|Rep\.)\s+", "", match.group(0).strip())
         name = re.sub(r"\s+", " ", raw)
-        if len(name) < 5 or name in PERSON_STOPWORDS or normalize_name(name) in omit_terms:
+        if len(name) < 5 or normalize_name(name) in omit_terms:
+            continue
+        if MALFORMED_SERVICE_FRAGMENT_RE.match(name):
             continue
         if any(part.lower() in {"the", "and", "but", "you", "this", "that"} for part in name.split()):
             continue
         context = excerpt(text, match.start(), match.end(), width=220)
+        military_category = classify_military_organization(name)
+        if military_category:
+            items.append(
+                {
+                    "name": name,
+                    "category": military_category,
+                    "detector": "heuristic:military_organization",
+                    "confidence": 0.74,
+                    "reason": f"Military organization heuristic matched {label(military_category)} naming",
+                    "excerpt": context,
+                }
+            )
+            continue
+        organization_category = classify_non_person_name(name)
+        if organization_category:
+            items.append(
+                {
+                    "name": name,
+                    "category": organization_category,
+                    "detector": "heuristic:organization_name",
+                    "confidence": 0.66,
+                    "reason": f"Organization-name heuristic matched {label(organization_category)} naming",
+                    "excerpt": context,
+                }
+            )
+            continue
+        if name in PERSON_STOPWORDS:
+            continue
         category, reason, confidence = classify_person(context)
         items.append(
             {
@@ -1004,6 +1133,41 @@ def person_mentions(segment: Segment, omit_terms: set[str]) -> list[dict[str, An
             }
         )
     return items
+
+
+def classify_military_organization(name: str) -> str | None:
+    if not MILITARY_ORG_NAME_RE.search(name):
+        return None
+    if MILITARY_PERSON_ROLE_RE.search(name):
+        return None
+    lowered = name.lower()
+    if MILITARY_BASE_NAME_RE.search(name) or "air force base" in lowered:
+        return "military_bases"
+    if any(term in lowered for term in ["army", "navy", "air force", "marine corps", "coast guard"]):
+        return "government_agencies"
+    return None
+
+
+def classify_non_person_name(name: str) -> str | None:
+    if NEWSROOM_NAME_RE.search(name):
+        return "newsrooms"
+    if UNIVERSITY_NAME_RE.search(name):
+        return "universities"
+    if RESEARCH_ORG_NAME_RE.search(name):
+        return "research_groups"
+    if INSTITUTE_NAME_RE.search(name):
+        return "institutes"
+    if GOVERNMENT_ORG_NAME_RE.search(name):
+        return "government_agencies"
+    if GOVERNMENT_ROLE_GROUP_RE.search(name):
+        return "government_agencies"
+    if RESEARCH_ROLE_GROUP_RE.search(name):
+        return "research_groups"
+    if COMPANY_ORG_NAME_RE.search(name):
+        return "companies"
+    if GENERAL_ORG_NAME_RE.search(name):
+        return "companies"
+    return None
 
 
 def classify_person(context: str) -> tuple[str, str, float]:
@@ -1079,6 +1243,9 @@ def apply_review_to_mentions(mentions: list[Mention], review: dict[str, Any]) ->
         if isinstance(merge, dict) and merge.get("targetName"):
             target_category = merge.get("targetCategory") if merge.get("targetCategory") in CATEGORY_LABELS else mention.category
             mention.name = merge["targetName"]
+            target_category = name_reclassifications.get(normalize_name(mention.name), target_category)
+            if target_category in PERSON_LIKE_CATEGORIES:
+                target_category = classify_non_person_name(mention.name) or target_category
             mention.category = target_category
             mention.category_label = label(target_category)
             mention.entity_id = entity_key(canonicalize(mention.name, target_category), target_category)
@@ -1086,6 +1253,8 @@ def apply_review_to_mentions(mentions: list[Mention], review: dict[str, Any]) ->
             continue
         target_category = reclassifications.get(mention.entity_id) or name_reclassifications.get(mention_name)
         if target_category:
+            if target_category in PERSON_LIKE_CATEGORIES:
+                target_category = classify_non_person_name(mention.name) or target_category
             mention.category = target_category
             mention.category_label = label(mention.category)
             mention.entity_id = entity_key(canonicalize(mention.name, mention.category), mention.category)
@@ -2684,6 +2853,21 @@ def render_html() -> str:
       gap: 6px;
       margin-top: 10px;
     }
+    .entity-directory {
+      display: grid;
+      gap: 5px;
+      max-height: min(58vh, 620px);
+      overflow-y: auto;
+      overflow-x: hidden;
+      padding-right: 2px;
+    }
+    .entity-directory button {
+      width: 100%;
+      height: auto;
+      min-height: 34px;
+      text-align: left;
+      white-space: normal;
+    }
     .evidence {
       border-top: 1px solid #edf0f5;
       padding-top: 8px;
@@ -2979,7 +3163,33 @@ def render_html() -> str:
     }
 
     function fitParentGraph() {
-      setViewBox(-3500, -4100, 9200, 9600);
+      setViewBox(-2100, -2500, 6400, 6600);
+    }
+
+    function fitEgoGraph(nodes, center) {
+      const items = [center].concat(nodes);
+      const maxRadius = Math.max(...items.map((node) => node.r));
+      const longestLabel = Math.max(...items.map((node) => (node.raw?.name || node.label || "").length));
+      const labelWidthPad = longestLabel * maxRadius * .42;
+      const labelHeightPad = maxRadius * 4.8;
+      const xPad = Math.max(maxRadius * 5.2, labelWidthPad);
+      const topPad = Math.max(maxRadius * 2.8, labelHeightPad * .55);
+      const bottomPad = Math.max(maxRadius * 4.2, labelHeightPad);
+      const minX = Math.min(...items.map((node) => node.x - node.r)) - xPad;
+      const maxX = Math.max(...items.map((node) => node.x + node.r)) + xPad;
+      const minY = Math.min(...items.map((node) => node.y - node.r)) - topPad;
+      const maxY = Math.max(...items.map((node) => node.y + node.r)) + bottomPad;
+      const svgRatio = svg.clientWidth && svg.clientHeight ? svg.clientWidth / svg.clientHeight : viewBox.w / viewBox.h;
+      const cx = (minX + maxX) / 2;
+      const cy = (minY + maxY) / 2;
+      let width = maxX - minX;
+      let height = maxY - minY;
+      if (width / height < svgRatio) {
+        width = height * svgRatio;
+      } else {
+        height = width / svgRatio;
+      }
+      setViewBox(cx - width / 2, cy - height / 2, width, height);
     }
 
     function setCornerLabel(title, detail) {
@@ -3046,14 +3256,26 @@ def render_html() -> str:
       }
       graphLabelsEl.innerHTML = labelItems.map((item) => {
         const point = graphToScreen(item.x, item.y);
+        if (item.kind === "annotation") {
+          return '<div class="html-graph-label" aria-hidden="true" style="left:' + point.x.toFixed(1) + 'px;top:' + (point.y + 6).toFixed(1) + 'px">' +
+            '<span class="label-primary">' + esc(item.primary) + '</span>' +
+            (item.secondary ? '<span class="label-secondary">' + esc(item.secondary) + '</span>' : '') +
+          '</div>';
+        }
         const attr = item.kind === "category"
           ? ' data-label-category="' + esc(item.id) + '"'
-          : ' data-label-entity="' + esc(item.id) + '"';
-        const state = (item.kind === "category" && activeCategory === item.id) || (item.kind === "entity" && selectedEntityId === item.id)
+          : item.kind === "category-list"
+            ? ' data-label-category-list="' + esc(item.id) + '"'
+            : ' data-label-entity="' + esc(item.id) + '"';
+        const state = ((item.kind === "category" || item.kind === "category-list") && activeCategory === item.id) || (item.kind === "entity" && selectedEntityId === item.id)
           ? ' aria-current="true"'
           : "";
         const secondary = item.secondary ? ". " + item.secondary : "";
-        const action = item.kind === "category" ? "Open category" : "Open entity";
+        const action = item.kind === "category"
+          ? "Open category"
+          : item.kind === "category-list"
+            ? "Open full entity list"
+            : "Open entity";
         return '<div class="html-graph-label" role="button" tabindex="0" aria-label="' + esc(action + ": " + item.primary + secondary) + '"' + state + ' style="left:' + point.x.toFixed(1) + 'px;top:' + (point.y + 6).toFixed(1) + 'px"' + attr + '>' +
           '<span class="label-primary">' + esc(item.primary) + '</span>' +
           (item.secondary ? '<span class="label-secondary">' + esc(item.secondary) + '</span>' : '') +
@@ -3064,6 +3286,8 @@ def render_html() -> str:
     function render() {
       if (mode === "neighborhood" && selectedEntityId && entitiesById.has(selectedEntityId)) {
         renderNeighborhood(entitiesById.get(selectedEntityId));
+      } else if (mode === "category-list" && activeCategory) {
+        renderCategoryGrid(activeCategory);
       } else if (activeCategory) {
         renderCategory(activeCategory);
       } else {
@@ -3134,37 +3358,82 @@ def render_html() -> str:
       const categoryLayout = buildCategoryLayout();
       const activeCategoryNode = categoryLayout.nodeById.get(categoryId) || { x: 1100, y: 750, r: 24 };
       const allPrimary = DATA.entities.filter((entity) => entity.topCategory === categoryId).sort((a, b) => entityGraphScore(b) - entityGraphScore(a));
-      const primary = allPrimary.slice(0, 42);
+      const primary = allPrimary.slice(0, 50);
       const primarySet = new Set(primary.map((entity) => entity.id));
       const rels = DATA.relationships.filter((relationship) => primarySet.has(relationship.source) && primarySet.has(relationship.target)).slice(0, 150);
-      const nodes = radialNodes(primary, activeCategoryNode.x, activeCategoryNode.y, 420, 860, (entity) => entity.count || 1);
+      const nodes = radialNodes(primary, activeCategoryNode.x, activeCategoryNode.y, 460, 900, (entity) => entity.count || 1);
       const nodeById = new Map(nodes.map((node) => [node.id, node]));
       const maxEdge = Math.max(1, ...rels.map((relationship) => relationship.weight));
-      const localDetailRadius = 640;
-      const contextNodes = categoryLayout.nodes
-        .filter((node) => node.id !== categoryId)
-        .map((node) => ({
-          ...node,
-          contextWeight: categoryLayout.edgeWeights.get([categoryId, node.id].sort().join("::")) || 0,
-          distanceFromFocus: Math.hypot(node.x - activeCategoryNode.x, node.y - activeCategoryNode.y),
-        }))
-        .filter((node) => node.distanceFromFocus > localDetailRadius);
-      const contextEdgesSvg = categoryLayout.edges.map((edge) => {
-        const source = categoryLayout.nodeById.get(edge.source);
-        const target = categoryLayout.nodeById.get(edge.target);
-        if (!source || !target) return "";
-        const connected = edge.source === categoryId || edge.target === categoryId;
-        return '<line x1="' + source.x + '" y1="' + source.y + '" x2="' + target.x + '" y2="' + target.y + '" stroke="' + theme.context + '" stroke-width="' + (0.7 + (edge.weight / categoryLayout.maxEdge) * 3.5).toFixed(1) + '" opacity="' + (connected ? theme.edgeOpacity.mid : theme.edgeOpacity.low) + '"></line>';
+      const sharedNeighborById = new Map();
+      const sharedEdgeWeights = new Map();
+      for (const node of nodes) {
+        for (const relationship of relationshipsByEntity.get(node.id) || []) {
+          const outsideId = relationship.source === node.id ? relationship.target : relationship.source;
+          const outside = entitiesById.get(outsideId);
+          if (!outside || outside.topCategory === categoryId || primarySet.has(outsideId)) continue;
+          if (!sharedNeighborById.has(outsideId)) {
+            sharedNeighborById.set(outsideId, { entity: outside, sources: new Set(), weight: 0 });
+          }
+          const shared = sharedNeighborById.get(outsideId);
+          shared.sources.add(node.id);
+          shared.weight += relationship.weight;
+          const edgeKey = node.id + "::" + outsideId;
+          sharedEdgeWeights.set(edgeKey, (sharedEdgeWeights.get(edgeKey) || 0) + relationship.weight);
+        }
+      }
+      const sharedNeighbors = Array.from(sharedNeighborById.entries())
+        .map(([id, item]) => ({ id, ...item, sourceCount: item.sources.size }))
+        .filter((item) => item.sourceCount >= 2)
+        .sort((a, b) => b.sourceCount - a.sourceCount || b.weight - a.weight || entityGraphScore(b.entity) - entityGraphScore(a.entity))
+        .slice(0, 22);
+      const sharedNeighborIds = new Set(sharedNeighbors.map((item) => item.id));
+      const maxSharedWeight = Math.max(1, ...sharedNeighbors.map((item) => item.weight));
+      const sharedNodes = sharedNeighbors.map((item, index) => {
+        const sourceNodes = Array.from(item.sources).map((id) => nodeById.get(id)).filter(Boolean);
+        const avgX = sourceNodes.reduce((total, node) => total + node.x, 0) / Math.max(1, sourceNodes.length);
+        const avgY = sourceNodes.reduce((total, node) => total + node.y, 0) / Math.max(1, sourceNodes.length);
+        const dx = avgX - activeCategoryNode.x;
+        const dy = avgY - activeCategoryNode.y;
+        const length = Math.max(1, Math.hypot(dx, dy));
+        const angle = Math.atan2(dy, dx) + ((index % 5) - 2) * .08;
+        const radius = 1010 + (index % 3) * 72;
+        return {
+          id: item.id,
+          x: activeCategoryNode.x + Math.cos(angle) * radius,
+          y: activeCategoryNode.y + Math.sin(angle) * radius,
+          r: 9 + Math.sqrt(item.weight / maxSharedWeight) * 13,
+          weight: item.weight,
+          sourceCount: item.sourceCount,
+          raw: item.entity,
+        };
+      });
+      const sharedNodeById = new Map(sharedNodes.map((node) => [node.id, node]));
+      const sharedNodesSvg = sharedNodes.map((node) => {
+        return '<g class="graph-node" data-entity="' + esc(node.id) + '">' +
+          '<circle cx="' + node.x + '" cy="' + node.y + '" r="' + node.r + '" fill="' + theme.entityAlt + '" stroke="' + theme.primary + '" stroke-width="1" opacity=".76"></circle>' +
+        '</g>';
       }).join("");
-      const contextNodesSvg = contextNodes.map((node) => {
-        return '<g class="graph-node" data-category="' + esc(node.id) + '">' +
-            '<circle cx="' + node.x + '" cy="' + node.y + '" r="' + Math.max(12, node.r * .68) + '" fill="' + theme.entityAlt + '" stroke="' + theme.context + '" stroke-width="1" opacity=".36"></circle>' +
-          '</g>';
+      const contextEdges = Array.from(sharedEdgeWeights.entries())
+        .map(([key, weight]) => {
+          const [childId, outsideId] = key.split("::");
+          return { childId, outsideId, weight };
+        })
+        .filter((edge) => nodeById.has(edge.childId) && sharedNeighborIds.has(edge.outsideId) && sharedNodeById.has(edge.outsideId))
+        .sort((a, b) => b.weight - a.weight)
+        .slice(0, 80);
+      const maxContextEdge = Math.max(1, ...contextEdges.map((edge) => edge.weight));
+      const contextEdgesSvg = contextEdges.map((edge) => {
+        const child = nodeById.get(edge.childId);
+        const outside = sharedNodeById.get(edge.outsideId);
+        if (!child || !outside) return "";
+        const width = (0.7 + (edge.weight / maxContextEdge) * 3.4).toFixed(1);
+        return '<line x1="' + child.x + '" y1="' + child.y + '" x2="' + outside.x + '" y2="' + outside.y + '" stroke="' + theme.primary + '" stroke-width="' + width + '" opacity=".34"></line>';
       }).join("");
       svg.innerHTML =
         contextEdgesSvg +
-        contextNodesSvg +
-        '<circle cx="' + activeCategoryNode.x + '" cy="' + activeCategoryNode.y + '" r="' + activeCategoryNode.r + '" fill="' + theme.activeHalo + '" stroke="' + theme.primary + '" stroke-width="1"></circle>' +
+        '<g class="graph-node" data-category-list="' + esc(categoryId) + '">' +
+          '<circle cx="' + activeCategoryNode.x + '" cy="' + activeCategoryNode.y + '" r="' + activeCategoryNode.r + '" fill="' + theme.activeHalo + '" stroke="' + theme.primary + '" stroke-width="1"></circle>' +
+        '</g>' +
         drawRelationshipEdges(rels, nodeById, maxEdge, "drill") +
         nodes.map((node) => {
           const entity = node.raw;
@@ -3172,35 +3441,166 @@ def render_html() -> str:
           return '<g class="graph-node" data-entity="' + esc(entity.id) + '">' +
             '<circle cx="' + node.x + '" cy="' + node.y + '" r="' + node.r + '" fill="' + (inCategory ? theme.entityFill : theme.entityAlt) + '" stroke="' + (inCategory ? theme.bgStroke : theme.primary) + '" stroke-width="1"></circle>' +
           '</g>';
-        }).join("");
-      const contextLabelNodes = contextNodes
-        .filter((node) => node.contextWeight > 0)
-        .sort((a, b) => b.contextWeight - a.contextWeight)
-        .slice(0, 4);
+        }).join("") +
+        sharedNodesSvg;
+      const sharedLabelNodes = sharedNodes
+        .slice()
+        .sort((a, b) => b.sourceCount - a.sourceCount || b.weight - a.weight)
+        .slice(0, 8);
       setGraphLabels([nodeLabel(
         categoryId,
-        "category",
+        "category-list",
         activeCategoryNode,
-        truncate(label, 24),
-        allPrimary.length + " entities"
+        "View all " + truncate(label, 18),
+        allPrimary.length.toLocaleString() + " entities",
+        activeCategoryNode.r
       )].concat(nodes.map((node) => nodeLabel(
         node.raw.id,
         "entity",
         node,
         truncate(node.raw.name, 24)
-      ))).concat(contextLabelNodes.map((node) => nodeLabel(
+      ))).concat(sharedLabelNodes.map((node) => nodeLabel(
         node.id,
-        "category",
+        "entity",
         node,
-        truncate(node.label, 22),
-        node.contextWeight ? node.contextWeight.toLocaleString() + " links" : "",
-        Math.max(12, node.r * .68)
+        truncate(node.raw.name, 22),
+        node.sourceCount + " connected nodes",
+        node.r
       ))));
       statusEl.textContent = label + " · select an entity for its direct relationship graph";
       setCornerLabel(null);
       wireEntityNodes();
       wireCategoryNodes();
+      wireCategoryListNodes();
       setViewBox(activeCategoryNode.x - 1260, activeCategoryNode.y - 940, 2520, 1880);
+    }
+
+    function renderCategoryGrid(categoryId) {
+      const theme = currentTheme();
+      const label = DATA.topCategoryLabels[categoryId] || categoryId;
+      const entities = DATA.entities
+        .filter((entity) => entity.topCategory === categoryId)
+        .sort((a, b) => entityGraphScore(b) - entityGraphScore(a) || a.name.localeCompare(b.name));
+      const scores = entities.map((entity) => Math.max(1, entityGraphScore(entity)));
+      const minScore = Math.min(...scores);
+      const maxScore = Math.max(1, ...scores);
+      const logMin = Math.log(minScore);
+      const logRange = Math.max(.001, Math.log(maxScore) - logMin);
+      const maxRadius = 18;
+      const minRadius = 3.5;
+      const cell = maxRadius * 3.4;
+      const headerHeight = cell * .9;
+      const blockGap = cell * 1.4;
+      const grouped = new Map();
+      for (const entity of entities) {
+        const group = grouped.get(entity.category) || {
+          id: entity.category,
+          label: entity.categoryLabel,
+          entities: [],
+          score: 0,
+        };
+        group.entities.push(entity);
+        group.score += entityGraphScore(entity);
+        grouped.set(entity.category, group);
+      }
+      const groups = Array.from(grouped.values())
+        .sort((a, b) => b.entities.length - a.entities.length || b.score - a.score || a.label.localeCompare(b.label));
+      const targetAtlasWidth = Math.max(cell * 18, Math.sqrt(Math.max(1, entities.length)) * cell * 1.45);
+      let cursorX = 0;
+      let cursorY = 0;
+      let rowHeight = 0;
+      const blocks = groups.map((group) => {
+        const columns = Math.max(1, Math.ceil(Math.sqrt(group.entities.length * 1.25)));
+        const rows = Math.max(1, Math.ceil(group.entities.length / columns));
+        const width = columns * cell;
+        const height = rows * cell + headerHeight;
+        if (cursorX > 0 && cursorX + width > targetAtlasWidth) {
+          cursorX = 0;
+          cursorY += rowHeight + blockGap;
+          rowHeight = 0;
+        }
+        const block = { ...group, x: cursorX, y: cursorY, width, height, columns, rows };
+        cursorX += width + blockGap;
+        rowHeight = Math.max(rowHeight, height);
+        return block;
+      });
+      const atlasWidth = Math.max(...blocks.map((block) => block.x + block.width), cell);
+      const atlasHeight = Math.max(...blocks.map((block) => block.y + block.height), cell);
+      const offsetX = 1100 - atlasWidth / 2;
+      const offsetY = 750 - atlasHeight / 2;
+      const blockSvg = blocks.map((block) => {
+        return '<rect x="' + (offsetX + block.x - cell * .28) + '" y="' + (offsetY + block.y - cell * .18) + '" width="' + (block.width + cell * .56) + '" height="' + (block.height + cell * .42) + '" fill="none" stroke="' + theme.context + '" stroke-width="1" opacity=".24"></rect>';
+      }).join("");
+      const groupLabels = blocks.map((block) => ({
+        id: "group:" + block.id,
+        kind: "annotation",
+        x: offsetX + block.x,
+        y: offsetY + block.y - cell * .34,
+        primary: block.label,
+        secondary: block.entities.length.toLocaleString() + " entities",
+      }));
+      const nodes = [];
+      for (const block of blocks) {
+        for (const [index, entity] of block.entities.entries()) {
+          const column = index % block.columns;
+          const row = Math.floor(index / block.columns);
+          const value = Math.max(1, entityGraphScore(entity));
+          const normalized = (Math.log(value) - logMin) / logRange;
+          nodes.push({
+            id: entity.id,
+            x: offsetX + block.x + column * cell + cell / 2,
+            y: offsetY + block.y + headerHeight + row * cell + cell / 2,
+            r: minRadius + Math.pow(normalized, 1.05) * (maxRadius - minRadius),
+            raw: entity,
+            score: value,
+            group: block,
+          });
+        }
+      }
+      svg.innerHTML = blockSvg + nodes.map((node) => {
+        const opacity = node.r < 6 ? ".72" : ".9";
+        const stroke = node.r < 6 ? theme.context : theme.primary;
+        return '<g class="graph-node" data-entity="' + esc(node.id) + '">' +
+          '<circle cx="' + node.x + '" cy="' + node.y + '" r="' + node.r + '" fill="' + theme.entityAlt + '" stroke="' + stroke + '" stroke-width="1" opacity="' + opacity + '"></circle>' +
+          '<title>' + esc(node.raw.name + " · " + node.raw.categoryLabel + " · " + (node.raw.count || 0).toLocaleString() + " mentions") + '</title>' +
+        '</g>';
+      }).join("");
+      const labeledByGroup = new Map();
+      const labelNodes = nodes.filter((node) => {
+        const count = labeledByGroup.get(node.group.id) || 0;
+        if (count >= 10) return false;
+        if (node.r < 8 && count >= 3) return false;
+        labeledByGroup.set(node.group.id, count + 1);
+        return true;
+      }).slice(0, 180);
+      setGraphLabels(groupLabels.concat(labelNodes.map((node) => nodeLabel(
+        node.raw.id,
+        "entity",
+        node,
+        truncate(node.raw.name, 22),
+        (node.raw.count || 0).toLocaleString() + " mentions",
+        node.r
+      ))));
+      statusEl.textContent = label + " atlas · " + entities.length.toLocaleString() + " entities grouped by category";
+      setCornerLabel(label, entities.length.toLocaleString() + " entities · grouped atlas");
+      cardEl.classList.remove("open");
+      wireEntityNodes();
+      const padding = cell * 2.2;
+      const minX = offsetX - padding;
+      const minY = offsetY - padding;
+      const maxX = offsetX + atlasWidth + padding;
+      const maxY = offsetY + atlasHeight + padding;
+      const svgRatio = svg.clientWidth && svg.clientHeight ? svg.clientWidth / svg.clientHeight : viewBox.w / viewBox.h;
+      let width = maxX - minX;
+      let height = maxY - minY;
+      const cx = (minX + maxX) / 2;
+      const cy = (minY + maxY) / 2;
+      if (width / height < svgRatio) {
+        width = height * svgRatio;
+      } else {
+        height = width / svgRatio;
+      }
+      setViewBox(cx - width / 2, cy - height / 2, width, height);
     }
 
     function entityGraphScore(entity) {
@@ -3213,20 +3613,130 @@ def render_html() -> str:
 
     function renderNeighborhood(entity) {
       const theme = currentTheme();
-      const rels = (relationshipsByEntity.get(entity.id) || []).slice().sort((a, b) => b.weight - a.weight).slice(0, NEIGHBORHOOD_RELATIONSHIP_LIMIT);
+      const rels = (relationshipsByEntity.get(entity.id) || [])
+        .slice()
+        .sort((a, b) => relationshipGraphScore(b) - relationshipGraphScore(a))
+        .slice(0, NEIGHBORHOOD_RELATIONSHIP_LIMIT);
       const relatedById = new Map();
       for (const relationship of rels) {
         const otherId = relationship.source === entity.id ? relationship.target : relationship.source;
         const relatedEntity = entitiesById.get(otherId);
-        if (relatedEntity && !relatedById.has(relatedEntity.id)) relatedById.set(relatedEntity.id, relatedEntity);
+        if (relatedEntity && !relatedById.has(relatedEntity.id)) {
+          relatedById.set(relatedEntity.id, { entity: relatedEntity, relationship });
+        }
       }
-      const related = Array.from(relatedById.values());
-      const nodes = radialNodes(related, 1100, 750, 450, 860, (item) => item.count || 1);
+      const visibleNeighborIds = new Set(relatedById.keys());
+      const neighborRelByPair = new Map();
+      for (const neighborId of visibleNeighborIds) {
+        for (const relationship of relationshipsByEntity.get(neighborId) || []) {
+          if (!visibleNeighborIds.has(relationship.source) || !visibleNeighborIds.has(relationship.target)) continue;
+          const a = relationship.source < relationship.target ? relationship.source : relationship.target;
+          const b = relationship.source < relationship.target ? relationship.target : relationship.source;
+          const key = a + "::" + b;
+          const score = relationshipGraphScore(relationship);
+          if (!neighborRelByPair.has(key)) {
+            neighborRelByPair.set(key, {
+              id: "neighbor:" + key,
+              source: a,
+              target: b,
+              source_name: entitiesById.get(a)?.name || relationship.source_name,
+              target_name: entitiesById.get(b)?.name || relationship.target_name,
+              type: relationship.type,
+              weight: relationship.weight || 1,
+              confidence: relationship.confidence || 0,
+              layoutScore: score,
+            });
+          } else {
+            const existing = neighborRelByPair.get(key);
+            existing.weight += relationship.weight || 1;
+            existing.layoutScore += score;
+            existing.confidence = Math.max(existing.confidence || 0, relationship.confidence || 0);
+            if (existing.type !== relationship.type) existing.type = "related";
+          }
+        }
+      }
+      const neighborRels = Array.from(neighborRelByPair.values())
+        .sort((a, b) => b.layoutScore - a.layoutScore)
+        .slice(0, 18);
+      const maxNeighborCount = Math.max(1, ...Array.from(relatedById.values()).map((item) => item.entity.count || 1));
+      const neighborScoreByPair = new Map();
+      for (const relationship of neighborRels) {
+        neighborScoreByPair.set(relationship.source + "::" + relationship.target, relationship.layoutScore || relationship.weight || 1);
+        neighborScoreByPair.set(relationship.target + "::" + relationship.source, relationship.layoutScore || relationship.weight || 1);
+      }
+      function pairScore(a, b) {
+        return neighborScoreByPair.get(a + "::" + b) || 0;
+      }
+      function directScore(id) {
+        const item = relatedById.get(id);
+        return item ? relationshipGraphScore(item.relationship) : 0;
+      }
+      const adjacency = new Map(Array.from(visibleNeighborIds).map((id) => [id, []]));
+      for (const relationship of neighborRels) {
+        if (adjacency.has(relationship.source)) adjacency.get(relationship.source).push(relationship.target);
+        if (adjacency.has(relationship.target)) adjacency.get(relationship.target).push(relationship.source);
+      }
+      const unseen = new Set(visibleNeighborIds);
+      const components = [];
+      while (unseen.size) {
+        const seed = Array.from(unseen).sort((a, b) => directScore(b) - directScore(a))[0];
+        const stack = [seed];
+        const component = [];
+        unseen.delete(seed);
+        while (stack.length) {
+          const id = stack.pop();
+          component.push(id);
+          for (const next of adjacency.get(id) || []) {
+            if (!unseen.has(next)) continue;
+            unseen.delete(next);
+            stack.push(next);
+          }
+        }
+        components.push(component);
+      }
+      const orderedIds = [];
+      for (const component of components.sort((a, b) => Math.max(...b.map(directScore)) - Math.max(...a.map(directScore)))) {
+        const remaining = new Set(component);
+        let current = component.slice().sort((a, b) => directScore(b) - directScore(a))[0];
+        while (current) {
+          orderedIds.push(current);
+          remaining.delete(current);
+          const previous = current;
+          current = Array.from(remaining)
+            .sort((a, b) => pairScore(previous, b) - pairScore(previous, a) || directScore(b) - directScore(a))[0];
+        }
+      }
+      const nodes = orderedIds.map((id, index) => {
+        const item = relatedById.get(id);
+        const count = orderedIds.length;
+        const angle = (Math.PI * 2 * index) / Math.max(1, count) - Math.PI / 2;
+        const ring = count <= 18 ? 0 : index % 2;
+        const radius = count <= 10 ? 690 : count <= 18 ? 740 : ring ? 840 : 610;
+        const scale = Math.sqrt(Math.max(1, item.entity.count || 1) / maxNeighborCount);
+        return {
+          id: item.entity.id,
+          label: item.entity.name,
+          x: 1100 + Math.cos(angle) * radius,
+          y: 750 + Math.sin(angle) * radius,
+          r: 9 + scale * 22,
+          raw: item.entity,
+          relationship: item.relationship,
+        };
+      });
       const nodeById = new Map(nodes.map((node) => [node.id, node]));
       const center = { id: entity.id, x: 1100, y: 750, r: 46, raw: entity };
       nodeById.set(entity.id, center);
       const maxEdge = Math.max(1, ...rels.map((relationship) => relationship.weight));
-      svg.innerHTML = drawRelationshipEdges(rels, nodeById, maxEdge, "drill") +
+      const maxNeighborEdge = Math.max(1, ...neighborRels.map((relationship) => relationship.weight || 1));
+      const neighborEdgesSvg = neighborRels.map((relationship) => {
+        const source = nodeById.get(relationship.source);
+        const target = nodeById.get(relationship.target);
+        if (!source || !target) return "";
+        const width = (0.45 + ((relationship.weight || 1) / maxNeighborEdge) * 2.1).toFixed(1);
+        return '<line class="graph-edge" data-edge="' + esc(relationship.id) + '" x1="' + source.x + '" y1="' + source.y + '" x2="' + target.x + '" y2="' + target.y + '" stroke="' + theme.context + '" stroke-width="' + width + '" opacity=".26"><title>' + esc(relationship.type + " · related neighbor · weight " + relationship.weight) + '</title></line>';
+      }).join("");
+      svg.innerHTML = neighborEdgesSvg +
+        drawRelationshipEdges(rels, nodeById, maxEdge, "drill") +
         '<g class="graph-node" data-entity="' + esc(entity.id) + '">' +
           '<circle cx="1100" cy="750" r="46" fill="' + theme.primary + '" stroke="' + theme.bgStroke + '" stroke-width="1"></circle>' +
         '</g>' +
@@ -3247,22 +3757,36 @@ def render_html() -> str:
         "entity",
         node,
         truncate(node.raw.name, 24),
-        truncate(node.raw.categoryLabel, 28)
+        truncate(node.raw.topCategoryLabel || node.raw.categoryLabel, 28)
       ))));
       statusEl.textContent = entity.name + " · direct relationship graph";
       setCornerLabel(null);
       renderCard(entity, rels);
       wireEntityNodes();
-      fit();
+      fitEgoGraph(nodes, center);
+    }
+
+    function relationshipGraphScore(relationship) {
+      const typeBoost = relationship.type === "co_mentioned" ? 0 : 18;
+      const source = entitiesById.get(relationship.source);
+      const target = entitiesById.get(relationship.target);
+      const crossCategoryBoost = source && target && source.topCategory !== target.topCategory ? 10 : 0;
+      return (relationship.weight || 1) * 24 + typeBoost + crossCategoryBoost + Math.round((relationship.confidence || 0) * 10);
     }
 
     function radialNodes(items, cx, cy, innerRadius, outerRadius, sizeValue) {
-      const values = items.map(sizeValue);
+      const values = items.map((item) => Math.max(1, sizeValue(item)));
+      const minValue = Math.min(...values);
       const maxValue = Math.max(1, ...values);
       return items.map((item, index) => {
         const angle = (Math.PI * 2 * index) / Math.max(1, items.length) - Math.PI / 2;
-        const radius = index < 10 ? innerRadius : index < 24 ? (innerRadius + outerRadius) / 2 : outerRadius;
-        const value = sizeValue(item);
+        const progress = items.length <= 1 ? 1 : index / (items.length - 1);
+        const radius = innerRadius + Math.pow(progress, .62) * (outerRadius - innerRadius);
+        const value = Math.max(1, sizeValue(item));
+        const logMin = Math.log(minValue);
+        const logRange = Math.log(maxValue) - logMin;
+        const normalized = logRange < 0.001 ? 0.5 : (Math.log(value) - logMin) / logRange;
+        const scale = Math.pow(normalized, 1.08);
         return {
           id: item.id,
           label: item.label || item.name,
@@ -3270,7 +3794,7 @@ def render_html() -> str:
           mentions: item.mentions || value,
           x: cx + Math.cos(angle) * radius,
           y: cy + Math.sin(angle) * radius,
-          r: Math.max(9, Math.min(28, 8 + Math.sqrt(value / maxValue) * 22)),
+          r: 8 + scale * 28,
           raw: item,
         };
       });
@@ -3278,8 +3802,8 @@ def render_html() -> str:
 
     function parentCategoryNodes(categories, cx, cy) {
       const maxCount = Math.max(1, ...categories.map((category) => category.count || 1));
-      const radiusFor = (category) => Math.max(18, Math.min(260, Math.sqrt((category.count || 1) / maxCount) * 260));
-      const outerRadius = 3400;
+      const radiusFor = (category) => Math.max(16, Math.min(190, Math.sqrt((category.count || 1) / maxCount) * 190));
+      const outerRadius = 1850;
       return categories.map((category, index) => {
         const angle = (Math.PI * 2 * index) / Math.max(1, categories.length) - Math.PI / 2;
         return {
@@ -3493,6 +4017,35 @@ def render_html() -> str:
       });
     }
 
+    function renderCategoryListCard(categoryId) {
+      const label = DATA.topCategoryLabels[categoryId] || categoryId;
+      const entities = DATA.entities
+        .filter((entity) => entity.topCategory === categoryId)
+        .sort((a, b) => entityGraphScore(b) - entityGraphScore(a) || a.name.localeCompare(b.name));
+      const mentions = entities.reduce((total, entity) => total + (entity.count || 0), 0);
+      cardEl.classList.add("open");
+      cardEl.setAttribute("aria-labelledby", "card-title");
+      cardEl.innerHTML = '<button class="card-close" id="close-card" aria-label="Close info window">x</button>' +
+        '<h2 id="card-title">' + esc(label) + '</h2>' +
+        '<p><span class="tag">' + esc(label) + '</span> ' + entities.length.toLocaleString() + ' entities · ' + mentions.toLocaleString() + ' mentions</p>' +
+        '<h3>All entities</h3>' +
+        '<div class="entity-directory">' + entities.map((entity) => {
+          return '<button data-card-entity="' + esc(entity.id) + '">' +
+            esc(entity.name) +
+            '<div class="meta">' + esc(entity.categoryLabel) + ' · ' + (entity.count || 0).toLocaleString() + ' mentions</div>' +
+          '</button>';
+        }).join("") + '</div>';
+      cardEl.querySelectorAll("[data-card-entity]").forEach((button) => {
+        button.addEventListener("click", () => {
+          selectedEntityId = button.dataset.cardEntity;
+          mode = "neighborhood";
+          render();
+          focusDetailsCard();
+        });
+      });
+      wireCardClose();
+    }
+
     function renderEdgeCard(relationship) {
       const source = entitiesById.get(relationship.source);
       const target = entitiesById.get(relationship.target);
@@ -3523,12 +4076,12 @@ def render_html() -> str:
     }
 
     function focusSelectedGraphLabel() {
-      const selector = selectedEntityId
-        ? '[data-label-entity="' + cssEscape(selectedEntityId) + '"]'
+      const selectors = selectedEntityId
+        ? ['[data-label-entity="' + cssEscape(selectedEntityId) + '"]']
         : activeCategory
-          ? '[data-label-category="' + cssEscape(activeCategory) + '"]'
-          : ".html-graph-label";
-      const label = graphLabelsEl.querySelector(selector);
+          ? ['[data-label-category="' + cssEscape(activeCategory) + '"]', '[data-label-category-list="' + cssEscape(activeCategory) + '"]']
+          : [".html-graph-label"];
+      const label = selectors.map((selector) => graphLabelsEl.querySelector(selector)).find(Boolean);
       if (label) label.focus({ preventScroll: true });
     }
 
@@ -3545,6 +4098,12 @@ def render_html() -> str:
     function wireCategoryNodes() {
       svg.querySelectorAll("[data-category]").forEach((node) => {
         node.addEventListener("click", () => activateGraphNode(node));
+      });
+    }
+
+    function wireCategoryListNodes() {
+      svg.querySelectorAll("[data-category-list]").forEach((node) => {
+        node.addEventListener("click", () => activateGraphNode(node, { focusGraph: true }));
       });
     }
 
@@ -3567,6 +4126,14 @@ def render_html() -> str:
         activeCategory = node.dataset.category;
         selectedEntityId = null;
         mode = "categories";
+      } else if (node.dataset.categoryList) {
+        activeCategory = node.dataset.categoryList;
+        selectedEntityId = null;
+        mode = "category-list";
+        hideHoverPreview();
+        render();
+        if (options.focusGraph) focusSelectedGraphLabel();
+        return true;
       } else if (node.dataset.entity) {
         selectedEntityId = node.dataset.entity;
         mode = "neighborhood";
@@ -3599,8 +4166,8 @@ def render_html() -> str:
       if (!node) return;
       promoteNode(node);
       node.classList.add("hover");
-      const labelKind = node.dataset.entity ? "labelEntity" : "labelCategory";
-      const id = node.dataset.entity || node.dataset.category;
+      const labelKind = node.dataset.entity ? "labelEntity" : node.dataset.categoryList ? "labelCategoryList" : "labelCategory";
+      const id = node.dataset.entity || node.dataset.categoryList || node.dataset.category;
       Array.from(graphLabelsEl.querySelectorAll(".html-graph-label")).forEach((label) => {
         if (label.dataset[labelKind] === id) label.classList.add("hover");
       });
@@ -3627,9 +4194,14 @@ def render_html() -> str:
     function svgNodeFromLabel(label) {
       if (!label) return null;
       const isEntity = Boolean(label.dataset.labelEntity);
-      const id = label.dataset.labelEntity || label.dataset.labelCategory;
-      const nodes = svg.querySelectorAll(isEntity ? "[data-entity]" : "[data-category]");
-      return Array.from(nodes).find((node) => (isEntity ? node.dataset.entity : node.dataset.category) === id) || null;
+      const isCategoryList = Boolean(label.dataset.labelCategoryList);
+      const id = label.dataset.labelEntity || label.dataset.labelCategoryList || label.dataset.labelCategory;
+      const nodes = svg.querySelectorAll(isEntity ? "[data-entity]" : isCategoryList ? "[data-category-list]" : "[data-category]");
+      return Array.from(nodes).find((node) => {
+        if (isEntity) return node.dataset.entity === id;
+        if (isCategoryList) return node.dataset.categoryList === id;
+        return node.dataset.category === id;
+      }) || null;
     }
 
     function interactionNodeFromTarget(target) {
@@ -3640,7 +4212,11 @@ def render_html() -> str:
 
     function graphNodeKey(node) {
       if (!node) return "";
-      return node.dataset.entity ? "entity:" + node.dataset.entity : "category:" + node.dataset.category;
+      return node.dataset.entity
+        ? "entity:" + node.dataset.entity
+        : node.dataset.categoryList
+          ? "category-list:" + node.dataset.categoryList
+          : "category:" + node.dataset.category;
     }
 
     function resetHoverZoomActivation() {
@@ -3685,7 +4261,9 @@ def render_html() -> str:
         hideHoverPreview();
         return;
       }
-      const preview = node.dataset.entity ? entityPreview(node.dataset.entity) : categoryPreview(node.dataset.category);
+      const preview = node.dataset.entity
+        ? entityPreview(node.dataset.entity)
+        : categoryPreview(node.dataset.categoryList || node.dataset.category);
       if (!preview) {
         hideHoverPreview();
         return;
@@ -3743,6 +4321,13 @@ def render_html() -> str:
         return true;
       }
       if (mode === "neighborhood") {
+        selectedEntityId = null;
+        mode = "categories";
+        render();
+        focusSelectedGraphLabel();
+        return true;
+      }
+      if (mode === "category-list") {
         selectedEntityId = null;
         mode = "categories";
         render();
@@ -4059,6 +4644,13 @@ def render_html() -> str:
         } else {
           renderCategories();
         }
+        return;
+      }
+      if (event.deltaY > 0 && mode === "category-list" && nextW >= ENTITY_ZOOM_OUT_STEP_UP_WIDTH) {
+        selectedEntityId = null;
+        mode = "categories";
+        hideHoverPreview();
+        renderCategory(activeCategory);
         return;
       }
       if (event.deltaY > 0 && activeCategory && mode === "categories" && nextW >= CATEGORY_ZOOM_OUT_STEP_UP_WIDTH) {
