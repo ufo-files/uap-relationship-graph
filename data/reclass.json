@@ -117,11 +117,11 @@
     "people:earth-tech": "companies",
     "people:in-cambridge": "locations",
     "people:one-brattle-square": "locations",
-    "people:independent-research": "contractors",
+    "people:independent-research": "research_groups",
     "politicians:democratic-national-committee": "government_agencies",
     "friendly_people:grill-flame": "government_project_codenames",
     "people:san-diego": "locations",
-    "people:lawrence-livermore": "military_bases",
+    "people:lawrence-livermore": "research_groups",
     "professors:zora-ranch": "locations",
     "people:little-st": "locations",
     "people:space-kids": "locations",
@@ -164,7 +164,11 @@
     "people:on-october": "dates_times",
     "experiencers:phoenix-lights": "events",
     "people:sunset-drive": "locations",
-    "people:in-january": "dates_times"
+    "people:in-january": "dates_times",
+    "people:ninth-gate": "movies",
+    "politicians:house-oversight-committee": "government_agencies",
+    "people:langley-farms": "locations",
+    "people:sourcebook-project": "government_project_codenames"
   },
   "nameReclassifications": {
     "extra low frequency": "emerging_terminology",
@@ -307,11 +311,11 @@
     "zorro ranch": "locations",
     "cambridge": "locations",
     "one brattle square": "locations",
-    "independent research and development": "contractors",
+    "independent research and development": "research_groups",
     "democratic national committee": "government_agencies",
     "grill flame": "government_project_codenames",
     "san diego": "locations",
-    "lawrence livermore": "military_bases",
+    "lawrence livermore": "research_groups",
     "zora ranch": "locations",
     "little st. james": "locations",
     "space kids": "locations",
@@ -363,7 +367,13 @@
     "phoenix lights": "events",
     "sunset drive": "locations",
     "in january": "dates_times",
-    "on october": "dates_times"
+    "on october": "dates_times",
+    "ninth gate": "movies",
+    "commander fravor": "whistleblowers",
+    "house oversight committee": "government_agencies",
+    "langley farms": "locations",
+    "star kids": "nonprofits",
+    "sourcebook project": "government_project_codenames"
   },
   "falsePositives": {
     "gps_coordinates:24-95": {
@@ -1394,10 +1404,10 @@
     "friendly_people:commander-fravor": {
       "sourceId": "friendly_people:commander-fravor",
       "sourceName": "Commander Fravor",
-      "sourceCategory": "friendly_people",
-      "targetId": "people:commander-david-fravor",
+      "sourceCategory": "whistleblowers",
+      "targetId": "whistleblowers:commander-david-fravor",
       "targetName": "Commander David Fravor",
-      "targetCategory": "people"
+      "targetCategory": "whistleblowers"
     },
     "friendly_people:tic-tac": {
       "sourceId": "friendly_people:tic-tac",
@@ -1787,9 +1797,9 @@
       "sourceId": "professors:diana-pasolka",
       "sourceName": "Diana Pasolka",
       "sourceCategory": "professors",
-      "targetId": "experiencers:diana-pasolka",
-      "targetName": "Diana Pasolka",
-      "targetCategory": "experiencers"
+      "targetId": "professors:diana-pasulka",
+      "targetName": "Diana Pasulka",
+      "targetCategory": "professors"
     },
     "experiencers:diana-pasolka": {
       "sourceId": "experiencers:diana-pasolka",
@@ -2203,8 +2213,8 @@
       "sourceId": "locations:los-alamos",
       "sourceName": "Los Alamos",
       "sourceCategory": "locations",
-      "targetId": "research_groups:los-alamos-national-labs",
-      "targetName": "Los Alamos National Labs",
+      "targetId": "research_groups:los-alamos-national-laboratory",
+      "targetName": "Los Alamos National Laboratory",
       "targetCategory": "research_groups"
     },
     "research_groups:los-alamos-national-labs": {
@@ -2219,8 +2229,8 @@
       "sourceId": "research_groups:los-alamos-national-lab",
       "sourceName": "Los Alamos National Lab",
       "sourceCategory": "research_groups",
-      "targetId": "research_groups:los-alamos-national-laboratory",
-      "targetName": "Los Alamos National Laboratory",
+      "targetId": "research_groups:los-alamos-national-labs",
+      "targetName": "Los Alamos National Labs",
       "targetCategory": "research_groups"
     },
     "people:no-casillas": {
@@ -2235,9 +2245,9 @@
       "sourceId": "people:so-edward-teller",
       "sourceName": "So Edward Teller",
       "sourceCategory": "people",
-      "targetId": "people:edward-teller",
+      "targetId": "professors:edward-teller",
       "targetName": "Edward Teller",
-      "targetCategory": "people"
+      "targetCategory": "professors"
     },
     "people:christopher-bledsoe": {
       "sourceId": "people:christopher-bledsoe",
@@ -2246,6 +2256,70 @@
       "targetId": "experiencers:chris-bledsoe",
       "targetName": "Chris Bledsoe",
       "targetCategory": "experiencers"
+    },
+    "people:via-tim-taylor": {
+      "sourceId": "people:via-tim-taylor",
+      "sourceName": "Via Tim Taylor",
+      "sourceCategory": "people",
+      "targetId": "people:tim-taylor",
+      "targetName": "Tim Taylor",
+      "targetCategory": "people"
+    },
+    "whistleblowers:unlike-david-goresh": {
+      "sourceId": "whistleblowers:unlike-david-goresh",
+      "sourceName": "Unlike David Goresh",
+      "sourceCategory": "whistleblowers",
+      "targetId": "people:dave-grush",
+      "targetName": "Dave Grush",
+      "targetCategory": "people"
+    },
+    "government_agencies:so-navy": {
+      "sourceId": "government_agencies:so-navy",
+      "sourceName": "So Navy",
+      "sourceCategory": "government_agencies",
+      "targetId": "government_agencies:united-states-navy",
+      "targetName": "united states navy",
+      "targetCategory": "government_agencies"
+    },
+    "people:so-kimber-meyer": {
+      "sourceId": "people:so-kimber-meyer",
+      "sourceName": "So Kimber Meyer",
+      "sourceCategory": "people",
+      "targetId": "people:kimber-meyer",
+      "targetName": "Kimber Meyer",
+      "targetCategory": "people"
+    },
+    "research_groups:los-alamos-national-laboratory": {
+      "sourceId": "research_groups:los-alamos-national-laboratory",
+      "sourceName": "Los Alamos National Laboratory",
+      "sourceCategory": "research_groups",
+      "targetId": "research_groups:los-alamos-national-lab",
+      "targetName": "Los Alamos National Lab",
+      "targetCategory": "research_groups"
+    },
+    "professors:edward-teller": {
+      "sourceId": "professors:edward-teller",
+      "sourceName": "Edward Teller",
+      "sourceCategory": "professors",
+      "targetId": "people:edward-teller",
+      "targetName": "Edward Teller",
+      "targetCategory": "people"
+    },
+    "people:air-force-chief": {
+      "sourceId": "people:air-force-chief",
+      "sourceName": "Air Force Chief",
+      "sourceCategory": "people",
+      "targetId": "people:curtis-lemay",
+      "targetName": "Curtis LeMay",
+      "targetCategory": "people"
+    },
+    "people:star-kids": {
+      "sourceId": "people:star-kids",
+      "sourceName": "Star Kids",
+      "sourceCategory": "nonprofits",
+      "targetId": "locations:space-kids-camp",
+      "targetName": "Space Kids Camp",
+      "targetCategory": "locations"
     }
   },
   "nameMerges": {
@@ -2644,10 +2718,10 @@
     "commander fravor": {
       "sourceId": "friendly_people:commander-fravor",
       "sourceName": "Commander Fravor",
-      "sourceCategory": "friendly_people",
-      "targetId": "people:commander-david-fravor",
+      "sourceCategory": "whistleblowers",
+      "targetId": "whistleblowers:commander-david-fravor",
       "targetName": "Commander David Fravor",
-      "targetCategory": "people"
+      "targetCategory": "whistleblowers"
     },
     "tic tac": {
       "sourceId": "experiencers:tic-tac",
@@ -3293,8 +3367,8 @@
       "sourceId": "locations:los-alamos",
       "sourceName": "Los Alamos",
       "sourceCategory": "locations",
-      "targetId": "research_groups:los-alamos-national-labs",
-      "targetName": "Los Alamos National Labs",
+      "targetId": "research_groups:los-alamos-national-laboratory",
+      "targetName": "Los Alamos National Laboratory",
       "targetCategory": "research_groups"
     },
     "los alamos national labs": {
@@ -3309,8 +3383,8 @@
       "sourceId": "research_groups:los-alamos-national-lab",
       "sourceName": "Los Alamos National Lab",
       "sourceCategory": "research_groups",
-      "targetId": "research_groups:los-alamos-national-laboratory",
-      "targetName": "Los Alamos National Laboratory",
+      "targetId": "research_groups:los-alamos-national-labs",
+      "targetName": "Los Alamos National Labs",
       "targetCategory": "research_groups"
     },
     "no casillas": {
@@ -3325,9 +3399,9 @@
       "sourceId": "people:so-edward-teller",
       "sourceName": "So Edward Teller",
       "sourceCategory": "people",
-      "targetId": "people:edward-teller",
+      "targetId": "professors:edward-teller",
       "targetName": "Edward Teller",
-      "targetCategory": "people"
+      "targetCategory": "professors"
     },
     "christopher bledsoe": {
       "sourceId": "people:christopher-bledsoe",
@@ -3336,9 +3410,73 @@
       "targetId": "experiencers:chris-bledsoe",
       "targetName": "Chris Bledsoe",
       "targetCategory": "experiencers"
+    },
+    "via tim taylor": {
+      "sourceId": "people:via-tim-taylor",
+      "sourceName": "Via Tim Taylor",
+      "sourceCategory": "people",
+      "targetId": "people:tim-taylor",
+      "targetName": "Tim Taylor",
+      "targetCategory": "people"
+    },
+    "unlike david goresh": {
+      "sourceId": "whistleblowers:unlike-david-goresh",
+      "sourceName": "Unlike David Goresh",
+      "sourceCategory": "whistleblowers",
+      "targetId": "people:dave-grush",
+      "targetName": "Dave Grush",
+      "targetCategory": "people"
+    },
+    "so navy": {
+      "sourceId": "government_agencies:so-navy",
+      "sourceName": "So Navy",
+      "sourceCategory": "government_agencies",
+      "targetId": "government_agencies:united-states-navy",
+      "targetName": "united states navy",
+      "targetCategory": "government_agencies"
+    },
+    "so kimber meyer": {
+      "sourceId": "people:so-kimber-meyer",
+      "sourceName": "So Kimber Meyer",
+      "sourceCategory": "people",
+      "targetId": "people:kimber-meyer",
+      "targetName": "Kimber Meyer",
+      "targetCategory": "people"
+    },
+    "los alamos national laboratory": {
+      "sourceId": "research_groups:los-alamos-national-laboratory",
+      "sourceName": "Los Alamos National Laboratory",
+      "sourceCategory": "research_groups",
+      "targetId": "research_groups:los-alamos-national-lab",
+      "targetName": "Los Alamos National Lab",
+      "targetCategory": "research_groups"
+    },
+    "edward teller": {
+      "sourceId": "professors:edward-teller",
+      "sourceName": "Edward Teller",
+      "sourceCategory": "professors",
+      "targetId": "people:edward-teller",
+      "targetName": "Edward Teller",
+      "targetCategory": "people"
+    },
+    "air force chief": {
+      "sourceId": "people:air-force-chief",
+      "sourceName": "Air Force Chief",
+      "sourceCategory": "people",
+      "targetId": "people:curtis-lemay",
+      "targetName": "Curtis LeMay",
+      "targetCategory": "people"
+    },
+    "star kids": {
+      "sourceId": "people:star-kids",
+      "sourceName": "Star Kids",
+      "sourceCategory": "nonprofits",
+      "targetId": "locations:space-kids-camp",
+      "targetName": "Space Kids Camp",
+      "targetCategory": "locations"
     }
   },
   "notes": {},
-  "generatedAt": "2026-06-27T17:30:32.492Z",
-  "note": "Replace data/reclass.json with this file before rebuilding."
+  "generatedAt": "2026-06-27T21:16:53.998860Z",
+  "note": "Merged from /Users/glennsorrentino/Downloads/reclass.json without deleting existing repository reclassification history."
 }
