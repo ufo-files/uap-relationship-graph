@@ -362,7 +362,8 @@
     "october 30, 1993": "dates_times",
     "phoenix lights": "events",
     "sunset drive": "locations",
-    "in january": "dates_times"
+    "in january": "dates_times",
+    "on october": "dates_times"
   },
   "falsePositives": {
     "gps_coordinates:24-95": {
