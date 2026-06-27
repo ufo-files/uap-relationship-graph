@@ -112,7 +112,28 @@
     "politicians:united-states-congress": "government_agencies",
     "people:colorado-springs": "locations",
     "people:foster-ranch": "locations",
-    "people:dave-grush": "whistleblowers"
+    "people:dave-grush": "whistleblowers",
+    "people:camp-david": "military_bases",
+    "people:earth-tech": "companies",
+    "people:in-cambridge": "locations",
+    "people:one-brattle-square": "locations",
+    "people:independent-research": "contractors",
+    "politicians:democratic-national-committee": "government_agencies",
+    "friendly_people:grill-flame": "government_project_codenames",
+    "people:san-diego": "locations",
+    "people:lawrence-livermore": "military_bases",
+    "professors:zora-ranch": "locations",
+    "people:little-st": "locations",
+    "people:space-kids": "locations",
+    "people:fort-detrick": "military_bases",
+    "people:bart-cybrell": "hoaxers",
+    "friendly_people:third-eye-drops": "websites",
+    "people:texas-book-depository": "companies",
+    "friendly_people:american-airlines-flight": "companies",
+    "people:national-research-council": "research_groups",
+    "people:vatican-observatory": "research_groups",
+    "people:bay-area": "locations",
+    "people:outer-limits": "tv_shows"
   },
   "nameReclassifications": {
     "extra low frequency": "emerging_terminology",
@@ -249,7 +270,29 @@
     "x it": "tv_shows",
     "weimar germany": "locations",
     "eagle works": "government_agencies",
-    "dave grush": "whistleblowers"
+    "dave grush": "whistleblowers",
+    "camp david": "military_bases",
+    "earth tech": "companies",
+    "zorro ranch": "locations",
+    "cambridge": "locations",
+    "one brattle square": "locations",
+    "independent research and development": "contractors",
+    "democratic national committee": "government_agencies",
+    "grill flame": "government_project_codenames",
+    "san diego": "locations",
+    "lawrence livermore": "military_bases",
+    "zora ranch": "locations",
+    "little st. james": "locations",
+    "space kids": "locations",
+    "fort detrick": "military_bases",
+    "bart cybrell": "hoaxers",
+    "third eye drops": "websites",
+    "texas book depository": "companies",
+    "american airlines flight": "companies",
+    "national research council": "research_groups",
+    "vatican observatory": "research_groups",
+    "bay area": "locations",
+    "outer limits": "tv_shows"
   },
   "falsePositives": {
     "gps_coordinates:24-95": {
@@ -731,6 +774,26 @@
       "name": "Before Diana",
       "category": "people",
       "categoryLabel": "People"
+    },
+    "people:materiel-wing-director": {
+      "name": "Materiel Wing Director",
+      "category": "people",
+      "categoryLabel": "People"
+    },
+    "people:illumina-face-mask": {
+      "name": "Illumina Face Mask",
+      "category": "people",
+      "categoryLabel": "People"
+    },
+    "people:if-jesse": {
+      "name": "If Jesse",
+      "category": "people",
+      "categoryLabel": "People"
+    },
+    "people:t-at": {
+      "name": "T. At",
+      "category": "people",
+      "categoryLabel": "People"
     }
   },
   "omissions": {},
@@ -780,7 +843,23 @@
     "experiencers:diana-pasolka": "Diana Pasulka",
     "diana pasolka": "Diana Pasulka",
     "people:dave-grush": "Dave Grusch",
-    "dave grush": "Dave Grusch"
+    "dave grush": "Dave Grusch",
+    "people:in-cambridge": "Cambridge",
+    "in cambridge": "Cambridge",
+    "people:independent-research": "Independent Research and Development",
+    "independent research": "Independent Research and Development",
+    "people:little-st": "Little St. James",
+    "little st": "Little St. James",
+    "people:in-plato": "Plato",
+    "in plato": "Plato",
+    "whistleblowers:ari-ben": "Ari Ben-Minashe",
+    "ari ben": "Ari Ben-Minashe",
+    "people:space-kids": "Space Kids Camp",
+    "space kids": "Space Kids Camp",
+    "people:hare-airport": "Chicago O'Hare Airport",
+    "hare airport": "Chicago O'Hare Airport",
+    "people:in-enoch": "Book of Enoch",
+    "in enoch": "Book of Enoch"
   },
   "merges": {
     "whistleblowers:robert-lazar": {
@@ -1611,9 +1690,9 @@
       "sourceId": "experiencers:diana-pasolka",
       "sourceName": "Diana Pasolka",
       "sourceCategory": "experiencers",
-      "targetId": "people:diana-pasolka",
-      "targetName": "Diana Pasolka",
-      "targetCategory": "people"
+      "targetId": "professors:diana-pasulka",
+      "targetName": "Diana Pasulka",
+      "targetCategory": "professors"
     },
     "people:from-dave-grush": {
       "sourceId": "people:from-dave-grush",
@@ -1622,6 +1701,230 @@
       "targetId": "people:dave-grush",
       "targetName": "Dave Grusch",
       "targetCategory": "whistleblowers"
+    },
+    "people:by-tim-taylor": {
+      "sourceId": "people:by-tim-taylor",
+      "sourceName": "By Tim Taylor",
+      "sourceCategory": "people",
+      "targetId": "people:tim-taylor",
+      "targetName": "Tim Taylor",
+      "targetCategory": "people"
+    },
+    "people:in-new-mexico": {
+      "sourceId": "people:in-new-mexico",
+      "sourceName": "In New Mexico",
+      "sourceCategory": "people",
+      "targetId": "locations:new-mexico",
+      "targetName": "New Mexico",
+      "targetCategory": "locations"
+    },
+    "whistleblowers:dave-grush": {
+      "sourceId": "whistleblowers:dave-grush",
+      "sourceName": "Dave Grush",
+      "sourceCategory": "whistleblowers",
+      "targetId": "whistleblowers:dave-grusch",
+      "targetName": "Dave Grusch",
+      "targetCategory": "whistleblowers"
+    },
+    "government_agencies:national-reconnaissance": {
+      "sourceId": "government_agencies:national-reconnaissance",
+      "sourceName": "National Reconnaissance",
+      "sourceCategory": "government_agencies",
+      "targetId": "government_agencies:national-reconnaissance-office",
+      "targetName": "National Reconnaissance Office",
+      "targetCategory": "government_agencies"
+    },
+    "professors:russell-tard": {
+      "sourceId": "professors:russell-tard",
+      "sourceName": "Russell Tard",
+      "sourceCategory": "professors",
+      "targetId": "people:russell-targ",
+      "targetName": "Russell Targ",
+      "targetCategory": "people"
+    },
+    "people:zorro-ranch": {
+      "sourceId": "people:zorro-ranch",
+      "sourceName": "Zorro Ranch",
+      "sourceCategory": "locations",
+      "targetId": "professors:zora-ranch",
+      "targetName": "Zora Ranch",
+      "targetCategory": "professors"
+    },
+    "friendly_people:zorro-ranch": {
+      "sourceId": "friendly_people:zorro-ranch",
+      "sourceName": "Zorro Ranch",
+      "sourceCategory": "friendly_people",
+      "targetId": "professors:zora-ranch",
+      "targetName": "Zora Ranch",
+      "targetCategory": "locations"
+    },
+    "professors:eric-davis": {
+      "sourceId": "professors:eric-davis",
+      "sourceName": "Eric Davis",
+      "sourceCategory": "professors",
+      "targetId": "people:eric-davis",
+      "targetName": "Eric Davis",
+      "targetCategory": "people"
+    },
+    "people:eric-davis": {
+      "sourceId": "people:eric-davis",
+      "sourceName": "Eric Davis",
+      "sourceCategory": "people",
+      "targetId": "whistleblowers:eric-davis",
+      "targetName": "Eric Davis",
+      "targetCategory": "whistleblowers"
+    },
+    "whistleblowers:eric-davis": {
+      "sourceId": "whistleblowers:eric-davis",
+      "sourceName": "Eric Davis",
+      "sourceCategory": "whistleblowers",
+      "targetId": "experiencers:eric-davis",
+      "targetName": "Eric Davis",
+      "targetCategory": "experiencers"
+    },
+    "experiencers:eric-davis": {
+      "sourceId": "experiencers:eric-davis",
+      "sourceName": "Eric Davis",
+      "sourceCategory": "experiencers",
+      "targetId": "friendly_people:eric-davis",
+      "targetName": "Eric Davis",
+      "targetCategory": "friendly_people"
+    },
+    "friendly_people:eric-davis": {
+      "sourceId": "friendly_people:eric-davis",
+      "sourceName": "Eric Davis",
+      "sourceCategory": "friendly_people",
+      "targetId": "politicians:eric-davis",
+      "targetName": "Eric Davis",
+      "targetCategory": "politicians"
+    },
+    "people:president-bush": {
+      "sourceId": "people:president-bush",
+      "sourceName": "President Bush",
+      "sourceCategory": "people",
+      "targetId": "people:george-w-bush",
+      "targetName": "George W. Bush",
+      "targetCategory": "people"
+    },
+    "people:george-w-bush": {
+      "sourceId": "people:george-w-bush",
+      "sourceName": "George W. Bush",
+      "sourceCategory": "people",
+      "targetId": "people:president-george-w-bush",
+      "targetName": "President George W. Bush",
+      "targetCategory": "people"
+    },
+    "people:john-mack": {
+      "sourceId": "people:john-mack",
+      "sourceName": "John Mack",
+      "sourceCategory": "people",
+      "targetId": "experiencers:john-mack",
+      "targetName": "John Mack",
+      "targetCategory": "experiencers"
+    },
+    "experiencers:john-mack": {
+      "sourceId": "experiencers:john-mack",
+      "sourceName": "John Mack",
+      "sourceCategory": "experiencers",
+      "targetId": "friendly_people:john-mack",
+      "targetName": "John Mack",
+      "targetCategory": "friendly_people"
+    },
+    "people:so-john-mack": {
+      "sourceId": "people:so-john-mack",
+      "sourceName": "So John Mack",
+      "sourceCategory": "people",
+      "targetId": "friendly_people:john-mack",
+      "targetName": "John Mack",
+      "targetCategory": "friendly_people"
+    },
+    "people:ruth-forbes-payne": {
+      "sourceId": "people:ruth-forbes-payne",
+      "sourceName": "Ruth Forbes Payne",
+      "sourceCategory": "people",
+      "targetId": "people:ruth-payne",
+      "targetName": "Ruth Payne",
+      "targetCategory": "people"
+    },
+    "people:ruth-payne": {
+      "sourceId": "people:ruth-payne",
+      "sourceName": "Ruth Payne",
+      "sourceCategory": "people",
+      "targetId": "friendly_people:ruth-payne",
+      "targetName": "Ruth Payne",
+      "targetCategory": "friendly_people"
+    },
+    "friendly_people:ruth-payne": {
+      "sourceId": "friendly_people:ruth-payne",
+      "sourceName": "Ruth Payne",
+      "sourceCategory": "friendly_people",
+      "targetId": "people:ruth-forbes-payne-young",
+      "targetName": "Ruth Forbes Payne Young",
+      "targetCategory": "people"
+    },
+    "people:ruth-forbes-payne-young": {
+      "sourceId": "people:ruth-forbes-payne-young",
+      "sourceName": "Ruth Forbes Payne Young",
+      "sourceCategory": "people",
+      "targetId": "people:ruth-young",
+      "targetName": "Ruth Young",
+      "targetCategory": "people"
+    },
+    "likely_spies:lee-harvey-oswald": {
+      "sourceId": "likely_spies:lee-harvey-oswald",
+      "sourceName": "Lee Harvey Oswald",
+      "sourceCategory": "likely_spies",
+      "targetId": "people:lee-harvey-oswald",
+      "targetName": "Lee Harvey Oswald",
+      "targetCategory": "people"
+    },
+    "people:lee-harvey-oswald": {
+      "sourceId": "people:lee-harvey-oswald",
+      "sourceName": "Lee Harvey Oswald",
+      "sourceCategory": "people",
+      "targetId": "dangerous_people:lee-harvey-oswald",
+      "targetName": "Lee Harvey Oswald",
+      "targetCategory": "dangerous_people"
+    },
+    "dangerous_people:lee-harvey-oswald": {
+      "sourceId": "dangerous_people:lee-harvey-oswald",
+      "sourceName": "Lee Harvey Oswald",
+      "sourceCategory": "dangerous_people",
+      "targetId": "friendly_people:lee-harvey-oswald",
+      "targetName": "Lee Harvey Oswald",
+      "targetCategory": "friendly_people"
+    },
+    "institutes:manuro-institute": {
+      "sourceId": "institutes:manuro-institute",
+      "sourceName": "Manuro Institute",
+      "sourceCategory": "institutes",
+      "targetId": "institutes:monroe-institute",
+      "targetName": "Monroe Institute",
+      "targetCategory": "institutes"
+    },
+    "people:robert-monroe": {
+      "sourceId": "people:robert-monroe",
+      "sourceName": "Robert Monroe",
+      "sourceCategory": "people",
+      "targetId": "professors:robert-monroe",
+      "targetName": "Robert Monroe",
+      "targetCategory": "professors"
+    },
+    "people:so-tesla": {
+      "sourceId": "people:so-tesla",
+      "sourceName": "So Tesla",
+      "sourceCategory": "people",
+      "targetId": "people:nikola-tesla",
+      "targetName": "Nikola Tesla",
+      "targetCategory": "people"
+    },
+    "people:maybe-tesla": {
+      "sourceId": "people:maybe-tesla",
+      "sourceName": "Maybe Tesla",
+      "sourceCategory": "people",
+      "targetId": "people:nikola-tesla",
+      "targetName": "Nikola Tesla",
+      "targetCategory": "people"
     }
   },
   "nameMerges": {
@@ -2354,9 +2657,9 @@
       "targetCategory": "people"
     },
     "diana pasolka": {
-      "sourceId": "people:diana-pasolka",
+      "sourceId": "experiencers:diana-pasolka",
       "sourceName": "Diana Pasolka",
-      "sourceCategory": "people",
+      "sourceCategory": "experiencers",
       "targetId": "professors:diana-pasulka",
       "targetName": "Diana Pasulka",
       "targetCategory": "professors"
@@ -2368,9 +2671,161 @@
       "targetId": "people:dave-grush",
       "targetName": "Dave Grusch",
       "targetCategory": "whistleblowers"
+    },
+    "by tim taylor": {
+      "sourceId": "people:by-tim-taylor",
+      "sourceName": "By Tim Taylor",
+      "sourceCategory": "people",
+      "targetId": "people:tim-taylor",
+      "targetName": "Tim Taylor",
+      "targetCategory": "people"
+    },
+    "in new mexico": {
+      "sourceId": "people:in-new-mexico",
+      "sourceName": "In New Mexico",
+      "sourceCategory": "people",
+      "targetId": "locations:new-mexico",
+      "targetName": "New Mexico",
+      "targetCategory": "locations"
+    },
+    "dave grush": {
+      "sourceId": "whistleblowers:dave-grush",
+      "sourceName": "Dave Grush",
+      "sourceCategory": "whistleblowers",
+      "targetId": "whistleblowers:dave-grusch",
+      "targetName": "Dave Grusch",
+      "targetCategory": "whistleblowers"
+    },
+    "national reconnaissance": {
+      "sourceId": "government_agencies:national-reconnaissance",
+      "sourceName": "National Reconnaissance",
+      "sourceCategory": "government_agencies",
+      "targetId": "government_agencies:national-reconnaissance-office",
+      "targetName": "National Reconnaissance Office",
+      "targetCategory": "government_agencies"
+    },
+    "russell tard": {
+      "sourceId": "professors:russell-tard",
+      "sourceName": "Russell Tard",
+      "sourceCategory": "professors",
+      "targetId": "people:russell-targ",
+      "targetName": "Russell Targ",
+      "targetCategory": "people"
+    },
+    "zorro ranch": {
+      "sourceId": "friendly_people:zorro-ranch",
+      "sourceName": "Zorro Ranch",
+      "sourceCategory": "friendly_people",
+      "targetId": "professors:zora-ranch",
+      "targetName": "Zora Ranch",
+      "targetCategory": "locations"
+    },
+    "eric davis": {
+      "sourceId": "friendly_people:eric-davis",
+      "sourceName": "Eric Davis",
+      "sourceCategory": "friendly_people",
+      "targetId": "politicians:eric-davis",
+      "targetName": "Eric Davis",
+      "targetCategory": "politicians"
+    },
+    "president bush": {
+      "sourceId": "people:president-bush",
+      "sourceName": "President Bush",
+      "sourceCategory": "people",
+      "targetId": "people:george-w-bush",
+      "targetName": "George W. Bush",
+      "targetCategory": "people"
+    },
+    "george w bush": {
+      "sourceId": "people:george-w-bush",
+      "sourceName": "George W. Bush",
+      "sourceCategory": "people",
+      "targetId": "people:president-george-w-bush",
+      "targetName": "President George W. Bush",
+      "targetCategory": "people"
+    },
+    "john mack": {
+      "sourceId": "experiencers:john-mack",
+      "sourceName": "John Mack",
+      "sourceCategory": "experiencers",
+      "targetId": "friendly_people:john-mack",
+      "targetName": "John Mack",
+      "targetCategory": "friendly_people"
+    },
+    "so john mack": {
+      "sourceId": "people:so-john-mack",
+      "sourceName": "So John Mack",
+      "sourceCategory": "people",
+      "targetId": "friendly_people:john-mack",
+      "targetName": "John Mack",
+      "targetCategory": "friendly_people"
+    },
+    "ruth forbes payne": {
+      "sourceId": "people:ruth-forbes-payne",
+      "sourceName": "Ruth Forbes Payne",
+      "sourceCategory": "people",
+      "targetId": "people:ruth-payne",
+      "targetName": "Ruth Payne",
+      "targetCategory": "people"
+    },
+    "ruth payne": {
+      "sourceId": "friendly_people:ruth-payne",
+      "sourceName": "Ruth Payne",
+      "sourceCategory": "friendly_people",
+      "targetId": "people:ruth-forbes-payne-young",
+      "targetName": "Ruth Forbes Payne Young",
+      "targetCategory": "people"
+    },
+    "ruth forbes payne young": {
+      "sourceId": "people:ruth-forbes-payne-young",
+      "sourceName": "Ruth Forbes Payne Young",
+      "sourceCategory": "people",
+      "targetId": "people:ruth-young",
+      "targetName": "Ruth Young",
+      "targetCategory": "people"
+    },
+    "lee harvey oswald": {
+      "sourceId": "dangerous_people:lee-harvey-oswald",
+      "sourceName": "Lee Harvey Oswald",
+      "sourceCategory": "dangerous_people",
+      "targetId": "friendly_people:lee-harvey-oswald",
+      "targetName": "Lee Harvey Oswald",
+      "targetCategory": "friendly_people"
+    },
+    "manuro institute": {
+      "sourceId": "institutes:manuro-institute",
+      "sourceName": "Manuro Institute",
+      "sourceCategory": "institutes",
+      "targetId": "institutes:monroe-institute",
+      "targetName": "Monroe Institute",
+      "targetCategory": "institutes"
+    },
+    "robert monroe": {
+      "sourceId": "people:robert-monroe",
+      "sourceName": "Robert Monroe",
+      "sourceCategory": "people",
+      "targetId": "professors:robert-monroe",
+      "targetName": "Robert Monroe",
+      "targetCategory": "professors"
+    },
+    "so tesla": {
+      "sourceId": "people:so-tesla",
+      "sourceName": "So Tesla",
+      "sourceCategory": "people",
+      "targetId": "people:nikola-tesla",
+      "targetName": "Nikola Tesla",
+      "targetCategory": "people"
+    },
+    "maybe tesla": {
+      "sourceId": "people:maybe-tesla",
+      "sourceName": "Maybe Tesla",
+      "sourceCategory": "people",
+      "targetId": "people:nikola-tesla",
+      "targetName": "Nikola Tesla",
+      "targetCategory": "people"
     }
   },
   "notes": {},
-  "generatedAt": "2026-06-27T07:46:41.572Z",
+  "generatedAt": "2026-06-27T08:23:00.167Z",
   "note": "Replace data/reclass.json with this file before rebuilding."
 }
