@@ -44,6 +44,37 @@ class BuildGraphParsingTests(unittest.TestCase):
         build_graph.add_name_reclassifications_from_ids(review)
         self.assertEqual(review["nameReclassifications"]["department of energy"], "government_agencies")
 
+    def test_aliases_can_target_entity_ids(self) -> None:
+        segment = build_graph.Segment(
+            id="s-1",
+            transcript_id="t-1",
+            transcript_title="Sample",
+            source_file="sample.txt",
+            start_ms=0,
+            end_ms=1000,
+            text="Department of Energy",
+        )
+        mention = build_graph.Mention(
+            id="m-1",
+            entity_id="people:department-of-energy",
+            name="Department of Energy",
+            category="people",
+            category_label="People",
+            segment_id=segment.id,
+            transcript_id=segment.transcript_id,
+            transcript_title=segment.transcript_title,
+            source_file=segment.source_file,
+            start_ms=0,
+            timestamp="00:00:00",
+            excerpt="Department of Energy",
+            detector="test",
+            confidence=1.0,
+            reason="test",
+        )
+        reviewed = build_graph.apply_review_to_mentions([mention], {"aliases": {"people:department-of-energy": "DOE"}})
+        self.assertEqual(reviewed[0].name, "DOE")
+        self.assertEqual(reviewed[0].entity_id, "people:doe")
+
 
 if __name__ == "__main__":
     unittest.main()

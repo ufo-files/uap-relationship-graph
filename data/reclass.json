@@ -64,7 +64,13 @@
     "people:atomic-energy-act": "document_names",
     "people:security-administration": "government_agencies",
     "people:national-nuclear": "government_agencies",
-    "people:next-generation-non": "emerging_terminology"
+    "people:next-generation-non": "emerging_terminology",
+    "people:north-america": "locations",
+    "people:s-army": "government_agencies",
+    "people:commander-david-fravor": "whistleblowers",
+    "whistleblowers:george-knapp": "journalists",
+    "people:baghdad-phantom": "events",
+    "people:tic-tac": "events"
   },
   "nameReclassifications": {
     "extra low frequency": "emerging_terminology",
@@ -135,7 +141,16 @@
     "security administration": "government_agencies",
     "national nuclear": "government_agencies",
     "next generation non": "emerging_terminology",
-    "jacques vall e": "authors"
+    "jacques vall e": "authors",
+    "global access": "government_agencies",
+    "lockheed martins": "contractors",
+    "north america": "locations",
+    "s. army": "government_agencies",
+    "commander david fravor": "whistleblowers",
+    "george knapp": "journalists",
+    "baghdad phantom": "events",
+    "tic tac": "events",
+    "s army": "government_agencies"
   },
   "falsePositives": {
     "gps_coordinates:24-95": {
@@ -561,7 +576,7 @@
     "people:aerospace-corporation": {
       "name": "Aerospace Corporation",
       "category": "people",
-      "categoryLabel": "People and their significance"
+      "categoryLabel": "People"
     }
   },
   "omissions": {},
@@ -942,6 +957,78 @@
       "targetId": "government_agencies:department-of-energy",
       "targetName": "Department of Energy",
       "targetCategory": "government_agencies"
+    },
+    "people:global-access": {
+      "sourceId": "people:global-access",
+      "sourceName": "Global Access",
+      "sourceCategory": "government_agencies",
+      "targetId": "government_agencies:office-of-global-access",
+      "targetName": "Office of Global Access",
+      "targetCategory": "government_agencies"
+    },
+    "government_agencies:dod": {
+      "sourceId": "government_agencies:dod",
+      "sourceName": "DOD",
+      "sourceCategory": "government_agencies",
+      "targetId": "government_agencies:department-of-defense",
+      "targetName": "Department of Defense",
+      "targetCategory": "government_agencies"
+    },
+    "friendly_people:lockheed-martins": {
+      "sourceId": "friendly_people:lockheed-martins",
+      "sourceName": "Lockheed Martins",
+      "sourceCategory": "contractors",
+      "targetId": "contractors:lockheed-martin",
+      "targetName": "Lockheed Martin",
+      "targetCategory": "contractors"
+    },
+    "friendly_people:northrop-crummen": {
+      "sourceId": "friendly_people:northrop-crummen",
+      "sourceName": "Northrop Crummen",
+      "sourceCategory": "friendly_people",
+      "targetId": "people:north-america",
+      "targetName": "North America",
+      "targetCategory": "people"
+    },
+    "friendly_people:s-army": {
+      "sourceId": "friendly_people:s-army",
+      "sourceName": "S. Army",
+      "sourceCategory": "friendly_people",
+      "targetId": "people:s-army",
+      "targetName": "S. Army",
+      "targetCategory": "people"
+    },
+    "whistleblowers:david-fravor": {
+      "sourceId": "whistleblowers:david-fravor",
+      "sourceName": "David Fravor",
+      "sourceCategory": "whistleblowers",
+      "targetId": "friendly_people:commander-fravor",
+      "targetName": "Commander Fravor",
+      "targetCategory": "friendly_people"
+    },
+    "friendly_people:commander-fravor": {
+      "sourceId": "friendly_people:commander-fravor",
+      "sourceName": "Commander Fravor",
+      "sourceCategory": "friendly_people",
+      "targetId": "people:commander-david-fravor",
+      "targetName": "Commander David Fravor",
+      "targetCategory": "people"
+    },
+    "friendly_people:tic-tac": {
+      "sourceId": "friendly_people:tic-tac",
+      "sourceName": "Tic Tac",
+      "sourceCategory": "friendly_people",
+      "targetId": "experiencers:tic-tac",
+      "targetName": "Tic Tac",
+      "targetCategory": "experiencers"
+    },
+    "experiencers:tic-tac": {
+      "sourceId": "experiencers:tic-tac",
+      "sourceName": "Tic Tac",
+      "sourceCategory": "experiencers",
+      "targetId": "people:tic-tac",
+      "targetName": "Tic Tac",
+      "targetCategory": "people"
     }
   },
   "nameMerges": {
@@ -1288,9 +1375,73 @@
       "targetId": "government_agencies:department-of-energy",
       "targetName": "Department of Energy",
       "targetCategory": "government_agencies"
+    },
+    "global access": {
+      "sourceId": "people:global-access",
+      "sourceName": "Global Access",
+      "sourceCategory": "government_agencies",
+      "targetId": "government_agencies:office-of-global-access",
+      "targetName": "Office of Global Access",
+      "targetCategory": "government_agencies"
+    },
+    "dod": {
+      "sourceId": "government_agencies:dod",
+      "sourceName": "DOD",
+      "sourceCategory": "government_agencies",
+      "targetId": "government_agencies:department-of-defense",
+      "targetName": "Department of Defense",
+      "targetCategory": "government_agencies"
+    },
+    "lockheed martins": {
+      "sourceId": "friendly_people:lockheed-martins",
+      "sourceName": "Lockheed Martins",
+      "sourceCategory": "contractors",
+      "targetId": "contractors:lockheed-martin",
+      "targetName": "Lockheed Martin",
+      "targetCategory": "contractors"
+    },
+    "northrop crummen": {
+      "sourceId": "friendly_people:northrop-crummen",
+      "sourceName": "Northrop Crummen",
+      "sourceCategory": "friendly_people",
+      "targetId": "people:north-america",
+      "targetName": "North America",
+      "targetCategory": "people"
+    },
+    "s army": {
+      "sourceId": "friendly_people:s-army",
+      "sourceName": "S. Army",
+      "sourceCategory": "friendly_people",
+      "targetId": "people:s-army",
+      "targetName": "S. Army",
+      "targetCategory": "people"
+    },
+    "david fravor": {
+      "sourceId": "whistleblowers:david-fravor",
+      "sourceName": "David Fravor",
+      "sourceCategory": "whistleblowers",
+      "targetId": "friendly_people:commander-fravor",
+      "targetName": "Commander Fravor",
+      "targetCategory": "friendly_people"
+    },
+    "commander fravor": {
+      "sourceId": "friendly_people:commander-fravor",
+      "sourceName": "Commander Fravor",
+      "sourceCategory": "friendly_people",
+      "targetId": "people:commander-david-fravor",
+      "targetName": "Commander David Fravor",
+      "targetCategory": "people"
+    },
+    "tic tac": {
+      "sourceId": "experiencers:tic-tac",
+      "sourceName": "Tic Tac",
+      "sourceCategory": "experiencers",
+      "targetId": "people:tic-tac",
+      "targetName": "Tic Tac",
+      "targetCategory": "people"
     }
   },
   "notes": {},
-  "generatedAt": "2026-06-27T02:32:39.917Z",
+  "generatedAt": "2026-06-27T02:57:30.451Z",
   "note": "Replace data/reclass.json with this file before rebuilding."
 }
