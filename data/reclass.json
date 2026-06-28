@@ -2012,8 +2012,8 @@
       "sourceId": "experiencers:chris-bledsoe",
       "sourceName": "Chris Bledsoe",
       "targetCategory": "people",
-      "targetId": "people:chris-bledsoe-all",
-      "targetName": "Chris Bledsoe All"
+      "targetId": "people:chris-bledsoe",
+      "targetName": "Chris Bledsoe"
     },
     "experiencers:chris-bledsoe-chapter": {
       "sourceCategory": "experiencers",
@@ -9453,9 +9453,9 @@
       "sourceCategory": "people",
       "sourceId": "people:chris-bledsoe-all",
       "sourceName": "Chris Bledsoe All",
-      "targetCategory": "experiencers",
-      "targetId": "experiencers:christopher-bledsoe-sr",
-      "targetName": "Christopher Bledsoe Sr"
+      "targetCategory": "people",
+      "targetId": "people:chris-bledsoe",
+      "targetName": "Chris Bledsoe"
     },
     "chris bledsoe chapter": {
       "sourceCategory": "professors",

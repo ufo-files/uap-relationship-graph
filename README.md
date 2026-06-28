@@ -1,12 +1,12 @@
-# UAP Relationship Graph
+# UFO Files Relationship Graph
 
-[![Validate](https://github.com/ufo-files/uap-relationship-graph/actions/workflows/validate.yml/badge.svg)](https://github.com/ufo-files/uap-relationship-graph/actions/workflows/validate.yml)
-[![Accessibility](https://github.com/ufo-files/uap-relationship-graph/actions/workflows/accessibility.yml/badge.svg)](https://github.com/ufo-files/uap-relationship-graph/actions/workflows/accessibility.yml)
-[![Rebuild Report](https://github.com/ufo-files/uap-relationship-graph/actions/workflows/rebuild-report.yml/badge.svg)](https://github.com/ufo-files/uap-relationship-graph/actions/workflows/rebuild-report.yml)
+[![Validate](https://github.com/ufo-files/relationship-graph/actions/workflows/validate.yml/badge.svg)](https://github.com/ufo-files/relationship-graph/actions/workflows/validate.yml)
+[![Accessibility](https://github.com/ufo-files/relationship-graph/actions/workflows/accessibility.yml/badge.svg)](https://github.com/ufo-files/relationship-graph/actions/workflows/accessibility.yml)
+[![Rebuild Report](https://github.com/ufo-files/relationship-graph/actions/workflows/rebuild-report.yml/badge.svg)](https://github.com/ufo-files/relationship-graph/actions/workflows/rebuild-report.yml)
 
 A static, browser-based relationship graph for exploring entities and connections extracted from a corpus of UAP-related transcripts.
 
-Live site: https://ufo-files.github.io/uap-relationship-graph/
+Live site: https://ufo-files.github.io/relationship-graph/
 
 ## What It Does
 
@@ -124,4 +124,4 @@ Treat graph findings as leads. Click into nodes and read the transcript evidence
 
 The site is hosted with GitHub Pages from the `main` branch root.
 
-Repository: https://github.com/ufo-files/uap-relationship-graph
+Repository: https://github.com/ufo-files/relationship-graph

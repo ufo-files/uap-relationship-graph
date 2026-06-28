@@ -49,7 +49,7 @@ def check_document(index: str, parser: ElementCollector) -> list[str]:
 
     if not re.search(r"<html[^>]+lang=\"en\"", index):
         errors.append("Document must declare html lang=\"en\".")
-    if "<title>Transcript Relationship Graph</title>" not in index:
+    if "<title>UFO Files Relationship Graph</title>" not in index:
         errors.append("Document title is missing or unexpected.")
     if "input:focus-visible" not in index or ".html-graph-label:focus-visible" not in index:
         errors.append("Visible focus styles are missing for form controls or graph labels.")

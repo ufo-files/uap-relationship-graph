@@ -1,5 +1,5 @@
 {
-  "name": "uap-relationship-graph",
+  "name": "relationship-graph",
   "version": "0.1.0",
   "private": true,
   "scripts": {
