@@ -538,15 +538,16 @@
   <div id="hover-card" class="hover-card" aria-hidden="true"></div>
   <div id="corner-label" class="corner-label" role="status" aria-live="polite"></div>
   </main>
-    <script src="app-data.js?v=f7ffaa896163a8c2"></script>
-    <script src="app-data-mentions.js?v=f7ffaa896163a8c2"></script>
-    <script src="app-data-relationships.js?v=f7ffaa896163a8c2"></script>
+    <script src="app-data.js?v=5d81efc4e590323d"></script>
+    <script src="app-data-mentions.js?v=5d81efc4e590323d"></script>
+    <script src="app-data-relationships.js?v=5d81efc4e590323d"></script>
   <script>
     const RAW = window.TRANSCRIPT_INTELLIGENCE_DATA;
     const REVIEW_KEY = "relationship-graph-reclass";
     const PREVIOUS_REVIEW_KEY = "uap-relationship-graph-reclass";
     const LEGACY_REVIEW_KEY = "transcript-intelligence-v2-review";
     const BUILT_REVIEW = normalizeReview(RAW.reclassDecisions || RAW.reclass_decisions || RAW.reviewDecisions || RAW.review_decisions || {});
+    const CURRENT_REVIEW_BASE = RAW.manifest && (RAW.manifest.pipeline_hash || RAW.manifest.registry_hash || RAW.manifest.generated_at) || "";
     const THEME = {
       primary: "#111111",
       primarySoft: "#f6f5ef",
@@ -2486,6 +2487,7 @@
       normalized.removedManualRelationships = normalizeManualRelationshipDecisions(normalized.removedManualRelationships, true);
       if (review.generatedAt) normalized.generatedAt = review.generatedAt;
       if (review.note) normalized.note = review.note;
+      if (review.basePipelineHash) normalized.basePipelineHash = review.basePipelineHash;
       return normalized;
     }
 
@@ -2513,6 +2515,7 @@
       for (const key of Object.keys(merged.removedManualRelationships || {})) delete merged.manualRelationships[key];
       if (next.generatedAt) merged.generatedAt = next.generatedAt;
       if (next.note) merged.note = next.note;
+      if (next.basePipelineHash) merged.basePipelineHash = next.basePipelineHash;
       return merged;
     }
 
@@ -2579,17 +2582,24 @@
       return !source && Boolean(target);
     }
 
+    function reviewKeyExistsInBuiltReview(key, id) {
+      return Object.prototype.hasOwnProperty.call(BUILT_REVIEW[key] || {}, id);
+    }
+
     function removeBuiltReviewEntries(review) {
       const cleaned = normalizeReview(review);
       let changed = false;
+      const staleBrowserReview = CURRENT_REVIEW_BASE && cleaned.basePipelineHash !== CURRENT_REVIEW_BASE;
       for (const key of ["reclassifications", "nameReclassifications", "falsePositives", "removedFalsePositives", "omissions", "aliases", "merges", "nameMerges", "removedManualRelationships", "manualRelationships"]) {
         for (const [id, value] of Object.entries(cleaned[key] || {})) {
-          const exactBuilt = Object.prototype.hasOwnProperty.call(BUILT_REVIEW[key] || {}, id) && sameReviewValue(value, BUILT_REVIEW[key][id]);
+          const builtKey = reviewKeyExistsInBuiltReview(key, id);
+          const exactBuilt = builtKey && sameReviewValue(value, BUILT_REVIEW[key][id]);
+          const staleBuiltOverride = staleBrowserReview && builtKey;
           const bakedCategory = key === "reclassifications" || key === "nameReclassifications" ? reviewCategoryIsBaked(id, value) : false;
           const bakedFalsePositive = key === "falsePositives" ? reviewFalsePositiveIsBaked(id, value) : false;
           const bakedAlias = key === "aliases" ? reviewAliasIsBaked(id, value) : false;
           const bakedMerge = key === "merges" || key === "nameMerges" ? reviewMergeIsBaked(id, value) : false;
-          if (exactBuilt || bakedCategory || bakedFalsePositive || bakedAlias || bakedMerge) {
+          if (exactBuilt || staleBuiltOverride || bakedCategory || bakedFalsePositive || bakedAlias || bakedMerge) {
             delete cleaned[key][id];
             changed = true;
           }
@@ -2634,7 +2644,9 @@
     }
 
     function saveReview(review) {
-      localStorage.setItem(REVIEW_KEY, JSON.stringify(review));
+      const next = normalizeReview(review);
+      if (CURRENT_REVIEW_BASE) next.basePipelineHash = CURRENT_REVIEW_BASE;
+      localStorage.setItem(REVIEW_KEY, JSON.stringify(next));
       updateReviewButton();
     }
 
@@ -2932,6 +2944,7 @@
       const review = mergeReviews(BUILT_REVIEW, readReview());
       review.generatedAt = new Date().toISOString();
       review.note = "Replace data/reclass.json with this file before rebuilding.";
+      delete review.basePipelineHash;
       download("reclass.json", review);
     });
     reviewFalsePositivesButton.addEventListener("click", () => renderFalsePositiveReviewCard());

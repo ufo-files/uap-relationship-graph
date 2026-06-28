@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-28T21:31:08.807582+00:00",
+  "generated_at": "2026-06-28T21:52:01.670042+00:00",
   "pipeline": "relationship-graph",
   "reproducibility": {
     "no_openai_api": true,
@@ -28,8 +28,8 @@
   "counts": {
     "transcripts": 102,
     "segments": 211635,
-    "mentions": 49579,
-    "entities": 18966,
+    "mentions": 50819,
+    "entities": 19775,
     "relationships": 8000,
     "categories": 53
   },
@@ -138,7 +138,7 @@
     "why-the-pentagon-tried-to-censor-this-uf.tsv": "e66f4d3cc4202e0fd4d4986c5a4dc2a618df86798adc396d5fc333b004509b23"
   },
   "registry_hash": "85f3c52f306d1891b4a44f68e6527ed66041b2f074dad487cf7915d3740276b3",
-  "pipeline_hash": "b48c8bee4c98c2086451d523b6a95b8bc038e2e2d58d67c261e5be1dfa898854",
+  "pipeline_hash": "ddfaade94ddde1a0e41399cc03f57b012993bf7dd3e1caebb96b4f9d7e7e43e1",
   "review_counts": {
     "reclassifications": 476,
     "name_reclassifications": 583,
@@ -147,9 +147,9 @@
     "omissions": 0,
     "aliases": 383,
     "merges": 890,
-    "name_merges": 632,
+    "name_merges": 631,
     "removed_merges": 3,
-    "removed_name_merges": 3,
+    "removed_name_merges": 4,
     "removed_manual_relationships": 0,
     "manual_relationships": 72
   }

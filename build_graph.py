@@ -574,8 +574,8 @@ INSTITUTE_NAME_RE = re.compile(r"\b(?:Institute|Institutes)\b", re.I)
 UNIVERSITY_NAME_RE = re.compile(r"\b(?:University|College|School)\b", re.I)
 RESEARCH_ORG_NAME_RE = re.compile(r"\b(?:Laboratory|Laboratories|Labs?|Research\s+Center|Research\s+Institute)\b", re.I)
 GOVERNMENT_ORG_NAME_RE = re.compile(
-    r"\b(?:Department|Agency|Administration|Bureau|Office|Ministry|Command|Secretary|Forest\s+Service|Geological\s+Service|"
-    r"Health\s+Service|Selective\s+Service|Strategic\s+Services|Technical\s+Services)\b",
+    r"\b(?:Department|Agency|Administration|Bureau|Office|Ministry|Command|Committee|Commission|Council|Board|Secretary|"
+    r"Forest\s+Service|Geological\s+Service|Health\s+Service|Selective\s+Service|Strategic\s+Services|Technical\s+Services)\b",
     re.I,
 )
 COMPANY_ORG_NAME_RE = re.compile(r"\b(?:Corporation|Company|Companies|Inc\.?|LLC|Ltd\.?|Limited|Aerospace|Aircraft|Technologies|Systems)\b", re.I)
@@ -1151,7 +1151,7 @@ def person_mentions(segment: Segment, omit_terms: set[str]) -> list[dict[str, An
     items: list[dict[str, Any]] = []
     text = segment.text
     for match in PERSON_RE.finditer(text):
-        raw = re.sub(r"^(Dr\.|Mr\.|Ms\.|Sen\.|Rep\.)\s+", "", match.group(0).strip())
+        raw = re.sub(r"^(Dr\.|Mr\.|Ms\.|Sen\.|Rep\.|The)\s+", "", match.group(0).strip())
         name = re.sub(r"\s+", " ", raw)
         if len(name) < 5 or normalize_name(name) in omit_terms:
             continue
@@ -1321,6 +1321,15 @@ def resolve_review_merge_chain(
     current_name = name
     current_category = category
     seen: set[tuple[str, str, str]] = set()
+    candidates: list[tuple[str, str, str]] = [(current_name, current_category, current_id)]
+
+    def candidate_score(candidate: tuple[str, str, str]) -> tuple[int, int, int, str]:
+        candidate_name, candidate_category, _ = candidate
+        normalized_candidate = normalize_name(candidate_name)
+        reviewed = name_reclassifications.get(normalized_candidate) == candidate_category
+        non_person = candidate_category not in PERSON_LIKE_CATEGORIES
+        shorter_name = -len(normalized_candidate)
+        return (4 if reviewed else 0, 2 if non_person else 0, shorter_name, normalized_candidate)
 
     for _ in range(24):
         state = (current_id, normalize_name(current_name), current_category)
@@ -1342,12 +1351,16 @@ def resolve_review_merge_chain(
         next_state = (next_id, normalize_name(next_name), next_category)
         if next_state == state:
             break
+        next_candidate = (next_name, next_category, next_id)
+        candidates.append(next_candidate)
+        if next_state in seen:
+            break
 
         current_id = next_id
         current_name = next_name
         current_category = next_category
 
-    return current_name, current_category, current_id
+    return max(enumerate(candidates), key=lambda item: (*candidate_score(item[1]), item[0]))[1]
 
 
 def apply_review_to_mentions(mentions: list[Mention], review: dict[str, Any]) -> list[Mention]:
@@ -3331,6 +3344,7 @@ __APP_DATA_SCRIPTS__
     const PREVIOUS_REVIEW_KEY = "uap-relationship-graph-reclass";
     const LEGACY_REVIEW_KEY = "transcript-intelligence-v2-review";
     const BUILT_REVIEW = normalizeReview(RAW.reclassDecisions || RAW.reclass_decisions || RAW.reviewDecisions || RAW.review_decisions || {});
+    const CURRENT_REVIEW_BASE = RAW.manifest && (RAW.manifest.pipeline_hash || RAW.manifest.registry_hash || RAW.manifest.generated_at) || "";
     const THEME = {
       primary: "#111111",
       primarySoft: "#f6f5ef",
@@ -5270,6 +5284,7 @@ __APP_DATA_SCRIPTS__
       normalized.removedManualRelationships = normalizeManualRelationshipDecisions(normalized.removedManualRelationships, true);
       if (review.generatedAt) normalized.generatedAt = review.generatedAt;
       if (review.note) normalized.note = review.note;
+      if (review.basePipelineHash) normalized.basePipelineHash = review.basePipelineHash;
       return normalized;
     }
 
@@ -5297,6 +5312,7 @@ __APP_DATA_SCRIPTS__
       for (const key of Object.keys(merged.removedManualRelationships || {})) delete merged.manualRelationships[key];
       if (next.generatedAt) merged.generatedAt = next.generatedAt;
       if (next.note) merged.note = next.note;
+      if (next.basePipelineHash) merged.basePipelineHash = next.basePipelineHash;
       return merged;
     }
 
@@ -5363,17 +5379,24 @@ __APP_DATA_SCRIPTS__
       return !source && Boolean(target);
     }
 
+    function reviewKeyExistsInBuiltReview(key, id) {
+      return Object.prototype.hasOwnProperty.call(BUILT_REVIEW[key] || {}, id);
+    }
+
     function removeBuiltReviewEntries(review) {
       const cleaned = normalizeReview(review);
       let changed = false;
+      const staleBrowserReview = CURRENT_REVIEW_BASE && cleaned.basePipelineHash !== CURRENT_REVIEW_BASE;
       for (const key of ["reclassifications", "nameReclassifications", "falsePositives", "removedFalsePositives", "omissions", "aliases", "merges", "nameMerges", "removedManualRelationships", "manualRelationships"]) {
         for (const [id, value] of Object.entries(cleaned[key] || {})) {
-          const exactBuilt = Object.prototype.hasOwnProperty.call(BUILT_REVIEW[key] || {}, id) && sameReviewValue(value, BUILT_REVIEW[key][id]);
+          const builtKey = reviewKeyExistsInBuiltReview(key, id);
+          const exactBuilt = builtKey && sameReviewValue(value, BUILT_REVIEW[key][id]);
+          const staleBuiltOverride = staleBrowserReview && builtKey;
           const bakedCategory = key === "reclassifications" || key === "nameReclassifications" ? reviewCategoryIsBaked(id, value) : false;
           const bakedFalsePositive = key === "falsePositives" ? reviewFalsePositiveIsBaked(id, value) : false;
           const bakedAlias = key === "aliases" ? reviewAliasIsBaked(id, value) : false;
           const bakedMerge = key === "merges" || key === "nameMerges" ? reviewMergeIsBaked(id, value) : false;
-          if (exactBuilt || bakedCategory || bakedFalsePositive || bakedAlias || bakedMerge) {
+          if (exactBuilt || staleBuiltOverride || bakedCategory || bakedFalsePositive || bakedAlias || bakedMerge) {
             delete cleaned[key][id];
             changed = true;
           }
@@ -5418,7 +5441,9 @@ __APP_DATA_SCRIPTS__
     }
 
     function saveReview(review) {
-      localStorage.setItem(REVIEW_KEY, JSON.stringify(review));
+      const next = normalizeReview(review);
+      if (CURRENT_REVIEW_BASE) next.basePipelineHash = CURRENT_REVIEW_BASE;
+      localStorage.setItem(REVIEW_KEY, JSON.stringify(next));
       updateReviewButton();
     }
 
@@ -5716,6 +5741,7 @@ __APP_DATA_SCRIPTS__
       const review = mergeReviews(BUILT_REVIEW, readReview());
       review.generatedAt = new Date().toISOString();
       review.note = "Replace data/reclass.json with this file before rebuilding.";
+      delete review.basePipelineHash;
       download("reclass.json", review);
     });
     reviewFalsePositivesButton.addEventListener("click", () => renderFalsePositiveReviewCard());

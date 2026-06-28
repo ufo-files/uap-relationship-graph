@@ -263,6 +263,43 @@ test("baked reclass decisions are removed from browser review state", async ({ p
   expect(storedReview).toBeNull();
 });
 
+test("stale browser merge decisions cannot override rebuilt data", async ({ page }) => {
+  await page.addInitScript(() => {
+    localStorage.setItem("relationship-graph-reclass", JSON.stringify({
+      reclassifications: {},
+      nameReclassifications: {},
+      falsePositives: {},
+      removedFalsePositives: {},
+      omissions: {},
+      aliases: {},
+      merges: {},
+      nameMerges: {
+        "chris bledsoe": {
+          sourceCategory: "experiencers",
+          sourceId: "experiencers:chris-bledsoe",
+          sourceName: "Chris Bledsoe",
+          targetCategory: "people",
+          targetId: "people:chris-bledsoe-all",
+          targetName: "Chris Bledsoe All",
+        },
+      },
+      removedMerges: {},
+      removedNameMerges: {},
+      removedManualRelationships: {},
+      manualRelationships: {},
+      notes: {},
+    }));
+  });
+
+  await page.goto("/");
+
+  await expect(page.locator("#review-status")).toHaveText("");
+  const storedReview = await page.evaluate(() => localStorage.getItem("relationship-graph-reclass"));
+  expect(storedReview).toBeNull();
+  const staleEntityCount = await page.evaluate(() => window.TRANSCRIPT_INTELLIGENCE_DATA.entities.filter((entity) => entity.name === "Chris Bledsoe All").length);
+  expect(staleEntityCount).toBe(0);
+});
+
 test("merge duplicate target is selected through search results", async ({ page }) => {
   await page.goto("/");
 

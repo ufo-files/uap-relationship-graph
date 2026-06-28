@@ -138,6 +138,36 @@ class BuildGraphParsingTests(unittest.TestCase):
         self.assertEqual(reviewed[0].name, "Jim Clapper")
         self.assertEqual(reviewed[0].entity_id, "people:jim-clapper")
 
+    def test_merge_cycles_prefer_reviewed_non_person_target(self) -> None:
+        mention = self.make_mention("Top Secret Operation Paperclip")
+        review = {
+            "nameReclassifications": {
+                "operation paperclip": "government_project_codenames",
+            },
+            "nameMerges": {
+                "top secret operation paperclip": {
+                    "sourceId": "people:top-secret-operation-paperclip",
+                    "sourceName": "Top Secret Operation Paperclip",
+                    "sourceCategory": "people",
+                    "targetId": "government_project_codenames:operation-paperclip",
+                    "targetName": "Operation Paperclip",
+                    "targetCategory": "government_project_codenames",
+                },
+                "operation paperclip": {
+                    "sourceId": "journalists:operation-paperclip",
+                    "sourceName": "Operation Paperclip",
+                    "sourceCategory": "government_project_codenames",
+                    "targetId": "people:top-secret-operation-paperclip",
+                    "targetName": "Top Secret Operation Paperclip",
+                    "targetCategory": "people",
+                },
+            },
+        }
+        reviewed = build_graph.apply_review_to_mentions([mention], review)
+        self.assertEqual(reviewed[0].name, "Operation Paperclip")
+        self.assertEqual(reviewed[0].category, "government_project_codenames")
+        self.assertEqual(reviewed[0].entity_id, "government_project_codenames:operation-paperclip")
+
     def test_name_merges_prefer_aliased_canonical_names(self) -> None:
         mention = self.make_mention("Diana Pasolka", "experiencers")
         review = {
@@ -190,6 +220,18 @@ class BuildGraphParsingTests(unittest.TestCase):
         self.assertEqual(categories["New York Times"], "newsrooms")
         self.assertEqual(categories["Battelle Memorial Institute"], "institutes")
         self.assertEqual(categories["Intelligence Officers"], "government_agencies")
+
+        committee_segment = build_graph.Segment(
+            id="s-2",
+            transcript_id="t-1",
+            transcript_title="Sample",
+            source_file="sample.txt",
+            start_ms=0,
+            end_ms=1000,
+            text="The National Advisory Committee reviewed the records.",
+        )
+        committee_categories = {item["name"]: item["category"] for item in build_graph.person_mentions(committee_segment, set())}
+        self.assertEqual(committee_categories["National Advisory Committee"], "government_agencies")
 
 
 if __name__ == "__main__":
