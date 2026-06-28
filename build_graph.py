@@ -3207,6 +3207,27 @@ def render_html(app_data_version: str = "") -> str:
       transform-box: fill-box;
       transform-origin: center;
     }
+    .graph-node.connection-highlight circle {
+      stroke-width: 2.4;
+    }
+    .graph-node.connection-dim,
+    .html-graph-label.connection-dim {
+      opacity: .24;
+    }
+    .graph-edge {
+      transition: opacity .16s ease, stroke-width .16s ease;
+    }
+    .graph-edge.connection-highlight {
+      opacity: .82;
+      stroke-width: 2.4px;
+    }
+    .graph-edge.connection-dim {
+      opacity: .06;
+    }
+    .html-graph-label.connection-highlight {
+      color: var(--ink);
+      opacity: 1;
+    }
     .graph-label {
       paint-order: stroke;
       stroke: #fff;
@@ -4913,7 +4934,45 @@ __APP_DATA_SCRIPTS__
       }
     }
 
+    function clearConnectionHighlights() {
+      svg.querySelectorAll(".connection-highlight, .connection-dim").forEach((element) => {
+        element.classList.remove("connection-highlight", "connection-dim");
+      });
+      graphLabelsEl.querySelectorAll(".connection-highlight, .connection-dim").forEach((element) => {
+        element.classList.remove("connection-highlight", "connection-dim");
+      });
+    }
+
+    function highlightEntityConnections(entityId) {
+      clearConnectionHighlights();
+      const relationships = relationshipsByEntity.get(entityId) || [];
+      if (!entityId || !relationships.length) return;
+      const connectedIds = new Set([entityId]);
+      const connectedRelationshipIds = new Set();
+      relationships.forEach((relationship) => {
+        connectedRelationshipIds.add(relationship.id);
+        connectedIds.add(relationship.source === entityId ? relationship.target : relationship.source);
+      });
+
+      svg.querySelectorAll("[data-entity]").forEach((node) => {
+        const isConnected = connectedIds.has(node.dataset.entity);
+        node.classList.toggle("connection-highlight", isConnected);
+        node.classList.toggle("connection-dim", !isConnected);
+      });
+      graphLabelsEl.querySelectorAll("[data-label-entity]").forEach((label) => {
+        const isConnected = connectedIds.has(label.dataset.labelEntity);
+        label.classList.toggle("connection-highlight", isConnected);
+        label.classList.toggle("connection-dim", !isConnected);
+      });
+      svg.querySelectorAll("[data-edge]").forEach((edge) => {
+        const isConnected = connectedRelationshipIds.has(edge.dataset.edge);
+        edge.classList.toggle("connection-highlight", isConnected);
+        edge.classList.toggle("connection-dim", !isConnected);
+      });
+    }
+
     function setHoveredNode(node) {
+      clearConnectionHighlights();
       svg.querySelectorAll(".graph-node.hover").forEach((current) => {
         if (current !== node) current.classList.remove("hover");
       });
@@ -4923,6 +4982,7 @@ __APP_DATA_SCRIPTS__
       if (!node) return;
       promoteNode(node);
       node.classList.add("hover");
+      if (node.dataset.entity) highlightEntityConnections(node.dataset.entity);
       const labelKind = node.dataset.entity ? "labelEntity" : node.dataset.categoryList ? "labelCategoryList" : "labelCategory";
       const id = node.dataset.entity || node.dataset.categoryList || node.dataset.category;
       Array.from(graphLabelsEl.querySelectorAll(".html-graph-label")).forEach((label) => {

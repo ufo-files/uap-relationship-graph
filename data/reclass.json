@@ -4,6 +4,7 @@
     "acquisition technology": "National Intelligence for Acquisition Technology and Facilities",
     "actually bob jacobs": "Bob Jacobs",
     "advanced aerospace threat identification program": "AATIP",
+    "advanced aerospace weapon system applications program": "AAWSAP",
     "aero medical": "Aero Medical Division",
     "aero medical center": "Army Air Forces Aero Medical Center",
     "after disclosure": "A.D. After Disclosure",
@@ -12,6 +13,7 @@
     "american establishment": "The Anglo-American Establishment",
     "american joseph mengele": "Joseph Mengele",
     "american world power": "Angle-American World Power",
+    "an associated press": "Associated Press",
     "anna paulina": "Congresswoman Anna Paulina Luna",
     "ant people": "Ant People of the Hopi",
     "applied sciences": "Monroe Institute of Applied Sciences",
@@ -33,14 +35,17 @@
     "bob lazar muscovium": "Bob Lazar",
     "bob mueller": "Robert Mueller",
     "bomb group wing": "509th Bomb Group Wing",
+    "bomber wing": "509th Bomb Group Wing",
     "bulgarian academy": "Bulgarian Academy of Sciences",
     "by gary nolan": "Gary Nolan",
     "byfield brown": "Byfield Brown Effect",
     "camp street": "544 Camp Street",
     "charles hall tall whites": "Charles Hall",
+    "chris bledsoe all": "Chris Bledsoe",
     "chris bledsoe copyright": "Chris Bledsoe",
     "civilized society": "Towards a Psycho-Civilized Society",
     "coast guard": "United States Coast Guard",
+    "colonel corso": "Colonel Philip J. Corso",
     "common telescopes": "Celestial Objects for Common Telescopes",
     "companies:aero-medical-center": "Army Air Forces Aero Medical Center",
     "companies:lockheed-martin-corporation": "Lockheed Martin",
@@ -60,6 +65,7 @@
     "enter major donald kehoe": "Major Donald Kehoe",
     "except john olson lear": "John Olson Lear",
     "experiencers:ant-people": "Ant People of the Hopi",
+    "experiencers:bomber-wing": "509th Bomb Group Wing",
     "experiencers:common-telescopes": "Celestial Objects for Common Telescopes",
     "experiencers:diana-pasolka": "Diana Pasulka",
     "experiencers:had-lazar": "Bob Lazar",
@@ -81,6 +87,7 @@
     "george h w bush": "President George H.W. Bush",
     "german experimental station": "German Experimental Station for Aviation Medicine",
     "german experimental station for aviation medicin": "German Experimental Station for Aviation Medicine",
+    "government_agencies:advanced-aerospace-weapon-system-applications-program": "AAWSAP",
     "government_agencies:air-force-office": "Air Force Office of Special Investigations",
     "government_agencies:army-test": "Army Test and Evaluation Command",
     "government_agencies:based-laser-project-office": "Space-Based Laser Project Office",
@@ -110,6 +117,8 @@
     "in california": "California",
     "in cambridge": "Cambridge",
     "in enoch": "Book of Enoch",
+    "in france": "France",
+    "in germany": "Germany",
     "in january": "January, 2007",
     "in las vegas": "Las Vegas",
     "in newfoundland": "Newfoundland",
@@ -135,13 +144,16 @@
     "like curtis": "Curtis LeMay",
     "like kash patel": "Kash Patel",
     "likely_spies:bomb-group-wing": "509th Bomb Group Wing",
+    "likely_spies:colonel-corso": "Colonel Philip J. Corso",
     "likely_spies:montrose-search": "Montrose Search and Rescue",
+    "likely_spies:north-las-vegas": "Las Vegas",
     "likely_spies:on-march": "March 24th, 1967",
     "likely_spies:under-operation-paperclip": "Operation Paperclip",
     "linville gorge": "Linville Gorge Overlook",
     "little st": "Little St. James",
     "locations:russian-federation": "Russia",
     "lockheed martin corporation": "Lockheed Martin",
+    "los alamos national": "Los Alamos National Laboratories",
     "marine corps": "United States Marine Corps",
     "medical research": "Kaiser Wilhelm Institute for Medical Research",
     "military_bases:wright-patterson-air-force-base": "Wright-Patterson Air Force Base",
@@ -151,6 +163,8 @@
     "national academy": "National Academy of Sciences National Academy of Sciences",
     "national reconnaissance": "National Reconnaissance Office",
     "natural history": "American Museum of Natural History",
+    "newsrooms:an-associated-press": "Associated Press",
+    "north las vegas": "Las Vegas",
     "november 24 95": "April 1995",
     "on december": "December 20, 2025",
     "on march": "March 24th, 1967",
@@ -184,6 +198,7 @@
     "people:byfield-brown": "Byfield Brown Effect",
     "people:camp-street": "544 Camp Street",
     "people:charles-hall-tall-whites": "Charles Hall",
+    "people:chris-bledsoe-all": "Chris Bledsoe",
     "people:chris-bledsoe-copyright": "Chris Bledsoe",
     "people:civilized-society": "Towards a Psycho-Civilized Society",
     "people:dave-grush": "Dave Grusch",
@@ -209,6 +224,8 @@
     "people:if-stephen-hawking": "Stephen Hawking",
     "people:in-cambridge": "Cambridge",
     "people:in-enoch": "Book of Enoch",
+    "people:in-france": "France",
+    "people:in-germany": "Germany",
     "people:in-january": "January, 2007",
     "people:in-las-vegas": "Las Vegas",
     "people:in-newfoundland": "Newfoundland",
@@ -234,10 +251,12 @@
     "people:like-kash-patel": "Kash Patel",
     "people:linville-gorge": "Linville Gorge Overlook",
     "people:little-st": "Little St. James",
+    "people:los-alamos-national": "Los Alamos National Laboratories",
     "people:mount-waterman": "Waterman Mountain",
     "people:national-academies": "National Academy of Sciences National Academy of Sciences",
     "people:national-reconnaissance": "National Reconnaissance Office",
     "people:natural-history": "American Museum of Natural History",
+    "people:north-las-vegas": "Las Vegas",
     "people:on-december": "December 20, 2025",
     "people:on-may": "May 8, 2026",
     "people:on-monday": "December 15",
@@ -255,6 +274,7 @@
     "people:rick-doty": "Richard Doti",
     "people:rockefeller-commission": "Rockefeller Commission Report",
     "people:secret-machines": "Sekret Machines",
+    "people:skinwalker-ranch-research-for": "Skinwalker Ranch",
     "people:so-brent": "Brent Friedman",
     "people:so-gordon-liddy": "G. Gordon Liddy",
     "people:so-paul-mellon": "Paul Mellon",
@@ -276,6 +296,7 @@
     "persinger god": "Persinger God Helmet",
     "plasma science": "Plasma Science and Fusion Center",
     "politicians:bill-clinton": "President Bill Clinton",
+    "politicians:strom-thurmond": "Senator Strom Thurmond",
     "pope pius": "Pope",
     "president kirsan": "President Kirsan Ilyamzinov",
     "president obama": "President Barack Obama",
@@ -304,6 +325,7 @@
     "scientific revolutions": "Structure of Scientific Revolutions",
     "second empire": "The Spider's Web, Britain's Second Empire",
     "secret machines": "Sekret Machines",
+    "skinwalker ranch research for": "Skinwalker Ranch",
     "so brent": "Brent Friedman",
     "so gordon liddy": "G. Gordon Liddy",
     "so paul mellon": "Paul Mellon",
@@ -313,6 +335,7 @@
     "special investigations": "U.S. Air Force Office of Special Investigations",
     "special programs": "Pentagon Special Programs",
     "special projects": "EG&G Special Projects",
+    "strom thurmond": "Senator Strom Thurmond",
     "technology group": "Trump Media and Technology Group",
     "test wing": "Edwards 412th Test Wing",
     "then donald": "Donald DeFreeze",
@@ -342,11 +365,6 @@
       "categoryLabel": "Dates and times",
       "name": "maybe 10, 15"
     },
-    "friendly_people:american-alchemist": {
-      "category": "friendly_people",
-      "categoryLabel": "Friendly people",
-      "name": "American Alchemist"
-    },
     "friendly_people:apparently-dulles": {
       "category": "friendly_people",
       "categoryLabel": "Friendly people",
@@ -356,11 +374,6 @@
       "category": "friendly_people",
       "categoryLabel": "Friendly people",
       "name": "Darth Vader"
-    },
-    "friendly_people:federally-funded-research": {
-      "category": "friendly_people",
-      "categoryLabel": "Friendly people",
-      "name": "Federally Funded Research"
     },
     "friendly_people:former-los-alamos": {
       "category": "friendly_people",
@@ -637,35 +650,15 @@
       "categoryLabel": "Likely spies",
       "name": "Union Paci"
     },
-    "people:aerospace-corporation": {
-      "category": "people",
-      "categoryLabel": "People",
-      "name": "Aerospace Corporation"
-    },
-    "people:aliens-among-us-mac": {
-      "category": "people",
-      "categoryLabel": "People",
-      "name": "Aliens Among Us Mac"
-    },
     "people:as-barry": {
       "category": "people",
       "categoryLabel": "People",
       "name": "As Barry"
     },
-    "people:astronautical-engineering": {
-      "category": "people",
-      "categoryLabel": "People",
-      "name": "Astronautical Engineering"
-    },
     "people:because-wednesday": {
       "category": "people",
       "categoryLabel": "People",
       "name": "Because Wednesday"
-    },
-    "people:before-diana": {
-      "category": "people",
-      "categoryLabel": "People",
-      "name": "Before Diana"
     },
     "people:by-lou": {
       "category": "people",
@@ -742,6 +735,11 @@
       "categoryLabel": "People",
       "name": "Intelligence Community"
     },
+    "people:j-allen-hynek-foreword": {
+      "category": "people",
+      "categoryLabel": "People",
+      "name": "J. Allen Hynek Foreword"
+    },
     "people:lady-dracula": {
       "category": "people",
       "categoryLabel": "People",
@@ -761,11 +759,6 @@
       "category": "people",
       "categoryLabel": "People",
       "name": "Nissan Sentra"
-    },
-    "people:norwegian-american": {
-      "category": "people",
-      "categoryLabel": "People",
-      "name": "Norwegian American"
     },
     "people:physical-characteristics": {
       "category": "people",
@@ -852,50 +845,15 @@
       "categoryLabel": "Professors",
       "name": "New World"
     },
-    "websites:1-the": {
-      "category": "websites",
-      "categoryLabel": "Websites",
-      "name": "1.The"
-    },
-    "websites:1-three": {
-      "category": "websites",
-      "categoryLabel": "Websites",
-      "name": "1.Three"
-    },
-    "websites:2-angle": {
-      "category": "websites",
-      "categoryLabel": "Websites",
-      "name": "2.Angle"
-    },
     "websites:2-the": {
       "category": "websites",
       "categoryLabel": "Websites",
       "name": "2.The"
     },
-    "websites:3-color": {
-      "category": "websites",
-      "categoryLabel": "Websites",
-      "name": "3.Color"
-    },
     "websites:4927-html": {
       "category": "websites",
       "categoryLabel": "Websites",
       "name": "4927.html"
-    },
-    "websites:6-length": {
-      "category": "websites",
-      "categoryLabel": "Websites",
-      "name": "6.Length"
-    },
-    "websites:7-tail": {
-      "category": "websites",
-      "categoryLabel": "Websites",
-      "name": "7.Tail"
-    },
-    "websites:8-sound": {
-      "category": "websites",
-      "categoryLabel": "Websites",
-      "name": "8.Sound"
     },
     "websites:ag1-com": {
       "category": "websites",
@@ -1108,8 +1066,16 @@
       "name": "zbiotics.com"
     }
   },
-  "generatedAt": "2026-06-28T08:50:48.598Z",
+  "generatedAt": "2026-06-28T18:12:47.306Z",
   "manualRelationships": {
+    "alien_species:orion-empire--star_systems:orion": {
+      "sourceCategory": "alien_species",
+      "sourceId": "alien_species:orion-empire",
+      "sourceName": "Orion Empire",
+      "targetCategory": "star_systems",
+      "targetId": "star_systems:orion",
+      "targetName": "Orion"
+    },
     "companies:lockheed-martin-corporation--contractors:lockheed-skunkworks": {
       "sourceCategory": "companies",
       "sourceId": "companies:lockheed-martin-corporation",
@@ -1118,6 +1084,22 @@
       "targetId": "contractors:lockheed-skunkworks",
       "targetName": "Lockheed Skunkworks"
     },
+    "constellations:pleiades--people:alcyone-pleiadians": {
+      "sourceCategory": "constellations",
+      "sourceId": "constellations:pleiades",
+      "sourceName": "Pleiades",
+      "targetCategory": "people",
+      "targetId": "people:alcyone-pleiadians",
+      "targetName": "Alcyone Pleiadians"
+    },
+    "constellations:pleiades--people:renegade-pleiadians": {
+      "sourceCategory": "constellations",
+      "sourceId": "constellations:pleiades",
+      "sourceName": "Pleiades",
+      "targetCategory": "people",
+      "targetId": "people:renegade-pleiadians",
+      "targetName": "Renegade Pleiadians"
+    },
     "contractors:lockheed-martin--contractors:lockheed-skunkworks": {
       "sourceCategory": "contractors",
       "sourceId": "contractors:lockheed-martin",
@@ -1125,6 +1107,22 @@
       "targetCategory": "contractors",
       "targetId": "contractors:lockheed-skunkworks",
       "targetName": "Lockheed Skunkworks"
+    },
+    "dangerous_people:northwest-germany--people:in-germany": {
+      "sourceCategory": "dangerous_people",
+      "sourceId": "dangerous_people:northwest-germany",
+      "sourceName": "Northwest Germany",
+      "targetCategory": "locations",
+      "targetId": "people:in-germany",
+      "targetName": "Germany"
+    },
+    "dangerous_people:west-germany--people:in-germany": {
+      "sourceCategory": "dangerous_people",
+      "sourceId": "dangerous_people:west-germany",
+      "sourceName": "West Germany",
+      "targetCategory": "locations",
+      "targetId": "people:in-germany",
+      "targetName": "Germany"
     },
     "experiencers:bob-lazar--people:united-nuclear": {
       "sourceCategory": "experiencers",
@@ -1214,6 +1212,14 @@
       "targetId": "professors:annie-jacobsen",
       "targetName": "Annie Jacobsen"
     },
+    "friendly_people:specialized-galacterian--people:galactic-federation": {
+      "sourceCategory": "friendly_people",
+      "sourceId": "friendly_people:specialized-galacterian",
+      "sourceName": "Specialized Galacterian",
+      "targetCategory": "people",
+      "targetId": "people:galactic-federation",
+      "targetName": "Galactic Federation"
+    },
     "friendly_people:venusians-universal-origin--planets:venus": {
       "sourceCategory": "alien_species",
       "sourceId": "friendly_people:venusians-universal-origin",
@@ -1222,6 +1228,46 @@
       "targetId": "planets:venus",
       "targetName": "Venus"
     },
+    "government_agencies:french-academy-of-science--people:in-france": {
+      "sourceCategory": "government_agencies",
+      "sourceId": "government_agencies:french-academy-of-science",
+      "sourceName": "French Academy of Science",
+      "targetCategory": "locations",
+      "targetId": "people:in-france",
+      "targetName": "France"
+    },
+    "government_agencies:french-air-force--people:french-air-defense": {
+      "sourceCategory": "government_agencies",
+      "sourceId": "government_agencies:french-air-force",
+      "sourceName": "French Air Force",
+      "targetCategory": "people",
+      "targetId": "people:french-air-defense",
+      "targetName": "French Air Defense"
+    },
+    "government_agencies:french-tactical-air-force--people:in-france": {
+      "sourceCategory": "government_agencies",
+      "sourceId": "government_agencies:french-tactical-air-force",
+      "sourceName": "French Tactical Air Force",
+      "targetCategory": "locations",
+      "targetId": "people:in-france",
+      "targetName": "France"
+    },
+    "government_agencies:galactic-command--people:galactic-federation": {
+      "sourceCategory": "government_agencies",
+      "sourceId": "government_agencies:galactic-command",
+      "sourceName": "Galactic Command",
+      "targetCategory": "people",
+      "targetId": "people:galactic-federation",
+      "targetName": "Galactic Federation"
+    },
+    "government_agencies:german-experimental-station-for-aviation-medicine--people:in-germany": {
+      "sourceCategory": "government_agencies",
+      "sourceId": "government_agencies:german-experimental-station-for-aviation-medicine",
+      "sourceName": "German Experimental Station for Aviation Medicine",
+      "targetCategory": "people",
+      "targetId": "people:in-germany",
+      "targetName": "In Germany"
+    },
     "institutes:california-institute--locations:california": {
       "sourceCategory": "institutes",
       "sourceId": "institutes:california-institute",
@@ -1229,6 +1275,22 @@
       "targetCategory": "locations",
       "targetId": "locations:california",
       "targetName": "California"
+    },
+    "institutes:french-institute--people:in-france": {
+      "sourceCategory": "institutes",
+      "sourceId": "institutes:french-institute",
+      "sourceName": "French Institute",
+      "targetCategory": "locations",
+      "targetId": "people:in-france",
+      "targetName": "France"
+    },
+    "institutes:monroe-institute--professors:robert-monroe": {
+      "sourceCategory": "institutes",
+      "sourceId": "institutes:monroe-institute",
+      "sourceName": "Monroe Institute",
+      "targetCategory": "professors",
+      "targetId": "professors:robert-monroe",
+      "targetName": "Robert Monroe"
     },
     "journalists:harry-reid--politicians:harry-reid": {
       "sourceCategory": "journalists",
@@ -1262,6 +1324,30 @@
       "targetId": "people:northern-california",
       "targetName": "Northern California"
     },
+    "locations:federal-republic-of-germany--people:in-germany": {
+      "sourceCategory": "locations",
+      "sourceId": "locations:federal-republic-of-germany",
+      "sourceName": "Federal Republic of Germany",
+      "targetCategory": "locations",
+      "targetId": "people:in-germany",
+      "targetName": "Germany"
+    },
+    "locations:german-democratic-republic--people:in-germany": {
+      "sourceCategory": "locations",
+      "sourceId": "locations:german-democratic-republic",
+      "sourceName": "German Democratic Republic",
+      "targetCategory": "locations",
+      "targetId": "people:in-germany",
+      "targetName": "Germany"
+    },
+    "locations:nazi-germany--people:in-germany": {
+      "sourceCategory": "locations",
+      "sourceId": "locations:nazi-germany",
+      "sourceName": "Nazi Germany",
+      "targetCategory": "locations",
+      "targetId": "people:in-germany",
+      "targetName": "Germany"
+    },
     "locations:new-mexico--locations:roswell": {
       "sourceCategory": "locations",
       "sourceId": "locations:new-mexico",
@@ -1270,6 +1356,14 @@
       "targetId": "locations:roswell",
       "targetName": "Roswell"
     },
+    "locations:new-york--locations:new-york-city": {
+      "sourceCategory": "locations",
+      "sourceId": "locations:new-york",
+      "sourceName": "New York",
+      "targetCategory": "locations",
+      "targetId": "locations:new-york-city",
+      "targetName": "New York City"
+    },
     "locations:north-carolina--people:chris-bledsoe-copyright": {
       "sourceCategory": "locations",
       "sourceId": "locations:north-carolina",
@@ -1277,6 +1371,14 @@
       "targetCategory": "people",
       "targetId": "people:chris-bledsoe-copyright",
       "targetName": "Chris Bledsoe"
+    },
+    "locations:weimar-germany--people:in-germany": {
+      "sourceCategory": "locations",
+      "sourceId": "locations:weimar-germany",
+      "sourceName": "Weimar, Germany",
+      "targetCategory": "locations",
+      "targetId": "people:in-germany",
+      "targetName": "Germany"
     },
     "military_bases:area-51--professors:annie-jacobsen": {
       "sourceCategory": "military_bases",
@@ -1294,6 +1396,22 @@
       "targetId": "people:in-ohio",
       "targetName": "In Ohio"
     },
+    "people:air-france--people:in-france": {
+      "sourceCategory": "people",
+      "sourceId": "people:air-france",
+      "sourceName": "Air France",
+      "targetCategory": "locations",
+      "targetId": "people:in-france",
+      "targetName": "France"
+    },
+    "people:alcyone-pleiadians--people:alcyone-pleiadians-universal-origin": {
+      "sourceCategory": "people",
+      "sourceId": "people:alcyone-pleiadians",
+      "sourceName": "Alcyone Pleiadians",
+      "targetCategory": "people",
+      "targetId": "people:alcyone-pleiadians-universal-origin",
+      "targetName": "Alcyone Pleiadians Universal Origin"
+    },
     "people:andromeda-galaxy--people:andromedans-universal-origin": {
       "sourceCategory": "people",
       "sourceId": "people:andromeda-galaxy",
@@ -1310,6 +1428,86 @@
       "targetId": "people:chris-bledsoe",
       "targetName": "Chris Bledsoe"
     },
+    "people:chris-bledsoe-jr--people:ryan-bledsoe": {
+      "sourceCategory": "people",
+      "sourceId": "people:chris-bledsoe-jr",
+      "sourceName": "Chris Bledsoe Jr",
+      "targetCategory": "people",
+      "targetId": "people:ryan-bledsoe",
+      "targetName": "Ryan Bledsoe"
+    },
+    "people:east-germany--people:in-germany": {
+      "sourceCategory": "people",
+      "sourceId": "people:east-germany",
+      "sourceName": "East Germany",
+      "targetCategory": "locations",
+      "targetId": "people:in-germany",
+      "targetName": "Germany"
+    },
+    "people:european-union--people:in-france": {
+      "sourceCategory": "government_agencies",
+      "sourceId": "people:european-union",
+      "sourceName": "European Union",
+      "targetCategory": "locations",
+      "targetId": "people:in-france",
+      "targetName": "France"
+    },
+    "people:european-union--people:in-germany": {
+      "sourceCategory": "government_agencies",
+      "sourceId": "people:european-union",
+      "sourceName": "European Union",
+      "targetCategory": "locations",
+      "targetId": "people:in-germany",
+      "targetName": "Germany"
+    },
+    "people:french-air-defense--people:in-france": {
+      "sourceCategory": "people",
+      "sourceId": "people:french-air-defense",
+      "sourceName": "French Air Defense",
+      "targetCategory": "locations",
+      "targetId": "people:in-france",
+      "targetName": "France"
+    },
+    "people:french-morocco--people:in-france": {
+      "sourceCategory": "people",
+      "sourceId": "people:french-morocco",
+      "sourceName": "French Morocco",
+      "targetCategory": "locations",
+      "targetId": "people:in-france",
+      "targetName": "France"
+    },
+    "people:french-revolution--people:in-france": {
+      "sourceCategory": "people",
+      "sourceId": "people:french-revolution",
+      "sourceName": "French Revolution",
+      "targetCategory": "locations",
+      "targetId": "people:in-france",
+      "targetName": "France"
+    },
+    "people:galactic-aliens--people:galactic-federation": {
+      "sourceCategory": "people",
+      "sourceId": "people:galactic-aliens",
+      "sourceName": "Galactic Aliens",
+      "targetCategory": "people",
+      "targetId": "people:galactic-federation",
+      "targetName": "Galactic Federation"
+    },
+    "people:galactic-federation--people:galactic-kingdom": {
+      "sourceCategory": "people",
+      "sourceId": "people:galactic-federation",
+      "sourceName": "Galactic Federation",
+      "targetCategory": "people",
+      "targetId": "people:galactic-kingdom",
+      "targetName": "Galactic Kingdom"
+    },
+    "people:galactic-federation--theories:galacterian-alignment": {
+      "sourceCategory": "people",
+      "sourceId": "people:galactic-federation",
+      "sourceName": "Galactic Federation",
+      "targetCategory": "theories",
+      "targetId": "theories:galacterian-alignment",
+      "targetName": "Galacterian Alignment"
+    },
     "people:in-california--professors:in-california": {
       "sourceCategory": "people",
       "sourceId": "people:in-california",
@@ -1325,6 +1523,14 @@
       "targetCategory": "professors",
       "targetId": "professors:lake-titicaca",
       "targetName": "Lake Titicaca"
+    },
+    "people:renegade-pleiadians--people:renegade-pleiadians-universal-origin": {
+      "sourceCategory": "people",
+      "sourceId": "people:renegade-pleiadians",
+      "sourceName": "Renegade Pleiadians",
+      "targetCategory": "people",
+      "targetId": "people:renegade-pleiadians-universal-origin",
+      "targetName": "Renegade Pleiadians Universal Origin"
     },
     "professors:theodor-benzinger-paul--universities:duke-university": {
       "sourceCategory": "professors",
@@ -1512,6 +1718,14 @@
       "targetId": "politicians:general-trudeau",
       "targetName": "General Trudeau"
     },
+    "dangerous_people:indian-head": {
+      "sourceCategory": "dangerous_people",
+      "sourceId": "dangerous_people:indian-head",
+      "sourceName": "Indian Head",
+      "targetCategory": "whistleblowers",
+      "targetId": "whistleblowers:indian-head",
+      "targetName": "Indian Head"
+    },
     "dangerous_people:jack-martin": {
       "sourceCategory": "dangerous_people",
       "sourceId": "dangerous_people:jack-martin",
@@ -1592,6 +1806,14 @@
       "targetId": "politicians:special-investigations",
       "targetName": "Special Investigations"
     },
+    "dangerous_people:west-germany": {
+      "sourceCategory": "dangerous_people",
+      "sourceId": "dangerous_people:west-germany",
+      "sourceName": "West Germany",
+      "targetCategory": "people",
+      "targetId": "people:west-germany",
+      "targetName": "West Germany"
+    },
     "document_names:condon-report": {
       "sourceCategory": "document_names",
       "sourceId": "document_names:condon-report",
@@ -1648,6 +1870,14 @@
       "targetId": "people:barack-obama",
       "targetName": "Barack Obama"
     },
+    "experiencers:barney-hill": {
+      "sourceCategory": "experiencers",
+      "sourceId": "experiencers:barney-hill",
+      "sourceName": "Barney Hill",
+      "targetCategory": "friendly_people",
+      "targetId": "friendly_people:barney-hill",
+      "targetName": "Barney Hill"
+    },
     "experiencers:because-close-encounters": {
       "sourceCategory": "experiencers",
       "sourceId": "experiencers:because-close-encounters",
@@ -1663,6 +1893,14 @@
       "targetCategory": "people",
       "targetId": "people:kirsan-ilyumzinov",
       "targetName": "Kirsan Ilyumzinov"
+    },
+    "experiencers:betty-hill": {
+      "sourceCategory": "experiencers",
+      "sourceId": "experiencers:betty-hill",
+      "sourceName": "Betty Hill",
+      "targetCategory": "friendly_people",
+      "targetId": "friendly_people:betty-hill",
+      "targetName": "Betty Hill"
     },
     "experiencers:brandon-fugal": {
       "sourceCategory": "experiencers",
@@ -1800,6 +2038,14 @@
       "targetId": "journalists:dr-hal-puthoff",
       "targetName": "Dr Hal Puthoff"
     },
+    "experiencers:dr-j-allen-hynek": {
+      "sourceCategory": "experiencers",
+      "sourceId": "experiencers:dr-j-allen-hynek",
+      "sourceName": "Dr J. Allen Hynek",
+      "targetCategory": "professors",
+      "targetId": "professors:dr-j-allen-hynek",
+      "targetName": "Dr J. Allen Hynek"
+    },
     "experiencers:eric-davis": {
       "sourceCategory": "experiencers",
       "sourceId": "experiencers:eric-davis",
@@ -1880,6 +2126,14 @@
       "targetId": "authors:jacques-vall-e",
       "targetName": "Jacques Vallée"
     },
+    "experiencers:indian-head": {
+      "sourceCategory": "experiencers",
+      "sourceId": "experiencers:indian-head",
+      "sourceName": "Indian Head",
+      "targetCategory": "professors",
+      "targetId": "professors:indian-head",
+      "targetName": "Indian Head"
+    },
     "experiencers:john-mack": {
       "sourceCategory": "experiencers",
       "sourceId": "experiencers:john-mack",
@@ -1887,6 +2141,14 @@
       "targetCategory": "friendly_people",
       "targetId": "friendly_people:john-mack",
       "targetName": "John Mack"
+    },
+    "experiencers:las-vegas": {
+      "sourceCategory": "experiencers",
+      "sourceId": "experiencers:las-vegas",
+      "sourceName": "Las Vegas",
+      "targetCategory": "professors",
+      "targetId": "professors:c-in-las-vegas",
+      "targetName": "C. In Las Vegas"
     },
     "experiencers:machu-picchu": {
       "sourceCategory": "experiencers",
@@ -1968,6 +2230,30 @@
       "targetId": "people:in-saint-paul",
       "targetName": "Saint Paul's"
     },
+    "experiencers:skinwalker-ranc": {
+      "sourceCategory": "experiencers",
+      "sourceId": "experiencers:skinwalker-ranc",
+      "sourceName": "Skinwalker Ranc",
+      "targetCategory": "experiencers",
+      "targetId": "experiencers:skinwalker-ranch-in",
+      "targetName": "Skinwalker Ranch In"
+    },
+    "experiencers:skinwalker-ranch-in": {
+      "sourceCategory": "experiencers",
+      "sourceId": "experiencers:skinwalker-ranch-in",
+      "sourceName": "Skinwalker Ranch In",
+      "targetCategory": "experiencers",
+      "targetId": "experiencers:skinwalker-ranch-many",
+      "targetName": "Skinwalker Ranch Many"
+    },
+    "experiencers:skinwalker-ranch-many": {
+      "sourceCategory": "experiencers",
+      "sourceId": "experiencers:skinwalker-ranch-many",
+      "sourceName": "Skinwalker Ranch Many",
+      "targetCategory": "people",
+      "targetId": "people:skinwalker-ranch-research-for",
+      "targetName": "Skinwalker Ranch Research For"
+    },
     "experiencers:so-bigelow": {
       "sourceCategory": "experiencers",
       "sourceId": "experiencers:so-bigelow",
@@ -2015,6 +2301,22 @@
       "targetCategory": "friendly_people",
       "targetId": "friendly_people:virgin-mary",
       "targetName": "Virgin Mary"
+    },
+    "experiencers:west-germany": {
+      "sourceCategory": "experiencers",
+      "sourceId": "experiencers:west-germany",
+      "sourceName": "West Germany",
+      "targetCategory": "friendly_people",
+      "targetId": "friendly_people:west-germany",
+      "targetName": "West Germany"
+    },
+    "experiencers:white-mountains": {
+      "sourceCategory": "experiencers",
+      "sourceId": "experiencers:white-mountains",
+      "sourceName": "White Mountains",
+      "targetCategory": "friendly_people",
+      "targetId": "friendly_people:white-mountains",
+      "targetName": "White Mountains"
     },
     "experiencers:white-sands-proving-grounds": {
       "sourceCategory": "experiencers",
@@ -2095,6 +2397,22 @@
       "targetCategory": "people",
       "targetId": "people:as-baba-vanga",
       "targetName": "As Baba Vanga"
+    },
+    "friendly_people:barney-hill": {
+      "sourceCategory": "friendly_people",
+      "sourceId": "friendly_people:barney-hill",
+      "sourceName": "Barney Hill",
+      "targetCategory": "professors",
+      "targetId": "professors:barney-hill",
+      "targetName": "Barney Hill"
+    },
+    "friendly_people:betty-hill": {
+      "sourceCategory": "friendly_people",
+      "sourceId": "friendly_people:betty-hill",
+      "sourceName": "Betty Hill",
+      "targetCategory": "professors",
+      "targetId": "professors:betty-hill",
+      "targetName": "Betty Hill"
     },
     "friendly_people:billy-meyer": {
       "sourceCategory": "friendly_people",
@@ -2344,6 +2662,14 @@
       "targetId": "people:arthur-trudeau",
       "targetName": "Arthur Trudeau"
     },
+    "friendly_people:indian-head": {
+      "sourceCategory": "friendly_people",
+      "sourceId": "friendly_people:indian-head",
+      "sourceName": "Indian Head",
+      "targetCategory": "dangerous_people",
+      "targetId": "dangerous_people:indian-head",
+      "targetName": "Indian Head"
+    },
     "friendly_people:j-allen-hynek": {
       "sourceCategory": "friendly_people",
       "sourceId": "friendly_people:j-allen-hynek",
@@ -2495,6 +2821,14 @@
       "targetCategory": "experiencers",
       "targetId": "experiencers:melchizedek-star-seed-program",
       "targetName": "Melchizedek Star Seed Program"
+    },
+    "friendly_people:men-in-black": {
+      "sourceCategory": "friendly_people",
+      "sourceId": "friendly_people:men-in-black",
+      "sourceName": "Men In Black",
+      "targetCategory": "people",
+      "targetId": "people:men-in-black",
+      "targetName": "Men In Black"
     },
     "friendly_people:mikhail-dobrnovic": {
       "sourceCategory": "friendly_people",
@@ -2648,6 +2982,14 @@
       "targetId": "people:santa-monica",
       "targetName": "Santa Monica"
     },
+    "friendly_people:skinwalker-ranch-database": {
+      "sourceCategory": "friendly_people",
+      "sourceId": "friendly_people:skinwalker-ranch-database",
+      "sourceName": "Skinwalker Ranch Database",
+      "targetCategory": "experiencers",
+      "targetId": "experiencers:skinwalker-ranc",
+      "targetName": "Skinwalker Ranc"
+    },
     "friendly_people:so-charles-hall": {
       "sourceCategory": "friendly_people",
       "sourceId": "friendly_people:so-charles-hall",
@@ -2728,6 +3070,14 @@
       "targetId": "people:dick-cheney",
       "targetName": "Dick Cheney"
     },
+    "friendly_people:west-germany": {
+      "sourceCategory": "friendly_people",
+      "sourceId": "friendly_people:west-germany",
+      "sourceName": "West Germany",
+      "targetCategory": "likely_spies",
+      "targetId": "likely_spies:west-germany",
+      "targetName": "West Germany"
+    },
     "friendly_people:whitley-strieber": {
       "sourceCategory": "friendly_people",
       "sourceId": "friendly_people:whitley-strieber",
@@ -2767,6 +3117,14 @@
       "targetCategory": "people",
       "targetId": "people:andromeda-galaxy",
       "targetName": "Andromeda Galaxy"
+    },
+    "government_agencies:aawsap": {
+      "sourceCategory": "government_agencies",
+      "sourceId": "government_agencies:aawsap",
+      "sourceName": "AAWSAP",
+      "targetCategory": "government_agencies",
+      "targetId": "government_agencies:advanced-aerospace-weapon-system-applications-program",
+      "targetName": "Advanced Aerospace Weapon System Applications Program"
     },
     "government_agencies:air-force": {
       "sourceCategory": "government_agencies",
@@ -3208,6 +3566,14 @@
       "targetId": "people:billy-myers",
       "targetName": "Billy Myers"
     },
+    "likely_spies:bomb-group": {
+      "sourceCategory": "likely_spies",
+      "sourceId": "likely_spies:bomb-group",
+      "sourceName": "Bomb Group",
+      "targetCategory": "military_bases",
+      "targetId": "military_bases:509th-bomb-group-wing",
+      "targetName": "509th Bomb Group Wing"
+    },
     "likely_spies:central-station": {
       "sourceCategory": "likely_spies",
       "sourceId": "likely_spies:central-station",
@@ -3312,6 +3678,14 @@
       "targetId": "experiencers:new-zealand",
       "targetName": "New Zealand"
     },
+    "likely_spies:north-las-vegas": {
+      "sourceCategory": "likely_spies",
+      "sourceId": "likely_spies:north-las-vegas",
+      "sourceName": "Las Vegas",
+      "targetCategory": "people",
+      "targetId": "people:north-las-vegas",
+      "targetName": "North Las Vegas"
+    },
     "likely_spies:pat-price": {
       "sourceCategory": "likely_spies",
       "sourceId": "likely_spies:pat-price",
@@ -3384,6 +3758,14 @@
       "targetId": "people:las-vegas-strip",
       "targetName": "Las Vegas Strip"
     },
+    "locations:las-vegas-strip": {
+      "sourceCategory": "locations",
+      "sourceId": "locations:las-vegas-strip",
+      "sourceName": "Las Vegas Strip",
+      "targetCategory": "experiencers",
+      "targetId": "experiencers:las-vegas",
+      "targetName": "Las Vegas"
+    },
     "locations:los-alamos": {
       "sourceCategory": "locations",
       "sourceId": "locations:los-alamos",
@@ -3421,8 +3803,8 @@
       "sourceId": "locations:skinwalker-ranch",
       "sourceName": "Skinwalker Ranch",
       "targetCategory": "people",
-      "targetId": "people:for-skinwalker",
-      "targetName": "For Skinwalker"
+      "targetId": "people:what-is-skinwalker-ranch",
+      "targetName": "What Is Skinwalker Ranch"
     },
     "materials:aluminum": {
       "sourceCategory": "materials",
@@ -3439,6 +3821,14 @@
       "targetCategory": "chemical_elements",
       "targetId": "chemical_elements:zinc",
       "targetName": "zinc"
+    },
+    "military_bases:509th-bomb-group-wing": {
+      "sourceCategory": "military_bases",
+      "sourceId": "military_bases:509th-bomb-group-wing",
+      "sourceName": "509th Bomb Group Wing",
+      "targetCategory": "politicians",
+      "targetId": "politicians:bomb-group",
+      "targetName": "Bomb Group"
     },
     "military_bases:air-force-base": {
       "sourceCategory": "military_bases",
@@ -3568,6 +3958,14 @@
       "targetId": "professors:close-encounter",
       "targetName": "Close Encounter"
     },
+    "newsrooms:associated-press": {
+      "sourceCategory": "newsrooms",
+      "sourceId": "newsrooms:associated-press",
+      "sourceName": "Associated Press",
+      "targetCategory": "newsrooms",
+      "targetId": "newsrooms:an-associated-press",
+      "targetName": "An Associated Press"
+    },
     "newsrooms:new-york-times": {
       "sourceCategory": "newsrooms",
       "sourceId": "newsrooms:new-york-times",
@@ -3639,6 +4037,14 @@
       "targetCategory": "people",
       "targetId": "people:curtis-lemay",
       "targetName": "Curtis LeMay"
+    },
+    "people:air-france": {
+      "sourceCategory": "companies",
+      "sourceId": "people:air-france",
+      "sourceName": "Air France",
+      "targetCategory": "experiencers",
+      "targetId": "experiencers:air-france",
+      "targetName": "Air France"
     },
     "people:alan-hynek": {
       "sourceCategory": "people",
@@ -3776,6 +4182,14 @@
       "targetId": "politicians:president-barack-obama",
       "targetName": "President Barack Obama"
     },
+    "people:barney-hill": {
+      "sourceCategory": "people",
+      "sourceId": "people:barney-hill",
+      "sourceName": "Barney Hill",
+      "targetCategory": "experiencers",
+      "targetId": "experiencers:barney-hill",
+      "targetName": "Barney Hill"
+    },
     "people:battelle-memorial": {
       "sourceCategory": "people",
       "sourceId": "people:battelle-memorial",
@@ -3823,6 +4237,14 @@
       "targetCategory": "friendly_people",
       "targetId": "friendly_people:bell-labs",
       "targetName": "Bell Labs"
+    },
+    "people:betty-hill": {
+      "sourceCategory": "people",
+      "sourceId": "people:betty-hill",
+      "sourceName": "Betty Hill",
+      "targetCategory": "experiencers",
+      "targetId": "experiencers:betty-hill",
+      "targetName": "Betty Hill"
     },
     "people:bill-barr": {
       "sourceCategory": "people",
@@ -3935,6 +4357,22 @@
       "targetCategory": "friendly_people",
       "targetId": "friendly_people:bobby-ray-inman",
       "targetName": "Bobby Ray Inman"
+    },
+    "people:bomb-group": {
+      "sourceCategory": "people",
+      "sourceId": "people:bomb-group",
+      "sourceName": "Bomb Group",
+      "targetCategory": "people",
+      "targetId": "people:bomb-wing",
+      "targetName": "Bomb Wing"
+    },
+    "people:bomb-wing": {
+      "sourceCategory": "people",
+      "sourceId": "people:bomb-wing",
+      "sourceName": "Bomb Wing",
+      "targetCategory": "experiencers",
+      "targetId": "experiencers:bomber-wing",
+      "targetName": "Bomber Wing"
     },
     "people:both-brent": {
       "sourceCategory": "people",
@@ -4067,10 +4505,10 @@
     "people:chris-bledsoe-all": {
       "sourceCategory": "people",
       "sourceId": "people:chris-bledsoe-all",
-      "sourceName": "Chris Bledsoe All",
-      "targetCategory": "experiencers",
-      "targetId": "experiencers:christopher-bledsoe-sr",
-      "targetName": "Christopher Bledsoe Sr"
+      "sourceName": "Chris Bledsoe",
+      "targetCategory": "people",
+      "targetId": "people:chris-bledsoe",
+      "targetName": "Chris Bledsoe"
     },
     "people:chris-bledsoe-chapter": {
       "sourceCategory": "people",
@@ -4095,6 +4533,22 @@
       "targetCategory": "experiencers",
       "targetId": "experiencers:chris-bledsoe",
       "targetName": "Chris Bledsoe"
+    },
+    "people:colonel-corso": {
+      "sourceCategory": "people",
+      "sourceId": "people:colonel-corso",
+      "sourceName": "Colonel Corso",
+      "targetCategory": "politicians",
+      "targetId": "politicians:colonel-corso",
+      "targetName": "Colonel Corso"
+    },
+    "people:colonel-philip-j-corso": {
+      "sourceCategory": "people",
+      "sourceId": "people:colonel-philip-j-corso",
+      "sourceName": "Colonel Philip J. Corso",
+      "targetCategory": "professors",
+      "targetId": "professors:colonel-corso",
+      "targetName": "Colonel Corso"
     },
     "people:consciousness-abilities": {
       "sourceCategory": "people",
@@ -4804,9 +5258,9 @@
       "sourceCategory": "people",
       "sourceId": "people:j-allen-hynek",
       "sourceName": "J. Allen Hynek",
-      "targetCategory": "whistleblowers",
-      "targetId": "whistleblowers:j-allen-hynek",
-      "targetName": "J. Allen Hynek"
+      "targetCategory": "professors",
+      "targetId": "professors:allen-hynck",
+      "targetName": "Allen Hynck"
     },
     "people:jack-martin": {
       "sourceCategory": "people",
@@ -5159,6 +5613,14 @@
       "targetCategory": "emerging_terminology",
       "targetId": "friendly_people:manchurian-candidate",
       "targetName": "Manchurian Candidate"
+    },
+    "people:marina-oswald": {
+      "sourceCategory": "people",
+      "sourceId": "people:marina-oswald",
+      "sourceName": "Marina Oswald",
+      "targetCategory": "professors",
+      "targetId": "professors:marina-oswald",
+      "targetName": "Marina Oswald"
     },
     "people:marshall-island-trust-territory": {
       "sourceCategory": "people",
@@ -5696,6 +6158,14 @@
       "targetId": "locations:saint-paul-s",
       "targetName": "Saint Paul's"
     },
+    "people:sao-paulo": {
+      "sourceCategory": "people",
+      "sourceId": "people:sao-paulo",
+      "sourceName": "Sao Paulo",
+      "targetCategory": "likely_spies",
+      "targetId": "likely_spies:sao-paulo",
+      "targetName": "Sao Paulo"
+    },
     "people:secret-canyon": {
       "sourceCategory": "people",
       "sourceId": "people:secret-canyon",
@@ -6192,6 +6662,14 @@
       "targetId": "people:mount-waterman",
       "targetName": "Mount Waterman"
     },
+    "people:west-germany": {
+      "sourceCategory": "people",
+      "sourceId": "people:west-germany",
+      "sourceName": "West Germany",
+      "targetCategory": "experiencers",
+      "targetId": "experiencers:west-germany",
+      "targetName": "West Germany"
+    },
     "people:what-eric-hecker": {
       "sourceCategory": "people",
       "sourceId": "people:what-eric-hecker",
@@ -6215,6 +6693,14 @@
       "targetCategory": "government_agencies",
       "targetId": "government_agencies:consciousness-department",
       "targetName": "Consciousness Department"
+    },
+    "people:what-is-skinwalker-ranch": {
+      "sourceCategory": "people",
+      "sourceId": "people:what-is-skinwalker-ranch",
+      "sourceName": "What Is Skinwalker Ranch",
+      "targetCategory": "friendly_people",
+      "targetId": "friendly_people:skinwalker-ranch-database",
+      "targetName": "Skinwalker Ranch Database"
     },
     "people:when-bob": {
       "sourceCategory": "people",
@@ -6287,6 +6773,14 @@
       "targetCategory": "people",
       "targetId": "people:boris-yeltsin",
       "targetName": "Boris Yeltsin"
+    },
+    "people:white-mountains": {
+      "sourceCategory": "locations",
+      "sourceId": "people:white-mountains",
+      "sourceName": "White Mountains",
+      "targetCategory": "experiencers",
+      "targetId": "experiencers:white-mountains",
+      "targetName": "White Mountains"
     },
     "people:whitley-strieber": {
       "sourceCategory": "people",
@@ -6472,6 +6966,14 @@
       "targetId": "people:bill-barr",
       "targetName": "Bill Barr"
     },
+    "politicians:bomb-group": {
+      "sourceCategory": "politicians",
+      "sourceId": "politicians:bomb-group",
+      "sourceName": "Bomb Group",
+      "targetCategory": "people",
+      "targetId": "people:bomb-group",
+      "targetName": "Bomb Group"
+    },
     "politicians:businessman-robert-bigelow": {
       "sourceCategory": "politicians",
       "sourceId": "politicians:businessman-robert-bigelow",
@@ -6479,6 +6981,14 @@
       "targetCategory": "people",
       "targetId": "people:robert-bigelow",
       "targetName": "Robert Bigelow"
+    },
+    "politicians:colonel-corso": {
+      "sourceCategory": "politicians",
+      "sourceId": "politicians:colonel-corso",
+      "sourceName": "Colonel Corso",
+      "targetCategory": "likely_spies",
+      "targetId": "likely_spies:colonel-corso",
+      "targetName": "Colonel Corso"
     },
     "politicians:congresswoman-anna-paulina-luna": {
       "sourceCategory": "politicians",
@@ -6624,6 +7134,22 @@
       "targetId": "whistleblowers:senator-reid",
       "targetName": "Senator Reid"
     },
+    "politicians:senator-strom-thurmond": {
+      "sourceCategory": "politicians",
+      "sourceId": "politicians:senator-strom-thurmond",
+      "sourceName": "Senator Strom Thurmond",
+      "targetCategory": "whistleblowers",
+      "targetId": "whistleblowers:strom-thurmond",
+      "targetName": "Strom Thurmond"
+    },
+    "politicians:senator-strom-thurmond-all": {
+      "sourceCategory": "politicians",
+      "sourceId": "politicians:senator-strom-thurmond-all",
+      "sourceName": "Senator Strom Thurmond All",
+      "targetCategory": "politicians",
+      "targetId": "politicians:strom-thurmond",
+      "targetName": "Strom Thurmond"
+    },
     "politicians:senators-harry-reid": {
       "sourceCategory": "politicians",
       "sourceId": "politicians:senators-harry-reid",
@@ -6655,6 +7181,14 @@
       "targetCategory": "government_agencies",
       "targetId": "government_agencies:uap-task-force",
       "targetName": "UAP task force"
+    },
+    "politicians:warren-commission": {
+      "sourceCategory": "politicians",
+      "sourceId": "politicians:warren-commission",
+      "sourceName": "Warren Commission",
+      "targetCategory": "people",
+      "targetId": "people:warren-commission",
+      "targetName": "Warren Commission"
     },
     "politicians:washington-post": {
       "sourceCategory": "journalists",
@@ -6696,6 +7230,14 @@
       "targetId": "experiencers:aleister-crowley",
       "targetName": "Aleister Crowley"
     },
+    "professors:allen-hynck": {
+      "sourceCategory": "professors",
+      "sourceId": "professors:allen-hynck",
+      "sourceName": "Allen Hynck",
+      "targetCategory": "experiencers",
+      "targetId": "experiencers:dr-j-allen-hynek",
+      "targetName": "Dr J. Allen Hynek"
+    },
     "professors:american-museum": {
       "sourceCategory": "professors",
       "sourceId": "professors:american-museum",
@@ -6720,6 +7262,14 @@
       "targetId": "people:aviation-medicine",
       "targetName": "Aviation Medicine"
     },
+    "professors:barney-hill": {
+      "sourceCategory": "professors",
+      "sourceId": "professors:barney-hill",
+      "sourceName": "Barney Hill",
+      "targetCategory": "whistleblowers",
+      "targetId": "whistleblowers:barney-hill",
+      "targetName": "Barney Hill"
+    },
     "professors:because-kuhn": {
       "sourceCategory": "professors",
       "sourceId": "professors:because-kuhn",
@@ -6727,6 +7277,14 @@
       "targetCategory": "people",
       "targetId": "people:thomas-kuhn",
       "targetName": "Thomas Kuhn"
+    },
+    "professors:betty-hill": {
+      "sourceCategory": "professors",
+      "sourceId": "professors:betty-hill",
+      "sourceName": "Betty Hill",
+      "targetCategory": "whistleblowers",
+      "targetId": "whistleblowers:betty-hill",
+      "targetName": "Betty Hill"
     },
     "professors:bill-clinton": {
       "sourceCategory": "professors",
@@ -6756,9 +7314,9 @@
       "sourceCategory": "professors",
       "sourceId": "professors:c-in-las-vegas",
       "sourceName": "C. In Las Vegas",
-      "targetCategory": "experiencers",
-      "targetId": "experiencers:in-las-vegas",
-      "targetName": "In Las Vegas"
+      "targetCategory": "likely_spies",
+      "targetId": "likely_spies:north-las-vegas",
+      "targetName": "North Las Vegas"
     },
     "professors:carl-grillmayer": {
       "sourceCategory": "professors",
@@ -6799,6 +7357,14 @@
       "targetCategory": "experiencers",
       "targetId": "experiencers:close-encounter",
       "targetName": "Close Encounter"
+    },
+    "professors:colonel-corso": {
+      "sourceCategory": "professors",
+      "sourceId": "professors:colonel-corso",
+      "sourceName": "Colonel Corso",
+      "targetCategory": "people",
+      "targetId": "people:colonel-corso",
+      "targetName": "Colonel Corso"
     },
     "professors:condon-report": {
       "sourceCategory": "document_names",
@@ -6887,6 +7453,14 @@
       "targetCategory": "experiencers",
       "targetId": "experiencers:dr-hal-puthoff",
       "targetName": "Dr Hal Puthoff"
+    },
+    "professors:dr-j-allen-hynek": {
+      "sourceCategory": "professors",
+      "sourceId": "professors:dr-j-allen-hynek",
+      "sourceName": "Dr J. Allen Hynek",
+      "targetCategory": "people",
+      "targetId": "people:astronomer-j-allen-hynek",
+      "targetName": "Astronomer J. Allen Hynek"
     },
     "professors:edward-teller": {
       "sourceCategory": "professors",
@@ -6999,6 +7573,14 @@
       "targetCategory": "dangerous_people",
       "targetId": "dangerous_people:general-arthur-trudeau",
       "targetName": "General Arthur Trudeau"
+    },
+    "professors:indian-head": {
+      "sourceCategory": "professors",
+      "sourceId": "professors:indian-head",
+      "sourceName": "Indian Head",
+      "targetCategory": "friendly_people",
+      "targetId": "friendly_people:indian-head",
+      "targetName": "Indian Head"
     },
     "professors:j-allen-hynek": {
       "sourceCategory": "professors",
@@ -7192,6 +7774,14 @@
       "targetId": "people:russell-targ",
       "targetName": "Russell Targ"
     },
+    "professors:sao-paulo": {
+      "sourceCategory": "professors",
+      "sourceId": "professors:sao-paulo",
+      "sourceName": "Sao Paulo",
+      "targetCategory": "people",
+      "targetId": "people:sao-paulo",
+      "targetName": "Sao Paulo"
+    },
     "professors:so-oxler": {
       "sourceCategory": "professors",
       "sourceId": "professors:so-oxler",
@@ -7312,6 +7902,14 @@
       "targetId": "research_groups:los-alamos-scientific-laboratory",
       "targetName": "Los Alamos Scientific Laboratory"
     },
+    "research_groups:los-alamos-national-laboratories": {
+      "sourceCategory": "research_groups",
+      "sourceId": "research_groups:los-alamos-national-laboratories",
+      "sourceName": "Los Alamos National Laboratories",
+      "targetCategory": "people",
+      "targetId": "people:los-alamos-national",
+      "targetName": "Los Alamos National"
+    },
     "research_groups:los-alamos-national-laboratory": {
       "sourceCategory": "research_groups",
       "sourceId": "research_groups:los-alamos-national-laboratory",
@@ -7343,6 +7941,14 @@
       "targetCategory": "institutes",
       "targetId": "institutes:national-institute-for-discovery-science",
       "targetName": "National Institute for Discovery Science"
+    },
+    "star_systems:pleiades": {
+      "sourceCategory": "star_systems",
+      "sourceId": "star_systems:pleiades",
+      "sourceName": "Pleiades",
+      "targetCategory": "constellations",
+      "targetId": "constellations:pleiades",
+      "targetName": "Pleiades"
     },
     "star_systems:sirius": {
       "sourceCategory": "star_systems",
@@ -7391,6 +7997,22 @@
       "targetCategory": "government_agencies",
       "targetId": "government_agencies:integrative-research-department",
       "targetName": "Integrative Research Department"
+    },
+    "whistleblowers:barney-hill": {
+      "sourceCategory": "whistleblowers",
+      "sourceId": "whistleblowers:barney-hill",
+      "sourceName": "Barney Hill",
+      "targetCategory": "politicians",
+      "targetId": "politicians:barney-hill",
+      "targetName": "Barney Hill"
+    },
+    "whistleblowers:betty-hill": {
+      "sourceCategory": "whistleblowers",
+      "sourceId": "whistleblowers:betty-hill",
+      "sourceName": "Betty Hill",
+      "targetCategory": "journalists",
+      "targetId": "journalists:betty-hill",
+      "targetName": "Betty Hill"
     },
     "whistleblowers:bob-lazar": {
       "sourceCategory": "whistleblowers",
@@ -7471,6 +8093,14 @@
       "targetCategory": "people",
       "targetId": "people:in-california",
       "targetName": "In California"
+    },
+    "whistleblowers:indian-head": {
+      "sourceCategory": "whistleblowers",
+      "sourceId": "whistleblowers:indian-head",
+      "sourceName": "Indian Head",
+      "targetCategory": "locations",
+      "targetId": "people:indian-head",
+      "targetName": "Indian Head"
     },
     "whistleblowers:j-allen-hynek": {
       "sourceCategory": "whistleblowers",
@@ -7576,6 +8206,14 @@
       "targetId": "people:sonny-white",
       "targetName": "Sonny White"
     },
+    "whistleblowers:strom-thurmond": {
+      "sourceCategory": "whistleblowers",
+      "sourceId": "whistleblowers:strom-thurmond",
+      "sourceName": "Strom Thurmond",
+      "targetCategory": "politicians",
+      "targetId": "politicians:senator-strom-thurmond-all",
+      "targetName": "Senator Strom Thurmond All"
+    },
     "whistleblowers:unlike-david-goresh": {
       "sourceCategory": "whistleblowers",
       "sourceId": "whistleblowers:unlike-david-goresh",
@@ -7594,6 +8232,14 @@
       "targetId": "government_agencies:consciousness-department-it",
       "targetName": "Consciousness Department It"
     },
+    "509th bomb group wing": {
+      "sourceCategory": "military_bases",
+      "sourceId": "military_bases:509th-bomb-group-wing",
+      "sourceName": "509th Bomb Group Wing",
+      "targetCategory": "politicians",
+      "targetId": "politicians:bomb-group",
+      "targetName": "Bomb Group"
+    },
     "aatip": {
       "sourceCategory": "research_groups",
       "sourceId": "research_groups:aatip",
@@ -7601,6 +8247,14 @@
       "targetCategory": "research_groups",
       "targetId": "research_groups:advanced-aerospace-threat-identification-program",
       "targetName": "Advanced Aerospace Threat Identification Program"
+    },
+    "aawsap": {
+      "sourceCategory": "government_agencies",
+      "sourceId": "government_agencies:aawsap",
+      "sourceName": "AAWSAP",
+      "targetCategory": "government_agencies",
+      "targetId": "government_agencies:advanced-aerospace-weapon-system-applications-program",
+      "targetName": "Advanced Aerospace Weapon System Applications Program"
     },
     "abductee whitley strieber": {
       "sourceCategory": "experiencers",
@@ -7706,6 +8360,14 @@
       "targetId": "experiencers:dan-sherman",
       "targetName": "Dan Sherman"
     },
+    "air france": {
+      "sourceCategory": "companies",
+      "sourceId": "people:air-france",
+      "sourceName": "Air France",
+      "targetCategory": "experiencers",
+      "targetId": "experiencers:air-france",
+      "targetName": "Air France"
+    },
     "air intelligence wright patterson": {
       "sourceCategory": "professors",
       "sourceId": "professors:air-intelligence-wright-patterson",
@@ -7753,6 +8415,14 @@
       "targetCategory": "journalists",
       "targetId": "journalists:aleister-crowley",
       "targetName": "Aleister Crowley"
+    },
+    "allen hynck": {
+      "sourceCategory": "professors",
+      "sourceId": "professors:allen-hynck",
+      "sourceName": "Allen Hynck",
+      "targetCategory": "experiencers",
+      "targetId": "experiencers:dr-j-allen-hynek",
+      "targetName": "Dr J. Allen Hynek"
     },
     "aluminum": {
       "sourceCategory": "materials",
@@ -7922,6 +8592,14 @@
       "targetId": "politicians:senator-harry-reid",
       "targetName": "Senator Harry Reid"
     },
+    "associated press": {
+      "sourceCategory": "newsrooms",
+      "sourceId": "newsrooms:associated-press",
+      "sourceName": "Associated Press",
+      "targetCategory": "newsrooms",
+      "targetId": "newsrooms:an-associated-press",
+      "targetName": "An Associated Press"
+    },
     "at congress": {
       "sourceCategory": "politicians",
       "sourceId": "politicians:at-congress",
@@ -7969,6 +8647,14 @@
       "targetCategory": "politicians",
       "targetId": "politicians:president-barack-obama",
       "targetName": "President Barack Obama"
+    },
+    "barney hill": {
+      "sourceCategory": "whistleblowers",
+      "sourceId": "whistleblowers:barney-hill",
+      "sourceName": "Barney Hill",
+      "targetCategory": "politicians",
+      "targetId": "politicians:barney-hill",
+      "targetName": "Barney Hill"
     },
     "battelle": {
       "sourceCategory": "contractors",
@@ -8057,6 +8743,14 @@
       "targetCategory": "friendly_people",
       "targetId": "friendly_people:bell-labs",
       "targetName": "Bell Labs"
+    },
+    "betty hill": {
+      "sourceCategory": "whistleblowers",
+      "sourceId": "whistleblowers:betty-hill",
+      "sourceName": "Betty Hill",
+      "targetCategory": "journalists",
+      "targetId": "journalists:betty-hill",
+      "targetName": "Betty Hill"
     },
     "bigelow aerospace": {
       "sourceCategory": "contractors",
@@ -8186,6 +8880,22 @@
       "targetId": "people:admiral-inman",
       "targetName": "Admiral Inman"
     },
+    "bomb group": {
+      "sourceCategory": "people",
+      "sourceId": "people:bomb-group",
+      "sourceName": "Bomb Group",
+      "targetCategory": "people",
+      "targetId": "people:bomb-wing",
+      "targetName": "Bomb Wing"
+    },
+    "bomb wing": {
+      "sourceCategory": "people",
+      "sourceId": "people:bomb-wing",
+      "sourceName": "Bomb Wing",
+      "targetCategory": "experiencers",
+      "targetId": "experiencers:bomber-wing",
+      "targetName": "Bomber Wing"
+    },
     "both brent": {
       "sourceCategory": "people",
       "sourceId": "people:both-brent",
@@ -8262,9 +8972,9 @@
       "sourceCategory": "professors",
       "sourceId": "professors:c-in-las-vegas",
       "sourceName": "C. In Las Vegas",
-      "targetCategory": "experiencers",
-      "targetId": "experiencers:in-las-vegas",
-      "targetName": "In Las Vegas"
+      "targetCategory": "likely_spies",
+      "targetId": "likely_spies:north-las-vegas",
+      "targetName": "North Las Vegas"
     },
     "california": {
       "sourceCategory": "locations",
@@ -8363,12 +9073,12 @@
       "targetName": "Charles Manson"
     },
     "chris bledsoe": {
-      "sourceCategory": "experiencers",
-      "sourceId": "experiencers:chris-bledsoe",
+      "sourceCategory": "people",
+      "sourceId": "people:chris-bledsoe-all",
       "sourceName": "Chris Bledsoe",
       "targetCategory": "people",
-      "targetId": "people:chris-bledsoe-all",
-      "targetName": "Chris Bledsoe All"
+      "targetId": "people:chris-bledsoe",
+      "targetName": "Chris Bledsoe"
     },
     "chris bledsoe all": {
       "sourceCategory": "people",
@@ -8457,6 +9167,22 @@
       "targetCategory": "professors",
       "targetId": "professors:close-encounter",
       "targetName": "Close Encounter"
+    },
+    "colonel corso": {
+      "sourceCategory": "politicians",
+      "sourceId": "politicians:colonel-corso",
+      "sourceName": "Colonel Corso",
+      "targetCategory": "likely_spies",
+      "targetId": "likely_spies:colonel-corso",
+      "targetName": "Colonel Corso"
+    },
+    "colonel philip j corso": {
+      "sourceCategory": "people",
+      "sourceId": "people:colonel-philip-j-corso",
+      "sourceName": "Colonel Philip J. Corso",
+      "targetCategory": "professors",
+      "targetId": "professors:colonel-corso",
+      "targetName": "Colonel Corso"
     },
     "commander fravor": {
       "sourceCategory": "whistleblowers",
@@ -8937,6 +9663,14 @@
       "targetCategory": "journalists",
       "targetId": "journalists:dr-hal-puthoff",
       "targetName": "Dr Hal Puthoff"
+    },
+    "dr j allen hynek": {
+      "sourceCategory": "professors",
+      "sourceId": "professors:dr-j-allen-hynek",
+      "sourceName": "Dr J. Allen Hynek",
+      "targetCategory": "people",
+      "targetId": "people:astronomer-j-allen-hynek",
+      "targetName": "Astronomer J. Allen Hynek"
     },
     "dr puthoff": {
       "sourceCategory": "whistleblowers",
@@ -9530,6 +10264,14 @@
       "targetId": "authors:jacques-vall-e",
       "targetName": "Jacques Vallée"
     },
+    "indian head": {
+      "sourceCategory": "whistleblowers",
+      "sourceId": "whistleblowers:indian-head",
+      "sourceName": "Indian Head",
+      "targetCategory": "locations",
+      "targetId": "people:indian-head",
+      "targetName": "Indian Head"
+    },
     "information meets consciousness in": {
       "sourceCategory": "people",
       "sourceId": "people:information-meets-consciousness-in",
@@ -9563,12 +10305,12 @@
       "targetName": "Israeli Puharich"
     },
     "j allen hynek": {
-      "sourceCategory": "politicians",
-      "sourceId": "politicians:j-allen-hynek",
+      "sourceCategory": "people",
+      "sourceId": "people:j-allen-hynek",
       "sourceName": "J. Allen Hynek",
-      "targetCategory": "journalists",
-      "targetId": "journalists:j-allen-hynek",
-      "targetName": "J. Allen Hynek"
+      "targetCategory": "professors",
+      "targetId": "professors:allen-hynck",
+      "targetName": "Allen Hynck"
     },
     "jack martin": {
       "sourceCategory": "people",
@@ -9843,20 +10585,20 @@
       "targetName": "Lake Titicaca Leaving La"
     },
     "las vegas": {
-      "sourceCategory": "locations",
-      "sourceId": "locations:las-vegas",
+      "sourceCategory": "likely_spies",
+      "sourceId": "likely_spies:north-las-vegas",
       "sourceName": "Las Vegas",
       "targetCategory": "people",
-      "targetId": "people:las-vegas-strip",
-      "targetName": "Las Vegas Strip"
+      "targetId": "people:north-las-vegas",
+      "targetName": "North Las Vegas"
     },
     "las vegas strip": {
-      "sourceCategory": "people",
-      "sourceId": "people:las-vegas-strip",
+      "sourceCategory": "locations",
+      "sourceId": "locations:las-vegas-strip",
       "sourceName": "Las Vegas Strip",
-      "targetCategory": "professors",
-      "targetId": "professors:c-in-las-vegas",
-      "targetName": "C. In Las Vegas"
+      "targetCategory": "experiencers",
+      "targetId": "experiencers:las-vegas",
+      "targetName": "Las Vegas"
     },
     "las vegas sun": {
       "sourceCategory": "professors",
@@ -10002,6 +10744,14 @@
       "targetId": "research_groups:los-alamos-scientific-laboratory",
       "targetName": "Los Alamos Scientific Laboratory"
     },
+    "los alamos national laboratories": {
+      "sourceCategory": "research_groups",
+      "sourceId": "research_groups:los-alamos-national-laboratories",
+      "sourceName": "Los Alamos National Laboratories",
+      "targetCategory": "people",
+      "targetId": "people:los-alamos-national",
+      "targetName": "Los Alamos National"
+    },
     "los alamos national laboratory": {
       "sourceCategory": "research_groups",
       "sourceId": "research_groups:los-alamos-national-laboratory",
@@ -10114,6 +10864,14 @@
       "targetId": "institutes:monroe-institute",
       "targetName": "Monroe Institute"
     },
+    "marina oswald": {
+      "sourceCategory": "people",
+      "sourceId": "people:marina-oswald",
+      "sourceName": "Marina Oswald",
+      "targetCategory": "professors",
+      "targetId": "professors:marina-oswald",
+      "targetName": "Marina Oswald"
+    },
     "marshall island trust territory": {
       "sourceCategory": "people",
       "sourceId": "people:marshall-island-trust-territory",
@@ -10201,6 +10959,14 @@
       "targetCategory": "theories",
       "targetId": "likely_spies:melchizedek-star-seed-program",
       "targetName": "Melchizedek Star Seed Program"
+    },
+    "men in black": {
+      "sourceCategory": "friendly_people",
+      "sourceId": "friendly_people:men-in-black",
+      "sourceName": "Men In Black",
+      "targetCategory": "people",
+      "targetId": "people:men-in-black",
+      "targetName": "Men In Black"
     },
     "mike rogers": {
       "sourceCategory": "people",
@@ -10682,6 +11448,14 @@
       "targetId": "people:plasma-science",
       "targetName": "Plasma Science and Fusion Center"
     },
+    "pleiades": {
+      "sourceCategory": "star_systems",
+      "sourceId": "star_systems:pleiades",
+      "sourceName": "Pleiades",
+      "targetCategory": "constellations",
+      "targetId": "constellations:pleiades",
+      "targetName": "Pleiades"
+    },
     "pope john paul": {
       "sourceCategory": "people",
       "sourceId": "people:pope-john-paul",
@@ -11098,6 +11872,14 @@
       "targetId": "people:santa-monica",
       "targetName": "Santa Monica"
     },
+    "sao paulo": {
+      "sourceCategory": "people",
+      "sourceId": "people:sao-paulo",
+      "sourceName": "Sao Paulo",
+      "targetCategory": "likely_spies",
+      "targetId": "likely_spies:sao-paulo",
+      "targetName": "Sao Paulo"
+    },
     "science infusion center": {
       "sourceCategory": "companies",
       "sourceId": "companies:science-infusion-center",
@@ -11146,6 +11928,22 @@
       "targetId": "professors:democrat-senator-harry-reid",
       "targetName": "Democrat Senator Harry Reid"
     },
+    "senator strom thurmond": {
+      "sourceCategory": "politicians",
+      "sourceId": "politicians:senator-strom-thurmond",
+      "sourceName": "Senator Strom Thurmond",
+      "targetCategory": "whistleblowers",
+      "targetId": "whistleblowers:strom-thurmond",
+      "targetName": "Strom Thurmond"
+    },
+    "senator strom thurmond all": {
+      "sourceCategory": "politicians",
+      "sourceId": "politicians:senator-strom-thurmond-all",
+      "sourceName": "Senator Strom Thurmond All",
+      "targetCategory": "politicians",
+      "targetId": "politicians:strom-thurmond",
+      "targetName": "Strom Thurmond"
+    },
     "senators harry reid": {
       "sourceCategory": "politicians",
       "sourceId": "politicians:senators-harry-reid",
@@ -11186,13 +11984,45 @@
       "targetId": "stars:sirius",
       "targetName": "Sirius"
     },
+    "skinwalker ranc": {
+      "sourceCategory": "experiencers",
+      "sourceId": "experiencers:skinwalker-ranc",
+      "sourceName": "Skinwalker Ranc",
+      "targetCategory": "experiencers",
+      "targetId": "experiencers:skinwalker-ranch-in",
+      "targetName": "Skinwalker Ranch In"
+    },
     "skinwalker ranch": {
       "sourceCategory": "locations",
       "sourceId": "locations:skinwalker-ranch",
       "sourceName": "Skinwalker Ranch",
       "targetCategory": "people",
-      "targetId": "people:for-skinwalker",
-      "targetName": "For Skinwalker"
+      "targetId": "people:what-is-skinwalker-ranch",
+      "targetName": "What Is Skinwalker Ranch"
+    },
+    "skinwalker ranch database": {
+      "sourceCategory": "friendly_people",
+      "sourceId": "friendly_people:skinwalker-ranch-database",
+      "sourceName": "Skinwalker Ranch Database",
+      "targetCategory": "experiencers",
+      "targetId": "experiencers:skinwalker-ranc",
+      "targetName": "Skinwalker Ranc"
+    },
+    "skinwalker ranch in": {
+      "sourceCategory": "experiencers",
+      "sourceId": "experiencers:skinwalker-ranch-in",
+      "sourceName": "Skinwalker Ranch In",
+      "targetCategory": "experiencers",
+      "targetId": "experiencers:skinwalker-ranch-many",
+      "targetName": "Skinwalker Ranch Many"
+    },
+    "skinwalker ranch many": {
+      "sourceCategory": "experiencers",
+      "sourceId": "experiencers:skinwalker-ranch-many",
+      "sourceName": "Skinwalker Ranch Many",
+      "targetCategory": "people",
+      "targetId": "people:skinwalker-ranch-research-for",
+      "targetName": "Skinwalker Ranch Research For"
     },
     "skunk works": {
       "sourceCategory": "contractors",
@@ -11562,6 +12392,14 @@
       "targetId": "experiencers:steven-spielberg",
       "targetName": "Steven Spielberg"
     },
+    "strom thurmond": {
+      "sourceCategory": "whistleblowers",
+      "sourceId": "whistleblowers:strom-thurmond",
+      "sourceName": "Strom Thurmond",
+      "targetCategory": "politicians",
+      "targetId": "politicians:senator-strom-thurmond-all",
+      "targetName": "Senator Strom Thurmond All"
+    },
     "sunset boulevard": {
       "sourceCategory": "locations",
       "sourceId": "people:sunset-boulevard",
@@ -11858,13 +12696,21 @@
       "targetId": "people:walter-schreiber",
       "targetName": "Walter Schreiber"
     },
-    "washington post": {
-      "sourceCategory": "journalists",
-      "sourceId": "politicians:washington-post",
-      "sourceName": "Washington Post",
+    "warren commission": {
+      "sourceCategory": "politicians",
+      "sourceId": "politicians:warren-commission",
+      "sourceName": "Warren Commission",
       "targetCategory": "people",
-      "targetId": "people:washington-post",
-      "targetName": "Washington Post"
+      "targetId": "people:warren-commission",
+      "targetName": "Warren Commission"
+    },
+    "washington post": {
+      "sourceCategory": "newsrooms",
+      "sourceId": "newsrooms:washington-post",
+      "sourceName": "Washington Post",
+      "targetCategory": "newsrooms",
+      "targetId": "newsrooms:the-washington-post",
+      "targetName": "the Washington Post"
     },
     "waterman mountain": {
       "sourceCategory": "locations",
@@ -11873,6 +12719,14 @@
       "targetCategory": "people",
       "targetId": "people:mount-waterman",
       "targetName": "Mount Waterman"
+    },
+    "west germany": {
+      "sourceCategory": "friendly_people",
+      "sourceId": "friendly_people:west-germany",
+      "sourceName": "West Germany",
+      "targetCategory": "likely_spies",
+      "targetId": "likely_spies:west-germany",
+      "targetName": "West Germany"
     },
     "what eric hecker": {
       "sourceCategory": "people",
@@ -11897,6 +12751,14 @@
       "targetCategory": "government_agencies",
       "targetId": "government_agencies:consciousness-department",
       "targetName": "Consciousness Department"
+    },
+    "what is skinwalker ranch": {
+      "sourceCategory": "people",
+      "sourceId": "people:what-is-skinwalker-ranch",
+      "sourceName": "What Is Skinwalker Ranch",
+      "targetCategory": "friendly_people",
+      "targetId": "friendly_people:skinwalker-ranch-database",
+      "targetName": "Skinwalker Ranch Database"
     },
     "when bob": {
       "sourceCategory": "people",
@@ -11985,6 +12847,14 @@
       "targetCategory": "politicians",
       "targetId": "politicians:as-reid",
       "targetName": "As Reid"
+    },
+    "white mountains": {
+      "sourceCategory": "experiencers",
+      "sourceId": "experiencers:white-mountains",
+      "sourceName": "White Mountains",
+      "targetCategory": "friendly_people",
+      "targetId": "friendly_people:white-mountains",
+      "targetName": "White Mountains"
     },
     "white sands proving grounds": {
       "sourceCategory": "experiencers",
@@ -12164,6 +13034,7 @@
     "after disclosure": "books",
     "air force base": "military_bases",
     "air force research lab": "government_agencies",
+    "air france": "companies",
     "al jazeera": "newsrooms",
     "alien files reopened": "tv_shows",
     "american airlines flight": "companies",
@@ -12197,6 +13068,7 @@
     "baghdad phantom": "events",
     "bahamas basin": "locations",
     "baltic sea": "locations",
+    "barney hill": "experiencers",
     "bart cybrell": "hoaxers",
     "battelle memorial institute": "research_groups",
     "bay area": "locations",
@@ -12207,6 +13079,7 @@
     "berkeley hills": "locations",
     "berlin wall": "locations",
     "bermuda triangle": "locations",
+    "betty hill": "experiencers",
     "between september": "events",
     "beyond skinwalker": "tv_shows",
     "big rock": "locations",
@@ -12244,6 +13117,7 @@
     "celestial objects for common telescopes": "books",
     "central america": "locations",
     "china lake": "military_bases",
+    "chris bledsoe": "friendly_people",
     "city hall": "locations",
     "civil air": "government_agencies",
     "civil air corps": "government_agencies",
@@ -12286,6 +13160,7 @@
     "donald j trump": "politicians",
     "donald j. trump": "politicians",
     "dora": "books",
+    "dora rosenbaum": "books",
     "draconians": "alien_species",
     "dragon dracs": "alien_species",
     "dugway proving ground": "military_bases",
@@ -12298,6 +13173,7 @@
     "electrostatic society": "institutes",
     "elon musk": "people",
     "energy intelligence": "government_agencies",
+    "european union": "government_agencies",
     "exceptional scientific achievement medal": "document_names",
     "experimental station": "locations",
     "explore mars foundation": "nonprofits",
@@ -12311,6 +13187,7 @@
     "for lockheed": "contractors",
     "for skinwalker": "tv_shows",
     "forbidden science": "books",
+    "foreign technology": "government_agencies",
     "fort belvoir": "military_bases",
     "fort detrick": "military_bases",
     "fort irwin": "military_bases",
@@ -12322,6 +13199,8 @@
     "freedom of information act": "document_names",
     "french academy": "government_agencies",
     "french academy of science": "government_agencies",
+    "french air defense": "government_agencies",
+    "french morocco": "locations",
     "from june": "dates_times",
     "fukushima prefecture": "locations",
     "galacterian alignment": "theories",
@@ -12332,12 +13211,14 @@
     "german democratic republic": "locations",
     "german experimental station for aviation medicin": "government_agencies",
     "german experimental station for aviation medicine": "locations",
+    "germany": "locations",
     "gibb street": "locations",
     "giza plateau": "locations",
     "global access": "government_agencies",
     "grand central station": "locations",
     "great pyramid": "locations",
     "greenbrier inn": "locations",
+    "grey insectoids": "alien_species",
     "grill flame": "government_project_codenames",
     "groom lake": "locations",
     "groom lake road": "locations",
@@ -12362,6 +13243,7 @@
     "in california": "locations",
     "in cambridge": "locations",
     "in enoch": "books",
+    "in france": "locations",
     "in january": "dates_times",
     "in las vegas": "locations",
     "in newfoundland": "locations",
@@ -12372,6 +13254,7 @@
     "in switzerland": "locations",
     "independent research": "contractors",
     "independent research and development": "research_groups",
+    "indian head": "locations",
     "indian ocean": "locations",
     "indian serpent mound": "locations",
     "indian springs valley": "locations",
@@ -12409,6 +13292,7 @@
     "let espresso": "newsrooms",
     "lethe stream": "star_systems",
     "like kash patel": "politicians",
+    "linville gorge": "locations",
     "linville gorge overlook": "locations",
     "little st": "locations",
     "little st. james": "locations",
@@ -12434,6 +13318,7 @@
     "may 8, 2026": "dates_times",
     "medical research": "research_groups",
     "melchizedek star seed program": "theories",
+    "men in black": "government_agencies",
     "middle ages": "dates_times",
     "middle east": "locations",
     "montauk long island": "locations",
@@ -12480,6 +13365,7 @@
     "north america": "locations",
     "north carolina": "locations",
     "north carolina chapel hill": "universities",
+    "north las vegas": "locations",
     "northern california": "locations",
     "northern illinois": "locations",
     "nuno lurero": "people",
@@ -12580,6 +13466,8 @@
     "sandia complex": "military_bases",
     "santa barbara": "locations",
     "santa monica": "locations",
+    "sao paulo": "locations",
+    "sao sebastiao": "locations",
     "scientific revolutions": "books",
     "second empire": "books",
     "second world war": "events",
@@ -12666,16 +13554,19 @@
     "virgin mary": "people",
     "wall street journal": "newsrooms",
     "walnut creek": "locations",
+    "warren commission": "government_project_codenames",
     "warsaw pact": "events",
     "washington post": "newsrooms",
     "waterman mountain": "locations",
     "weaponized": "books",
     "weimar germany": "locations",
     "weimar, germany": "locations",
+    "west germany": "locations",
     "west virginia": "locations",
     "when roswell": "locations",
     "when september": "dates_times",
     "white house": "government_agencies",
+    "white mountains": "locations",
     "white sands proving grounds": "military_bases",
     "whitley strieber": "experiencers",
     "wild pendulum": "books",
@@ -12689,8 +13580,7 @@
     "your game girl": "books",
     "zora ranch": "locations",
     "zorro ranch": "locations",
-    "linville gorge": "locations",
-    "dora rosenbaum": "books"
+    "in germany": "locations"
   },
   "note": "Replace data/reclass.json with this file before rebuilding.",
   "notes": {},
@@ -12702,6 +13592,7 @@
     "dangerous_people:nevada-test-site": "locations",
     "dangerous_people:nuno-lurero": "people",
     "dangerous_people:robert-bigelow": "people",
+    "experiencers:air-france": "companies",
     "experiencers:ant-people": "religious_texts",
     "experiencers:black-aces": "military_bases",
     "experiencers:close-encounters": "movies",
@@ -12729,6 +13620,7 @@
     "friendly_people:bermuda-triangle": "locations",
     "friendly_people:civil-air": "government_agencies",
     "friendly_people:development-centers": "research_groups",
+    "friendly_people:foreign-technology": "government_agencies",
     "friendly_people:fred-crisman": "people",
     "friendly_people:grill-flame": "government_project_codenames",
     "friendly_people:jack-ruby": "people",
@@ -12751,8 +13643,10 @@
     "friendly_people:venusians-universal-origin": "alien_species",
     "friendly_people:virgin-mary": "people",
     "friendly_people:weimar-germany": "locations",
+    "friendly_people:white-mountains": "locations",
     "government_agencies:consciousness-department-it": "key_terms",
     "government_project_codenames:sentient": "key_terms",
+    "journalists:betty-hill": "experiencers",
     "journalists:j-allen-hynek": "people",
     "journalists:special-investigations": "government_agencies",
     "likely_spies:american-psychic-spy-program": "government_agencies",
@@ -12766,7 +13660,9 @@
     "likely_spies:paul-bennewitz": "people",
     "likely_spies:richard-bissell": "people",
     "likely_spies:saddam-hussein": "dangerous_people",
+    "likely_spies:sao-paulo": "locations",
     "likely_spies:under-operation-paperclip": "government_project_codenames",
+    "likely_spies:west-germany": "locations",
     "people:aaro-historical-report": "document_names",
     "people:above-top-secret": "books",
     "people:acquisition-technology": "government_agencies",
@@ -12818,6 +13714,7 @@
     "people:cape-fear-river": "locations",
     "people:central-america": "locations",
     "people:china-lake": "military_bases",
+    "people:chris-bledsoe": "friendly_people",
     "people:city-hall": "locations",
     "people:civil-air-corps": "government_agencies",
     "people:civil-war": "events",
@@ -12850,6 +13747,7 @@
     "people:edwards-412th-test-wing": "military_bases",
     "people:electrostatic-society": "institutes",
     "people:energy-intelligence": "government_agencies",
+    "people:european-union": "government_agencies",
     "people:exceptional-scientific-achievement-medal": "document_names",
     "people:explore-mars-foundation": "nonprofits",
     "people:false-memory-syndrome-foundation": "medical_conditions",
@@ -12868,6 +13766,8 @@
     "people:foster-ranch": "locations",
     "people:franklin-delano-roosevelt": "politicians",
     "people:french-academy": "government_agencies",
+    "people:french-air-defense": "government_agencies",
+    "people:french-morocco": "locations",
     "people:from-june": "dates_times",
     "people:fukushima-prefecture": "locations",
     "people:gen-six-productions": "companies",
@@ -12877,6 +13777,7 @@
     "people:giza-plateau": "locations",
     "people:great-pyramid": "locations",
     "people:greenbrier-inn": "locations",
+    "people:grey-insectoids": "alien_species",
     "people:guinness-book": "books",
     "people:hal-poppenmeyer": "authors",
     "people:harry-truman": "politicians",
@@ -12889,6 +13790,8 @@
     "people:holy-mountain": "locations",
     "people:in-cambridge": "locations",
     "people:in-enoch": "books",
+    "people:in-france": "locations",
+    "people:in-germany": "locations",
     "people:in-january": "dates_times",
     "people:in-las-vegas": "locations",
     "people:in-newfoundland": "locations",
@@ -12898,6 +13801,7 @@
     "people:in-september": "dates_times",
     "people:in-switzerland": "locations",
     "people:independent-research": "research_groups",
+    "people:indian-head": "locations",
     "people:indian-ocean": "locations",
     "people:indian-serpent-mound": "locations",
     "people:indian-springs-valley": "locations",
@@ -12931,6 +13835,7 @@
     "people:marin-boulevard": "locations",
     "people:mason-lodge": "secret_societies",
     "people:maury-island": "locations",
+    "people:men-in-black": "government_agencies",
     "people:middle-ages": "dates_times",
     "people:middle-east": "locations",
     "people:montauk-long-island": "locations",
@@ -12962,6 +13867,7 @@
     "people:nobel-prize": "institutes",
     "people:north-america": "locations",
     "people:north-carolina": "locations",
+    "people:north-las-vegas": "locations",
     "people:northern-california": "locations",
     "people:northern-illinois": "locations",
     "people:oak-ridge": "locations",
@@ -13072,6 +13978,7 @@
     "people:vehicles-directorate": "military_bases",
     "people:vietnam-war": "events",
     "people:walnut-creek": "locations",
+    "people:warren-commission": "government_project_codenames",
     "people:warsaw-pact": "events",
     "people:washington-post": "newsrooms",
     "people:west-virginia": "locations",
@@ -13084,6 +13991,7 @@
     "people:x-it": "tv_shows",
     "people:your-game-girl": "books",
     "politicians:aerial-phenomena": "key_terms",
+    "politicians:barney-hill": "experiencers",
     "politicians:condon-report": "document_names",
     "politicians:democratic-national-committee": "government_agencies",
     "politicians:galacterian-alignment": "theories",
@@ -13114,6 +14022,7 @@
     "professors:north-carolina-chapel-hill": "universities",
     "professors:papua-new-guinea": "locations",
     "professors:ross-coldhart": "journalists",
+    "professors:sao-sebastiao": "locations",
     "professors:simons-foundation": "companies",
     "professors:space-science": "university_departments",
     "professors:stanford-research-institute": "research_groups",
@@ -13133,6 +14042,78 @@
     "whistleblowers:nicobar-islands": "locations",
     "whistleblowers:project-blue-book": "government_project_codenames",
     "whistleblowers:whitley-strieber": "experiencers"
+  },
+  "removedFalsePositives": {
+    "friendly_people:american-alchemist": {
+      "category": "friendly_people",
+      "categoryLabel": "Friendly people",
+      "name": "American Alchemist"
+    },
+    "friendly_people:federally-funded-research": {
+      "category": "friendly_people",
+      "categoryLabel": "Friendly people",
+      "name": "Federally Funded Research"
+    },
+    "people:aerospace-corporation": {
+      "category": "people",
+      "categoryLabel": "People",
+      "name": "Aerospace Corporation"
+    },
+    "people:aliens-among-us-mac": {
+      "category": "people",
+      "categoryLabel": "People",
+      "name": "Aliens Among Us Mac"
+    },
+    "people:astronautical-engineering": {
+      "category": "people",
+      "categoryLabel": "People",
+      "name": "Astronautical Engineering"
+    },
+    "people:before-diana": {
+      "category": "people",
+      "categoryLabel": "People",
+      "name": "Before Diana"
+    },
+    "people:norwegian-american": {
+      "category": "people",
+      "categoryLabel": "People",
+      "name": "Norwegian American"
+    },
+    "websites:1-the": {
+      "category": "websites",
+      "categoryLabel": "Websites",
+      "name": "1.The"
+    },
+    "websites:1-three": {
+      "category": "websites",
+      "categoryLabel": "Websites",
+      "name": "1.Three"
+    },
+    "websites:2-angle": {
+      "category": "websites",
+      "categoryLabel": "Websites",
+      "name": "2.Angle"
+    },
+    "websites:3-color": {
+      "category": "websites",
+      "categoryLabel": "Websites",
+      "name": "3.Color"
+    },
+    "websites:6-length": {
+      "category": "websites",
+      "categoryLabel": "Websites",
+      "name": "6.Length"
+    },
+    "websites:7-tail": {
+      "category": "websites",
+      "categoryLabel": "Websites",
+      "name": "7.Tail"
+    },
+    "websites:8-sound": {
+      "category": "websites",
+      "categoryLabel": "Websites",
+      "name": "8.Sound"
+    }
   },
   "removedManualRelationships": {},
   "removedMerges": {
@@ -13170,6 +14151,5 @@
       "targetId": "universities:harvard-college",
       "targetName": "Harvard College"
     }
-  },
-  "removedFalsePositives": {}
+  }
 }

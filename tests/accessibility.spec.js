@@ -94,6 +94,23 @@ test("direct relationship graph keeps outward context subtle", async ({ page }) 
   expect(secondaryLabels.some((label) => label.includes("real connections") || label.startsWith("from "))).toBe(false);
 });
 
+test("hovering an entity highlights its visible connections", async ({ page }) => {
+  await page.goto("/");
+
+  const search = page.getByRole("searchbox", { name: "Search entity or category" });
+  await search.fill("Central Intelligence Agency");
+  await search.press("Enter");
+
+  const selectedLabel = page.locator(".html-graph-label[aria-current='true']");
+  await expect(selectedLabel).toBeFocused();
+  await selectedLabel.hover();
+
+  await expect.poll(async () => page.locator(".graph-edge.connection-highlight").count()).toBeGreaterThan(0);
+  await expect.poll(async () => page.locator(".graph-node.connection-highlight").count()).toBeGreaterThan(1);
+  await expect.poll(async () => page.locator(".html-graph-label.connection-highlight").count()).toBeGreaterThan(1);
+  await expect.poll(async () => page.locator(".graph-node.connection-dim").count()).toBeGreaterThan(0);
+});
+
 test("category drill-in fits below the fixed header", async ({ page }) => {
   await page.goto("/");
 
