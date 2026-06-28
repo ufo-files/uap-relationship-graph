@@ -131,6 +131,46 @@ test("category drill-in fits below the fixed header", async ({ page }) => {
   expect(overlap).toBe(false);
 });
 
+test("mobile category drill-in starts focused on the selected group", async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto("/");
+
+  const category = page.locator(".html-graph-label[data-label-category='people']");
+  await expect(category).toBeVisible({ timeout: 15000 });
+  await category.evaluate((element) => element.click());
+
+  const viewAll = page.locator(".html-graph-label[data-label-category-list='people']");
+  await expect(viewAll).toBeVisible();
+  await expect(page.locator("#status")).toContainText("People");
+
+  const metrics = await page.evaluate(() => {
+    const topbar = document.querySelector(".topbar");
+    const selected = document.querySelector(".html-graph-label[data-label-category-list='people']");
+    const entityLabels = Array.from(document.querySelectorAll(".html-graph-label[data-label-entity]"));
+    const viewportWidth = window.innerWidth;
+    const viewportHeight = window.innerHeight;
+    const topbarBottom = topbar ? topbar.getBoundingClientRect().bottom : 0;
+    const selectedRect = selected ? selected.getBoundingClientRect() : null;
+    const visibleEntityLabels = entityLabels.filter((label) => {
+      const rect = label.getBoundingClientRect();
+      return rect.width > 0 && rect.height > 0 && rect.bottom > topbarBottom && rect.top < viewportHeight && rect.right > 0 && rect.left < viewportWidth;
+    }).length;
+    return {
+      viewportWidth,
+      topbarBottom,
+      selectedLeft: selectedRect ? selectedRect.left : -1,
+      selectedRight: selectedRect ? selectedRect.right : -1,
+      selectedTop: selectedRect ? selectedRect.top : -1,
+      selectedBottom: selectedRect ? selectedRect.bottom : -1,
+      visibleEntityLabels,
+    };
+  });
+  expect(metrics.selectedLeft).toBeGreaterThanOrEqual(8);
+  expect(metrics.selectedRight).toBeLessThanOrEqual(metrics.viewportWidth - 8);
+  expect(metrics.selectedTop).toBeGreaterThan(metrics.topbarBottom);
+  expect(metrics.visibleEntityLabels).toBeGreaterThan(8);
+});
+
 test("info card close button stays outside the scrollable body", async ({ page }) => {
   await page.goto("/");
 
@@ -152,12 +192,49 @@ test("info card close button stays outside the scrollable body", async ({ page }
   const closeOutsideBody = await close.evaluate((button) => {
     const buttonRect = button.getBoundingClientRect();
     const bodyRect = document.querySelector(".node-card-body").getBoundingClientRect();
-    return buttonRect.bottom <= bodyRect.top;
+    return buttonRect.left >= bodyRect.right || buttonRect.bottom <= bodyRect.top;
   });
   expect(closeOutsideBody).toBe(true);
 
   await close.click();
   await expect(details).not.toBeVisible();
+});
+
+test("entity graph fit reserves the open sidebar", async ({ page }) => {
+  await page.goto("/");
+
+  const search = page.getByRole("searchbox", { name: "Search entity or category" });
+  await search.fill("CIA");
+  await search.press("Enter");
+
+  const details = page.locator("#node-card");
+  const selectedLabel = page.locator(".html-graph-label[aria-current='true']");
+  await expect(details).toBeVisible();
+  await expect(selectedLabel).toBeFocused();
+
+  const spacing = await page.evaluate(() => {
+    const sidebar = document.querySelector("#node-card");
+    const label = document.querySelector(".html-graph-label[aria-current='true']");
+    const sidebarRect = sidebar.getBoundingClientRect();
+    const labelRect = label.getBoundingClientRect();
+    return {
+      sidebarRight: sidebarRect.right,
+      labelLeft: labelRect.left,
+    };
+  });
+  expect(spacing.labelLeft).toBeGreaterThan(spacing.sidebarRight + 16);
+});
+
+test("manual relationships are visible in direct entity views", async ({ page }) => {
+  await page.goto("/");
+
+  const search = page.getByRole("searchbox", { name: "Search entity or category" });
+  await search.fill("Skinwalker Ranch");
+  await search.press("Enter");
+
+  await expect(page.locator(".html-graph-label[aria-current='true']")).toBeFocused();
+  await expect(page.locator(".html-graph-label[data-label-entity='locations:uinta-basin']")).toBeVisible();
+  await expect(page.locator(".relationship-target[data-card-entity='locations:uinta-basin']")).toBeVisible();
 });
 
 test("baked reclass decisions are removed from browser review state", async ({ page }) => {

@@ -1,0 +1,308 @@
+1
+00:00:01,000 --> 00:00:03,000
+Chevy Control here again.
+
+2
+00:00:03,000 --> 00:00:08,000
+Earlier in the flight, you'll recall, at the start of the Second Revolution,
+
+3
+00:00:08,000 --> 00:00:13,000
+we had a reference to several objects that the crew spotted.
+
+4
+00:00:13,000 --> 00:00:16,000
+This was in the area of Antigua.
+
+5
+00:00:16,000 --> 00:00:24,000
+Due to a mechanical breakdown, we did not have that portion of the tape available for you.
+
+6
+00:00:24,000 --> 00:00:33,000
+This was a line breakdown between Building 30 and our new center in Building 6.
+
+7
+00:00:33,000 --> 00:00:39,000
+Since then, we have dubbed the tape off the master tape here in the control center,
+
+8
+00:00:39,000 --> 00:00:42,000
+and we are now prepared to play it for you.
+
+9
+00:00:42,000 --> 00:00:48,000
+It contains references to sighting not only some particles,
+
+10
+00:00:48,000 --> 00:00:52,000
+but as well as an unidentified object,
+
+11
+00:00:52,000 --> 00:00:55,000
+plus the booster.
+
+12
+00:00:55,000 --> 00:00:58,000
+Here's that tape. We'll play it for you now.
+
+13
+00:00:58,000 --> 00:01:01,000
+Gemini 7 here, Houston on your 8.
+
+14
+00:01:01,000 --> 00:01:03,000
+Loud and clear. 7, go ahead.
+
+15
+00:01:03,000 --> 00:01:06,000
+Bogey at 10 o'clock high.
+
+16
+00:01:12,000 --> 00:01:15,000
+This is Houston. Say again, 7.
+
+17
+00:01:15,000 --> 00:01:18,000
+So we have a bogey at 10 o'clock high.
+
+18
+00:01:18,000 --> 00:01:19,000
+Roger.
+
+19
+00:01:19,000 --> 00:01:20,000
+Roger.
+
+20
+00:01:32,000 --> 00:01:36,000
+Gemini 7, is that the booster, or is that an actual sighting?
+
+21
+00:01:36,000 --> 00:01:38,000
+Not working.
+
+22
+00:01:38,000 --> 00:01:41,000
+Say again, 7.
+
+23
+00:01:41,000 --> 00:01:42,000
+Roger.
+
+24
+00:01:42,000 --> 00:01:47,000
+We have several, looks like a three up there, actual sighting.
+
+25
+00:01:47,000 --> 00:01:51,000
+Do you have any more information, estimated distance or size?
+
+26
+00:01:51,000 --> 00:01:52,000
+Roger.
+
+27
+00:01:52,000 --> 00:01:54,000
+We also have the booster in sight.
+
+28
+00:01:54,000 --> 00:01:57,000
+Understand you also have the booster in sight.
+
+29
+00:01:57,000 --> 00:01:58,000
+Roger.
+
+30
+00:01:58,000 --> 00:02:06,000
+And we have very, very many, looks like hundreds of little particles going by from the west,
+
+31
+00:02:06,000 --> 00:02:10,000
+going by from the west, out about three to four miles.
+
+32
+00:02:14,000 --> 00:02:21,000
+Understand you have many small particles going by on the left, at what distance?
+
+33
+00:02:21,000 --> 00:02:23,000
+Four miles.
+
+34
+00:02:23,000 --> 00:02:24,000
+Roger.
+
+35
+00:02:24,000 --> 00:02:28,000
+Looks like a, perhaps a vehicle that's disintegrated.
+
+36
+00:02:28,000 --> 00:02:29,000
+Roger.
+
+37
+00:02:29,000 --> 00:02:32,000
+Understand they're about three to four miles away.
+
+38
+00:02:32,000 --> 00:02:33,000
+They're past now.
+
+39
+00:02:33,000 --> 00:02:35,000
+They're going to pull a little bit.
+
+40
+00:02:35,000 --> 00:02:36,000
+Roger.
+
+41
+00:02:36,000 --> 00:02:40,000
+And understand they were about three to four miles away.
+
+42
+00:02:40,000 --> 00:02:41,000
+Roger.
+
+43
+00:02:41,000 --> 00:02:42,000
+Roger.
+
+44
+00:02:42,000 --> 00:02:43,000
+Roger.
+
+45
+00:02:43,000 --> 00:02:44,000
+Roger.
+
+46
+00:02:44,000 --> 00:03:05,000
+Gemini 7 Houston, were these particles in addition to the booster and the bogey at 10 o'clock
+
+47
+00:03:05,000 --> 00:03:06,000
+high?
+
+48
+00:03:06,000 --> 00:03:07,000
+Command.
+
+49
+00:03:07,000 --> 00:03:08,000
+Roger.
+
+50
+00:03:08,000 --> 00:03:12,000
+Uh, 7, this is, uh, Houston, this is 7.
+
+51
+00:03:12,000 --> 00:03:13,000
+Go ahead.
+
+52
+00:03:13,000 --> 00:03:14,000
+I have the, uh, booster on my side.
+
+53
+00:03:14,000 --> 00:03:19,000
+It's a brilliant body of the sun, just a back, uh, black background.
+
+54
+00:03:19,000 --> 00:03:23,000
+There's a brilliant particles around it.
+
+55
+00:03:23,000 --> 00:03:24,000
+Roger.
+
+56
+00:03:24,000 --> 00:03:27,000
+What direction is it from you?
+
+57
+00:03:27,000 --> 00:03:30,000
+It's about at my two o'clock position.
+
+58
+00:03:30,000 --> 00:03:35,000
+Does that mean it's ahead of you?
+
+59
+00:03:35,000 --> 00:03:39,000
+It's ahead of us, 2 o'clock, slowly doubling.
+
+60
+00:03:39,000 --> 00:03:40,000
+Roger.
+
+61
+00:03:40,000 --> 00:03:41,000
+Roger.
+
+62
+00:03:41,000 --> 00:03:44,000
+Roger.
+
+63
+00:03:44,000 --> 00:03:54,000
+Roger.
+
+64
+00:03:54,000 --> 00:03:59,000
+Roger.
+
+65
+00:03:59,000 --> 00:04:01,000
+Roger.
+
+66
+00:04:01,000 --> 00:04:02,000
+Roger.
+
+67
+00:04:02,000 --> 00:04:10,920
+4S-9-1.
+
+68
+00:04:32,000 --> 00:04:57,000
+4S-9-1.
+
+69
+00:04:57,000 --> 00:05:04,000
+5S-9-1.
+
+70
+00:05:04,000 --> 00:05:08,000
+5S-9-1.
+
+71
+00:05:08,000 --> 00:05:16,000
+5S-9-1.
+
+72
+00:05:16,000 --> 00:05:25,000
+7S-9-1.
+
+73
+00:05:25,000 --> 00:05:27,000
+Show me control here again.
+
+74
+00:05:27,000 --> 00:05:38,000
+The reference in that conversation to the third unidentified object, of course, was, or the third object was a bogie.
+
+75
+00:05:38,000 --> 00:05:58,340
+There were several references to the bogey. This is the unidentified object, in addition to particles which appear to be headed in a polar orbit, you heard Frank Borman say, plus Jim Lovell discussing the booster. It was Borman who reported sighting the bogey.
+
+76
+00:05:59,780 --> 00:06:05,140
+This is Germany Control in Houston at four hours, 24 minutes into the flight.
+
+77
+00:06:08,000 --> 00:06:37,980
+Thank you.
+

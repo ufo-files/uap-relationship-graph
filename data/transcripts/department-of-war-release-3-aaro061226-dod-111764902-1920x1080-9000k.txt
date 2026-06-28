@@ -1,0 +1,754 @@
+Again, the areas in black are the total area covered which we obtained from the mission,
+and the areas in red are the pieces which we missed due to the deletion of the plane change
+and the day early return.
+This little piece down here was a oblique pass which we had planned with the pan camera.
+It would have taken place on Rev 72 in order to get photographs of Jacendi,
+which is an area of particular interest to the geology.
+So you can see that we did lose some data.
+On the other hand, we did pick up some data that we would not have gotten,
+and I think overall the effectiveness of the coverage was about 90% of what we had hoped for pre-mission.
+I really want to express the thanks of the photo team to the flight planners here
+and also to Ken for his operation of the cameras during the mission.
+I know that it was very confusing to be continually changing the flight plan
+and Ken probably wondered what the hell we were doing with all these on-offs and so on.
+But really I think we did a very effective job of recovering almost all of the data that we had planned for the mission.
+May I have the next slide, please?
+This is a diagram showing what the Apollo 15 coverage was like.
+This is the planned coverage for the 16 mission,
+and in the dotted line is the planned coverage for the 17 mission.
+The only reason I show this is to indicate that the areas where we did lose data, unfortunately,
+are in the areas that were not covered by 15 and will not be covered by 17,
+so that the losses, although small, were real.
+May I have the next slide?
+Ken, during the film recovery EVA, you reported that the stellar camera glare shield was hung up on the handrail.
+I'm not 100% clear as to exactly what that situation was.
+This is the stellar camera glare shield,
+and this is a little cover that comes down and covers that when the mapping camera is retracted.
+Maybe you've discussed this with the other people here at the center,
+but for my own information, I would like to know whether this is the cover that was hung up or this is the cover.
+Both of them. The shield at the forward end, that one.
+This one?
+No, the first one you looked at, yeah. That was sticking up.
+That was sticking up, uh-huh.
+Yeah, but the tip out here was mashed against the handrail.
+Mashed against the handrail out along here.
+Yeah, the rail isn't in this picture.
+The rail is not installed.
+It would have been along here.
+That's right.
+And this lip was up against it and bent back out of the way.
+I see.
+It was not in the full extend position.
+It looked like it was a partial extension.
+Uh-huh.
+Could you tell whether this was bent, whether this rail was bent, this extend rail?
+No, but I think we have a photo that will probably tell you that.
+I don't remember.
+The end of the shield was bent.
+Up here.
+No.
+Here.
+Yeah, in the next section of the accordion.
+The next section was bent.
+Yeah.
+Now, whether that rail itself was bent, I didn't notice.
+Uh-huh.
+Uh-huh.
+The implication, of course, is that if this, uh, had happened early in the mission and this
+shield were bent down, uh, we might get excessive light into the stellar camera and our, our background
+density would be, uh, low, uh, or would be higher than we expected and we might not see
+as many stars.
+Uh, the other indication of, uh, malfunction that we had, of course, was in the exposure
+control on the pan camera and, uh, that, uh, would indicate that, uh, the pictures away
+from the terminal may be overexposed.
+That situation is also being looked at and, again, we're going to talk about it this afternoon
+before we actually process the film.
+Uh, may I have the next slide?
+Uh, this is the information which I have with regard to the laser altimeter operation.
+Uh, the first row across here is what the nominal mission would have been and the second
+row is the, uh, actual results from the Apollo 16.
+Uh, we had planned a total of 20 hours and a few minutes of operating time.
+We got 14 hours and a half so that we are down about 25 percent in the total operating time.
+This is the total, uh, revolutions in longitude that we had planned, uh, 10.3 and we got seven
+and a half so again we're down about 25 percent in that regard.
+Uh, a total number of firings 3283 and 2106 is the actual number that, uh, was recorded.
+So we are down, uh, nearly 30 percent, uh, in the total number of firings.
+Also, the number of valid elevation, uh, readings that we got was appreciably, uh, less than the total number of firings.
+So that we, the actual mission in terms of altimeter observations, uh, gave us a little bit less than half of what we had actually planned.
+Uh, that's, that's really not as serious a, a, uh, shortfall as it sounds just from the numbers.
+Uh, because the readings were quite well distributed throughout the mission.
+Uh, the general operation that we saw on the altimeter, uh, the first several revs were completely nominal.
+All of the elevation readings were valid.
+Then it began to fall off about 75 percent, 65 percent, and down to about 60 percent,
+except on the last data pass on rev 62 where it was only about, uh, uh, 10 percent effective.
+Uh, the, uh, generally what we seem to observe is that there would be one good shot, then one bad shot, then one good, one bad,
+and then maybe several good ones in a row.
+Uh, we can talk about the reason for that, but, uh, that's more appropriately covered in the systems review tomorrow.
+Uh, the effect that it will have on the data is simply to give us a, a, a larger spacing between data points.
+So far as the, its effect on the reduction of the photography is concerned, that's absolutely inconsequential.
+So far as its effect on the, uh, correlation between the tracking and gravity data and the, uh, profiles,
+it's a little bit, uh, more of concern.
+Uh, they do have a little bit more smoothing to do between the data points that they got,
+but essentially I don't think that it really hurts us so far as the scientific return, uh, from the mission is concerned.
+Uh, I would like to say, uh, just a word or so about the utilization of the photography.
+The, it has been proceeding much more slowly than I had anticipated
+in reducing the pictures from Apollo 15.
+However, the work which is being done by the ACIC and St. Louis
+is indicating that the photography, photographic reduction,
+will provide, uh, positional coordinates of features on the lunar surface
+with the, uh, the accuracy of 10 to 12 meters in position and in elevation.
+And that seems to coincide very well with what we had predicted pre-mission.
+So, uh, we are quite confident that, uh, that we're getting very good information from the pictures in that regard.
+Uh, the tracking data, uh, generally, uh, is consistent within an orbital pass,
+but we do find, uh, discrepancies of, uh, up to a kilometer between adjacent photographic passes.
+So that the, uh, reduction of the photographs is giving us a much better tie between orbital, uh, passes
+than we get from the, from the tracking data, uh, itself.
+Uh, consequently, we do expect eventually to come up with a, an internally consistent coordinate system,
+reference system, figure of the moon, with an accuracy on the order of 12 to 15 meters.
+Uh, that's, uh, highly gratifying to me.
+Uh, so far as the pan-camera utilization is concerned,
+there have been some, uh, map compilations done.
+Uh, the indicated precision of those is on the order of three meters,
+which, again, is about what we had expected.
+But that is a precision and not an accuracy number because, uh,
+of the geometric problems with the pan-camera photography.
+However, so far as the resolution of the pan-camera is concerned,
+that has held up to just about what we had expected,
+uh, from one and a half to three meters at the, uh, sub-vehicle point
+and decreasing off to about five to six meters at the limits of the, of the film.
+Uh, so, so far as, uh, our indications at the moment are that the results from 16 are quite satisfactory.
+We do have these problems that we have to resolve in the processing of the film.
+And, uh, once that is done, we will be able to say exactly what we did obtain.
+But, again, I want to express the photo team's thanks to you particularly, Ken,
+for the, uh, uh, time and attention, uh, that you gave to the camera operation
+and the results that we have obtained.
+Thanks, Fred. Any questions, uh, before?
+Could you, do you have a plot of the, uh, altimetry?
+You know, last time someone had drawn up a rough hand sketch of, of the altimetry,
+and what, did anyone do that this time?
+Uh, the profiles?
+Yes, sir.
+No, I don't, Ken.
+I think maybe, uh, Sjogren has one of those, uh, and, uh, I don't know.
+Is he here?
+Bill?
+Yeah, Bill.
+Do you have a plot?
+Yeah, I thought you had one.
+Okay.
+He'll show that.
+Okay, and these, uh, particles that you found in the mapping camera, that,
+is that handfuls, or, or a couple of shavings, or?
+Uh, I don't know how extensive they are, they were, uh, they were enough to concern the, uh,
+uh, the people in the processing lab.
+Uh, uh, all I know, that's about all that I know about it.
+We're supposed to have a review of that this afternoon.
+Uh, it could have, uh, very serious implications, obviously.
+Uh, uh, one, one thing that I seem to recall from the, uh, during the mission, is that we
+had apparently more film left for post-TEI photography than we had anticipated.
+And what that could mean, of course, is that the camera was not passing film when we thought
+it was, and things were being chewed up pretty badly inside.
+So, uh, we're gonna have to look that over very carefully before we go ahead with the processing
+of the film.
+We expect the, uh, camera contractor to, uh, look at the shavings and tell us where he
+thinks they came from, and that may give us a better clue as to what they are, actually
+are.
+Do you have a processing schedule yet?
+I, I guess it's all in advance to figure out what to do next.
+Yeah, everything is on a hold until this afternoon, yeah, after we're meeting this afternoon.
+Assuming you're determined to go ahead and develop it, will it take you three or four days
+to process?
+Yeah, yeah.
+Uh, I think the, the anticipated schedule was to have, uh, the original film processed
+within this week, and all of the duplicate copies within four weeks of the distributed.
+Perhaps you stated, what is the accuracy of the altimeter?
+The, uh, least count of the altimeter is, uh, one meter.
+Uh, the accuracy is, uh, dependent, uh, pretty much upon the slope in the area, which is aluminum,
+and, uh, a little bit, uh, on the albedo in the area, which is illuminated.
+Uh, in general, I think it's fair to say that, uh, the reading that we get from the altimeter
+will be correct, uh, to within three to five meters.
+Have, have you figured out what to do with the pan camera for processing?
+Got a correction for the, for the exposure?
+Uh, I don't know what has been figured out.
+We had a group working on it last week, and they're going to give us a report right after
+this meeting, and we'll decide what to do.
+Yeah, I could, I could comment, uh, the photo lab has made their recommendation, you know,
+to fraud back, and, uh, they think that there will be some slight loss near the generator,
+if they could do that, uh, in other words, that they can handle the over exposure,
+but at some penalty, where we have .
+The situation is really that, uh, near the terminator, the pictures are underexposed anyhow,
+because we can't open the slit wide enough and so on.
+Uh, so the camera was wide open at the terminator, uh, but it was open wider than it should have been
+when we were away from the terminator, so that the terminator pictures are a little bit underexposed,
+then they become properly exposed, and after that, uh, they will be overexposed.
+So what we would really like, of course, is a variable, uh, processing, uh, through each photo pass,
+but that's probably not a feasible thing to even contemplate.
+Thanks, Fred.
+Next subject will be the particles and fields of the subsatellite,
+and, uh, I think Jim McCoy is going to cover that. Is he here?
+Ah, there he is.
+We got a mic right over there.
+Yeah.
+Can we add anything at all?
+Yeah, they'll, they'll project it up there in the back booth if you want to.
+Uh, Dick?
+Yes.
+Where's, where's Baldwin?
+Would you, could you get this projected up there?
+Of course.
+I guess I'll put the mic on.
+Okay, can you hear me okay?
+Okay.
+Uh, I guess, uh, quickly, the subsatellite was
+deployed successfully.
+Our spin rate was phenomenal.
+Uh, I guess I'll put the mic on.
+Uh, I guess, uh, quickly, the subsatellite was deployed successfully.
+Uh, our spin rate was phenomenal, about five and a ninth second, uh, spin period.
+Quickly, the sub-satellite was deployed successfully. Our spin rate was
+nominal about 5 and 8 second spin period. We want five plus or minus a couple. The
+attitude was good. According to preliminary indications in the sun sensor,
+we have a couple of degrees tip off from the ecliptic, which is well within the
+limits we needed. The operation of all of the electrostatic analyzers and both
+solid-state telescopes is good. We don't seem to have the noise problem that we
+had on Apollo 15 in a couple of the analyzers, and we've gotten rid of our
+accumulator counting error that was characteristic of 15. It's given us some
+problems in our data analysis now from that satellite. The quick-look results on
+our first magnetotail pass indicated, again, the presence of these rather unexpected,
+rather high fluxes of low-energy protons, which have also been seen now with a new
+IMP series I satellite experiment too. And on this magnetotail pass, we appear to have the
+remnants of a small solar event in the form of some high-energy solar cosmic ray
+electrons and protons around, which should prove interesting for our shadow
+interpretation, particularly on electric fields in the magnetotail. Beyond that, if they have those slides
+there, I'd like to briefly describe some of the results we got from Apollo 15, which would hope to be
+similar for this one. Our primary experiment was to examine particle shadow configurations in the
+magnetotail. That'd be while we're passing through this region back here, where we are in the Earth's magnetic field,
+and use that to examine the question of openness and access through the magnetotail to the magnetic field lines and
+ultimately to the Van Allen belts, where theory generally holds that the Van Allen radiation must somehow come in and then be trapped and
+accelerated. The degree of connection back here with the interplanetary field has been in quite a bit of question and briefly stated the Apollo 15 results indicate pretty
+clearly that at least most of the time at the latitudes where we passed through the tail, of course we only have a couple of passes, that these field lines are in fact open
+out here connect directly into the interplanetary field and have direct access of solar cosmopolitan particles.
+We have also observed the existence of a plasma sheet which is known to form in closer to the Earth to extend out to the Moon in the distance.
+And on at least a couple of occasions we have observed cross tail electric fields which are important to theoretical models accounting for aurora and for acceleration of particles into the radiation belts.
+An unexpected observation which we found interesting was 30 keV or thereabouts protons in very large numbers which we observe quite frequently back in the magnetotail and also observe outside the magnetotail in very similar fluxes.
+Our first feeling was that these must also be some component of the solar cosmic ray proton spectrum.
+their, of course, very low energy would be stopped by even the thinnest piece of material.
+But the numbers of them and the consistency of their flux densities make them very attractive as probably being indicative, quite indicative of the source that they come from and the mechanism bringing them.
+A further examination, however, of the locations where we see them and of the almost constant intensities that we see almost force us to the conclusions that they must somehow be protons from the outer Van Allen belt region here,
+which are somehow coming loose from the Earth's field and moving outward and then getting onto the interplanetary fields and then moving out to where we see them in perhaps an inverse process of the postulated process where we bring solar cosmic ray particles in from the Sun to populate the Van Allen belts.
+We were anxiously awaiting getting our data and now our computer program at Berkeley and Schaefer. We can examine this in detail. We've unfortunately been delayed in that.
+So, if I have the next slide, I'll show you one orbit of data from the telescopes when these very steady fluxes of protons were present.
+And during this period and actually for a period of a couple of orbits earlier, these fluxes were almost constant. There is some changing here. There is a very, very slight shadowing of protons, not very much at all. This is mostly an electron phenomenon.
+But then these particles essentially turn off as though somebody closed a valve. And this is characteristic of the way they behave. When they appear, they're suddenly there. And when they disappear, they're gone just as fast.
+And we're very hopeful that we'll be able to make some sense out of what turns these things on and off and determine where they're coming from and what the mechanism is, presumably now in the magnetosphere.
+Okay, I think I'll just throw it open to any questions now.
+Okay.
+What is the lifetime estimate of the 16th?
+I wish you hadn't brought that up.
+The next speaker will get that for us.
+We had been very hopeful of getting another dozen or a couple of dozen magnetosphere passes out of this satellite since it works so beautifully.
+I think we're going to cover that.
+Chris said it was going to stay up there forever, so it better.
+If it doesn't crash, we also will.
+Then the world's going to come to an end pretty shortly, I'm over.
+We'll see.
+Any questions about particles and fuels?
+Okay, let's continue on with subsatellite and get on the planet.
+We didn't say anything about it.
+I assume that our satellite is sending out good data.
+Is batteries charging okay and everything?
+It's not running into the problem that the 15 guys had?
+Or was that normal for the...
+It seems to be a little bit better at battery charging.
+Yeah.
+The machine is working.
+Okay, and all the detectors are operating?
+Yeah.
+As far as we know, yeah.
+It's just that it's got a short lifetime.
+Okay, let's see.
+I think Larry Sharp is going to take Coleman's place, right?
+Okay.
+Magnetometer.
+The objectives of the magnetometer experiment are essentially three-fold.
+First is to measure and map the remnant magnetism on the lunar surface.
+Second is to map the electrical conductivity of the lunar interior.
+Finally, study the various aspects of the Moon's interaction with the fields and particles in its environment.
+The wide scope of these objectives is made possible by the geometry of the Moon's orbit as it passes through three fundamentally different regions of space.
+For example, to get the spatial variations of remnant magnetism on the lunar surface, one must be in the geomagnetic tail,
+where the temporal variations are almost absent in the magnetic field.
+Very steady situation.
+The initial orbit of the subsatellite was somewhat lower than Apollo 15 in the inclination of about 11 degrees instead of 28.
+And I'd like to show you the predictions of the orbit.
+Right over that side.
+On the back side.
+Back side over.
+Ha, Ha, Ha.
+Okay, we've plotted days past deployment.
+Versus the parallel altitude.
+Okay.
+We started out here in pretty good shape, about 97 kilometers or 97 by 123, I guess.
+And the prediction was a very rapid drop down to 30-some, back up in good shape.
+No real trouble until, here's the ground line, until about 200 days when the probability was 50-50 of a crash.
+Here are the error bars here.
+You can say the probability was maybe one chance in 10 of a crash here and maybe one chance in 5.
+We've updated this plot.
+And the odds have changed considerably.
+This was the prediction.
+Notice the timescale has been expanded greatly.
+These are hours now instead of days.
+Here was the initial prediction at 37 kilometers, and here are the actual data points.
+This one was taken this morning, around in here.
+And if you can extrapolate by eye, it looks like we have about four days left.
+I guess Bill Sogren's taking 50-50 odds that it'll crash if anyone's in the betting mood.
+It's possible that we'll skim the surface and come back out.
+But even if we make it through this one, that next dip is going to probably finish us off, which is most unfortunate.
+Out of curiosity, it might be out of your field, but how come our prediction didn't match the actuality?
+I mean, we...
+We don't know the gravity field that well, and that's the business of this subsatellite initially to come to the gravity field.
+You're going to come to that field, I think.
+Right.
+And we've been screaming like that about these paths that don't go long out here at MSC to try to drive that point home so many times,
+and I think we're really seeing it come.
+Man, it just goes to show you can't redo six months of planning in two days.
+Well, in any event, we have one month's worth of good data, which will add to our Apollo 15 results.
+And to get some idea of what we're doing with this data, I'd like to show the first slide,
+which represents an average of 17 different orbits taken when the moon was in the Earth's magnetotail.
+And we've plotted the moon's longitude along the horizontal and the magnetic field in gammas along the vertical.
+These numbers are representative of the Earth's tail field.
+And, of course, if you subtract out an average value, this residual would represent the lunar surface field.
+And, of course, the big result is this really huge magnetic dip going over the Vondegraaff crater
+or a region right near the Vondegraaff crater.
+Also, the other initial result we got out of 15 data was that most of the dips in the magnetic field
+would seem to be clearly associated with craters lying within a few degrees of the ground track defined by the orbit of the subsatellite.
+We've numbered the seven most obvious local minima and named five of them with associated craters.
+Now, initial results from Apollo 16 show the same type of structure, although we don't see anything as big as Vondegraaff.
+We see we do go over Korolev again.
+That's where the orbits intersect when we're in the tail.
+And we see a few other Hertzsprung and Pavlov-type bumps.
+One is with a little tiny crater called Stein and one near Mendelev.
+Now, if you repeat this procedure several times with different lunations,
+say you cover different tracks over the moon, and this allows a contour map to be made.
+So if I could have the next slide, this shows the ground track from where we found the anomaly.
+Here was one over Hertzsprung, Korolev.
+Here's Vondegraaff.
+You can see we went right close to the northern border, Pavlov, and one over Milne.
+So it was a pretty good one-to-one correspondence with large craters.
+The initial 11 orbit, of course, is much near the equator.
+The inclination goes up to plus or minus 11.
+So we saw one over Korolev, and Stein crater is located right about here.
+It's not too big.
+The next map shows a compilation of a lot of these linear profiles.
+Next slide.
+Into a contour map.
+It's a little hard to read the contours.
+You can see this big black blotch here is a result of contours stacked on top of each other
+near this Vondegraaff anomaly.
+You can see the numbers are hard to make out.
+You can see the structure over Korolev, a hint of some structure over Hertzsprung,
+and the southern sea over here is actually an enhancement, sticking out of the moon, so to speak.
+You can see Milne shows a definite structure.
+Now, the Apollo 16 results should enable us to expand this map.
+We'll get better resolutions throughout this area and be able to extend it along in here.
+We'll probably still have a gap down in this region.
+Harry, can you give us an idea of the gradient you're measuring there?
+Oh, yes.
+Okay.
+The numbers presented in the chart, if you can see them,
+are measured in tenths of gamma at an altitude of 100 kilometers.
+So, for example, a good representative value is about 30,
+and the zero we've arbitrarily chosen at the bottom of the Vondegraaff dip,
+since this is the lowest value of magnetism we observe.
+We just call it zero and scale everything relative to it.
+So, if you're at 100 kilometers, you'll see a three gamma dip going over Vondegraaff on the average.
+Oh, we were fortunate.
+Also, the near side of the moon.
+Does the gravity profile have any, can you correlate?
+I've looked at the gravity profile, and it doesn't seem to correlate at all.
+We don't.
+Actually, the laser data correlates better with, you don't, there's no gravity on the back side, okay,
+but on the front side.
+I understand.
+It correlates pretty well with the laser data,
+which shows a great big hole here in the back side of the moon around Vondegraaff,
+and that's where we get our big hole,
+but I can't see any scientific justification for connecting the two results.
+I will add, let's remind you, the gamma ray.
+Yes, that's true.
+The secondary peak is also in Vondegraaff.
+I don't know what it means.
+It could be an alien star base or something.
+Anyway, the next slide shows the front side of the moon,
+and it's upside down.
+The thing to contrast is the much smoother nature of the,
+could we do a 180 on the slide, please?
+Can you hear me?
+Could we have a, turn the slide around, please?
+Oh, he's on a coffee break.
+Okay, here you go.
+Anyway, the front side of the moon is much, much smoother than the back side.
+The variations are, oh, an order of a factor of 10 smooth.
+We don't see very much structure at all.
+It's very hard to even draw contours.
+Can you sort out the differences in that and the effects of running through the,
+the Earth's magnetic field effects?
+Since you're, the front side is always close to the Earth,
+can you sort out,
+are we really measuring magnetic variations on the back side,
+caused by being on the back side,
+not due to our measuring environment?
+Oh, right.
+The Earth's tail field is very, very constant
+when you're in the,
+a good second, when you're away from the neutral sheet,
+and that's where all this data is taken.
+Well, I guess we never got the front slide complete.
+Okay, this is a blow-up of the Van de Graaff region
+in an attempt to pinpoint the exact source of this large anomaly.
+We kind of suspected it was over the crater itself,
+since we had always put forth a theory
+that what we were actually observing in these dips
+was some sort of a meteorite impact
+that caused a rather uniformly magnetized crust
+that suddenly have holes in it,
+and we're seeing the equivalent dipole
+of what was left over,
+and this kind of shoots holes in the theory.
+We see a, this is the BX component,
+which is the radial component,
+and a plus number indicates a value sticking into the moon.
+So you see this rather large hole here,
+magnetically, in between two craters,
+and if you look at various models of double dipoles and stuff,
+it just doesn't quite fit.
+The other components, B sub Y and B sub Z,
+show that it can't be one of these angling dipoles from the crater.
+And presently, we're now conducting the same sort of studies
+over the rest of the anomalies to see if it checks out.
+I just, just yesterday, completed the one over Korolev,
+and that one is right in the middle of the crater,
+which is promising for the Shakti magnetization theory.
+How much validity do we have in the ground track data?
+How much validity do we have in the ephemers?
+I understand there's no chance that we could be off by...
+Oh, never, anything like that.
+It might be off a kilometer or two, like I said.
+But now you're talking about the final reading there,
+that's 9 or 10 kilometers.
+So it doesn't seem much chance.
+We'll get maybe one more.
+As the subsatellite comes crashing down to the moon,
+the last 10 kilometers should give us a good swath of data,
+which will give us another high-resolution plot like this.
+Other than that, we're kind of out of luck.
+Okay.
+Okay, thank you.
+Question?
+Okay.
+There's the front side of the moon.
+Okay, and our coverage from Apollo 11 will extend.
+Yeah, I believe this is the equator across here.
+Oh, I'm sorry.
+Okay, this is zero degrees.
+Okay, and we go from zero to 90 east to 90 west.
+It's the terminator.
+This is the southern sea region,
+which is about the only distinctive feature on the front side, per se,
+and even that's on the terminator.
+And again, these are relatively high values of magnetic fields sticking out of the moon.
+So you might say that the southern sea is a highly magnetized region.
+Notice the 16th site is out of our coverage,
+as were all the Apollo landing sites.
+You have about three gamma delta on the back side.
+What are we seeing on the front side?
+Well, most of these values are about 30, 28, 27,
+which means they're all three gamma higher than zero at Vandegraaff.
+So I would say the maximum plus or minus is about a half a gamma on the whole front side.
+Why do you remember these elongate parallel to the track?
+This is a function of not having quite enough data.
+Instead of making physical-looking contours,
+we drew actual contours with the data.
+And obviously, if there's a little bit of offset from one orbit to the next,
+it's going to result in elongated contours.
+If we fixed this up and made some intelligent-looking guesses,
+they would be much more circular.
+Do you have a data on the Apollo 12 and the 15th and the 16th surface?
+Yes, with 12, 14, 15, yes.
+How do you compare it with the information of the surface?
+Well, you see, the surface data deals with much smaller scale-sized phenomena.
+And so there's really no one-to-one correlation.
+I suppose that the...
+Well, the Apollo 12 site is supposed to be...
+Well, if we could be sure that over a region of 100 kilometers
+that the average field was 38 gamma, which no one would bet on,
+then we could make some interesting predictions about other places on the moon.
+But I suspect if you went down to Apollo 12 and went 100 meters away,
+you'd find a much different value of a magnetic field.
+We know it's the case.
+Look at Apollo 14.
+They went one kilometer, and they went from 43 gamma to 103 gamma.
+So who's to say what's a representative value for the magnetic field in a given area?
+How about 15?
+Apollo 15, they saw a steady field of 6 plus or minus 4 gamma, which is essentially zero.
+But there again, you know, behind the next boulder, probably would be 100 gamma, probably, you know.
+And the results on 16, I thought, were tremendous.
+The tremendous gradients they got between one place and another.
+But that 313 gamma field really surprised me as far as getting a value that large.
+Yes, question there.
+Have you seen any distinctive features about the correlate,
+which might make the distinction that it was, say, a hard spot
+that it would have been near the surface and the necessary soil covering,
+which would change the surface temperature at that point,
+which would then change the temperature?
+No, I'm not a geologist type.
+Well, I already know about the surface.
+That would change the temperature.
+It would seem to me that the younger a crater was,
+the more chance it would have to produce a good, clean-cut signature
+on the magnetic field data.
+For example, Van de Graaff itself looks like a fairly young crater
+because there's very few secondary craters in the bottom of it.
+So it looks fairly young, whereas things like Hertzsprung seem to be fairly old.
+They're well-blotched with secondary craters.
+What is the distance from the center of Van de Graaff to the center of the anomaly?
+It's 88 kilometers from the northern rim.
+So from the center of Van de Graaff, it's about 130, 140 kilometers.
+Any other questions?
+Okay, thank you, Larry.
+And, yeah, got a question?
+No.
+Last subject will be the transponder.
+Bill Sogren.
+This is a gravity experiment.
+And we monitor the gravity by just monitoring the velocity of the spacecraft
+or the LEM or the subsatellite.
+Of course, on this particular mission, we lost our LEM data on impact
+because it started tumbling.
+And so that data was lost.
+We do, however, have the CSM in the low-altitude orbit,
+which is very interesting data.
+Here's the orbital track.
+And hopefully I can get this aligned.
+About like that.
+This profile just below it is the gravity anomaly that was detected.
+This line right here represents zero gravity central isostatic equilibrium.
+And anything below it, of course, that would be negative gravity deviations.
+Here we are, Ptolemaeus, going essentially over the center with the track.
+And we can see the large negative anomaly again, almost 100 milligals.
+Here we see some highland material where we have a positive.
+Then we drop down into a relative low in between these two old craters,
+the Parkus and Albatagnius.
+And then a high in here.
+At this point, this is the Descartes landing site.
+And we're actually at about a 50 milligal negative anomaly in that region.
+There's some nice correlations here with the laser altimetry measurements.
+I'll show them in the next profile.
+But this is continuous.
+I've just taken one small section here.
+We have this thing from limb to limb.
+So about 110 longitude plus to 110 minus.
+And essentially, three revs.
+From rev 3 through rev 11.
+That's eight revs.
+Eight revs of data that are pretty good.
+And then they started their station keeping.
+And data kind of got garbaged up a lot.
+All the maneuvering was going on.
+Let me point out one kind of interesting thing here.
+Notice that Ptolemaeus here has an anomaly much lower than Nubium.
+Although Nubium, which is this region right in here,
+this Marinubium right in here, is still at about minus 50 milligals.
+Here's an altimeter profile.
+And going right to the Nubium Ptolemaeus region again,
+we see that Nubium elevation here is some, by the way,
+the scale here is two kilometers per heavy line.
+So we've dropped down here almost two kilometers
+from the floor of Ptolemaeus to the floor of Nubium.
+Yet the gravity anomaly is just the opposite.
+The Ptolemaeus is some 50 milligals lower than the Nubium region.
+And another interesting point is, Fred, on these ACIC maps,
+Nubium is shown a kilometer higher than Ptolemaeus.
+And here we are two kilometers lower.
+So we're talking about three kilometers discrepancy
+in just that little area right there.
+So I think some of these guys were talking about the right thing
+when they said we really didn't know the altitudes too well.
+I think that shows up quite dramatically
+when you look at the low sun angle view
+as you approach the Terminator,
+the things that were in Nubium didn't show up
+until significantly after we anticipated.
+We missed our times on those things a great deal,
+and that could only be called
+by having a discrepancy in our relative heights.
+Yeah.
+This is not just, this is Rev. 28.
+We've looked at, there are five real good tracking,
+laser tracking passes over this region,
+and we've looked at three of them,
+and all three show the same consistency of the drop there.
+Other interesting thing here,
+Procolorum, Tranquilitatis, Frecunditatis,
+they all seem to be about on the same level.
+Smithii, again, being a low, about four and a half kilometers,
+that was the same thing on Apollo 15 when we passed over it.
+It was some four and a half kilometers below,
+that's mean radius here.
+And we're still referencing this to a 1738, well, 0.1 radius off the CG.
+If you take this stuff and start fitting it to an optical center
+with a CG offset,
+that you do indeed get the two-kilometer shift again
+of the CG being closer to the Earth by some two kilometers.
+Let's say that tranquility is about two and a half kilometers
+lower than Descartes.
+That's right.
+Yeah, here's the landing site right in here.
+And this is, we had a negative gravity anomaly in here.
+Well, kind of according to this,
+maybe that's the situation,
+because it looks like a topographic lobe.
+This is the backside.
+We had some, these are the limbs where the data was missing.
+These are taken from those, this data is taken from that Thrift printout
+that we get in real time, and there's gaps in the data.
+These will be filled in once they get the station tapes delivered.
+But we can see the crater Hertz sprung here very evidently
+with the central peak or something in it.
+You don't have any data in that 120-degree region, huh?
+Not now.
+We should have it next week or so, whenever they get the tapes here and the goose.
+One of the things that, well, on Apollo 15, there was a definite,
+well, centered about 180.
+There was a definite big trough in here
+which went down about some four and a half kilometers.
+It was very jagged.
+But it was centered just about here.
+And on Apollo 16 now, we do not really see that.
+We see this highland material here, which we had on 15.
+That started about in here and showed a marked high region in there.
+And this is holding on 16 also.
+So this is kind of consistent with 15.
+Here's another, this is orbit 38 on the backside.
+I'll just kind of lay it there to show you some of the consistency.
+This is 10 orbits later.
+The profile is almost there.
+Smith, the eye.
+Oh, here we have some data in that.
+So there's your data.
+Okay.
+I don't know.
+Were you looking for something particular?
+Yeah, I was looking for something around 105.
+105.
+105.
+Probably not particular.
+Nothing.
+Okay.
+I do have some data on the sub-satellite from Apollo 15,
+but I don't know if that's the time to really show here.
+I think I've shown enough stuff on 16, huh?
+Yeah, well, I'd like to stick to 16.
+Any of the problems we have or any of the data that we got for the crew.
+Well, I'm very happy with all the data we've gotten on 16,
+and the sub-satellite on 16, like Larry mentioned just before me,
+looks pretty grim.
+Although there was an OD solution just run out about an hour ago
+where the last state vector was used as the position for running out the lifetime program.
+And the lifetime program, if we believe that 15-8 model that we had used initially back there
+when we ejected that thing,
+it says that this thing should come back up.
+It still says it's not going to crash.
+But this will be a very interesting thing to watch the next couple of days, I can say.
+Right.
+That's all right.
+We own the seismometers up and ready.
+Well, it's 50.
+I asked Kovach about that,
+and I don't know whether he can speak for length or not,
+but I told him it's 50 pounds,
+and whether he can actually see an impact of 50 pounds,
+I think that's all it weighs.
+The central station.
+Let's see.
+It should hit about maybe some 20 or 30 degrees west longitude
+and 5 or 6 degrees north.
+Is that right, Dick?
+Something like that.
+About 5 or 6 north latitude and about 30 west.
+That's what it looks like, that linear extrapolation.
+Okay.
+Thank you, Bill.
+Thank you, gentlemen, for attending.
+This concludes our scientific debrief,
+and I'd like to thank the crew for giving their time up to come on over
+to give us some information and also learn some things of what happened.
+Okay.
+Let me say something for the crew.
+I want to commend Ken for the way that he operated the sim bay.
+I don't think you'll ever find a guy who's either more interested in it
+or more aware of what the operational problems were
+and who could do a better job.
+He really did an outstanding job, and I think he's well done.
+The other thing I'd like to say is since I've been on this program,
+I've been continually impressed with the importance of what we're doing
+in our support of you guys.
+These experiments, they look way out right now,
+and they're difficult for the man in the street to relate to,
+but my feeling is from some of the things I've seen here
+and from the thrust of science and technology in this country
+that in our lifetime, and I won't want to say when,
+but I imagine it's going to be a damn sight sooner than anybody even here in this room can imagine,
+there are going to be practical applications of some of these discoveries that have been made
+that will affect every one of us, and I think you're to be congratulated.
+The other thing is that I get out of all this that I think the United States ought to be spending
+two to three times the amount of money that we are spending on basic research and development
+and applied research and development,
+and I think that if you really look at the big picture of our energy requirements
+for clean energy in the future in order to improve the life of human beings on this planet,
+we ought to do that and get on with it.
+Thank you.
+During the next couple of months,
+we'll probably have an opportunity to talk to a lot of people
+that help to have some influence
+or shape the pattern of our program and related programs,
+and I would appreciate it very much.
+I'm sure we all could use the data.
+As you find out things, we realize that you have preliminary data today,
+and a lot of the things are only hints and suggestions of things to come.
+I would personally appreciate it very much
+if you'd give us a call periodically and tell us what you found.
+It's too easy for us to go through here
+and at the end of a week or so walk off
+and never really know what happened
+and never know what kind of data came out.
+And I think that makes us very poor salesmen.
+I think you could help us do the job
+to kind of feed back the quality of the data that you've been getting
+if you could keep us informed.
+Please don't ever feel like you're interfering with our operation
+or don't be inhibited to call us.
+If we can't come to the phone and take the data
+or talk to you about it,
+the secretary will take the number and we'll be glad to call you back.
+And if there's any time when you have some question about the data,
+it doesn't matter how trivial it may seem to you.
+If you want to look at some data
+and you're curious to know whether we've ever seen a particular observation
+or whether the spacecraft was moving at the time your data was taken
+or I don't care how far out it might seem to you,
+questions are pretty cheap
+and not asking questions can be very expensive.
+And so please feel like our job isn't finished
+until you guys have all the information you can use.
+And I would like for you to feel like you can call any time.
+Thank you very much.
+I'd like to say, give you my thanks also.
+I was very pleased with the way all the gear worked,
+especially my part on the lunar surface
+and the part I saw of Ken in orbit.
+It was just a real pleasure to have him placed all this stuff for all you people
+and glad it's working so well.
+And thanks for the opportunity of going.
+If you can gin up another one, I'll be glad to go along again.
+Thank you.
+Thank you.

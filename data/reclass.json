@@ -4,20 +4,20 @@
     "acquisition technology": "National Intelligence for Acquisition Technology and Facilities",
     "actually bob jacobs": "Bob Jacobs",
     "advanced aerospace threat identification program": "AATIP",
-    "advanced aerospace weapon system applications program": "AAWSAP",
     "aero medical": "Aero Medical Division",
     "aero medical center": "Army Air Forces Aero Medical Center",
     "after disclosure": "A.D. After Disclosure",
     "air force colonel roy": "Colonel Roy Jonkers",
     "air force office": "Air Force Office of Special Investigations",
+    "allen hynek": "J. Allen Hynek",
     "american establishment": "The Anglo-American Establishment",
     "american joseph mengele": "Joseph Mengele",
     "american world power": "Angle-American World Power",
-    "an associated press": "Associated Press",
     "anna paulina": "Congresswoman Anna Paulina Luna",
     "ant people": "Ant People of the Hopi",
     "applied sciences": "Monroe Institute of Applied Sciences",
     "ari ben": "Ari Ben-Minashe",
+    "army brigadier general arthur": "General Arthur Trudeau",
     "army test": "Army Test and Evaluation Command",
     "arrow historical report": "AARO Historical Report",
     "as baba vanga": "Baba Vanga",
@@ -34,14 +34,14 @@
     "bob exler": "Bob Oxler",
     "bob lazar muscovium": "Bob Lazar",
     "bob mueller": "Robert Mueller",
+    "bomb group": "509th Bomb Group Wing",
     "bomb group wing": "509th Bomb Group Wing",
-    "bomber wing": "509th Bomb Group Wing",
+    "brigadier general william": "Brigadier General William M. Garland",
     "bulgarian academy": "Bulgarian Academy of Sciences",
     "by gary nolan": "Gary Nolan",
     "byfield brown": "Byfield Brown Effect",
     "camp street": "544 Camp Street",
     "charles hall tall whites": "Charles Hall",
-    "chris bledsoe all": "Chris Bledsoe",
     "chris bledsoe copyright": "Chris Bledsoe",
     "civilized society": "Towards a Psycho-Civilized Society",
     "coast guard": "United States Coast Guard",
@@ -53,6 +53,7 @@
     "consciousness department it": "Consciousness",
     "dates_times:november-24-95": "April 1995",
     "dave grush": "Dave Grusch",
+    "david gresh": "Dave Grusch",
     "defense intelligence agency": "U.S. Defense Intelligence Agency",
     "diana pasolka": "Diana Pasulka",
     "document_names:arrow-historical-report": "AARO Historical Report",
@@ -65,13 +66,15 @@
     "enter major donald kehoe": "Major Donald Kehoe",
     "except john olson lear": "John Olson Lear",
     "experiencers:ant-people": "Ant People of the Hopi",
-    "experiencers:bomber-wing": "509th Bomb Group Wing",
     "experiencers:common-telescopes": "Celestial Objects for Common Telescopes",
     "experiencers:diana-pasolka": "Diana Pasulka",
     "experiencers:had-lazar": "Bob Lazar",
     "experiencers:natural-history": "American Museum of Natural History",
     "experiencers:ross-goldhart": "Ross Coulthart",
     "experiencers:s-house": "U.S. House of Representatives",
+    "experiencers:skinwalker-ranc": "Skinwalker Ranch",
+    "experiencers:skinwalker-ranch-in": "Skinwalker Ranch",
+    "experiencers:skinwalker-ranch-many": "Skinwalker Ranch",
     "federal republic": "Federal Republic of Germany",
     "for lockheed": "Lockheed Martin",
     "for skinwalker": "Skinwalker Ranch",
@@ -81,13 +84,14 @@
     "friendly_people:public-standards": "Bureau of Public Standards",
     "friendly_people:scientific-revolutions": "Structure of Scientific Revolutions",
     "friendly_people:second-empire": "The Spider's Web, Britain's Second Empire",
+    "friendly_people:skinwalker-ranch-database": "Skinwalker Ranch",
     "friendly_people:weimar-germany": "Weimar, Germany",
     "from june": "June 2009 - May 2011",
     "george h": "George H.W. Bush",
     "george h w bush": "President George H.W. Bush",
+    "george knapp all": "George Knapp",
     "german experimental station": "German Experimental Station for Aviation Medicine",
     "german experimental station for aviation medicin": "German Experimental Station for Aviation Medicine",
-    "government_agencies:advanced-aerospace-weapon-system-applications-program": "AAWSAP",
     "government_agencies:air-force-office": "Air Force Office of Special Investigations",
     "government_agencies:army-test": "Army Test and Evaluation Command",
     "government_agencies:based-laser-project-office": "Space-Based Laser Project Office",
@@ -137,6 +141,7 @@
     "john olson lear": "John Lear",
     "journalists:special-investigations": "U.S. Air Force Office of Special Investigations",
     "just papoose lake": "Papoose Lake",
+    "kenneth keating": "Senator Kenneth Keating",
     "lake titicaca leaving la": "Lake Titicaca",
     "larry nolan": "Gary Nolan",
     "lee harvey oz": "Lee Harvey Oswald",
@@ -144,16 +149,15 @@
     "like curtis": "Curtis LeMay",
     "like kash patel": "Kash Patel",
     "likely_spies:bomb-group-wing": "509th Bomb Group Wing",
-    "likely_spies:colonel-corso": "Colonel Philip J. Corso",
     "likely_spies:montrose-search": "Montrose Search and Rescue",
-    "likely_spies:north-las-vegas": "Las Vegas",
     "likely_spies:on-march": "March 24th, 1967",
     "likely_spies:under-operation-paperclip": "Operation Paperclip",
     "linville gorge": "Linville Gorge Overlook",
     "little st": "Little St. James",
     "locations:russian-federation": "Russia",
     "lockheed martin corporation": "Lockheed Martin",
-    "los alamos national": "Los Alamos National Laboratories",
+    "los alamos national": "Los Alamos National Labs",
+    "m garland": "Brigadier General William M. Garland",
     "marine corps": "United States Marine Corps",
     "medical research": "Kaiser Wilhelm Institute for Medical Research",
     "military_bases:wright-patterson-air-force-base": "Wright-Patterson Air Force Base",
@@ -163,8 +167,6 @@
     "national academy": "National Academy of Sciences National Academy of Sciences",
     "national reconnaissance": "National Reconnaissance Office",
     "natural history": "American Museum of Natural History",
-    "newsrooms:an-associated-press": "Associated Press",
-    "north las vegas": "Las Vegas",
     "november 24 95": "April 1995",
     "on december": "December 20, 2025",
     "on march": "March 24th, 1967",
@@ -198,10 +200,10 @@
     "people:byfield-brown": "Byfield Brown Effect",
     "people:camp-street": "544 Camp Street",
     "people:charles-hall-tall-whites": "Charles Hall",
-    "people:chris-bledsoe-all": "Chris Bledsoe",
     "people:chris-bledsoe-copyright": "Chris Bledsoe",
     "people:civilized-society": "Towards a Psycho-Civilized Society",
     "people:dave-grush": "Dave Grusch",
+    "people:david-gresh": "Dave Grusch",
     "people:dr-hal-puthoff-davis": "Harold Puthoff",
     "people:dragon-dracs": "Draconians",
     "people:eagle-works": "NASA Eagle Works",
@@ -216,6 +218,7 @@
     "people:french-academy": "French Academy of Science",
     "people:from-june": "June 2009 - May 2011",
     "people:george-h": "President George H.W. Bush",
+    "people:george-knapp-all": "George Knapp",
     "people:guinness-book": "Guinness Book of World Records",
     "people:hal-poppenmeyer": "Hal Povenmire",
     "people:hare-airport": "Chicago O'Hare Airport",
@@ -251,12 +254,11 @@
     "people:like-kash-patel": "Kash Patel",
     "people:linville-gorge": "Linville Gorge Overlook",
     "people:little-st": "Little St. James",
-    "people:los-alamos-national": "Los Alamos National Laboratories",
+    "people:los-alamos-national": "Los Alamos National Labs",
     "people:mount-waterman": "Waterman Mountain",
     "people:national-academies": "National Academy of Sciences National Academy of Sciences",
     "people:national-reconnaissance": "National Reconnaissance Office",
     "people:natural-history": "American Museum of Natural History",
-    "people:north-las-vegas": "Las Vegas",
     "people:on-december": "December 20, 2025",
     "people:on-may": "May 8, 2026",
     "people:on-monday": "December 15",
@@ -274,6 +276,7 @@
     "people:rick-doty": "Richard Doti",
     "people:rockefeller-commission": "Rockefeller Commission Report",
     "people:secret-machines": "Sekret Machines",
+    "people:skinwalker-ranch": "Skinwalker Ranch",
     "people:skinwalker-ranch-research-for": "Skinwalker Ranch",
     "people:so-brent": "Brent Friedman",
     "people:so-gordon-liddy": "G. Gordon Liddy",
@@ -287,6 +290,7 @@
     "people:then-donald": "Donald DeFreeze",
     "people:to-chris-jr": "Chris Bledsoe Jr",
     "people:was-snyder": "Freddy Snyder",
+    "people:what-is-skinwalker-ranch": "Skinwalker Ranch",
     "people:when-september": "September 11, 2001",
     "people:wild-pendulum": "Stalking the Wild Pendulum",
     "people:with-tom": "Tom DeLonge",
@@ -295,16 +299,23 @@
     "people:zahi-owas": "Zahi Hawass",
     "persinger god": "Persinger God Helmet",
     "plasma science": "Plasma Science and Fusion Center",
+    "politicians:army-brigadier-general-arthur": "General Arthur Trudeau",
     "politicians:bill-clinton": "President Bill Clinton",
-    "politicians:strom-thurmond": "Senator Strom Thurmond",
+    "politicians:bomb-group": "509th Bomb Group Wing",
+    "politicians:kenneth-keating": "Senator Kenneth Keating",
+    "politicians:senator-strom-thurmond-all": "Senator Strom Thurmond",
     "pope pius": "Pope",
     "president kirsan": "President Kirsan Ilyamzinov",
     "president obama": "President Barack Obama",
     "professors:aero-medical": "Aero Medical Division",
+    "professors:allen-hynek": "J. Allen Hynek",
     "professors:atmospheric-physics": "Institute of Atmospheric Physics",
+    "professors:brigadier-general-william": "Brigadier General William M. Garland",
+    "professors:colonel-corso": "Colonel Philip J. Corso",
     "professors:german-experimental-station": "German Experimental Station for Aviation Medicine",
     "professors:house-science": "House Science and Astronautics Committee",
     "professors:in-california": "California",
+    "professors:m-garland": "Brigadier General William M. Garland",
     "professors:medical-research": "Kaiser Wilhelm Institute for Medical Research",
     "professors:space-science": "Stanford's Center for Space Science and Astrophysics",
     "public standards": "Bureau of Public Standards",
@@ -325,6 +336,12 @@
     "scientific revolutions": "Structure of Scientific Revolutions",
     "second empire": "The Spider's Web, Britain's Second Empire",
     "secret machines": "Sekret Machines",
+    "senator strom thurmond all": "Senator Strom Thurmond",
+    "skinwalker ranc": "Skinwalker Ranch",
+    "skinwalker ranch": "Skinwalker Ranch",
+    "skinwalker ranch database": "Skinwalker Ranch",
+    "skinwalker ranch in": "Skinwalker Ranch",
+    "skinwalker ranch many": "Skinwalker Ranch",
     "skinwalker ranch research for": "Skinwalker Ranch",
     "so brent": "Brent Friedman",
     "so gordon liddy": "G. Gordon Liddy",
@@ -335,7 +352,6 @@
     "special investigations": "U.S. Air Force Office of Special Investigations",
     "special programs": "Pentagon Special Programs",
     "special projects": "EG&G Special Projects",
-    "strom thurmond": "Senator Strom Thurmond",
     "technology group": "Trump Media and Technology Group",
     "test wing": "Edwards 412th Test Wing",
     "then donald": "Donald DeFreeze",
@@ -350,6 +366,7 @@
     "websites:7-integrative": "Integrative Research Department",
     "websites:dora-rosenbaum": "Dora",
     "weimar germany": "Weimar, Germany",
+    "what is skinwalker ranch": "Skinwalker Ranch",
     "when september": "September 11, 2001",
     "whistleblowers:ari-ben": "Ari Ben-Minashe",
     "wild pendulum": "Stalking the Wild Pendulum",
@@ -1066,7 +1083,7 @@
       "name": "zbiotics.com"
     }
   },
-  "generatedAt": "2026-06-28T18:12:47.306Z",
+  "generatedAt": "2026-06-28T18:59:35.612Z",
   "manualRelationships": {
     "alien_species:orion-empire--star_systems:orion": {
       "sourceCategory": "alien_species",
@@ -1075,6 +1092,30 @@
       "targetCategory": "star_systems",
       "targetId": "star_systems:orion",
       "targetName": "Orion"
+    },
+    "authors:annie-jacobson--government_project_codenames:operation-paperclip": {
+      "sourceCategory": "authors",
+      "sourceId": "authors:annie-jacobson",
+      "sourceName": "Annie Jacobson",
+      "targetCategory": "government_project_codenames",
+      "targetId": "government_project_codenames:operation-paperclip",
+      "targetName": "Operation Paperclip"
+    },
+    "books:weaponized--people:george-knapp-all": {
+      "sourceCategory": "books",
+      "sourceId": "books:weaponized",
+      "sourceName": "Weaponized",
+      "targetCategory": "journalists",
+      "targetId": "people:george-knapp-all",
+      "targetName": "George Knapp"
+    },
+    "books:weaponized--people:jeremy-corbell": {
+      "sourceCategory": "books",
+      "sourceId": "books:weaponized",
+      "sourceName": "Weaponized",
+      "targetCategory": "people",
+      "targetId": "people:jeremy-corbell",
+      "targetName": "Jeremy Corbell"
     },
     "companies:lockheed-martin-corporation--contractors:lockheed-skunkworks": {
       "sourceCategory": "companies",
@@ -1163,6 +1204,14 @@
       "targetCategory": "professors",
       "targetId": "professors:close-encounter",
       "targetName": "Close Encounter"
+    },
+    "experiencers:dave-grusch--politicians:dave-grusch": {
+      "sourceCategory": "experiencers",
+      "sourceId": "experiencers:dave-grusch",
+      "sourceName": "Dave Grusch",
+      "targetCategory": "politicians",
+      "targetId": "politicians:dave-grusch",
+      "targetName": "Dave Grusch"
     },
     "experiencers:las-vegas--people:las-vegas-strip": {
       "sourceCategory": "experiencers",
@@ -1292,6 +1341,14 @@
       "targetId": "professors:robert-monroe",
       "targetName": "Robert Monroe"
     },
+    "journalists:george-knapp--people:jeremy-corbell": {
+      "sourceCategory": "journalists",
+      "sourceId": "journalists:george-knapp",
+      "sourceName": "George Knapp",
+      "targetCategory": "people",
+      "targetId": "people:jeremy-corbell",
+      "targetName": "Jeremy Corbell"
+    },
     "journalists:harry-reid--politicians:harry-reid": {
       "sourceCategory": "journalists",
       "sourceId": "journalists:harry-reid",
@@ -1299,6 +1356,14 @@
       "targetCategory": "politicians",
       "targetId": "politicians:harry-reid",
       "targetName": "Harry Reid"
+    },
+    "journalists:leslie-kean--newsrooms:the-new-york-times": {
+      "sourceCategory": "journalists",
+      "sourceId": "journalists:leslie-kean",
+      "sourceName": "Leslie Kean",
+      "targetCategory": "newsrooms",
+      "targetId": "newsrooms:the-new-york-times",
+      "targetName": "the new york times"
     },
     "journalists:operation-paperclip--politicians:operation-paperclip": {
       "sourceCategory": "journalists",
@@ -1371,6 +1436,22 @@
       "targetCategory": "people",
       "targetId": "people:chris-bledsoe-copyright",
       "targetName": "Chris Bledsoe"
+    },
+    "locations:skinwalker-ranch--locations:uinta-basin": {
+      "sourceCategory": "locations",
+      "sourceId": "locations:skinwalker-ranch",
+      "sourceName": "Skinwalker Ranch",
+      "targetCategory": "locations",
+      "targetId": "locations:uinta-basin",
+      "targetName": "Uinta Basin"
+    },
+    "locations:uinta-basin--locations:utah": {
+      "sourceCategory": "locations",
+      "sourceId": "locations:uinta-basin",
+      "sourceName": "Uinta Basin",
+      "targetCategory": "locations",
+      "targetId": "locations:utah",
+      "targetName": "Utah"
     },
     "locations:weimar-germany--people:in-germany": {
       "sourceCategory": "locations",
@@ -1774,6 +1855,14 @@
       "targetId": "friendly_people:peter-lavenda",
       "targetName": "Peter Lavenda"
     },
+    "dangerous_people:president-clinton": {
+      "sourceCategory": "dangerous_people",
+      "sourceId": "dangerous_people:president-clinton",
+      "sourceName": "President Clinton",
+      "targetCategory": "people",
+      "targetId": "people:president-clinton",
+      "targetName": "President Clinton"
+    },
     "dangerous_people:robert-f-kennedy": {
       "sourceCategory": "politicians",
       "sourceId": "dangerous_people:robert-f-kennedy",
@@ -2014,6 +2103,14 @@
       "targetId": "people:dan-sherman",
       "targetName": "Dan Sherman"
     },
+    "experiencers:dave-grusch": {
+      "sourceCategory": "experiencers",
+      "sourceId": "experiencers:dave-grusch",
+      "sourceName": "Dave Grusch",
+      "targetCategory": "whistleblowers",
+      "targetId": "whistleblowers:dave-grusch",
+      "targetName": "Dave Grusch"
+    },
     "experiencers:diana-pasolka": {
       "sourceCategory": "experiencers",
       "sourceId": "experiencers:diana-pasolka",
@@ -2077,6 +2174,14 @@
       "targetCategory": "people",
       "targetId": "people:gary-nolan",
       "targetName": "Gary Nolan"
+    },
+    "experiencers:general-twining": {
+      "sourceCategory": "experiencers",
+      "sourceId": "experiencers:general-twining",
+      "sourceName": "General Twining",
+      "targetCategory": "likely_spies",
+      "targetId": "likely_spies:general-twining",
+      "targetName": "General Twining"
     },
     "experiencers:groom-lake-road": {
       "sourceCategory": "experiencers",
@@ -2234,25 +2339,25 @@
       "sourceCategory": "experiencers",
       "sourceId": "experiencers:skinwalker-ranc",
       "sourceName": "Skinwalker Ranc",
-      "targetCategory": "experiencers",
-      "targetId": "experiencers:skinwalker-ranch-in",
-      "targetName": "Skinwalker Ranch In"
+      "targetCategory": "locations",
+      "targetId": "locations:skinwalker-ranch",
+      "targetName": "Skinwalker Ranch"
     },
     "experiencers:skinwalker-ranch-in": {
       "sourceCategory": "experiencers",
       "sourceId": "experiencers:skinwalker-ranch-in",
       "sourceName": "Skinwalker Ranch In",
-      "targetCategory": "experiencers",
-      "targetId": "experiencers:skinwalker-ranch-many",
-      "targetName": "Skinwalker Ranch Many"
+      "targetCategory": "locations",
+      "targetId": "locations:skinwalker-ranch",
+      "targetName": "Skinwalker Ranch"
     },
     "experiencers:skinwalker-ranch-many": {
       "sourceCategory": "experiencers",
       "sourceId": "experiencers:skinwalker-ranch-many",
       "sourceName": "Skinwalker Ranch Many",
-      "targetCategory": "people",
-      "targetId": "people:skinwalker-ranch-research-for",
-      "targetName": "Skinwalker Ranch Research For"
+      "targetCategory": "locations",
+      "targetId": "locations:skinwalker-ranch",
+      "targetName": "Skinwalker Ranch"
     },
     "experiencers:so-bigelow": {
       "sourceCategory": "experiencers",
@@ -2614,6 +2719,14 @@
       "targetId": "people:general-trudeau",
       "targetName": "General Trudeau"
     },
+    "friendly_people:general-twining": {
+      "sourceCategory": "friendly_people",
+      "sourceId": "friendly_people:general-twining",
+      "sourceName": "General Twining",
+      "targetCategory": "professors",
+      "targetId": "professors:general-twining",
+      "targetName": "General Twining"
+    },
     "friendly_people:glenn-gaffney": {
       "sourceCategory": "friendly_people",
       "sourceId": "friendly_people:glenn-gaffney",
@@ -2894,6 +3007,14 @@
       "targetId": "people:peru",
       "targetName": "Peru"
     },
+    "friendly_people:president-clinton": {
+      "sourceCategory": "friendly_people",
+      "sourceId": "friendly_people:president-clinton",
+      "sourceName": "President Clinton",
+      "targetCategory": "dangerous_people",
+      "targetId": "dangerous_people:president-clinton",
+      "targetName": "President Clinton"
+    },
     "friendly_people:president-kennedy": {
       "sourceCategory": "friendly_people",
       "sourceId": "friendly_people:president-kennedy",
@@ -2909,6 +3030,14 @@
       "targetCategory": "people",
       "targetId": "people:under-trump",
       "targetName": "Under Trump"
+    },
+    "friendly_people:project-horizon": {
+      "sourceCategory": "government_project_codenames",
+      "sourceId": "friendly_people:project-horizon",
+      "sourceName": "Project Horizon",
+      "targetCategory": "people",
+      "targetId": "people:project-horizon",
+      "targetName": "Project Horizon"
     },
     "friendly_people:puma-punku": {
       "sourceCategory": "locations",
@@ -2986,9 +3115,9 @@
       "sourceCategory": "friendly_people",
       "sourceId": "friendly_people:skinwalker-ranch-database",
       "sourceName": "Skinwalker Ranch Database",
-      "targetCategory": "experiencers",
-      "targetId": "experiencers:skinwalker-ranc",
-      "targetName": "Skinwalker Ranc"
+      "targetCategory": "locations",
+      "targetId": "locations:skinwalker-ranch",
+      "targetName": "Skinwalker Ranch"
     },
     "friendly_people:so-charles-hall": {
       "sourceCategory": "friendly_people",
@@ -3422,6 +3551,14 @@
       "targetId": "politicians:dr-eric-davis",
       "targetName": "Dr Eric Davis"
     },
+    "journalists:george-knapp": {
+      "sourceCategory": "journalists",
+      "sourceId": "journalists:george-knapp",
+      "sourceName": "George Knapp",
+      "targetCategory": "journalists",
+      "targetId": "journalists:journalist-george-knapp",
+      "targetName": "Journalist George Knapp"
+    },
     "journalists:harry-reid": {
       "sourceCategory": "politicians",
       "sourceId": "journalists:harry-reid",
@@ -3446,6 +3583,14 @@
       "targetId": "whistleblowers:jeremy-corbell",
       "targetName": "Jeremy Corbell"
     },
+    "journalists:journalist-george-knapp": {
+      "sourceCategory": "journalists",
+      "sourceId": "journalists:journalist-george-knapp",
+      "sourceName": "Journalist George Knapp",
+      "targetCategory": "journalists",
+      "targetId": "journalists:reporter-george-knapp",
+      "targetName": "Reporter George Knapp"
+    },
     "journalists:journalist-ross-colthart": {
       "sourceCategory": "journalists",
       "sourceId": "journalists:journalist-ross-colthart",
@@ -3461,6 +3606,14 @@
       "targetCategory": "friendly_people",
       "targetId": "friendly_people:kenneth-arnold",
       "targetName": "Kenneth Arnold"
+    },
+    "journalists:leslie-kean": {
+      "sourceCategory": "journalists",
+      "sourceId": "journalists:leslie-kean",
+      "sourceName": "Leslie Kean",
+      "targetCategory": "whistleblowers",
+      "targetId": "whistleblowers:leslie-kean",
+      "targetName": "Leslie Kean"
     },
     "journalists:marshall-islands": {
       "sourceCategory": "locations",
@@ -3478,6 +3631,14 @@
       "targetId": "people:top-secret-operation-paperclip",
       "targetName": "Top Secret Operation Paperclip"
     },
+    "journalists:president-clinton": {
+      "sourceCategory": "journalists",
+      "sourceId": "journalists:president-clinton",
+      "sourceName": "President Clinton",
+      "targetCategory": "friendly_people",
+      "targetId": "friendly_people:president-clinton",
+      "targetName": "President Clinton"
+    },
     "journalists:project-blue-book": {
       "sourceCategory": "journalists",
       "sourceId": "journalists:project-blue-book",
@@ -3485,6 +3646,14 @@
       "targetCategory": "government_project_codenames",
       "targetId": "government_project_codenames:project-blue-book",
       "targetName": "project blue book"
+    },
+    "journalists:reporter-george-knapp": {
+      "sourceCategory": "journalists",
+      "sourceId": "journalists:reporter-george-knapp",
+      "sourceName": "Reporter George Knapp",
+      "targetCategory": "people",
+      "targetId": "people:george-knapp-all",
+      "targetName": "George Knapp All"
     },
     "journalists:ross-coldhart": {
       "sourceCategory": "journalists",
@@ -3622,6 +3791,14 @@
       "targetId": "dangerous_people:general-trudeau",
       "targetName": "General Trudeau"
     },
+    "likely_spies:general-twining": {
+      "sourceCategory": "likely_spies",
+      "sourceId": "likely_spies:general-twining",
+      "sourceName": "General Twining",
+      "targetCategory": "politicians",
+      "targetId": "politicians:general-twining",
+      "targetName": "General Twining"
+    },
     "likely_spies:grand-central-station": {
       "sourceCategory": "locations",
       "sourceId": "likely_spies:grand-central-station",
@@ -3693,6 +3870,14 @@
       "targetCategory": "people",
       "targetId": "people:pat-price",
       "targetName": "Pat Price"
+    },
+    "likely_spies:project-horizon": {
+      "sourceCategory": "likely_spies",
+      "sourceId": "likely_spies:project-horizon",
+      "sourceName": "Project Horizon",
+      "targetCategory": "professors",
+      "targetId": "professors:project-horizon",
+      "targetName": "Project Horizon"
     },
     "likely_spies:sergeant-sherman": {
       "sourceCategory": "likely_spies",
@@ -3797,14 +3982,6 @@
       "targetCategory": "locations",
       "targetId": "friendly_people:russian-federation",
       "targetName": "Russian Federation"
-    },
-    "locations:skinwalker-ranch": {
-      "sourceCategory": "locations",
-      "sourceId": "locations:skinwalker-ranch",
-      "sourceName": "Skinwalker Ranch",
-      "targetCategory": "people",
-      "targetId": "people:what-is-skinwalker-ranch",
-      "targetName": "What Is Skinwalker Ranch"
     },
     "materials:aluminum": {
       "sourceCategory": "materials",
@@ -4157,6 +4334,14 @@
       "targetCategory": "friendly_people",
       "targetId": "friendly_people:arthur-trudeau",
       "targetName": "Arthur Trudeau"
+    },
+    "people:astronomer-j-allen-hynek": {
+      "sourceCategory": "people",
+      "sourceId": "people:astronomer-j-allen-hynek",
+      "sourceName": "Astronomer J. Allen Hynek",
+      "targetCategory": "professors",
+      "targetId": "professors:j-allen",
+      "targetName": "J. Allen"
     },
     "people:at-randolph": {
       "sourceCategory": "people",
@@ -4686,6 +4871,22 @@
       "targetId": "tv_shows:dark-skies",
       "targetName": "Dark Skies"
     },
+    "people:dave-gresh": {
+      "sourceCategory": "people",
+      "sourceId": "people:dave-gresh",
+      "sourceName": "Dave Gresh",
+      "targetCategory": "people",
+      "targetId": "people:david-gresh",
+      "targetName": "David Gresh"
+    },
+    "people:dave-grusch": {
+      "sourceCategory": "people",
+      "sourceId": "people:dave-grusch",
+      "sourceName": "Dave Grusch",
+      "targetCategory": "politicians",
+      "targetId": "politicians:dave-grusch",
+      "targetName": "Dave Grusch"
+    },
     "people:david-spurgle": {
       "sourceCategory": "people",
       "sourceId": "people:david-spurgle",
@@ -5022,6 +5223,14 @@
       "targetId": "friendly_people:gary-nolan",
       "targetName": "Gary Nolan"
     },
+    "people:general-arthur-trudeau": {
+      "sourceCategory": "people",
+      "sourceId": "people:general-arthur-trudeau",
+      "sourceName": "General Arthur Trudeau",
+      "targetCategory": "politicians",
+      "targetId": "politicians:air-force-general-arthur",
+      "targetName": "Air Force General Arthur"
+    },
     "people:general-clapper": {
       "sourceCategory": "people",
       "sourceId": "people:general-clapper",
@@ -5037,6 +5246,14 @@
       "targetCategory": "professors",
       "targetId": "professors:general-trudeau",
       "targetName": "General Trudeau"
+    },
+    "people:general-twining": {
+      "sourceCategory": "people",
+      "sourceId": "people:general-twining",
+      "sourceName": "General Twining",
+      "targetCategory": "friendly_people",
+      "targetId": "friendly_people:general-twining",
+      "targetName": "General Twining"
     },
     "people:george-adamski": {
       "sourceCategory": "people",
@@ -5437,6 +5654,14 @@
       "targetCategory": "people",
       "targetId": "people:like-kash-patel",
       "targetName": "Like Kash Patel"
+    },
+    "people:ken-keating": {
+      "sourceCategory": "people",
+      "sourceId": "people:ken-keating",
+      "sourceName": "Ken Keating",
+      "targetCategory": "politicians",
+      "targetId": "politicians:senator-keating",
+      "targetName": "Senator Keating"
     },
     "people:kenneth-arnell": {
       "sourceCategory": "people",
@@ -5966,6 +6191,14 @@
       "targetId": "people:george-w-bush",
       "targetName": "George W. Bush"
     },
+    "people:president-clinton": {
+      "sourceCategory": "people",
+      "sourceId": "people:president-clinton",
+      "sourceName": "President Clinton",
+      "targetCategory": "politicians",
+      "targetId": "politicians:president-clinton",
+      "targetName": "President Clinton"
+    },
     "people:president-kennedy": {
       "sourceCategory": "people",
       "sourceId": "people:president-kennedy",
@@ -5989,6 +6222,14 @@
       "targetCategory": "people",
       "targetId": "people:robert-bigelow",
       "targetName": "Robert Bigelow"
+    },
+    "people:project-horizon": {
+      "sourceCategory": "people",
+      "sourceId": "people:project-horizon",
+      "sourceName": "Project Horizon",
+      "targetCategory": "likely_spies",
+      "targetId": "likely_spies:project-horizon",
+      "targetName": "Project Horizon"
     },
     "people:project-preserve-destiny": {
       "sourceCategory": "people",
@@ -6197,6 +6438,14 @@
       "targetCategory": "friendly_people",
       "targetId": "friendly_people:sidney-gottlieb",
       "targetName": "Sidney Gottlieb"
+    },
+    "people:skinwalker-ranch-research-for": {
+      "sourceCategory": "people",
+      "sourceId": "people:skinwalker-ranch-research-for",
+      "sourceName": "Skinwalker Ranch Research For",
+      "targetCategory": "locations",
+      "targetId": "locations:skinwalker-ranch",
+      "targetName": "Skinwalker Ranch"
     },
     "people:skunk-works-lockheed": {
       "sourceCategory": "people",
@@ -6562,9 +6811,9 @@
       "sourceCategory": "people",
       "sourceId": "people:top-secret-operation-paperclip",
       "sourceName": "Top Secret Operation Paperclip",
-      "targetCategory": "professors",
-      "targetId": "professors:operation-papercl",
-      "targetName": "Operation Papercl"
+      "targetCategory": "government_project_codenames",
+      "targetId": "government_project_codenames:operation-paperclip",
+      "targetName": "Operation Paperclip"
     },
     "people:townsend-brown": {
       "sourceCategory": "people",
@@ -6698,9 +6947,9 @@
       "sourceCategory": "people",
       "sourceId": "people:what-is-skinwalker-ranch",
       "sourceName": "What Is Skinwalker Ranch",
-      "targetCategory": "friendly_people",
-      "targetId": "friendly_people:skinwalker-ranch-database",
-      "targetName": "Skinwalker Ranch Database"
+      "targetCategory": "locations",
+      "targetId": "locations:skinwalker-ranch",
+      "targetName": "Skinwalker Ranch"
     },
     "people:when-bob": {
       "sourceCategory": "people",
@@ -6918,6 +7167,14 @@
       "targetId": "professors:zora-ranch",
       "targetName": "Zora Ranch"
     },
+    "politicians:air-force-general-arthur": {
+      "sourceCategory": "politicians",
+      "sourceId": "politicians:air-force-general-arthur",
+      "sourceName": "Air Force General Arthur",
+      "targetCategory": "politicians",
+      "targetId": "politicians:army-brigadier-general-arthur",
+      "targetName": "Army Brigadier General Arthur"
+    },
     "politicians:alan-dulles": {
       "sourceCategory": "politicians",
       "sourceId": "politicians:alan-dulles",
@@ -7014,6 +7271,14 @@
       "targetId": "people:cosmic-agenda",
       "targetName": "Cosmic Agenda"
     },
+    "politicians:dave-grusch": {
+      "sourceCategory": "politicians",
+      "sourceId": "politicians:dave-grusch",
+      "sourceName": "Dave Grusch",
+      "targetCategory": "experiencers",
+      "targetId": "experiencers:dave-grusch",
+      "targetName": "Dave Grusch"
+    },
     "politicians:dr-eric-davis": {
       "sourceCategory": "politicians",
       "sourceId": "politicians:dr-eric-davis",
@@ -7038,6 +7303,14 @@
       "targetId": "likely_spies:in-arthur-trudeau",
       "targetName": "In Arthur Trudeau"
     },
+    "politicians:general-twining": {
+      "sourceCategory": "politicians",
+      "sourceId": "politicians:general-twining",
+      "sourceName": "General Twining",
+      "targetCategory": "people",
+      "targetId": "people:general-nathan-twining",
+      "targetName": "General Nathan Twining"
+    },
     "politicians:harry-reid": {
       "sourceCategory": "politicians",
       "sourceId": "politicians:harry-reid",
@@ -7045,6 +7318,14 @@
       "targetCategory": "journalists",
       "targetId": "journalists:harry-reid",
       "targetName": "Harry Reid"
+    },
+    "politicians:j-allen": {
+      "sourceCategory": "politicians",
+      "sourceId": "politicians:j-allen",
+      "sourceName": "J. Allen",
+      "targetCategory": "professors",
+      "targetId": "professors:allen-hynek",
+      "targetName": "Allen Hynek"
     },
     "politicians:j-allen-hynek": {
       "sourceCategory": "politicians",
@@ -7077,6 +7358,14 @@
       "targetCategory": "politicians",
       "targetId": "politicians:see-national-academy",
       "targetName": "See National Academy"
+    },
+    "politicians:national-investigations-committee": {
+      "sourceCategory": "politicians",
+      "sourceId": "politicians:national-investigations-committee",
+      "sourceName": "National Investigations Committee",
+      "targetCategory": "professors",
+      "targetId": "professors:national-investigations-committee",
+      "targetName": "National Investigations Committee"
     },
     "politicians:operation-paperclip": {
       "sourceCategory": "politicians",
@@ -7126,6 +7415,14 @@
       "targetId": "people:national-academies",
       "targetName": "National Academies"
     },
+    "politicians:senator-keating": {
+      "sourceCategory": "politicians",
+      "sourceId": "politicians:senator-keating",
+      "sourceName": "Senator Keating",
+      "targetCategory": "politicians",
+      "targetId": "politicians:kenneth-keating",
+      "targetName": "Kenneth Keating"
+    },
     "politicians:senator-reid": {
       "sourceCategory": "politicians",
       "sourceId": "politicians:senator-reid",
@@ -7166,6 +7463,14 @@
       "targetId": "politicians:while-senator-harry-reid",
       "targetName": "While Senator Harry Reid"
     },
+    "politicians:so-senator-keating": {
+      "sourceCategory": "politicians",
+      "sourceId": "politicians:so-senator-keating",
+      "sourceName": "So Senator Keating",
+      "targetCategory": "people",
+      "targetId": "people:ken-keating",
+      "targetName": "Ken Keating"
+    },
     "politicians:special-investigations": {
       "sourceCategory": "politicians",
       "sourceId": "politicians:special-investigations",
@@ -7186,7 +7491,7 @@
       "sourceCategory": "politicians",
       "sourceId": "politicians:warren-commission",
       "sourceName": "Warren Commission",
-      "targetCategory": "people",
+      "targetCategory": "government_project_codenames",
       "targetId": "people:warren-commission",
       "targetName": "Warren Commission"
     },
@@ -7301,6 +7606,14 @@
       "targetCategory": "people",
       "targetId": "people:or-oxler",
       "targetName": "Or Oxler"
+    },
+    "professors:brigadier-general-william": {
+      "sourceCategory": "professors",
+      "sourceId": "professors:brigadier-general-william",
+      "sourceName": "Brigadier General William M. Garland",
+      "targetCategory": "professors",
+      "targetId": "professors:m-garland",
+      "targetName": "M. Garland"
     },
     "professors:businessman-robert-bigelow": {
       "sourceCategory": "people",
@@ -7542,6 +7855,14 @@
       "targetId": "likely_spies:general-trudeau",
       "targetName": "General Trudeau"
     },
+    "professors:general-twining": {
+      "sourceCategory": "professors",
+      "sourceId": "professors:general-twining",
+      "sourceName": "General Twining",
+      "targetCategory": "experiencers",
+      "targetId": "experiencers:general-twining",
+      "targetName": "General Twining"
+    },
     "professors:german-experimental-station": {
       "sourceCategory": "locations",
       "sourceId": "professors:german-experimental-station",
@@ -7581,6 +7902,14 @@
       "targetCategory": "friendly_people",
       "targetId": "friendly_people:indian-head",
       "targetName": "Indian Head"
+    },
+    "professors:j-allen": {
+      "sourceCategory": "professors",
+      "sourceId": "professors:j-allen",
+      "sourceName": "J. Allen",
+      "targetCategory": "politicians",
+      "targetId": "politicians:j-allen",
+      "targetName": "J. Allen"
     },
     "professors:j-allen-hynek": {
       "sourceCategory": "professors",
@@ -7653,6 +7982,14 @@
       "targetCategory": "people",
       "targetId": "people:national-academy",
       "targetName": "National Academy"
+    },
+    "professors:national-investigations-committee": {
+      "sourceCategory": "professors",
+      "sourceId": "professors:national-investigations-committee",
+      "sourceName": "National Investigations Committee",
+      "targetCategory": "journalists",
+      "targetId": "journalists:national-investigations-committee",
+      "targetName": "National Investigations Committee"
     },
     "professors:natural-history": {
       "sourceCategory": "professors",
@@ -8022,6 +8359,14 @@
       "targetId": "people:when-bob-lazar",
       "targetName": "When Bob Lazar"
     },
+    "whistleblowers:dave-grusch": {
+      "sourceCategory": "whistleblowers",
+      "sourceId": "whistleblowers:dave-grusch",
+      "sourceName": "Dave Grusch",
+      "targetCategory": "people",
+      "targetId": "people:dave-gresh",
+      "targetName": "Dave Gresh"
+    },
     "whistleblowers:dave-grush": {
       "sourceCategory": "whistleblowers",
       "sourceId": "whistleblowers:dave-grush",
@@ -8336,6 +8681,14 @@
       "targetId": "people:curtis-lemay",
       "targetName": "Curtis LeMay"
     },
+    "air force general arthur": {
+      "sourceCategory": "politicians",
+      "sourceId": "politicians:air-force-general-arthur",
+      "sourceName": "Air Force General Arthur",
+      "targetCategory": "politicians",
+      "targetId": "politicians:army-brigadier-general-arthur",
+      "targetName": "Army Brigadier General Arthur"
+    },
     "air force intelligence": {
       "sourceCategory": "government_agencies",
       "sourceId": "government_agencies:air-force-intelligence",
@@ -8599,6 +8952,14 @@
       "targetCategory": "newsrooms",
       "targetId": "newsrooms:an-associated-press",
       "targetName": "An Associated Press"
+    },
+    "astronomer j allen hynek": {
+      "sourceCategory": "people",
+      "sourceId": "people:astronomer-j-allen-hynek",
+      "sourceName": "Astronomer J. Allen Hynek",
+      "targetCategory": "professors",
+      "targetId": "professors:j-allen",
+      "targetName": "J. Allen"
     },
     "at congress": {
       "sourceCategory": "politicians",
@@ -8927,6 +9288,14 @@
       "targetCategory": "people",
       "targetId": "people:both-brent",
       "targetName": "Both Brent"
+    },
+    "brigadier general william m garland": {
+      "sourceCategory": "professors",
+      "sourceId": "professors:brigadier-general-william",
+      "sourceName": "Brigadier General William M. Garland",
+      "targetCategory": "professors",
+      "targetId": "professors:m-garland",
+      "targetName": "M. Garland"
     },
     "brook park": {
       "sourceCategory": "locations",
@@ -9399,6 +9768,22 @@
       "targetCategory": "tv_shows",
       "targetId": "tv_shows:dark-skies",
       "targetName": "Dark Skies"
+    },
+    "dave gresh": {
+      "sourceCategory": "people",
+      "sourceId": "people:dave-gresh",
+      "sourceName": "Dave Gresh",
+      "targetCategory": "people",
+      "targetId": "people:david-gresh",
+      "targetName": "David Gresh"
+    },
+    "dave grusch": {
+      "sourceCategory": "whistleblowers",
+      "sourceId": "whistleblowers:dave-grusch",
+      "sourceName": "Dave Grusch",
+      "targetCategory": "people",
+      "targetId": "people:dave-gresh",
+      "targetName": "Dave Gresh"
     },
     "dave grush": {
       "sourceCategory": "whistleblowers",
@@ -9929,12 +10314,12 @@
       "targetName": "Larry Nolan"
     },
     "general arthur trudeau": {
-      "sourceCategory": "dangerous_people",
-      "sourceId": "dangerous_people:general-arthur-trudeau",
+      "sourceCategory": "people",
+      "sourceId": "people:general-arthur-trudeau",
       "sourceName": "General Arthur Trudeau",
-      "targetCategory": "people",
-      "targetId": "people:general-arthur-trudeau",
-      "targetName": "General Arthur Trudeau"
+      "targetCategory": "politicians",
+      "targetId": "politicians:air-force-general-arthur",
+      "targetName": "Air Force General Arthur"
     },
     "general clapper": {
       "sourceCategory": "people",
@@ -9952,6 +10337,14 @@
       "targetId": "likely_spies:in-arthur-trudeau",
       "targetName": "In Arthur Trudeau"
     },
+    "general twining": {
+      "sourceCategory": "politicians",
+      "sourceId": "politicians:general-twining",
+      "sourceName": "General Twining",
+      "targetCategory": "people",
+      "targetId": "people:general-nathan-twining",
+      "targetName": "General Nathan Twining"
+    },
     "george adamski": {
       "sourceCategory": "people",
       "sourceId": "people:george-adamski",
@@ -9967,6 +10360,14 @@
       "targetCategory": "politicians",
       "targetId": "people:george-h",
       "targetName": "George H.W. Bush"
+    },
+    "george knapp": {
+      "sourceCategory": "journalists",
+      "sourceId": "journalists:george-knapp",
+      "sourceName": "George Knapp",
+      "targetCategory": "journalists",
+      "targetId": "journalists:journalist-george-knapp",
+      "targetName": "Journalist George Knapp"
     },
     "george w bush": {
       "sourceCategory": "people",
@@ -10304,6 +10705,14 @@
       "targetId": "people:israeli-puharich",
       "targetName": "Israeli Puharich"
     },
+    "j allen": {
+      "sourceCategory": "politicians",
+      "sourceId": "politicians:j-allen",
+      "sourceName": "J. Allen",
+      "targetCategory": "professors",
+      "targetId": "professors:allen-hynek",
+      "targetName": "Allen Hynek"
+    },
     "j allen hynek": {
       "sourceCategory": "people",
       "sourceId": "people:j-allen-hynek",
@@ -10512,6 +10921,14 @@
       "targetId": "people:joseph-p-farrell",
       "targetName": "Joseph P. Farrell"
     },
+    "journalist george knapp": {
+      "sourceCategory": "journalists",
+      "sourceId": "journalists:journalist-george-knapp",
+      "sourceName": "Journalist George Knapp",
+      "targetCategory": "journalists",
+      "targetId": "journalists:reporter-george-knapp",
+      "targetName": "Reporter George Knapp"
+    },
     "journalist ross colthart": {
       "sourceCategory": "journalists",
       "sourceId": "journalists:journalist-ross-colthart",
@@ -10527,6 +10944,14 @@
       "targetCategory": "people",
       "targetId": "people:like-kash-patel",
       "targetName": "Like Kash Patel"
+    },
+    "ken keating": {
+      "sourceCategory": "people",
+      "sourceId": "people:ken-keating",
+      "sourceName": "Ken Keating",
+      "targetCategory": "politicians",
+      "targetId": "politicians:senator-keating",
+      "targetName": "Senator Keating"
     },
     "kenneth arnell": {
       "sourceCategory": "journalists",
@@ -10655,6 +11080,14 @@
       "targetCategory": "people",
       "targetId": "people:leslie-keane",
       "targetName": "Leslie Keane"
+    },
+    "leslie kean": {
+      "sourceCategory": "journalists",
+      "sourceId": "journalists:leslie-kean",
+      "sourceName": "Leslie Kean",
+      "targetCategory": "whistleblowers",
+      "targetId": "whistleblowers:leslie-kean",
+      "targetName": "Leslie Kean"
     },
     "lieutenant general trudeau": {
       "sourceCategory": "politicians",
@@ -11080,6 +11513,14 @@
       "targetId": "government_agencies:odni",
       "targetName": "ODNI"
     },
+    "national investigations committee": {
+      "sourceCategory": "professors",
+      "sourceId": "professors:national-investigations-committee",
+      "sourceName": "National Investigations Committee",
+      "targetCategory": "journalists",
+      "targetId": "journalists:national-investigations-committee",
+      "targetName": "National Investigations Committee"
+    },
     "national reconnaissance": {
       "sourceCategory": "government_agencies",
       "sourceId": "government_agencies:national-reconnaissance",
@@ -11480,6 +11921,14 @@
       "targetId": "people:george-w-bush",
       "targetName": "George W. Bush"
     },
+    "president clinton": {
+      "sourceCategory": "people",
+      "sourceId": "people:president-clinton",
+      "sourceName": "President Clinton",
+      "targetCategory": "politicians",
+      "targetId": "politicians:president-clinton",
+      "targetName": "President Clinton"
+    },
     "president kennedy": {
       "sourceCategory": "professors",
       "sourceId": "professors:president-kennedy",
@@ -11511,6 +11960,14 @@
       "targetCategory": "government_project_codenames",
       "targetId": "government_project_codenames:project-blue-book",
       "targetName": "project blue book"
+    },
+    "project horizon": {
+      "sourceCategory": "likely_spies",
+      "sourceId": "likely_spies:project-horizon",
+      "sourceName": "Project Horizon",
+      "targetCategory": "professors",
+      "targetId": "professors:project-horizon",
+      "targetName": "Project Horizon"
     },
     "project preserve destiny": {
       "sourceCategory": "people",
@@ -11583,6 +12040,14 @@
       "targetCategory": "professors",
       "targetId": "professors:eric-weinstein",
       "targetName": "Eric Weinstein"
+    },
+    "reporter george knapp": {
+      "sourceCategory": "journalists",
+      "sourceId": "journalists:reporter-george-knapp",
+      "sourceName": "Reporter George Knapp",
+      "targetCategory": "people",
+      "targetId": "people:george-knapp-all",
+      "targetName": "George Knapp All"
     },
     "researcher ashton forbes": {
       "sourceCategory": "whistleblowers",
@@ -11920,6 +12385,14 @@
       "targetId": "people:national-academies",
       "targetName": "National Academies"
     },
+    "senator keating": {
+      "sourceCategory": "politicians",
+      "sourceId": "politicians:senator-keating",
+      "sourceName": "Senator Keating",
+      "targetCategory": "politicians",
+      "targetId": "politicians:kenneth-keating",
+      "targetName": "Kenneth Keating"
+    },
     "senator reid": {
       "sourceCategory": "journalists",
       "sourceId": "journalists:senator-reid",
@@ -11988,41 +12461,41 @@
       "sourceCategory": "experiencers",
       "sourceId": "experiencers:skinwalker-ranc",
       "sourceName": "Skinwalker Ranc",
-      "targetCategory": "experiencers",
-      "targetId": "experiencers:skinwalker-ranch-in",
-      "targetName": "Skinwalker Ranch In"
-    },
-    "skinwalker ranch": {
-      "sourceCategory": "locations",
-      "sourceId": "locations:skinwalker-ranch",
-      "sourceName": "Skinwalker Ranch",
-      "targetCategory": "people",
-      "targetId": "people:what-is-skinwalker-ranch",
-      "targetName": "What Is Skinwalker Ranch"
+      "targetCategory": "locations",
+      "targetId": "locations:skinwalker-ranch",
+      "targetName": "Skinwalker Ranch"
     },
     "skinwalker ranch database": {
       "sourceCategory": "friendly_people",
       "sourceId": "friendly_people:skinwalker-ranch-database",
       "sourceName": "Skinwalker Ranch Database",
-      "targetCategory": "experiencers",
-      "targetId": "experiencers:skinwalker-ranc",
-      "targetName": "Skinwalker Ranc"
+      "targetCategory": "locations",
+      "targetId": "locations:skinwalker-ranch",
+      "targetName": "Skinwalker Ranch"
     },
     "skinwalker ranch in": {
       "sourceCategory": "experiencers",
       "sourceId": "experiencers:skinwalker-ranch-in",
       "sourceName": "Skinwalker Ranch In",
-      "targetCategory": "experiencers",
-      "targetId": "experiencers:skinwalker-ranch-many",
-      "targetName": "Skinwalker Ranch Many"
+      "targetCategory": "locations",
+      "targetId": "locations:skinwalker-ranch",
+      "targetName": "Skinwalker Ranch"
     },
     "skinwalker ranch many": {
       "sourceCategory": "experiencers",
       "sourceId": "experiencers:skinwalker-ranch-many",
       "sourceName": "Skinwalker Ranch Many",
-      "targetCategory": "people",
-      "targetId": "people:skinwalker-ranch-research-for",
-      "targetName": "Skinwalker Ranch Research For"
+      "targetCategory": "locations",
+      "targetId": "locations:skinwalker-ranch",
+      "targetName": "Skinwalker Ranch"
+    },
+    "skinwalker ranch research for": {
+      "sourceCategory": "people",
+      "sourceId": "people:skinwalker-ranch-research-for",
+      "sourceName": "Skinwalker Ranch Research For",
+      "targetCategory": "locations",
+      "targetId": "locations:skinwalker-ranch",
+      "targetName": "Skinwalker Ranch"
     },
     "skunk works": {
       "sourceCategory": "contractors",
@@ -12255,6 +12728,14 @@
       "targetCategory": "people",
       "targetId": "people:patty-hearst",
       "targetName": "Patty Hearst"
+    },
+    "so senator keating": {
+      "sourceCategory": "politicians",
+      "sourceId": "politicians:so-senator-keating",
+      "sourceName": "So Senator Keating",
+      "targetCategory": "people",
+      "targetId": "people:ken-keating",
+      "targetName": "Ken Keating"
     },
     "so tesla": {
       "sourceCategory": "people",
@@ -12532,9 +13013,9 @@
       "sourceCategory": "people",
       "sourceId": "people:top-secret-operation-paperclip",
       "sourceName": "Top Secret Operation Paperclip",
-      "targetCategory": "professors",
-      "targetId": "professors:operation-papercl",
-      "targetName": "Operation Papercl"
+      "targetCategory": "government_project_codenames",
+      "targetId": "government_project_codenames:operation-paperclip",
+      "targetName": "Operation Paperclip"
     },
     "townsend brown": {
       "sourceCategory": "people",
@@ -12700,7 +13181,7 @@
       "sourceCategory": "politicians",
       "sourceId": "politicians:warren-commission",
       "sourceName": "Warren Commission",
-      "targetCategory": "people",
+      "targetCategory": "government_project_codenames",
       "targetId": "people:warren-commission",
       "targetName": "Warren Commission"
     },
@@ -12756,9 +13237,9 @@
       "sourceCategory": "people",
       "sourceId": "people:what-is-skinwalker-ranch",
       "sourceName": "What Is Skinwalker Ranch",
-      "targetCategory": "friendly_people",
-      "targetId": "friendly_people:skinwalker-ranch-database",
-      "targetName": "Skinwalker Ranch Database"
+      "targetCategory": "locations",
+      "targetId": "locations:skinwalker-ranch",
+      "targetName": "Skinwalker Ranch"
     },
     "when bob": {
       "sourceCategory": "people",
@@ -13037,6 +13518,7 @@
     "air france": "companies",
     "al jazeera": "newsrooms",
     "alien files reopened": "tv_shows",
+    "alpha albino royal dracs": "alien_species",
     "american airlines flight": "companies",
     "american astronomical society": "institutes",
     "american cosmic": "books",
@@ -13091,6 +13573,7 @@
     "black world": "emerging_terminology",
     "blue book": "government_project_codenames",
     "bluebird artichoke": "government_project_codenames",
+    "bomb group": "military_bases",
     "bomb group wing": "military_bases",
     "bonson labs": "companies",
     "book of enoch": "books",
@@ -13164,11 +13647,13 @@
     "draconians": "alien_species",
     "dragon dracs": "alien_species",
     "dugway proving ground": "military_bases",
+    "eagle river": "locations",
     "eagle works": "government_agencies",
     "earth tech": "companies",
     "east bay": "locations",
     "east coast": "locations",
     "edwards 412th test wing": "military_bases",
+    "eisenhower white house": "military_bases",
     "el paso": "locations",
     "electrostatic society": "institutes",
     "elon musk": "people",
@@ -13185,7 +13670,7 @@
     "first contact": "events",
     "flying saucers": "key_terms",
     "for lockheed": "contractors",
-    "for skinwalker": "tv_shows",
+    "for skinwalker": "locations",
     "forbidden science": "books",
     "foreign technology": "government_agencies",
     "fort belvoir": "military_bases",
@@ -13208,6 +13693,7 @@
     "george h": "politicians",
     "george h.w. bush": "politicians",
     "george knapp": "journalists",
+    "george knapp all": "journalists",
     "german democratic republic": "locations",
     "german experimental station for aviation medicin": "government_agencies",
     "german experimental station for aviation medicine": "locations",
@@ -13244,6 +13730,7 @@
     "in cambridge": "locations",
     "in enoch": "books",
     "in france": "locations",
+    "in germany": "locations",
     "in january": "dates_times",
     "in las vegas": "locations",
     "in newfoundland": "locations",
@@ -13289,6 +13776,7 @@
     "launch fever": "books",
     "lawrence livermore": "research_groups",
     "legacy program": "government_project_codenames",
+    "leslie kean": "journalists",
     "let espresso": "newsrooms",
     "lethe stream": "star_systems",
     "like kash patel": "politicians",
@@ -13301,10 +13789,13 @@
     "lockheed martins": "contractors",
     "lockheed skunkworks": "contractors",
     "long island": "locations",
+    "los alamos national": "locations",
+    "los alamos national labs": "locations",
     "los angeles": "locations",
     "los angeles county": "locations",
     "lost missiles": "events",
     "machu picchu": "locations",
+    "major robert friend": "people",
     "malaysia airlines": "companies",
     "malmstrom base": "military_bases",
     "manchurian candidate": "emerging_terminology",
@@ -13422,6 +13913,7 @@
     "project aquarius": "government_project_codenames",
     "project blue book": "government_project_codenames",
     "project dauphin": "government_project_codenames",
+    "project horizon": "government_project_codenames",
     "project orion": "government_project_codenames",
     "project preserve destiny": "government_project_codenames",
     "project sigma": "government_project_codenames",
@@ -13482,7 +13974,12 @@
     "september 11, 2001": "dates_times",
     "sidney gottlieb": "people",
     "simons foundation": "companies",
+    "skinwalker ranc": "locations",
     "skinwalker ranch": "locations",
+    "skinwalker ranch database": "locations",
+    "skinwalker ranch in": "locations",
+    "skinwalker ranch many": "locations",
+    "skinwalker ranch research for": "locations",
     "skoda works": "government_agencies",
     "slavonic orthodox": "companies",
     "sloan digital survey": "research_groups",
@@ -13563,9 +14060,10 @@
     "weimar, germany": "locations",
     "west germany": "locations",
     "west virginia": "locations",
+    "what is skinwalker ranch": "locations",
     "when roswell": "locations",
     "when september": "dates_times",
-    "white house": "government_agencies",
+    "white house": "military_bases",
     "white mountains": "locations",
     "white sands proving grounds": "military_bases",
     "whitley strieber": "experiencers",
@@ -13579,8 +14077,7 @@
     "york city": "locations",
     "your game girl": "books",
     "zora ranch": "locations",
-    "zorro ranch": "locations",
-    "in germany": "locations"
+    "zorro ranch": "locations"
   },
   "note": "Replace data/reclass.json with this file before rebuilding.",
   "notes": {},
@@ -13606,6 +14103,9 @@
     "experiencers:ross-goldhart": "journalists",
     "experiencers:s-house": "government_agencies",
     "experiencers:secret-life": "books",
+    "experiencers:skinwalker-ranc": "locations",
+    "experiencers:skinwalker-ranch-in": "locations",
+    "experiencers:skinwalker-ranch-many": "locations",
     "experiencers:southern-california": "locations",
     "experiencers:steven-spielberg": "directors",
     "experiencers:thomas-townsend-brown": "people",
@@ -13638,6 +14138,7 @@
     "friendly_people:scientific-revolutions": "books",
     "friendly_people:second-empire": "books",
     "friendly_people:sidney-gottlieb": "people",
+    "friendly_people:skinwalker-ranch-database": "locations",
     "friendly_people:steve-quayle": "people",
     "friendly_people:third-eye-drops": "websites",
     "friendly_people:venusians-universal-origin": "alien_species",
@@ -13645,6 +14146,7 @@
     "friendly_people:weimar-germany": "locations",
     "friendly_people:white-mountains": "locations",
     "government_agencies:consciousness-department-it": "key_terms",
+    "government_agencies:white-house": "military_bases",
     "government_project_codenames:sentient": "key_terms",
     "journalists:betty-hill": "experiencers",
     "journalists:j-allen-hynek": "people",
@@ -13670,6 +14172,7 @@
     "people:air-force-base": "military_bases",
     "people:air-force-research-lab": "government_agencies",
     "people:al-jazeera": "newsrooms",
+    "people:alpha-albino-royal-dracs": "alien_species",
     "people:american-cosmic": "books",
     "people:american-establishment": "books",
     "people:american-silver-shirts": "politicians",
@@ -13756,7 +14259,7 @@
     "people:first-contact": "events",
     "people:flying-saucers": "key_terms",
     "people:for-lockheed": "contractors",
-    "people:for-skinwalker": "tv_shows",
+    "people:for-skinwalker": "locations",
     "people:forbidden-science": "books",
     "people:fort-belvoir": "military_bases",
     "people:fort-detrick": "military_bases",
@@ -13772,6 +14275,7 @@
     "people:fukushima-prefecture": "locations",
     "people:gen-six-productions": "companies",
     "people:george-h": "politicians",
+    "people:george-knapp-all": "journalists",
     "people:german-democratic-republic": "locations",
     "people:gibb-street": "locations",
     "people:giza-plateau": "locations",
@@ -13828,6 +14332,7 @@
     "people:living-light": "alien_species",
     "people:lockheed-skunkworks": "contractors",
     "people:long-island": "locations",
+    "people:los-alamos-national": "locations",
     "people:los-angeles": "locations",
     "people:malaysia-airlines": "companies",
     "people:manchurian-candidates": "emerging_terminology",
@@ -13936,6 +14441,7 @@
     "people:security-administration": "government_agencies",
     "people:security-and-intelligence-directorate": "government_agencies",
     "people:skinwalker-ranch": "locations",
+    "people:skinwalker-ranch-research-for": "locations",
     "people:skoda-works": "government_agencies",
     "people:sloan-digital-survey": "research_groups",
     "people:sourcebook-project": "government_project_codenames",
@@ -13982,6 +14488,7 @@
     "people:warsaw-pact": "events",
     "people:washington-post": "newsrooms",
     "people:west-virginia": "locations",
+    "people:what-is-skinwalker-ranch": "locations",
     "people:when-september": "dates_times",
     "people:white-house": "government_agencies",
     "people:wild-pendulum": "books",
@@ -13992,6 +14499,7 @@
     "people:your-game-girl": "books",
     "politicians:aerial-phenomena": "key_terms",
     "politicians:barney-hill": "experiencers",
+    "politicians:bomb-group": "military_bases",
     "politicians:condon-report": "document_names",
     "politicians:democratic-national-committee": "government_agencies",
     "politicians:galacterian-alignment": "theories",
@@ -14010,6 +14518,8 @@
     "professors:camp-king": "military_bases",
     "professors:condon-committee": "government_agencies",
     "professors:disney-imagineering": "companies",
+    "professors:eagle-river": "locations",
+    "professors:eisenhower-white-house": "military_bases",
     "professors:el-paso": "locations",
     "professors:elon-musk": "people",
     "professors:groom-lake-road": "locations",
@@ -14017,10 +14527,12 @@
     "professors:in-california": "locations",
     "professors:jackass-flats": "locations",
     "professors:jacques-vall-e": "authors",
+    "professors:major-robert-friend": "people",
     "professors:medical-research": "research_groups",
     "professors:nazi-germany": "locations",
     "professors:north-carolina-chapel-hill": "universities",
     "professors:papua-new-guinea": "locations",
+    "professors:project-horizon": "government_project_codenames",
     "professors:ross-coldhart": "journalists",
     "professors:sao-sebastiao": "locations",
     "professors:simons-foundation": "companies",
@@ -14039,6 +14551,7 @@
     "whistleblowers:california": "locations",
     "whistleblowers:george-knapp": "journalists",
     "whistleblowers:jeremy-corbell": "people",
+    "whistleblowers:leslie-kean": "journalists",
     "whistleblowers:nicobar-islands": "locations",
     "whistleblowers:project-blue-book": "government_project_codenames",
     "whistleblowers:whitley-strieber": "experiencers"
@@ -14117,6 +14630,14 @@
   },
   "removedManualRelationships": {},
   "removedMerges": {
+    "locations:skinwalker-ranch": {
+      "sourceCategory": "locations",
+      "sourceId": "locations:skinwalker-ranch",
+      "sourceName": "Skinwalker Ranch",
+      "targetCategory": "people",
+      "targetId": "people:what-is-skinwalker-ranch",
+      "targetName": "What Is Skinwalker Ranch"
+    },
     "universities:harvard-medical-school": {
       "sourceCategory": "universities",
       "sourceId": "universities:harvard-medical-school",
@@ -14150,6 +14671,14 @@
       "targetCategory": "universities",
       "targetId": "universities:harvard-college",
       "targetName": "Harvard College"
+    },
+    "skinwalker ranch": {
+      "sourceCategory": "locations",
+      "sourceId": "locations:skinwalker-ranch",
+      "sourceName": "Skinwalker Ranch",
+      "targetCategory": "people",
+      "targetId": "people:what-is-skinwalker-ranch",
+      "targetName": "What Is Skinwalker Ranch"
     }
   }
 }

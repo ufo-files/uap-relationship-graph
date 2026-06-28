@@ -1,0 +1,3016 @@
+1
+00:00:00,000 --> 00:00:10,000
+Again, the areas in black are the total area covered which we obtained from the mission,
+
+2
+00:00:10,000 --> 00:00:18,000
+and the areas in red are the pieces which we missed due to the deletion of the plane change
+
+3
+00:00:18,000 --> 00:00:21,000
+and the day early return.
+
+4
+00:00:21,000 --> 00:00:27,000
+This little piece down here was a oblique pass which we had planned with the pan camera.
+
+5
+00:00:27,000 --> 00:00:32,000
+It would have taken place on Rev 72 in order to get photographs of Jacendi,
+
+6
+00:00:32,000 --> 00:00:37,000
+which is an area of particular interest to the geology.
+
+7
+00:00:37,000 --> 00:00:40,000
+So you can see that we did lose some data.
+
+8
+00:00:40,000 --> 00:00:45,000
+On the other hand, we did pick up some data that we would not have gotten,
+
+9
+00:00:45,000 --> 00:00:54,000
+and I think overall the effectiveness of the coverage was about 90% of what we had hoped for pre-mission.
+
+10
+00:00:54,000 --> 00:01:02,000
+I really want to express the thanks of the photo team to the flight planners here
+
+11
+00:01:02,000 --> 00:01:07,000
+and also to Ken for his operation of the cameras during the mission.
+
+12
+00:01:07,000 --> 00:01:13,000
+I know that it was very confusing to be continually changing the flight plan
+
+13
+00:01:13,000 --> 00:01:18,000
+and Ken probably wondered what the hell we were doing with all these on-offs and so on.
+
+14
+00:01:18,000 --> 00:01:30,000
+But really I think we did a very effective job of recovering almost all of the data that we had planned for the mission.
+
+15
+00:01:30,000 --> 00:01:35,000
+May I have the next slide, please?
+
+16
+00:01:35,000 --> 00:01:41,000
+This is a diagram showing what the Apollo 15 coverage was like.
+
+17
+00:01:41,000 --> 00:01:45,000
+This is the planned coverage for the 16 mission,
+
+18
+00:01:45,000 --> 00:01:49,000
+and in the dotted line is the planned coverage for the 17 mission.
+
+19
+00:01:49,000 --> 00:01:55,000
+The only reason I show this is to indicate that the areas where we did lose data, unfortunately,
+
+20
+00:01:55,000 --> 00:02:03,000
+are in the areas that were not covered by 15 and will not be covered by 17,
+
+21
+00:02:03,000 --> 00:02:07,000
+so that the losses, although small, were real.
+
+22
+00:02:07,000 --> 00:02:10,000
+May I have the next slide?
+
+23
+00:02:10,000 --> 00:02:18,000
+Ken, during the film recovery EVA, you reported that the stellar camera glare shield was hung up on the handrail.
+
+24
+00:02:18,000 --> 00:02:24,000
+I'm not 100% clear as to exactly what that situation was.
+
+25
+00:02:24,000 --> 00:02:27,000
+This is the stellar camera glare shield,
+
+26
+00:02:27,000 --> 00:02:33,000
+and this is a little cover that comes down and covers that when the mapping camera is retracted.
+
+27
+00:02:33,000 --> 00:02:37,000
+Maybe you've discussed this with the other people here at the center,
+
+28
+00:02:37,000 --> 00:02:44,000
+but for my own information, I would like to know whether this is the cover that was hung up or this is the cover.
+
+29
+00:02:44,000 --> 00:02:48,000
+Both of them. The shield at the forward end, that one.
+
+30
+00:02:48,000 --> 00:02:49,000
+This one?
+
+31
+00:02:49,000 --> 00:02:52,000
+No, the first one you looked at, yeah. That was sticking up.
+
+32
+00:02:52,000 --> 00:02:53,000
+That was sticking up, uh-huh.
+
+33
+00:02:53,000 --> 00:02:57,000
+Yeah, but the tip out here was mashed against the handrail.
+
+34
+00:02:57,000 --> 00:02:59,000
+Mashed against the handrail out along here.
+
+35
+00:02:59,000 --> 00:03:01,000
+Yeah, the rail isn't in this picture.
+
+36
+00:03:01,000 --> 00:03:02,000
+The rail is not installed.
+
+37
+00:03:02,000 --> 00:03:03,000
+It would have been along here.
+
+38
+00:03:03,000 --> 00:03:04,000
+That's right.
+
+39
+00:03:04,000 --> 00:03:07,000
+And this lip was up against it and bent back out of the way.
+
+40
+00:03:07,000 --> 00:03:08,000
+I see.
+
+41
+00:03:08,000 --> 00:03:10,000
+It was not in the full extend position.
+
+42
+00:03:10,000 --> 00:03:11,000
+It looked like it was a partial extension.
+
+43
+00:03:11,000 --> 00:03:12,000
+Uh-huh.
+
+44
+00:03:12,000 --> 00:03:17,000
+Could you tell whether this was bent, whether this rail was bent, this extend rail?
+
+45
+00:03:17,000 --> 00:03:21,000
+No, but I think we have a photo that will probably tell you that.
+
+46
+00:03:21,000 --> 00:03:22,000
+I don't remember.
+
+47
+00:03:22,000 --> 00:03:24,000
+The end of the shield was bent.
+
+48
+00:03:24,000 --> 00:03:25,000
+Up here.
+
+49
+00:03:25,000 --> 00:03:26,000
+No.
+
+50
+00:03:26,000 --> 00:03:27,000
+Here.
+
+51
+00:03:27,000 --> 00:03:29,000
+Yeah, in the next section of the accordion.
+
+52
+00:03:29,000 --> 00:03:30,000
+The next section was bent.
+
+53
+00:03:30,000 --> 00:03:31,000
+Yeah.
+
+54
+00:03:31,000 --> 00:03:33,000
+Now, whether that rail itself was bent, I didn't notice.
+
+55
+00:03:33,000 --> 00:03:34,000
+Uh-huh.
+
+56
+00:03:34,000 --> 00:03:35,000
+Uh-huh.
+
+57
+00:03:35,000 --> 00:03:39,000
+The implication, of course, is that if this, uh, had happened early in the mission and this
+
+58
+00:03:39,000 --> 00:03:45,000
+shield were bent down, uh, we might get excessive light into the stellar camera and our, our background
+
+59
+00:03:45,000 --> 00:03:50,000
+density would be, uh, low, uh, or would be higher than we expected and we might not see
+
+60
+00:03:50,000 --> 00:03:51,000
+as many stars.
+
+61
+00:03:51,000 --> 00:03:58,000
+Uh, the other indication of, uh, malfunction that we had, of course, was in the exposure
+
+62
+00:03:58,000 --> 00:04:05,000
+control on the pan camera and, uh, that, uh, would indicate that, uh, the pictures away
+
+63
+00:04:05,000 --> 00:04:08,000
+from the terminal may be overexposed.
+
+64
+00:04:08,000 --> 00:04:12,000
+That situation is also being looked at and, again, we're going to talk about it this afternoon
+
+65
+00:04:12,000 --> 00:04:14,000
+before we actually process the film.
+
+66
+00:04:14,000 --> 00:04:17,000
+Uh, may I have the next slide?
+
+67
+00:04:17,000 --> 00:04:23,000
+Uh, this is the information which I have with regard to the laser altimeter operation.
+
+68
+00:04:23,000 --> 00:04:29,000
+Uh, the first row across here is what the nominal mission would have been and the second
+
+69
+00:04:29,000 --> 00:04:34,000
+row is the, uh, actual results from the Apollo 16.
+
+70
+00:04:34,000 --> 00:04:39,000
+Uh, we had planned a total of 20 hours and a few minutes of operating time.
+
+71
+00:04:39,000 --> 00:04:47,000
+We got 14 hours and a half so that we are down about 25 percent in the total operating time.
+
+72
+00:04:47,000 --> 00:04:54,000
+This is the total, uh, revolutions in longitude that we had planned, uh, 10.3 and we got seven
+
+73
+00:04:54,000 --> 00:04:59,000
+and a half so again we're down about 25 percent in that regard.
+
+74
+00:04:59,000 --> 00:05:08,000
+Uh, a total number of firings 3283 and 2106 is the actual number that, uh, was recorded.
+
+75
+00:05:08,000 --> 00:05:15,000
+So we are down, uh, nearly 30 percent, uh, in the total number of firings.
+
+76
+00:05:15,000 --> 00:05:25,000
+Also, the number of valid elevation, uh, readings that we got was appreciably, uh, less than the total number of firings.
+
+77
+00:05:25,000 --> 00:05:35,000
+So that we, the actual mission in terms of altimeter observations, uh, gave us a little bit less than half of what we had actually planned.
+
+78
+00:05:35,000 --> 00:05:43,000
+Uh, that's, that's really not as serious a, a, uh, shortfall as it sounds just from the numbers.
+
+79
+00:05:43,000 --> 00:05:48,000
+Uh, because the readings were quite well distributed throughout the mission.
+
+80
+00:05:48,000 --> 00:05:56,000
+Uh, the general operation that we saw on the altimeter, uh, the first several revs were completely nominal.
+
+81
+00:05:56,000 --> 00:05:58,000
+All of the elevation readings were valid.
+
+82
+00:05:58,000 --> 00:06:04,000
+Then it began to fall off about 75 percent, 65 percent, and down to about 60 percent,
+
+83
+00:06:04,000 --> 00:06:11,000
+except on the last data pass on rev 62 where it was only about, uh, uh, 10 percent effective.
+
+84
+00:06:11,000 --> 00:06:21,000
+Uh, the, uh, generally what we seem to observe is that there would be one good shot, then one bad shot, then one good, one bad,
+
+85
+00:06:21,000 --> 00:06:23,000
+and then maybe several good ones in a row.
+
+86
+00:06:23,000 --> 00:06:33,000
+Uh, we can talk about the reason for that, but, uh, that's more appropriately covered in the systems review tomorrow.
+
+87
+00:06:33,000 --> 00:06:42,000
+Uh, the effect that it will have on the data is simply to give us a, a, a larger spacing between data points.
+
+88
+00:06:42,000 --> 00:06:49,000
+So far as the, its effect on the reduction of the photography is concerned, that's absolutely inconsequential.
+
+89
+00:06:49,000 --> 00:06:57,000
+So far as its effect on the, uh, correlation between the tracking and gravity data and the, uh, profiles,
+
+90
+00:06:57,000 --> 00:07:00,000
+it's a little bit, uh, more of concern.
+
+91
+00:07:00,000 --> 00:07:04,000
+Uh, they do have a little bit more smoothing to do between the data points that they got,
+
+92
+00:07:04,000 --> 00:07:11,000
+but essentially I don't think that it really hurts us so far as the scientific return, uh, from the mission is concerned.
+
+93
+00:07:11,000 --> 00:07:18,000
+Uh, I would like to say, uh, just a word or so about the utilization of the photography.
+
+94
+00:07:18,000 --> 00:07:24,000
+The, it has been proceeding much more slowly than I had anticipated
+
+95
+00:07:24,000 --> 00:07:28,000
+in reducing the pictures from Apollo 15.
+
+96
+00:07:28,000 --> 00:07:33,000
+However, the work which is being done by the ACIC and St. Louis
+
+97
+00:07:33,000 --> 00:07:37,000
+is indicating that the photography, photographic reduction,
+
+98
+00:07:37,000 --> 00:07:42,000
+will provide, uh, positional coordinates of features on the lunar surface
+
+99
+00:07:42,000 --> 00:07:48,000
+with the, uh, the accuracy of 10 to 12 meters in position and in elevation.
+
+100
+00:07:48,000 --> 00:07:53,000
+And that seems to coincide very well with what we had predicted pre-mission.
+
+101
+00:07:53,000 --> 00:08:00,000
+So, uh, we are quite confident that, uh, that we're getting very good information from the pictures in that regard.
+
+102
+00:08:00,000 --> 00:08:08,000
+Uh, the tracking data, uh, generally, uh, is consistent within an orbital pass,
+
+103
+00:08:08,000 --> 00:08:16,000
+but we do find, uh, discrepancies of, uh, up to a kilometer between adjacent photographic passes.
+
+104
+00:08:16,000 --> 00:08:24,000
+So that the, uh, reduction of the photographs is giving us a much better tie between orbital, uh, passes
+
+105
+00:08:24,000 --> 00:08:28,000
+than we get from the, from the tracking data, uh, itself.
+
+106
+00:08:28,000 --> 00:08:35,000
+Uh, consequently, we do expect eventually to come up with a, an internally consistent coordinate system,
+
+107
+00:08:35,000 --> 00:08:40,000
+reference system, figure of the moon, with an accuracy on the order of 12 to 15 meters.
+
+108
+00:08:40,000 --> 00:08:43,000
+Uh, that's, uh, highly gratifying to me.
+
+109
+00:08:43,000 --> 00:08:48,000
+Uh, so far as the pan-camera utilization is concerned,
+
+110
+00:08:48,000 --> 00:08:52,000
+there have been some, uh, map compilations done.
+
+111
+00:08:52,000 --> 00:08:58,000
+Uh, the indicated precision of those is on the order of three meters,
+
+112
+00:08:58,000 --> 00:09:00,000
+which, again, is about what we had expected.
+
+113
+00:09:00,000 --> 00:09:04,000
+But that is a precision and not an accuracy number because, uh,
+
+114
+00:09:04,000 --> 00:09:08,000
+of the geometric problems with the pan-camera photography.
+
+115
+00:09:08,000 --> 00:09:11,000
+However, so far as the resolution of the pan-camera is concerned,
+
+116
+00:09:11,000 --> 00:09:14,000
+that has held up to just about what we had expected,
+
+117
+00:09:14,000 --> 00:09:20,000
+uh, from one and a half to three meters at the, uh, sub-vehicle point
+
+118
+00:09:20,000 --> 00:09:25,000
+and decreasing off to about five to six meters at the limits of the, of the film.
+
+119
+00:09:25,000 --> 00:09:34,000
+Uh, so, so far as, uh, our indications at the moment are that the results from 16 are quite satisfactory.
+
+120
+00:09:34,000 --> 00:09:39,000
+We do have these problems that we have to resolve in the processing of the film.
+
+121
+00:09:39,000 --> 00:09:44,000
+And, uh, once that is done, we will be able to say exactly what we did obtain.
+
+122
+00:09:44,000 --> 00:09:49,000
+But, again, I want to express the photo team's thanks to you particularly, Ken,
+
+123
+00:09:49,000 --> 00:09:55,000
+for the, uh, uh, time and attention, uh, that you gave to the camera operation
+
+124
+00:09:55,000 --> 00:09:58,000
+and the results that we have obtained.
+
+125
+00:09:58,000 --> 00:10:01,000
+Thanks, Fred. Any questions, uh, before?
+
+126
+00:10:01,000 --> 00:10:04,000
+Could you, do you have a plot of the, uh, altimetry?
+
+127
+00:10:04,000 --> 00:10:10,000
+You know, last time someone had drawn up a rough hand sketch of, of the altimetry,
+
+128
+00:10:10,000 --> 00:10:11,000
+and what, did anyone do that this time?
+
+129
+00:10:11,000 --> 00:10:12,000
+Uh, the profiles?
+
+130
+00:10:12,000 --> 00:10:13,000
+Yes, sir.
+
+131
+00:10:13,000 --> 00:10:14,000
+No, I don't, Ken.
+
+132
+00:10:14,000 --> 00:10:18,000
+I think maybe, uh, Sjogren has one of those, uh, and, uh, I don't know.
+
+133
+00:10:18,000 --> 00:10:19,000
+Is he here?
+
+134
+00:10:19,000 --> 00:10:20,000
+Bill?
+
+135
+00:10:20,000 --> 00:10:21,000
+Yeah, Bill.
+
+136
+00:10:21,000 --> 00:10:22,000
+Do you have a plot?
+
+137
+00:10:22,000 --> 00:10:23,000
+Yeah, I thought you had one.
+
+138
+00:10:23,000 --> 00:10:24,000
+Okay.
+
+139
+00:10:24,000 --> 00:10:25,000
+He'll show that.
+
+140
+00:10:25,000 --> 00:10:28,000
+Okay, and these, uh, particles that you found in the mapping camera, that,
+
+141
+00:10:28,000 --> 00:10:33,000
+is that handfuls, or, or a couple of shavings, or?
+
+142
+00:10:33,000 --> 00:10:41,000
+Uh, I don't know how extensive they are, they were, uh, they were enough to concern the, uh,
+
+143
+00:10:41,000 --> 00:10:44,000
+uh, the people in the processing lab.
+
+144
+00:10:44,000 --> 00:10:48,000
+Uh, uh, all I know, that's about all that I know about it.
+
+145
+00:10:48,000 --> 00:10:50,000
+We're supposed to have a review of that this afternoon.
+
+146
+00:10:50,000 --> 00:10:54,000
+Uh, it could have, uh, very serious implications, obviously.
+
+147
+00:10:54,000 --> 00:11:03,000
+Uh, uh, one, one thing that I seem to recall from the, uh, during the mission, is that we
+
+148
+00:11:03,000 --> 00:11:10,000
+had apparently more film left for post-TEI photography than we had anticipated.
+
+149
+00:11:10,000 --> 00:11:15,000
+And what that could mean, of course, is that the camera was not passing film when we thought
+
+150
+00:11:15,000 --> 00:11:18,000
+it was, and things were being chewed up pretty badly inside.
+
+151
+00:11:18,000 --> 00:11:24,000
+So, uh, we're gonna have to look that over very carefully before we go ahead with the processing
+
+152
+00:11:24,000 --> 00:11:25,000
+of the film.
+
+153
+00:11:25,000 --> 00:11:32,000
+We expect the, uh, camera contractor to, uh, look at the shavings and tell us where he
+
+154
+00:11:32,000 --> 00:11:36,000
+thinks they came from, and that may give us a better clue as to what they are, actually
+
+155
+00:11:36,000 --> 00:11:37,000
+are.
+
+156
+00:11:37,000 --> 00:11:38,000
+Do you have a processing schedule yet?
+
+157
+00:11:38,000 --> 00:11:40,000
+I, I guess it's all in advance to figure out what to do next.
+
+158
+00:11:40,000 --> 00:11:44,000
+Yeah, everything is on a hold until this afternoon, yeah, after we're meeting this afternoon.
+
+159
+00:11:44,000 --> 00:11:48,000
+Assuming you're determined to go ahead and develop it, will it take you three or four days
+
+160
+00:11:48,000 --> 00:11:49,000
+to process?
+
+161
+00:11:49,000 --> 00:11:50,000
+Yeah, yeah.
+
+162
+00:11:50,000 --> 00:11:56,000
+Uh, I think the, the anticipated schedule was to have, uh, the original film processed
+
+163
+00:11:56,000 --> 00:12:02,000
+within this week, and all of the duplicate copies within four weeks of the distributed.
+
+164
+00:12:02,000 --> 00:12:05,000
+Perhaps you stated, what is the accuracy of the altimeter?
+
+165
+00:12:05,000 --> 00:12:11,000
+The, uh, least count of the altimeter is, uh, one meter.
+
+166
+00:12:11,000 --> 00:12:18,000
+Uh, the accuracy is, uh, dependent, uh, pretty much upon the slope in the area, which is aluminum,
+
+167
+00:12:18,000 --> 00:12:25,000
+and, uh, a little bit, uh, on the albedo in the area, which is illuminated.
+
+168
+00:12:25,000 --> 00:12:30,000
+Uh, in general, I think it's fair to say that, uh, the reading that we get from the altimeter
+
+169
+00:12:30,000 --> 00:12:34,000
+will be correct, uh, to within three to five meters.
+
+170
+00:12:34,000 --> 00:12:40,000
+Have, have you figured out what to do with the pan camera for processing?
+
+171
+00:12:40,000 --> 00:12:44,000
+Got a correction for the, for the exposure?
+
+172
+00:12:44,000 --> 00:12:47,000
+Uh, I don't know what has been figured out.
+
+173
+00:12:47,000 --> 00:12:51,000
+We had a group working on it last week, and they're going to give us a report right after
+
+174
+00:12:51,000 --> 00:12:53,000
+this meeting, and we'll decide what to do.
+
+175
+00:12:53,000 --> 00:12:57,000
+Yeah, I could, I could comment, uh, the photo lab has made their recommendation, you know,
+
+176
+00:12:57,000 --> 00:13:03,000
+to fraud back, and, uh, they think that there will be some slight loss near the generator,
+
+177
+00:13:03,000 --> 00:13:10,000
+if they could do that, uh, in other words, that they can handle the over exposure,
+
+178
+00:13:10,000 --> 00:13:15,000
+but at some penalty, where we have .
+
+179
+00:13:15,000 --> 00:13:28,000
+The situation is really that, uh, near the terminator, the pictures are underexposed anyhow,
+
+180
+00:13:28,000 --> 00:13:31,000
+because we can't open the slit wide enough and so on.
+
+181
+00:13:31,000 --> 00:13:37,000
+Uh, so the camera was wide open at the terminator, uh, but it was open wider than it should have been
+
+182
+00:13:37,000 --> 00:13:42,000
+when we were away from the terminator, so that the terminator pictures are a little bit underexposed,
+
+183
+00:13:42,000 --> 00:13:47,000
+then they become properly exposed, and after that, uh, they will be overexposed.
+
+184
+00:13:47,000 --> 00:13:55,000
+So what we would really like, of course, is a variable, uh, processing, uh, through each photo pass,
+
+185
+00:13:55,000 --> 00:13:59,000
+but that's probably not a feasible thing to even contemplate.
+
+186
+00:14:03,000 --> 00:14:05,000
+Thanks, Fred.
+
+187
+00:14:05,000 --> 00:14:08,000
+Next subject will be the particles and fields of the subsatellite,
+
+188
+00:14:08,000 --> 00:14:11,000
+and, uh, I think Jim McCoy is going to cover that. Is he here?
+
+189
+00:14:11,000 --> 00:14:14,000
+Ah, there he is.
+
+190
+00:14:14,000 --> 00:14:15,000
+We got a mic right over there.
+
+191
+00:14:15,000 --> 00:14:16,000
+Yeah.
+
+192
+00:14:16,000 --> 00:14:17,000
+Can we add anything at all?
+
+193
+00:14:17,000 --> 00:14:33,000
+Yeah, they'll, they'll project it up there in the back booth if you want to.
+
+194
+00:14:33,000 --> 00:14:34,000
+Uh, Dick?
+
+195
+00:14:34,000 --> 00:14:35,000
+Yes.
+
+196
+00:14:35,000 --> 00:14:36,000
+Where's, where's Baldwin?
+
+197
+00:14:36,000 --> 00:14:39,000
+Would you, could you get this projected up there?
+
+198
+00:14:39,000 --> 00:14:40,000
+Of course.
+
+199
+00:14:40,000 --> 00:14:42,000
+I guess I'll put the mic on.
+
+200
+00:14:42,000 --> 00:14:47,000
+Okay, can you hear me okay?
+
+201
+00:14:47,000 --> 00:14:48,000
+Okay.
+
+202
+00:14:48,000 --> 00:14:52,000
+Uh, I guess, uh, quickly, the subsatellite was
+
+203
+00:14:52,000 --> 00:14:53,000
+deployed successfully.
+
+204
+00:14:53,000 --> 00:14:54,000
+Our spin rate was phenomenal.
+
+205
+00:14:54,000 --> 00:14:55,000
+Uh, I guess I'll put the mic on.
+
+206
+00:14:55,000 --> 00:14:59,000
+Uh, I guess, uh, quickly, the subsatellite was deployed successfully.
+
+207
+00:14:59,000 --> 00:15:14,000
+Uh, our spin rate was phenomenal, about five and a ninth second, uh, spin period.
+
+208
+00:15:14,000 --> 00:15:21,240
+Quickly, the sub-satellite was deployed successfully. Our spin rate was
+
+209
+00:15:21,240 --> 00:15:29,360
+nominal about 5 and 8 second spin period. We want five plus or minus a couple. The
+
+210
+00:15:29,360 --> 00:15:34,320
+attitude was good. According to preliminary indications in the sun sensor,
+
+211
+00:15:34,320 --> 00:15:40,220
+we have a couple of degrees tip off from the ecliptic, which is well within the
+
+212
+00:15:40,220 --> 00:15:47,960
+limits we needed. The operation of all of the electrostatic analyzers and both
+
+213
+00:15:47,960 --> 00:15:55,940
+solid-state telescopes is good. We don't seem to have the noise problem that we
+
+214
+00:15:55,940 --> 00:16:02,660
+had on Apollo 15 in a couple of the analyzers, and we've gotten rid of our
+
+215
+00:16:02,660 --> 00:16:07,060
+accumulator counting error that was characteristic of 15. It's given us some
+
+216
+00:16:07,060 --> 00:16:16,720
+problems in our data analysis now from that satellite. The quick-look results on
+
+217
+00:16:16,720 --> 00:16:24,800
+our first magnetotail pass indicated, again, the presence of these rather unexpected,
+
+218
+00:16:24,800 --> 00:16:32,100
+rather high fluxes of low-energy protons, which have also been seen now with a new
+
+219
+00:16:32,100 --> 00:16:41,280
+IMP series I satellite experiment too. And on this magnetotail pass, we appear to have the
+
+220
+00:16:41,280 --> 00:16:49,740
+remnants of a small solar event in the form of some high-energy solar cosmic ray
+
+221
+00:16:49,740 --> 00:16:56,580
+electrons and protons around, which should prove interesting for our shadow
+
+222
+00:16:56,580 --> 00:17:06,240
+interpretation, particularly on electric fields in the magnetotail. Beyond that, if they have those slides
+
+223
+00:17:06,240 --> 00:17:14,160
+there, I'd like to briefly describe some of the results we got from Apollo 15, which would hope to be
+
+224
+00:17:14,160 --> 00:17:26,880
+similar for this one. Our primary experiment was to examine particle shadow configurations in the
+
+225
+00:17:26,880 --> 00:17:35,700
+magnetotail. That'd be while we're passing through this region back here, where we are in the Earth's magnetic field,
+
+226
+00:17:35,700 --> 00:17:47,880
+and use that to examine the question of openness and access through the magnetotail to the magnetic field lines and
+
+227
+00:17:47,880 --> 00:18:00,000
+ultimately to the Van Allen belts, where theory generally holds that the Van Allen radiation must somehow come in and then be trapped and
+
+228
+00:18:00,000 --> 00:18:14,580
+accelerated. The degree of connection back here with the interplanetary field has been in quite a bit of question and briefly stated the Apollo 15 results indicate pretty
+
+229
+00:18:14,580 --> 00:18:29,980
+clearly that at least most of the time at the latitudes where we passed through the tail, of course we only have a couple of passes, that these field lines are in fact open
+
+230
+00:18:29,980 --> 00:18:41,980
+out here connect directly into the interplanetary field and have direct access of solar cosmopolitan particles.
+
+231
+00:18:41,980 --> 00:18:55,980
+We have also observed the existence of a plasma sheet which is known to form in closer to the Earth to extend out to the Moon in the distance.
+
+232
+00:18:55,980 --> 00:19:15,980
+And on at least a couple of occasions we have observed cross tail electric fields which are important to theoretical models accounting for aurora and for acceleration of particles into the radiation belts.
+
+233
+00:19:15,980 --> 00:19:37,980
+An unexpected observation which we found interesting was 30 keV or thereabouts protons in very large numbers which we observe quite frequently back in the magnetotail and also observe outside the magnetotail in very similar fluxes.
+
+234
+00:19:37,980 --> 00:19:49,980
+Our first feeling was that these must also be some component of the solar cosmic ray proton spectrum.
+
+235
+00:19:49,980 --> 00:19:59,980
+their, of course, very low energy would be stopped by even the thinnest piece of material.
+
+236
+00:19:59,980 --> 00:20:14,980
+But the numbers of them and the consistency of their flux densities make them very attractive as probably being indicative, quite indicative of the source that they come from and the mechanism bringing them.
+
+237
+00:20:14,980 --> 00:20:36,980
+A further examination, however, of the locations where we see them and of the almost constant intensities that we see almost force us to the conclusions that they must somehow be protons from the outer Van Allen belt region here,
+
+238
+00:20:36,980 --> 00:21:04,980
+which are somehow coming loose from the Earth's field and moving outward and then getting onto the interplanetary fields and then moving out to where we see them in perhaps an inverse process of the postulated process where we bring solar cosmic ray particles in from the Sun to populate the Van Allen belts.
+
+239
+00:21:04,980 --> 00:21:22,980
+We were anxiously awaiting getting our data and now our computer program at Berkeley and Schaefer. We can examine this in detail. We've unfortunately been delayed in that.
+
+240
+00:21:22,980 --> 00:21:36,980
+So, if I have the next slide, I'll show you one orbit of data from the telescopes when these very steady fluxes of protons were present.
+
+241
+00:21:36,980 --> 00:21:58,980
+And during this period and actually for a period of a couple of orbits earlier, these fluxes were almost constant. There is some changing here. There is a very, very slight shadowing of protons, not very much at all. This is mostly an electron phenomenon.
+
+242
+00:21:58,980 --> 00:22:16,980
+But then these particles essentially turn off as though somebody closed a valve. And this is characteristic of the way they behave. When they appear, they're suddenly there. And when they disappear, they're gone just as fast.
+
+243
+00:22:16,980 --> 00:22:35,980
+And we're very hopeful that we'll be able to make some sense out of what turns these things on and off and determine where they're coming from and what the mechanism is, presumably now in the magnetosphere.
+
+244
+00:22:35,980 --> 00:22:47,980
+Okay, I think I'll just throw it open to any questions now.
+
+245
+00:22:47,980 --> 00:22:48,980
+Okay.
+
+246
+00:22:48,980 --> 00:22:52,980
+What is the lifetime estimate of the 16th?
+
+247
+00:22:52,980 --> 00:22:56,980
+I wish you hadn't brought that up.
+
+248
+00:22:56,980 --> 00:22:59,980
+The next speaker will get that for us.
+
+249
+00:22:59,980 --> 00:23:07,980
+We had been very hopeful of getting another dozen or a couple of dozen magnetosphere passes out of this satellite since it works so beautifully.
+
+250
+00:23:07,980 --> 00:23:12,980
+I think we're going to cover that.
+
+251
+00:23:12,980 --> 00:23:15,980
+Chris said it was going to stay up there forever, so it better.
+
+252
+00:23:15,980 --> 00:23:22,980
+If it doesn't crash, we also will.
+
+253
+00:23:22,980 --> 00:23:26,980
+Then the world's going to come to an end pretty shortly, I'm over.
+
+254
+00:23:26,980 --> 00:23:27,980
+We'll see.
+
+255
+00:23:27,980 --> 00:23:30,980
+Any questions about particles and fuels?
+
+256
+00:23:30,980 --> 00:23:33,980
+Okay, let's continue on with subsatellite and get on the planet.
+
+257
+00:23:33,980 --> 00:23:34,980
+We didn't say anything about it.
+
+258
+00:23:34,980 --> 00:23:38,980
+I assume that our satellite is sending out good data.
+
+259
+00:23:38,980 --> 00:23:41,980
+Is batteries charging okay and everything?
+
+260
+00:23:41,980 --> 00:23:45,980
+It's not running into the problem that the 15 guys had?
+
+261
+00:23:45,980 --> 00:23:47,980
+Or was that normal for the...
+
+262
+00:23:47,980 --> 00:23:50,980
+It seems to be a little bit better at battery charging.
+
+263
+00:23:50,980 --> 00:23:51,980
+Yeah.
+
+264
+00:23:51,980 --> 00:23:52,980
+The machine is working.
+
+265
+00:23:52,980 --> 00:23:54,980
+Okay, and all the detectors are operating?
+
+266
+00:23:54,980 --> 00:23:55,980
+Yeah.
+
+267
+00:23:55,980 --> 00:23:57,980
+As far as we know, yeah.
+
+268
+00:23:57,980 --> 00:23:59,980
+It's just that it's got a short lifetime.
+
+269
+00:23:59,980 --> 00:24:00,980
+Okay, let's see.
+
+270
+00:24:00,980 --> 00:24:06,980
+I think Larry Sharp is going to take Coleman's place, right?
+
+271
+00:24:06,980 --> 00:24:07,980
+Okay.
+
+272
+00:24:07,980 --> 00:24:08,980
+Magnetometer.
+
+273
+00:24:08,980 --> 00:24:12,980
+The objectives of the magnetometer experiment are essentially three-fold.
+
+274
+00:24:12,980 --> 00:24:17,980
+First is to measure and map the remnant magnetism on the lunar surface.
+
+275
+00:24:17,980 --> 00:24:21,980
+Second is to map the electrical conductivity of the lunar interior.
+
+276
+00:24:21,980 --> 00:24:28,980
+Finally, study the various aspects of the Moon's interaction with the fields and particles in its environment.
+
+277
+00:24:28,980 --> 00:24:37,980
+The wide scope of these objectives is made possible by the geometry of the Moon's orbit as it passes through three fundamentally different regions of space.
+
+278
+00:24:37,980 --> 00:24:45,980
+For example, to get the spatial variations of remnant magnetism on the lunar surface, one must be in the geomagnetic tail,
+
+279
+00:24:45,980 --> 00:24:50,980
+where the temporal variations are almost absent in the magnetic field.
+
+280
+00:24:50,980 --> 00:24:52,980
+Very steady situation.
+
+281
+00:24:52,980 --> 00:25:03,980
+The initial orbit of the subsatellite was somewhat lower than Apollo 15 in the inclination of about 11 degrees instead of 28.
+
+282
+00:25:03,980 --> 00:25:16,980
+And I'd like to show you the predictions of the orbit.
+
+283
+00:25:16,980 --> 00:25:17,980
+Right over that side.
+
+284
+00:25:17,980 --> 00:25:18,980
+On the back side.
+
+285
+00:25:18,980 --> 00:25:19,980
+Back side over.
+
+286
+00:25:19,980 --> 00:25:20,980
+Ha, Ha, Ha.
+
+287
+00:25:22,980 --> 00:25:41,980
+Okay, we've plotted days past deployment.
+
+288
+00:25:41,980 --> 00:25:43,980
+Versus the parallel altitude.
+
+289
+00:25:43,980 --> 00:25:44,980
+Okay.
+
+290
+00:25:44,980 --> 00:25:50,760
+We started out here in pretty good shape, about 97 kilometers or 97 by 123, I guess.
+
+291
+00:25:51,400 --> 00:25:58,580
+And the prediction was a very rapid drop down to 30-some, back up in good shape.
+
+292
+00:25:59,100 --> 00:26:08,780
+No real trouble until, here's the ground line, until about 200 days when the probability was 50-50 of a crash.
+
+293
+00:26:08,780 --> 00:26:10,380
+Here are the error bars here.
+
+294
+00:26:10,800 --> 00:26:15,440
+You can say the probability was maybe one chance in 10 of a crash here and maybe one chance in 5.
+
+295
+00:26:15,860 --> 00:26:16,980
+We've updated this plot.
+
+296
+00:26:29,820 --> 00:26:31,780
+And the odds have changed considerably.
+
+297
+00:26:32,740 --> 00:26:33,940
+This was the prediction.
+
+298
+00:26:34,300 --> 00:26:38,180
+Notice the timescale has been expanded greatly.
+
+299
+00:26:38,180 --> 00:26:39,840
+These are hours now instead of days.
+
+300
+00:26:40,760 --> 00:26:49,100
+Here was the initial prediction at 37 kilometers, and here are the actual data points.
+
+301
+00:26:49,600 --> 00:26:52,180
+This one was taken this morning, around in here.
+
+302
+00:26:52,880 --> 00:26:56,800
+And if you can extrapolate by eye, it looks like we have about four days left.
+
+303
+00:26:58,120 --> 00:27:02,280
+I guess Bill Sogren's taking 50-50 odds that it'll crash if anyone's in the betting mood.
+
+304
+00:27:02,900 --> 00:27:05,860
+It's possible that we'll skim the surface and come back out.
+
+305
+00:27:05,860 --> 00:27:14,000
+But even if we make it through this one, that next dip is going to probably finish us off, which is most unfortunate.
+
+306
+00:27:14,000 --> 00:27:21,280
+Out of curiosity, it might be out of your field, but how come our prediction didn't match the actuality?
+
+307
+00:27:21,280 --> 00:27:22,280
+I mean, we...
+
+308
+00:27:22,280 --> 00:27:33,140
+We don't know the gravity field that well, and that's the business of this subsatellite initially to come to the gravity field.
+
+309
+00:27:33,200 --> 00:27:34,320
+You're going to come to that field, I think.
+
+310
+00:27:35,060 --> 00:27:35,400
+Right.
+
+311
+00:27:35,400 --> 00:27:46,800
+And we've been screaming like that about these paths that don't go long out here at MSC to try to drive that point home so many times,
+
+312
+00:27:46,860 --> 00:27:48,900
+and I think we're really seeing it come.
+
+313
+00:27:50,200 --> 00:27:54,440
+Man, it just goes to show you can't redo six months of planning in two days.
+
+314
+00:27:54,440 --> 00:28:03,940
+Well, in any event, we have one month's worth of good data, which will add to our Apollo 15 results.
+
+315
+00:28:04,740 --> 00:28:09,860
+And to get some idea of what we're doing with this data, I'd like to show the first slide,
+
+316
+00:28:09,860 --> 00:28:19,020
+which represents an average of 17 different orbits taken when the moon was in the Earth's magnetotail.
+
+317
+00:28:20,160 --> 00:28:29,720
+And we've plotted the moon's longitude along the horizontal and the magnetic field in gammas along the vertical.
+
+318
+00:28:30,120 --> 00:28:33,140
+These numbers are representative of the Earth's tail field.
+
+319
+00:28:33,140 --> 00:28:40,780
+And, of course, if you subtract out an average value, this residual would represent the lunar surface field.
+
+320
+00:28:41,560 --> 00:28:49,300
+And, of course, the big result is this really huge magnetic dip going over the Vondegraaff crater
+
+321
+00:28:49,300 --> 00:28:51,020
+or a region right near the Vondegraaff crater.
+
+322
+00:28:52,060 --> 00:28:58,640
+Also, the other initial result we got out of 15 data was that most of the dips in the magnetic field
+
+323
+00:28:58,640 --> 00:29:05,940
+would seem to be clearly associated with craters lying within a few degrees of the ground track defined by the orbit of the subsatellite.
+
+324
+00:29:06,600 --> 00:29:13,600
+We've numbered the seven most obvious local minima and named five of them with associated craters.
+
+325
+00:29:14,860 --> 00:29:21,020
+Now, initial results from Apollo 16 show the same type of structure, although we don't see anything as big as Vondegraaff.
+
+326
+00:29:21,120 --> 00:29:23,160
+We see we do go over Korolev again.
+
+327
+00:29:23,160 --> 00:29:25,860
+That's where the orbits intersect when we're in the tail.
+
+328
+00:29:25,860 --> 00:29:31,660
+And we see a few other Hertzsprung and Pavlov-type bumps.
+
+329
+00:29:32,800 --> 00:29:38,880
+One is with a little tiny crater called Stein and one near Mendelev.
+
+330
+00:29:40,600 --> 00:29:43,800
+Now, if you repeat this procedure several times with different lunations,
+
+331
+00:29:44,020 --> 00:29:49,680
+say you cover different tracks over the moon, and this allows a contour map to be made.
+
+332
+00:29:49,680 --> 00:29:59,860
+So if I could have the next slide, this shows the ground track from where we found the anomaly.
+
+333
+00:29:59,960 --> 00:30:01,940
+Here was one over Hertzsprung, Korolev.
+
+334
+00:30:02,800 --> 00:30:03,740
+Here's Vondegraaff.
+
+335
+00:30:03,800 --> 00:30:08,240
+You can see we went right close to the northern border, Pavlov, and one over Milne.
+
+336
+00:30:08,820 --> 00:30:12,440
+So it was a pretty good one-to-one correspondence with large craters.
+
+337
+00:30:12,440 --> 00:30:19,500
+The initial 11 orbit, of course, is much near the equator.
+
+338
+00:30:19,660 --> 00:30:21,860
+The inclination goes up to plus or minus 11.
+
+339
+00:30:22,540 --> 00:30:27,740
+So we saw one over Korolev, and Stein crater is located right about here.
+
+340
+00:30:27,820 --> 00:30:28,560
+It's not too big.
+
+341
+00:30:29,420 --> 00:30:32,860
+The next map shows a compilation of a lot of these linear profiles.
+
+342
+00:30:33,600 --> 00:30:34,280
+Next slide.
+
+343
+00:30:34,560 --> 00:30:36,620
+Into a contour map.
+
+344
+00:30:36,620 --> 00:30:40,180
+It's a little hard to read the contours.
+
+345
+00:30:41,680 --> 00:30:47,680
+You can see this big black blotch here is a result of contours stacked on top of each other
+
+346
+00:30:47,680 --> 00:30:50,380
+near this Vondegraaff anomaly.
+
+347
+00:30:51,040 --> 00:30:55,140
+You can see the numbers are hard to make out.
+
+348
+00:30:55,220 --> 00:30:59,460
+You can see the structure over Korolev, a hint of some structure over Hertzsprung,
+
+349
+00:30:59,460 --> 00:31:07,240
+and the southern sea over here is actually an enhancement, sticking out of the moon, so to speak.
+
+350
+00:31:07,380 --> 00:31:09,520
+You can see Milne shows a definite structure.
+
+351
+00:31:10,320 --> 00:31:15,640
+Now, the Apollo 16 results should enable us to expand this map.
+
+352
+00:31:15,740 --> 00:31:20,340
+We'll get better resolutions throughout this area and be able to extend it along in here.
+
+353
+00:31:20,420 --> 00:31:22,120
+We'll probably still have a gap down in this region.
+
+354
+00:31:22,520 --> 00:31:25,720
+Harry, can you give us an idea of the gradient you're measuring there?
+
+355
+00:31:25,860 --> 00:31:26,360
+Oh, yes.
+
+356
+00:31:26,620 --> 00:31:26,940
+Okay.
+
+357
+00:31:26,940 --> 00:31:31,320
+The numbers presented in the chart, if you can see them,
+
+358
+00:31:31,420 --> 00:31:35,700
+are measured in tenths of gamma at an altitude of 100 kilometers.
+
+359
+00:31:36,460 --> 00:31:40,720
+So, for example, a good representative value is about 30,
+
+360
+00:31:41,240 --> 00:31:44,400
+and the zero we've arbitrarily chosen at the bottom of the Vondegraaff dip,
+
+361
+00:31:44,500 --> 00:31:48,600
+since this is the lowest value of magnetism we observe.
+
+362
+00:31:48,740 --> 00:31:51,100
+We just call it zero and scale everything relative to it.
+
+363
+00:31:51,100 --> 00:31:58,160
+So, if you're at 100 kilometers, you'll see a three gamma dip going over Vondegraaff on the average.
+
+364
+00:31:58,160 --> 00:32:00,960
+Oh, we were fortunate.
+
+365
+00:32:02,380 --> 00:32:03,800
+Also, the near side of the moon.
+
+366
+00:32:04,220 --> 00:32:07,720
+Does the gravity profile have any, can you correlate?
+
+367
+00:32:07,720 --> 00:32:12,960
+I've looked at the gravity profile, and it doesn't seem to correlate at all.
+
+368
+00:32:14,400 --> 00:32:14,840
+We don't.
+
+369
+00:32:14,900 --> 00:32:19,220
+Actually, the laser data correlates better with, you don't, there's no gravity on the back side, okay,
+
+370
+00:32:19,260 --> 00:32:20,000
+but on the front side.
+
+371
+00:32:20,080 --> 00:32:20,360
+I understand.
+
+372
+00:32:20,360 --> 00:32:24,760
+It correlates pretty well with the laser data,
+
+373
+00:32:24,800 --> 00:32:27,860
+which shows a great big hole here in the back side of the moon around Vondegraaff,
+
+374
+00:32:27,960 --> 00:32:28,920
+and that's where we get our big hole,
+
+375
+00:32:29,040 --> 00:32:33,520
+but I can't see any scientific justification for connecting the two results.
+
+376
+00:32:34,060 --> 00:32:36,460
+I will add, let's remind you, the gamma ray.
+
+377
+00:32:36,840 --> 00:32:37,480
+Yes, that's true.
+
+378
+00:32:37,480 --> 00:32:39,360
+The secondary peak is also in Vondegraaff.
+
+379
+00:32:39,500 --> 00:32:40,560
+I don't know what it means.
+
+380
+00:32:41,040 --> 00:32:42,520
+It could be an alien star base or something.
+
+381
+00:32:43,480 --> 00:32:46,620
+Anyway, the next slide shows the front side of the moon,
+
+382
+00:32:46,620 --> 00:32:51,660
+and it's upside down.
+
+383
+00:32:52,620 --> 00:32:55,660
+The thing to contrast is the much smoother nature of the,
+
+384
+00:32:55,920 --> 00:32:59,220
+could we do a 180 on the slide, please?
+
+385
+00:33:05,700 --> 00:33:06,460
+Can you hear me?
+
+386
+00:33:07,120 --> 00:33:08,720
+Could we have a, turn the slide around, please?
+
+387
+00:33:11,200 --> 00:33:12,300
+Oh, he's on a coffee break.
+
+388
+00:33:12,520 --> 00:33:13,040
+Okay, here you go.
+
+389
+00:33:13,040 --> 00:33:18,320
+Anyway, the front side of the moon is much, much smoother than the back side.
+
+390
+00:33:19,060 --> 00:33:24,140
+The variations are, oh, an order of a factor of 10 smooth.
+
+391
+00:33:24,220 --> 00:33:25,720
+We don't see very much structure at all.
+
+392
+00:33:26,260 --> 00:33:28,360
+It's very hard to even draw contours.
+
+393
+00:33:28,360 --> 00:33:38,920
+Can you sort out the differences in that and the effects of running through the,
+
+394
+00:33:38,920 --> 00:33:41,540
+the Earth's magnetic field effects?
+
+395
+00:33:42,200 --> 00:33:46,800
+Since you're, the front side is always close to the Earth,
+
+396
+00:33:46,880 --> 00:33:47,860
+can you sort out,
+
+397
+00:33:49,560 --> 00:33:53,900
+are we really measuring magnetic variations on the back side,
+
+398
+00:33:54,060 --> 00:33:55,420
+caused by being on the back side,
+
+399
+00:33:55,420 --> 00:33:57,420
+not due to our measuring environment?
+
+400
+00:33:57,980 --> 00:33:58,360
+Oh, right.
+
+401
+00:33:58,480 --> 00:34:00,580
+The Earth's tail field is very, very constant
+
+402
+00:34:00,580 --> 00:34:01,860
+when you're in the,
+
+403
+00:34:01,860 --> 00:34:04,980
+a good second, when you're away from the neutral sheet,
+
+404
+00:34:05,200 --> 00:34:06,480
+and that's where all this data is taken.
+
+405
+00:34:06,480 --> 00:34:11,100
+Well, I guess we never got the front slide complete.
+
+406
+00:34:12,420 --> 00:34:15,300
+Okay, this is a blow-up of the Van de Graaff region
+
+407
+00:34:15,300 --> 00:34:19,960
+in an attempt to pinpoint the exact source of this large anomaly.
+
+408
+00:34:20,540 --> 00:34:23,020
+We kind of suspected it was over the crater itself,
+
+409
+00:34:23,920 --> 00:34:26,560
+since we had always put forth a theory
+
+410
+00:34:26,560 --> 00:34:28,280
+that what we were actually observing in these dips
+
+411
+00:34:28,280 --> 00:34:30,960
+was some sort of a meteorite impact
+
+412
+00:34:30,960 --> 00:34:34,180
+that caused a rather uniformly magnetized crust
+
+413
+00:34:34,180 --> 00:34:35,360
+that suddenly have holes in it,
+
+414
+00:34:35,520 --> 00:34:37,020
+and we're seeing the equivalent dipole
+
+415
+00:34:37,020 --> 00:34:39,940
+of what was left over,
+
+416
+00:34:40,000 --> 00:34:41,600
+and this kind of shoots holes in the theory.
+
+417
+00:34:41,720 --> 00:34:44,440
+We see a, this is the BX component,
+
+418
+00:34:44,540 --> 00:34:45,500
+which is the radial component,
+
+419
+00:34:45,800 --> 00:34:48,700
+and a plus number indicates a value sticking into the moon.
+
+420
+00:34:49,700 --> 00:34:54,380
+So you see this rather large hole here,
+
+421
+00:34:54,460 --> 00:34:56,240
+magnetically, in between two craters,
+
+422
+00:34:56,240 --> 00:35:03,520
+and if you look at various models of double dipoles and stuff,
+
+423
+00:35:03,560 --> 00:35:04,620
+it just doesn't quite fit.
+
+424
+00:35:04,620 --> 00:35:07,600
+The other components, B sub Y and B sub Z,
+
+425
+00:35:07,800 --> 00:35:10,960
+show that it can't be one of these angling dipoles from the crater.
+
+426
+00:35:13,440 --> 00:35:16,280
+And presently, we're now conducting the same sort of studies
+
+427
+00:35:16,280 --> 00:35:18,420
+over the rest of the anomalies to see if it checks out.
+
+428
+00:35:18,540 --> 00:35:21,660
+I just, just yesterday, completed the one over Korolev,
+
+429
+00:35:21,660 --> 00:35:24,240
+and that one is right in the middle of the crater,
+
+430
+00:35:24,480 --> 00:35:28,860
+which is promising for the Shakti magnetization theory.
+
+431
+00:35:33,740 --> 00:35:35,980
+How much validity do we have in the ground track data?
+
+432
+00:35:40,540 --> 00:35:44,600
+How much validity do we have in the ephemers?
+
+433
+00:35:45,020 --> 00:35:47,760
+I understand there's no chance that we could be off by...
+
+434
+00:35:47,760 --> 00:35:48,800
+Oh, never, anything like that.
+
+435
+00:35:48,840 --> 00:35:50,980
+It might be off a kilometer or two, like I said.
+
+436
+00:35:51,660 --> 00:35:56,040
+But now you're talking about the final reading there,
+
+437
+00:35:56,120 --> 00:35:57,400
+that's 9 or 10 kilometers.
+
+438
+00:35:59,760 --> 00:36:01,280
+So it doesn't seem much chance.
+
+439
+00:36:03,700 --> 00:36:05,040
+We'll get maybe one more.
+
+440
+00:36:05,160 --> 00:36:07,560
+As the subsatellite comes crashing down to the moon,
+
+441
+00:36:07,640 --> 00:36:10,480
+the last 10 kilometers should give us a good swath of data,
+
+442
+00:36:10,940 --> 00:36:14,360
+which will give us another high-resolution plot like this.
+
+443
+00:36:15,980 --> 00:36:18,160
+Other than that, we're kind of out of luck.
+
+444
+00:36:18,160 --> 00:36:21,060
+Okay.
+
+445
+00:36:22,620 --> 00:36:23,440
+Okay, thank you.
+
+446
+00:36:24,540 --> 00:36:24,900
+Question?
+
+447
+00:36:26,900 --> 00:36:27,260
+Okay.
+
+448
+00:36:29,680 --> 00:36:30,880
+There's the front side of the moon.
+
+449
+00:36:31,660 --> 00:36:34,880
+Okay, and our coverage from Apollo 11 will extend.
+
+450
+00:36:35,620 --> 00:36:37,360
+Yeah, I believe this is the equator across here.
+
+451
+00:36:37,360 --> 00:36:42,920
+Oh, I'm sorry.
+
+452
+00:36:43,040 --> 00:36:44,760
+Okay, this is zero degrees.
+
+453
+00:36:45,700 --> 00:36:48,340
+Okay, and we go from zero to 90 east to 90 west.
+
+454
+00:36:48,420 --> 00:36:48,940
+It's the terminator.
+
+455
+00:36:49,360 --> 00:36:50,560
+This is the southern sea region,
+
+456
+00:36:50,640 --> 00:36:53,940
+which is about the only distinctive feature on the front side, per se,
+
+457
+00:36:54,000 --> 00:36:55,220
+and even that's on the terminator.
+
+458
+00:36:55,700 --> 00:36:59,740
+And again, these are relatively high values of magnetic fields sticking out of the moon.
+
+459
+00:36:59,740 --> 00:37:04,060
+So you might say that the southern sea is a highly magnetized region.
+
+460
+00:37:05,520 --> 00:37:08,480
+Notice the 16th site is out of our coverage,
+
+461
+00:37:08,820 --> 00:37:11,580
+as were all the Apollo landing sites.
+
+462
+00:37:12,200 --> 00:37:16,280
+You have about three gamma delta on the back side.
+
+463
+00:37:16,400 --> 00:37:17,820
+What are we seeing on the front side?
+
+464
+00:37:18,700 --> 00:37:22,220
+Well, most of these values are about 30, 28, 27,
+
+465
+00:37:22,480 --> 00:37:25,780
+which means they're all three gamma higher than zero at Vandegraaff.
+
+466
+00:37:25,780 --> 00:37:31,100
+So I would say the maximum plus or minus is about a half a gamma on the whole front side.
+
+467
+00:37:31,980 --> 00:37:34,620
+Why do you remember these elongate parallel to the track?
+
+468
+00:37:36,820 --> 00:37:40,500
+This is a function of not having quite enough data.
+
+469
+00:37:41,000 --> 00:37:43,480
+Instead of making physical-looking contours,
+
+470
+00:37:43,620 --> 00:37:45,540
+we drew actual contours with the data.
+
+471
+00:37:45,660 --> 00:37:48,220
+And obviously, if there's a little bit of offset from one orbit to the next,
+
+472
+00:37:48,640 --> 00:37:50,860
+it's going to result in elongated contours.
+
+473
+00:37:50,860 --> 00:37:56,180
+If we fixed this up and made some intelligent-looking guesses,
+
+474
+00:37:56,940 --> 00:37:58,240
+they would be much more circular.
+
+475
+00:37:59,400 --> 00:38:05,880
+Do you have a data on the Apollo 12 and the 15th and the 16th surface?
+
+476
+00:38:07,080 --> 00:38:09,640
+Yes, with 12, 14, 15, yes.
+
+477
+00:38:09,700 --> 00:38:13,420
+How do you compare it with the information of the surface?
+
+478
+00:38:13,640 --> 00:38:18,840
+Well, you see, the surface data deals with much smaller scale-sized phenomena.
+
+479
+00:38:18,840 --> 00:38:22,020
+And so there's really no one-to-one correlation.
+
+480
+00:38:22,620 --> 00:38:24,840
+I suppose that the...
+
+481
+00:38:25,680 --> 00:38:27,840
+Well, the Apollo 12 site is supposed to be...
+
+482
+00:38:28,560 --> 00:38:35,900
+Well, if we could be sure that over a region of 100 kilometers
+
+483
+00:38:35,900 --> 00:38:39,840
+that the average field was 38 gamma, which no one would bet on,
+
+484
+00:38:40,480 --> 00:38:44,920
+then we could make some interesting predictions about other places on the moon.
+
+485
+00:38:44,920 --> 00:38:49,380
+But I suspect if you went down to Apollo 12 and went 100 meters away,
+
+486
+00:38:49,440 --> 00:38:51,660
+you'd find a much different value of a magnetic field.
+
+487
+00:38:52,020 --> 00:38:52,780
+We know it's the case.
+
+488
+00:38:52,820 --> 00:38:53,800
+Look at Apollo 14.
+
+489
+00:38:54,420 --> 00:38:57,480
+They went one kilometer, and they went from 43 gamma to 103 gamma.
+
+490
+00:38:58,160 --> 00:39:02,660
+So who's to say what's a representative value for the magnetic field in a given area?
+
+491
+00:39:03,700 --> 00:39:04,700
+How about 15?
+
+492
+00:39:04,700 --> 00:39:11,180
+Apollo 15, they saw a steady field of 6 plus or minus 4 gamma, which is essentially zero.
+
+493
+00:39:11,700 --> 00:39:16,620
+But there again, you know, behind the next boulder, probably would be 100 gamma, probably, you know.
+
+494
+00:39:18,880 --> 00:39:21,460
+And the results on 16, I thought, were tremendous.
+
+495
+00:39:21,660 --> 00:39:24,020
+The tremendous gradients they got between one place and another.
+
+496
+00:39:24,020 --> 00:39:32,140
+But that 313 gamma field really surprised me as far as getting a value that large.
+
+497
+00:39:34,700 --> 00:39:35,920
+Yes, question there.
+
+498
+00:39:36,000 --> 00:39:40,480
+Have you seen any distinctive features about the correlate,
+
+499
+00:39:40,620 --> 00:39:44,240
+which might make the distinction that it was, say, a hard spot
+
+500
+00:39:44,240 --> 00:39:53,140
+that it would have been near the surface and the necessary soil covering,
+
+501
+00:39:53,360 --> 00:39:56,820
+which would change the surface temperature at that point,
+
+502
+00:39:56,920 --> 00:39:58,060
+which would then change the temperature?
+
+503
+00:39:59,600 --> 00:40:02,140
+No, I'm not a geologist type.
+
+504
+00:40:03,740 --> 00:40:05,480
+Well, I already know about the surface.
+
+505
+00:40:05,480 --> 00:40:10,480
+That would change the temperature.
+
+506
+00:40:10,480 --> 00:40:15,420
+It would seem to me that the younger a crater was,
+
+507
+00:40:15,480 --> 00:40:19,260
+the more chance it would have to produce a good, clean-cut signature
+
+508
+00:40:19,260 --> 00:40:22,700
+on the magnetic field data.
+
+509
+00:40:23,980 --> 00:40:26,880
+For example, Van de Graaff itself looks like a fairly young crater
+
+510
+00:40:26,880 --> 00:40:30,500
+because there's very few secondary craters in the bottom of it.
+
+511
+00:40:30,500 --> 00:40:35,940
+So it looks fairly young, whereas things like Hertzsprung seem to be fairly old.
+
+512
+00:40:36,140 --> 00:40:38,400
+They're well-blotched with secondary craters.
+
+513
+00:40:40,480 --> 00:40:44,580
+What is the distance from the center of Van de Graaff to the center of the anomaly?
+
+514
+00:40:45,160 --> 00:40:47,240
+It's 88 kilometers from the northern rim.
+
+515
+00:40:48,800 --> 00:40:53,020
+So from the center of Van de Graaff, it's about 130, 140 kilometers.
+
+516
+00:40:57,220 --> 00:40:58,220
+Any other questions?
+
+517
+00:40:59,420 --> 00:41:00,460
+Okay, thank you, Larry.
+
+518
+00:41:00,880 --> 00:41:03,460
+And, yeah, got a question?
+
+519
+00:41:03,660 --> 00:41:03,800
+No.
+
+520
+00:41:04,660 --> 00:41:06,660
+Last subject will be the transponder.
+
+521
+00:41:07,540 --> 00:41:08,020
+Bill Sogren.
+
+522
+00:41:08,020 --> 00:41:38,000
+This is a gravity experiment.
+
+523
+00:41:38,000 --> 00:41:45,280
+And we monitor the gravity by just monitoring the velocity of the spacecraft
+
+524
+00:41:45,280 --> 00:41:49,300
+or the LEM or the subsatellite.
+
+525
+00:41:50,140 --> 00:41:54,700
+Of course, on this particular mission, we lost our LEM data on impact
+
+526
+00:41:54,700 --> 00:41:55,540
+because it started tumbling.
+
+527
+00:41:56,100 --> 00:41:58,100
+And so that data was lost.
+
+528
+00:41:58,200 --> 00:42:03,000
+We do, however, have the CSM in the low-altitude orbit,
+
+529
+00:42:03,000 --> 00:42:06,680
+which is very interesting data.
+
+530
+00:42:06,680 --> 00:42:29,300
+Here's the orbital track.
+
+531
+00:42:30,100 --> 00:42:32,740
+And hopefully I can get this aligned.
+
+532
+00:42:35,380 --> 00:42:36,440
+About like that.
+
+533
+00:42:37,140 --> 00:42:43,480
+This profile just below it is the gravity anomaly that was detected.
+
+534
+00:42:43,480 --> 00:42:50,060
+This line right here represents zero gravity central isostatic equilibrium.
+
+535
+00:42:50,760 --> 00:42:55,960
+And anything below it, of course, that would be negative gravity deviations.
+
+536
+00:42:55,960 --> 00:43:02,340
+Here we are, Ptolemaeus, going essentially over the center with the track.
+
+537
+00:43:02,400 --> 00:43:06,380
+And we can see the large negative anomaly again, almost 100 milligals.
+
+538
+00:43:06,380 --> 00:43:13,180
+Here we see some highland material where we have a positive.
+
+539
+00:43:13,180 --> 00:43:18,300
+Then we drop down into a relative low in between these two old craters,
+
+540
+00:43:18,440 --> 00:43:19,800
+the Parkus and Albatagnius.
+
+541
+00:43:19,800 --> 00:43:22,300
+And then a high in here.
+
+542
+00:43:23,140 --> 00:43:26,980
+At this point, this is the Descartes landing site.
+
+543
+00:43:27,040 --> 00:43:30,800
+And we're actually at about a 50 milligal negative anomaly in that region.
+
+544
+00:43:31,740 --> 00:43:36,040
+There's some nice correlations here with the laser altimetry measurements.
+
+545
+00:43:36,140 --> 00:43:39,000
+I'll show them in the next profile.
+
+546
+00:43:39,360 --> 00:43:40,480
+But this is continuous.
+
+547
+00:43:40,580 --> 00:43:42,200
+I've just taken one small section here.
+
+548
+00:43:42,200 --> 00:43:45,660
+We have this thing from limb to limb.
+
+549
+00:43:45,800 --> 00:43:49,480
+So about 110 longitude plus to 110 minus.
+
+550
+00:43:50,480 --> 00:43:54,580
+And essentially, three revs.
+
+551
+00:43:54,580 --> 00:43:58,780
+From rev 3 through rev 11.
+
+552
+00:43:59,060 --> 00:44:00,060
+That's eight revs.
+
+553
+00:44:00,360 --> 00:44:03,000
+Eight revs of data that are pretty good.
+
+554
+00:44:03,240 --> 00:44:05,860
+And then they started their station keeping.
+
+555
+00:44:06,240 --> 00:44:08,560
+And data kind of got garbaged up a lot.
+
+556
+00:44:08,780 --> 00:44:10,320
+All the maneuvering was going on.
+
+557
+00:44:12,200 --> 00:44:17,540
+Let me point out one kind of interesting thing here.
+
+558
+00:44:19,040 --> 00:44:23,280
+Notice that Ptolemaeus here has an anomaly much lower than Nubium.
+
+559
+00:44:23,700 --> 00:44:25,920
+Although Nubium, which is this region right in here,
+
+560
+00:44:25,980 --> 00:44:31,160
+this Marinubium right in here, is still at about minus 50 milligals.
+
+561
+00:44:31,160 --> 00:44:43,840
+Here's an altimeter profile.
+
+562
+00:44:45,840 --> 00:44:50,240
+And going right to the Nubium Ptolemaeus region again,
+
+563
+00:44:50,280 --> 00:44:54,840
+we see that Nubium elevation here is some, by the way,
+
+564
+00:44:54,840 --> 00:44:58,720
+the scale here is two kilometers per heavy line.
+
+565
+00:44:59,060 --> 00:45:01,600
+So we've dropped down here almost two kilometers
+
+566
+00:45:01,600 --> 00:45:04,320
+from the floor of Ptolemaeus to the floor of Nubium.
+
+567
+00:45:05,000 --> 00:45:09,680
+Yet the gravity anomaly is just the opposite.
+
+568
+00:45:09,940 --> 00:45:15,180
+The Ptolemaeus is some 50 milligals lower than the Nubium region.
+
+569
+00:45:15,180 --> 00:45:19,580
+And another interesting point is, Fred, on these ACIC maps,
+
+570
+00:45:20,380 --> 00:45:23,760
+Nubium is shown a kilometer higher than Ptolemaeus.
+
+571
+00:45:24,840 --> 00:45:27,360
+And here we are two kilometers lower.
+
+572
+00:45:27,440 --> 00:45:29,220
+So we're talking about three kilometers discrepancy
+
+573
+00:45:29,220 --> 00:45:31,300
+in just that little area right there.
+
+574
+00:45:31,380 --> 00:45:34,160
+So I think some of these guys were talking about the right thing
+
+575
+00:45:34,160 --> 00:45:37,120
+when they said we really didn't know the altitudes too well.
+
+576
+00:45:37,120 --> 00:45:40,180
+I think that shows up quite dramatically
+
+577
+00:45:40,180 --> 00:45:45,300
+when you look at the low sun angle view
+
+578
+00:45:45,300 --> 00:45:46,420
+as you approach the Terminator,
+
+579
+00:45:46,580 --> 00:45:49,860
+the things that were in Nubium didn't show up
+
+580
+00:45:49,860 --> 00:45:53,200
+until significantly after we anticipated.
+
+581
+00:45:53,460 --> 00:45:55,440
+We missed our times on those things a great deal,
+
+582
+00:45:55,540 --> 00:45:56,520
+and that could only be called
+
+583
+00:45:56,520 --> 00:45:59,540
+by having a discrepancy in our relative heights.
+
+584
+00:45:59,820 --> 00:45:59,980
+Yeah.
+
+585
+00:46:00,240 --> 00:46:02,320
+This is not just, this is Rev. 28.
+
+586
+00:46:02,320 --> 00:46:06,460
+We've looked at, there are five real good tracking,
+
+587
+00:46:06,780 --> 00:46:08,340
+laser tracking passes over this region,
+
+588
+00:46:08,440 --> 00:46:09,600
+and we've looked at three of them,
+
+589
+00:46:09,960 --> 00:46:13,320
+and all three show the same consistency of the drop there.
+
+590
+00:46:13,680 --> 00:46:14,720
+Other interesting thing here,
+
+591
+00:46:15,220 --> 00:46:18,520
+Procolorum, Tranquilitatis, Frecunditatis,
+
+592
+00:46:18,560 --> 00:46:20,300
+they all seem to be about on the same level.
+
+593
+00:46:21,180 --> 00:46:24,700
+Smithii, again, being a low, about four and a half kilometers,
+
+594
+00:46:24,780 --> 00:46:27,760
+that was the same thing on Apollo 15 when we passed over it.
+
+595
+00:46:28,120 --> 00:46:29,900
+It was some four and a half kilometers below,
+
+596
+00:46:30,400 --> 00:46:31,480
+that's mean radius here.
+
+597
+00:46:31,480 --> 00:46:39,580
+And we're still referencing this to a 1738, well, 0.1 radius off the CG.
+
+598
+00:46:40,840 --> 00:46:46,820
+If you take this stuff and start fitting it to an optical center
+
+599
+00:46:46,820 --> 00:46:49,080
+with a CG offset,
+
+600
+00:46:49,840 --> 00:46:53,200
+that you do indeed get the two-kilometer shift again
+
+601
+00:46:53,200 --> 00:46:56,400
+of the CG being closer to the Earth by some two kilometers.
+
+602
+00:46:57,260 --> 00:47:00,900
+Let's say that tranquility is about two and a half kilometers
+
+603
+00:47:00,900 --> 00:47:01,860
+lower than Descartes.
+
+604
+00:47:02,860 --> 00:47:03,560
+That's right.
+
+605
+00:47:04,020 --> 00:47:05,660
+Yeah, here's the landing site right in here.
+
+606
+00:47:06,140 --> 00:47:09,040
+And this is, we had a negative gravity anomaly in here.
+
+607
+00:47:09,160 --> 00:47:10,920
+Well, kind of according to this,
+
+608
+00:47:11,000 --> 00:47:12,740
+maybe that's the situation,
+
+609
+00:47:12,860 --> 00:47:15,000
+because it looks like a topographic lobe.
+
+610
+00:47:15,000 --> 00:47:28,740
+This is the backside.
+
+611
+00:47:28,740 --> 00:47:32,940
+We had some, these are the limbs where the data was missing.
+
+612
+00:47:32,940 --> 00:47:36,100
+These are taken from those, this data is taken from that Thrift printout
+
+613
+00:47:36,100 --> 00:47:39,040
+that we get in real time, and there's gaps in the data.
+
+614
+00:47:39,040 --> 00:47:43,660
+These will be filled in once they get the station tapes delivered.
+
+615
+00:47:44,120 --> 00:47:46,800
+But we can see the crater Hertz sprung here very evidently
+
+616
+00:47:46,800 --> 00:47:48,540
+with the central peak or something in it.
+
+617
+00:47:49,220 --> 00:47:55,100
+You don't have any data in that 120-degree region, huh?
+
+618
+00:47:55,420 --> 00:47:56,000
+Not now.
+
+619
+00:47:56,000 --> 00:47:59,860
+We should have it next week or so, whenever they get the tapes here and the goose.
+
+620
+00:48:03,700 --> 00:48:08,460
+One of the things that, well, on Apollo 15, there was a definite,
+
+621
+00:48:08,760 --> 00:48:09,840
+well, centered about 180.
+
+622
+00:48:10,540 --> 00:48:14,080
+There was a definite big trough in here
+
+623
+00:48:14,080 --> 00:48:16,300
+which went down about some four and a half kilometers.
+
+624
+00:48:16,520 --> 00:48:17,640
+It was very jagged.
+
+625
+00:48:18,280 --> 00:48:19,700
+But it was centered just about here.
+
+626
+00:48:19,860 --> 00:48:22,940
+And on Apollo 16 now, we do not really see that.
+
+627
+00:48:22,940 --> 00:48:27,380
+We see this highland material here, which we had on 15.
+
+628
+00:48:27,620 --> 00:48:34,000
+That started about in here and showed a marked high region in there.
+
+629
+00:48:34,420 --> 00:48:37,360
+And this is holding on 16 also.
+
+630
+00:48:37,520 --> 00:48:42,840
+So this is kind of consistent with 15.
+
+631
+00:48:44,480 --> 00:48:48,220
+Here's another, this is orbit 38 on the backside.
+
+632
+00:48:48,220 --> 00:48:51,640
+I'll just kind of lay it there to show you some of the consistency.
+
+633
+00:48:52,940 --> 00:48:55,320
+This is 10 orbits later.
+
+634
+00:48:56,600 --> 00:48:58,260
+The profile is almost there.
+
+635
+00:48:58,320 --> 00:48:58,920
+Smith, the eye.
+
+636
+00:48:59,760 --> 00:49:01,560
+Oh, here we have some data in that.
+
+637
+00:49:02,540 --> 00:49:03,660
+So there's your data.
+
+638
+00:49:05,400 --> 00:49:05,720
+Okay.
+
+639
+00:49:06,620 --> 00:49:07,000
+I don't know.
+
+640
+00:49:07,220 --> 00:49:08,320
+Were you looking for something particular?
+
+641
+00:49:08,580 --> 00:49:10,560
+Yeah, I was looking for something around 105.
+
+642
+00:49:10,560 --> 00:49:11,860
+105.
+
+643
+00:49:11,860 --> 00:49:12,180
+105.
+
+644
+00:49:19,660 --> 00:49:20,500
+Probably not particular.
+
+645
+00:49:20,860 --> 00:49:21,060
+Nothing.
+
+646
+00:49:21,760 --> 00:49:22,120
+Okay.
+
+647
+00:49:22,120 --> 00:49:29,160
+I do have some data on the sub-satellite from Apollo 15,
+
+648
+00:49:29,280 --> 00:49:31,120
+but I don't know if that's the time to really show here.
+
+649
+00:49:31,160 --> 00:49:32,940
+I think I've shown enough stuff on 16, huh?
+
+650
+00:49:33,560 --> 00:49:35,380
+Yeah, well, I'd like to stick to 16.
+
+651
+00:49:35,560 --> 00:49:39,060
+Any of the problems we have or any of the data that we got for the crew.
+
+652
+00:49:39,060 --> 00:49:43,500
+Well, I'm very happy with all the data we've gotten on 16,
+
+653
+00:49:43,760 --> 00:49:49,800
+and the sub-satellite on 16, like Larry mentioned just before me,
+
+654
+00:49:50,520 --> 00:49:51,300
+looks pretty grim.
+
+655
+00:49:51,340 --> 00:49:56,000
+Although there was an OD solution just run out about an hour ago
+
+656
+00:49:56,000 --> 00:50:06,860
+where the last state vector was used as the position for running out the lifetime program.
+
+657
+00:50:07,480 --> 00:50:11,820
+And the lifetime program, if we believe that 15-8 model that we had used initially back there
+
+658
+00:50:11,820 --> 00:50:13,680
+when we ejected that thing,
+
+659
+00:50:14,080 --> 00:50:16,740
+it says that this thing should come back up.
+
+660
+00:50:16,880 --> 00:50:18,240
+It still says it's not going to crash.
+
+661
+00:50:18,240 --> 00:50:23,120
+But this will be a very interesting thing to watch the next couple of days, I can say.
+
+662
+00:50:23,120 --> 00:50:23,220
+Right.
+
+663
+00:50:24,120 --> 00:50:24,780
+That's all right.
+
+664
+00:50:24,860 --> 00:50:26,820
+We own the seismometers up and ready.
+
+665
+00:50:27,140 --> 00:50:27,780
+Well, it's 50.
+
+666
+00:50:30,480 --> 00:50:32,780
+I asked Kovach about that,
+
+667
+00:50:32,880 --> 00:50:35,180
+and I don't know whether he can speak for length or not,
+
+668
+00:50:35,180 --> 00:50:38,420
+but I told him it's 50 pounds,
+
+669
+00:50:38,540 --> 00:50:40,680
+and whether he can actually see an impact of 50 pounds,
+
+670
+00:50:41,000 --> 00:50:42,460
+I think that's all it weighs.
+
+671
+00:50:43,820 --> 00:50:44,940
+The central station.
+
+672
+00:50:48,800 --> 00:50:49,340
+Let's see.
+
+673
+00:50:49,380 --> 00:50:54,380
+It should hit about maybe some 20 or 30 degrees west longitude
+
+674
+00:50:54,380 --> 00:50:56,580
+and 5 or 6 degrees north.
+
+675
+00:50:56,620 --> 00:50:57,300
+Is that right, Dick?
+
+676
+00:50:58,200 --> 00:50:59,180
+Something like that.
+
+677
+00:50:59,860 --> 00:51:02,780
+About 5 or 6 north latitude and about 30 west.
+
+678
+00:51:03,620 --> 00:51:05,860
+That's what it looks like, that linear extrapolation.
+
+679
+00:51:06,060 --> 00:51:06,220
+Okay.
+
+680
+00:51:10,440 --> 00:51:11,260
+Thank you, Bill.
+
+681
+00:51:12,440 --> 00:51:13,800
+Thank you, gentlemen, for attending.
+
+682
+00:51:14,260 --> 00:51:16,460
+This concludes our scientific debrief,
+
+683
+00:51:17,160 --> 00:51:20,640
+and I'd like to thank the crew for giving their time up to come on over
+
+684
+00:51:20,640 --> 00:51:24,040
+to give us some information and also learn some things of what happened.
+
+685
+00:51:24,400 --> 00:51:24,680
+Okay.
+
+686
+00:51:24,980 --> 00:51:26,880
+Let me say something for the crew.
+
+687
+00:51:27,300 --> 00:51:31,700
+I want to commend Ken for the way that he operated the sim bay.
+
+688
+00:51:31,880 --> 00:51:34,920
+I don't think you'll ever find a guy who's either more interested in it
+
+689
+00:51:34,920 --> 00:51:38,580
+or more aware of what the operational problems were
+
+690
+00:51:38,580 --> 00:51:40,360
+and who could do a better job.
+
+691
+00:51:41,380 --> 00:51:44,660
+He really did an outstanding job, and I think he's well done.
+
+692
+00:51:44,740 --> 00:51:48,180
+The other thing I'd like to say is since I've been on this program,
+
+693
+00:51:48,320 --> 00:51:52,820
+I've been continually impressed with the importance of what we're doing
+
+694
+00:51:52,820 --> 00:51:56,660
+in our support of you guys.
+
+695
+00:51:56,660 --> 00:51:59,580
+These experiments, they look way out right now,
+
+696
+00:52:00,160 --> 00:52:03,540
+and they're difficult for the man in the street to relate to,
+
+697
+00:52:03,540 --> 00:52:07,820
+but my feeling is from some of the things I've seen here
+
+698
+00:52:07,820 --> 00:52:12,980
+and from the thrust of science and technology in this country
+
+699
+00:52:12,980 --> 00:52:17,300
+that in our lifetime, and I won't want to say when,
+
+700
+00:52:17,360 --> 00:52:21,800
+but I imagine it's going to be a damn sight sooner than anybody even here in this room can imagine,
+
+701
+00:52:21,800 --> 00:52:26,260
+there are going to be practical applications of some of these discoveries that have been made
+
+702
+00:52:26,260 --> 00:52:30,280
+that will affect every one of us, and I think you're to be congratulated.
+
+703
+00:52:30,380 --> 00:52:34,020
+The other thing is that I get out of all this that I think the United States ought to be spending
+
+704
+00:52:34,020 --> 00:52:38,620
+two to three times the amount of money that we are spending on basic research and development
+
+705
+00:52:38,620 --> 00:52:40,200
+and applied research and development,
+
+706
+00:52:40,200 --> 00:52:45,020
+and I think that if you really look at the big picture of our energy requirements
+
+707
+00:52:45,020 --> 00:52:50,620
+for clean energy in the future in order to improve the life of human beings on this planet,
+
+708
+00:52:50,740 --> 00:52:52,180
+we ought to do that and get on with it.
+
+709
+00:52:52,820 --> 00:52:53,220
+Thank you.
+
+710
+00:52:58,420 --> 00:53:02,220
+During the next couple of months,
+
+711
+00:53:02,480 --> 00:53:07,120
+we'll probably have an opportunity to talk to a lot of people
+
+712
+00:53:07,120 --> 00:53:10,280
+that help to have some influence
+
+713
+00:53:10,280 --> 00:53:13,260
+or shape the pattern of our program and related programs,
+
+714
+00:53:13,820 --> 00:53:17,820
+and I would appreciate it very much.
+
+715
+00:53:17,940 --> 00:53:19,780
+I'm sure we all could use the data.
+
+716
+00:53:20,120 --> 00:53:23,740
+As you find out things, we realize that you have preliminary data today,
+
+717
+00:53:23,800 --> 00:53:27,740
+and a lot of the things are only hints and suggestions of things to come.
+
+718
+00:53:30,340 --> 00:53:32,220
+I would personally appreciate it very much
+
+719
+00:53:32,220 --> 00:53:35,920
+if you'd give us a call periodically and tell us what you found.
+
+720
+00:53:35,920 --> 00:53:39,040
+It's too easy for us to go through here
+
+721
+00:53:39,040 --> 00:53:41,580
+and at the end of a week or so walk off
+
+722
+00:53:41,580 --> 00:53:43,000
+and never really know what happened
+
+723
+00:53:43,000 --> 00:53:45,040
+and never know what kind of data came out.
+
+724
+00:53:46,160 --> 00:53:49,420
+And I think that makes us very poor salesmen.
+
+725
+00:53:50,800 --> 00:53:53,280
+I think you could help us do the job
+
+726
+00:53:53,280 --> 00:53:56,220
+to kind of feed back the quality of the data that you've been getting
+
+727
+00:53:56,220 --> 00:53:57,880
+if you could keep us informed.
+
+728
+00:53:58,300 --> 00:54:01,620
+Please don't ever feel like you're interfering with our operation
+
+729
+00:54:01,620 --> 00:54:04,080
+or don't be inhibited to call us.
+
+730
+00:54:04,660 --> 00:54:06,680
+If we can't come to the phone and take the data
+
+731
+00:54:06,680 --> 00:54:07,980
+or talk to you about it,
+
+732
+00:54:08,940 --> 00:54:11,440
+the secretary will take the number and we'll be glad to call you back.
+
+733
+00:54:12,380 --> 00:54:15,440
+And if there's any time when you have some question about the data,
+
+734
+00:54:15,600 --> 00:54:18,360
+it doesn't matter how trivial it may seem to you.
+
+735
+00:54:18,740 --> 00:54:19,860
+If you want to look at some data
+
+736
+00:54:19,860 --> 00:54:23,800
+and you're curious to know whether we've ever seen a particular observation
+
+737
+00:54:23,800 --> 00:54:27,180
+or whether the spacecraft was moving at the time your data was taken
+
+738
+00:54:27,180 --> 00:54:30,360
+or I don't care how far out it might seem to you,
+
+739
+00:54:30,840 --> 00:54:32,160
+questions are pretty cheap
+
+740
+00:54:32,160 --> 00:54:34,680
+and not asking questions can be very expensive.
+
+741
+00:54:35,120 --> 00:54:37,920
+And so please feel like our job isn't finished
+
+742
+00:54:37,920 --> 00:54:40,600
+until you guys have all the information you can use.
+
+743
+00:54:41,240 --> 00:54:44,000
+And I would like for you to feel like you can call any time.
+
+744
+00:54:44,440 --> 00:54:45,180
+Thank you very much.
+
+745
+00:54:45,180 --> 00:54:49,080
+I'd like to say, give you my thanks also.
+
+746
+00:54:49,440 --> 00:54:51,580
+I was very pleased with the way all the gear worked,
+
+747
+00:54:52,020 --> 00:54:54,180
+especially my part on the lunar surface
+
+748
+00:54:54,180 --> 00:54:56,840
+and the part I saw of Ken in orbit.
+
+749
+00:54:58,300 --> 00:55:03,080
+It was just a real pleasure to have him placed all this stuff for all you people
+
+750
+00:55:03,080 --> 00:55:05,020
+and glad it's working so well.
+
+751
+00:55:06,100 --> 00:55:08,720
+And thanks for the opportunity of going.
+
+752
+00:55:08,860 --> 00:55:12,220
+If you can gin up another one, I'll be glad to go along again.
+
+753
+00:55:12,460 --> 00:55:12,920
+Thank you.
+
+754
+00:55:15,180 --> 00:55:45,160
+Thank you.
+

@@ -2965,6 +2965,7 @@ def render_html(app_data_version: str = "") -> str:
     .node-card {
       position: fixed;
       left: 12px;
+      top: 12px;
       bottom: 12px;
       z-index: 6;
       width: min(440px, calc(100vw - 24px));
@@ -2973,15 +2974,16 @@ def render_html(app_data_version: str = "") -> str:
     }
     .node-card.open { display: block; }
     .node-card-body {
-      max-height: min(72vh, calc(100vh - 132px));
+      height: 100%;
+      max-height: none;
       overflow-y: auto;
       overflow-x: hidden;
       padding: 12px;
     }
     .card-close {
       position: absolute;
-      top: -36px;
-      right: -1px;
+      top: 8px;
+      right: -36px;
       width: 28px;
       height: 28px;
       padding: 0;
@@ -3247,9 +3249,26 @@ def render_html(app_data_version: str = "") -> str:
       font-size: .875rem;
     }
     @media (max-width: 820px) {
-      .topbar { grid-template-columns: 1fr; }
-      .controls { justify-content: start; }
+      .topbar {
+        top: 8px;
+        left: 8px;
+        right: 8px;
+        grid-template-columns: 1fr;
+        gap: 6px;
+      }
+      .brand { padding: 8px 10px; }
+      h1 { font-size: 13px; }
+      .controls {
+        justify-content: start;
+        gap: 6px;
+        padding: 6px;
+      }
       input { width: 100%; }
+      input, select, button {
+        height: 30px;
+        padding: 0 8px;
+        font-size: 12px;
+      }
       .legend { display: none; }
       .corner-label {
         top: auto;
@@ -3258,6 +3277,17 @@ def render_html(app_data_version: str = "") -> str:
         max-width: calc(100vw - 24px);
       }
       .corner-label strong { font-size: 22px; }
+      .node-card {
+        top: 8px;
+        left: 8px;
+        right: 8px;
+        bottom: 8px;
+        width: auto;
+      }
+      .card-close {
+        top: 8px;
+        right: 8px;
+      }
     }
   </style>
 </head>
@@ -3551,6 +3581,12 @@ __APP_DATA_SCRIPTS__
       return Math.max(0, Math.ceil(rect.bottom + 18));
     }
 
+    function graphSidebarInsetPx() {
+      if (!cardEl.classList.contains("open") || isCompactViewport()) return 0;
+      const rect = cardEl.getBoundingClientRect();
+      return Math.max(0, Math.ceil(rect.right + 24));
+    }
+
     function fitBoundsToViewport(minX, minY, maxX, maxY, options = {}) {
       const rect = svg.getBoundingClientRect();
       const rectWidth = Math.max(1, rect.width || svg.clientWidth || 1);
@@ -3606,6 +3642,11 @@ __APP_DATA_SCRIPTS__
       );
     }
 
+    function isCompactViewport() {
+      const rect = svg.getBoundingClientRect();
+      return Math.min(rect.width || window.innerWidth, window.innerWidth) <= 820;
+    }
+
     function fit() {
       setViewBox(0, -250, 2200, 2000);
     }
@@ -3627,7 +3668,28 @@ __APP_DATA_SCRIPTS__
       const maxX = Math.max(...items.map((node) => node.x + node.r)) + xPad;
       const minY = Math.min(...items.map((node) => node.y - node.r)) - topPad;
       const maxY = Math.max(...items.map((node) => node.y + node.r)) + bottomPad;
-      fitBoundsToViewport(minX, minY, maxX, maxY, { reserveHeader: true, bottomInsetPx: 32 });
+      fitBoundsToViewport(minX, minY, maxX, maxY, { reserveHeader: true, bottomInsetPx: 32, leftInsetPx: graphSidebarInsetPx() });
+    }
+
+    function fitCategoryDrillViewport(activeCategoryNode, nodes) {
+      if (!isCompactViewport()) {
+        fitNodesToViewport([activeCategoryNode].concat(nodes), { padding: 260, reserveHeader: true, bottomInsetPx: 32 });
+        return;
+      }
+      const focusRadius = 760;
+      fitBoundsToViewport(
+        activeCategoryNode.x - focusRadius,
+        activeCategoryNode.y - focusRadius,
+        activeCategoryNode.x + focusRadius,
+        activeCategoryNode.y + focusRadius,
+        {
+          padding: 80,
+          reserveHeader: true,
+          bottomInsetPx: 48,
+          leftInsetPx: 12,
+          rightInsetPx: 12,
+        }
+      );
     }
 
     function setCornerLabel(title, detail) {
@@ -3834,7 +3896,7 @@ __APP_DATA_SCRIPTS__
         const dy = avgY - activeCategoryNode.y;
         const length = Math.max(1, Math.hypot(dx, dy));
         const angle = Math.atan2(dy, dx) + ((index % 5) - 2) * .08;
-        const radius = 1010 + (index % 3) * 72;
+        const radius = 1260 + (index % 3) * 120;
         return {
           id: item.id,
           x: activeCategoryNode.x + Math.cos(angle) * radius,
@@ -3910,7 +3972,7 @@ __APP_DATA_SCRIPTS__
       wireEntityNodes();
       wireCategoryNodes();
       wireCategoryListNodes();
-      fitNodesToViewport([activeCategoryNode].concat(nodes), { padding: 260, reserveHeader: true, bottomInsetPx: 32 });
+      fitCategoryDrillViewport(activeCategoryNode, nodes);
     }
 
     function renderCategoryGrid(categoryId) {
@@ -4323,6 +4385,7 @@ __APP_DATA_SCRIPTS__
     }
 
     function relationshipGraphScore(relationship) {
+      if (relationship.type === "manual") return 1000000 + (relationship.weight || 1);
       const typeBoost = relationship.type === "co_mentioned" ? 0 : 18;
       const source = entitiesById.get(relationship.source);
       const target = entitiesById.get(relationship.target);
