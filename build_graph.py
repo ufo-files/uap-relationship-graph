@@ -23,7 +23,7 @@ from typing import Any
 
 
 ROOT = Path(__file__).resolve().parent
-PROJECT_ID = "uap-relationship-graph"
+PROJECT_ID = "relationship-graph"
 RELATIONSHIP_WINDOW_RADIUS = 4
 RELATIONSHIP_WINDOW_MENTION_LIMIT = 30
 RELATIONSHIP_OUTPUT_LIMIT = 8000
@@ -39,8 +39,9 @@ REPORT_RECLASS_INPUT = ROOT / "report" / "data" / "reclass.json"
 REPORT_REVIEW_INPUT = ROOT / "report" / "data" / "review-decisions.json"
 LEGACY_V2_REVIEW_INPUT = ROOT / "report-v2" / "review-decisions.json"
 LEGACY_V2_DATA_REVIEW_INPUT = ROOT / "report-v2" / "data" / "review-decisions.json"
-DATA_EXPORT_INPUT = DATA_DIR / "uap-relationship-graph-data.json"
+DATA_EXPORT_INPUT = DATA_DIR / "relationship-graph-data.json"
 LEGACY_DATA_EXPORT_INPUTS = [
+    DATA_DIR / "uap-relationship-graph-data.json",
     ROOT / "uap-relationship-graph-data.json",
     DATA_DIR / "transcript-intelligence-v2.json",
     ROOT / "transcript-intelligence-v2.json",
@@ -56,6 +57,7 @@ NON_TRANSCRIPT_FILES = {
     "review-decisions.json",
     "transcript-intelligence-v2.json",
     "uap-relationship-graph-data.json",
+    "relationship-graph-data.json",
     "README.md",
     "README_V2.md",
 }
@@ -1865,7 +1867,7 @@ def render_html(app_data_version: str = "") -> str:
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>UAP Relationship Graph</title>
+  <title>UFO Files Relationship Graph</title>
   <style>
     :root {
       --bg: #f5f6f8;
@@ -2108,7 +2110,7 @@ def render_html(app_data_version: str = "") -> str:
   <header>
     <div class="bar">
       <div>
-        <h1>UAP Relationship Graph</h1>
+        <h1>UFO Files Relationship Graph</h1>
         <div class="meta">Evidence-backed extraction, review labels, and reproducible graph exports. No OpenAI API.</div>
       </div>
       <div class="toolbar">
@@ -2193,7 +2195,8 @@ def render_html(app_data_version: str = "") -> str:
   <script src="app-data.js"></script>
   <script>
     const DATA = window.TRANSCRIPT_INTELLIGENCE_DATA;
-    const REVIEW_KEY = "uap-relationship-graph-reclass";
+    const REVIEW_KEY = "relationship-graph-reclass";
+    const PREVIOUS_REVIEW_KEY = "uap-relationship-graph-reclass";
     const LEGACY_REVIEW_KEY = "transcript-intelligence-v2-review";
     let activeCategory = "all";
     let selectedEntityId = null;
@@ -2218,7 +2221,8 @@ def render_html(app_data_version: str = "") -> str:
 
     function readReview() {
       try {
-        const review = JSON.parse(localStorage.getItem(REVIEW_KEY) || '{"reclassifications":{},"falsePositives":{},"omissions":{},"aliases":{},"merges":{},"nameMerges":{},"notes":{}}');
+        const storedReview = localStorage.getItem(REVIEW_KEY) || localStorage.getItem(PREVIOUS_REVIEW_KEY) || localStorage.getItem(LEGACY_REVIEW_KEY);
+        const review = JSON.parse(storedReview || '{"reclassifications":{},"falsePositives":{},"omissions":{},"aliases":{},"merges":{},"nameMerges":{},"notes":{}}');
         review.merges = review.merges || {};
         review.nameMerges = review.nameMerges || {};
         return review;
@@ -2674,7 +2678,7 @@ def render_html(app_data_version: str = "") -> str:
       download("reclass.json", review);
     });
     document.getElementById("download-data").addEventListener("click", () => {
-      download("uap-relationship-graph-data.json", DATA);
+      download("relationship-graph-data.json", DATA);
     });
     render();
   </script>
@@ -2785,7 +2789,7 @@ def render_html(app_data_version: str = "") -> str:
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Transcript Relationship Graph</title>
+  <title>UFO Files Relationship Graph</title>
   <style>
     :root {
       --bg: #f6f5ef;
@@ -3210,24 +3214,30 @@ def render_html(app_data_version: str = "") -> str:
       transform-origin: center;
     }
     .graph-node.connection-highlight circle {
-      stroke-width: 2.4;
+      stroke: var(--ink) !important;
+      stroke-width: 3.4;
     }
     .graph-node.connection-dim,
     .html-graph-label.connection-dim {
-      opacity: .24;
+      opacity: .14;
     }
     .graph-edge {
       transition: opacity .16s ease, stroke-width .16s ease;
     }
     .graph-edge.connection-highlight {
-      opacity: .82;
-      stroke-width: 2.4px;
+      opacity: .95;
+      stroke: var(--ink) !important;
+      stroke-width: 4px;
     }
     .graph-edge.connection-dim {
-      opacity: .06;
+      opacity: .035;
     }
     .html-graph-label.connection-highlight {
+      z-index: 8;
       color: var(--ink);
+      border-color: var(--ink);
+      background: rgba(246, 245, 239, .94);
+      box-shadow: 0 2px 8px rgba(17, 17, 17, .12);
       opacity: 1;
     }
     .graph-label {
@@ -3298,7 +3308,7 @@ def render_html(app_data_version: str = "") -> str:
   <div id="graph-labels" class="graph-label-layer" aria-label="Keyboard accessible graph labels"></div>
   <div class="topbar">
     <div class="brand">
-      <h1 id="app-title">Transcript Relationship Graph</h1>
+      <h1 id="app-title">UFO Files Relationship Graph</h1>
       <div class="meta" id="status" role="status" aria-live="polite">Loading graph...</div>
     </div>
     <form class="controls" id="search-form" role="search" aria-label="Graph search and downloads">
@@ -3317,7 +3327,8 @@ def render_html(app_data_version: str = "") -> str:
 __APP_DATA_SCRIPTS__
   <script>
     const RAW = window.TRANSCRIPT_INTELLIGENCE_DATA;
-    const REVIEW_KEY = "uap-relationship-graph-reclass";
+    const REVIEW_KEY = "relationship-graph-reclass";
+    const PREVIOUS_REVIEW_KEY = "uap-relationship-graph-reclass";
     const LEGACY_REVIEW_KEY = "transcript-intelligence-v2-review";
     const BUILT_REVIEW = normalizeReview(RAW.reclassDecisions || RAW.reclass_decisions || RAW.reviewDecisions || RAW.review_decisions || {});
     const THEME = {
@@ -5366,6 +5377,11 @@ __APP_DATA_SCRIPTS__
     }
 
     function initializeReviewStorage() {
+      const previousRaw = localStorage.getItem(PREVIOUS_REVIEW_KEY);
+      if (!localStorage.getItem(REVIEW_KEY) && previousRaw) {
+        localStorage.setItem(REVIEW_KEY, previousRaw);
+      }
+      if (previousRaw) localStorage.removeItem(PREVIOUS_REVIEW_KEY);
       const legacyRaw = localStorage.getItem(LEGACY_REVIEW_KEY);
       if (!localStorage.getItem(REVIEW_KEY) && legacyRaw) {
         localStorage.setItem(REVIEW_KEY, legacyRaw);
@@ -5697,7 +5713,7 @@ __APP_DATA_SCRIPTS__
       download("reclass.json", review);
     });
     reviewFalsePositivesButton.addEventListener("click", () => renderFalsePositiveReviewCard());
-    document.getElementById("download-data").addEventListener("click", () => download("uap-relationship-graph-data.json", DATA));
+    document.getElementById("download-data").addEventListener("click", () => download("relationship-graph-data.json", DATA));
     updateReviewButton();
     render();
   </script>

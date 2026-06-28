@@ -3,7 +3,7 @@ const { test, expect } = require("@playwright/test");
 test("graph is operable with keyboard and exposes accessible controls", async ({ page }) => {
   await page.goto("/");
 
-  await expect(page.getByRole("heading", { name: "Transcript Relationship Graph" })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "UFO Files Relationship Graph" })).toBeVisible();
   await expect(page.getByRole("searchbox", { name: "Search entity or category" })).toBeVisible();
   await expect(page.getByRole("button", { name: "Download data" })).toBeVisible();
   await expect(page.locator("#status")).toHaveAttribute("role", "status");
@@ -239,7 +239,7 @@ test("manual relationships are visible in direct entity views", async ({ page })
 
 test("baked reclass decisions are removed from browser review state", async ({ page }) => {
   await page.addInitScript(() => {
-    localStorage.setItem("uap-relationship-graph-reclass", JSON.stringify({
+    localStorage.setItem("relationship-graph-reclass", JSON.stringify({
       reclassifications: { "people:star-trek": "tv_shows" },
       nameReclassifications: {},
       falsePositives: {},
@@ -255,7 +255,7 @@ test("baked reclass decisions are removed from browser review state", async ({ p
 
   await expect(page.locator("#review-status")).toHaveText("");
   await expect(page.getByRole("button", { name: "Download reclassified data" })).toBeHidden();
-  const storedReview = await page.evaluate(() => localStorage.getItem("uap-relationship-graph-reclass"));
+  const storedReview = await page.evaluate(() => localStorage.getItem("relationship-graph-reclass"));
   expect(storedReview).toBeNull();
 });
 
@@ -293,7 +293,7 @@ test("manual connections can be removed from connection rows", async ({ page }) 
   await remove.click();
 
   await expect(remove).not.toBeVisible();
-  const storedReview = await page.evaluate(() => JSON.parse(localStorage.getItem("uap-relationship-graph-reclass") || "{}"));
+  const storedReview = await page.evaluate(() => JSON.parse(localStorage.getItem("relationship-graph-reclass") || "{}"));
   expect(Object.keys(storedReview.removedManualRelationships || {})).toContain("universities:harvard-medical-school--universities:harvard-university");
   expect(storedReview.manualRelationships || {}).not.toHaveProperty("universities:harvard-medical-school--universities:harvard-university");
 });
@@ -312,13 +312,13 @@ test("false positive action requires confirmation", async ({ page }) => {
   await page.getByRole("button", { name: "Mark false positive" }).click();
 
   await expect(page.locator("#node-card")).toBeVisible();
-  const storedReview = await page.evaluate(() => JSON.parse(localStorage.getItem("uap-relationship-graph-reclass") || "{}"));
+  const storedReview = await page.evaluate(() => JSON.parse(localStorage.getItem("relationship-graph-reclass") || "{}"));
   expect(JSON.stringify(storedReview.falsePositives || {})).not.toMatch(/puthoff|putoff/i);
 });
 
 test("false positives can be reviewed and restored", async ({ page }) => {
   await page.addInitScript(() => {
-    localStorage.setItem("uap-relationship-graph-reclass", JSON.stringify({
+    localStorage.setItem("relationship-graph-reclass", JSON.stringify({
       reclassifications: {},
       nameReclassifications: {},
       falsePositives: {
@@ -348,6 +348,6 @@ test("false positives can be reviewed and restored", async ({ page }) => {
   await restore.click();
 
   await expect(page.locator("#node-card")).toBeVisible();
-  const storedReview = await page.evaluate(() => JSON.parse(localStorage.getItem("uap-relationship-graph-reclass") || "{}"));
+  const storedReview = await page.evaluate(() => JSON.parse(localStorage.getItem("relationship-graph-reclass") || "{}"));
   expect(storedReview.falsePositives || {}).not.toHaveProperty("government_agencies:central-intelligence-agency");
 });
