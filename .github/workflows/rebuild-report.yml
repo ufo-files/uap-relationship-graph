@@ -71,7 +71,7 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git switch -c "$branch"
           git add index.html app-data.js app-data-mentions.js app-data-relationships.js data/graph.json data/manifest.json data/reclass.json data/reclass-template.json data/entities.json data/mentions.json data/relationships.json data/segments.json
-          git commit -m "Rebuild report from source data [skip ci]"
+          git commit -m "Rebuild report from source data"
           git push origin "$branch"
           gh pr create \
             --base "${{ github.ref_name }}" \
