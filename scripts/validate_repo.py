@@ -33,6 +33,7 @@ RECLASS_OBJECT_KEYS = {
     "reclassifications",
     "nameReclassifications",
     "falsePositives",
+    "removedFalsePositives",
     "omissions",
     "aliases",
     "merges",
@@ -116,13 +117,13 @@ def validate_reclass() -> list[str]:
         if category not in categories:
             errors.append(f"nameReclassifications for {name} uses unknown category: {category}")
 
-    for key in ("falsePositives", "omissions", "aliases", "merges", "nameMerges", "removedMerges", "removedNameMerges", "removedManualRelationships", "manualRelationships", "notes"):
+    for key in ("falsePositives", "removedFalsePositives", "omissions", "aliases", "merges", "nameMerges", "removedMerges", "removedNameMerges", "removedManualRelationships", "manualRelationships", "notes"):
         if not isinstance(payload[key], dict):
             continue
         for item_key, value in payload[key].items():
             if not isinstance(item_key, str) or not item_key.strip():
                 errors.append(f"{key} keys must be non-empty strings.")
-            if key in {"falsePositives", "merges", "nameMerges", "removedMerges", "removedNameMerges", "removedManualRelationships", "manualRelationships"} and isinstance(value, dict):
+            if key in {"falsePositives", "removedFalsePositives", "merges", "nameMerges", "removedMerges", "removedNameMerges", "removedManualRelationships", "manualRelationships"} and isinstance(value, dict):
                 for category_key in ("category", "categoryLabel", "sourceCategory", "targetCategory"):
                     category = value.get(category_key)
                     if category_key.endswith("Label") or not category:

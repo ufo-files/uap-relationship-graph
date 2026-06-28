@@ -221,3 +221,39 @@ test("false positive action requires confirmation", async ({ page }) => {
   const storedReview = await page.evaluate(() => JSON.parse(localStorage.getItem("uap-relationship-graph-reclass") || "{}"));
   expect(JSON.stringify(storedReview.falsePositives || {})).not.toMatch(/puthoff|putoff/i);
 });
+
+test("false positives can be reviewed and restored", async ({ page }) => {
+  await page.addInitScript(() => {
+    localStorage.setItem("uap-relationship-graph-reclass", JSON.stringify({
+      reclassifications: {},
+      nameReclassifications: {},
+      falsePositives: {
+        "government_agencies:central-intelligence-agency": {
+          name: "Central Intelligence Agency",
+          category: "government_agencies",
+          categoryLabel: "Government agencies",
+        },
+      },
+      removedFalsePositives: {},
+      omissions: {},
+      aliases: {},
+      merges: {},
+      nameMerges: {},
+      removedMerges: {},
+      removedNameMerges: {},
+      removedManualRelationships: {},
+      manualRelationships: {},
+      notes: {},
+    }));
+  });
+  await page.goto("/");
+
+  await page.getByRole("button", { name: "Review false positives" }).click();
+  const restore = page.getByRole("button", { name: /Central Intelligence Agency/i });
+  await expect(restore).toBeVisible();
+  await restore.click();
+
+  await expect(page.locator("#node-card")).toBeVisible();
+  const storedReview = await page.evaluate(() => JSON.parse(localStorage.getItem("uap-relationship-graph-reclass") || "{}"));
+  expect(storedReview.falsePositives || {}).not.toHaveProperty("government_agencies:central-intelligence-agency");
+});

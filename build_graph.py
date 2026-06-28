@@ -779,6 +779,7 @@ def normalize_review(review: dict[str, Any]) -> dict[str, Any]:
         "reclassifications",
         "nameReclassifications",
         "falsePositives",
+        "removedFalsePositives",
         "omissions",
         "aliases",
         "merges",
@@ -796,6 +797,8 @@ def normalize_review(review: dict[str, Any]) -> dict[str, Any]:
 
 
 def apply_review_removals(review: dict[str, Any]) -> None:
+    for entity_id in review.get("removedFalsePositives", {}):
+        review.get("falsePositives", {}).pop(entity_id, None)
     for source_id in review.get("removedMerges", {}):
         review.get("merges", {}).pop(source_id, None)
     for source_name in review.get("removedNameMerges", {}):
@@ -857,6 +860,7 @@ def read_review_from_data_export() -> dict[str, Any]:
         "reclassifications": {},
         "nameReclassifications": {},
         "falsePositives": {},
+        "removedFalsePositives": {},
         "omissions": {},
         "aliases": {},
         "merges": {},
@@ -1732,6 +1736,7 @@ def build_manifest(
                 or review.get("reclassifications")
                 or review.get("nameReclassifications")
                 or review.get("falsePositives")
+                or review.get("removedFalsePositives")
                 or review.get("omissions")
                 or review.get("aliases")
                 or review.get("merges")
@@ -1763,6 +1768,7 @@ def build_manifest(
             "reclassifications": len(review.get("reclassifications", {})),
             "name_reclassifications": len(review.get("nameReclassifications", {})),
             "false_positives": len(review.get("falsePositives", {})),
+            "removed_false_positives": len(review.get("removedFalsePositives", {})),
             "omissions": len(review.get("omissions", {})),
             "aliases": len(review.get("aliases", {})),
             "merges": len(review.get("merges", {})),
@@ -1802,6 +1808,7 @@ def write_report(
         {
             "reclassifications": {},
             "falsePositives": {},
+            "removedFalsePositives": {},
             "omissions": {},
             "aliases": {},
             "merges": {},
@@ -3247,6 +3254,7 @@ def render_html(app_data_version: str = "") -> str:
       <label class="sr-only" for="search">Search entity or category</label>
       <input id="search" type="search" placeholder="Search entity or category" autocomplete="off">
       <span id="review-status" class="review-status" role="status" aria-live="polite"></span>
+      <button id="review-false-positives" type="button" hidden>Review false positives</button>
       <button id="download-review" type="button" hidden>Download reclassified data</button>
       <button id="download-data" type="button">Download data</button>
     </form>
@@ -3280,6 +3288,7 @@ __APP_DATA_SCRIPTS__
     const cornerLabelEl = document.getElementById("corner-label");
     const searchEl = document.getElementById("search");
     const reviewStatusEl = document.getElementById("review-status");
+    const reviewFalsePositivesButton = document.getElementById("review-false-positives");
     let mode = "categories";
     let activeCategory = null;
     let selectedEntityId = null;
@@ -3304,7 +3313,7 @@ __APP_DATA_SCRIPTS__
     const SECOND_DEGREE_LABEL_LIMIT = 0;
 
     initializeReviewStorage();
-    const DATA = applyReviewDecisions(normalizeData(RAW));
+    let DATA = applyReviewDecisions(normalizeData(RAW));
     const entitiesById = new Map();
     const mentionsById = new Map(DATA.mentions.map((mention) => [mention.id, mention]));
     const relationshipsById = new Map();
@@ -4452,6 +4461,61 @@ __APP_DATA_SCRIPTS__
       }).join("");
     }
 
+    function falsePositiveRows() {
+      const review = mergeReviews(BUILT_REVIEW, readReview());
+      return Object.entries(review.falsePositives || {})
+        .map(([id, item]) => ({
+          id,
+          name: item && item.name ? item.name : reviewEntryName(id, item)[0] || id,
+          categoryLabel: item && item.categoryLabel ? item.categoryLabel : DATA.categoryLabels[item?.category] || item?.category || "Entity",
+          built: Object.prototype.hasOwnProperty.call(BUILT_REVIEW.falsePositives || {}, id),
+        }))
+        .sort((a, b) => a.name.localeCompare(b.name));
+    }
+
+    function renderFalsePositiveReviewCard() {
+      const rows = falsePositiveRows();
+      cardEl.classList.add("open");
+      cardEl.setAttribute("aria-labelledby", "card-title");
+      cardEl.innerHTML = '<button class="card-close" id="close-card" aria-label="Close info window">x</button>' +
+        '<div class="node-card-body"><h2 id="card-title">False positives</h2>' +
+        '<p><span class="tag">Review</span> ' + rows.length.toLocaleString() + ' marked false positive</p>' +
+        (rows.length ? '<div class="entity-directory">' + rows.map((row) => {
+          return '<button type="button" data-restore-false-positive="' + esc(row.id) + '">' +
+            esc(row.name) +
+            '<div class="meta">' + esc(row.categoryLabel) + (row.built ? ' · restores on rebuild' : '') + '</div>' +
+          '</button>';
+        }).join("") + '</div>' : '<div class="meta">No false positives in the current review data.</div>') +
+        '</div>';
+      cardEl.querySelectorAll("[data-restore-false-positive]").forEach((button) => {
+        button.addEventListener("click", () => restoreFalsePositive(button.dataset.restoreFalsePositive));
+      });
+      wireCardClose();
+      focusDetailsCard();
+    }
+
+    function resetDataFromReview() {
+      DATA = applyReviewDecisions(normalizeData(RAW));
+      rebuildIndexes();
+    }
+
+    function restoreFalsePositive(entityId) {
+      const review = readReview();
+      const merged = mergeReviews(BUILT_REVIEW, review);
+      const item = (merged.falsePositives || {})[entityId];
+      if (!item) return;
+      review.falsePositives = review.falsePositives || {};
+      review.removedFalsePositives = review.removedFalsePositives || {};
+      delete review.falsePositives[entityId];
+      if (Object.prototype.hasOwnProperty.call(BUILT_REVIEW.falsePositives || {}, entityId)) {
+        review.removedFalsePositives[entityId] = item;
+      }
+      saveReview(review);
+      resetDataFromReview();
+      render();
+      renderFalsePositiveReviewCard();
+    }
+
     function renderCard(entity, relationships) {
       const evidence = (entity.evidenceIds || []).map((id) => mentionsById.get(id)).filter(Boolean).slice(0, 6);
       cardEl.classList.add("open");
@@ -5043,6 +5107,7 @@ __APP_DATA_SCRIPTS__
         reclassifications: {},
         nameReclassifications: {},
         falsePositives: {},
+        removedFalsePositives: {},
         omissions: {},
         aliases: {},
         merges: {},
@@ -5058,7 +5123,7 @@ __APP_DATA_SCRIPTS__
     function normalizeReview(review) {
       const normalized = defaultReview();
       if (!review || typeof review !== "object") return normalized;
-      for (const key of ["reclassifications", "nameReclassifications", "falsePositives", "omissions", "aliases", "merges", "nameMerges", "removedMerges", "removedNameMerges", "removedManualRelationships", "manualRelationships", "notes"]) {
+      for (const key of ["reclassifications", "nameReclassifications", "falsePositives", "removedFalsePositives", "omissions", "aliases", "merges", "nameMerges", "removedMerges", "removedNameMerges", "removedManualRelationships", "manualRelationships", "notes"]) {
         normalized[key] = review[key] && typeof review[key] === "object" && !Array.isArray(review[key]) ? review[key] : {};
       }
       normalized.manualRelationships = normalizeManualRelationshipDecisions(normalized.manualRelationships);
@@ -5083,9 +5148,10 @@ __APP_DATA_SCRIPTS__
     function mergeReviews(base, overlay) {
       const merged = normalizeReview(base);
       const next = normalizeReview(overlay);
-      for (const key of ["reclassifications", "nameReclassifications", "falsePositives", "omissions", "aliases", "merges", "nameMerges", "removedMerges", "removedNameMerges", "removedManualRelationships", "manualRelationships", "notes"]) {
+      for (const key of ["reclassifications", "nameReclassifications", "falsePositives", "removedFalsePositives", "omissions", "aliases", "merges", "nameMerges", "removedMerges", "removedNameMerges", "removedManualRelationships", "manualRelationships", "notes"]) {
         merged[key] = { ...(merged[key] || {}), ...(next[key] || {}) };
       }
+      for (const key of Object.keys(merged.removedFalsePositives || {})) delete merged.falsePositives[key];
       for (const key of Object.keys(merged.removedMerges || {})) delete merged.merges[key];
       for (const key of Object.keys(merged.removedNameMerges || {})) delete merged.nameMerges[key];
       for (const key of Object.keys(merged.removedManualRelationships || {})) delete merged.manualRelationships[key];
@@ -5160,7 +5226,7 @@ __APP_DATA_SCRIPTS__
     function removeBuiltReviewEntries(review) {
       const cleaned = normalizeReview(review);
       let changed = false;
-      for (const key of ["reclassifications", "nameReclassifications", "falsePositives", "omissions", "aliases", "merges", "nameMerges", "removedManualRelationships", "manualRelationships"]) {
+      for (const key of ["reclassifications", "nameReclassifications", "falsePositives", "removedFalsePositives", "omissions", "aliases", "merges", "nameMerges", "removedManualRelationships", "manualRelationships"]) {
         for (const [id, value] of Object.entries(cleaned[key] || {})) {
           const exactBuilt = Object.prototype.hasOwnProperty.call(BUILT_REVIEW[key] || {}, id) && sameReviewValue(value, BUILT_REVIEW[key][id]);
           const bakedCategory = key === "reclassifications" || key === "nameReclassifications" ? reviewCategoryIsBaked(id, value) : false;
@@ -5220,6 +5286,7 @@ __APP_DATA_SCRIPTS__
         Object.keys(review.reclassifications || {}).length +
         Object.keys(review.nameReclassifications || {}).length +
         Object.keys(review.falsePositives || {}).length +
+        Object.keys(review.removedFalsePositives || {}).length +
         Object.keys(review.omissions || {}).length +
         Object.keys(review.aliases || {}).length +
         Object.keys(review.merges || {}).length +
@@ -5236,6 +5303,7 @@ __APP_DATA_SCRIPTS__
       const review = readReview();
       const count = reviewDecisionCount(review);
       if (button) button.hidden = count === 0;
+      if (reviewFalsePositivesButton) reviewFalsePositivesButton.hidden = falsePositiveRows().length === 0;
       if (reviewStatusEl) reviewStatusEl.textContent = count ? count.toLocaleString() + " new reclass changes" : "";
     }
 
@@ -5505,6 +5573,7 @@ __APP_DATA_SCRIPTS__
       review.note = "Replace data/reclass.json with this file before rebuilding.";
       download("reclass.json", review);
     });
+    reviewFalsePositivesButton.addEventListener("click", () => renderFalsePositiveReviewCard());
     document.getElementById("download-data").addEventListener("click", () => download("uap-relationship-graph-data.json", DATA));
     updateReviewButton();
     render();

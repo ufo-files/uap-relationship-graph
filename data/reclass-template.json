@@ -1,6 +1,7 @@
 {
   "reclassifications": {},
   "falsePositives": {},
+  "removedFalsePositives": {},
   "omissions": {},
   "aliases": {},
   "merges": {},

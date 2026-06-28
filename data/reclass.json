@@ -1,5 +1,6 @@
 {
   "aliases": {
+    "7 integrative": "Integrative Research Department",
     "acquisition technology": "National Intelligence for Acquisition Technology and Facilities",
     "actually bob jacobs": "Bob Jacobs",
     "advanced aerospace threat identification program": "AATIP",
@@ -50,6 +51,7 @@
     "defense intelligence agency": "U.S. Defense Intelligence Agency",
     "diana pasolka": "Diana Pasulka",
     "document_names:arrow-historical-report": "AARO Historical Report",
+    "dora rosenbaum": "Dora",
     "dr hal puthoff davis": "Harold Puthoff",
     "dragon dracs": "Draconians",
     "eagle works": "NASA Eagle Works",
@@ -136,6 +138,7 @@
     "likely_spies:montrose-search": "Montrose Search and Rescue",
     "likely_spies:on-march": "March 24th, 1967",
     "likely_spies:under-operation-paperclip": "Operation Paperclip",
+    "linville gorge": "Linville Gorge Overlook",
     "little st": "Little St. James",
     "locations:russian-federation": "Russia",
     "lockheed martin corporation": "Lockheed Martin",
@@ -229,6 +232,7 @@
     "people:let-espresso": "L'Espresso",
     "people:like-curtis": "Curtis LeMay",
     "people:like-kash-patel": "Kash Patel",
+    "people:linville-gorge": "Linville Gorge Overlook",
     "people:little-st": "Little St. James",
     "people:mount-waterman": "Waterman Mountain",
     "people:national-academies": "National Academy of Sciences National Academy of Sciences",
@@ -320,6 +324,8 @@
     "universities:harvard-college": "Harvard University",
     "us air force": "United States Air Force",
     "was snyder": "Freddy Snyder",
+    "websites:7-integrative": "Integrative Research Department",
+    "websites:dora-rosenbaum": "Dora",
     "weimar germany": "Weimar, Germany",
     "when september": "September 11, 2001",
     "whistleblowers:ari-ben": "Ari Ben-Minashe",
@@ -846,6 +852,51 @@
       "categoryLabel": "Professors",
       "name": "New World"
     },
+    "websites:1-the": {
+      "category": "websites",
+      "categoryLabel": "Websites",
+      "name": "1.The"
+    },
+    "websites:1-three": {
+      "category": "websites",
+      "categoryLabel": "Websites",
+      "name": "1.Three"
+    },
+    "websites:2-angle": {
+      "category": "websites",
+      "categoryLabel": "Websites",
+      "name": "2.Angle"
+    },
+    "websites:2-the": {
+      "category": "websites",
+      "categoryLabel": "Websites",
+      "name": "2.The"
+    },
+    "websites:3-color": {
+      "category": "websites",
+      "categoryLabel": "Websites",
+      "name": "3.Color"
+    },
+    "websites:4927-html": {
+      "category": "websites",
+      "categoryLabel": "Websites",
+      "name": "4927.html"
+    },
+    "websites:6-length": {
+      "category": "websites",
+      "categoryLabel": "Websites",
+      "name": "6.Length"
+    },
+    "websites:7-tail": {
+      "category": "websites",
+      "categoryLabel": "Websites",
+      "name": "7.Tail"
+    },
+    "websites:8-sound": {
+      "category": "websites",
+      "categoryLabel": "Websites",
+      "name": "8.Sound"
+    },
     "websites:ag1-com": {
       "category": "websites",
       "categoryLabel": "Websites",
@@ -866,6 +917,21 @@
       "categoryLabel": "Websites",
       "name": "AmericanAlchemyMerch.com"
     },
+    "websites:bible-were": {
+      "category": "websites",
+      "categoryLabel": "Websites",
+      "name": "Bible.Were"
+    },
+    "websites:bibliography-in": {
+      "category": "websites",
+      "categoryLabel": "Websites",
+      "name": "Bibliography.In"
+    },
+    "websites:bruntworkware-com": {
+      "category": "websites",
+      "categoryLabel": "Websites",
+      "name": "bruntworkware.com"
+    },
     "websites:buyraycon-com": {
       "category": "websites",
       "categoryLabel": "Websites",
@@ -881,10 +947,20 @@
       "categoryLabel": "Websites",
       "name": "chubbiesshorts.com"
     },
+    "websites:cornbreadhemp-com": {
+      "category": "websites",
+      "categoryLabel": "Websites",
+      "name": "cornbreadhemp.com"
+    },
     "websites:cowboycolostrum-com": {
       "category": "websites",
       "categoryLabel": "Websites",
       "name": "cowboycolostrum.com"
+    },
+    "websites:do-for": {
+      "category": "websites",
+      "categoryLabel": "Websites",
+      "name": "do.For"
     },
     "websites:dosedaily-co": {
       "category": "websites",
@@ -895,6 +971,11 @@
       "category": "websites",
       "categoryLabel": "Websites",
       "name": "drinkag1.com"
+    },
+    "websites:e-p-pt": {
+      "category": "websites",
+      "categoryLabel": "Websites",
+      "name": "E.P.PT"
     },
     "websites:expressvpn-com": {
       "category": "websites",
@@ -910,6 +991,11 @@
       "category": "websites",
       "categoryLabel": "Websites",
       "name": "gmail.com"
+    },
+    "websites:hardly-newsweekreviewed": {
+      "category": "websites",
+      "categoryLabel": "Websites",
+      "name": "Hardly.Newsweekreviewed"
     },
     "websites:irisstore-com": {
       "category": "websites",
@@ -931,10 +1017,20 @@
       "categoryLabel": "Websites",
       "name": "life.com"
     },
+    "websites:lli-it": {
+      "category": "websites",
+      "categoryLabel": "Websites",
+      "name": "lli.it"
+    },
     "websites:m-e-r-c-h-com": {
       "category": "websites",
       "categoryLabel": "Websites",
       "name": "M-E-R-C-H.com"
+    },
+    "websites:m-u-d-w-t-r-com": {
+      "category": "websites",
+      "categoryLabel": "Websites",
+      "name": "M-U-D-W-T-R.com"
     },
     "websites:masachips-com": {
       "category": "websites",
@@ -961,10 +1057,25 @@
       "categoryLabel": "Websites",
       "name": "qualialife.com"
     },
+    "websites:radio-striebercould": {
+      "category": "websites",
+      "categoryLabel": "Websites",
+      "name": "radio.Striebercould"
+    },
+    "websites:starfish-iii": {
+      "category": "websites",
+      "categoryLabel": "Websites",
+      "name": "starfish.III"
+    },
     "websites:superpower-com": {
       "category": "websites",
       "categoryLabel": "Websites",
       "name": "superpower.com"
+    },
+    "websites:thebookcoverdesigns-com": {
+      "category": "websites",
+      "categoryLabel": "Websites",
+      "name": "thebookcoverdesigns.com"
     },
     "websites:theperfectgene-nyc": {
       "category": "websites",
@@ -997,7 +1108,7 @@
       "name": "zbiotics.com"
     }
   },
-  "generatedAt": "2026-06-28T08:16:15.527Z",
+  "generatedAt": "2026-06-28T08:50:48.598Z",
   "manualRelationships": {
     "companies:lockheed-martin-corporation--contractors:lockheed-skunkworks": {
       "sourceCategory": "companies",
@@ -1055,6 +1166,14 @@
       "targetId": "professors:close-encounter",
       "targetName": "Close Encounter"
     },
+    "experiencers:las-vegas--people:las-vegas-strip": {
+      "sourceCategory": "experiencers",
+      "sourceId": "experiencers:las-vegas",
+      "sourceName": "Las Vegas",
+      "targetCategory": "locations",
+      "targetId": "people:las-vegas-strip",
+      "targetName": "Las Vegas Strip"
+    },
     "experiencers:natural-history--people:natural-history": {
       "sourceCategory": "experiencers",
       "sourceId": "experiencers:natural-history",
@@ -1086,6 +1205,14 @@
       "targetCategory": "locations",
       "targetId": "professors:in-california",
       "targetName": "In California"
+    },
+    "friendly_people:annie-jacobsen--professors:annie-jacobsen": {
+      "sourceCategory": "friendly_people",
+      "sourceId": "friendly_people:annie-jacobsen",
+      "sourceName": "Annie Jacobsen",
+      "targetCategory": "professors",
+      "targetId": "professors:annie-jacobsen",
+      "targetName": "Annie Jacobsen"
     },
     "friendly_people:venusians-universal-origin--planets:venus": {
       "sourceCategory": "alien_species",
@@ -1151,6 +1278,14 @@
       "targetId": "people:chris-bledsoe-copyright",
       "targetName": "Chris Bledsoe"
     },
+    "military_bases:area-51--professors:annie-jacobsen": {
+      "sourceCategory": "military_bases",
+      "sourceId": "military_bases:area-51",
+      "sourceName": "Area 51",
+      "targetCategory": "professors",
+      "targetId": "professors:annie-jacobsen",
+      "targetName": "Annie Jacobsen"
+    },
     "military_bases:wright-patterson-air-force-base--people:in-ohio": {
       "sourceCategory": "military_bases",
       "sourceId": "military_bases:wright-patterson-air-force-base",
@@ -1166,6 +1301,14 @@
       "targetCategory": "people",
       "targetId": "people:andromedans-universal-origin",
       "targetName": "Andromedans Universal Origin"
+    },
+    "people:brown-mountain-lights--people:chris-bledsoe": {
+      "sourceCategory": "locations",
+      "sourceId": "people:brown-mountain-lights",
+      "sourceName": "Brown Mountain Lights",
+      "targetCategory": "people",
+      "targetId": "people:chris-bledsoe",
+      "targetName": "Chris Bledsoe"
     },
     "people:in-california--professors:in-california": {
       "sourceCategory": "people",
@@ -1553,6 +1696,14 @@
       "targetId": "friendly_people:chris-bledsoe-chapter",
       "targetName": "Chris Bledsoe Chapter"
     },
+    "experiencers:christopher-bledsoe-sr": {
+      "sourceCategory": "experiencers",
+      "sourceId": "experiencers:christopher-bledsoe-sr",
+      "sourceName": "Christopher Bledsoe Sr",
+      "targetCategory": "people",
+      "targetId": "people:chris-bledsoe",
+      "targetName": "Chris Bledsoe"
+    },
     "experiencers:close-encounter": {
       "sourceCategory": "experiencers",
       "sourceId": "experiencers:close-encounter",
@@ -1896,6 +2047,14 @@
       "targetCategory": "people",
       "targetId": "people:admiral-wilson",
       "targetName": "Admiral Wilson"
+    },
+    "friendly_people:annie-jacobsen": {
+      "sourceCategory": "friendly_people",
+      "sourceId": "friendly_people:annie-jacobsen",
+      "sourceName": "Annie Jacobsen",
+      "targetCategory": "professors",
+      "targetId": "professors:annie-jacobsen",
+      "targetName": "Annie Jacobsen"
     },
     "friendly_people:applications-program": {
       "sourceCategory": "friendly_people",
@@ -2545,6 +2704,14 @@
       "targetId": "professors:travis-walton",
       "targetName": "Travis Walton"
     },
+    "friendly_people:uri-geller": {
+      "sourceCategory": "friendly_people",
+      "sourceId": "friendly_people:uri-geller",
+      "sourceName": "Uri Geller",
+      "targetCategory": "experiencers",
+      "targetId": "experiencers:uri-geller",
+      "targetName": "Uri Geller"
+    },
     "friendly_people:urubamba-river": {
       "sourceCategory": "friendly_people",
       "sourceId": "friendly_people:urubamba-river",
@@ -2872,6 +3039,14 @@
       "targetCategory": "people",
       "targetId": "people:palomar-observatories",
       "targetName": "Palomar Observatories"
+    },
+    "journalists:annie-jacobsen": {
+      "sourceCategory": "journalists",
+      "sourceId": "journalists:annie-jacobsen",
+      "sourceName": "Annie Jacobsen",
+      "targetCategory": "friendly_people",
+      "targetId": "friendly_people:annie-jacobsen",
+      "targetName": "Annie Jacobsen"
     },
     "journalists:david-ferry": {
       "sourceCategory": "journalists",
@@ -3893,9 +4068,9 @@
       "sourceCategory": "people",
       "sourceId": "people:chris-bledsoe-all",
       "sourceName": "Chris Bledsoe All",
-      "targetCategory": "people",
-      "targetId": "people:chris-bledsoe-copyright",
-      "targetName": "Chris Bledsoe Copyright"
+      "targetCategory": "experiencers",
+      "targetId": "experiencers:christopher-bledsoe-sr",
+      "targetName": "Christopher Bledsoe Sr"
     },
     "people:chris-bledsoe-chapter": {
       "sourceCategory": "people",
@@ -5513,6 +5688,14 @@
       "targetId": "friendly_people:saint-paul",
       "targetName": "Saint Paul"
     },
+    "people:saint-paul-s": {
+      "sourceCategory": "people",
+      "sourceId": "people:saint-paul-s",
+      "sourceName": "Saint Paul's",
+      "targetCategory": "locations",
+      "targetId": "locations:saint-paul-s",
+      "targetName": "Saint Paul's"
+    },
     "people:secret-canyon": {
       "sourceCategory": "people",
       "sourceId": "people:secret-canyon",
@@ -5952,6 +6135,14 @@
       "targetCategory": "people",
       "targetId": "people:with-trump",
       "targetName": "With Trump"
+    },
+    "people:uri-geller": {
+      "sourceCategory": "people",
+      "sourceId": "people:uri-geller",
+      "sourceName": "Uri Geller",
+      "targetCategory": "professors",
+      "targetId": "professors:uri-geller",
+      "targetName": "Uri Geller"
     },
     "people:van-tassel": {
       "sourceCategory": "people",
@@ -7057,6 +7248,14 @@
       "targetId": "likely_spies:under-operation-paperclip",
       "targetName": "Under Operation Paperclip"
     },
+    "professors:uri-geller": {
+      "sourceCategory": "professors",
+      "sourceId": "professors:uri-geller",
+      "sourceName": "Uri Geller",
+      "targetCategory": "friendly_people",
+      "targetId": "friendly_people:uri-geller",
+      "targetName": "Uri Geller"
+    },
     "professors:walter-schreiber": {
       "sourceCategory": "professors",
       "sourceId": "professors:walter-schreiber",
@@ -7184,6 +7383,14 @@
       "targetCategory": "government_agencies",
       "targetId": "government_agencies:consciousness-department-it",
       "targetName": "Consciousness Department It"
+    },
+    "websites:7-integrative": {
+      "sourceCategory": "institutes",
+      "sourceId": "websites:7-integrative",
+      "sourceName": "Integrative Research Department",
+      "targetCategory": "government_agencies",
+      "targetId": "government_agencies:integrative-research-department",
+      "targetName": "Integrative Research Department"
     },
     "whistleblowers:bob-lazar": {
       "sourceCategory": "whistleblowers",
@@ -7626,6 +7833,14 @@
       "targetCategory": "politicians",
       "targetId": "politicians:congresswoman-anna-paulina-luna",
       "targetName": "Congresswoman Anna Paulina Luna"
+    },
+    "annie jacobsen": {
+      "sourceCategory": "friendly_people",
+      "sourceId": "friendly_people:annie-jacobsen",
+      "sourceName": "Annie Jacobsen",
+      "targetCategory": "professors",
+      "targetId": "professors:annie-jacobsen",
+      "targetName": "Annie Jacobsen"
     },
     "another kennedy": {
       "sourceCategory": "people",
@@ -8159,9 +8374,9 @@
       "sourceCategory": "people",
       "sourceId": "people:chris-bledsoe-all",
       "sourceName": "Chris Bledsoe All",
-      "targetCategory": "people",
-      "targetId": "people:chris-bledsoe-copyright",
-      "targetName": "Chris Bledsoe Copyright"
+      "targetCategory": "experiencers",
+      "targetId": "experiencers:christopher-bledsoe-sr",
+      "targetName": "Christopher Bledsoe Sr"
     },
     "chris bledsoe chapter": {
       "sourceCategory": "professors",
@@ -8185,6 +8400,14 @@
       "sourceName": "Christopher Bledsoe",
       "targetCategory": "experiencers",
       "targetId": "experiencers:chris-bledsoe",
+      "targetName": "Chris Bledsoe"
+    },
+    "christopher bledsoe sr": {
+      "sourceCategory": "experiencers",
+      "sourceId": "experiencers:christopher-bledsoe-sr",
+      "sourceName": "Christopher Bledsoe Sr",
+      "targetCategory": "people",
+      "targetId": "people:chris-bledsoe",
       "targetName": "Chris Bledsoe"
     },
     "cia": {
@@ -9322,6 +9545,14 @@
       "targetCategory": "people",
       "targetId": "people:ingo-swann",
       "targetName": "Ingo Swann"
+    },
+    "integrative research department": {
+      "sourceCategory": "institutes",
+      "sourceId": "websites:7-integrative",
+      "sourceName": "Integrative Research Department",
+      "targetCategory": "government_agencies",
+      "targetId": "government_agencies:integrative-research-department",
+      "targetName": "Integrative Research Department"
     },
     "israel puharich": {
       "sourceCategory": "people",
@@ -10851,6 +11082,14 @@
       "targetId": "people:in-saint-paul",
       "targetName": "Saint Paul's"
     },
+    "saint paul s": {
+      "sourceCategory": "people",
+      "sourceId": "people:saint-paul-s",
+      "sourceName": "Saint Paul's",
+      "targetCategory": "locations",
+      "targetId": "locations:saint-paul-s",
+      "targetName": "Saint Paul's"
+    },
     "santa monica": {
       "sourceCategory": "locations",
       "sourceId": "friendly_people:santa-monica",
@@ -11531,6 +11770,14 @@
       "targetId": "people:dave-grush",
       "targetName": "Dave Grush"
     },
+    "uri geller": {
+      "sourceCategory": "friendly_people",
+      "sourceId": "friendly_people:uri-geller",
+      "sourceName": "Uri Geller",
+      "targetCategory": "experiencers",
+      "targetId": "experiencers:uri-geller",
+      "targetName": "Uri Geller"
+    },
     "urubamba river": {
       "sourceCategory": "friendly_people",
       "sourceId": "friendly_people:urubamba-river",
@@ -11971,6 +12218,7 @@
     "black world": "emerging_terminology",
     "blue book": "government_project_codenames",
     "bluebird artichoke": "government_project_codenames",
+    "bomb group wing": "military_bases",
     "bonson labs": "companies",
     "book of enoch": "books",
     "bradshaw ranch": "locations",
@@ -11978,6 +12226,7 @@
     "brook park strip mall": "locations",
     "brookgate strip mall": "locations",
     "brooklyn hall": "locations",
+    "brown mountain lights": "locations",
     "bulgarian academy": "government_agencies",
     "bulgarian academy of sciences": "government_agencies",
     "bureau of public standards": "government_agencies",
@@ -12008,6 +12257,7 @@
     "colorado springs": "locations",
     "commander david fravor": "whistleblowers",
     "commander fravor": "whistleblowers",
+    "common telescopes": "books",
     "commonwealth avenue": "locations",
     "communist party": "government_agencies",
     "complaint form": "document_names",
@@ -12035,6 +12285,7 @@
     "disney imagineering": "companies",
     "donald j trump": "politicians",
     "donald j. trump": "politicians",
+    "dora": "books",
     "draconians": "alien_species",
     "dragon dracs": "alien_species",
     "dugway proving ground": "military_bases",
@@ -12106,14 +12357,17 @@
     "holy alliance": "books",
     "holy mountain": "locations",
     "house oversight committee": "government_agencies",
+    "house science": "government_agencies",
     "house science and astronautics committee": "government_agencies",
     "in california": "locations",
     "in cambridge": "locations",
     "in enoch": "books",
     "in january": "dates_times",
     "in las vegas": "locations",
+    "in newfoundland": "locations",
     "in ohio": "locations",
     "in portsmouth": "locations",
+    "in saint paul": "locations",
     "in september": "dates_times",
     "in switzerland": "locations",
     "independent research": "contractors",
@@ -12124,6 +12378,8 @@
     "indigenous humanoids": "alien_species",
     "information act": "document_names",
     "instituto superior": "universities",
+    "integrative research department": "institutes",
+    "j allen hynek": "people",
     "j. allen hynek": "people",
     "jack ruby": "people",
     "jackass flats": "locations",
@@ -12144,13 +12400,16 @@
     "l'espresso": "newsrooms",
     "laguna beach": "locations",
     "lake titicaca": "locations",
+    "lake titicaca leaving la": "locations",
     "langley farms": "locations",
+    "las vegas strip": "locations",
     "launch fever": "books",
     "lawrence livermore": "research_groups",
     "legacy program": "government_project_codenames",
     "let espresso": "newsrooms",
     "lethe stream": "star_systems",
     "like kash patel": "politicians",
+    "linville gorge overlook": "locations",
     "little st": "locations",
     "little st. james": "locations",
     "living light": "alien_species",
@@ -12186,6 +12445,7 @@
     "mount waterman": "locations",
     "mount zeal": "locations",
     "nasa eagle works": "government_agencies",
+    "national academies": "institutes",
     "national academy of sciences national academy of sciences": "institutes",
     "national guard": "government_agencies",
     "national intelligence": "government_agencies",
@@ -12197,6 +12457,7 @@
     "national research council": "research_groups",
     "national science foundation": "government_agencies",
     "national security council": "government_agencies",
+    "natural history": "institutes",
     "naval intelligence": "government_agencies",
     "naval research": "government_agencies",
     "naval research lab": "government_project_codenames",
@@ -12428,15 +12689,8 @@
     "your game girl": "books",
     "zora ranch": "locations",
     "zorro ranch": "locations",
-    "common telescopes": "books",
-    "natural history": "institutes",
-    "j allen hynek": "people",
-    "bomb group wing": "military_bases",
-    "in newfoundland": "locations",
-    "in saint paul": "locations",
-    "lake titicaca leaving la": "locations",
-    "national academies": "institutes",
-    "house science": "government_agencies"
+    "linville gorge": "locations",
+    "dora rosenbaum": "books"
   },
   "note": "Replace data/reclass.json with this file before rebuilding.",
   "notes": {},
@@ -12554,6 +12808,7 @@
     "people:bonson-labs": "companies",
     "people:bradshaw-ranch": "locations",
     "people:brookgate-strip-mall": "locations",
+    "people:brown-mountain-lights": "locations",
     "people:bulgarian-academy": "government_agencies",
     "people:byfield-brown": "theories",
     "people:camp-david": "military_bases",
@@ -12657,12 +12912,14 @@
     "people:laguna-beach": "locations",
     "people:lake-titicaca-leaving-la": "locations",
     "people:langley-farms": "locations",
+    "people:las-vegas-strip": "locations",
     "people:launch-fever": "books",
     "people:lawrence-livermore": "research_groups",
     "people:legacy-program": "government_project_codenames",
     "people:let-espresso": "newsrooms",
     "people:lethe-stream": "star_systems",
     "people:like-kash-patel": "politicians",
+    "people:linville-gorge": "locations",
     "people:little-st": "locations",
     "people:living-light": "alien_species",
     "people:lockheed-skunkworks": "contractors",
@@ -12869,6 +13126,7 @@
     "research_groups:naval-research-lab": "government_project_codenames",
     "universities:berkeley": "locations",
     "universities:kennedy-school": "university_departments",
+    "websites:dora-rosenbaum": "books",
     "whistleblowers:california": "locations",
     "whistleblowers:george-knapp": "journalists",
     "whistleblowers:jeremy-corbell": "people",
@@ -12912,5 +13170,6 @@
       "targetId": "universities:harvard-college",
       "targetName": "Harvard College"
     }
-  }
+  },
+  "removedFalsePositives": {}
 }
