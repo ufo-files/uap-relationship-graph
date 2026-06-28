@@ -339,7 +339,20 @@
     "people:lockheed-skunkworks": "contractors",
     "people:robert-f-kennedy": "politicians",
     "people:statler-hotel": "locations",
-    "people:russian-orthodox-church": "companies"
+    "people:russian-orthodox-church": "companies",
+    "people:vehicles-directorate": "military_bases",
+    "people:hertz-foundation-fellowship": "institutes",
+    "people:angeles-national-forest": "locations",
+    "likely_spies:crescenta-valley-station": "locations",
+    "likely_spies:montrose-search": "government_agencies",
+    "people:exceptional-scientific-achievement-medal": "document_names",
+    "people:cocoa-beach": "locations",
+    "people:electrostatic-society": "institutes",
+    "people:roundtable-foundation": "institutes",
+    "people:franklin-delano-roosevelt": "politicians",
+    "people:skinwalker-ranch": "locations",
+    "people:rockefeller-commission": "document_names",
+    "politicians:united-nations": "government_agencies"
   },
   "nameReclassifications": {
     "extra low frequency": "emerging_terminology",
@@ -751,7 +764,23 @@
     "statler hotel": "locations",
     "russian orthodox church": "companies",
     "scientific revolutions": "books",
-    "robert f kennedy": "politicians"
+    "robert f kennedy": "politicians",
+    "vehicles directorate": "military_bases",
+    "hertz foundation fellowship": "institutes",
+    "angeles national forest": "locations",
+    "crescenta valley station": "locations",
+    "montrose search and rescue": "government_agencies",
+    "exceptional scientific achievement medal": "document_names",
+    "cocoa beach": "locations",
+    "electrostatic society": "institutes",
+    "roundtable foundation": "institutes",
+    "president franklin delano roosevelt": "politicians",
+    "skinwalker ranch": "locations",
+    "rockefeller commission report": "document_names",
+    "united nations": "government_agencies",
+    "montrose search": "government_agencies",
+    "franklin delano roosevelt": "politicians",
+    "rockefeller commission": "document_names"
   },
   "falsePositives": {
     "gps_coordinates:24-95": {
@@ -1358,6 +1387,11 @@
       "name": "Astronautical Engineering",
       "category": "people",
       "categoryLabel": "People"
+    },
+    "people:tom-hanks": {
+      "name": "Tom Hanks",
+      "category": "people",
+      "categoryLabel": "People"
     }
   },
   "omissions": {},
@@ -1591,7 +1625,17 @@
     "people:anna-paulina": "Congresswoman Anna Paulina Luna",
     "anna paulina": "Congresswoman Anna Paulina Luna",
     "friendly_people:scientific-revolutions": "Structure of Scientific Revolutions",
-    "scientific revolutions": "Structure of Scientific Revolutions"
+    "scientific revolutions": "Structure of Scientific Revolutions",
+    "likely_spies:montrose-search": "Montrose Search and Rescue",
+    "montrose search": "Montrose Search and Rescue",
+    "people:franklin-delano-roosevelt": "President Franklin Delano Roosevelt",
+    "franklin delano roosevelt": "President Franklin Delano Roosevelt",
+    "people:so-brent": "Brent Friedman",
+    "so brent": "Brent Friedman",
+    "people:rockefeller-commission": "Rockefeller Commission Report",
+    "rockefeller commission": "Rockefeller Commission Report",
+    "people:january-2007": "January 2007",
+    "january 2007": "January 2007"
   },
   "merges": {
     "whistleblowers:robert-lazar": {
@@ -5417,6 +5461,102 @@
       "targetId": "people:john-lear",
       "targetName": "John Lear",
       "targetCategory": "people"
+    },
+    "politicians:at-congress": {
+      "sourceId": "politicians:at-congress",
+      "sourceName": "At Congress",
+      "sourceCategory": "politicians",
+      "targetId": "government_agencies:united-states-congress",
+      "targetName": "United States Congress",
+      "targetCategory": "government_agencies"
+    },
+    "people:so-edgar-mitchell": {
+      "sourceId": "people:so-edgar-mitchell",
+      "sourceName": "So Edgar Mitchell",
+      "sourceCategory": "people",
+      "targetId": "people:edgar-mitchell",
+      "targetName": "Edgar Mitchell",
+      "targetCategory": "people"
+    },
+    "people:edgar-mitchell": {
+      "sourceId": "people:edgar-mitchell",
+      "sourceName": "Edgar Mitchell",
+      "sourceCategory": "people",
+      "targetId": "friendly_people:edgar-mitchell",
+      "targetName": "Edgar Mitchell",
+      "targetCategory": "friendly_people"
+    },
+    "people:county-sheriff": {
+      "sourceId": "people:county-sheriff",
+      "sourceName": "County Sheriff",
+      "sourceCategory": "people",
+      "targetId": "people:monica-jacinto-reza",
+      "targetName": "Monica Jacinto Reza",
+      "targetCategory": "people"
+    },
+    "professors:charles-buehler": {
+      "sourceId": "professors:charles-buehler",
+      "sourceName": "Charles Buehler",
+      "sourceCategory": "professors",
+      "targetId": "people:charles-buehler",
+      "targetName": "Charles Buehler",
+      "targetCategory": "people"
+    },
+    "people:aldous-huxley": {
+      "sourceId": "people:aldous-huxley",
+      "sourceName": "Aldous Huxley",
+      "sourceCategory": "people",
+      "targetId": "experiencers:aldous-huxley",
+      "targetName": "Aldous Huxley",
+      "targetCategory": "experiencers"
+    },
+    "people:when-bob": {
+      "sourceId": "people:when-bob",
+      "sourceName": "When Bob",
+      "sourceCategory": "people",
+      "targetId": "people:bob-lazar",
+      "targetName": "Bob Lazar",
+      "targetCategory": "people"
+    },
+    "people:when-brent": {
+      "sourceId": "people:when-brent",
+      "sourceName": "When Brent",
+      "sourceCategory": "people",
+      "targetId": "people:brent-friedman",
+      "targetName": "Brent Friedman",
+      "targetCategory": "people"
+    },
+    "people:brent-friedman": {
+      "sourceId": "people:brent-friedman",
+      "sourceName": "Brent Friedman",
+      "sourceCategory": "people",
+      "targetId": "people:both-brent",
+      "targetName": "Both Brent",
+      "targetCategory": "people"
+    },
+    "people:both-brent": {
+      "sourceId": "people:both-brent",
+      "sourceName": "Both Brent",
+      "sourceCategory": "people",
+      "targetId": "people:so-brent",
+      "targetName": "So Brent",
+      "targetCategory": "people"
+    },
+    "military_bases:edwards-412th-test-wing": {
+      "sourceId": "military_bases:edwards-412th-test-wing",
+      "sourceName": "Edwards 412th Test Wing",
+      "sourceCategory": "military_bases",
+      "targetId": "military_bases:edwards-air-force-base",
+      "targetName": "Edwards Air Force Base",
+      "targetCategory": "military_bases"
+    },
+    "people:director-george-tenet": {
+      "sourceId": "people:director-george-tenet",
+      "sourceName": "Director George Tenet",
+      "sourceCategory": "people",
+      "targetId": "people:george-tenet",
+      "targetName": "George Tenet",
+      "targetCategory": "people"
     }
   },
   "nameMerges": {
@@ -8587,9 +8727,105 @@
       "targetId": "people:john-lear",
       "targetName": "John Lear",
       "targetCategory": "people"
+    },
+    "at congress": {
+      "sourceId": "politicians:at-congress",
+      "sourceName": "At Congress",
+      "sourceCategory": "politicians",
+      "targetId": "government_agencies:united-states-congress",
+      "targetName": "United States Congress",
+      "targetCategory": "government_agencies"
+    },
+    "so edgar mitchell": {
+      "sourceId": "people:so-edgar-mitchell",
+      "sourceName": "So Edgar Mitchell",
+      "sourceCategory": "people",
+      "targetId": "people:edgar-mitchell",
+      "targetName": "Edgar Mitchell",
+      "targetCategory": "people"
+    },
+    "edgar mitchell": {
+      "sourceId": "people:edgar-mitchell",
+      "sourceName": "Edgar Mitchell",
+      "sourceCategory": "people",
+      "targetId": "friendly_people:edgar-mitchell",
+      "targetName": "Edgar Mitchell",
+      "targetCategory": "friendly_people"
+    },
+    "county sheriff": {
+      "sourceId": "people:county-sheriff",
+      "sourceName": "County Sheriff",
+      "sourceCategory": "people",
+      "targetId": "people:monica-jacinto-reza",
+      "targetName": "Monica Jacinto Reza",
+      "targetCategory": "people"
+    },
+    "charles buehler": {
+      "sourceId": "professors:charles-buehler",
+      "sourceName": "Charles Buehler",
+      "sourceCategory": "professors",
+      "targetId": "people:charles-buehler",
+      "targetName": "Charles Buehler",
+      "targetCategory": "people"
+    },
+    "aldous huxley": {
+      "sourceId": "people:aldous-huxley",
+      "sourceName": "Aldous Huxley",
+      "sourceCategory": "people",
+      "targetId": "experiencers:aldous-huxley",
+      "targetName": "Aldous Huxley",
+      "targetCategory": "experiencers"
+    },
+    "when bob": {
+      "sourceId": "people:when-bob",
+      "sourceName": "When Bob",
+      "sourceCategory": "people",
+      "targetId": "people:bob-lazar",
+      "targetName": "Bob Lazar",
+      "targetCategory": "people"
+    },
+    "when brent": {
+      "sourceId": "people:when-brent",
+      "sourceName": "When Brent",
+      "sourceCategory": "people",
+      "targetId": "people:brent-friedman",
+      "targetName": "Brent Friedman",
+      "targetCategory": "people"
+    },
+    "brent friedman": {
+      "sourceId": "people:brent-friedman",
+      "sourceName": "Brent Friedman",
+      "sourceCategory": "people",
+      "targetId": "people:both-brent",
+      "targetName": "Both Brent",
+      "targetCategory": "people"
+    },
+    "both brent": {
+      "sourceId": "people:both-brent",
+      "sourceName": "Both Brent",
+      "sourceCategory": "people",
+      "targetId": "people:so-brent",
+      "targetName": "So Brent",
+      "targetCategory": "people"
+    },
+    "edwards 412th test wing": {
+      "sourceId": "military_bases:edwards-412th-test-wing",
+      "sourceName": "Edwards 412th Test Wing",
+      "sourceCategory": "military_bases",
+      "targetId": "military_bases:edwards-air-force-base",
+      "targetName": "Edwards Air Force Base",
+      "targetCategory": "military_bases"
+    },
+    "director george tenet": {
+      "sourceId": "people:director-george-tenet",
+      "sourceName": "Director George Tenet",
+      "sourceCategory": "people",
+      "targetId": "people:george-tenet",
+      "targetName": "George Tenet",
+      "targetCategory": "people"
     }
   },
   "notes": {},
-  "generatedAt": "2026-06-28T01:37:09.803Z",
+  "generatedAt": "2026-06-28T02:18:54.105Z",
   "note": "Replace data/reclass.json with this file before rebuilding."
 }
