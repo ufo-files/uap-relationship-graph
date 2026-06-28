@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import sys
 from pathlib import Path
 from typing import Any
@@ -198,10 +199,14 @@ def validate_changed_files(path: Path) -> list[str]:
     errors: list[str] = []
     generated_changes = sorted(item for item in changed if item in GENERATED_FILES)
     source_changes_allow_generated = any(
-        item == "build_graph.py" or item.startswith("scripts/") or item.startswith("tests/")
+        item == "build_graph.py"
+        or item == ".github/workflows/rebuild-report.yml"
+        or item.startswith("scripts/")
+        or item.startswith("tests/")
         for item in changed
     )
-    if generated_changes and not source_changes_allow_generated:
+    generated_rebuild_pr = os.environ.get("ALLOW_GENERATED_CHANGES") == "1"
+    if generated_changes and not source_changes_allow_generated and not generated_rebuild_pr:
         errors.append(
             "Generated app files should not be edited in contributor PRs. "
             "Change data/reclass.json, data/transcripts/**, or build_graph.py; "

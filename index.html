@@ -538,9 +538,9 @@
   <div id="hover-card" class="hover-card" aria-hidden="true"></div>
   <div id="corner-label" class="corner-label" role="status" aria-live="polite"></div>
   </main>
-    <script src="app-data.js?v=58506631c06d720c"></script>
-    <script src="app-data-mentions.js?v=58506631c06d720c"></script>
-    <script src="app-data-relationships.js?v=58506631c06d720c"></script>
+    <script src="app-data.js?v=ac0130004ffda7e5"></script>
+    <script src="app-data-mentions.js?v=ac0130004ffda7e5"></script>
+    <script src="app-data-relationships.js?v=ac0130004ffda7e5"></script>
   <script>
     const RAW = window.TRANSCRIPT_INTELLIGENCE_DATA;
     const REVIEW_KEY = "relationship-graph-reclass";
@@ -834,6 +834,7 @@
       const ratio = rectWidth / rectHeight;
       let scale = Math.min(availableW / contentW, availableH / contentH);
       if (!Number.isFinite(scale) || scale <= 0) scale = 1;
+      scale *= options.zoomFactor ?? 1;
       let width = clamp(rectWidth / scale, MIN_ZOOM_WIDTH, MAX_ZOOM_WIDTH);
       let height = width / ratio;
       if (height < MIN_ZOOM_HEIGHT) {
@@ -895,7 +896,12 @@
       const maxX = Math.max(...items.map((node) => node.x + node.r)) + xPad;
       const minY = Math.min(...items.map((node) => node.y - node.r)) - topPad;
       const maxY = Math.max(...items.map((node) => node.y + node.r)) + bottomPad;
-      fitBoundsToViewport(minX, minY, maxX, maxY, { reserveHeader: true, bottomInsetPx: 32, leftInsetPx: graphSidebarInsetPx() });
+      fitBoundsToViewport(minX, minY, maxX, maxY, {
+        reserveHeader: true,
+        bottomInsetPx: 32,
+        leftInsetPx: graphSidebarInsetPx(),
+        zoomFactor: isCompactViewport() ? 1.08 : 1.18,
+      });
     }
 
     function fitCategoryDrillViewport(activeCategoryNode, nodes) {

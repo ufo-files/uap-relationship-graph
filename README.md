@@ -1,7 +1,6 @@
 # UFO Files Relationship Graph
 
 [![Validate](https://github.com/ufo-files/relationship-graph/actions/workflows/validate.yml/badge.svg)](https://github.com/ufo-files/relationship-graph/actions/workflows/validate.yml)
-[![Accessibility](https://github.com/ufo-files/relationship-graph/actions/workflows/accessibility.yml/badge.svg)](https://github.com/ufo-files/relationship-graph/actions/workflows/accessibility.yml)
 [![Rebuild Report](https://github.com/ufo-files/relationship-graph/actions/workflows/rebuild-report.yml/badge.svg)](https://github.com/ufo-files/relationship-graph/actions/workflows/rebuild-report.yml)
 
 A static, browser-based relationship graph for exploring entities and connections extracted from a corpus of UAP-related transcripts.

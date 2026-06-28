@@ -213,6 +213,8 @@ test("entity graph fit reserves the open sidebar", async ({ page }) => {
   await expect(selectedLabel).toBeFocused();
 
   const spacing = await page.evaluate(() => {
+    const svg = document.querySelector("#graph");
+    const viewBox = (svg.getAttribute("viewBox") || "").split(/\s+/).map(Number);
     const sidebar = document.querySelector("#node-card");
     const label = document.querySelector(".html-graph-label[aria-current='true']");
     const sidebarRect = sidebar.getBoundingClientRect();
@@ -220,9 +222,11 @@ test("entity graph fit reserves the open sidebar", async ({ page }) => {
     return {
       sidebarRight: sidebarRect.right,
       labelLeft: labelRect.left,
+      viewBoxWidth: viewBox[2],
     };
   });
   expect(spacing.labelLeft).toBeGreaterThan(spacing.sidebarRight + 16);
+  expect(spacing.viewBoxWidth).toBeLessThan(5200);
 });
 
 test("manual relationships are visible in direct entity views", async ({ page }) => {

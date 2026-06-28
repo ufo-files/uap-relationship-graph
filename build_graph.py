@@ -3618,6 +3618,7 @@ __APP_DATA_SCRIPTS__
       const ratio = rectWidth / rectHeight;
       let scale = Math.min(availableW / contentW, availableH / contentH);
       if (!Number.isFinite(scale) || scale <= 0) scale = 1;
+      scale *= options.zoomFactor ?? 1;
       let width = clamp(rectWidth / scale, MIN_ZOOM_WIDTH, MAX_ZOOM_WIDTH);
       let height = width / ratio;
       if (height < MIN_ZOOM_HEIGHT) {
@@ -3679,7 +3680,12 @@ __APP_DATA_SCRIPTS__
       const maxX = Math.max(...items.map((node) => node.x + node.r)) + xPad;
       const minY = Math.min(...items.map((node) => node.y - node.r)) - topPad;
       const maxY = Math.max(...items.map((node) => node.y + node.r)) + bottomPad;
-      fitBoundsToViewport(minX, minY, maxX, maxY, { reserveHeader: true, bottomInsetPx: 32, leftInsetPx: graphSidebarInsetPx() });
+      fitBoundsToViewport(minX, minY, maxX, maxY, {
+        reserveHeader: true,
+        bottomInsetPx: 32,
+        leftInsetPx: graphSidebarInsetPx(),
+        zoomFactor: isCompactViewport() ? 1.08 : 1.18,
+      });
     }
 
     function fitCategoryDrillViewport(activeCategoryNode, nodes) {

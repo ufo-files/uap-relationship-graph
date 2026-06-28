@@ -48,6 +48,8 @@ jobs:
 
       - name: Validate PR boundaries
         if: github.event_name == 'pull_request'
+        env:
+          ALLOW_GENERATED_CHANGES: ${{ startsWith(github.head_ref, 'rebuild-report-') && '1' || '' }}
         run: |
           git diff --name-only "origin/${{ github.base_ref }}...HEAD" > /tmp/changed-files.txt
           python scripts/validate_repo.py --changed-files /tmp/changed-files.txt

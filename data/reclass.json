@@ -10,6 +10,7 @@
     "air force colonel roy": "Colonel Roy Jonkers",
     "air force office": "Air Force Office of Special Investigations",
     "allen hynek": "J. Allen Hynek",
+    "although robert bigelow": "Robert Bigelow",
     "american establishment": "The Anglo-American Establishment",
     "american joseph mengele": "Joseph Mengele",
     "american world power": "Angle-American World Power",
@@ -59,8 +60,10 @@
     "document_names:arrow-historical-report": "AARO Historical Report",
     "dora rosenbaum": "Dora",
     "dr hal puthoff davis": "Harold Puthoff",
+    "dr josef allen hynek": "Dr. Josef Allen Hynek",
     "dragon dracs": "Draconians",
     "eagle works": "NASA Eagle Works",
+    "either dr puthoff": "Dr. Hal Puthoff",
     "energy intelligence": "Office of Intelligence and Counterintelligence",
     "enter lockheed martin": "Lockheed Martin",
     "enter major donald kehoe": "Major Donald Kehoe",
@@ -136,6 +139,7 @@
     "independent research": "Independent Research and Development",
     "information act": "Freedom of Information Act",
     "intelligence directorate": "Security and Intelligence Directorate",
+    "j allen hynek foreword": "J. Allen Hynek",
     "january 2007": "January 2007",
     "jim sammy": "Jim Semivan",
     "john olson lear": "John Lear",
@@ -180,6 +184,7 @@
     "people:acquisition-technology": "National Intelligence for Acquisition Technology and Facilities",
     "people:after-disclosure": "A.D. After Disclosure",
     "people:air-force-colonel-roy": "Colonel Roy Jonkers",
+    "people:although-robert-bigelow": "Robert Bigelow",
     "people:american-establishment": "The Anglo-American Establishment",
     "people:american-joseph-mengele": "Joseph Mengele",
     "people:american-world-power": "Angle-American World Power",
@@ -207,6 +212,7 @@
     "people:dr-hal-puthoff-davis": "Harold Puthoff",
     "people:dragon-dracs": "Draconians",
     "people:eagle-works": "NASA Eagle Works",
+    "people:either-dr-puthoff": "Dr. Hal Puthoff",
     "people:energy-intelligence": "Office of Intelligence and Counterintelligence",
     "people:enter-lockheed-martin": "Lockheed Martin",
     "people:enter-major-donald-kehoe": "Major Donald Kehoe",
@@ -242,6 +248,7 @@
     "people:independent-research": "Independent Research and Development",
     "people:information-act": "Freedom of Information Act",
     "people:intelligence-directorate": "Security and Intelligence Directorate",
+    "people:j-allen-hynek-foreword": "J. Allen Hynek",
     "people:january-2007": "January 2007",
     "people:jim-sammy": "Jim Semivan",
     "people:john-olson-lear": "John Lear",
@@ -312,6 +319,7 @@
     "professors:atmospheric-physics": "Institute of Atmospheric Physics",
     "professors:brigadier-general-william": "Brigadier General William M. Garland",
     "professors:colonel-corso": "Colonel Philip J. Corso",
+    "professors:dr-josef-allen-hynek": "Dr. Josef Allen Hynek",
     "professors:german-experimental-station": "German Experimental Station for Aviation Medicine",
     "professors:house-science": "House Science and Astronautics Committee",
     "professors:in-california": "California",
@@ -1083,7 +1091,7 @@
       "name": "zbiotics.com"
     }
   },
-  "generatedAt": "2026-06-28T18:59:35.612Z",
+  "generatedAt": "2026-06-28T20:49:22.787Z",
   "manualRelationships": {
     "alien_species:orion-empire--star_systems:orion": {
       "sourceCategory": "alien_species",
@@ -1100,6 +1108,14 @@
       "targetCategory": "government_project_codenames",
       "targetId": "government_project_codenames:operation-paperclip",
       "targetName": "Operation Paperclip"
+    },
+    "books:imminent--whistleblowers:luis-elizondo": {
+      "sourceCategory": "books",
+      "sourceId": "books:imminent",
+      "sourceName": "imminent",
+      "targetCategory": "whistleblowers",
+      "targetId": "whistleblowers:luis-elizondo",
+      "targetName": "Luis Elizondo"
     },
     "books:weaponized--people:george-knapp-all": {
       "sourceCategory": "books",
@@ -1261,6 +1277,14 @@
       "targetId": "professors:annie-jacobsen",
       "targetName": "Annie Jacobsen"
     },
+    "friendly_people:general-nathan-twining--people:twining-memo": {
+      "sourceCategory": "friendly_people",
+      "sourceId": "friendly_people:general-nathan-twining",
+      "sourceName": "General Nathan Twining",
+      "targetCategory": "people",
+      "targetId": "people:twining-memo",
+      "targetName": "Twining Memo"
+    },
     "friendly_people:specialized-galacterian--people:galactic-federation": {
       "sourceCategory": "friendly_people",
       "sourceId": "friendly_people:specialized-galacterian",
@@ -1313,8 +1337,16 @@
       "sourceCategory": "government_agencies",
       "sourceId": "government_agencies:german-experimental-station-for-aviation-medicine",
       "sourceName": "German Experimental Station for Aviation Medicine",
-      "targetCategory": "people",
+      "targetCategory": "locations",
       "targetId": "people:in-germany",
+      "targetName": "Germany"
+    },
+    "government_agencies:german-experimental-station-for-aviation-medicine--professors:in-germany": {
+      "sourceCategory": "government_agencies",
+      "sourceId": "government_agencies:german-experimental-station-for-aviation-medicine",
+      "sourceName": "German Experimental Station for Aviation Medicine",
+      "targetCategory": "professors",
+      "targetId": "professors:in-germany",
       "targetName": "In Germany"
     },
     "institutes:california-institute--locations:california": {
@@ -1517,6 +1549,14 @@
       "targetId": "people:ryan-bledsoe",
       "targetName": "Ryan Bledsoe"
     },
+    "people:east-german--people:in-germany": {
+      "sourceCategory": "people",
+      "sourceId": "people:east-german",
+      "sourceName": "East German",
+      "targetCategory": "locations",
+      "targetId": "people:in-germany",
+      "targetName": "Germany"
+    },
     "people:east-germany--people:in-germany": {
       "sourceCategory": "people",
       "sourceId": "people:east-germany",
@@ -1711,6 +1751,14 @@
       "targetId": "people:curtis-lemay",
       "targetName": "Curtis LeMay"
     },
+    "companies:staff-nathan-twining": {
+      "sourceCategory": "companies",
+      "sourceId": "companies:staff-nathan-twining",
+      "sourceName": "Staff Nathan Twining",
+      "targetCategory": "friendly_people",
+      "targetId": "friendly_people:general-nathan-twining",
+      "targetName": "General Nathan Twining"
+    },
     "constellations:orion": {
       "sourceCategory": "constellations",
       "sourceId": "constellations:orion",
@@ -1896,7 +1944,7 @@
       "targetName": "Special Investigations"
     },
     "dangerous_people:west-germany": {
-      "sourceCategory": "dangerous_people",
+      "sourceCategory": "locations",
       "sourceId": "dangerous_people:west-germany",
       "sourceName": "West Germany",
       "targetCategory": "people",
@@ -2411,8 +2459,8 @@
       "sourceCategory": "experiencers",
       "sourceId": "experiencers:west-germany",
       "sourceName": "West Germany",
-      "targetCategory": "friendly_people",
-      "targetId": "friendly_people:west-germany",
+      "targetCategory": "likely_spies",
+      "targetId": "likely_spies:west-germany",
       "targetName": "West Germany"
     },
     "experiencers:white-mountains": {
@@ -2486,6 +2534,14 @@
       "targetCategory": "experiencers",
       "targetId": "experiencers:if-general-trudeau",
       "targetName": "If General Trudeau"
+    },
+    "friendly_people:as-general-twining": {
+      "sourceCategory": "friendly_people",
+      "sourceId": "friendly_people:as-general-twining",
+      "sourceName": "As General Twining",
+      "targetCategory": "friendly_people",
+      "targetId": "friendly_people:generals-twining",
+      "targetName": "Generals Twining"
     },
     "friendly_people:at-wright": {
       "sourceCategory": "friendly_people",
@@ -2726,6 +2782,14 @@
       "targetCategory": "professors",
       "targetId": "professors:general-twining",
       "targetName": "General Twining"
+    },
+    "friendly_people:generals-twining": {
+      "sourceCategory": "friendly_people",
+      "sourceId": "friendly_people:generals-twining",
+      "sourceName": "Generals Twining",
+      "targetCategory": "professors",
+      "targetId": "professors:generals-twining",
+      "targetName": "Generals Twining"
     },
     "friendly_people:glenn-gaffney": {
       "sourceCategory": "friendly_people",
@@ -3203,8 +3267,8 @@
       "sourceCategory": "friendly_people",
       "sourceId": "friendly_people:west-germany",
       "sourceName": "West Germany",
-      "targetCategory": "likely_spies",
-      "targetId": "likely_spies:west-germany",
+      "targetCategory": "experiencers",
+      "targetId": "experiencers:west-germany",
       "targetName": "West Germany"
     },
     "friendly_people:whitley-strieber": {
@@ -3551,6 +3615,14 @@
       "targetId": "politicians:dr-eric-davis",
       "targetName": "Dr Eric Davis"
     },
+    "journalists:dr-hal-puthoff": {
+      "sourceCategory": "journalists",
+      "sourceId": "journalists:dr-hal-puthoff",
+      "sourceName": "Dr Hal Puthoff",
+      "targetCategory": "people",
+      "targetId": "people:perhaps-dr-hal-puthoff",
+      "targetName": "Perhaps Dr Hal Puthoff"
+    },
     "journalists:george-knapp": {
       "sourceCategory": "journalists",
       "sourceId": "journalists:george-knapp",
@@ -3651,9 +3723,9 @@
       "sourceCategory": "journalists",
       "sourceId": "journalists:reporter-george-knapp",
       "sourceName": "Reporter George Knapp",
-      "targetCategory": "people",
-      "targetId": "people:george-knapp-all",
-      "targetName": "George Knapp All"
+      "targetCategory": "journalists",
+      "targetId": "journalists:when-knapp",
+      "targetName": "When Knapp"
     },
     "journalists:ross-coldhart": {
       "sourceCategory": "journalists",
@@ -3694,6 +3766,14 @@
       "targetCategory": "people",
       "targetId": "people:steve-bannon",
       "targetName": "Steve Bannon"
+    },
+    "journalists:when-knapp": {
+      "sourceCategory": "journalists",
+      "sourceId": "journalists:when-knapp",
+      "sourceName": "When Knapp",
+      "targetCategory": "professors",
+      "targetId": "professors:when-knapp",
+      "targetName": "When Knapp"
     },
     "key_terms:consciousness": {
       "sourceCategory": "key_terms",
@@ -3894,6 +3974,14 @@
       "targetCategory": "people",
       "targetId": "people:special-investigations",
       "targetName": "Special Investigations"
+    },
+    "likely_spies:west-germany": {
+      "sourceCategory": "locations",
+      "sourceId": "likely_spies:west-germany",
+      "sourceName": "West Germany",
+      "targetCategory": "people",
+      "targetId": "people:west-german",
+      "targetName": "West German"
     },
     "likely_spies:white-sands-proving-grounds": {
       "sourceCategory": "likely_spies",
@@ -4340,8 +4428,8 @@
       "sourceId": "people:astronomer-j-allen-hynek",
       "sourceName": "Astronomer J. Allen Hynek",
       "targetCategory": "professors",
-      "targetId": "professors:j-allen",
-      "targetName": "J. Allen"
+      "targetId": "professors:dr-hynek",
+      "targetName": "Dr Hynek"
     },
     "people:at-randolph": {
       "sourceCategory": "people",
@@ -4690,7 +4778,7 @@
     "people:chris-bledsoe-all": {
       "sourceCategory": "people",
       "sourceId": "people:chris-bledsoe-all",
-      "sourceName": "Chris Bledsoe",
+      "sourceName": "Chris Bledsoe All",
       "targetCategory": "people",
       "targetId": "people:chris-bledsoe",
       "targetName": "Chris Bledsoe"
@@ -5239,6 +5327,22 @@
       "targetId": "people:jim-clapper",
       "targetName": "Jim Clapper"
     },
+    "people:general-nathan-f-twining": {
+      "sourceCategory": "people",
+      "sourceId": "people:general-nathan-f-twining",
+      "sourceName": "General Nathan F. Twining",
+      "targetCategory": "professors",
+      "targetId": "professors:general-nathan-f-twining",
+      "targetName": "General Nathan F. Twining"
+    },
+    "people:general-nathan-twining": {
+      "sourceCategory": "people",
+      "sourceId": "people:general-nathan-twining",
+      "sourceName": "General Nathan Twining",
+      "targetCategory": "friendly_people",
+      "targetId": "friendly_people:general-nathan-twining",
+      "targetName": "General Nathan Twining"
+    },
     "people:general-trudeau": {
       "sourceCategory": "people",
       "sourceId": "people:general-trudeau",
@@ -5476,8 +5580,16 @@
       "sourceId": "people:j-allen-hynek",
       "sourceName": "J. Allen Hynek",
       "targetCategory": "professors",
-      "targetId": "professors:allen-hynck",
-      "targetName": "Allen Hynck"
+      "targetId": "professors:allen-hynek",
+      "targetName": "Allen Hynek"
+    },
+    "people:j-allen-hynek-foreword": {
+      "sourceCategory": "people",
+      "sourceId": "people:j-allen-hynek-foreword",
+      "sourceName": "J. Allen Hynek",
+      "targetCategory": "professors",
+      "targetId": "professors:dr-josef-allen-hynek",
+      "targetName": "Dr Josef Allen Hynek"
     },
     "people:jack-martin": {
       "sourceCategory": "people",
@@ -5759,6 +5871,14 @@
       "targetId": "people:leslie-keane",
       "targetName": "Leslie Keane"
     },
+    "people:lieutenant-general-nathan-twining": {
+      "sourceCategory": "people",
+      "sourceId": "people:lieutenant-general-nathan-twining",
+      "sourceName": "Lieutenant General Nathan Twining",
+      "targetCategory": "people",
+      "targetId": "people:nathan-p-twining",
+      "targetName": "Nathan P. Twining"
+    },
     "people:linda-moulton": {
       "sourceCategory": "people",
       "sourceId": "people:linda-moulton",
@@ -5942,6 +6062,14 @@
       "targetCategory": "people",
       "targetId": "people:monica-jacinto-reza",
       "targetName": "Monica Jacinto Reza"
+    },
+    "people:nathan-p-twining": {
+      "sourceCategory": "people",
+      "sourceId": "people:nathan-p-twining",
+      "sourceName": "Nathan P. Twining",
+      "targetCategory": "people",
+      "targetId": "people:when-general-twining",
+      "targetName": "When General Twining"
     },
     "people:nathan-twining": {
       "sourceCategory": "people",
@@ -6151,6 +6279,14 @@
       "targetId": "people:so-paul-mellon",
       "targetName": "So Paul Mellon"
     },
+    "people:perhaps-dr-hal-puthoff": {
+      "sourceCategory": "people",
+      "sourceId": "people:perhaps-dr-hal-puthoff",
+      "sourceName": "Perhaps Dr Hal Puthoff",
+      "targetCategory": "people",
+      "targetId": "people:either-dr-puthoff",
+      "targetName": "Either Dr Puthoff"
+    },
     "people:peter-lavenda": {
       "sourceCategory": "people",
       "sourceId": "people:peter-lavenda",
@@ -6283,9 +6419,9 @@
       "sourceCategory": "people",
       "sourceId": "people:robert-bigelow",
       "sourceName": "Robert Bigelow",
-      "targetCategory": "experiencers",
-      "targetId": "experiencers:robert-bigelow",
-      "targetName": "Robert Bigelow"
+      "targetCategory": "people",
+      "targetId": "people:robert-t-bigelow",
+      "targetName": "Robert T. Bigelow"
     },
     "people:robert-hastings-book": {
       "sourceCategory": "people",
@@ -6318,6 +6454,14 @@
       "targetCategory": "people",
       "targetId": "people:dyson-oppenheimer",
       "targetName": "Dyson Oppenheimer"
+    },
+    "people:robert-t-bigelow": {
+      "sourceCategory": "people",
+      "sourceId": "people:robert-t-bigelow",
+      "sourceName": "Robert T. Bigelow",
+      "targetCategory": "people",
+      "targetId": "people:although-robert-bigelow",
+      "targetName": "Although Robert Bigelow"
     },
     "people:rogan-show": {
       "sourceCategory": "people",
@@ -6911,12 +7055,20 @@
       "targetId": "people:mount-waterman",
       "targetName": "Mount Waterman"
     },
+    "people:west-german": {
+      "sourceCategory": "people",
+      "sourceId": "people:west-german",
+      "sourceName": "West German",
+      "targetCategory": "friendly_people",
+      "targetId": "friendly_people:west-german",
+      "targetName": "West German"
+    },
     "people:west-germany": {
       "sourceCategory": "people",
       "sourceId": "people:west-germany",
       "sourceName": "West Germany",
-      "targetCategory": "experiencers",
-      "targetId": "experiencers:west-germany",
+      "targetCategory": "friendly_people",
+      "targetId": "friendly_people:west-germany",
       "targetName": "West Germany"
     },
     "people:what-eric-hecker": {
@@ -6975,6 +7127,14 @@
       "targetId": "people:brent-friedman",
       "targetName": "Brent Friedman"
     },
+    "people:when-general-twining": {
+      "sourceCategory": "people",
+      "sourceId": "people:when-general-twining",
+      "sourceName": "When General Twining",
+      "targetCategory": "friendly_people",
+      "targetId": "friendly_people:as-general-twining",
+      "targetName": "As General Twining"
+    },
     "people:when-james-fox": {
       "sourceCategory": "people",
       "sourceId": "people:when-james-fox",
@@ -7022,6 +7182,14 @@
       "targetCategory": "people",
       "targetId": "people:boris-yeltsin",
       "targetName": "Boris Yeltsin"
+    },
+    "people:while-general-twining": {
+      "sourceCategory": "people",
+      "sourceId": "people:while-general-twining",
+      "sourceName": "While General Twining",
+      "targetCategory": "professors",
+      "targetId": "professors:lieutenant-general-twining",
+      "targetName": "Lieutenant General Twining"
     },
     "people:white-mountains": {
       "sourceCategory": "locations",
@@ -7183,6 +7351,14 @@
       "targetId": "people:alan-dulles",
       "targetName": "Alan Dulles"
     },
+    "politicians:allen-hynek": {
+      "sourceCategory": "politicians",
+      "sourceId": "politicians:allen-hynek",
+      "sourceName": "Allen Hynek",
+      "targetCategory": "people",
+      "targetId": "people:astronomer-j-allen-hynek",
+      "targetName": "Astronomer J. Allen Hynek"
+    },
     "politicians:anna-paulina-luna": {
       "sourceCategory": "politicians",
       "sourceId": "politicians:anna-paulina-luna",
@@ -7308,8 +7484,8 @@
       "sourceId": "politicians:general-twining",
       "sourceName": "General Twining",
       "targetCategory": "people",
-      "targetId": "people:general-nathan-twining",
-      "targetName": "General Nathan Twining"
+      "targetId": "people:general-nathan-f-twining",
+      "targetName": "General Nathan F. Twining"
     },
     "politicians:harry-reid": {
       "sourceCategory": "politicians",
@@ -7543,6 +7719,14 @@
       "targetId": "experiencers:dr-j-allen-hynek",
       "targetName": "Dr J. Allen Hynek"
     },
+    "professors:allen-hynek": {
+      "sourceCategory": "professors",
+      "sourceId": "professors:allen-hynek",
+      "sourceName": "Allen Hynek",
+      "targetCategory": "politicians",
+      "targetId": "politicians:allen-hynek",
+      "targetName": "Allen Hynek"
+    },
     "professors:american-museum": {
       "sourceCategory": "professors",
       "sourceId": "professors:american-museum",
@@ -7627,9 +7811,9 @@
       "sourceCategory": "professors",
       "sourceId": "professors:c-in-las-vegas",
       "sourceName": "C. In Las Vegas",
-      "targetCategory": "likely_spies",
-      "targetId": "likely_spies:north-las-vegas",
-      "targetName": "North Las Vegas"
+      "targetCategory": "experiencers",
+      "targetId": "experiencers:in-las-vegas",
+      "targetName": "In Las Vegas"
     },
     "professors:carl-grillmayer": {
       "sourceCategory": "professors",
@@ -7767,13 +7951,21 @@
       "targetId": "experiencers:dr-hal-puthoff",
       "targetName": "Dr Hal Puthoff"
     },
+    "professors:dr-hynek": {
+      "sourceCategory": "professors",
+      "sourceId": "professors:dr-hynek",
+      "sourceName": "Dr Hynek",
+      "targetCategory": "experiencers",
+      "targetId": "experiencers:dr-j-allen-hynek",
+      "targetName": "Dr J. Allen Hynek"
+    },
     "professors:dr-j-allen-hynek": {
       "sourceCategory": "professors",
       "sourceId": "professors:dr-j-allen-hynek",
       "sourceName": "Dr J. Allen Hynek",
       "targetCategory": "people",
-      "targetId": "people:astronomer-j-allen-hynek",
-      "targetName": "Astronomer J. Allen Hynek"
+      "targetId": "people:j-allen-hynek-foreword",
+      "targetName": "J. Allen Hynek Foreword"
     },
     "professors:edward-teller": {
       "sourceCategory": "professors",
@@ -7847,6 +8039,14 @@
       "targetId": "people:larry-nolan",
       "targetName": "Larry Nolan"
     },
+    "professors:general-nathan-f-twining": {
+      "sourceCategory": "professors",
+      "sourceId": "professors:general-nathan-f-twining",
+      "sourceName": "General Nathan F. Twining",
+      "targetCategory": "people",
+      "targetId": "people:lieutenant-general-nathan-twining",
+      "targetName": "Lieutenant General Nathan Twining"
+    },
     "professors:general-trudeau": {
       "sourceCategory": "professors",
       "sourceId": "professors:general-trudeau",
@@ -7862,6 +8062,14 @@
       "targetCategory": "experiencers",
       "targetId": "experiencers:general-twining",
       "targetName": "General Twining"
+    },
+    "professors:generals-twining": {
+      "sourceCategory": "professors",
+      "sourceId": "professors:generals-twining",
+      "sourceName": "Generals Twining",
+      "targetCategory": "people",
+      "targetId": "people:while-general-twining",
+      "targetName": "While General Twining"
     },
     "professors:german-experimental-station": {
       "sourceCategory": "locations",
@@ -7950,6 +8158,14 @@
       "targetCategory": "people",
       "targetId": "people:in-las-vegas",
       "targetName": "In Las Vegas"
+    },
+    "professors:lieutenant-general-twining": {
+      "sourceCategory": "professors",
+      "sourceId": "professors:lieutenant-general-twining",
+      "sourceName": "Lieutenant General Twining",
+      "targetCategory": "companies",
+      "targetId": "companies:staff-nathan-twining",
+      "targetName": "Staff Nathan Twining"
     },
     "professors:major-general-dr": {
       "sourceCategory": "professors",
@@ -8198,6 +8414,14 @@
       "targetCategory": "professors",
       "targetId": "professors:if-general-trudeau",
       "targetName": "If General Trudeau"
+    },
+    "professors:when-knapp": {
+      "sourceCategory": "professors",
+      "sourceId": "professors:when-knapp",
+      "sourceName": "When Knapp",
+      "targetCategory": "people",
+      "targetId": "people:george-knapp-all",
+      "targetName": "George Knapp All"
     },
     "professors:whitley-strieber": {
       "sourceCategory": "professors",
@@ -8777,6 +9001,14 @@
       "targetId": "experiencers:dr-j-allen-hynek",
       "targetName": "Dr J. Allen Hynek"
     },
+    "allen hynek": {
+      "sourceCategory": "politicians",
+      "sourceId": "politicians:allen-hynek",
+      "sourceName": "Allen Hynek",
+      "targetCategory": "people",
+      "targetId": "people:astronomer-j-allen-hynek",
+      "targetName": "Astronomer J. Allen Hynek"
+    },
     "aluminum": {
       "sourceCategory": "materials",
       "sourceId": "materials:aluminum",
@@ -8937,6 +9169,14 @@
       "targetId": "experiencers:if-general-trudeau",
       "targetName": "If General Trudeau"
     },
+    "as general twining": {
+      "sourceCategory": "friendly_people",
+      "sourceId": "friendly_people:as-general-twining",
+      "sourceName": "As General Twining",
+      "targetCategory": "friendly_people",
+      "targetId": "friendly_people:generals-twining",
+      "targetName": "Generals Twining"
+    },
     "as reid": {
       "sourceCategory": "professors",
       "sourceId": "professors:as-reid",
@@ -8958,8 +9198,8 @@
       "sourceId": "people:astronomer-j-allen-hynek",
       "sourceName": "Astronomer J. Allen Hynek",
       "targetCategory": "professors",
-      "targetId": "professors:j-allen",
-      "targetName": "J. Allen"
+      "targetId": "professors:dr-hynek",
+      "targetName": "Dr Hynek"
     },
     "at congress": {
       "sourceCategory": "politicians",
@@ -9341,9 +9581,9 @@
       "sourceCategory": "professors",
       "sourceId": "professors:c-in-las-vegas",
       "sourceName": "C. In Las Vegas",
-      "targetCategory": "likely_spies",
-      "targetId": "likely_spies:north-las-vegas",
-      "targetName": "North Las Vegas"
+      "targetCategory": "experiencers",
+      "targetId": "experiencers:in-las-vegas",
+      "targetName": "In Las Vegas"
     },
     "california": {
       "sourceCategory": "locations",
@@ -9442,8 +9682,8 @@
       "targetName": "Charles Manson"
     },
     "chris bledsoe": {
-      "sourceCategory": "people",
-      "sourceId": "people:chris-bledsoe-all",
+      "sourceCategory": "experiencers",
+      "sourceId": "experiencers:chris-bledsoe",
       "sourceName": "Chris Bledsoe",
       "targetCategory": "people",
       "targetId": "people:chris-bledsoe",
@@ -9778,12 +10018,12 @@
       "targetName": "David Gresh"
     },
     "dave grusch": {
-      "sourceCategory": "whistleblowers",
-      "sourceId": "whistleblowers:dave-grusch",
+      "sourceCategory": "experiencers",
+      "sourceId": "experiencers:dave-grusch",
       "sourceName": "Dave Grusch",
-      "targetCategory": "people",
-      "targetId": "people:dave-gresh",
-      "targetName": "Dave Gresh"
+      "targetCategory": "whistleblowers",
+      "targetId": "whistleblowers:dave-grusch",
+      "targetName": "Dave Grusch"
     },
     "dave grush": {
       "sourceCategory": "whistleblowers",
@@ -10042,20 +10282,28 @@
       "targetName": "Dr Eric Davis"
     },
     "dr hal puthoff": {
-      "sourceCategory": "experiencers",
-      "sourceId": "experiencers:dr-hal-puthoff",
+      "sourceCategory": "journalists",
+      "sourceId": "journalists:dr-hal-puthoff",
       "sourceName": "Dr Hal Puthoff",
-      "targetCategory": "journalists",
-      "targetId": "journalists:dr-hal-puthoff",
-      "targetName": "Dr Hal Puthoff"
+      "targetCategory": "people",
+      "targetId": "people:perhaps-dr-hal-puthoff",
+      "targetName": "Perhaps Dr Hal Puthoff"
+    },
+    "dr hynek": {
+      "sourceCategory": "professors",
+      "sourceId": "professors:dr-hynek",
+      "sourceName": "Dr Hynek",
+      "targetCategory": "experiencers",
+      "targetId": "experiencers:dr-j-allen-hynek",
+      "targetName": "Dr J. Allen Hynek"
     },
     "dr j allen hynek": {
       "sourceCategory": "professors",
       "sourceId": "professors:dr-j-allen-hynek",
       "sourceName": "Dr J. Allen Hynek",
       "targetCategory": "people",
-      "targetId": "people:astronomer-j-allen-hynek",
-      "targetName": "Astronomer J. Allen Hynek"
+      "targetId": "people:j-allen-hynek-foreword",
+      "targetName": "J. Allen Hynek Foreword"
     },
     "dr puthoff": {
       "sourceCategory": "whistleblowers",
@@ -10314,12 +10562,12 @@
       "targetName": "Larry Nolan"
     },
     "general arthur trudeau": {
-      "sourceCategory": "people",
-      "sourceId": "people:general-arthur-trudeau",
+      "sourceCategory": "dangerous_people",
+      "sourceId": "dangerous_people:general-arthur-trudeau",
       "sourceName": "General Arthur Trudeau",
-      "targetCategory": "politicians",
-      "targetId": "politicians:air-force-general-arthur",
-      "targetName": "Air Force General Arthur"
+      "targetCategory": "people",
+      "targetId": "people:general-arthur-trudeau",
+      "targetName": "General Arthur Trudeau"
     },
     "general clapper": {
       "sourceCategory": "people",
@@ -10328,6 +10576,22 @@
       "targetCategory": "people",
       "targetId": "people:jim-clapper",
       "targetName": "Jim Clapper"
+    },
+    "general nathan f twining": {
+      "sourceCategory": "professors",
+      "sourceId": "professors:general-nathan-f-twining",
+      "sourceName": "General Nathan F. Twining",
+      "targetCategory": "people",
+      "targetId": "people:lieutenant-general-nathan-twining",
+      "targetName": "Lieutenant General Nathan Twining"
+    },
+    "general nathan twining": {
+      "sourceCategory": "people",
+      "sourceId": "people:general-nathan-twining",
+      "sourceName": "General Nathan Twining",
+      "targetCategory": "friendly_people",
+      "targetId": "friendly_people:general-nathan-twining",
+      "targetName": "General Nathan Twining"
     },
     "general trudeau": {
       "sourceCategory": "politicians",
@@ -10342,8 +10606,16 @@
       "sourceId": "politicians:general-twining",
       "sourceName": "General Twining",
       "targetCategory": "people",
-      "targetId": "people:general-nathan-twining",
-      "targetName": "General Nathan Twining"
+      "targetId": "people:general-nathan-f-twining",
+      "targetName": "General Nathan F. Twining"
+    },
+    "generals twining": {
+      "sourceCategory": "professors",
+      "sourceId": "professors:generals-twining",
+      "sourceName": "Generals Twining",
+      "targetCategory": "people",
+      "targetId": "people:while-general-twining",
+      "targetName": "While General Twining"
     },
     "george adamski": {
       "sourceCategory": "people",
@@ -10715,11 +10987,11 @@
     },
     "j allen hynek": {
       "sourceCategory": "people",
-      "sourceId": "people:j-allen-hynek",
+      "sourceId": "people:j-allen-hynek-foreword",
       "sourceName": "J. Allen Hynek",
       "targetCategory": "professors",
-      "targetId": "professors:allen-hynck",
-      "targetName": "Allen Hynck"
+      "targetId": "professors:dr-josef-allen-hynek",
+      "targetName": "Dr Josef Allen Hynek"
     },
     "jack martin": {
       "sourceCategory": "people",
@@ -11010,20 +11282,20 @@
       "targetName": "Lake Titicaca Leaving La"
     },
     "las vegas": {
-      "sourceCategory": "likely_spies",
-      "sourceId": "likely_spies:north-las-vegas",
+      "sourceCategory": "locations",
+      "sourceId": "locations:las-vegas",
       "sourceName": "Las Vegas",
       "targetCategory": "people",
-      "targetId": "people:north-las-vegas",
-      "targetName": "North Las Vegas"
+      "targetId": "people:las-vegas-strip",
+      "targetName": "Las Vegas Strip"
     },
     "las vegas strip": {
-      "sourceCategory": "locations",
-      "sourceId": "locations:las-vegas-strip",
+      "sourceCategory": "people",
+      "sourceId": "people:las-vegas-strip",
       "sourceName": "Las Vegas Strip",
-      "targetCategory": "experiencers",
-      "targetId": "experiencers:las-vegas",
-      "targetName": "Las Vegas"
+      "targetCategory": "professors",
+      "targetId": "professors:c-in-las-vegas",
+      "targetName": "C. In Las Vegas"
     },
     "las vegas sun": {
       "sourceCategory": "professors",
@@ -11089,6 +11361,14 @@
       "targetId": "whistleblowers:leslie-kean",
       "targetName": "Leslie Kean"
     },
+    "lieutenant general nathan twining": {
+      "sourceCategory": "people",
+      "sourceId": "people:lieutenant-general-nathan-twining",
+      "sourceName": "Lieutenant General Nathan Twining",
+      "targetCategory": "people",
+      "targetId": "people:nathan-p-twining",
+      "targetName": "Nathan P. Twining"
+    },
     "lieutenant general trudeau": {
       "sourceCategory": "politicians",
       "sourceId": "politicians:lieutenant-general-trudeau",
@@ -11096,6 +11376,14 @@
       "targetCategory": "friendly_people",
       "targetId": "friendly_people:arthur-g-trudeau",
       "targetName": "Arthur G. Trudeau"
+    },
+    "lieutenant general twining": {
+      "sourceCategory": "professors",
+      "sourceId": "professors:lieutenant-general-twining",
+      "sourceName": "Lieutenant General Twining",
+      "targetCategory": "companies",
+      "targetId": "companies:staff-nathan-twining",
+      "targetName": "Staff Nathan Twining"
     },
     "like stanford university": {
       "sourceCategory": "universities",
@@ -11464,6 +11752,14 @@
       "targetCategory": "research_groups",
       "targetId": "research_groups:mufon",
       "targetName": "MUFON"
+    },
+    "nathan p twining": {
+      "sourceCategory": "people",
+      "sourceId": "people:nathan-p-twining",
+      "sourceName": "Nathan P. Twining",
+      "targetCategory": "people",
+      "targetId": "people:when-general-twining",
+      "targetName": "When General Twining"
     },
     "nathan twining": {
       "sourceCategory": "people",
@@ -11841,6 +12137,14 @@
       "targetId": "people:so-paul-mellon",
       "targetName": "So Paul Mellon"
     },
+    "perhaps dr hal puthoff": {
+      "sourceCategory": "people",
+      "sourceId": "people:perhaps-dr-hal-puthoff",
+      "sourceName": "Perhaps Dr Hal Puthoff",
+      "targetCategory": "people",
+      "targetId": "people:either-dr-puthoff",
+      "targetName": "Either Dr Puthoff"
+    },
     "peru": {
       "sourceCategory": "locations",
       "sourceId": "locations:peru",
@@ -12045,9 +12349,9 @@
       "sourceCategory": "journalists",
       "sourceId": "journalists:reporter-george-knapp",
       "sourceName": "Reporter George Knapp",
-      "targetCategory": "people",
-      "targetId": "people:george-knapp-all",
-      "targetName": "George Knapp All"
+      "targetCategory": "journalists",
+      "targetId": "journalists:when-knapp",
+      "targetName": "When Knapp"
     },
     "researcher ashton forbes": {
       "sourceCategory": "whistleblowers",
@@ -12082,12 +12386,12 @@
       "targetName": "Richard Doty"
     },
     "robert bigelow": {
-      "sourceCategory": "friendly_people",
-      "sourceId": "friendly_people:robert-bigelow",
+      "sourceCategory": "people",
+      "sourceId": "people:robert-bigelow",
       "sourceName": "Robert Bigelow",
-      "targetCategory": "dangerous_people",
-      "targetId": "dangerous_people:robert-bigelow",
-      "targetName": "Robert Bigelow"
+      "targetCategory": "people",
+      "targetId": "people:robert-t-bigelow",
+      "targetName": "Robert T. Bigelow"
     },
     "robert f kennedy": {
       "sourceCategory": "politicians",
@@ -12144,6 +12448,14 @@
       "targetCategory": "people",
       "targetId": "people:dyson-oppenheimer",
       "targetName": "Dyson Oppenheimer"
+    },
+    "robert t bigelow": {
+      "sourceCategory": "people",
+      "sourceId": "people:robert-t-bigelow",
+      "sourceName": "Robert T. Bigelow",
+      "targetCategory": "people",
+      "targetId": "people:although-robert-bigelow",
+      "targetName": "Although Robert Bigelow"
     },
     "rogan show": {
       "sourceCategory": "people",
@@ -12809,6 +13121,14 @@
       "targetId": "people:curtis-lemay",
       "targetName": "Curtis LeMay"
     },
+    "staff nathan twining": {
+      "sourceCategory": "companies",
+      "sourceId": "companies:staff-nathan-twining",
+      "sourceName": "Staff Nathan Twining",
+      "targetCategory": "friendly_people",
+      "targetId": "friendly_people:general-nathan-twining",
+      "targetName": "General Nathan Twining"
+    },
     "stanford": {
       "sourceCategory": "universities",
       "sourceId": "universities:stanford",
@@ -13186,12 +13506,12 @@
       "targetName": "Warren Commission"
     },
     "washington post": {
-      "sourceCategory": "newsrooms",
-      "sourceId": "newsrooms:washington-post",
+      "sourceCategory": "journalists",
+      "sourceId": "politicians:washington-post",
       "sourceName": "Washington Post",
-      "targetCategory": "newsrooms",
-      "targetId": "newsrooms:the-washington-post",
-      "targetName": "the Washington Post"
+      "targetCategory": "people",
+      "targetId": "people:washington-post",
+      "targetName": "Washington Post"
     },
     "waterman mountain": {
       "sourceCategory": "locations",
@@ -13201,13 +13521,21 @@
       "targetId": "people:mount-waterman",
       "targetName": "Mount Waterman"
     },
+    "west german": {
+      "sourceCategory": "people",
+      "sourceId": "people:west-german",
+      "sourceName": "West German",
+      "targetCategory": "friendly_people",
+      "targetId": "friendly_people:west-german",
+      "targetName": "West German"
+    },
     "west germany": {
-      "sourceCategory": "friendly_people",
-      "sourceId": "friendly_people:west-germany",
+      "sourceCategory": "locations",
+      "sourceId": "likely_spies:west-germany",
       "sourceName": "West Germany",
-      "targetCategory": "likely_spies",
-      "targetId": "likely_spies:west-germany",
-      "targetName": "West Germany"
+      "targetCategory": "people",
+      "targetId": "people:west-german",
+      "targetName": "West German"
     },
     "what eric hecker": {
       "sourceCategory": "people",
@@ -13273,6 +13601,14 @@
       "targetId": "professors:if-general-trudeau",
       "targetName": "If General Trudeau"
     },
+    "when general twining": {
+      "sourceCategory": "people",
+      "sourceId": "people:when-general-twining",
+      "sourceName": "When General Twining",
+      "targetCategory": "friendly_people",
+      "targetId": "friendly_people:as-general-twining",
+      "targetName": "As General Twining"
+    },
     "when james fox": {
       "sourceCategory": "people",
       "sourceId": "people:when-james-fox",
@@ -13288,6 +13624,14 @@
       "targetCategory": "people",
       "targetId": "people:john-paul",
       "targetName": "John Paul"
+    },
+    "when knapp": {
+      "sourceCategory": "professors",
+      "sourceId": "professors:when-knapp",
+      "sourceName": "When Knapp",
+      "targetCategory": "people",
+      "targetId": "people:george-knapp-all",
+      "targetName": "George Knapp All"
     },
     "when roswell": {
       "sourceCategory": "locations",
@@ -13320,6 +13664,14 @@
       "targetCategory": "people",
       "targetId": "people:boris-yeltsin",
       "targetName": "Boris Yeltsin"
+    },
+    "while general twining": {
+      "sourceCategory": "people",
+      "sourceId": "people:while-general-twining",
+      "sourceName": "While General Twining",
+      "targetCategory": "professors",
+      "targetId": "professors:lieutenant-general-twining",
+      "targetName": "Lieutenant General Twining"
     },
     "while senator harry reid": {
       "sourceCategory": "politicians",
@@ -13663,6 +14015,7 @@
     "experimental station": "locations",
     "explore mars foundation": "nonprofits",
     "extra low frequency": "emerging_terminology",
+    "faded giant": "books",
     "false memory syndrome foundation": "medical_conditions",
     "federal republic": "locations",
     "federal republic of germany": "locations",
@@ -13670,7 +14023,7 @@
     "first contact": "events",
     "flying saucers": "key_terms",
     "for lockheed": "contractors",
-    "for skinwalker": "locations",
+    "for skinwalker": "tv_shows",
     "forbidden science": "books",
     "foreign technology": "government_agencies",
     "fort belvoir": "military_bases",
@@ -13825,6 +14178,7 @@
     "national academy of sciences national academy of sciences": "institutes",
     "national guard": "government_agencies",
     "national intelligence": "government_agencies",
+    "national investigations committee": "government_agencies",
     "national labs": "government_agencies",
     "national nuclear": "government_agencies",
     "national nuclear security administration": "government_agencies",
@@ -14031,6 +14385,7 @@
     "true legends": "tv_shows",
     "trump media and technology group": "companies",
     "truth social": "companies",
+    "twining memo": "document_names",
     "u.s. house of representatives": "government_agencies",
     "uinta basin": "locations",
     "unclassified logistic support facility": "locations",
@@ -14058,12 +14413,13 @@
     "weaponized": "books",
     "weimar germany": "locations",
     "weimar, germany": "locations",
+    "west german": "locations",
     "west germany": "locations",
     "west virginia": "locations",
     "what is skinwalker ranch": "locations",
     "when roswell": "locations",
     "when september": "dates_times",
-    "white house": "military_bases",
+    "white house": "government_agencies",
     "white mountains": "locations",
     "white sands proving grounds": "military_bases",
     "whitley strieber": "experiencers",
@@ -14120,6 +14476,7 @@
     "friendly_people:bermuda-triangle": "locations",
     "friendly_people:civil-air": "government_agencies",
     "friendly_people:development-centers": "research_groups",
+    "friendly_people:faded-giant": "books",
     "friendly_people:foreign-technology": "government_agencies",
     "friendly_people:fred-crisman": "people",
     "friendly_people:grill-flame": "government_project_codenames",
@@ -14144,6 +14501,7 @@
     "friendly_people:venusians-universal-origin": "alien_species",
     "friendly_people:virgin-mary": "people",
     "friendly_people:weimar-germany": "locations",
+    "friendly_people:west-german": "locations",
     "friendly_people:white-mountains": "locations",
     "government_agencies:consciousness-department-it": "key_terms",
     "government_agencies:white-house": "military_bases",
@@ -14259,7 +14617,7 @@
     "people:first-contact": "events",
     "people:flying-saucers": "key_terms",
     "people:for-lockheed": "contractors",
-    "people:for-skinwalker": "locations",
+    "people:for-skinwalker": "tv_shows",
     "people:forbidden-science": "books",
     "people:fort-belvoir": "military_bases",
     "people:fort-detrick": "military_bases",
@@ -14473,6 +14831,7 @@
     "people:tonopatest-range": "locations",
     "people:true-legends": "tv_shows",
     "people:truth-social": "companies",
+    "people:twining-memo": "document_names",
     "people:uinta-basin": "locations",
     "people:unclassified-logistic-support-facility": "locations",
     "people:united-nuclear": "companies",
@@ -14504,6 +14863,7 @@
     "politicians:democratic-national-committee": "government_agencies",
     "politicians:galacterian-alignment": "theories",
     "politicians:house-oversight-committee": "government_agencies",
+    "politicians:national-investigations-committee": "government_agencies",
     "politicians:russian-orthodox": "companies",
     "politicians:senate-select-committee": "government_agencies",
     "politicians:slavonic-orthodox": "companies",
