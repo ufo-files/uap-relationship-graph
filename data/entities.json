@@ -467,48 +467,6 @@
     ]
   },
   {
-    "id": "people:when-bob-lazar",
-    "name": "When Bob Lazar",
-    "canonical_name": "When Bob Lazar",
-    "category": "people",
-    "category_label": "People",
-    "count": 112,
-    "confidence": 0.91,
-    "transcripts": [
-      "A Weekend With Bob Lazar Inside Area51s",
-      "Aliens Invented Religion To Control Huma",
-      "Army Captures Live Alien Hospital Report",
-      "Cia Historian Aliens Are Controlling Hum",
-      "Dmt Opens The Alien Realm Neuroscientist",
-      "Eric Weinstein Demands Ufo Secrets From",
-      "Hollywood The Cia And Ufos The History Bey",
-      "If You Knew What I Knew Jeremy Corbell U",
-      "Jeffrey Epstein Aliens The Global Sata",
-      "Joe Rogan The Truth About Aliens He Fina",
-      "Meet The Scientist Who Studies Alien Imp",
-      "The Defense Secretary Killed Over Ufos F",
-      "The Pentagons Ufo Program Is Real Here",
-      "Theres A Ufo On The Seafloor Treasure H",
-      "We Captured A 12 Foot Giant In Afghanist",
-      "Why The Pentagon Tried To Censor This Uf"
-    ],
-    "significance": "When Bob Lazar appears as people with 112 mention(s) across 16 transcripts; detected by gazetteer, heuristic:person_name.",
-    "detectors": [
-      "gazetteer",
-      "heuristic:person_name"
-    ],
-    "evidence_ids": [
-      "m-0000156",
-      "m-0000157",
-      "m-0000158",
-      "m-0000159",
-      "m-0000160",
-      "m-0000161",
-      "m-0000162",
-      "m-0000173"
-    ]
-  },
-  {
     "id": "government_agencies:department-of-energy",
     "name": "Department of Energy",
     "canonical_name": "Department of Energy",
@@ -927,6 +885,47 @@
       "m-0001308",
       "m-0001464",
       "m-0001501"
+    ]
+  },
+  {
+    "id": "people:when-bob-lazar",
+    "name": "When Bob Lazar",
+    "canonical_name": "When Bob Lazar",
+    "category": "people",
+    "category_label": "People",
+    "count": 77,
+    "confidence": 0.912,
+    "transcripts": [
+      "A Weekend With Bob Lazar Inside Area51s",
+      "Aliens Invented Religion To Control Huma",
+      "Army Captures Live Alien Hospital Report",
+      "Cia Historian Aliens Are Controlling Hum",
+      "Dmt Opens The Alien Realm Neuroscientist",
+      "Eric Weinstein Demands Ufo Secrets From",
+      "Hollywood The Cia And Ufos The History Bey",
+      "If You Knew What I Knew Jeremy Corbell U",
+      "Jeffrey Epstein Aliens The Global Sata",
+      "Joe Rogan The Truth About Aliens He Fina",
+      "Meet The Scientist Who Studies Alien Imp",
+      "The Defense Secretary Killed Over Ufos F",
+      "The Pentagons Ufo Program Is Real Here",
+      "We Captured A 12 Foot Giant In Afghanist",
+      "Why The Pentagon Tried To Censor This Uf"
+    ],
+    "significance": "When Bob Lazar appears as people with 77 mention(s) across 15 transcripts; detected by gazetteer, heuristic:person_name.",
+    "detectors": [
+      "gazetteer",
+      "heuristic:person_name"
+    ],
+    "evidence_ids": [
+      "m-0000156",
+      "m-0000157",
+      "m-0000158",
+      "m-0000159",
+      "m-0000160",
+      "m-0000161",
+      "m-0000162",
+      "m-0000173"
     ]
   },
   {
@@ -2252,6 +2251,38 @@
     ]
   },
   {
+    "id": "journalists:george-knapp",
+    "name": "George Knapp",
+    "canonical_name": "George Knapp",
+    "category": "journalists",
+    "category_label": "Journalists",
+    "count": 35,
+    "confidence": 0.906,
+    "transcripts": [
+      "A Weekend With Bob Lazar Inside Area51s",
+      "Cia Historian Aliens Are Controlling Hum",
+      "Hollywood The Cia And Ufos The History Bey",
+      "If You Knew What I Knew Jeremy Corbell U",
+      "The Pentagons Ufo Program Is Real Here",
+      "Theres A Ufo On The Seafloor Treasure H"
+    ],
+    "significance": "George Knapp appears as journalists with 35 mention(s) across 6 transcripts; detected by gazetteer, heuristic:person_name.",
+    "detectors": [
+      "gazetteer",
+      "heuristic:person_name"
+    ],
+    "evidence_ids": [
+      "m-0000226",
+      "m-0000230",
+      "m-0000281",
+      "m-0000327",
+      "m-0000329",
+      "m-0000332",
+      "m-0000379",
+      "m-0000381"
+    ]
+  },
+  {
     "id": "materials:isotope",
     "name": "isotope",
     "canonical_name": "isotope",
@@ -2334,7 +2365,7 @@
     "canonical_name": "Tim Taylor",
     "category": "people",
     "category_label": "People",
-    "count": 33,
+    "count": 34,
     "confidence": 0.544,
     "transcripts": [
       "Nasa Whistleblower We Systematically Sup",
@@ -2343,7 +2374,7 @@
       "We Captured A 12 Foot Giant In Afghanist",
       "Why Nasa Studies This Man He Attracts Uf"
     ],
-    "significance": "Tim Taylor appears as people with 33 mention(s) across 5 transcripts; detected by heuristic:person_name.",
+    "significance": "Tim Taylor appears as people with 34 mention(s) across 5 transcripts; detected by heuristic:person_name.",
     "detectors": [
       "heuristic:person_name"
     ],
@@ -2512,6 +2543,36 @@
     ]
   },
   {
+    "id": "people:john-lear",
+    "name": "John Lear",
+    "canonical_name": "John Lear",
+    "category": "people",
+    "category_label": "People",
+    "count": 30,
+    "confidence": 0.549,
+    "transcripts": [
+      "A Weekend With Bob Lazar Inside Area51s",
+      "Ebe 3 John Lear Ebe 3 At 4 Min",
+      "Hollywood The Cia And Ufos The History Bey",
+      "If You Knew What I Knew Jeremy Corbell U",
+      "Why Nasa Studies This Man He Attracts Uf"
+    ],
+    "significance": "John Lear appears as people with 30 mention(s) across 5 transcripts; detected by heuristic:person_name.",
+    "detectors": [
+      "heuristic:person_name"
+    ],
+    "evidence_ids": [
+      "m-0003420",
+      "m-0006386",
+      "m-0000167",
+      "m-0000370",
+      "m-0000371",
+      "m-0000376",
+      "m-0000380",
+      "m-0000382"
+    ]
+  },
+  {
     "id": "locations:nevada",
     "name": "Nevada",
     "canonical_name": "Nevada",
@@ -2579,36 +2640,6 @@
       "m-0003617",
       "m-0003622",
       "m-0003644"
-    ]
-  },
-  {
-    "id": "people:john-lear",
-    "name": "John Lear",
-    "canonical_name": "John Lear",
-    "category": "people",
-    "category_label": "People",
-    "count": 28,
-    "confidence": 0.55,
-    "transcripts": [
-      "A Weekend With Bob Lazar Inside Area51s",
-      "Ebe 3 John Lear Ebe 3 At 4 Min",
-      "Hollywood The Cia And Ufos The History Bey",
-      "If You Knew What I Knew Jeremy Corbell U",
-      "Why Nasa Studies This Man He Attracts Uf"
-    ],
-    "significance": "John Lear appears as people with 28 mention(s) across 5 transcripts; detected by heuristic:person_name.",
-    "detectors": [
-      "heuristic:person_name"
-    ],
-    "evidence_ids": [
-      "m-0003420",
-      "m-0006386",
-      "m-0000167",
-      "m-0000370",
-      "m-0000371",
-      "m-0000376",
-      "m-0000380",
-      "m-0000382"
     ]
   },
   {
@@ -3205,6 +3236,42 @@
     ]
   },
   {
+    "id": "contractors:lockheed-skunkworks",
+    "name": "Lockheed Skunkworks",
+    "canonical_name": "Lockheed Skunkworks",
+    "category": "contractors",
+    "category_label": "Contractors",
+    "count": 20,
+    "confidence": 0.806,
+    "transcripts": [
+      "Cia Chief Im A Time Traveler",
+      "Cia Historian Aliens Are Controlling Hum",
+      "Exposing The Cias Darkest Mind Control",
+      "I Found Hitlers Secret Ufo Program Jaso",
+      "Jeffrey Epstein Aliens The Global Sata",
+      "Nasa Chief We Just Built Antigravity Pro",
+      "The Defense Secretary Killed Over Ufos F",
+      "The Lone Hacker That Found Nasas Secret",
+      "Why Nasa Studies This Man He Attracts Uf",
+      "Why The Pentagon Tried To Censor This Uf"
+    ],
+    "significance": "Lockheed Skunkworks appears as contractors with 20 mention(s) across 10 transcripts; detected by gazetteer, heuristic:person_name.",
+    "detectors": [
+      "gazetteer",
+      "heuristic:person_name"
+    ],
+    "evidence_ids": [
+      "m-0002129",
+      "m-0002612",
+      "m-0002666",
+      "m-0005235",
+      "m-0005237",
+      "m-0006961",
+      "m-0008346",
+      "m-0009874"
+    ]
+  },
+  {
     "id": "star_systems:orion",
     "name": "Orion",
     "canonical_name": "Orion",
@@ -3325,6 +3392,32 @@
       "m-0005250",
       "m-0005251",
       "m-0008786"
+    ]
+  },
+  {
+    "id": "politicians:john-harrington",
+    "name": "John Harrington",
+    "canonical_name": "John Harrington",
+    "category": "politicians",
+    "category_label": "Politicians",
+    "count": 19,
+    "confidence": 0.547,
+    "transcripts": [
+      "Hollywood The Cia And Ufos The History Bey"
+    ],
+    "significance": "John Harrington appears as politicians with 19 mention(s) across 1 transcript; detected by heuristic:person_name.",
+    "detectors": [
+      "heuristic:person_name"
+    ],
+    "evidence_ids": [
+      "m-0004796",
+      "m-0004722",
+      "m-0004761",
+      "m-0004769",
+      "m-0004792",
+      "m-0004793",
+      "m-0004805",
+      "m-0004806"
     ]
   },
   {
@@ -3491,32 +3584,6 @@
       "m-0003773",
       "m-0003774",
       "m-0003948"
-    ]
-  },
-  {
-    "id": "people:john-harrington",
-    "name": "John Harrington",
-    "canonical_name": "John Harrington",
-    "category": "people",
-    "category_label": "People",
-    "count": 18,
-    "confidence": 0.54,
-    "transcripts": [
-      "Hollywood The Cia And Ufos The History Bey"
-    ],
-    "significance": "John Harrington appears as people with 18 mention(s) across 1 transcript; detected by heuristic:person_name.",
-    "detectors": [
-      "heuristic:person_name"
-    ],
-    "evidence_ids": [
-      "m-0004722",
-      "m-0004761",
-      "m-0004769",
-      "m-0004792",
-      "m-0004793",
-      "m-0004805",
-      "m-0004806",
-      "m-0004807"
     ]
   },
   {
@@ -4320,40 +4387,6 @@
       "m-0006607",
       "m-0006610",
       "m-0006616"
-    ]
-  },
-  {
-    "id": "contractors:skunk-works",
-    "name": "Skunk Works",
-    "canonical_name": "Skunk Works",
-    "category": "contractors",
-    "category_label": "Contractors",
-    "count": 14,
-    "confidence": 0.92,
-    "transcripts": [
-      "Cia Chief Im A Time Traveler",
-      "Cia Historian Aliens Are Controlling Hum",
-      "I Found Hitlers Secret Ufo Program Jaso",
-      "Jeffrey Epstein Aliens The Global Sata",
-      "Nasa Chief We Just Built Antigravity Pro",
-      "The Defense Secretary Killed Over Ufos F",
-      "The Lone Hacker That Found Nasas Secret",
-      "Why Nasa Studies This Man He Attracts Uf",
-      "Why The Pentagon Tried To Censor This Uf"
-    ],
-    "significance": "Skunk Works appears as contractors with 14 mention(s) across 9 transcripts; detected by gazetteer.",
-    "detectors": [
-      "gazetteer"
-    ],
-    "evidence_ids": [
-      "m-0002129",
-      "m-0002612",
-      "m-0002666",
-      "m-0005235",
-      "m-0005237",
-      "m-0006961",
-      "m-0008346",
-      "m-0009874"
     ]
   },
   {
@@ -6032,6 +6065,34 @@
     ]
   },
   {
+    "id": "experiencers:bud-hopkins",
+    "name": "Bud Hopkins",
+    "canonical_name": "Bud Hopkins",
+    "category": "experiencers",
+    "category_label": "Experiencers",
+    "count": 10,
+    "confidence": 0.596,
+    "transcripts": [
+      "Dmt Opens The Alien Realm Neuroscientist",
+      "We Captured A 12 Foot Giant In Afghanist",
+      "Why Nasa Studies This Man He Attracts Uf"
+    ],
+    "significance": "Bud Hopkins appears as experiencers with 10 mention(s) across 3 transcripts; detected by heuristic:person_name.",
+    "detectors": [
+      "heuristic:person_name"
+    ],
+    "evidence_ids": [
+      "m-0003165",
+      "m-0011699",
+      "m-0011702",
+      "m-0012493",
+      "m-0011700",
+      "m-0011704",
+      "m-0011705",
+      "m-0011707"
+    ]
+  },
+  {
     "id": "friendly_people:howard-hughes",
     "name": "Howard Hughes",
     "canonical_name": "Howard Hughes",
@@ -6708,6 +6769,38 @@
     ]
   },
   {
+    "id": "locations:los-angeles",
+    "name": "Los Angeles",
+    "canonical_name": "Los Angeles",
+    "category": "locations",
+    "category_label": "Locations",
+    "count": 9,
+    "confidence": 0.587,
+    "transcripts": [
+      "Aliens Invented Religion To Control Huma",
+      "Exposing The Cias Darkest Mind Control",
+      "Hollywood The Cia And Ufos The History Bey",
+      "Meet The Nuclear Missile Guard Abducted",
+      "Nasa Chief We Just Built Antigravity Pro",
+      "The Defense Secretary Killed Over Ufos F",
+      "Why Americas Top Scientists Are Going M"
+    ],
+    "significance": "Los Angeles appears as locations with 9 mention(s) across 7 transcripts; detected by heuristic:person_name.",
+    "detectors": [
+      "heuristic:person_name"
+    ],
+    "evidence_ids": [
+      "m-0004789",
+      "m-0008246",
+      "m-0009556",
+      "m-0001140",
+      "m-0004278",
+      "m-0007433",
+      "m-0012022",
+      "m-0012086"
+    ]
+  },
+  {
     "id": "locations:new-york-city",
     "name": "New York City",
     "canonical_name": "New York City",
@@ -7309,6 +7402,33 @@
     ]
   },
   {
+    "id": "politicians:robert-f-kennedy",
+    "name": "Robert F. Kennedy",
+    "canonical_name": "Robert F. Kennedy",
+    "category": "politicians",
+    "category_label": "Politicians",
+    "count": 9,
+    "confidence": 0.556,
+    "transcripts": [
+      "Cia Historian Aliens Are Controlling Hum",
+      "Exposing The Cias Darkest Mind Control"
+    ],
+    "significance": "Robert F. Kennedy appears as politicians with 9 mention(s) across 2 transcripts; detected by heuristic:person_name.",
+    "detectors": [
+      "heuristic:person_name"
+    ],
+    "evidence_ids": [
+      "m-0004282",
+      "m-0002549",
+      "m-0002550",
+      "m-0002551",
+      "m-0002554",
+      "m-0002561",
+      "m-0004277",
+      "m-0004279"
+    ]
+  },
+  {
     "id": "radio_frequencies:radio-frequency",
     "name": "radio frequency",
     "canonical_name": "radio frequency",
@@ -7632,37 +7752,6 @@
       "m-0006971",
       "m-0011794",
       "m-0011956"
-    ]
-  },
-  {
-    "id": "locations:los-angeles",
-    "name": "Los Angeles",
-    "canonical_name": "Los Angeles",
-    "category": "locations",
-    "category_label": "Locations",
-    "count": 8,
-    "confidence": 0.593,
-    "transcripts": [
-      "Aliens Invented Religion To Control Huma",
-      "Hollywood The Cia And Ufos The History Bey",
-      "Meet The Nuclear Missile Guard Abducted",
-      "Nasa Chief We Just Built Antigravity Pro",
-      "The Defense Secretary Killed Over Ufos F",
-      "Why Americas Top Scientists Are Going M"
-    ],
-    "significance": "Los Angeles appears as locations with 8 mention(s) across 6 transcripts; detected by heuristic:person_name.",
-    "detectors": [
-      "heuristic:person_name"
-    ],
-    "evidence_ids": [
-      "m-0004789",
-      "m-0008246",
-      "m-0009556",
-      "m-0001140",
-      "m-0007433",
-      "m-0012022",
-      "m-0012086",
-      "m-0012096"
     ]
   },
   {
@@ -8139,6 +8228,32 @@
       "m-0004646",
       "m-0004648",
       "m-0004713"
+    ]
+  },
+  {
+    "id": "companies:russian-orthodox-church",
+    "name": "Russian Orthodox Church",
+    "canonical_name": "Russian Orthodox Church",
+    "category": "companies",
+    "category_label": "Companies",
+    "count": 7,
+    "confidence": 0.56,
+    "transcripts": [
+      "Cia Chief Im A Time Traveler",
+      "Cia Historian Aliens Are Controlling Hum"
+    ],
+    "significance": "Russian Orthodox Church appears as companies with 7 mention(s) across 2 transcripts; detected by heuristic:person_name.",
+    "detectors": [
+      "heuristic:person_name"
+    ],
+    "evidence_ids": [
+      "m-0002557",
+      "m-0002044",
+      "m-0002548",
+      "m-0002577",
+      "m-0002580",
+      "m-0002582",
+      "m-0002938"
     ]
   },
   {
@@ -10428,30 +10543,6 @@
     ]
   },
   {
-    "id": "companies:russian-orthodox",
-    "name": "Russian Orthodox",
-    "canonical_name": "Russian Orthodox",
-    "category": "companies",
-    "category_label": "Companies",
-    "count": 5,
-    "confidence": 0.568,
-    "transcripts": [
-      "Cia Chief Im A Time Traveler",
-      "Cia Historian Aliens Are Controlling Hum"
-    ],
-    "significance": "Russian Orthodox appears as companies with 5 mention(s) across 2 transcripts; detected by heuristic:person_name.",
-    "detectors": [
-      "heuristic:person_name"
-    ],
-    "evidence_ids": [
-      "m-0002557",
-      "m-0002044",
-      "m-0002548",
-      "m-0002582",
-      "m-0002938"
-    ]
-  },
-  {
     "id": "dangerous_people:charles-manson",
     "name": "Charles Manson",
     "canonical_name": "Charles Manson",
@@ -11091,52 +11182,6 @@
       "m-0010916",
       "m-0010917",
       "m-0010919"
-    ]
-  },
-  {
-    "id": "people:bobby-kennedy",
-    "name": "Bobby Kennedy",
-    "canonical_name": "Bobby Kennedy",
-    "category": "people",
-    "category_label": "People",
-    "count": 5,
-    "confidence": 0.54,
-    "transcripts": [
-      "Cia Historian Aliens Are Controlling Hum"
-    ],
-    "significance": "Bobby Kennedy appears as people with 5 mention(s) across 1 transcript; detected by heuristic:person_name.",
-    "detectors": [
-      "heuristic:person_name"
-    ],
-    "evidence_ids": [
-      "m-0002549",
-      "m-0002550",
-      "m-0002551",
-      "m-0002554",
-      "m-0002561"
-    ]
-  },
-  {
-    "id": "people:bud-hopkins",
-    "name": "Bud Hopkins",
-    "canonical_name": "Bud Hopkins",
-    "category": "people",
-    "category_label": "People",
-    "count": 5,
-    "confidence": 0.54,
-    "transcripts": [
-      "We Captured A 12 Foot Giant In Afghanist"
-    ],
-    "significance": "Bud Hopkins appears as people with 5 mention(s) across 1 transcript; detected by heuristic:person_name.",
-    "detectors": [
-      "heuristic:person_name"
-    ],
-    "evidence_ids": [
-      "m-0011700",
-      "m-0011705",
-      "m-0011707",
-      "m-0011726",
-      "m-0011727"
     ]
   },
   {
@@ -12748,6 +12793,28 @@
     ]
   },
   {
+    "id": "people:carla-turner",
+    "name": "Carla Turner",
+    "canonical_name": "Carla Turner",
+    "category": "people",
+    "category_label": "People",
+    "count": 4,
+    "confidence": 0.54,
+    "transcripts": [
+      "We Captured A 12 Foot Giant In Afghanist"
+    ],
+    "significance": "Carla Turner appears as people with 4 mention(s) across 1 transcript; detected by heuristic:person_name.",
+    "detectors": [
+      "heuristic:person_name"
+    ],
+    "evidence_ids": [
+      "m-0011697",
+      "m-0011706",
+      "m-0011709",
+      "m-0011717"
+    ]
+  },
+  {
     "id": "people:catherine-austin-fitz",
     "name": "Catherine Austin Fitz",
     "canonical_name": "Catherine Austin Fitz",
@@ -13544,29 +13611,6 @@
       "m-0004301",
       "m-0004302",
       "m-0007115"
-    ]
-  },
-  {
-    "id": "people:lockheed-skunk-works",
-    "name": "Lockheed Skunk Works",
-    "canonical_name": "Lockheed Skunk Works",
-    "category": "people",
-    "category_label": "People",
-    "count": 4,
-    "confidence": 0.54,
-    "transcripts": [
-      "The Lone Hacker That Found Nasas Secret",
-      "Why The Pentagon Tried To Censor This Uf"
-    ],
-    "significance": "Lockheed Skunk Works appears as people with 4 mention(s) across 2 transcripts; detected by heuristic:person_name.",
-    "detectors": [
-      "heuristic:person_name"
-    ],
-    "evidence_ids": [
-      "m-0010025",
-      "m-0012907",
-      "m-0012944",
-      "m-0012948"
     ]
   },
   {
@@ -14947,28 +14991,6 @@
     ]
   },
   {
-    "id": "friendly_people:bud-hopkins",
-    "name": "Bud Hopkins",
-    "canonical_name": "Bud Hopkins",
-    "category": "friendly_people",
-    "category_label": "Friendly people",
-    "count": 3,
-    "confidence": 0.68,
-    "transcripts": [
-      "We Captured A 12 Foot Giant In Afghanist",
-      "Why Nasa Studies This Man He Attracts Uf"
-    ],
-    "significance": "Bud Hopkins appears as friendly people with 3 mention(s) across 2 transcripts; detected by heuristic:person_name.",
-    "detectors": [
-      "heuristic:person_name"
-    ],
-    "evidence_ids": [
-      "m-0011699",
-      "m-0011702",
-      "m-0012493"
-    ]
-  },
-  {
     "id": "friendly_people:glenn-maxwell",
     "name": "Glenn Maxwell",
     "canonical_name": "Glenn Maxwell",
@@ -15913,27 +15935,6 @@
     ]
   },
   {
-    "id": "people:carla-turner",
-    "name": "Carla Turner",
-    "canonical_name": "Carla Turner",
-    "category": "people",
-    "category_label": "People",
-    "count": 3,
-    "confidence": 0.54,
-    "transcripts": [
-      "We Captured A 12 Foot Giant In Afghanist"
-    ],
-    "significance": "Carla Turner appears as people with 3 mention(s) across 1 transcript; detected by heuristic:person_name.",
-    "detectors": [
-      "heuristic:person_name"
-    ],
-    "evidence_ids": [
-      "m-0011697",
-      "m-0011706",
-      "m-0011709"
-    ]
-  },
-  {
     "id": "people:carol-quigley",
     "name": "Carol Quigley",
     "canonical_name": "Carol Quigley",
@@ -16404,6 +16405,28 @@
       "m-0004093",
       "m-0004095",
       "m-0004173"
+    ]
+  },
+  {
+    "id": "people:eugene-thane-caesar",
+    "name": "Eugene Thane Caesar",
+    "canonical_name": "Eugene Thane Caesar",
+    "category": "people",
+    "category_label": "People",
+    "count": 3,
+    "confidence": 0.587,
+    "transcripts": [
+      "Aliens Invented Religion To Control Huma",
+      "Exposing The Cias Darkest Mind Control"
+    ],
+    "significance": "Eugene Thane Caesar appears as people with 3 mention(s) across 2 transcripts; detected by heuristic:person_name.",
+    "detectors": [
+      "heuristic:person_name"
+    ],
+    "evidence_ids": [
+      "m-0004284",
+      "m-0001083",
+      "m-0004281"
     ]
   },
   {
@@ -18014,27 +18037,6 @@
     ]
   },
   {
-    "id": "people:robert-f-kennedy",
-    "name": "Robert F. Kennedy",
-    "canonical_name": "Robert F. Kennedy",
-    "category": "people",
-    "category_label": "People",
-    "count": 3,
-    "confidence": 0.54,
-    "transcripts": [
-      "Exposing The Cias Darkest Mind Control"
-    ],
-    "significance": "Robert F. Kennedy appears as people with 3 mention(s) across 1 transcript; detected by heuristic:person_name.",
-    "detectors": [
-      "heuristic:person_name"
-    ],
-    "evidence_ids": [
-      "m-0004277",
-      "m-0004279",
-      "m-0004299"
-    ]
-  },
-  {
     "id": "people:roger-penrose",
     "name": "Roger Penrose",
     "canonical_name": "Roger Penrose",
@@ -19218,6 +19220,27 @@
     "evidence_ids": [
       "m-0009389",
       "m-0012263"
+    ]
+  },
+  {
+    "id": "books:structure-of-scientific-revolutions",
+    "name": "Structure of Scientific Revolutions",
+    "canonical_name": "Structure of Scientific Revolutions",
+    "category": "books",
+    "category_label": "Books",
+    "count": 2,
+    "confidence": 0.61,
+    "transcripts": [
+      "100 000 Ufos Are Surrounding Earth Ft To",
+      "Dmt Opens The Alien Realm Neuroscientist"
+    ],
+    "significance": "Structure of Scientific Revolutions appears as books with 2 mention(s) across 2 transcripts; detected by heuristic:person_name.",
+    "detectors": [
+      "heuristic:person_name"
+    ],
+    "evidence_ids": [
+      "m-0003167",
+      "m-0000122"
     ]
   },
   {
@@ -23211,27 +23234,6 @@
     ]
   },
   {
-    "id": "people:eugene-thane-caesar",
-    "name": "Eugene Thane Caesar",
-    "canonical_name": "Eugene Thane Caesar",
-    "category": "people",
-    "category_label": "People",
-    "count": 2,
-    "confidence": 0.54,
-    "transcripts": [
-      "Aliens Invented Religion To Control Huma",
-      "Exposing The Cias Darkest Mind Control"
-    ],
-    "significance": "Eugene Thane Caesar appears as people with 2 mention(s) across 2 transcripts; detected by heuristic:person_name.",
-    "detectors": [
-      "heuristic:person_name"
-    ],
-    "evidence_ids": [
-      "m-0001083",
-      "m-0004281"
-    ]
-  },
-  {
     "id": "people:fidel-castro",
     "name": "Fidel Castro",
     "canonical_name": "Fidel Castro",
@@ -26569,26 +26571,6 @@
     ]
   },
   {
-    "id": "people:russian-orthodox-church",
-    "name": "Russian Orthodox Church",
-    "canonical_name": "Russian Orthodox Church",
-    "category": "people",
-    "category_label": "People",
-    "count": 2,
-    "confidence": 0.54,
-    "transcripts": [
-      "Cia Historian Aliens Are Controlling Hum"
-    ],
-    "significance": "Russian Orthodox Church appears as people with 2 mention(s) across 1 transcript; detected by heuristic:person_name.",
-    "detectors": [
-      "heuristic:person_name"
-    ],
-    "evidence_ids": [
-      "m-0002577",
-      "m-0002580"
-    ]
-  },
-  {
     "id": "people:russian-revolution",
     "name": "Russian Revolution",
     "canonical_name": "Russian Revolution",
@@ -26949,26 +26931,6 @@
     "evidence_ids": [
       "m-0011744",
       "m-0011745"
-    ]
-  },
-  {
-    "id": "people:so-john",
-    "name": "So John",
-    "canonical_name": "So John",
-    "category": "people",
-    "category_label": "People",
-    "count": 2,
-    "confidence": 0.54,
-    "transcripts": [
-      "If You Knew What I Knew Jeremy Corbell U"
-    ],
-    "significance": "So John appears as people with 2 mention(s) across 1 transcript; detected by heuristic:person_name.",
-    "detectors": [
-      "heuristic:person_name"
-    ],
-    "evidence_ids": [
-      "m-0006417",
-      "m-0006427"
     ]
   },
   {
@@ -30358,25 +30320,6 @@
     ]
   },
   {
-    "id": "dangerous_people:eugene-thane-caesar",
-    "name": "Eugene Thane Caesar",
-    "canonical_name": "Eugene Thane Caesar",
-    "category": "dangerous_people",
-    "category_label": "Dangerous people",
-    "count": 1,
-    "confidence": 0.68,
-    "transcripts": [
-      "Exposing The Cias Darkest Mind Control"
-    ],
-    "significance": "Eugene Thane Caesar appears as dangerous people with 1 mention(s) across 1 transcript; detected by heuristic:person_name.",
-    "detectors": [
-      "heuristic:person_name"
-    ],
-    "evidence_ids": [
-      "m-0004284"
-    ]
-  },
-  {
     "id": "dangerous_people:george-white",
     "name": "George White",
     "canonical_name": "George White",
@@ -30488,25 +30431,6 @@
     ],
     "evidence_ids": [
       "m-0009722"
-    ]
-  },
-  {
-    "id": "dangerous_people:robert-f-kennedy",
-    "name": "Robert F. Kennedy",
-    "canonical_name": "Robert F. Kennedy",
-    "category": "dangerous_people",
-    "category_label": "Dangerous people",
-    "count": 1,
-    "confidence": 0.68,
-    "transcripts": [
-      "Exposing The Cias Darkest Mind Control"
-    ],
-    "significance": "Robert F. Kennedy appears as dangerous people with 1 mention(s) across 1 transcript; detected by heuristic:person_name.",
-    "detectors": [
-      "heuristic:person_name"
-    ],
-    "evidence_ids": [
-      "m-0004282"
     ]
   },
   {
@@ -31191,25 +31115,6 @@
     ],
     "evidence_ids": [
       "m-0000818"
-    ]
-  },
-  {
-    "id": "experiencers:bud-hopkins",
-    "name": "Bud Hopkins",
-    "canonical_name": "Bud Hopkins",
-    "category": "experiencers",
-    "category_label": "Experiencers",
-    "count": 1,
-    "confidence": 0.68,
-    "transcripts": [
-      "Dmt Opens The Alien Realm Neuroscientist"
-    ],
-    "significance": "Bud Hopkins appears as experiencers with 1 mention(s) across 1 transcript; detected by heuristic:person_name.",
-    "detectors": [
-      "heuristic:person_name"
-    ],
-    "evidence_ids": [
-      "m-0003165"
     ]
   },
   {
@@ -34231,25 +34136,6 @@
     ],
     "evidence_ids": [
       "m-0004251"
-    ]
-  },
-  {
-    "id": "friendly_people:scientific-revolutions",
-    "name": "Scientific Revolutions",
-    "canonical_name": "Scientific Revolutions",
-    "category": "friendly_people",
-    "category_label": "Friendly people",
-    "count": 1,
-    "confidence": 0.68,
-    "transcripts": [
-      "Dmt Opens The Alien Realm Neuroscientist"
-    ],
-    "significance": "Scientific Revolutions appears as friendly people with 1 mention(s) across 1 transcript; detected by heuristic:person_name.",
-    "detectors": [
-      "heuristic:person_name"
-    ],
-    "evidence_ids": [
-      "m-0003167"
     ]
   },
   {
@@ -37977,6 +37863,25 @@
     ]
   },
   {
+    "id": "locations:statler-hotel",
+    "name": "Statler Hotel",
+    "canonical_name": "Statler Hotel",
+    "category": "locations",
+    "category_label": "Locations",
+    "count": 1,
+    "confidence": 0.54,
+    "transcripts": [
+      "Exposing The Cias Darkest Mind Control"
+    ],
+    "significance": "Statler Hotel appears as locations with 1 mention(s) across 1 transcript; detected by heuristic:person_name.",
+    "detectors": [
+      "heuristic:person_name"
+    ],
+    "evidence_ids": [
+      "m-0004108"
+    ]
+  },
+  {
     "id": "locations:switzerland",
     "name": "Switzerland",
     "canonical_name": "Switzerland",
@@ -38297,6 +38202,25 @@
     ],
     "evidence_ids": [
       "m-0004187"
+    ]
+  },
+  {
+    "id": "newsrooms:der-spiegel",
+    "name": "Der Spiegel",
+    "canonical_name": "Der Spiegel",
+    "category": "newsrooms",
+    "category_label": "Newsrooms",
+    "count": 1,
+    "confidence": 0.54,
+    "transcripts": [
+      "Former Nsa Director Breaks Silence On Uf"
+    ],
+    "significance": "Der Spiegel appears as newsrooms with 1 mention(s) across 1 transcript; detected by heuristic:person_name.",
+    "detectors": [
+      "heuristic:person_name"
+    ],
+    "evidence_ids": [
+      "m-0004540"
     ]
   },
   {
@@ -45102,25 +45026,6 @@
     ]
   },
   {
-    "id": "people:der-spiegel",
-    "name": "Der Spiegel",
-    "canonical_name": "Der Spiegel",
-    "category": "people",
-    "category_label": "People",
-    "count": 1,
-    "confidence": 0.54,
-    "transcripts": [
-      "Former Nsa Director Breaks Silence On Uf"
-    ],
-    "significance": "Der Spiegel appears as people with 1 mention(s) across 1 transcript; detected by heuristic:person_name.",
-    "detectors": [
-      "heuristic:person_name"
-    ],
-    "evidence_ids": [
-      "m-0004540"
-    ]
-  },
-  {
     "id": "people:desert-storm",
     "name": "Desert Storm",
     "canonical_name": "Desert Storm",
@@ -45232,25 +45137,6 @@
     ],
     "evidence_ids": [
       "m-0007728"
-    ]
-  },
-  {
-    "id": "people:did-tim",
-    "name": "Did Tim",
-    "canonical_name": "Did Tim",
-    "category": "people",
-    "category_label": "People",
-    "count": 1,
-    "confidence": 0.54,
-    "transcripts": [
-      "Why Nasa Studies This Man He Attracts Uf"
-    ],
-    "significance": "Did Tim appears as people with 1 mention(s) across 1 transcript; detected by heuristic:person_name.",
-    "detectors": [
-      "heuristic:person_name"
-    ],
-    "evidence_ids": [
-      "m-0012546"
     ]
   },
   {
@@ -54203,25 +54089,6 @@
     ]
   },
   {
-    "id": "people:lockheed-skunkworks",
-    "name": "Lockheed Skunkworks",
-    "canonical_name": "Lockheed Skunkworks",
-    "category": "people",
-    "category_label": "People",
-    "count": 1,
-    "confidence": 0.54,
-    "transcripts": [
-      "Exposing The Cias Darkest Mind Control"
-    ],
-    "significance": "Lockheed Skunkworks appears as people with 1 mention(s) across 1 transcript; detected by heuristic:person_name.",
-    "detectors": [
-      "heuristic:person_name"
-    ],
-    "evidence_ids": [
-      "m-0004280"
-    ]
-  },
-  {
     "id": "people:logan-paul",
     "name": "Logan Paul",
     "canonical_name": "Logan Paul",
@@ -54276,25 +54143,6 @@
     ],
     "evidence_ids": [
       "m-0006816"
-    ]
-  },
-  {
-    "id": "people:los-angeles-county",
-    "name": "Los Angeles County",
-    "canonical_name": "Los Angeles County",
-    "category": "people",
-    "category_label": "People",
-    "count": 1,
-    "confidence": 0.54,
-    "transcripts": [
-      "Exposing The Cias Darkest Mind Control"
-    ],
-    "significance": "Los Angeles County appears as people with 1 mention(s) across 1 transcript; detected by heuristic:person_name.",
-    "detectors": [
-      "heuristic:person_name"
-    ],
-    "evidence_ids": [
-      "m-0004278"
     ]
   },
   {
@@ -62164,25 +62012,6 @@
     ]
   },
   {
-    "id": "people:scientific-revolutions",
-    "name": "Scientific Revolutions",
-    "canonical_name": "Scientific Revolutions",
-    "category": "people",
-    "category_label": "People",
-    "count": 1,
-    "confidence": 0.54,
-    "transcripts": [
-      "100 000 Ufos Are Surrounding Earth Ft To"
-    ],
-    "significance": "Scientific Revolutions appears as people with 1 mention(s) across 1 transcript; detected by heuristic:person_name.",
-    "detectors": [
-      "heuristic:person_name"
-    ],
-    "evidence_ids": [
-      "m-0000122"
-    ]
-  },
-  {
     "id": "people:sean-carroll",
     "name": "Sean Carroll",
     "canonical_name": "Sean Carroll",
@@ -62848,25 +62677,6 @@
     ]
   },
   {
-    "id": "people:skunk-works-lockheed",
-    "name": "Skunk Works Lockheed",
-    "canonical_name": "Skunk Works Lockheed",
-    "category": "people",
-    "category_label": "People",
-    "count": 1,
-    "confidence": 0.54,
-    "transcripts": [
-      "Cia Historian Aliens Are Controlling Hum"
-    ],
-    "significance": "Skunk Works Lockheed appears as people with 1 mention(s) across 1 transcript; detected by heuristic:person_name.",
-    "detectors": [
-      "heuristic:person_name"
-    ],
-    "evidence_ids": [
-      "m-0002613"
-    ]
-  },
-  {
     "id": "people:sky-watcher",
     "name": "Sky Watcher",
     "canonical_name": "Sky Watcher",
@@ -63016,25 +62826,6 @@
     ],
     "evidence_ids": [
       "m-0004904"
-    ]
-  },
-  {
-    "id": "people:so-bud",
-    "name": "So Bud",
-    "canonical_name": "So Bud",
-    "category": "people",
-    "category_label": "People",
-    "count": 1,
-    "confidence": 0.54,
-    "transcripts": [
-      "We Captured A 12 Foot Giant In Afghanist"
-    ],
-    "significance": "So Bud appears as people with 1 mention(s) across 1 transcript; detected by heuristic:person_name.",
-    "detectors": [
-      "heuristic:person_name"
-    ],
-    "evidence_ids": [
-      "m-0011704"
     ]
   },
   {
@@ -63741,25 +63532,6 @@
     ]
   },
   {
-    "id": "people:so-turner",
-    "name": "So Turner",
-    "canonical_name": "So Turner",
-    "category": "people",
-    "category_label": "People",
-    "count": 1,
-    "confidence": 0.54,
-    "transcripts": [
-      "We Captured A 12 Foot Giant In Afghanist"
-    ],
-    "significance": "So Turner appears as people with 1 mention(s) across 1 transcript; detected by heuristic:person_name.",
-    "detectors": [
-      "heuristic:person_name"
-    ],
-    "evidence_ids": [
-      "m-0011717"
-    ]
-  },
-  {
     "id": "people:so-vandenberg",
     "name": "So Vandenberg",
     "canonical_name": "So Vandenberg",
@@ -64346,25 +64118,6 @@
     ],
     "evidence_ids": [
       "m-0012081"
-    ]
-  },
-  {
-    "id": "people:statler-hotel",
-    "name": "Statler Hotel",
-    "canonical_name": "Statler Hotel",
-    "category": "people",
-    "category_label": "People",
-    "count": 1,
-    "confidence": 0.54,
-    "transcripts": [
-      "Exposing The Cias Darkest Mind Control"
-    ],
-    "significance": "Statler Hotel appears as people with 1 mention(s) across 1 transcript; detected by heuristic:person_name.",
-    "detectors": [
-      "heuristic:person_name"
-    ],
-    "evidence_ids": [
-      "m-0004108"
     ]
   },
   {
@@ -68355,25 +68108,6 @@
     ],
     "evidence_ids": [
       "m-0003493"
-    ]
-  },
-  {
-    "id": "politicians:john-harrington",
-    "name": "John Harrington",
-    "canonical_name": "John Harrington",
-    "category": "politicians",
-    "category_label": "Politicians",
-    "count": 1,
-    "confidence": 0.68,
-    "transcripts": [
-      "Hollywood The Cia And Ufos The History Bey"
-    ],
-    "significance": "John Harrington appears as politicians with 1 mention(s) across 1 transcript; detected by heuristic:person_name.",
-    "detectors": [
-      "heuristic:person_name"
-    ],
-    "evidence_ids": [
-      "m-0004796"
     ]
   },
   {
