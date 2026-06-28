@@ -3108,6 +3108,10 @@ def render_html(app_data_version: str = "") -> str:
     const MAX_ZOOM_HEIGHT = 10800;
     const NEIGHBORHOOD_RELATIONSHIP_LIMIT = 48;
     const CARD_RELATIONSHIP_LIMIT = 28;
+    const SECOND_DEGREE_CONTEXT_LIMIT = 30;
+    const SECOND_DEGREE_PER_NEIGHBOR_LIMIT = 4;
+    const SECOND_DEGREE_EDGE_LIMIT = 72;
+    const SECOND_DEGREE_LABEL_LIMIT = 14;
 
     initializeReviewStorage();
     const DATA = applyReviewDecisions(normalizeData(RAW));
@@ -3834,6 +3838,57 @@ def render_html(app_data_version: str = "") -> str:
             .sort((a, b) => pairScore(previous, b) - pairScore(previous, a) || directScore(b) - directScore(a))[0];
         }
       }
+      const allDirectNeighborIds = new Set();
+      for (const relationship of relationshipsByEntity.get(entity.id) || []) {
+        const otherId = relationship.source === entity.id ? relationship.target : relationship.source;
+        allDirectNeighborIds.add(otherId);
+      }
+      const secondDegreeById = new Map();
+      const secondDegreeEdgeByPair = new Map();
+      for (const neighborId of orderedIds) {
+        const candidates = (relationshipsByEntity.get(neighborId) || [])
+          .map((relationship) => {
+            const otherId = relationship.source === neighborId ? relationship.target : relationship.source;
+            return { relationship, otherId, score: relationshipGraphScore(relationship) };
+          })
+          .filter((item) => {
+            const other = entitiesById.get(item.otherId);
+            return other && item.otherId !== entity.id && !visibleNeighborIds.has(item.otherId) && !allDirectNeighborIds.has(item.otherId);
+          })
+          .sort((a, b) => b.score - a.score || entityGraphScore(entitiesById.get(b.otherId)) - entityGraphScore(entitiesById.get(a.otherId)))
+          .slice(0, SECOND_DEGREE_PER_NEIGHBOR_LIMIT);
+        for (const item of candidates) {
+          const other = entitiesById.get(item.otherId);
+          if (!secondDegreeById.has(item.otherId)) {
+            secondDegreeById.set(item.otherId, { id: item.otherId, entity: other, sources: new Set(), weight: 0, score: 0 });
+          }
+          const context = secondDegreeById.get(item.otherId);
+          context.sources.add(neighborId);
+          context.weight += item.relationship.weight || 1;
+          context.score += item.score + Math.min(90, entityGraphScore(other) * .025);
+          const key = neighborId + "::" + item.otherId;
+          if (!secondDegreeEdgeByPair.has(key)) {
+            secondDegreeEdgeByPair.set(key, {
+              id: "context:" + key,
+              source: neighborId,
+              target: item.otherId,
+              type: item.relationship.type,
+              weight: item.relationship.weight || 1,
+              score: item.score,
+            });
+          } else {
+            const existing = secondDegreeEdgeByPair.get(key);
+            existing.weight += item.relationship.weight || 1;
+            existing.score += item.score;
+            if (existing.type !== item.relationship.type) existing.type = "related";
+          }
+        }
+      }
+      const secondDegree = Array.from(secondDegreeById.values())
+        .map((item) => ({ ...item, sourceCount: item.sources.size }))
+        .sort((a, b) => b.sourceCount - a.sourceCount || b.score - a.score || entityGraphScore(b.entity) - entityGraphScore(a.entity))
+        .slice(0, SECOND_DEGREE_CONTEXT_LIMIT);
+      const secondDegreeIds = new Set(secondDegree.map((item) => item.id));
       const nodes = orderedIds.map((id, index) => {
         const item = relatedById.get(id);
         const count = orderedIds.length;
@@ -3854,17 +3909,81 @@ def render_html(app_data_version: str = "") -> str:
       const nodeById = new Map(nodes.map((node) => [node.id, node]));
       const center = { id: entity.id, x: 1100, y: 750, r: 46, raw: entity };
       nodeById.set(entity.id, center);
+      const secondDegreeGroups = new Map();
+      for (const item of secondDegree) {
+        const anchorId = Array.from(item.sources)
+          .sort((a, b) => {
+            const bEdge = secondDegreeEdgeByPair.get(b + "::" + item.id);
+            const aEdge = secondDegreeEdgeByPair.get(a + "::" + item.id);
+            return (bEdge?.score || 0) - (aEdge?.score || 0) || directScore(b) - directScore(a);
+          })[0];
+        item.anchorId = anchorId;
+        if (!secondDegreeGroups.has(anchorId)) secondDegreeGroups.set(anchorId, []);
+        secondDegreeGroups.get(anchorId).push(item);
+      }
+      const maxSecondDegreeScore = Math.max(1, ...secondDegree.map((item) => item.score || item.weight || 1));
+      const secondDegreeNodes = secondDegree.map((item, index) => {
+        const anchorNode = nodeById.get(item.anchorId);
+        const sourceNodes = Array.from(item.sources).map((id) => nodeById.get(id)).filter(Boolean);
+        const group = secondDegreeGroups.get(item.anchorId) || [item];
+        const groupIndex = Math.max(0, group.findIndex((candidate) => candidate.id === item.id));
+        const fan = Math.min(.88, Math.max(.24, (group.length - 1) * .24));
+        const fanOffset = group.length <= 1 ? 0 : (groupIndex / (group.length - 1) - .5) * fan;
+        const avgX = sourceNodes.reduce((total, node) => total + node.x, 0) / Math.max(1, sourceNodes.length);
+        const avgY = sourceNodes.reduce((total, node) => total + node.y, 0) / Math.max(1, sourceNodes.length);
+        const baseAngle = anchorNode
+          ? Math.atan2(anchorNode.y - center.y, anchorNode.x - center.x)
+          : sourceNodes.length
+            ? Math.atan2(avgY - center.y, avgX - center.x)
+            : (Math.PI * 2 * index) / Math.max(1, secondDegree.length) - Math.PI / 2;
+        const angle = baseAngle + fanOffset;
+        const radius = 1110 + (groupIndex % 3) * 118 + Math.floor(groupIndex / 3) * 54 + Math.min(90, item.sourceCount * 16);
+        const scoreScale = Math.sqrt(Math.max(1, item.score || item.weight || 1) / maxSecondDegreeScore);
+        return {
+          id: item.id,
+          label: item.entity.name,
+          x: center.x + Math.cos(angle) * radius,
+          y: center.y + Math.sin(angle) * radius,
+          r: 5.5 + scoreScale * 9 + Math.min(4, item.sourceCount),
+          raw: item.entity,
+          anchorId: item.anchorId,
+          anchorName: anchorNode?.raw?.name || "",
+          sourceCount: item.sourceCount,
+          score: item.score,
+        };
+      });
+      for (const node of secondDegreeNodes) nodeById.set(node.id, node);
       const maxEdge = Math.max(1, ...rels.map((relationship) => relationship.weight));
       const maxNeighborEdge = Math.max(1, ...neighborRels.map((relationship) => relationship.weight || 1));
+      const secondDegreeEdges = Array.from(secondDegreeEdgeByPair.values())
+        .filter((relationship) => nodeById.has(relationship.source) && secondDegreeIds.has(relationship.target))
+        .sort((a, b) => b.score - a.score || b.weight - a.weight)
+        .slice(0, SECOND_DEGREE_EDGE_LIMIT);
+      const maxSecondDegreeEdge = Math.max(1, ...secondDegreeEdges.map((relationship) => relationship.weight || 1));
+      const secondDegreeEdgesSvg = secondDegreeEdges.map((relationship) => {
+        const source = nodeById.get(relationship.source);
+        const target = nodeById.get(relationship.target);
+        if (!source || !target) return "";
+        const width = (0.35 + ((relationship.weight || 1) / maxSecondDegreeEdge) * 1.75).toFixed(1);
+        return '<line class="graph-edge" data-edge="' + esc(relationship.id) + '" x1="' + source.x + '" y1="' + source.y + '" x2="' + target.x + '" y2="' + target.y + '" stroke="' + theme.context + '" stroke-width="' + width + '" opacity=".2"><title>' + esc(formatRelationshipType(relationship.type) + " · second-degree context · weight " + relationship.weight) + '</title></line>';
+      }).join("");
       const neighborEdgesSvg = neighborRels.map((relationship) => {
         const source = nodeById.get(relationship.source);
         const target = nodeById.get(relationship.target);
         if (!source || !target) return "";
         const width = (0.45 + ((relationship.weight || 1) / maxNeighborEdge) * 2.1).toFixed(1);
-        return '<line class="graph-edge" data-edge="' + esc(relationship.id) + '" x1="' + source.x + '" y1="' + source.y + '" x2="' + target.x + '" y2="' + target.y + '" stroke="' + theme.context + '" stroke-width="' + width + '" opacity=".26"><title>' + esc(relationship.type + " · related neighbor · weight " + relationship.weight) + '</title></line>';
+        return '<line class="graph-edge" data-edge="' + esc(relationship.id) + '" x1="' + source.x + '" y1="' + source.y + '" x2="' + target.x + '" y2="' + target.y + '" stroke="' + theme.context + '" stroke-width="' + width + '" opacity=".26"><title>' + esc(formatRelationshipType(relationship.type) + " · related neighbor · weight " + relationship.weight) + '</title></line>';
       }).join("");
-      svg.innerHTML = neighborEdgesSvg +
+      const secondDegreeNodesSvg = secondDegreeNodes.map((node) => {
+        return '<g class="graph-node context-node" data-entity="' + esc(node.raw.id) + '">' +
+          '<circle cx="' + node.x + '" cy="' + node.y + '" r="' + node.r + '" fill="' + theme.entityAlt + '" stroke="' + theme.context + '" stroke-width="1" opacity=".72"></circle>' +
+          '<title>' + esc(node.raw.name + " · connected through " + node.sourceCount + " direct " + pluralize("neighbor", node.sourceCount)) + '</title>' +
+        '</g>';
+      }).join("");
+      svg.innerHTML = secondDegreeEdgesSvg +
+        neighborEdgesSvg +
         drawRelationshipEdges(rels, nodeById, maxEdge, "drill") +
+        secondDegreeNodesSvg +
         '<g class="graph-node" data-entity="' + esc(entity.id) + '">' +
           '<circle cx="1100" cy="750" r="46" fill="' + theme.primary + '" stroke="' + theme.bgStroke + '" stroke-width="1"></circle>' +
         '</g>' +
@@ -3874,24 +3993,37 @@ def render_html(app_data_version: str = "") -> str:
             '<circle cx="' + node.x + '" cy="' + node.y + '" r="' + node.r + '" fill="' + theme.entityAlt + '" stroke="' + theme.primary + '" stroke-width="1"></circle>' +
           '</g>';
         }).join("");
+      const secondDegreeLabelNodes = secondDegreeNodes
+        .slice()
+        .sort((a, b) => b.sourceCount - a.sourceCount || b.score - a.score || entityGraphScore(b.raw) - entityGraphScore(a.raw))
+        .slice(0, SECOND_DEGREE_LABEL_LIMIT);
       setGraphLabels([nodeLabel(
         entity.id,
         "entity",
         center,
         truncate(entity.name, 34),
-        entity.categoryLabel + " · " + rels.length + " direct links"
+        rels.length + " direct connections"
       )].concat(nodes.map((node) => nodeLabel(
         node.raw.id,
         "entity",
         node,
         truncate(node.raw.name, 24),
-        truncate(node.raw.topCategoryLabel || node.raw.categoryLabel, 28)
+        truncate(formatRelationshipType(node.relationship.type) + " · weight " + (node.relationship.weight || 1).toLocaleString(), 30)
+      ))).concat(secondDegreeLabelNodes.map((node) => nodeLabel(
+        node.raw.id,
+        "entity",
+        node,
+        truncate(node.raw.name, 22),
+        node.sourceCount > 1
+          ? node.sourceCount + " real connections"
+          : "from " + truncate(node.anchorName || "direct node", 18),
+        node.r
       ))));
-      statusEl.textContent = entity.name + " · direct relationship graph";
+      statusEl.textContent = entity.name + " · direct relationship graph · " + rels.length + " direct links · " + secondDegreeNodes.length + " second-degree context nodes";
       setCornerLabel(null);
       renderCard(entity, rels);
       wireEntityNodes();
-      fitEgoGraph(nodes, center);
+      fitEgoGraph(nodes.concat(secondDegreeNodes), center);
     }
 
     function relationshipGraphScore(relationship) {
@@ -3900,6 +4032,14 @@ def render_html(app_data_version: str = "") -> str:
       const target = entitiesById.get(relationship.target);
       const crossCategoryBoost = source && target && source.topCategory !== target.topCategory ? 10 : 0;
       return (relationship.weight || 1) * 24 + typeBoost + crossCategoryBoost + Math.round((relationship.confidence || 0) * 10);
+    }
+
+    function pluralize(word, count) {
+      return count === 1 ? word : word + "s";
+    }
+
+    function formatRelationshipType(type) {
+      return String(type || "related").replaceAll("_", " ");
     }
 
     function radialNodes(items, cx, cy, innerRadius, outerRadius, sizeValue) {

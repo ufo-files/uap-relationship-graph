@@ -74,6 +74,24 @@ test("direct relationship graph renders one label per entity", async ({ page }) 
   expect(duplicates).toEqual([]);
 });
 
+test("direct relationship graph shows real outward connections", async ({ page }) => {
+  await page.goto("/");
+
+  const search = page.getByRole("searchbox", { name: "Search entity or category" });
+  await search.fill("Central Intelligence Agency");
+  await search.press("Enter");
+
+  await expect(page.locator("#status")).toContainText("second-degree context nodes");
+  const contextNodes = page.locator(".graph-node.context-node");
+  await expect(contextNodes.first()).toBeAttached();
+
+  const secondaryLabels = await page.locator(".html-graph-label[data-label-entity] .label-secondary").evaluateAll((labels) =>
+    labels.map((label) => label.textContent || "")
+  );
+  expect(secondaryLabels.some((label) => label.includes("weight"))).toBe(true);
+  expect(secondaryLabels.some((label) => label.includes("real connections") || label.startsWith("from "))).toBe(true);
+});
+
 test("category drill-in fits below the fixed header", async ({ page }) => {
   await page.goto("/");
 
