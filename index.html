@@ -173,9 +173,16 @@
       font-size: 12px;
     }
     .owner-label {
+      display: inline-block;
       color: var(--muted);
       font-size: 12px;
       text-transform: uppercase;
+      text-decoration: none;
+    }
+    .owner-label:hover,
+    .owner-label:focus-visible {
+      color: var(--muted);
+      text-decoration: underline;
     }
     .controls {
       display: flex;
@@ -558,7 +565,7 @@
   <div id="graph-labels" class="graph-label-layer" aria-label="Keyboard accessible graph labels"></div>
   <div class="topbar">
     <div class="brand">
-      <div class="owner-label">UFO Files</div>
+      <a class="owner-label" href="https://github.com/ufo-files">UFO Files</a>
       <h1 id="app-title">
         <span class="app-switcher">
           <span class="app-switcher-text">Relationship Graph</span>
