@@ -1124,7 +1124,21 @@
     "6.length": "key_terms",
     "4.flight": "key_terms",
     "presidents bill clinton": "politicians",
-    "john podesta": "people"
+    "john podesta": "people",
+    "december 20 2025": "dates_times",
+    "extraordinary true story": "books",
+    "jasons": "government_project_codenames",
+    "washington d": "locations",
+    "hynek": "people",
+    "brazil in": "locations",
+    "kybalion": "books",
+    "7 tail": "key_terms",
+    "3 color": "key_terms",
+    "2 angle": "key_terms",
+    "8 sound": "key_terms",
+    "6 length": "key_terms",
+    "4 flight": "key_terms",
+    "when bill clinton": "politicians"
   },
   "falsePositives": {
     "dates_times:maybe-10-15": {
@@ -15520,6 +15534,14 @@
       "targetId": "professors:in-california",
       "targetName": "In California"
     },
+    "experiencers:vatican-secret-archives--people:diana-pasulka": {
+      "sourceId": "experiencers:vatican-secret-archives",
+      "sourceName": "Vatican Secret Archives",
+      "sourceCategory": "experiencers",
+      "targetId": "people:diana-pasulka",
+      "targetName": "Diana Pasulka",
+      "targetCategory": "people"
+    },
     "friendly_people:annie-jacobsen--professors:annie-jacobsen": {
       "sourceCategory": "friendly_people",
       "sourceId": "friendly_people:annie-jacobsen",
@@ -15600,6 +15622,30 @@
       "targetId": "professors:in-germany",
       "targetName": "In Germany"
     },
+    "government_agencies:las-vegas-air-force--locations:las-vegas-strip": {
+      "sourceId": "government_agencies:las-vegas-air-force",
+      "sourceName": "Las Vegas Air Force",
+      "sourceCategory": "government_agencies",
+      "targetId": "locations:las-vegas-strip",
+      "targetName": "Las Vegas",
+      "targetCategory": "locations"
+    },
+    "government_agencies:las-vegas-police-department--locations:las-vegas-strip": {
+      "sourceId": "government_agencies:las-vegas-police-department",
+      "sourceName": "Las Vegas Police Department",
+      "sourceCategory": "government_agencies",
+      "targetId": "locations:las-vegas-strip",
+      "targetName": "Las Vegas",
+      "targetCategory": "locations"
+    },
+    "government_project_codenames:operation-paperclip--professors:annie-jacobsen": {
+      "sourceId": "government_project_codenames:operation-paperclip",
+      "sourceName": "Operation Paperclip",
+      "sourceCategory": "government_project_codenames",
+      "targetId": "professors:annie-jacobsen",
+      "targetName": "Annie Jacobsen",
+      "targetCategory": "professors"
+    },
     "institutes:california-institute--locations:california": {
       "sourceCategory": "institutes",
       "sourceId": "institutes:california-institute",
@@ -15672,6 +15718,14 @@
       "targetId": "people:northern-california",
       "targetName": "Northern California"
     },
+    "locations:china--people:ho-chi-minh-trail": {
+      "sourceId": "locations:china",
+      "sourceName": "China",
+      "sourceCategory": "locations",
+      "targetId": "people:ho-chi-minh-trail",
+      "targetName": "Ho Chi Minh Trail",
+      "targetCategory": "locations"
+    },
     "locations:federal-republic-of-germany--people:in-germany": {
       "sourceCategory": "locations",
       "sourceId": "locations:federal-republic-of-germany",
@@ -15687,6 +15741,22 @@
       "targetCategory": "locations",
       "targetId": "people:in-germany",
       "targetName": "Germany"
+    },
+    "locations:las-vegas-strip--locations:north-las-vegas": {
+      "sourceId": "locations:las-vegas-strip",
+      "sourceName": "Las Vegas",
+      "sourceCategory": "locations",
+      "targetId": "locations:north-las-vegas",
+      "targetName": "North Las Vegas",
+      "targetCategory": "locations"
+    },
+    "locations:las-vegas-strip--people:las-vegas-bombing": {
+      "sourceId": "locations:las-vegas-strip",
+      "sourceName": "Las Vegas",
+      "sourceCategory": "locations",
+      "targetId": "people:las-vegas-bombing",
+      "targetName": "Las Vegas Bombing",
+      "targetCategory": "people"
     },
     "locations:nazi-germany--people:in-germany": {
       "sourceCategory": "locations",
@@ -15880,6 +15950,14 @@
       "targetId": "theories:galacterian-alignment",
       "targetName": "Galacterian Alignment"
     },
+    "people:hillary-clinton--people:when-bill-clinton": {
+      "sourceId": "people:hillary-clinton",
+      "sourceName": "Hillary Clinton",
+      "sourceCategory": "people",
+      "targetId": "people:when-bill-clinton",
+      "targetName": "Presidents Bill Clinton",
+      "targetCategory": "politicians"
+    },
     "people:in-california--professors:in-california": {
       "sourceCategory": "people",
       "sourceId": "people:in-california",
@@ -15904,6 +15982,14 @@
       "targetId": "people:renegade-pleiadians-universal-origin",
       "targetName": "Renegade Pleiadians Universal Origin"
     },
+    "politicians:pentagon--professors:annie-jacobsen": {
+      "sourceId": "politicians:pentagon",
+      "sourceName": "Pentagon",
+      "sourceCategory": "politicians",
+      "targetId": "professors:annie-jacobsen",
+      "targetName": "Annie Jacobsen",
+      "targetCategory": "professors"
+    },
     "professors:theodor-benzinger-paul--universities:duke-university": {
       "sourceCategory": "professors",
       "sourceId": "professors:theodor-benzinger-paul",
@@ -15919,78 +16005,6 @@
       "targetCategory": "universities",
       "targetId": "universities:harvard-college",
       "targetName": "Harvard College"
-    },
-    "locations:las-vegas-strip--locations:north-las-vegas": {
-      "sourceId": "locations:las-vegas-strip",
-      "sourceName": "Las Vegas",
-      "sourceCategory": "locations",
-      "targetId": "locations:north-las-vegas",
-      "targetName": "North Las Vegas",
-      "targetCategory": "locations"
-    },
-    "locations:las-vegas-strip--people:las-vegas-bombing": {
-      "sourceId": "locations:las-vegas-strip",
-      "sourceName": "Las Vegas",
-      "sourceCategory": "locations",
-      "targetId": "people:las-vegas-bombing",
-      "targetName": "Las Vegas Bombing",
-      "targetCategory": "people"
-    },
-    "government_agencies:las-vegas-air-force--locations:las-vegas-strip": {
-      "sourceId": "government_agencies:las-vegas-air-force",
-      "sourceName": "Las Vegas Air Force",
-      "sourceCategory": "government_agencies",
-      "targetId": "locations:las-vegas-strip",
-      "targetName": "Las Vegas",
-      "targetCategory": "locations"
-    },
-    "government_agencies:las-vegas-police-department--locations:las-vegas-strip": {
-      "sourceId": "government_agencies:las-vegas-police-department",
-      "sourceName": "Las Vegas Police Department",
-      "sourceCategory": "government_agencies",
-      "targetId": "locations:las-vegas-strip",
-      "targetName": "Las Vegas",
-      "targetCategory": "locations"
-    },
-    "experiencers:vatican-secret-archives--people:diana-pasulka": {
-      "sourceId": "experiencers:vatican-secret-archives",
-      "sourceName": "Vatican Secret Archives",
-      "sourceCategory": "experiencers",
-      "targetId": "people:diana-pasulka",
-      "targetName": "Diana Pasulka",
-      "targetCategory": "people"
-    },
-    "locations:china--people:ho-chi-minh-trail": {
-      "sourceId": "locations:china",
-      "sourceName": "China",
-      "sourceCategory": "locations",
-      "targetId": "people:ho-chi-minh-trail",
-      "targetName": "Ho Chi Minh Trail",
-      "targetCategory": "locations"
-    },
-    "government_project_codenames:operation-paperclip--professors:annie-jacobsen": {
-      "sourceId": "government_project_codenames:operation-paperclip",
-      "sourceName": "Operation Paperclip",
-      "sourceCategory": "government_project_codenames",
-      "targetId": "professors:annie-jacobsen",
-      "targetName": "Annie Jacobsen",
-      "targetCategory": "professors"
-    },
-    "politicians:pentagon--professors:annie-jacobsen": {
-      "sourceId": "politicians:pentagon",
-      "sourceName": "Pentagon",
-      "sourceCategory": "politicians",
-      "targetId": "professors:annie-jacobsen",
-      "targetName": "Annie Jacobsen",
-      "targetCategory": "professors"
-    },
-    "people:hillary-clinton--people:when-bill-clinton": {
-      "sourceId": "people:hillary-clinton",
-      "sourceName": "Hillary Clinton",
-      "sourceCategory": "people",
-      "targetId": "people:when-bill-clinton",
-      "targetName": "Presidents Bill Clinton",
-      "targetCategory": "politicians"
     }
   },
   "notes": {},

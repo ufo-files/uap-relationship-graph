@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-28T21:52:01.670042+00:00",
+  "generated_at": "2026-06-29T06:50:29.653555+00:00",
   "pipeline": "relationship-graph",
   "reproducibility": {
     "no_openai_api": true,
@@ -28,10 +28,10 @@
   "counts": {
     "transcripts": 102,
     "segments": 211635,
-    "mentions": 50819,
-    "entities": 19775,
+    "mentions": 50787,
+    "entities": 19684,
     "relationships": 8000,
-    "categories": 53
+    "categories": 54
   },
   "input_hashes": {
     "100-000-ufos-are-surrounding-earth-ft-to.tsv": "a26a242213c018b4103b6f29d03f4aab3c1ce7e47d2dc1e0f18c72e16724077a",
@@ -140,17 +140,17 @@
   "registry_hash": "85f3c52f306d1891b4a44f68e6527ed66041b2f074dad487cf7915d3740276b3",
   "pipeline_hash": "ddfaade94ddde1a0e41399cc03f57b012993bf7dd3e1caebb96b4f9d7e7e43e1",
   "review_counts": {
-    "reclassifications": 476,
-    "name_reclassifications": 583,
-    "false_positives": 141,
+    "reclassifications": 509,
+    "name_reclassifications": 628,
+    "false_positives": 150,
     "removed_false_positives": 14,
     "omissions": 0,
-    "aliases": 383,
-    "merges": 890,
-    "name_merges": 631,
+    "aliases": 429,
+    "merges": 950,
+    "name_merges": 662,
     "removed_merges": 3,
     "removed_name_merges": 4,
     "removed_manual_relationships": 0,
-    "manual_relationships": 72
+    "manual_relationships": 81
   }
 }
