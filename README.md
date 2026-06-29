@@ -62,6 +62,19 @@ To rebuild:
 python3 build_graph.py
 ```
 
+### Public OCR PDF Ingestion
+
+Public OCR text exported from PDFs can be normalized and converted into transcript-style TSV sources for graph analysis:
+
+```bash
+python3 scripts/convert_ocr_pdfs.py --normalize-source-names
+python3 build_graph.py
+```
+
+Place OCR files in `data/documents/` with the `.pdf.txt` suffix. These public OCR sources are committed to the repository. The converter reads the source path embedded in each OCR metadata header, normalizes source filenames with collection prefixes such as `dow-release-3`, `gov-docs`, `patents`, `project-blue-book`, `tridactyl`, and `whitepapers`, then writes deterministic `data/transcripts/document-*.tsv` files with `start`, `end`, and `text` columns.
+
+The cleanup removes OCR metadata, page markers, repeated headers and footers, page numbers, classification boilerplate, table-of-contents debris, archive cover-sheet residue, and low-signal OCR fragments. The committed OCR files remain the full public source text; generated TSV files are larger graph evidence windows so relationship extraction stays tractable. OCR sources that are image-only or too sparse after cleanup remain in `data/documents/` but do not produce graph segments.
+
 ### Local Ebook Ingestion
 
 EPUB files can be converted into transcript-style TSV sources for graph analysis:
@@ -72,8 +85,6 @@ python3 build_graph.py
 ```
 
 Place EPUB files in `data/documents/`. Source ebooks are ignored by git and should stay local. The converter writes deterministic `data/transcripts/ebook-*.tsv` files with `start`, `end`, and `text` columns. Those TSV files contain public evidence windows around extracted entities, not full ebook text, so the online graph can use the derived data and still show snippets.
-
-Scanned PDFs need OCR first and are intentionally skipped by this converter.
 
 The manifest records:
 

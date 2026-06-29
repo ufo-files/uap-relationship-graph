@@ -1,0 +1,68 @@
+{"created_utc": "2026-06-23T12:20:08.497601+00:00", "dpi": 400, "effective_psm": 1, "embedded_text_min_chars": 80, "engine": "ghostscript+tesseract", "lang": "eng", "orientation_detection": true, "pages": 1, "psm": 1, "source": "/Users/glennsorrentino/Documents/Personal/UAP/Department of War/Release 1/Release_1/DOW-UAP-D42-Range-Fouler-Debrief-Japan-2023.pdf"}
+
+
+
+===== PAGE 1 =====
+{"chars": 5118, "method": "ocr", "page": 1}
+
+|              3    ®)       yt
+Please.do not use the  rple
+_— =                         doe rh and
+Range Fouler Debrief Form  ouj2e iis coten iiemenealy
+
+Please complete this form to the best of your ability. If you do not have the requested information,
+please leave the field blank. If there was more than one "group," please report each on a separate
+form for data collection purposes. You should receive a response within 5 business days.
+
+Last Name, First Name                             Rank                  Squadron                            SIPR Email Adaress                      Crew Position
+
+O-2          A482 ATKS                                                    Pilot
+
+This information is for contact only. SPEAR sanitizes all reports of identifying information.
+Absolutely no identifying information for aircrew or sguadran will be recorded for analysis.
+
+08/31/20                                   Dusk                                                           ISR                                              No
+Date (mm/dd/yy) —_—_— Time of detection      Day / Night             Side No.          Buno              Mission Description (CAS, BFM, etc)             LFE?
+(hh:mm:ss Z)
+|                                                (bX 11.4                                                | |18000 Yes
+Contact Working Area               Contact Latitute             N/S         Contact Longitude        EAV Contact Altitude  — Altitude                Wind Dir at             Wind
+(Ex: W-72 7A)                      (DD:MM:SS)                         (OB:MM:SS)                       (Ex: 22000)          Constant?         Contact Alt          Speed
+From
+Piease attempt to determine a Lat / Long for the contact at initial detection. We recommend                                                            4       :
+using JMPS to reference the sensor-derived bearing and range relative to the bullseye you had                             Was the contact moving? Yes
+inuse. if that method is not available, any reasonable derivation of location will work, but please
+be as specific as possible and make a note in the comments section. These locations may be                                             ءم
+п                                                                                                             Direction/Speed
+uSed te cue other means of tracking.
+@           me         racking                                                                                                          (Ex. 090/15)            150/230
+Radar Equipped: Other             AIM-9x_ Self- Track:   [|                   Please check all that apply:
+Stable Trackfile?:                                ATFLIR Autotrack:      [ |                                     Round: [_] Moving Parts:[_|
+G          i                                     1                                         Square:                    C:
+# of Contacts in "Group":                       ‘ Tally Achieved:     [|                           9      L]           metalic: [_]
+—                                                                                                                 Baficon-shaped:  ie             Markings:  [ ]
+EA Indications (Check all that apply):
+                             Wings/Aitframe: []             Transtucent: [|
+| |                  T |                  | |                  [|                                                                                                                                                Other Shape:                          Opaque:  [ ]
+ECM         Letter          False          Other/                                                                       Apparent Pr    sion:                    ie    ive:
+Arc         Identifier      Trackfiles Ambiguous                                                                      ll all nV]            PRES  LI
+
+Please use the field below to describe the contact and any interaction in your own words with as much
+detail! as possible. Please be sure to include any detail not included in questions above.
+
+MGRS Grid of initial contact: 39RWL2@)(1)1.Ao)(1)1.4a                  )
+Saw the initial object fly through the screen and started tracking it. Initial object was surpassed by another
+object of same size and shape but much higher speed. At one point during tracking the objects, there were
+
+three on the screen at the same time moving amongst each other.
+
+Don't use the purple "submit" button! Save this form with filename "Date_Squadron_RF.pdf" and email
+it to|              3,5c, (b}(6)              |(Also in the global): For troubleshooting, call[3.5c, (by6) _|
+
+Thank you for your time. Please ensure all display tapes are ripped for the entire time of interaction and
+saved as a.wmv (Example: 4 May VFA-106 HUD.wmv). Squadron intel personnel shail upload those files
+to the repository located at this link.
+
+_——————
+[                       3.5¢, (b)(6)                       |
+
+USCENTCOM MDR 26-0028              Approved for Release to AARO - FOUQ/ PA applies                             03/16/26 000001

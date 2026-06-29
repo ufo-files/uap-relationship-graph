@@ -1,0 +1,557 @@
+{"created_utc": "2026-06-23T14:24:26.436303+00:00", "dpi": 400, "effective_psm": 1, "embedded_text_min_chars": 80, "engine": "ghostscript+tesseract", "lang": "eng", "orientation_detection": true, "pages": 12, "psm": 1, "source": "/Users/glennsorrentino/Documents/Personal/UAP/Gov Docs/Project Blue Book No. 1.pdf"}
+
+
+
+===== PAGE 1 =====
+{"chars": 26, "method": "ocr", "page": 1}
+
+BLUE
+BOOK
+
+1 FEBRUARY 1966
+
+
+===== PAGE 2 =====
+{"chars": 4152, "method": "embedded", "page": 2}
+
+PROJECT  BLUE  BOOK
+                      The  United  States  Air  Force  has  the  responsibility           under  the  Department  of Defense  for  the
+                 investigation    of  unidentified   flying  objects    (UFOs).  The  name  of this  program,  which has  been  in
+                 operation    since  1948,  is  Project  Blue  Book.  It  has  been  identified  in the  past  as  Project  Sign and
+                 Project  Grudge.
+                      Air  Force  interest  in  unidentified     flying  objects  is  related  directly  to the  Air  Force  responsi-
+                 bility  for  the  air  defense  of  the  United  States.  Procedures  for  conducting  this  pr~gram are  estab-
+                 lished  by Air  Force  Regulation  200-2.
+                      The  objectives     of  Project  Blue  Book  are  two-fold:  first,  to  determine  whether  UFOs  pose  a
+                 threat   to  the  security    of  the  United  States;     and,  second,  to determine  whether  UFOs  exhibit  any
+                 unique  scientific  information  or advanced  technology  which  could  contribute  to scientific  or technical
+                 research.    In  the  course  of  accomplishing        these  objectives,    Project  Blue  Book strives  to identify
+                 and  explain  all  UFO  sightings  reported  to the  Air  Force.
+                                                     HOW THE PROGRAM  IS CONDUCTED
+                      The  program  is  conducted  in  three  phases.           The first  phase  includes  receipt  of UFO reports
+                 ~d initial  investigation     of the  reports.  The  Air  Force  base  nearest  the  location  of a report.ed  sight-
+                 ing  is  charged  with  the  responsibility    of investigating  the  sighting  and forwarding  the  information  to
+                 the  Project  Blue  Book Office  at Wright-Patterson        Air  Force  Base,  Ohio.
+                      If  the  initial  investigation    does  not  reveal  a  positive  identification  or explanation,  a second
+                 phase  of  more  intensive  analysiS  is conducted  by the  Project  Blue  Book Office.  Each  case  is objec-
+                 tively  and  scientifically    analyzed,  and,  if  necessary,     all  of the  scientific  facilities  available  to the
+                 Air  Force  can  be  used  to  assist  in arriving  at an identification  or explanation.  All persoMel  asso-
+                 ciated  with  the  investigation,     analysis,  and  evaluation  efforts  of the  project  view  each  report  with
+                 a  scientific  approach  and an open  mind.
+                      The  third  phase  of  the  program  is  dissemination            of  information  concerning  UFO sightings,
+                .evaluations,    and  statistics.   This  is  accomplished  by  the  Secretary  of the  Air  Force,  Office  of In-
+                 formation.
+                      The  Air  Force  defines  an  unidentified  flying  object  as any  aerial  object  which  the  observer  is
+                 unable  to  identify •
+     ..
+                       Reports  of  unfamiliar      objects   in  the  sky  are  submitted  to  the  Air  Force  from  many sources.
+                 These  sources       include    military    and  civilian  pilots,   weather  observers,  amateur  astronomers,
+                 business  and professional  men  and women,  and housewives,  etc.
+                       Frequently    such  objects    as  missiles,  balloons,  birds,  kites,  searchlights,       aircraft  navigation
+                 and  anticollision    beacc~.s,  jet  engine  exhaust,  condensation  trails,  astronomical  bodies  and meteor-
+                 ological  phenomena  are  mistakenly  reported  as unidentified  flying  objects.
+                       The  Air  Force  groups  its  evaluations  of UFO reports  under  three  general  headings:  (1) identified,
+                  (2)  insufficient  data,  and  (3) unidentified.
+                                                                             1
+
+
+===== PAGE 3 =====
+{"chars": 5261, "method": "embedded", "page": 3}
+
+-
+                      Identified  reports  are  those  for  which  sufficient  specific  information  has  been accumulated  and
+                 evaluated  to permit  a positive  identification  or explanation  of the object.
+                      Reports  categorized  as  Insufficient  Data are  those  for  wHich one or  more  elements  of informa-
+                 tion  essential   for  evaluation  are  mis~ing. Some  examples  are  the omission  of the duration  of the
+                 sighting,  date,  time,  location,  position  in the sky,  weather  conditions,  and the  marmer of appearance
+                 or  disappearance.     If  an  element  is  missing  and  there  is an indication  that  the sighting  may be of a
+                 security,   scientific,   technical,   or  public  interest  value,  the  Project  Blue  Book Office conducts  an
+                 additional  investigation  and  every  attempt  is  made to obtain  the information  necessary  for  identifi-
+                 cation.  However,  in  some  instances,       essential  information  cannot be obtained,  and no further  action
+                 can be taken.
+                      The  third  and  by  far  the  smallest  group  of evaluations  is categorized  as  Unidentified.  A sight-
+                 ing  is  consider~d  unidentified  when  a  report  apparently  contains  all  pertinent  data  necessary  to
+                 suggest  a  valid  hypothesis  concerning  the  cause  or  explanation  of the  report  but the description  of
+                 the  object  or its  motion  cannot  be correlated  with any lmown object  or phenomena.
+                                       TYPES OF UFO IDENTIFICATIONS AND EVALUATIONS
+                      There  are  various  types  of UFO sightings.  Most common are  reports  of astronomical  sightings,
+                 which  include  bright  stars,  planets,  comets,  fireballs,  meteors,  auroral  streamers,  and other  celes-
+                 tial  bodies.  When  observed  through  haze,  light  fog, moving clouds,  or other  obscurations  or unusual
+                 conditions,  the  planets,  including  Venus,  Jupiter,  and Mars  have been  reported  as unidentified  fiying
+                 objects.  Stellar  mirages  are also  a source  of reports.
+                      Satellites   are  another  major  source  of UFO reports.  An increase  in satellites  reported  as UFOs
+                 has  come  about because  of two factors.  The first  is the  increase  of interest  on the part  of the public;
+                 the  second  is  the  increasing  number of satellites  in the  skies.  Positive  knowledge  of the location  of all
+                 satellites  at  all  times  enables  rapid  identification  of satellite  sightings.  Keeping  track  of man-made
+                 objects   in  orbit  about  the  earth  is  the  responsibility  of the North  American  Air  Defense Command
+                 Space  Detection  and  Tracking  System.  This  sophisticated  electronic  system  gathers  complex  space
+                 traffic  data  instantly  from  tracking  stations  all over  the world.
+                       Other  space  surveillance  activities  include  the use of ballistic  tracking  and large  telescopic  cam-
+                . eras.  ECHO. schedules  are prepared  by theNASAGoddardSpace  Flight  Center  at Greenbelt,  Maryland,
+                 and  schedules  of  the  South/North  equator  crossings  are  prepared  by the Smithsonian  Institution  at
+                 Cambridge,  Massachusetts.  From  the  data  produced  by these agencies,  satellites  mistakenly  reported
+                  as  UFOs can be quickly  identified.  Some  of these  are  visible  to the naked  eye.
+                       Aircraft  account  for  another  major  source  of UFO reports,  particularly  during  adverse  weather
+                 conditions.  When observed  at high altitudes  and at some  distance,  aircraft  can have appearances  rang-
+                  ing from  disc  to rocket  shapes  due to the  reflection  of the sun on their  bright  surfaces.  Vapor or con-
+                 densation  trails  from  jet aircraft  will  sometimes  appear  to glow fiery  red or orange  when reflecting
+                  sunlight.  Afterburners  from  jet aircraft  are often reported  as  UFOs since  they can be seen  from  great
+                  distances  when the  aircraft  cannot  be seen.
+                       The  Project  Blue Book Office  has  direct  contact  with all  elements  of the  Air  Force  and the Fed-
+                  eral  Aviation  Agency  civil  air  control  centers.  All  aerial  refueling  operations  and special  training
+                  flights  can be checked  immediately.  Air  traffic  of commercial  airlines  and flights  of military  aircraft
+                  are  checked  with the nearest  control  center,  enabling  an immediate  evaluation  of aircraft  mistakenly
+                  reported  as UFOs. However, since  many local flights are  not carried,  these  flights  are  probable  causes
+                  of some  reports.
+                                                                           2
+
+
+===== PAGE 4 =====
+{"chars": 1858, "method": "embedded", "page": 4}
+
+Balloons  continue  to be  reported  as  uros.  Several tbousand balloons  are  released  each day  from
+                  military  and  civilian  airports,  weather  stations,  and research  activities.  There  are  several  types  of
+                  balloons  - weather  balloons,  rawinsondes,         radiosondes,  and the  large  research  balloons  which have
+                  diameters  up to  300 feet.  At night,  balloons  carry  running  lights  which cause  an unusual  appearance
+                  when observed.  Reflection  of  the  sun on balloons  at dawn and sunset  sometimes  produce  strange  ef-
+                  fects.  This  usually  occurs  when the balloon, because of its  altitudes,  is  exposed to the sun.  Large  bal-
+                  loons  can  move  at  speeds  of over  100 miles  per hour when moving in high altitude  jet windstreams.
+                  These  balloons  sometimes  appear  to  be  flattened  on top.  At other  times,  they appear  to be saucer-
+                  shaped  and  to  have  lights  mounted  inside  the  bag itself  due to the  sun's  rays  reflecting  through  the
+                  material  of the balloon.  The Balloon  Control  Center at Holloman  Air  Force  Base,  New Mexico, main-
+                  tains  a plot on all MWtary  Upper  Air Research  Balloona.
+                        Another  category  of  UFO  evaluations  labeled  Other  includes  missiles,  reflections,  mirages,
+                  searchlights,    birds,  kites,  spurious  radar  indications,  hoaxes,  fireworks,  and nares.
+                        Aircraft,  satellites,  balloons,  and  the  like  should NOT be reported  since  they do not fall  within
+                  the  definition  of an unidentified  fiying  object.
+                                                                            3
+
+
+===== PAGE 5 =====
+{"chars": 2871, "method": "embedded", "page": 5}
+
+CONCLUSIONS
+                     To date,  the firm  conclusions  of Project  BlueBook  are:  (1) no unidentified  flying object  reported,
+                investigated,   and  evaluated  by  the  Air  Force  has  ever  given any indication  of threat  to our  national
+                security;   (2)  there  has  been  no  evidence  submitted  to or discovered  by the  Air  Force  that  sightings
+                categorized  as  unidentified  represent  technological  developments  or principles  beyond the  range  of
+                present  day scientific  knowledge;  and  (3) there has been no evidence  indicating  that  sightings  categor-
+                ized  as  unidentified  are  extraterrestrial   vehicles.
+                     The  Air  Force  will continue to investigate  all reports  of unusual  aerial  phenomena  over  the  United
+                States.  The  services  of qualified  scientiSts  and technicians  will continue  to be used  to investigate  and
+                analyze  these  reports,  and periodic  reports  on the subject  will  be made.
+                     The former  Chairman  of the  House  Armed  Services  Committee,  Mr.  Carl  Vinson,  recently  com-
+                mented  on  the  conduct  of the  UFO program  by the  Air  Force  and stated  that  Congressional  hearings
+                on this  subject  are  unnecessary.
+                     The  Air  Force  does  not deny the  possibUity  that  some  form  of life  may exist  on other  planets  in
+                the  universe.  However,  to date,  the Air Foree has  neither  received  nor  discovered  any evidence  which
+                proves  the  existence  and intra-space  mobWty  of extraterrestrial  life.  The  Air  Force  continues  to ex-
+                                                           feels that he possesses  any evidence  of extraterrestrial         vehicles
+                tend  an open invitation  to anyone who
+                operating  within  the  earth's  near  space  envelope  to submit  bis  evidence  for  analysis.  Initial  contact
+                for  this  purpose  is through  the following  address:
+                           PROJECT  BLUE BOOK INFORMATION  OFFICE
+                          SAFOI
+                          WASHINGTON, D C  20330
+                     Anyone  observing  what  he  considers  to  be  an  unidentified  flying  object  should  report  it to the
+                nearest  Air  Force  Base.  Persons  submitting  a UFO report  to the  Air  Force  are  free  to discuss  any
+                aspect  of the  report  with anyone. The Air Foree  does  not seek to limit  discussion  on such  reports  and
+                does  not withhold or censor  any information  pertaining  to tbis  unclassified  program.
+                                                                          4
+
+
+===== PAGE 6 =====
+{"chars": 1613, "method": "embedded", "page": 6}
+
+NON AVAILABILITY OF MATERIALS
+                                            The  following  items  are  for  internal  use  only and are not available  for
+                                     distribution  to the  public.  These  concern  internal  management'ind  procedures
+                                     for  forwarding  UFO reports  to the  appropriate  agency:
+                                           1.     Air  Force  Regulation  200-2
+                                           2.    JANAP 146
+                                           The  Air  Force  has  no films,  photographs,  maps, charts,  or graphs  of un-
+                                     identified  fiying  objects.  Photographs  that  have been  submitted  for  evaluation
+                                     in conjWlCtion with  UFO reports  have been determined  to be a misinterpreta-
+                                     tion  of natural  or conventional  objects.  These  objects  bave  a positive  identifi-
+                                     cation.
+                                           The  Air  Force  no longer  possesses,  and thus  does  not have for  distribu-
+                                     tion,  outdated  reports  on  Project  Sign,  Project  Grudge,  Blue  Book Special
+                                     Report  No.  14, and outdated  Project  Blue Book press  releases.  Non-military
+                                     UFO publications  should  be requested  from the publisher,  not the  Air  Force.
+                                                                                        5
+
+
+===== PAGE 7 =====
+{"chars": 2959, "method": "embedded", "page": 7}
+
+SUGGESTED  READING MATERIAL
+               Books  listed  below  deal  with  facts  and  theories  about  our solar  universe,  the  sun,  planets,  comets,
+               meteorites,  the  universe,  stars,  constellations           and  galaxies;  telescopes,  the  computation  of time  as
+               it  relates  to astronomy,  star  maps  and  charts,  and the  history  of astronomy.
+               SKY & TELESCOPE,  by Sky Publishing  Corporation,  Harvard  College  Observatory,  Cambridge,  Mass.
+               02138.  Monthly  Magazine,  60 cents  per copy.
+               WEATHER  ELEMENTS,  by  BLAIR,  published  Prentice  Hall.  Has  an excellent  chapter  on often  mis-
+               identified  weather  phenomena.
+               PLANETS,  STARS,  AND SPACE,  by  CHAMBERLAIN,  JOSEPH  M.  & NICHOLSON,  THOMAS D. An
+               illustrated,    non-technical     explanation  of the  earth,  planets,  stars,  and  the  universe.  Prepared  in co-
+               operation  with  the  American  Museum  of Natural  History.                                       ·
+               JUNIOR  SCIENCE  BOOK OF STARS,  by CROSBY,  PHOEBE.  An easy-to-read,  exciting  story  of what
+               scientists  know about  the  stars,  planets,  the  moon,  and the  MILKY WAY.
+               CHALLENGE  OF  THE  UNIVERSE,  by  HYNEK,  J.  ALLEN  & ANDERSON,  NORMAN. Discusses  the
+               nature  of the  universe;  astronomy  and  cosmology,  published  by Scholastic  Press.
+                THE  STORY OF THE STARS, by :MALONEY, TERRY.  An introduction  to the  universe;  our solar  sys-
+                tem,  our  galaxy,  and  other  galaxies.  Many interesting  illustrated  analogies  help  build  concepts  of size
+                and  distance.  Includes  references  to  the  Van  Allen  radiation  belts  and  zodiacal  light  observation  of
+                1960.
+                THE  WORLD  OF  FLYING  SAUCERS,  by  MENZEL  & BOYD. A scientific  examination  of the  classic
+                UFO  reports.
+                THE  MOON, METEORITES.  AND COMETS, Dtd 1963, by MIDDLEHURST  & KUIPER.  Continuous  analy-
+                sis  of  Soviet  moon  photos.  Chapter  on Siberian  meteorite  and  photos  or  comets  computation  of vari-
+                ous  comet  orbital  photos.
+                THE  NATURE  OF LIGHT AND COLOR  IN THE OPEN AIR, by MINNAERT,  Dover  Publications.  This
+                is  an  excellent  paperback  written  in understandable  lay language.
+                METEORS,  by OLIVIER.  Standard  te?Ct by foremost  authority  on meteors.
+                PHOTOGRAPHIC  HISTORY OF :\-1:\RS, 1905-1961,  by SLIPHER,  E. C., published  by Lowell  Observa-
+                tory.
+                A~ATOMY OF A PHENO:\IENON,  by VALLE,  JACQUES.
+                FIRST  !\1AN TO THE  MOOX, by VON BRAUN, WERNHER.
+                                                                               6
+
+
+===== PAGE 8 =====
+{"chars": 2047, "method": "ocr", "page": 8}
+
+TOTAL UFO (OBJECT) SIGHTINGS
+(Compiled 17 Jan 66)
+
+TOTAL
+
+YEAR              SIGHTINGS              UNIDENTIFIED                           SOURCE
+1947          122              12          Case Files
+1948                           156                                        7                            Case Files
+1949                           186                                     22                            Blue Book, page 108
+1950                         210                                  27                          Case Files
+1951                           169                                     22                            Case Files
+1952                       1,501                                   303                            Blue Book, page 108
+1953                  509                         42                  Case Files
+1954                  487                         46                   Case Files
+1955                   545                          24                    Case Files
+1956                  670                         14                   Case Files
+1957               1,006                         14                   Case Files
+1958                  627                         10                   Case Files
+1959                           390                                     12                            Case Files
+1960                           557                 14                            Case Files
+1961                           591                                     13                            Case Files
+1962                         474                                   15                           Case Files
+1963                            399                                      14                             Case Files
+1964                           562                                     19                            Case Files
+1965                         886                                  16                          Case Files
+
+10,147                    646
+
+
+===== PAGE 9 =====
+{"chars": 4121, "method": "ocr", "page": 9}
+
+STATISTICAL DATA FOR YEARS 1933-1064.
+
+TOTAL CASES BY CATEGORY                        7                                                               (Compiled 1 Nov 65)
+1983 1994 1088 1056 1957 1958 1959 1980 1961 1962 1963 1084 TOTAL
+Astronomical                         17S     137     135     222      MI O232—i2440Ci—ia28s 2003     136      85     123      2167
+Aircraft                                73      80     124     148      218 106      63      6      nw |      68      73      71       1167
+Balloon                                      78       63      102       03      114      58       3t       22       37       19      28       20         66S
+Insufficient Data                       79     103      es     132      pm © © |      65     105     115      04      59      90      1248
+Other                                                                            62             58              65             61             120           93             73             04             a7              6s              ss             88                ore
+Satellite                                  0       0        6       0        8     138      6      21       69      77      82     142        417
+Unidentified                            42      46      24      14       14     10      12      14      13      15      14      19        237
+TOTAL                          306 48F GS HHSC‘ CGEYC0G—_—iiSEOCOSGTCGT4CHGi(s SZ      Cai?
+ASTRONOMICAL SIGHTINGS
+Meteors                                70      92      70      86      178 «168     100     187     119      95      $7      61       12058
+Stars and Planets                   101      44      52     131     144     58      40      45      18      36      23      85       80s
+Other                                     4        1        4        3       18      q       4        3        6        5        5       7         67
+TOTAL                          TS TF T3 @ CN I TH 2S Ws i iS 33      3107
+OTHER CASES
+Hoaxes, Hallucinations,
+Unreliable Reports and
+Psychological Causes                 15        6      18      16       Kv}     29      14      13      17      12       16      a |        228
+Missiles and Rockets                   2        1        1        3        s       6      14      12      13        9      13        ?         83
+Reflections                              4        6       4       3        PJ      7      il       9        3        3       6       2         5
+Flares and Firewcrs                 1       4       8       6        8      3       5       7       4       3       3       7        59
+Mirages and versions               3       2       4       1        £      2       4       5       6       3       R)       2        37
+Search and Groundlights               9        8      14        )       12       8        +}        6        i        3        2        6         81
+Clouds and Contratis                   6        3        2        1         9       §        3        4        5        4        5       0         47
+Chaff                                     0       2        ]       1        2      6       1       4        3        $s       2       i         27
+Birds                                     4        7        2       6        1       1       0       3        2        2       2       4         %-
+Radar Analysis                      435       ?       1       8       27      3       8       6       9       0       1       2        87
+Photo Analysis                      1       1       2      4       1      ?      4      6      3      2      3      6        40
+Physical Svecimens                     1        6        §        3         5      10        3        7        4       15        3        8          70
+Satellite Decay                          0       i)        0       0        0      1       ]       9        3        3       4        3         23
+Other                                    1        7        4       0        9 S$ 3 (3       4        2       4        6         48
+TOTAL                         “et “S$ “6 “Gi “I36 “CG      Tn’ i er | oS ee | |      “S16
+
+
+===== PAGE 10 =====
+{"chars": 2520, "method": "ocr", "page": 10}
+
+ASTRONOMICAL
+AIRCRAFT
+BALLOON
+INSUFFICIENT DATA
+OTHER
+SATELLITE
+UNIDENTIFIED
+PENDING
+
+TOTAL
+
+ASTRONOMICAL CASES
+
+Meteors
+Stars and Planets
+Owner
+
+TOTAL
+
+JAN
+
+10
+
+Sl    ~   =
+wloO om m& Pe 1A G2
+
+JAN
+6
+3
+_ia
+0
+
+1
+
+3
+
+al
+wo owes hw @ @
+
+FEB
+8
+
+1
+wb
+8
+
+STATISTICS FOR 1965
+
+MAR APR MAY JUN JUL
+i      4      2     10     27
+14     11     14      7     32
+1      3      0      3      7
+2      4      4      2     16
+7      8      5      6      9
+5      5     15      5     42
+2      1      i      0      2
+1      0     x)      0      0
+a3    36     41     330C isd
+MAR APR MAY JUN JUL
+8      2      2      4     14
+3      2      0      5     10
+a      9      9      ic 3
+11      4      2     10     27
+
+AUG
+
+26
+55
+_le
+62
+
+=}
+
+20
+
+13
+
+~)
+
+24
+
+=,
+Sle o
+
+SEP
+
+13
+16
+ia
+
+dlacuwoussS [8
++
+
+“Be |g
+4
+
+(Compiled 18 Jan 1966)
+
+NOV DEC TOTAL
+
+22       12      245
+14       5     210
+0       2      38
+3       1      85
+11       3     128
+0       3     152
+1       0      16
+4      2     7
+55      Fy}     887
+NOV DEC TOTAL
+9       5     101
+13       7     135
+0      a)     —?
+22      12     245
+
+(a) Solar Image (b) Moon (c) Sun (d) Reflected Moonlight, Parhelia, Moon (e) Reflected Moonlight (f) Comet Ikeya-Sek
+
+OTHER CATEGORY
+
+Hoaxes, Hallucinations,
+Unreliable Reports and
+Psychological Causes
+Missiles and Rockets
+Reflections
+Flares and Fireworks
+Mirsees and inversions
+Search and Ground Lights
+Clouds and Contrails
+Chatt
+Birds
+Phvsical Specimens
+Radar Analysis
+Photo Analysis
+Satellite Decay
+Miscellaneous
+
+TOTAL
+
+JAN
+
+2
+1
+
+1
+
+°
+
+_zab
+il
+
+FEB MAR APR MAY JUN
+
+=)
+
+JUL
+1           2           1           2
+i
+1            1
+1                        1
+2
+1           0           6           1
+2
+le                      Mg
+id     1j     2k}
+1           0           1           0
+wt lh
+8           5           6           9
+
+AUG
+
+~
+
+oo 1) Go ND 6) OD
+
+3
+ir
+3gmn
+$x
+2
+Asbdbdbd
+42
+
+NOV DEC TOTAL
+
+0          0         Hw.
+3        1       10
+1                q
+1                 4
++}
+2        0        9
+3
+1        1
+1                ll
+3
+6
+12
+0        1        |
+Iw
+il          3        126
+
+(a) Tracer Bullets (b) Misinterpretation of Conventional Objects (c) Metal Ball (d) Developer Smear (e) Anomalous Propagation
+() Kates (zg) Electronic Counter Measures (h) Debris in Wind (j) No Image on Film (k) Poor Photo Process (1) Free Falling Object
+(my; False Targets (n) Weather Returns (p) Emulsion Flaws (r) Plastic Bags (s) Man on Ground (t) Lightrung (u) Chemical Trails
+from Research Rocket (v) Missile Launch Activity (w) Gourd
+
+
+===== PAGE 11 =====
+{"chars": 1428, "method": "embedded", "page": 11}
+
+FmEBALL  REPORT-~
+                                  Persons  observing  a fireball  or meteor  should  report  the  information  to
+                             the American  Meteor  Society.  The information  desired  is contained  below.
+                      A very  brilliant  meteor  or  fireball  1s re-       possible,  and  due credit  given. It is only by the
+                 ported  to  have  passed  in your vicinity  on ~ • • •     help of those ·wno can give personal  information
+                 at  the  hour  of  • • • • • • Will  you please  answer    that  da.ta can be secured  for the computation  of
+                 as  fully  as  possible  the  following  questions,        the  orbita  of  meteors.  These  data  are  of great
+                 which  are  asked  on bebalf of the  American  Me-         scientific  value  and all reasonable  efforts  should
+                 teor  Society in order  that  permanent  records  of       be made to obtain  them. You will be unable  prob-
+                 such  phenomena  may  be  obtained.  When  these           ably  to  answer  all  questions  below, but answer
+                 reports  are  publiShed  each  contributor  wbose          those  you  can,  as  they  may  be  of the greatest
+                 report  is  fairly  complete  will be  mentioned,  if      importance.
+                                                                      10
+
+
+===== PAGE 12 =====
+{"chars": 3377, "method": "embedded", "page": 12}
+
+(1)  Give your  name  and address.
+                       (2) Where  were  you when you saw the  meteor?  (If the town is small  please  give county as well.)
+                       {3)  Give the  date,  hour  and minute  when the meteor  appeared;  also  kind of time  used.
+                       (4)  In what direction  did it appear  for  in what direction  was  it first  seen)?  This  is not askin_g in what
+                          direction  it was  going!
+                       {5)  In  what  direction  did it disappear  (or  in what direction  was  it last  seen)?  For  questions  4 and 5,
+                           simply  N,  E, S, or W is not accurate  enough, unless  these  were  the  exact  directions.  If compass
+                           is used,  state  it;  also  if magnetic  correction  has been  applied  to compass  reading.
+                       (6)  At what height  did it appear?  (Use degrees  in answering.)
+                       (7)  At what height  did  it disappear?  (Use dt!grees  ln answering.)
+                       (8)  Did it pass  directly  overhead  (i.e.,  through  the  zenith)?
+                       (9)  If not,  to which side  of the  zenith  did it go, and how far  from  it? (Use  degrees  in answering.)
+                      (1 0)  Did it  appear  to reach  the  horizon?  What sort  of a horizon  have  you?
+                      ( 11) What  angle  did  the  path  of  the  meteor  make with the horizon  and  in which direction  was it then
+                           going?
+                      {12)  If  you  are  familiar   with  constellations    describe  the path  of the  meteor  through  the sky with
+                           reference  to stars.
+                      (13)  Did the  meteor  appear  to explode?
+                      l14) What was the duration  of its  flight  in seconds?
+                      {15)  Describe  the  train  if  one  was  left.  If it lasted  long enough to show  drift,  most  carefully  tell  in
+                           what direction  train  drifted.  Give sketch,  if possible,  showing  this  with  regard  to horizon.
+                      { 16)  What was the  duration  of the  train  in seconds?
+                      {17)  Did  you  hear  any sound?             How long after  seeing  the  meteor  was  it before  you heard  this
+                                                                   sound?
+                           Did you hear  an actual  explosion?  How long after  seeing  the  explosion  was  it before  you heard  it?
+                      {18)  Of what color  was the meteor?
+                      (19)  What was the size  of tht! meteor?  (Compare  it with the  Moon or with  a planet  or star.)
+                      (20)  Was more  than one body seen before  the  explosion  (if  any)?
+                      {21)  \Vhat was condition  of sky at time?
+                      {22)  Give names  ~~d addresses  of others  who saw the meteor.
+                      (23)  Please  mJ.il this  reply  to
+                                                             Charles  P.  Oliver
+                                                             .U1ERICAN METEOR SOCIETY
+                                                             521 N. WyMewood Ave
+                                                             Narberth,  Pennsylvania  19072

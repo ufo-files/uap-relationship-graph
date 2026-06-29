@@ -1,0 +1,30 @@
+{"created_utc": "2026-06-23T12:31:38.388832+00:00", "dpi": 400, "effective_psm": 1, "embedded_text_min_chars": 80, "engine": "ghostscript+tesseract", "lang": "eng", "orientation_detection": true, "pages": 2, "psm": 1, "source": "/Users/glennsorrentino/Documents/Personal/UAP/Department of War/Release 2/release_02_document_bundle/DOE-UAP-D001_PANTEX_Image.pdf"}
+
+
+
+===== PAGE 1 =====
+{"chars": 229, "method": "ocr", "page": 1}
+
+PanvrExX-      a
+
+Managed and Operated by
+Consobdated Nuclear Secunty, LLC
+
+Pantex Unidentified Object Incident Report
+
+Image from Ground Surveillance Radar Tower
+
+VENF                                                    Page 5of6
+
+
+===== PAGE 2 =====
+{"chars": 253, "method": "ocr", "page": 2}
+
+Panvex      to
+
+Managed and Operated by                                                      .
+Coqrotnmircly nein ensqcurity LC                   Pantex Unidentified Object Incident Report
+
+Sandia National Labs Enhanced Images of the Object
+
+Page 6 of 6

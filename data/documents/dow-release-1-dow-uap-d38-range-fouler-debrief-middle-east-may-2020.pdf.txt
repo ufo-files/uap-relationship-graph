@@ -1,0 +1,71 @@
+{"created_utc": "2026-06-23T12:20:02.106747+00:00", "dpi": 400, "effective_psm": 1, "embedded_text_min_chars": 80, "engine": "ghostscript+tesseract", "lang": "eng", "orientation_detection": true, "pages": 1, "psm": 1, "source": "/Users/glennsorrentino/Documents/Personal/UAP/Department of War/Release 1/Release_1/DOW-UAP-D38-Range-Fouler-Debrief-Middle-East-May-2020.pdf"}
+
+
+
+===== PAGE 1 =====
+{"chars": 4505, "method": "ocr", "page": 1}
+
+;              Please,.do-notjuse the-purple
+Ss                       “submit” button above. Save and
+
+Range Fouler Debrief Form      email the complete file manually
+
+(see below).
+
+Please complete this form to the best of your ability. If you do not have the requested information,
+please leave the field blank. If there was more than one "group," please report each on a separate
+form for data collection purposes. You should receive a response within 5 business days.
+
+Last Name, First Name                           Rank                 Squadron                          SIPR Email Address                     Crew Position
+
+This information is for contact only. SPEAR sanitizes all reports of identifying information.
+Absolutely no identifying information for aircrew or squadron will be recorded for analysis.
+
+05/14/20     20:40:00     Night                            ISR
+Date (mm/dd/yy) Time of detection  2a¥/ Night               Side No.           Buna                Mission Description (CAS, BFM, etc)              LFE?
+(hh:mm:ss Z)
+28314            28314         N 49524         5    20000    Yes
+Contact Working Area              Contact Latitute             NAS        Contact Longitude       EAW ~~ Gontact Altitude      Altitude               Wind Dir at            Wind
+(Ex: W-72 1A)                      (DD:MM:SS)                          (DD:MM:SS)                        (Ex: 22000)           Constant?         Contact Alt          Speed
+
+From
+Please attempt to determine a Lat / Long for the contact at initial detection. We recommend       ,
+using JMPS to reference the sensor-derived bearing and range relative to the bullseye you had                              Was the contact moving? Yes
+in use. If that method is not available, any reasonable derivation of location will work, but please
+be as specific as possible and make a nofe in the comments section. These locations may be
+
+used fo cue other means of tracking.                                                                                                                                  play a
+
+(Ex. 090/15)
+
+Radar Equipped:                         AIM-9x_ Self-Track:   [|                      Please check all that apply:
+Stable Trackfile?: \Intermittent         ATFLIR Autotrack:      [|                                      Round:         Moving Parts:[__|
+# of Contacts in "Group": 1                           Tally Achieved: | |                              il z           eg .
+Balfoon-shaped:                 arkings:
+
+EA Indications (Check all that apply):                                                            Wings/Airtrame:| _]        sinha cI
+
+fc |            i]            [|            L |                                                                                             Other Shape-|_|                 Opaque: [ ]
+
+M       Letter       False       Other/                                                    A      tP    Ision:            Reflective:
+wee      identifier    Trackfiles Ambiguous                                                   ial ind aia LI          mies  LJ
+Please use the field below fo describe the contact and any interaction in your own words with as much
+detail as possible. Please be sure to include any detail not included in questions above.
+
+While preforming an ISR tasking (ULTN/Black Hot/Lin), a solid white object flew through the FOV. There
+was a temporarily lose of the object but re-acquired shortly there after. The crew was able to follow the
+object as it appeared to make erratic moments above the water. During the follow, crew was able to obtain
+4x zoom on the object but lost the object due to poor track placement. While following, the sensor operator
+was continuously manipulating the sensor to maintain eyes on the object. This is apparent by the waves of
+the water in the background being visible and not being visible.
+
+Don't use the purple “submit" button! Save this form with filename "Date_Squadron_RF.pdf" and email
+it to|                3.5c, (b)(6)                | (Also in the global), For troubleshooting, Calll 35c,(by6) |
+
+Thank you for your time. Please ensure all display tapes are ripped for the entire time of interaction and
+saved as a.wmv (Example: 4 May VFA-106 HUD.wmyv). Squadron intel personnel shall upload those files
+to the repository located at _ this link.
+
+Pia Bt |
+.      b){6
+USCENTCOM bor 26-0019                           Approved for Release to AARO                                               01/26/26 001

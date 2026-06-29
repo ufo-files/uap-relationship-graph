@@ -1,0 +1,49 @@
+{"created_utc": "2026-06-23T12:29:21.920477+00:00", "dpi": 400, "effective_psm": 1, "embedded_text_min_chars": 80, "engine": "ghostscript+tesseract", "lang": "eng", "orientation_detection": true, "pages": 6, "psm": 1, "source": "/Users/glennsorrentino/Documents/Personal/UAP/Department of War/Release 1/Release_1/DOW-UAP-D7-Mission-Report-Arabian-Gulf-2020.pdf"}
+
+
+
+===== PAGE 1 =====
+{"chars": 0, "method": "ocr", "page": 1}
+
+
+
+
+===== PAGE 2 =====
+{"chars": 0, "method": "ocr", "page": 2}
+
+
+
+
+===== PAGE 3 =====
+{"chars": 0, "method": "ocr", "page": 3}
+
+
+
+
+===== PAGE 4 =====
+{"chars": 0, "method": "ocr", "page": 4}
+
+
+
+
+===== PAGE 5 =====
+{"chars": 0, "method": "ocr", "page": 5}
+
+
+
+
+===== PAGE 6 =====
+{"chars": 624, "method": "embedded", "page": 6}
+
+1.4(a)
+             1.4(a)
+
+
+             GENTEXT/UAP
+             •  UAP Description (e.g., size, shape, color, markings, recognizable features): LOOKS LIKE A
+             BALLOON, SIMILAR TO PREVIOUSLY REPORTED UAP FROM 48FW.
+             •  Gentext (UAP Event Description): (SECRET) OBSERVED A WEAPONS QUALITY 1 TRACK  OF
+                                                                        1.4(a)
+             A UAP TRAVELING WITH THE WINDS AT 31,000 FT MSL IVO 323'S.          WAS ABLE TO
+             MAKE A NEXT TO SHOOT ON THE TRACK AND VISUALLY ID THE UAP IN THE TFLIR.
+                                    1.4(a)

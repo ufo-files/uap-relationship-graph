@@ -1,0 +1,73 @@
+{"created_utc": "2026-06-23T12:20:11.689306+00:00", "dpi": 400, "effective_psm": 1, "embedded_text_min_chars": 80, "engine": "ghostscript+tesseract", "lang": "eng", "orientation_detection": true, "pages": 1, "psm": 1, "source": "/Users/glennsorrentino/Documents/Personal/UAP/Department of War/Release 1/Release_1/DOW-UAP-D44-Range-Fouler-Arabian-Sea-October-2020.pdf"}
+
+
+
+===== PAGE 1 =====
+{"chars": 4412, "method": "ocr", "page": 1}
+
+مة                 ലsधामяمপারرsర్伽क्षणلعاe
+酬             클gpmعر ‘button above.  Saye and
+
+email the complete file manually
+
+Range Fouler Reporting Form _ (see below).
+
+Please complete this form to the best of your ability. If you do not have the requested information,
+please leave the field blank. !fthere was more than one "group," please report each on a separate
+form for data collection purposes. You should receive a response within 5 business days.
+
+Last Name, First Name                             Rank                   Squadron                             SIPR Email Address                       Crew Position
+
+O-2             172 ATKS                                                                   Other
+
+This information is for contact only. SPEAR sanitizes all reports of identifying information.
+Absolutely no identifying information for aircrew or squadron will be recorded for analysis.
+
+10/15/20     14:18:39     Day                            ISR
+Date (mmddyy)     Time of detection     Day / Night          Side No.        Buno           Mission Desctiption (CAS, BFM. etc}          jb Five
+(hh:mm:ss 2)
+N                                     E
+Contact Working Area               Contact Latiute             NAS        Contact Longitude       EW Gontact Altitude Aititude               Wind Dir at             Wind
+(Ex: W-72 1A)                      (OD:MM-SS)                         (DD:MM:SS)                       (Ex: 22000)           Constant?         Contact Alt          Speed
+
+From
+Please attempt to determine a Lat / Long for the contact at initial detection. We recommend                                                             ;       ;
+using JMPS to reference the sensor-derived bearing and range relative to the bullseye you had                              Vas the contact moving? Yes
+in use. If that method is not available, any reasonable derivation of location will work, but please
+be as specific as possible and make a note in the comments section. These locations may be
+
+used to cue other means of tracking.                                                                                                                             rae gehen       261 / 30
+
+(Ex. 090/15)
+Radar Equipped:                        AIM-9x Self-Track:   [_]                     Please check all that apply:
+Stable Trackfile?:                        ATFLIR Autotrack:     [_                            Round:       Moving Parts:[ _ |
+tfc oo    rovsnens TC] eee
+EA indications (Check ail that apply):                                                            Wings/airtame:{ |        aoe ae ]
+
+[|                 in                [                [                                                                                                                                 Other Shape:|_|                       Opaque:  [ ]
+
+yen   ae    sia   Xcel                         Apparent Propuision:      Refiective:
+Arc  Identifier  Trackfiles Ambiguous                  pp   puision|{ |    ective: [|
+
+Please use the field below fo describe the contact and any interaction in your own words with as much
+detail as possible. Please be sure to include any detail not included i in questions above.
+
+Contact at 14:18:392 to 14:19:52Z on 150CT2020. MGRS iceatioh 40Q BD 641.4a|191.4a| (estimated
+lat/long)                 14a                 | While at 19,073 HAT over the Gulf of Aden we tracked a round,
+coid object in IR traveling 319 degrees at 20 mph. It made a few/abrupt directional changes during the 1
+minute contact. Our sensor was aimed -50 degrees below our altitude with a slant range of 4.06NM and
+ground range of 4.78KM. The IR sensor was set to black hot and the object in question was a bright white.
+
+(b)(6)
+
+Don't use the purple “submit” button! Save this form with filename "Date_Squadron_RF.pdf" and email
+it to                      (b)(6)                     | (Also in the global). For troubleshooting, call}      (b)(6)     |
+
+Thank you for your time. Please ensure all display tapes are ripped for the entire time of interaction and
+Saved as a .wmv (Example: 4 May VFA-106 HUD.wmv). Squadron intel personnel shall upload those files
+to the repository located at this link.
+                 (b)(6)                ]             1980 REI Ree Ge
+
+|
+
+USCENTCOM MDR 26-0038 to MDR 26-0046 Approved for Release to AARO                                        03/27/26 000001

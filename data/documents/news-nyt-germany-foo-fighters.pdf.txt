@@ -1,0 +1,134 @@
+{"created_utc": "2026-06-23T14:57:04.759584+00:00", "dpi": 400, "effective_psm": 1, "embedded_text_min_chars": 80, "engine": "ghostscript+tesseract", "lang": "eng", "orientation_detection": true, "pages": 2, "psm": 1, "source": "/Users/glennsorrentino/Documents/Personal/UAP/News/NYT Germany Foo Fighters.pdf"}
+
+
+
+===== PAGE 1 =====
+{"chars": 1669, "method": "ocr", "page": 1}
+
+Balls ot Fire Stalk U.S. Fighters
+In Night Assaults Over Germany
+
+By The Associated Press.
+
+AMERICAN NIGHT FIGHTER
+BASE, France, Jan. 1—The Ger-
+mans have thrown something new
+into the night skies over Germany
+—the weird, mysterious ‘“foo-
+fighter,” balls of fire that race
+alongside the wings of American
+Beaufighters flying intruder mis-
+‘sions over the Reich.
+
+American pilots have been en-
+countering the eerie “foo-fighter”
+for more than a month in their
+night flights. No one apparently
+knows exactly what this sky
+weapon is.   |
+
+The balis of fire appear sud-
+denly and accompany the planes
+for miles. They appear to be ra-
+dio-controlled from the ground and’
+keep up with planes flying 300
+miles an hour, official intelligence
+reports reveal,
+
+“There are three kinds of these
+lights we call ‘foo-fighters,’”’ Lieut.
+
+Donald Meiers of Chicago said.
+“One is red balls of fire which
+appear off our wing tips and fly
+along with us; the second is a ver-
+tical row of three balls of fire
+which fly in front of us, and the
+third is a group of about fifteen
+hghts which appear off in the dis-
+tance—like a Christmas tree up in
+the air—and flicker on and off.”
+The pilots of this night-fighter
+squadron—-in operation since Sep-
+tember, 1943-—-find these fiery
+balls the weirdest thing that they
+have yet encountered. They are
+
+‘convinced that the “foo-fighter” is
+
+designed to be a psychological as
+well as a military weapon, al-
+though it is not the nature of the
+fire-balis to attack planes.
+
+“A ‘foo-fighter’ picked me up
+recently at 700 feet and chased me
+
+‘Continued on Page 4, Column 4
+
+Ehe New Hork Eimes
+
+Published: January 2, 1945
+Copyright © The New York Times
+
+
+===== PAGE 2 =====
+{"chars": 1577, "method": "ocr", "page": 2}
+
+FIRE-BALLS STALK
+PLANES OVER REICH
+
+Continued From Page 1
+
+twenty miles down the Rhine Val-
+ley,” Lieutenant Meiers said. “I
+‘turned to starboard and two balls
+of fire turned with me. I turned
+to the port side and they turned
+with me. We were going 260 miles
+an hour and the balls were keeping
+Tight up with us.
+ “On another occasion when a
+‘foo-fighter’ picked us up, I dove
+at 360 miles per hour, It kept right
+off our wing tips for a while and
+‘then zoomed up into the sky.
+“When I first saw the things off
+my wing tips, I had the horrible
+thought that a German on the
+ground was ready to press a but-
+ton and explode them. But they
+don’t explode or attack us. They
+just seem to follow us like Wwill-o’-
+the-wisps.”’
+
+[An Associated Press report
+from Paris on Dec. 13 said that
+the Germans had thrown silvery
+balls into the air against day
+raiders. Pilots then reported
+that they had seen these objects,
+both individually and in clusters,
+during forays over Germany.]
+
+Lieut. Wallace Gould of ‘Silver
+Creek, N. Y., said that the lights
+had followed his wing tips for a
+while and then, in a few seconds,
+zoomed 20,000 feet into the air out
+of sight. Lieut. Edward Schlater
+of Oshkosh, Wis., said that he had
+seen the ‘“foo-fighter” on two occa-
+sions and it “looked like shooting
+Stars.” In his first experience with
+them, Lieutenant Gould said, “TI
+thought it was some new form of
+jet-propulsion plane after us. But
+we were very close to them and
+none of us saw any structure on
+the fire balls.”
+
+Ehe New dork Gimes
+
+Published: January 2, 1945
+Copyright © The New York Times

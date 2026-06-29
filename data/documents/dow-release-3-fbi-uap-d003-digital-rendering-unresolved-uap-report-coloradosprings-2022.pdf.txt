@@ -1,0 +1,10 @@
+{"created_utc": "2026-06-23T13:24:47.918549+00:00", "dpi": 400, "effective_psm": 1, "embedded_text_min_chars": 80, "engine": "ghostscript+tesseract", "lang": "eng", "orientation_detection": true, "pages": 1, "psm": 1, "source": "/Users/glennsorrentino/Documents/Personal/UAP/Department of War/Release 3/release_03_documents/FBI-UAP-D003_Digital-Rendering_Unresolved-UAP-Report_ColoradoSprings_2022.pdf"}
+
+
+
+===== PAGE 1 =====
+{"chars": 32, "method": "ocr", "page": 1}
+
+S nitiictece         SORA sa
+
+au

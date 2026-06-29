@@ -534,6 +534,43 @@ PATTERN_CATEGORIES = {
 }
 
 URL_RE = re.compile(r"\b(?:https?://)?(?:[a-z0-9-]+\.)+[a-z]{2,}(?:/[^\s)]*)?", re.I)
+OCR_FRAGMENT_DOMAIN_PREFIXES = {
+    "a",
+    "age",
+    "al",
+    "at",
+    "ca",
+    "du",
+    "e",
+    "fa",
+    "ha",
+    "i",
+    "in",
+    "intelle",
+    "ju",
+    "ma",
+    "o",
+    "pa",
+    "sec",
+    "so",
+    "t",
+    "th",
+    "ti",
+}
+COMMON_DOMAIN_SUFFIXES = {
+    "ai",
+    "biz",
+    "ca",
+    "com",
+    "edu",
+    "gov",
+    "info",
+    "io",
+    "mil",
+    "net",
+    "org",
+    "us",
+}
 IP_RE = re.compile(r"\b(?:(?:25[0-5]|2[0-4]\d|1?\d?\d)\.){3}(?:25[0-5]|2[0-4]\d|1?\d?\d)\b")
 GPS_RE = re.compile(r"\b[-+]?(?:[1-8]?\d(?:\.\d+)?|90(?:\.0+)?),\s*[-+]?(?:(?:1[0-7]\d|\d?\d)(?:\.\d+)?|180(?:\.0+)?)\b")
 FREQ_RE = re.compile(
@@ -638,6 +675,204 @@ PERSON_STOPWORDS = {
     "The Debrief",
     "Liberation Times",
 }
+
+NON_ENTITY_LABEL_NAMES = {
+    "activity description",
+    "additional avionics",
+    "additional details",
+    "aircraft airspeed",
+    "aircraft altitude",
+    "aircraft callsign",
+    "aircraft heading",
+    "aircraft location",
+    "aircraft tail number",
+    "arrive on station",
+    "asset type",
+    "contact longitude",
+    "data link",
+    "defense advanced research",
+    "economic assumptions",
+    "event description",
+    "event type",
+    "full name",
+    "full names",
+    "friendly aircraft altitude",
+    "friendly aircraft location",
+    "friendly aircraft speed",
+    "friendly aircraft state",
+    "friendly aircraft trajectory",
+    "ground station callsign",
+    "image file name",
+    "initial contact",
+    "intel gap filled",
+    "last engine shutdown time",
+    "last land location",
+    "last land time",
+    "maneuverability observations",
+    "mission canceled",
+    "mission data",
+    "mission type",
+    "msn type",
+    "num chaff",
+    "num flares",
+    "num gun rounds",
+    "observer actions",
+    "on station",
+    "pod name",
+    "precoord effectiveness",
+    "precoord time",
+    "primary sensor",
+    "request number",
+    "sensors available",
+    "supported operation",
+    "supported unit",
+    "tail number",
+    "takeoff location",
+    "takeoff time",
+    "tasked start point",
+    "tasking type",
+    "time off station",
+    "time on station",
+    "timeline takeoff",
+    "total mission time",
+    "total time on station",
+}
+
+STRUCTURED_KEY_TERM_NAMES = {
+    "accuracy",
+    "anomalous characteristics",
+    "anamolous characteristics",
+    "associated caveats",
+    "call sign",
+    "country tasked",
+    "chaff designator",
+    "et al",
+    "first seen location",
+    "first seen radius",
+    "flare designator",
+    "free world",
+    "gun name",
+    "insufficient info",
+    "insufficient information",
+    "kinetic depth",
+    "kinetic depth accuracy",
+    "kinetic trajectory",
+    "kinetic trajectory accuracy",
+    "radar software load",
+    "radar name",
+    "radar warning receiver",
+    "report type",
+    "short title",
+    "software load",
+    "special assistant",
+    "submit date",
+    "tasking order",
+    "towed decoy name",
+    "towed decoy software load",
+    "trajectory",
+}
+
+STRUCTURED_KEY_TERM_SUFFIXES = {
+    "accuracy",
+    "caveats",
+    "characteristics",
+    "depth",
+    "designator",
+    "info",
+    "information",
+    "load",
+    "name",
+    "order",
+    "radius",
+    "trajectory",
+}
+
+STRUCTURED_KEY_TERM_PREFIXES = {
+    "anomalous",
+    "anamolous",
+    "associated",
+    "chaff",
+    "country",
+    "first",
+    "flare",
+    "gun",
+    "kinetic",
+    "radar",
+    "software",
+    "submit",
+    "tasking",
+    "towed",
+}
+
+NON_ENTITY_LABEL_SUFFIXES = {
+    "actions",
+    "airspeed",
+    "altitude",
+    "assumptions",
+    "available",
+    "callsign",
+    "canceled",
+    "data",
+    "description",
+    "designator",
+    "effectiveness",
+    "filled",
+    "heading",
+    "location",
+    "name",
+    "number",
+    "observations",
+    "operation",
+    "rounds",
+    "speed",
+    "state",
+    "time",
+    "trajectory",
+    "type",
+    "unit",
+}
+
+NON_ENTITY_LABEL_PREFIXES = {
+    "activity",
+    "additional",
+    "aircraft",
+    "asset",
+    "contact",
+    "economic",
+    "event",
+    "flare",
+    "flight",
+    "friendly",
+    "ground",
+    "image",
+    "initial",
+    "intel",
+    "last",
+    "mission",
+    "msn",
+    "num",
+    "observer",
+    "pod",
+    "precoord",
+    "primary",
+    "request",
+    "response",
+    "sensors",
+    "supported",
+    "tail",
+    "takeoff",
+    "tasked",
+    "tasking",
+    "time",
+    "timeline",
+    "total",
+}
+
+TABLE_OR_REPORT_LABEL_RE = re.compile(
+    r"\b(?:appendix|classification|declassification|doubtful|doubtfull|doubttull|evaluation|figure|"
+    r"per\s+cent|reprogrammings|serial|table|total\s+(?:adjustments|certain|congressional|reprogrammings))\b",
+    re.I,
+)
 
 CLASSIFY_HINTS = {
     "whistleblowers": ["whistleblower", "came forward", "testified", "claims", "revealed", "former official", "former intelligence"],
@@ -1133,9 +1368,12 @@ def pattern_mentions(segment: Segment) -> list[dict[str, Any]]:
         ("patents", PATENT_RE, "regex:patent", 0.72, "Matched patent phrase"),
     ]:
         for match in regex.finditer(text):
+            name = match.group(0).strip()
+            if category == "websites" and is_ocr_fragment_domain(name):
+                continue
             items.append(
                 {
-                    "name": match.group(0).strip(),
+                    "name": name,
                     "category": category,
                     "detector": detector,
                     "confidence": confidence,
@@ -1147,11 +1385,33 @@ def pattern_mentions(segment: Segment) -> list[dict[str, Any]]:
     return items
 
 
+def is_ocr_fragment_domain(name: str) -> bool:
+    lowered = name.strip().strip(".,;:)]}").lower()
+    if lowered.startswith(("http://", "https://", "www.")):
+        return False
+    host = lowered.split("/", 1)[0]
+    parts = host.split(".")
+    if len(parts) < 2:
+        return False
+    prefix = parts[0]
+    suffix = parts[-1]
+    if prefix in OCR_FRAGMENT_DOMAIN_PREFIXES:
+        return True
+    if suffix not in COMMON_DOMAIN_SUFFIXES:
+        return True
+    return False
+
+
 def person_mentions(segment: Segment, omit_terms: set[str]) -> list[dict[str, Any]]:
     items: list[dict[str, Any]] = []
     text = segment.text
     for match in PERSON_RE.finditer(text):
-        raw = re.sub(r"^(Dr\.|Mr\.|Ms\.|Sen\.|Rep\.|The)\s+", "", match.group(0).strip())
+        raw = re.sub(
+            r"^(?:Capt(?:ain)?|Col(?:onel)?|Dr|Gen(?:eral)?|Lt|Mr|Mrs|Ms|Prof(?:essor)?|Rep|Sen(?:ator)?|The)\.?\s+",
+            "",
+            match.group(0).strip(),
+            flags=re.I,
+        )
         name = re.sub(r"\s+", " ", raw)
         if len(name) < 5 or normalize_name(name) in omit_terms:
             continue
@@ -1160,6 +1420,21 @@ def person_mentions(segment: Segment, omit_terms: set[str]) -> list[dict[str, An
         if any(part.lower() in {"the", "and", "but", "you", "this", "that"} for part in name.split()):
             continue
         context = excerpt(text, match.start(), match.end(), width=220)
+        structured_label_category = classify_structured_label_name(name)
+        if structured_label_category:
+            items.append(
+                {
+                    "name": name,
+                    "category": structured_label_category,
+                    "detector": "heuristic:structured_label",
+                    "confidence": 0.72,
+                    "reason": f"Structured field-label heuristic matched {label(structured_label_category)}",
+                    "excerpt": context,
+                }
+            )
+            continue
+        if is_non_entity_label(name):
+            continue
         military_category = classify_military_organization(name)
         if military_category:
             items.append(
@@ -1200,6 +1475,36 @@ def person_mentions(segment: Segment, omit_terms: set[str]) -> list[dict[str, An
             }
         )
     return items
+
+
+def is_non_entity_label(name: str) -> bool:
+    normalized = normalize_name(name)
+    words = normalized.split()
+    if normalized in NON_ENTITY_LABEL_NAMES:
+        return True
+    if TABLE_OR_REPORT_LABEL_RE.search(name):
+        return True
+    if len(words) < 2 or len(words) > 4:
+        return False
+    if words[0] in NON_ENTITY_LABEL_PREFIXES and words[-1] in NON_ENTITY_LABEL_SUFFIXES:
+        return True
+    if words[0] == "num":
+        return True
+    return False
+
+
+def classify_structured_label_name(name: str) -> str | None:
+    normalized = normalize_name(name)
+    words = normalized.split()
+    if normalized in STRUCTURED_KEY_TERM_NAMES:
+        return "key_terms"
+    if len(words) < 2 or len(words) > 5:
+        return None
+    if words[0] in STRUCTURED_KEY_TERM_PREFIXES and words[-1] in STRUCTURED_KEY_TERM_SUFFIXES:
+        return "key_terms"
+    if normalized.endswith(" software load"):
+        return "key_terms"
+    return None
 
 
 def classify_military_organization(name: str) -> str | None:
@@ -1521,6 +1826,7 @@ def build_relationships(segments: list[Segment], mentions: list[Mention], entiti
                 continue
             window_mentions = sorted(window_mentions, key=lambda m: (-m.confidence, m.name))[:RELATIONSHIP_WINDOW_MENTION_LIMIT]
             window_text = " ".join(segment.text for segment in window_segments)
+            context_relationship = infer_context_relationship_from_text(window_text)
             window_start = window_segments[0].start_ms
             window_timestamp = format_timestamp(window_start)
             evidence_text = clean_text(window_text[:900])
@@ -1539,7 +1845,7 @@ def build_relationships(segments: list[Segment], mentions: list[Mention], entiti
                     rel_type, rel_confidence, rel_reason = infer_relationship_from_context(
                         source_entity,
                         target_entity,
-                        window_text,
+                        context_relationship,
                     )
                     key = (source, target, rel_type)
                     pair_weights[key] += 2 if rel_type != "co_mentioned" else 1
@@ -1705,7 +2011,7 @@ def resolve_manual_entity(
     return None
 
 
-def infer_relationship_from_context(source: Entity, target: Entity, text: str) -> tuple[str, float, str]:
+def infer_context_relationship_from_text(text: str) -> tuple[str, float, str] | None:
     lowered = text.lower()
     typed_patterns = [
         ("worked_for", 0.86, ["worked for", "works for", "director of", "chief of", "inside the", "from the agency", "former director"]),
@@ -1721,7 +2027,16 @@ def infer_relationship_from_context(source: Entity, target: Entity, text: str) -
     for rel_type, confidence, patterns in typed_patterns:
         if any(pattern in lowered for pattern in patterns):
             return rel_type, confidence, "Relationship language found nearby"
+    return None
 
+
+def infer_relationship_from_context(
+    source: Entity,
+    target: Entity,
+    context_relationship: tuple[str, float, str] | None,
+) -> tuple[str, float, str]:
+    if context_relationship:
+        return context_relationship
     base_type = infer_relationship_type(source.category, target.category)
     if base_type != "co_mentioned":
         return base_type, 0.7, "Category-pair relationship rule"
@@ -1891,8 +2206,9 @@ def write_report(
         if stale_path.exists():
             stale_path.unlink()
 
+    mention_payload = [asdict_slim_mention(mention) for mention in mentions]
     write_json(DATA_DIR / "segments.json", [asdict(segment) for segment in segments])
-    write_json(DATA_DIR / "mentions.json", [asdict(mention) for mention in mentions])
+    write_json(DATA_DIR / "mentions.json", mention_payload)
     write_json(DATA_DIR / "entities.json", [asdict(entity) for entity in entities])
     write_json(DATA_DIR / "relationships.json", [asdict(relationship) for relationship in relationships])
     write_json(DATA_DIR / "graph.json", graph)
@@ -1929,7 +2245,7 @@ def write_report(
         "topCategoryLabels": TOP_CATEGORY_LABELS,
         "categoryToTop": CATEGORY_TO_TOP,
     }
-    app_mentions_json = json.dumps([asdict(mention) for mention in mentions], ensure_ascii=False)
+    app_mentions_json = json.dumps(mention_payload, ensure_ascii=False)
     app_relationships_json = json.dumps([asdict(relationship) for relationship in relationships], ensure_ascii=False)
     app_core_json = json.dumps(app_core_payload, ensure_ascii=False)
     app_payload_version = hashlib.sha256(
@@ -1948,6 +2264,19 @@ def write_report(
         encoding="utf-8",
     )
     (ROOT / "index.html").write_text(render_html(app_payload_version), encoding="utf-8")
+
+
+def asdict_slim_mention(mention: Mention) -> dict[str, Any]:
+    return {
+        "id": mention.id,
+        "segment_id": mention.segment_id,
+        "transcript_id": mention.transcript_id,
+        "transcript_title": mention.transcript_title,
+        "timestamp": mention.timestamp,
+        "detector": mention.detector,
+        "confidence": mention.confidence,
+        "excerpt": mention.excerpt,
+    }
 
 
 def render_html(app_data_version: str = "") -> str:

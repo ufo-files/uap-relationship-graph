@@ -1,0 +1,2657 @@
+{"created_utc": "2026-06-23T14:24:36.263820+00:00", "dpi": 400, "effective_psm": 1, "embedded_text_min_chars": 80, "engine": "ghostscript+tesseract", "lang": "eng", "orientation_detection": true, "pages": 84, "psm": 1, "source": "/Users/glennsorrentino/Documents/Personal/UAP/Gov Docs/Project Blue Book No. 10.pdf"}
+
+
+
+===== PAGE 1 =====
+{"chars": 686, "method": "embedded", "page": 1}
+
+UNCLASSIFIED
+                     AD NUMBER
+                       AD069180
+               CLASSIFICATION CHANGES
+       TO:           UNCLASSIFIED
+       FROM:            SECRET
+                 LIMITATION CHANGES
+       TO:
+       Approved for public release; distribution is
+       unlimited.
+       FROM:
+       Distribution authorized to U.S. Gov't. agencies
+       and their contractors;
+       Administrative/Operational Use; 23 APR 1953.
+       Other requests shall be referred to Foreign
+       Technology Div., AFSC, Wright-Patterson AFB, OH
+       45433.
+                     AUTHORITY
+       OSD ltr 23 Jan 1996; DDCTC ltr 3 Nov 1971
+               THIS PAGE IS UNCLASSIFIED
+
+
+===== PAGE 2 =====
+{"chars": 253, "method": "ocr", "page": 2}
+
+UNCLASSIFIED
+
+DEFENSE DOCUMENTATION CENTER
+
+FOR
+SCIENTIFIC AND TECHNICAL INFORMATION
+
+CAMERON STATION ALEXANDRIA. VIRGINIA
+
+CLASSIFICATION CHANGED
+TO  UNCLASSIFIED
+| FROM CONFIDENTIAL
+| PER AUTHORITY LISTED IN
+TAB NO. 67-8... 15 Avril 1967
+
+UNCLASSIFIED
+
+
+===== PAGE 3 =====
+{"chars": 928, "method": "embedded", "page": 3}
+
+NOTICE:     When government or other drawlnga,   speci-
+                  fication« or other date are utied for any purpose
+                  other than  in connection with a definitely related
+                  government procurement operation,  the ff<  S.
+                  Oovemmer.t  thereby incurs no rerponBltaility,   nor any
+                  obligation whatsoever} and the fact that the Uovem-
+                  ment may have formulated,   fur-iiahed,   or in any way
+                  supplied the said drawings,   specifications,   or other
+                  data is not to be  regarded by implication or other-
+                  wise as  In any manner licensing the holder or any
+                  other person or corporation,   or conveying any rights
+                  or permission to manufacture,   use or sell any
+                  patented Invention that may  in any way be  related
+                  thereto.
+
+
+===== PAGE 4 =====
+{"chars": 346, "method": "ocr", "page": 4}
+
+cima     coger tint Laem
+
+لعامة    |   eet) 4
+              SECRET               eae ea
+
+\d09 Ils
+
+STATUS REPORT
+
+C
+
+FORMERLY PROJECT GRUDGE
+
+PROJECT NO. 10073
+
+z7 FEBRUARY 1953
+
+AIR TECHNICAL INTELLIGENCE CENTER
+
+WRIGHT-PATTERSON AIR FORCE BASE
+OHIO
+
+Copy No...     40
+
+153-3695
+
+SECRET
+
+aoe).
+
+<—
+©
+So
+
+” PROJECT BLUE BOOK - REPORT NO. 19 “>
+
+5
+
+
+===== PAGE 5 =====
+{"chars": 487, "method": "ocr", "page": 5}
+
+SECRET             )
+
+SECRET
+AUTH: 00, ATIC           |
+BY: H.C. JOHNSTON AL)
+
+Oly
+DATE 21 Apr 53
+
+This report is the tenth of a seriez of monthly status reports of Project
+Blue Book covering the monthe of December 1952, January 1953, and February 1953.
+
+Any additional information may be obtained on any incident by directing
+
+requests to Commanding General, Air Technical Intelligence Center, ATTN:                    |
+ATIAE-5, Wright-Patterson Air Forss Base, Ohio.
+
+753-3695
+
+SECRET
+
+
+===== PAGE 6 =====
+{"chars": 3908, "method": "embedded", "page": 6}
+
+I
+                             SECRET
+                           STAT'JS OF PROJECT BLUE BOOK
+            I.       OVIrHAIX STATUS
+               There has been • noticeable decrease in the number of unidentified aerial
+            object reports eubmitisd to this Project in the period covered by this Status
+            Report (December 1952, January and February 1953) uhen compared with tho number
+            submitted in the period covered by Status Report No. 9 (June, July, August,
+            September, October and November 1952)«    Presently from two to three reports are
+            received daily as compared to eight reports received daily during the period
+            covered by the previous report.
+               Because of a marked decrease In newspaper publicity, fewer reports have been
+            received from civilians with the result that military sightings now arcount for
+            at least 60 percent of all unidentified object reports.    In spite of the dropping
+            of the subject by the national press, it is significant bo note tnat a steady influx
+            of three reports dally come in to Project Blue Book from persons who sincerely be-
+            lieve they sow an unusual phenomenon in the sky and this is one of the main reasons
+            why the Air Force is still continuing and taking an interest in the Project.
+               Three incidents which occurred in January serve to illustrate the direct    vfect
+            of publicity on the number and quality of FLYOBRPTS received by the Project.    Daring
+            the period 21 January to 2? January, a sighting from Northern Japan near Russian-
+            held territory, a television program Involving "flying saucers", and a sighting of
+            an unidentified aerial object by a Jet pilot on the West Coast all received con-
+            siderable newspaper publicity which resulted in a noticeable increase in reports
+            at the Air Technical Intelligence Center.   This is illustrated by the graph in
+            Section X of this Status Report.
+               Prior to.the incidents mentioned above, the quality of flying object reports
+            continued 1- improve In quality and completeness even to the extent that base in-
+            telligence personnel wore analyzing reports at the locale of sighting, something
+            whljh Project Blue Book encourages.    There was a noticeable increase in the percentage
+            of radar sightings made during this time.    However, nsany reports submitted as a result
+            of the flurry of late January sightings were so incomplete that many of them had to
+            be categorised as "insufficient data".    The probable reason for this is that the base
+            Intelligence officer responsible for preparing an unidentified aerial object report
+            has lost interest in the subject due to the heavy load of low grade reports which he
+            had to submit last summer.
+               During December,  January, and February,  Project Blue Book personnel spent a
+            good portion of their time briefing auch interested agencies  as the Air Defense
+            Command,  the U602nci Air Intelligence Service Squadron, and the Sandia Corporation
+            with the dual parpose of  (l) general education about Project Blue Book,  and (2)
+            bettering the quality of flying object reports themselves in addition to Improving
+            channels for  obtaining cupportlng Information necessary for analysl:, of a PLYOBRFT-
+               All  reports received were screened and evaluat*-tl as soon as  possible after
+            being received.     A percentagts brcal<üown as  to the evaluations  la piven below,  along
+            with  a  f'!rt> «ir  breakdown  of  sources:
+                                               T53-3695
+      I                       SECRET
+
+
+===== PAGE 7 =====
+{"chars": 4604, "method": "embedded", "page": 7}
+
+I
+                                                                             SECRET
+                                        100 Total Reports for December 1952, January 1953> and February 1953
+                                                    Unknowns                             17.0056
+                                                     Insufficient Data                   26.00$                                                            V»
+                                                     Aircraft                             13*00$
+                                                     Balloons                             17.00$
+                                                     Astronomical                        20.00$
+                                                     Other                                 7.00$
+                                                                                        100.00$
+                                                     15$ of the total Involved radar detection«
+                                        Source«1
+                               1
+                                Military 62$
+                                                     dvilian 38$
+              ■                  11.   siomios om NCRTHBIW JAPAK
+                                        In the last nonth there has been a definite increase in the number of reports
+                                 received from PEAF by ATIC. They have been accompanied by some publicity in the
+                                 national press. Included in the reports have been a certain numbjr of observation
+                                 fron Northern Japan near Russian-held territory and for this r«ar/On they have been
+                                 given a good deal of attention by Project Blue Book.
+                                        The two most publicised sightings occurred on 30 December 1952 and 9 February
+                                 1953} the first «as seen by a Colonel in an F-6U over Hokkaido Island, the second
+                                 by a pilot and a radar observer in ah F-9U aircraft also over Northern Japan. Re-
+                                 ports of both sightings have been received and checked by ATIC. The F-8U sighting
+                                 was analysed as a probable star sines it seemed to remain on tht> sane aeinuth
+                                       C
+                                 (2?0 ) and elevation throughout the period of sighting. The F-S'U report involves
+                                 a radar contact by the radar observer with a simultaneous visual sighting of the
+                                 object and cannot be explained at the present time.
+                                        Since July 1952» 16 reports of unidentified flying objects being sighted over
+                                 Japan have been received from FEAF. Undoubtedly, there were numerous other obser-
+                                 vations, reported to FEU* intelligence personnel which were evaluated and eliminated
+                                 as known phanomon« ci the spot. Seventy-five percent of these sightings have been
+                                 explained to the satisfaction of Project Blue Book. Of the total number of sight-
+                                 ings from Japan, 18.75 percent involved some type of radar equipment.
+                               III.  CORREUTION OF RADATI0N COUNTS
+                                        In the sunmer of 1952 it was reported to Project Blue Book that in the past
+                                 several years there have been some instances where there existed r. supposed corre-
+                                 lation between the visual sighting of unidentified object and a rapid rise in
+                                 radiation count on radiation detecting devices in areas close to the Mt. Palomar
+                                 Observatory, California, and lator at Los Alamos, Hew Mexico. In early fall of
+                                 1952 Project Blue Book began to make inquiries about these occurrences. It was
+                                 found that in October 19U9 such an incident had occurred at the Mt. Palomar
+                                 T53-3695
+                                                                                SECRET
+                                                                                                                                                                  1 >
+ 1
+
+
+===== PAGE 8 =====
+{"chars": 4530, "method": "embedded", "page": 8}
+
+(                                                            I
+                                 SECRET
+              iJb*«rvatory and that the Navy had investigated. It «as also learned that several
+              times during 1950« 1951« and 1952 that same occurrence had taken place at the los
+              Alanos Scientific Laboratory in Los Alamos, New Mwci< o.
+                 k trip «as made to Los Alamos and the personnel «ho had made a study of tlm
+              possible oorralation were contacted. They very graciously made their filet avail-
+              able to ATIC personnel and a thorough check of their radiation recorder record«
+              «as made. Dates of all the sudden flurries of radiation ««re oheoked again, it
+              Project Blue Book files of sightings} they «ere checked «ith the local ne«8i«p<ars
+              in the Albuquerque area in an attempt to piok up any sightings that ATIC die n*t
+              hare on file} and fchey «ere checked against pick-ups of unknown targets on radtr
+              in the Albutjuerque area. In no instance could any diroot correlation be found.
+              It is possible that something «as observed and not reported or at least no. rocord
+              of the sighting «as kept* However, there is no way to ohsok back on this.
+                 To further inquire into the «attar, the Navy rtpoK-t of October 19U9 was
+              obtained. It stated that on two occasions at Mt. Falomar at the same time tht
+              radiation detection devices picked up some unknown flurry nf radiation person .el
+              from the observatory observed something in the air* In one instance the bbj«3t
+              appeared similar to a bird and in another instance very similar to a formation
+              of aircraft. The Navy made a very detailed check into the equipnent and went no
+              far as to fly aircraft over the area to determine whether or not radar or otbm*
+              «laotroaio equipment in the aircraft could have caused the sudden burst of filia-
+              tion. These tests wire made with negative results. It was finally determined
+              that there «as a very good possibility that ths sighting and the detection of
+              radiation «as merely s coincidence, that the objects were possibly birds or
+              aircraft, and that the sudden burst of radiation «as due to a malfunction of
+              equipment or interference that is net coapletely understood at the present tlm«..
+                 The results of the investigation were reviewed by several highly qualified
+              scientists and it was their opinion that there was nothing iiighiy significant
+              in the supposed correlation.
+              17. 00NTRACTCR STATUS
+                 Project Blue Book has a contract with a civilian research organizatloi which
+              serves the project with an IBM analysis of unidentified aerial object reports ami
+              technical analysis of any specific problem submitted. As was pointed out : n the
+              last status report (Status Report No. 9) coding and evaluation by the contractor
+              of 1952 sighting reports is continuing and all reports for this year shouLl be
+              completely processed and ready for the IBM system by 15 Mcrch 1953. All a: ghtingii
+              from 19U7 to 1951- were submitted to a preliminary IBM analysis on 26 Janua.-'y 1953
+              This work is continuing and results of the analysis will be forwarded infoinally
+              to Project Blue Book as soon as they are available.
+                 A two-day evaluation conference between * Plu^J^ftlH team and a centra
+                                                          mi
+              team was held on 22 and 23 January 1953 i'- which IÜ5 *952 cases were given  nal
+              «valuation in preparation for submission to the IBM analysis.
+                 A rock sample waa sent to Project Slue Book by a retired Lt Commander in
+              the Navy in connection with a sighting he ha.i made on 12 September 1952. The
+              ex-officer, who was also a Naval filer, was convinced that the rocK, w>dch has
+              an unusual shape, was directly associated with the flying object he observed.
+              Blue Book asked for a contractor analysis and after close study the contractor
+                                 SECRET              T53-3695
+      1                                                            '       >
+
+
+===== PAGE 9 =====
+{"chars": 5886, "method": "embedded", "page": 9}
+
+■ ■ ■ -                                                                                                                                       I
+                                                                                                                                           SECRET
+                                                      ccnfiraed the opinion of Blue Book that the rock merely represented a piece of
+                                                      oommon slag from an open hearth furnace.
+                                                      V.  BRIEFINGS QIVBI
+                                                                    A« Sandle Corporation* Albuquerque, New Mexico
+                                                                              On 6 January 'X?$'i at 1330 hours HST, Project Blue Book personnel pre-
+                                                      sented a briefing to 200 scientists and engineers of the Sandla Corporation«
+                                                      the briefing oonslsted of a short history of the project, details of present
+                                                      aperatlont' and recent sightings. Including the question and answer period, the
+                                                      briefing lasted 2 1/2 hours« The briefing was requested by the Sandla Corporation
+                                                      aa a nattsr of general Interest to Its sclentlflo personnel«
+                                                                                    w
+                                                                    B» 3U .h Air Defense Command Division, Albuquerque« New Mexico
+                            '                                                  On 6 January 1?$3» the Project Blue Book briefing team met with Head-
+                                                      quarttfrs personnel and Intslllgehce personnel of the 3Uth Air Defense Command
+                                                      Division, Klrtland AFB, for the purpose of briefing these personnel on Project
+                                                      Blue Book and also to meet scientific personnel of the Los Alamos Solentlfl?
+                                                      Laboratory» In addition to outlining a general picture of the function of Blue
+                                                      Book, the specific Itena of (l) an instrumented area for recording unidentified
+                                                      flying object» was discussed with the 32tth, and (2) radiation correlation with ■
+                                                      unlawwn sightings was discussed with the Los Alamos scientists.
+                                                                    C. A.D.C, Officer's Call, Ent AFB, Colorado Springs, Colorado
+                                                                                                                                                                1
+                                                                              An Air Defense Cccüiand Officer » Call was briefed on 2U January 1953«
+                                                      The briefing consisted of a presentation of Project Blue Book's background and
+                                                      •ma slanted 'toward gaining the assistance of Air Defense Command organisations
+                                                      in the analysis of a FLI03RFT«
+                                                                     D. Offlosr's Intelligence Class, Lowry AFB, Denver, Colorado
+                                                                                On 13 February 19$3 a briefing was given to a representative officer's
+                                                        class of the Air Intelllgsnce School at Lowry. Many officers graduating from
+                                                        this basic school will undoubtedly submit a 7LT0BRPT to ATIC and such a briefing
+                                                        was considered highly desirable in an attempt to raise the standard of reporting«
+                                                                      S« Air lutelllgenee School Instructor's Briefing, Lowry.AFB, Denver, Colorado
+                                                                                 Since it is not feasible to brief the many classes of Air Intelligence
+                                                         Officers at Lowry on the requirements of Blue Book, the best compromise plan was
+                                                         to brief the instructor personnel of the school so that they may pass the informa-
+                                                         tion along to their classes < This briefing was given on lo February 1953«
+                                                                       F. The U602nd Ali- Intelligence Service Squadron, Peterson AFB, Colorado
+                                                         Springs, Colorado. On 13 February 1953, AISS was briefed and the feasibility
+                                                         of Project Blue Book's utilising their field units was dlscusstad. This organi-
+                                                          sation haa the responsibility, in the case of combat, of supporting the intelli-
+                                                          gence mission of the Air Defense Command by overt collection, limited field
+                                                          ri:?3-3695
+                                                                                                                                               SECRET
+
+
+===== PAGE 10 =====
+{"chars": 5170, "method": "embedded", "page": 10}
+
+1
+                                                                                                      4p C Vv If t»  I
+                                            •n«lyaie and rapid reporting of air combat intelligence within the area of
+                                                                                                                                                                     ,
+                                            ADC'a reaponalbility. Due to the combat-ready nature of the U602nd 8 miaaion«
+                                            it Is eoncemad mainly at the present time with training its personnel. For
+                                            this reason ATZC hopes that the organisation will be able to assist Project
+                                            Blu« Book in the rapid reporting and «valuation of identified aerial object
+                                            reporta.
+                                                      Headquarters of the U602nd is at Peterson Field, Colorado Springs« Colorado,
+                                            and has three detaobmenta at San Franciaco, Kansas City, and Newburg, New York,
+                                            which in turn have control of 3i» flights spread through the Z.I. The flights
+                                            are the field agencies which would do the actual collection of enemy equipment
+                                            and pxreomtel in tha event that «ncmy aircraft fall in the United States. Pro-
+                                             ject Blue Book has initiated proindnary plane with AISS to utiliae pareonnel in
+                                            their« flighta to inv«stigate and analyse reports of unidentified aerial objects
+                                            and It is hopod that final coordination on the plan and its iaplenentation will
+                                             MM about in the near future. This would give Project Blue Book rapid first«
+                                            hand information fro« trained intelligence officers.
+                                          ?II.    7IDBMI CAMHU STATUS                                                                                                                    ■
+                                                      Siiiee the period of the last status report, tests have been mad« on the
+                                             oanara and it hss bean found that tha diffraction grid has disintegrated on a
+                                             majority of than. Tha grids are slowly losing their light separating ability
+                                             dtt« to what is apparently SOSM type of chmical doooopoaition. The Project »a
+                                             aeiantific ocntractor ia atteapting to analyse the difficulty and will advise
+                                             »SIC of ito finding«.
+                                                      CoordlnaticD has been received froa tha Air Defense Command anu tha Airways
+                                            and Air (kenunications Services (AiCS) to place the grid camaraa in control tcwers
+                                            aad selected radar aitea.   This cannot be realised, of course, until the earneraa
+                                             are mad« operational.
+                                         Tai.    OOWTHACT ASTROHOM»
+                                                      Blue Book baa a working agreeaont with ita contract aatronoewr whereby ha
+                                            rwvlewa ^1 aightings for poaaible meteor or aatronomioal eoplanationa on a weekly
+                                             IX,    BEglEK g| 19S2 SIQHTIMOS
+                                                      For the years 19U7 to 1952 Project Blue Book has received through military
+                                             ehannela and analysed over 2,500 reporta.    In addition, the project haa received
+                                             hundreds of letters from civilians.    In general, the data contained in these
+                                             letters are too nebulous to evaluate.    Since 1 January 1952, Blue Book haa
+                                             analysed over 1,000 reports received through military channels and these have
+                                             be«n broken down into th« following categories by peresntagea of the total reporta«
+                                                      Balloons                                                                             18.5«
+                                                          Known   - 1.57
+                                                          Probable - U.99
+                                                          Poosible - 11.95
+                                                                                                       SECRET                                                     T5.V3695
+
+
+===== PAGE 11 =====
+{"chars": 2325, "method": "ocr", "page": 11}
+
+Es       SECRET
+
+Aircraft |      11.76%
+Known    - 0.98                  श्र
+প্তdαdlcㅇ3০৩৬
+ponidloفغا盎ءസ
+
+مةلعالامضلناعلاخو                                                    14.20%
+Known      by     2.55                                                         %
+Probable =~ 4.01 —                                          !
+Possible - 2.64
+
+o
+
+ile  arty (where explanation is rot clewianin))      6.8)
+Insufficient Data to Evaluate                22.72%
+
+Bee Nea od tunes ori deeredl Riding’ the repent, ©  the following
+figures represent perenmages raceiven from arbitrarily categorised groupe!
+
+Civildans (General = no specie? qualifications that would
+establish then as better than average observers)     h7 088
+
+“USAF Pilots and Aircrew Members (while flying)      S gasoes
+Mrline Pilots (vile flying)                      .               2.00%
+Civilian Pilots (non-airlines while flying)                         heikt
+
+“Sewer: Operators (civilian and slitary)                           0.867.
+Balloon Oveervers                                                    1.00%,
+Civilian Scientists, Engineers, etc.    श्र     د              దిهالعا
+鹏లుدrrరాenenlcgcennn                      ء             18.03%
+Radar Returns                                          |             12.56%
+
+Thue far the relatively Limited statistical approech to unidentified objects
+has proceeded along only the most general trends. For example, the month of culy
+1952 waa high with 0 sightings. Another general trend exists in the geographi-
+cal loecaticn of sightings since they concentrate exround Washington, D. C.3 San
+Antonic, Texas; Albuquerque, New Mexico; and San Francisco, California. Anotoer
+interesting development show by the statistical survey is that a comparatively |
+high percentage of sightings scour during the twilight hours. The simplest ex-
+planation is that meny people are out-cf-docrs at that time and the raye of the |
+setting sum penetrating the upper atmosphere +111 reflect brightly from any re- |
+flective surface. The IBM analysis by the ccntractor should afford any significant
+trends involving shapes, sizes, estimations of velocity and altitude, course heal
+ings or characteristic maneuvers of unidentified flying objecte.
+
+253-3695                                                                6
+
+SECRET
+
+a a
+
+
+===== PAGE 12 =====
+{"chars": 281, "method": "ocr", "page": 12}
+
+te ee
+
+fr ee |
+
+SECRET
+
+Frequency of FLYOBRPTS for the pericd cf December 1952 to February 1953
+and correlation with nationally publicised incidents follow.
+
+153-3695
+
+7
+SECRET
+
+ag'' |
+
+eve. Oi deoelne, | ntaslbddile | shat man, cine, “oodtindiab dalt alas ania oni
+
+ie ne
+
+t
+a ere
+
+
+===== PAGE 13 =====
+{"chars": 426, "method": "ocr", "page": 13}
+
+SECRET
+
+753-3695
+
+AVG Wid SLVOdTY 10 “ON
+
+ck
+
+NORTHERN
+“ROSERT          PRESENTS”
+
+i                  FREQUENCY OF                             PROGRAM CARRIED AN ACCOUNT
+7| UNIDENTIFIED AERIAL OBJECT REPORTS          saree oe
+
+DEC 1952 - JAN © FEB 1953
+AND POSSIBLE EFFECTS OF PUBLICITY              ie Pe
+
+|
+
+' ae;
+i ” ‘5 is 212427] 3 #7 # 55 8 212427] 3 7 W WS 18 21 24 27
+DECEMBER         JANUARY     |     FEBRUARY
+
+SECRET
+
+
+===== PAGE 14 =====
+{"chars": 416, "method": "ocr", "page": 14}
+
+SECRET
+
+XI. SiNOFSIS OF FLYOBRFIS                                            :
+An individual account of the mejority of unidentified aerial object
+report< submitted to Project Blue Book during the months of December 1952,
+A          : January and February 1953, follows.
+4
+{
+id
+      4
+‘a
+i
+1
+T53~3695
+|                                                                                                         a
+SECRET
+
+
+===== PAGE 15 =====
+{"chars": 4776, "method": "embedded", "page": 15}
+
+"I
+                                                                      SECRET
+                               MiWtost    Air fbrsc Baa-- N«nr York                          1 Dooomb«r 1952
+                               I*     1)»«orlptlon of Inoldent
+                                     B«twe«n O^i^O and 05C0 E8T » number of obssrvora from varying location» around
+                               tha Maw York QLty s'.oa notioad a »ingle, round object with color» ranging between
+                               whito, white-orange and aaber» All observation» plaoad the unknown in the HW
+                               «pp?Oxiiiately 13° above th« horizon on a 300° ABinuth heading with a »low drift, to.
+                               the »outh finally sinking out of eight. All observations war« unaided visual
+                               sightings or with binocular». Although radar waa tried, thar« was no alaotroide
+                               return fron tha objwet.
+                                     Obaervara war« «jcparianead OAA rated Airway» Operations Specialists and Con-
+                               trol Tower Operators. Obeervation» of th« reported objsot wwr« as follow«t
+                                                   toeation                ArijBUth     i    Blwvation
+                                     a. Te«terboro Tower                        9                0»
+                                                                            m
+                                     b. Wvatohester T0#er                   880«                15»              oW+5
+                                                                            280°                 0°              01*56
+                                     «• Mewark Towor                        515»                 8«              OliSB
+                                                                            270°                 o«              0509
+                                     d. La Quardi». Tower                   890«                 u«              000
+                                                                            310«                 8®
+                                     «• Idlewild Tower                      270°                15°              ss
+                                                                            285°                 0«              osoo
+                                     f • Mitohol    AFB TOwor               805»                 6»              cm.
+                                                                            305°                 0°              0i459
+                                     An Eastern Airline« Flight inbound to La Quardi« was queried a« to a strange
+                               light appearing in the west. The pilot sighted th« objoot after ««rer«! minute»
+                               of »vanning and reported "a olueter of light«** close to the waatam horison.
+                                                                                                            »ly olear for th«
+                                      The ««athor at the tis« of observation wa» CAVU and extras
+                               Raw York City vicinity with ^he winds NMVT at 16 knots average.
+                                II« Plaonaaion of Inoident
+                                      Intelligence personnel at Mitohel AFB detetnined that the planet Jupiter»
+                                on 1 December, has an approadLnate azimuth of 300°,.a -2 magnitude (extremely
+                                bright)» and disappear» below the horizon at aporoximately the same tin« th« ob-
+                                ject was last observed. Undoubtedly* the unknown object is thus explained. Th«
+                                white to amber color range can be explained by the presence of light refracting
+                                through atmospheric dust. This report is one of the most complete in ATIC file«
+                                and the reaouroefulnes» and. common sonso of the Uitohel Intelligence officer»
+                                la to be ooiwnended. Complete personal statement» and azimuth and elevation head-
+                                ings wore obtained from 6 points of independent observation. If the object had
+                                not turned out to be Jupiter, triangulation from thnee data would have been
+                                possible.                                      11 T53-3695
+                                                                      SECRET
+                                                                                                                                           -
+
+
+===== PAGE 16 =====
+{"chars": 278, "method": "ocr", "page": 16}
+
+SECRET
+
+fhe sighting is very gimiler to ons at Presque Isle AFB, Mains; on 10 Oct
+52, which also was determined to be Jupiter.            are
+
+III. Conclusion
+The planet Jupitere
+
+-     ee a a a ee
+
+153-3695                                                             12
+
+SECRET
+
+
+===== PAGE 17 =====
+{"chars": 1789, "method": "embedded", "page": 17}
+
+SECRET                               1
+                Oolorsdo Spring«» Colorado U D«o«ib«r 1992
+                I. DwcrijBtion of Tneldwrt
+                   Aa Air Fore« ■•rg«u& and « civilian «ighted a rewnd aliudnw oolorad ebjoe«
+                flyliiS aaat to waat» It appaarad to be ehanglnc ahapa aa It proeaadad out of
+                •Ight to tha waat* Iha approxiaot« tlmo of sighting was 1100-1800 ÜBT, for 1
+                ■Inat« of duration* Tha two nan atata that tha objaot was going sllghtlar fastar
+                than a oonrantlonal Jat alrerafb« bat did hvra a paroaptlbla alwdnoa Ima« lo
+                sound «as hoard as a larga aaohlna «as operating at olosa range. Ihlla tha ob-
+                ject «as ororhsad« saroral right angle tsims «era wide without apparent slowing
+                of speed.
+      1         II. nisoasslon of Incident
+      1
+                   Aircraft, in tha area included B-e9»e and B-SO'a as «all as a Ca^p Carson Ob-
+                servation plans. Iha &-S9'8 snd B-50«9 an« ruled oat as a posslbllltgr sine« they
+                wert on a south heading 7 alnatas after the sighting took place.
+                   The oboanration plans» howerer, «as in the sroa at the exact tine of absex-
+                «stlon and on a «aatsrlar heading, lbs ehanging shape» «hieb happened caOj onoa»
+                could havs boon tha bright add-dUgr son reflecting from this aircraft. 9»
+                weather conditions «or« CAVU,
+                   Possibly aircraft.
+                                          13 T53-5695
+                                     SECRET
+                                                                           .,
+         --L
+                                                                            li
+
+
+===== PAGE 18 =====
+{"chars": 1910, "method": "embedded", "page": 18}
+
+SECRET                                                           I
+                      Congu-ea Air Fore« Bate» South Oarollna            J+ DeceEibor 1958
+                      If  P»»oylptieB of Ineldontt
+                           On» unidentified objaot was sighted by radar at Gongaree ATR at O&e SST
+                      toy an AN/lyDS~5 radar net. The alghtlug wa* strlotly eleotronlo« not visual»
+                      Sie cfejeotwaa sighted 100 nllaa N8 of the radar site« traveling at an eeti»
+                      mated spsdd of o,000 aph with oontaet lasting 5 ainutaa. The weather at ijbe
+                      time oenslsted of low strains elouds, no prenipltation, and «Inda MB at ? aph*
+                           All observers ware airaen gradaat«« of radar operator'a aobool «1th be-
+                      tween two to five yeare eacperienoe and oonaldered exoellent and reliabl«
+                      II. .Diaensalon of Incident!
+                           Several past radar sightings of this type have been received by ATIO and
+                      evaluated as probatola Interference froM another radar station« This incident
+                      ■ay fall into this category eventually In that the exoeealve speeds of 6*000
+                      aph plua the 6bjeet*s tengenoy to the radar beaa*8 »waap Indioata that Intar-
+                      ferenoe aMy have been preeent« However» not enoutgh Infomatlon has yet bean
+                      gathered on local «aether« taaperature and ■olatura v.a, altltade« so this .
+                      incident «111 be carried as unknown until auch infonatlon arrives*
+                      III. Oenclnslont
+                           Unknows
+            •
+                       T53-3695                               1U
+                                                      SECRET                                                          s
+
+
+===== PAGE 19 =====
+{"chars": 1472, "method": "ocr", "page": 19}
+
+ee ee ene  oo
+
+—
+
+Saks oa a ee a
+.
+
+SECRET
+
+leckland Air Force Base, Texas                  - § December 1952
+
+I. Desorption of Incident
+
+    While orbiving over Lackland AFB a ToS type alroraft sighted en umevel
+blue light of about half the intensity of the normal glow eadtted by a 1-33
+position light. The timeof eigh     wae approximately C048 OST urder clear
+weather conditions with the wind et 6,000 feet from 15 degrees at 25 mots.
+The object's maneuvers censiated of a counter-clockwise orbit over the air
+hage, an apparent pase on the T-28 and finally <n irregular rapid ascent and
+disappearance to the south. The pilot of the observing airoraft attempted an
+
+Anterception but overshot. The object was not sighted after 2056 OST.
+
+Tl, Pisguesion of Incident     غاغا
+
+Student flying in jet types aircraft was in progrese at the time of sighting.
+The observing pilot saw these aircraft and could not have confused them with
+the unidentified object. A scheduled balloon launch from Lackland AFB was set
+for,          taly 2100 OST, very close to the time of sighting, In addition,
+the orbiting climb of the object as well as ite genera] :outherly Leading (which
+tice in with the winds aloft) indicate that the unimown was obtprd a balloon.
+Project Blue Book has had many reporte in the past of known          apparently
+intercepting investigating aircraft...
+
+IIT. Qonelusion
+Provably a balicen.
+
+a5                                               T53=3695
+
+SECRET
+
+;
+
+
+===== PAGE 20 =====
+{"chars": 919, "method": "ocr", "page": 20}
+
+Gharacterietic of a meteor.
+
+SECRET
+
+Bitburg, Germany                           _ 6 Decembex 1953
+
+I. Description of Incident ~
+
+The co-pilot of a Londonm-to~Frankfurt commercial, flight sighted ea fast
+moving object for a i, to 5 second period. The unknowm phenomenon crossed his
+flight path in frent of him at a 90° angle and abruptly disappeared in a down
+
+ward direction. Time of sighting we 1890. The object was bright at its core
+with « faint tail.‘           |
+
+II. DMiecussion ef Inci
+
+-
+
+This is a rather irconplete report. A check was made with the Frankfurt
+Tlight service center which revealed that no aircraft were in the vicinity.
+These feotors enter into the evaluation of this report: 1) The object arched
+downward and had a tail. 2) It was seen for |; to 5 seconds. These pointe are
+
+TIT. Conolueton
+
+T53-4695                                                              16
+
+SECRET
+
+gs
+a
+
+oo
+
+ee reeens
+
+
+===== PAGE 21 =====
+{"chars": 1269, "method": "ocr", "page": 21}
+
+SECRET
+
+Angoony Alaska                                      6 Deswaber {O° 7         ‘
+
+oi: Desorintion of Tusiden®
+
+An Air National Cuxrd sllot eighted en object consietiug cf two shiny gioba.
+connected by a aolid r-4 prosseding in a southerly directic:, Time of sighting
+was 19153 and lasted 3 winutes. The object assumed a flati«ned shapes as tines,
+lat the observing pilot: was unab”« 40 distinguish any ligate, vapor traiia or
+exhaust emoke althcugh he chased the cbhject until it appirsntly accelerated anc
+disappeared in the sun. The pilot eretimated sine compa’‘aclie to ea Grumman Goose
+‘aireraft. Weather at the time of sighting was clears
+
+II. Discussion of Incicent
+
+| Thde report is very sketchy md vague and thers 12 “t autficient inforrmtion
+to deme up with a conclusion. The description of ths object is quite similar to
+reporte of krown upper sir research ballocns and *h® fact that it appeared to gain
+altitude would lend orede:se to this explanation. sHcevor, among-other items, no
+wind direction is known twreby eliminating a tis-ap between the objeat’s path
+
+exud upper air wind curren ‘se.
+
+SIZ. Comslusion
+‘Insufficient date to eveluate.
+
+17                                               T53--3695
+
+SECRET
+
+li        la Sl icine a ae Pag
+
+ei   eo
+
+
+===== PAGE 22 =====
+{"chars": 1689, "method": "embedded", "page": 22}
+
+i
+                                 SECRET
+             Kridlaon» Wisconsin            9 Daoenber 1998
+             X»     Peaorl^tlon of Incident
+                Fsar bright lights In diamond forms tlon were sieh tad st Tfkü by a captain
+             sail « lieutenant flying in a T-33 sirorsft loostad south of Ifedison« Wlsoonsln.
+             ftt« pilots followsd until they overtook the objects and oontlmed following
+        :    them until low on fuel at which point they returned to their base. At no tine
+        !    «ms s ellhouette visible« even »gslnst the lights of MLlwsukee» Visibility wss
+        |    almost unlimltoa with s broken oloud deok «t 25,000 feet. The observing sirorsft
+        |    pas st sn altitude of 8,000 feet.
+        i    II. Bisqussion of Incident
+                Local radar was contacted to deteiain« if they picked up th« unidsntlfled
+      (      objects with negative results. The objects «ere traveling st a very high speed,
+             aacceseiTS for ««ather bslloonu. The only possible explanation, would center
+             around aircraft in the area« To fit the speed of the object the aircraft would
+             probsbly have to be in the jst category« There Is no record of local or transient
+             aircraft In the area« rurthemore, local radar was carrying the T-53 on its »cop»
+      i      bat had no return from the unidentified object« If the unknown was sn aircraft
+             it would have been evident on the scops«
+        .     HI. Ocnelusion
+                Untawwn
+              T53-3695               18
+                                 SECRET
+                                                                     >
+
+
+===== PAGE 23 =====
+{"chars": 2048, "method": "embedded", "page": 23}
+
+I
+                                                         SECRET
+                      Odessa» Washington                                     10 Dsosmber 1952
+                      1»     Daeerlption of Inoidsnt
+                            Two pilots. In an F-9lt sad« rlsual and radar oontaot «1th a larga* round
+                      whifco object largar than any known typ« of alrorafi. A dim roddlsh-whita
+                      light came from the object as It hovored» reversod direction almost ln»tai>-
+                      tanaously and then dlssppearod» The object appeared to be level with the
+                      Inberocotlng F-9L at 26.000 to £7*000 feet. Airborne radar and visual eontaet
+                      «re simultaneous and lasted for 15 minutes. ?-9U attempted to oontaot local
+                      GOA bat without success. Weather waa elear above 5*000 feet. Time of aight-
+                      iag wa« 1919 P8T.
+                       II. Dlaouaalon of Inoldent
+                            tmo additional F-9U were in the general area bot at lower altitudes and
+                       thua are eliminated aa poesible eauae for the sighting, rti« description of
+                       «largo» round and whit« and extremely largo" la algnlflcanti Uppar air reaearoh
+                       baUoona are tear-ehaped and mad« of tranalnoent polyethylene and at cruising
+                       altitnd« expand to aa much aa 90 feet in length. The equipment hanging below
+                       the balloon la capable of making a return to airboma radar. Although AHO ha«
+             I ■*      received no record of vqppor air reaaareh balloon tracka for this date the dee-
+                       eription of the object allows a preliminary «valuation of *poaalbl« balloon«.
+                       Til. Oonolualon
+                            Poialble balloon.
+                                                                 19                           153-3695
+                                                         SECRET
+
+
+===== PAGE 24 =====
+{"chars": 1796, "method": "embedded", "page": 24}
+
+!
+                                                          SECRET
+                                                             •
+                         Pop« Air Fore« Baa«, South Carolina                  10 DMMibor 19?S
+                         I. Daacriptten of Inoidont
+                               PTUB lu2C to 2215 8 a ground radar station piokod up an uiiidentifiod ob-
+                         j«ot on it« soop«.   It appoarad aa a stationary objeot with a alight nlrouls?
+                         notion which did not oanoal out «ban th« aoving target indicator w «a «nployed.
+                         Th« aiRhting ahowad that its altitude «aa 8,000 foot at 8 1/2 mile» from tha
+                         stations   Woathar oonditiona war« fair with alto ounuloua clouds, no tecaporatur«
+                         invaraiona presant in th« area«   Eight tranaiant airormft fl«w through th« area
+                         during tha radar otaoarvation and an f-51 naa dir«ot«d to inv«atlgate.    Th« pilot
+                         «aw nothing unusual.   Tha' radar operators involvad haw« had •«▼«ral yaara
+                         eacparienoa.
+                         II. Elaouaalon of Inoidayt
+                            .   Pliotographs war« tak«n of the PPI scop« but haw« not boon r«o«iw«d by AT1C,
+                         Thar« 1« a possibility that looal oloud formations may haw« caused a apurioua
+                         radar return,   Oth«r than this there appear« to be no plausible mcplanatdon for
+                         the inoidant,
+                          III. Ooacluaion
+                               Possibly ««ath«r phanoaana.
+                          T53-3695                               20
+                                                          SECRET
+
+
+===== PAGE 25 =====
+{"chars": 866, "method": "embedded", "page": 25}
+
+SECRET
+             hon AlwcB»  Nmr Msxloo      18 DN«Bb«r 199»
+             I*     D—oriptlon of Inoidwat.
+                At approxüBafesly 1919 M3T an Atcsio liMrgy Condialon ■•eurlty trnfUof—
+             sighted an unu«wl phenomenon conalsting of an object wtdoh «ppeared to Ida
+             M a «hit« tennis ball leaving a trail of aparka«   Tha objaot waa in sight
+             approjdÄat^y 3 aaoonda« dlsa^earlng rad*5»rly.
+             n«   Dlaonailon of Inoldwit
+                The daaoription above eloaely raawblaa aangr ethara anbaittad to AHO
+             iMLoh have baao --%lwita4 as aatronoaioal pbanoaiaaa*   UM abort tlaaa la sig^t
+             and the «apaifca** ».•a aignlfloanta
+             in. Ooaaloaion
+                Probably aataer»
+       '
+                                   31            T55-3695
+                               SECRET
+
+
+===== PAGE 26 =====
+{"chars": 1531, "method": "embedded", "page": 26}
+
+SECRET
+                                          McQulr« Air force BM«*  New Jersey l*? December 1958
+                                          I.     Dweriptlon of Inold»nt
+                                                   Two ob»«rvatlona wer« mad« of an unidentified light at 0025 and öOJö EST
+                                          bgr tiro alxmon of this baaa*   At first, the object appeared directly overhead»
+                                          »here it xeaoined for 1 almte then reappeared 3 alnutea later for 1*0 to 50
+                                          »•noTMiii.   Obeanration «aa vlaual without the aid of binoonlar» or electronic
+                                          «qulpwtnt*    3he pceltlon of the object at the tiae of the aecoad slghtlag
+                                          «eeaed lowtr« heading to the eaat.    The light appeared noticeably larger*
+                                          XI»   HacriiKilon of Inoident
+                                                   Tie id^ii «aa cold and clear ulth high wind«,,   It la probable that an air-
+                                          craft In she McQuire traffic pattern could have caused the sighting.
+                >                         HI. Owxlualon
+               I                                   ProMble aircraft*
+               I
+               •    \
+                                           T53-3695 82
+                                                                                                  SECRET
+
+
+===== PAGE 27 =====
+{"chars": 1014, "method": "embedded", "page": 27}
+
+SECRET                          »
+              London, ffngland           12 Deoeab«r 1952
+              I.     Dyaorlp^loo of Inttld^nt
+                An obawrrvr in London obssrred ± imt«rHelon>ahap«d obj«ot of whit* Hs^t-
+              •atlmfttad to be as high as 1*000 fe«t th«n disappoaring behind son« buildings.
+             Object ms sla* soving «nd mt« sighted «t 0300 for J minutsa.
+             II«   Dieottwion of Ineident
+                Thie report ic very brief«   nothing is known «bout the relltibility of the
+             obsenrert local air tvafiiüe« beaoons on aater towers» ete«   Therefore« no real
+              •valnation can be attested although the description sounds like the landing
+             light en an laoanlng plepe«
+              III. Oonelnsion
+                Insuifieient infbmstion.
+                .
+                                   21             T53-3695
+                               SECRET
+                                                               :>
+       •
+
+
+===== PAGE 28 =====
+{"chars": 2335, "method": "embedded", "page": 28}
+
+SECRET
+                             Southern Japan                                                        lU December 1952
+                             I.  Daacrlption of Inoldant
+                                    From 03552 to OUlOZ an otjct was observed from an AFB In Southern Japan.
+                             Object appeared very similar to an evening star« was first yellow in color« but
+                             then Intermittently turned orange» It waa located low on the horizon at a 200°
+                             azimuth from the point of observation and appeared to be sinlring slowly to the
+                             south* However, when it finally disappeared below the horison» it again assumed
+                             the 200° bearing.
+                                    Weather in the locality was excellent. Radar attempted to pick the object
+                             up, but with no success.
+                                                                                                                                                          '      I
+                             II. DiaensBion of Incident
+                                    Several factors in this sighting are significant* Primarily, the object was
+                             described by the obaarvers themselvee as "sturlike". Secondly, the Initial obser-
+                             vation as well as the final observation placed the unknown at a 200° azimuth. This
+                             indicates that the object probably was a star setting in a straight downward line
+                             in the SW. The changing color Is a well-known phenomena caused by seeing at great
+                             distances.
+                            III. Conclualon
+                                    Probably astronomical.
+                              T?3-3«>'5                                           21.
+                                                                         SECRET
+                                                                                                                                                           ■■\
+                                                                                                                                                           :
+
+
+===== PAGE 29 =====
+{"chars": 3201, "method": "embedded", "page": 29}
+
+SECRET
+                         Hurstville, South Carolina 15 December 1952
+                         I*  Description of Incident
+                             At 0915 EST an RF-80 over this location visually sighted a circular silver
+                        object about the size of a half-dollar. Object was seea for a period of 10 to
+                        15 seconds and apparently was oscillating* losing and gaining altitude alter-
+                        nately. The pilot was on a 270° heading at 15,000 ft. and saw the unknown at
+                        a relative bearing of 330° at approximately 30*003 ft. The weather was clear
+                        with CÄTnJ condition».
+                        II. Discussion of Incident
+                             Sine« this sighting occurred 10 minutes before a similar one at Greensboro*
+                        North Carolina* the possibility of the two pilots actually seeing the same object
+                        has been Inoked Into. The following conclusions have been drawnt The objects
+                        could not have been a single weather balloon launched at Murstvllls* South
+                        Carolina* because the prevailing winds for the general area were from 360° at
+                        7$ knots* or blowing directly against a free floating object and carrying It
+                        south of the original observation point* nor north. Secondly* the objects coula
+                        not have been a single Jet aircraft traveling from Hurstvllle north to Greensboro.
+                        The dlstanofe is 13 5 miles between sightings and bhe sightings were 10 minutes apart
+                        thereby necessitating a ground speed of 690 mph. v/ith a general vind from the north
+                        blowing at 75 knots at 25*000 ft. it seems unlikely that a Jet could hit this speed.
+                        Furthermore the description of the unknown as "round and silver** from experienced             I
+                        fighter pilots indicates that the objects probably were not Jets* Although there
+                        was much local air traffic in both sightings* aircraft has been eliminated as a
+                        possibility for the above reason.
+                             Both sightings occurred within an hour of a scheduled rawinsonde weather
+                        balloon release at Qreensboro* North Carolina* and an unscheduled release around
+                        the Hurstville area. Taking the descriptions given of both objects* which are,
+                        incidentally* very characteristic of balloon observations received by ATIC, the
+                        conclusion reached is that the object seen at Hurstville was possibly a balloon.
+                        At Oreens'boro probably a balloon.
+                        ill. Conclusion
+                             Possibly a balloon.
+                                                               2S T53-3695
+                                                         SECRET
+                                                                                                                    h
+
+
+===== PAGE 30 =====
+{"chars": 1134, "method": "embedded", "page": 30}
+
+I
+                             SECRET
+            Greensboroj Hoith Carolina   15 D«eerab«r 19$2
+            I*  Daeorlption of Inddont
+               An R?-3o in flight oT«r Qreenaboro eight«d a spherical object with a bright
+            ■ilv«r color at about 092$ ST on 1$ D«c«nh«r 19$i»   It novad fre» a 12 o'clock
+            high petition to 6 o*eloek high when the pilot lost contact with the unknown.
+            Pilot «aa on a north heading av 25,000 feet traveling at 300 wph.
+            II» Biaeuaaion of Incident
+               Two aircraft Cram Shaw ATE ware in the area at the time of sighting aa waa
+            a balloon rSleaaed fron the weath«* atatlon at Grodnaboro« The pilot probably
+            could hare reoogniaed the aircraft but a ailvw, round, weather balloon might
+            not be ao eaaily recognised due to Its email eise. It appears that the latter
+            explaina the oauao for this sighting.
+            Ill* Conduaion
+               Probably a balloon.
+            T?3-3695             26
+                              SECRET
+                                                              i%
+
+
+===== PAGE 31 =====
+{"chars": 2440, "method": "embedded", "page": 31}
+
+1
+                                                           SECRET
+                        Gooae AFB, Labrador 15 Daoamber 1952
+                        X«  Daaeription of .Cncldent
+                             Visual contact reu? mad« by two aircraft, a "-33 and an F»9b, of an uniden-
+                        tillad aerial object after being vectored to the target by OCA* The object had
+                       no definite shape, «is bright rod and white and was seen fron 23152 to 23bOK«
+                        Airborne Tisual contact was estsblished as soon as the T-9U  entered the intercept
+                        area. Ho engine or jet exhaust was Tisible. The 7«9i» ehased the object an an
+                        indicated airspeed uf 375 knots but could not overtake it*
+                             Weather was elsar with visibility of 30 adles, winds at U*,000 ft. (altitude
+                       of the observing aircraft) was fro« 270° at 25 knots. The P-9U was en a heading
+                       of 270° while on its intwoept run*
+                        XI« Disoussion of Ineidsnt
+                                      ,
+                             Two C-5U 8 fro« Goose AFS wore in the are« at th«. approximate tiaa of sight-
+                        ing* 0ns of thee« aircraft was Observed by ths F-9U, ths other was not. However,
+                        the unidentified object could not be the unobservsd 0-5U due to the speed factor.
+                        Ths 7-9U, at 375 knots« could have overtaken a C-5b. There aay have been a balloon
+                        launch at 21002 ftoa Oooss Air Weather Service but here again there is a conflict
+                        because the object was sighisd at 23152« two hours after launch* An astronoaioal
+                        explanation does not ring true since it is improbable that stars and Meteors can
+                        be recorded by ground radar or airborne radar. Therefor«, a plausible explanation
+                        for this sighting ssens to be impossible.
+                       Ill* Conclusion
+                             Unknown*
+              ! •
+                                                                   27 T53-3695
+                                                           SECRET
+                                                                                                                             !   1
+              •
+
+
+===== PAGE 32 =====
+{"chars": 641, "method": "embedded", "page": 32}
+
+SECRET
+             Newcastle, Indimta 17 December 1952
+             I.  D—crtptlon of Incident
+               From 2120 to 2122 CST • visual sighting ms made from the ground by nunbers
+             of the Ground Observer'• Corps on duty at Newcastle. They sighted • round and
+             flat object of orange color disappearing normally into the distance from east
+             to «Mt.
+             II. Disouaslon of Incident
+               This report is too incomplete for even preliminary interpretation*
+            XU* Coneluaion
+               Insuffielant infonution.
+             T53-369i'' 2b
+                              SECRET
+
+
+===== PAGE 33 =====
+{"chars": 1230, "method": "embedded", "page": 33}
+
+SECRET
+                         Nitrcarsauah AFB, Or«enl*nd                            16 Decamber 19^2                           I
+                         I.  Daaerlptlon cf Ineldwit
+                              An miidentf.f 1 sd aerial object was «Ightad to tha northtraet of thiii air
+                         baaa by an Air Poroo Staff Sergaant and a ciTlllan. tho tuiknown objoot appoar-
+                         •d to olimb vartioally and than leral off. It gave off a bLaek «nake at tha
+                         beginning of ita aaeant*
+                         IX* Dlaonaaien of Inoldant
+                              There «aa an L-20, a 0~SU$ an A-16, and an 8B-17 in tha area. Tha air baaa
+                         ■taking tha report lattr notified ATIC that tha object had been definitely actab-
+              •          Uahed aa tha 8»-17.
+                        HI. Condoaion
+                              Waa aircraft.
+                                                                  29                           T5>3695
+                                                           SECRET
+                                                                                                                        s y
+
+
+===== PAGE 34 =====
+{"chars": 1583, "method": "ocr", "page": 34}
+
+SECRET
+
+Anderson AFB, Quam                             _ 19 December 1952
+
+Ie   Dessript ion of Inoldent
+
+From 2050 to 2055 hours an unidentified aerial object was sighted from
+three seoarate points of observation -- (1) ground crew personnel at Anderson
+AFB, Guam, (2) a Navel Officer 1) miles south of Anderson AFB, and (3) from
+an inooming B-17 115 réilee from Guam on a westerly heading. The object or
+objects in all ceses were reported to be on a leading of 270°, appeared cy-
+lindricel in shape, of silvery color with a bright flame trailing from the
+rear. The speed was considered to be in considerable exness of thet of a con-
+ventional jet and in each case the sighting did not exceed 5 seconds.
+
+IX. Discussion of Incident
+
+Tha object was esen at 0850 a.m. at which time 4% would be too bright to
+seu a neteor or star. It appears that all observers saw the same object since
+descriptions, directions given to the unknown, and time of sighting all coincide.
+The B-i7 pilete sighted the object 155 miles west of Guan, five minutes after the
+other sightings and yet the object was reported to have besn going weet of Ander-
+son Ajp five minutes earlier. This seeming discrepancy here night be explained by
+the fact thai the time estinate by the B-17 pilots ua3 off. The object appears to
+be going too slew to be a meteor and all local aircraft have been accounted for.
+There was a echedu_ed balicon launch at Guam at 21002 close to the sighting time
+but the description of the object does not coincide with usual balloon cescoriptions.
+
+IIIe Coneclusicn
+Unimown
+
+30
+SECRET
+
+ee
+
+
+===== PAGE 35 =====
+{"chars": 674, "method": "ocr", "page": 35}
+
+SECRET
+
+-8an Antonio, Texas                                    21 December 1952
+
+Ie Description of Incident
+
+One round, unidentified object of undetermined size, that exitted an intanse .
+gréen light was cbserved and reported    a@ civilian man while driving in his car
+in fan Antonio. Time of sighting was 1515 hrs., CST, for a few ssconds only.
+Coject looked like a "Roman Candie” and faded just before Geeppesring:
+
+Ti. Discussion of inotdent
+
+This oan be written off with quite a bit of essurance as aimply a common
+meteor. It has all the characteristics, including a sbort tine in sight and
+fad out just before Sees
+
+Ti, Cenolusion
+
+Probably neteor.
+
+153-3695
+
+3
+SECRET
+
+
+===== PAGE 36 =====
+{"chars": 2252, "method": "embedded", "page": 36}
+
+SECRET                                                                                                       »
+                                           Camp Carson» Colorado                                                                         2)i December 1952
+                                           I*  Deeerlptlon of Inoident
+                                                   Obaeonrcr« at Camp Carson sighted a silvsry unidsntlfied flying objecb at
+                                          06l7 MSI« It appeared circular in shape about the eise of a baseball, changing
+                                          later to a "tear-shaped8 oonfiguration and hovered in view for two to three
+                                          minutes after which it disappeared at a high rate of speed. Observers were
+                                          three airmen assigned to this base end all stated that the unknown object was
+                                           located south of their observation point* The object emitted an intermittent
+                                          white light while in view.
+                                           II» Diseassion of Incident
+                                                    Although the sighting took place two hours after a scheduled plball balloon
+                                           release at Pueblo, Colorado, this report has been evaluated as possibly balloon
+                                           due to the description* Its tear-drop shape indicates that it may be a large
+                                           pear-shaped upper air ressaroh balloon with a pilot light* ATIC has not yet had
+                                           the opportunity to check the object against known upper air research balloon
+                      v                    tracks but tentatively evaluates the sighting as shown below»
+                                         III» Ocaoluslon
+                                                    Possibly balloonc
+                         !•
+                                              ,
+                                            i5>3695                                                  SECRET
+                        ■
+
+
+===== PAGE 37 =====
+{"chars": 1343, "method": "embedded", "page": 37}
+
+SECRET
+              Canadian« Texas                 27 December 1952
+              I,      Description of Incident
+                 Several civilian eye-witnesses observed an unidentified aerial object be-
+              tween 2300 and 2300 hours GST, for two to three minutes«    It was described as
+              round« bluJsh-white light of high intensity and disappeared by going out of
+              sight to the southwest.    The object passed low overhead then appeared to climb
+              upward at the end of the sighting*
+              II*    Discussion of Incident
+                 Local air traffic has not been identified in this sighting*    Pending this
+              the object appears to be a Jet aircraft's exhaust seen at a low altitude» perhaps
+              with its aftwrbumer out in*   The night of sighting was «xtoemely clear facili-
+              tating observation of any object crossing the sky*    No Jet noise was heard» however»
+              the observers were in a moving oar*    The Jet may have bean based at Amarillo, a
+              nearby air base*
+             III*    Ccncluaien
+                 Possibly aircraft*
+                                      33              T53-3695
+                                  SECRET
+                                                                     i>
+        •
+
+
+===== PAGE 38 =====
+{"chars": 1011, "method": "ocr", "page": 38}
+
+a a ea ee
+
+SECRET
+
+Albuquerque, New ifexico                            2& Docember 1952
+
+Ie   Description of Incident
+
+_ Ab 2309 CST a military pilot sighted an elongated cigear—-like object sbout
+the size of a medium bomber with an exhaust about eight times the length of tlie
+object itself, It traveled from east to west over Albuquerque, New Mexicc. All
+sightings were visuai for a period of 10 to 20 seconds. There were broken high
+clouds at 30,00C feet with 4O miles visibility.
+
+Iz. Diacussion of Incident
+
+All air traffic in the area was identified by Kirtland AFB. The object
+may have been a meteor since the time of sighting was brief. In addition the
+obje ‘had a tail, common to some motecrs. However, not enough concrete infor=-
+mation is available tec afford a possible solution. ATIC is in the process of
+ohecking past sightings against known metoor tracks and an answer might be found
+
+here.
+
+‘TII. Conolusion
+
+Insufficient information.
+
+153-3695                                        3h,
+
+SECRET
+
+
+===== PAGE 39 =====
+{"chars": 1326, "method": "embedded", "page": 39}
+
+SECRET
+                          Los AlwnoB, New llwcLeo                                30 December 1952
+                          I*  D»«eriptlon of Incident
+                               An object tr«vellng in a »light curve and aooompanied by • high pitched
+                          crackling noise rhloh trailed ne object hy four s eoonda «as observed by an
+                          employee of ASC Security SaoMon. The tine of sighting was 2002 IST in clear
+                         weather condition« of t|0 miles visibility. The cbaervern credibility is con-
+                          sidered excellent«
+                          II. Dlaotission of Ineidenfe
+                               Ulis report can be eatsgorised as a low meteor» some of which emit the
+                          sound described above* Length of obeervation was extremely brief at two
+                          seconds«
+                          III* Ooaalttsion
+                               toobaUy meteor«
+               :
+                                                                    35                           T55-3695
+                                                            SECRET
+                                                                                                                           i >
+              •
+
+
+===== PAGE 40 =====
+{"chars": 784, "method": "embedded", "page": 40}
+
+SECRET                          :
+            Oldtown* Maine 1 January 1993
+            I*  DBSoriptlon of Incident
+               An «iriRan ttighted «n unidentified flying objaot at 0615 «• Tuts  objout ma
+            round and aaall and appeared to be whirling at ita top* It aenrad NNB» changing
+            color In sequences of red« blue and white. Frtm  time to tlaa» it maneuvered
+            erratically.
+            II* Pleouaaion of Inoident
+               Tha report la laoklng in background data« From the description» the object
+            could possibly bo • balloon«
+            III. Obnoluaion
+               Inouffloient data to «raluata«
+            T5:W695 36
+                             SECRET
+                                                             —'   >
+
+
+===== PAGE 41 =====
+{"chars": 1038, "method": "embedded", "page": 41}
+
+]                        SECRET
+               Cralg* Ifontana             3 January 1953
+               I«  Deaorlptlon of Ineidant
+                 At O14OO 3 thraa sooroas obsarved an aerial objaet 25 to 1*0 feet long and
+               18 to 25 '««t tniok with the appearance of two soup bowla put together« There
+               «ere sererel lighted «indknra with what appeared to be a porthole on the side*
+               The object moved slowly at first» then began a rapid climb. The Banner of dls-
+               appearanoe was unspecified. The object first appeared at 200 to 300 yards
+               distance froa the observers at an altitude of 10 to 15 feet*
+               II. Plscusslcn of Incident
+                 An investigation of the sources revealed that they are mature, reliable
+               and« at least in one ease« relatively «cperienoed persons.
+               III. Conclusion
+                 Unknown
+     • s
+                                    37             T53-3^5
+                                SECRET
+
+
+===== PAGE 42 =====
+{"chars": 717, "method": "ocr", "page": 42}
+
+SECRET
+
+t
+
+Eau Gallie, Florida                          L, Jamary 1953
+
+Ie Desorivntion of Incident
+
+At 2345 @ a civilian employee of Patrick AFB observed an unidentified
+aerial object for three seconds. Source compared the object to a flying wing
+and said that it was at an altitude of less than five hundred feet, flying at
+about 500 mph in a 8SW direction. Source saw at least l, blue lights on the
+lewer surface of the object. The weather was cold and clear with little or no
+wind, Wo other pergon observed the odject.
+
+II. Disoussion of Incident
+
+The source appesre to be an umisually reliable and experienced observer.
+Unimewn
+
+T53— 3695                                                                38
+
+SECRET
+
+
+===== PAGE 43 =====
+{"chars": 704, "method": "embedded", "page": 43}
+
+SECRET
+                                          k January 1955
+              I»  BaaeriptJen of Siw<.danfc
+                 At 0910 Z a bluish sphsr4, oal light with a taparing Uil waa obaarvad moving
+              8oundlea«ly at a tmaiKlous apaad and at a great diatanoa, parallel to the hori-
+              ■on» tot 5 aeoonda«
+              II. Blaooseion of Incident
+                 The report indicates that the object me probably a aeteor« the deaoription
+              giTen claeely appreadaatea a meteor •■ perfomanoe*
+              HI. Ooaelwaion
+                 Probably aatronoaloal phanoaenon.
+                                   39             Tb?-3695
+                               SECRET
+
+
+===== PAGE 44 =====
+{"chars": 849, "method": "embedded", "page": 44}
+
+SECRET                                  if  ■
+              Wurnor^RobJjliw AFB» Georgia 7 January 1953
+              I. Daacrtotlon of Ineldent
+                 At oeOO C two elvllian souroea otaarved an orange glowing object traveling
+              weat at a alow rat« of spaed north of Vamex^Robblas AFB. The object «ran
+              visible for 6 to 7 adnutea«
+              II. Plscttsslon of Ineldant ,
+                 There «ere no weather balloons released In the area» nor «as there any
+              reported alroraft trafflet bat It Is felt that an aircraft did causa the sight-
+              ing because of the description.
+              III. Oonaluslon
+                 Possibly airorefto
+                                                                            :
+              T53-3695 UO
+                                   SECRET
+
+
+===== PAGE 45 =====
+{"chars": 1591, "method": "embedded", "page": 45}
+
+/
+                                                               SECRET
+                            huesmn Air Ibre« BM«> Washington                      • January 1953
+                            I*  PMerJoiioq of Incidont
+                                 At 1S15 S over aucty ▼aned miiitery and oivilian öourosa observed ona green«
+                            dleo-ahaped object. The observation« oontinued for fifteen minute» during which
+                            time tb« object moved in a «outtareaterly direction while bobbing vertioolly and
+                            going aidewaya. There wa» no sound. An F-9U aircraft was so rambled but a thirty
+                            minute eesreh of the area produoed negative intercept results.
+                            II. Dlsqussion of Incident
+                                 A ohaok of adjsceet radar sites rsvealed no unaaual returns or activity in
+                                                                           o
+                            Ute area« The winds were generally fron ?i*0  below an overoaat at 12,000'. Thus
+                            the object would appear to nove against the wind sinoe it oust have been below
+                            the deads« There was no air traffic reported in the area.-
+                            III. Coooluelon
+                                 Cbknown
+                  -
+                                                                       ia                          T55-3695
+                                                              SECRET
+              •
+
+
+===== PAGE 46 =====
+{"chars": 487, "method": "ocr", "page": 46}
+
+_—_ =
+
+_—
+
+SECRET
+
+San Antonio, Texas                          9 Jamary 1953
+
+Xe Description of Incident
+
+Ab 2315 % a civilien female source observed a amali, round lusinous,
+elusirum appesring flying object. It traveled at s high speed and disep-
+peared after making a gradval clinbing turn.
+
+II. Discussion of Incident
+The experience level of the source appears lov.
+qiI.      usion
+
+Probably jet aircreft.
+
+T53—3695                                                            2
+
+SECRET
+
+
+===== PAGE 47 =====
+{"chars": 855, "method": "ocr", "page": 47}
+
+SECRET
+
+Sonoma, California                    10 January 1953
+
+Ie    Description of Incident
+
+At 2345 & two civilian sources observed one mall flying object. moving et a
+great rate of speed and performing violent maneuvers. The object's aound was
+similar to that of a jet airoraft. ‘The object made three 360° right turns in
+ning seconds then performed abrupt 90° turns first to the right, then to the left.
+The object then stopped, accelerated to its former speed, rose vertically and
+disappeared.         ,
+
+II. Disoqussion of Incident
+
+,    The only known aerial object capable of appearing to 52 through the described
+maneuvers would be a balloons however, the tine factors and velcoity estimates
+de not support this conclusion,
+ITI. Conelusion
+
+Unknown
+
+                           43                                  153-4695
+
+SECRET
+
+Pr
+
+=}
+
+—==
+
+ee
+
+
+===== PAGE 48 =====
+{"chars": 648, "method": "ocr", "page": 48}
+
+—
+
+SECRET
+
+San Antonio, Texas                                    a2 January 1953
+
+I. Description of Incident.
+
+At 1555 & two investigators for the Kelley AFS Air Police Office observed
+two soundless elliptical objects in the SE sky, over Kelley AFB. The objects
+ka estimated to be traveling in a SE direction.
+
+II. Discussion of Inoident
+
+One of the sources etated that the objects could have been balloons or
+dnflated ges bags. There were two scheduled launches of large type weather
+balloons from the San Antonio area at 1500 &.
+
+III. Qonelusion
+Probably balloons.
+
+153-3695                                                              nn
+
+SECRET
+
+
+===== PAGE 49 =====
+{"chars": 622, "method": "embedded", "page": 49}
+
+*
+                               SECRET
+              ItarTsvUle» Tatm««aae       15 January 193?
+              I. Paecrlptlon of Incident
+                 At 01U5 3 a oiiUlan souroa obaanrad a balloon ahaped object -lowly
+              decond^ng towarda the treat for 304*0 Ddnutea«
+              II. Dleattaaion of Incident
+                During thia period» there «are Buny fllghta of upper air research balloons
+              crossing this srea«
+              III. Oonoluaion
+                Possibly s balloon«
+                                   16             T53-3695
+                               SECRET
+       •
+
+
+===== PAGE 50 =====
+{"chars": 583, "method": "embedded", "page": 50}
+
+r
+                                    SECRET
+              frmtotAt Tmcaa                     IB January 1953
+              I.     ywcriatlon of Ineld»nt
+                 At eliOO « « ciTlilan «cmroe obamrrcd • l*rg« obJ«ot «lowly driftlag to the
+              •outhr««t for «eroral «Imtas at «n •■tlaatod «Itttwd-s of 600 loot*
+              II*   PUomtion of Inoldwit
+                 Hal« report it rmry brief«
+              Iir, OopBlwalc«
+                  Inauffloiont data for TalMatiww
+        \
+               T53-3695
+                                    SECRET
+       ■   \
+
+
+===== PAGE 51 =====
+{"chars": 556, "method": "ocr", "page": 51}
+
+with a bright yell-w teil travel scundlesaly from south to north until it disap~
+
+       SECRET
+
+Hirem, Georgia                                    2) Jamery 1953
+
+Ie Description 0} Incidsnt
+At an unspecified time a civilian in Hiram, Georgia, observed a round cbhject
+
+em  —  ——
+a
+
+peared behind a cloud.
+
+II. Ddesoussion of Incident
+
+Sinoe the time \f sighting is not specified it is impossible to check local
+alroraft traffic or balicon relsaeses.
+
+III. Qonolusion
+Insufficient data for eva luaticn.
+
+“7                                   153-3695
+
+SECRET
+
+
+===== PAGE 52 =====
+{"chars": 417, "method": "ocr", "page": 52}
+
+SECRET            a
+
+Rau Gallie, Florida            21 January 1953
+
+Ie Desoription of Incident
+
+At 1500 & an unidentified source sighted three oval shaped, white objects            n
+six feet in diameter traveling in an unspecified direction at an estimated
+altitude of thirty feet,
+
+It. Discussion of Incident
+The report ia exceedingly brief,
+
+Tit. Concluston |
+Insufficient data for analysis.
+
+Lg
+
+SECRET
+
+753-3695
+
+
+===== PAGE 53 =====
+{"chars": 1151, "method": "embedded", "page": 53}
+
+SECRET
+                        Hanaon Air Korea Bate« Newfoundland                22 Januaiy 1953
+                        I*  DsaorAptlon ef Ineidenfe
+                             An uinidantlfled flying object daaoribad aa r«d, white and blue and
+                        oval-ahaped, was obaenred Tisually fron the weather atation, control tower«
+                        baa* operations office* and a nearby AC&W site at Hanson AJ6, Newfoundland«
+                        at OOiiO 8. An attempt to contact the object by radsr net with negatire
+                        results.
+                        n. Discussion of Incident
+                             Local investigation precluded the possibility of the object being a
+                        balloon*
+                        III, Oonolusion
+                             Insuffielent data for analysis.
+                                                               U9                         T53-i>695
+                                                       SECRET
+                                                                                                                  4V
+             •
+
+
+===== PAGE 54 =====
+{"chars": 942, "method": "embedded", "page": 54}
+
+}
+                                                  SECRET
+                   Pttriok Air Fore« Bu«» Florida                   22 January 1953
+                   I«  Dwerlntlon of Inoldant
+                        At 2t(00 S four airman at Fatrlek AFB, Florida, rlsually obaarrad for
+                   thra« nlnutaa a fiery rad-oranga ball traveling aoundlaaaly from north to
+                   south at high speed,
+                   II« Diaqqaalon of toeldant
+                        The report la rtnrj brief* therofor«, ATIO haa taken aotlon to Inveatl-
+                   gate the Incident further.
+                   III. Oonolttilon
+                        Insufflelent data for evaluation.
+                   T5>-5695                              50
+                                                  SECRET
+                                                                                                             i >
+             •
+
+
+===== PAGE 55 =====
+{"chars": 4057, "method": "embedded", "page": 55}
+
+SECRET
+                  Contlnantal Divide, New Mexico 26  January 1959
+                  I»  DBBoriptlon of Inddant
+                     On 26 January 1953 at 8115 VST Air Force pareonn«! gtatdonticl at an kCkK
+                  station in thia area obaarrad an aerial phenomenon siaultaneovaly toy electronic
+                  and visual meana. To the naked eye the object appeared aa a very bright reddish-
+                 white objaot eatlaated to be 10 miles west of the radar sioo. "Cht  object passed
+                  behind • hill and then reappeared apparently heading in a northerly direction at
+                  • slow speed* The airman making this visual observation reported it to person-
+                 nel manning the radar equipment« Ihey ststed that they had an unidentified blip
+                  on the radar soope» appearing west of the station approximately 9 miles away»
+                  The scope showed the object to be on a 270° azimuth at an altitude of 10-15«000*
+                 moving away from the site at 12-15 mph. It waa eventually lost on radar at the
+                  18 ails range. The object was under visual and radar observation intemittsntly
+                  for 1*5 ndnutes. The elevation of the station is 7»50O' above ssa level«
+                     Weather at the time was eharaetsriisd by a high thin overcast and low
+                  soattered olouds« Winds aloft wars from &70* at 30 knots at 10-30« 000** An
+                 atmospheric inversion Isysr existed at 18,000« with ths top st 21,000',
+                  II. Dlsoussion of Incident
+                     Itais is ths most ocmplett report ever received by ATIC on the sighting of
+                  an unidentified object. The intelligence officer of the 3Uth Air Division« ADC«
+                  is to bs oompllmsntcd on his initiative and complete covering of sll the angle«
+                  bearing on the observation.. Moreover« the combination visnsl-electronio sighting
+                 is ths best type of sighting to work with bsesuss it affords ths most Information«
+                     Ths intelligence officer preparing the report checked on weather balloon re-
+                  leases in ths area of observation as s possible answer to the sighting. It was
+                  found that a 9* radiosonde balloon rslsased from Wlnslow« Arizona, would offer
+                  ths only possibility* The unknown object was observed to move trem esst to west«
+                  against ths prevailing winds aloft which rules out ths balloon theory. Also ths
+                  sighting time of 01(15 8 is 1 hour and 15 minutes after ths Winslor relesse and
+                  by that time it is probable that the radiosonde had burst at altitude long before.
+                     The fset that ths object waa detected on radar and aeen visually for so long
+                  a period of time eliminates the possibility of an astronomical solution« such as
+                  a star or fireball« and sspecially If both radar and eye were seeing the same ob-
+                  ject , it is unlikely that these objects would cause radar returns. Since the
+                  object was tracked at 12 to 15 mph« aircraft are also sllninated as a possibility«
+                     ATIC sleotronlos specialists sdvanoed the theory that the slow speed and
+                  large visual radar slse of the target make it appear that weather «ffeote may be
+                  the cause of ths electronlo pick-up« However« the invereion layer at 18,000*
+                  appears to be too high to effect the radar which was tracking the object at 10
+                  to 15,000«« The weather-effect explanation cannot, of course, account for the
+                  simultaneous viaua1. sighting« There is a possibility which ATIC is now checking
+                                              bl T53-i695
+                                        SECRET
+        I                                                                         ?•>
+          '
+
+
+===== PAGE 56 =====
+{"chars": 1429, "method": "embedded", "page": 56}
+
+SECRET
+                    thai the radar paraonn«! aay have be«n looking at tha planat Tanua* very low and
+                    bright on tha waatarn horlaon at thla tlaa ol yvar« and that tha radar possibly
+                    aneoontarad tha aforansntionad waathsr intarf<irano« at the aan« tiaa« Thla
+                    would raqulra a high dagraa of aoinoidanoa* b jwevar, and tha radar and visual
+                    aightlnga aaan to oolnolda too axaotly to givs wuoh «aight no the theory that                       i
+                    both ware ehaaxiririg different objects.                                                            !
+                         Two other itwa added to the eoapletenet 9 of the report* ATIO supplied the
+                    reporting intalllganoe offieer with a U8AP Tf ohnioal Inforaation Sheet» or a
+                    visual quaationnaira« and an Ueotronioa Datti Sheet covering the radar piok-up«
+                    Further analyaia of thla sighting awaita aditbatie weather charts toe tha data
+                    and area of flighting and until thla inforBation is received« this report is
+                    carrlwd in Project Blue Book'a filea aa an unknown*
+                    in. Ooipluaion
+                         Unknown
+         1
+                     153-3695                               52
+                                                     SECRET
+             •
+
+
+===== PAGE 57 =====
+{"chars": 685, "method": "ocr", "page": 57}
+
+SECRET
+
+Sampeon Air Force Base, New Tork                    26 Jamary 1953
+
+Ze. Deseription of Incident
+
+| At 2320 Z an airman at Sampson AFB, New York, visually observed one large
+luminous rectangwiar shaped unidentified flying object. In one mimte the
+object traveled through an are of 70 or SO degrees, while emitting a humning
+sound,
+
+II. Disouseion of Incident
+fhe object above desoribed appeared for only ons zainute, consequently
+
+enalysis is very difficult. However, ATIC requested information concerning
+local aircraft and was told that a camerocial flight was in the area around
+
+the sighting tine,
+
+III. Conclusion
+Possibly airoraft.
+
+T53=3695
+
+53
+SECRET
+
+jm oaeechie
+
+Se —_
+
+
+===== PAGE 58 =====
+{"chars": 1156, "method": "embedded", "page": 58}
+
+»
+                                                       SECRET
+                     Finland, Mismosot«                                      February 19!>3
+                     I.  Daserlptlon of IneidOtt
+                          At 0629 CST «n unknown object appeared on a radar scope on a heading of
+                                     0
+                     1$$° at the UiO  «lie range. The object appeared on the aoope aa being twice
+                     the •!•• of an ordinary air craft.
+                     II« Dlacnaalon of Incident
+                                                                      Electronic» Data Sheet covering
+                           The radar station Involved sent ATIC an
+                     the sighting and fro« this, eleotronlos speo:LaUsta detarnlned that Interference
+                     fro« another radar station caused the presmpe of the unknown "blip". No visual
+                     observation was aade at any tine.
+                    Ill« OonOlnsloa
+                           Xnterference.
+                      T53-3695
+                                                        SECRET
+              •
+
+
+===== PAGE 59 =====
+{"chars": 584, "method": "ocr", "page": 59}
+
+—,
+
+                   ' Beratoga Springs, New York                           1 February 1953
+
+Te. Descrivotion of Incident
+
+One large round, golden object was observed to be hovering down on the
+          horison et 2245 EST.                                                                             |
+
+II. Discussion of Incident
+
+            ;      No direction of object was given and furthermore the observers level of
+experiense appeared to be low.
+
+III. Conclusion
+f                  Insw'ficlent data for evaluation.
+
+T53-3595
+
+|                    5
+|                 SECRET
+
+
+===== PAGE 60 =====
+{"chars": 960, "method": "ocr", "page": 60}
+
+SECRET
+
+Terre Haute, Indiana
+
+I.         oription of Incident
+
+1 February 1953
+
+A military aircraft on a 270°  heading 10 miles west of Terre Haute aight: 4
+a close group of moving lights changing color from red to diue, to green to yellow.
+The pilot estimated their altitude to range between 30,060 ft. to 15,000 ft. flying
+in a menner similar to conventional aircraft. Searchlights from the St. Louis area
+seemed to be followirg the unidentified lights. The time of sighting was about 2130
+
+EST.
+
+        II. Discussion of Incident
+
+It. is possible that searchlights
+for the changing color of lights.
+~       III. Conciusion
+
+Fossibly aircraft.
+
+T52-3695
+
+ATIC made a check on lvcal eircraft and found that there were many commercial
+and military flights in and out of St. Louis at the approximate time of sighting.
+
+from St. Louis picked up one of these airocvaft.
+
+The observing aircraft was 100 miiss away from St. Louis which probably accounts
+
+56
+SECRET
+
+
+===== PAGE 61 =====
+{"chars": 1236, "method": "embedded", "page": 61}
+
+SECRET
+                        Popperrell AFB, Newfoundland                           3 February 1953
+                        I. Deacrlptlon of Incident
+                             From 2100 %o 212$ local time a low unidentified object resenbllng the land-
+                        ing light on an aircraft wu obeenred by two airmen of this baae until the object
+                        disappeared below the horiton* The observation was strictly a visual one with no
+                        optical aid» and no radar contact.
+                        II. Discussion of Incident
+                             This is a very brief report with no information given on the experience level
+                        of the obserrers. From past experience, however, such sightii^s have been attri-
+                        buted to bright stara sinking below the horison.
+                       III. Conclusion
+                             Possibly a star.
+                                                                 57                         T53-369$
+                                                         SECRET
+              p. _      r                                                                                           _ •   \
+
+
+===== PAGE 62 =====
+{"chars": 1919, "method": "embedded", "page": 62}
+
+SECRET
+           Ywia City, Arizona          k February 1953
+           I.  Deacription of Incident
+              At 13$0 MST a neteorologloal aid for the U.S. Weather Bureau waa searching
+           for a lost weather balloon with the aid of a theodolite when he sighted a solid
+           white, oblong object at a direction cf 157.2° and elevation of 53.3 . The size
+           of the object consisted of one minute of arc.
+              The object appeared to be ascending straight up, then levelled off and at
+           this point was Joined by a second object of exactly the same description. The
+           second object left the field of the theodolite twice but returned each time to
+           Join the original. They both disappeared sinultaneously at an angle of 20U.1°
+           at an elevation of 29.1°. At 201.1° the sky was covered by cirrus clouds at
+           approadiMtely 25,000 ft.
+             The objects remained in vision for five minutes. The observer stated that
+           the objects rose more rapids than any balloon he has aver seen and furthermore
+           moved against the prevailing westerly winds. There appeared to be no glimmer or
+           reflection from the sun from the objects.
+           II* Discussion of Incident
+              From the observers obvious «cperience in tracking balloons, it is concluded
+           that these objects could not have been balloons especially since they were seen
+           to move against the wind. There were aircraft in the area but the observer states
+           he was awsre of them and could not have confused them with the unknown objects.
+           Because of the maneuvers and the time of day, astronomical activity must be ruled
+           oat. ATIC has not been able to find an answer to this sighting.
+          III. Conclusion
+              Unkrtown.
+           T53-3695              58
+                            SECRET
+
+
+===== PAGE 63 =====
+{"chars": 795, "method": "ocr", "page": 63}
+
+WS a a i,
+
+SECRET
+
+Quam (Truk Island)                                    6 February 1953
+
+Ie Description of Incident
+
+At 1110 local time an Air Force officer in charge of the Weather Bureau
+Station on Truk sighted an unidentified bullet-shaped shiny object traveling
+an estimated 196 mph at an approximate altitude of 1,00 to 500 ft. three to four
+miles away. The ooject appeared to be "slightly larger than a C-l\7 aircraft"
+with no noticeable wings or tail sestion and gave a shiny appearance as if. of
+highly polished metal.
+
+II. Discussion of Incident
+A check with Guam flight service indicates that a C-7 was in the area at
+*ne time of sighting. The day was clear with a bright sur capable of distorting
+the normal features of  C-l7.
+III. Conclusion
+
+Probably aircraft.
+
+753-3695
+
+89
+SECRET
+
+
+===== PAGE 64 =====
+{"chars": 2501, "method": "embedded", "page": 64}
+
+*
+                                                                    SECRET
+                         Poaalla, Washington 6 February 19^3
+                         Z.  D»8cription of Incident
+                                A S-36 aircraft was in flight In th vicinity of Spokane, Washington« when
+                         on« round white omnidirectional light ' a sighted at 0913Z time. The light was
+                         st an altitude of spproxinately 7*000 ft. on a southsast course circling and ris-
+                         ing as It proceeded. It was visually observed for a period of three to five
+                         miimtes. The B-36 made 180° descending turn toward the light which was estimated
+                         to be moving st s speed of 1^0 to 200 knots. The aircraft was inbound to Spokane
+                         15 miles out and located over Rosslls, Washington.
+                         XI* Discussion of Ineldsnt
+                                mttmm,-,t,am„w   ■H.MWI    I  I II I     I II  ■»■  i i  i
+                                ATIÜ determined that a scheduled pibsll balloon released at 09OOZ from the
+                         U.fi, Weather Bureau Station st Fslrohild APR was in the immediate area of sighting.
+                         Ths sighting was from RossUs which is 12.5 nautical miles S.E. of Fairchild AFB
+                         and to pises s balloon In the area of the sighting winds would have to be out of
+                         the N.E. Winds aloft at 7*000 to 10,000 ft. were from 270° to 280° at 50 knots
+                         per hour. Thsrsfors, by computation. It would take approximately 15 minutes for
+                         the balloon to be osrrlsd to Rosalia by the existing winds. Since the unidentified
+                         object was sighted 13 adnuten after ths bslloon launch time, and the description
+                         (cllnbing, orbittlng, balloons carry white running lights) closely parallels the
+                         maneuvers of a bslloon, ATIC concludes that the object probably was the piball
+                         weather balloon. All local sir fields were checked by HcChord AFB and no siroraft
+                         were in ths area st ths time of observation otbei then the B-36.
+                        HI. Conclusion
+                                 Probably balloon.
+                          T53-3695 6o
+                                                                     SECRET
+
+
+===== PAGE 65 =====
+{"chars": 1782, "method": "embedded", "page": 65}
+
+SECRET
+              Okinawa                     7 February 19$3
+              I. Daacriptlon of Inddwit
+                At 2122 local time radar tracked an unidentified object for 1$ minutes and
+              alerted a local Interceptor squadron» An F-yii scrambled at 2123 hours« climbed
+              to 15/000 ft.» picked up nothing on airborne radar but at 211i$ did make vibual
+              contact with a bright orange colored object which seemed to change to red and
+              green at a special interval. Object uas seen by the pilot and the R.O. for
+              approximately 1$ minute« after which it disappeared behind a cloud at an asinuth
+              of 290 t  low en the hor-laon.
+              II. Discussion of Incident
+                The weather consisted of scattered stratus clouds. No information is avail*
+              able on atmospheric phenomena such as temperature inversions or moisture-laden
+              clouds which nould have given a spurious radar return. It was determined at the
+              base making the report that the F-9U had sighted the planet Venus- which is eoctrcroely
+              bright at this tine of year and which also is located at a 27$° asinuth from Okinawa
+              10° above the horison. It is probable that merely by chance ground radar received a
+              spurious plot on its scope and accordingly vectored the F-9U to a position «here
+              Venus was very apparent. No strict correlation between the electronics sighting
+              and visual contact can be made.
+             III. Conclusion
+                Probably Venus.
+                                                  T53-3695
+                               SECRET
+                                                               ">
+
+
+===== PAGE 66 =====
+{"chars": 1695, "method": "embedded", "page": 66}
+
+SECRET
+                            Barter Island» Alaska                                                « February 1953
+                            I«  Deeoription of Incident
+                                   TWo pilots from this station made a ground-Tisual observation of an uniden-
+                            tified aerial object coming In over their base In a falling leaf pattern from the
+                            west? Time of the observation was 0h5O local« It hovered« oonsleted of brilliant
+                            orange white lights seen for a period of eight ndnutes after which the object
+                            climbed eastward and disappeared. Throughout it gave off a noise similar to a
+                            helicopter's and was estimated toy the viewere to be the approximate size of a
+                            C-hl aircraft.
+                            n* DJecussion of Incident
+                                   imwiM ■i————■ mi —■■H.II    ■an      ■».
+                                   This report is on the brief eide and gives no information on air traffic at
+                            the time of sighting. It 1« possible, however* that the above-average sources may
+                            have observed a helicopter and became confused. Any evaluation will have to be
+                            based on additional information on helicopter traffic which ATIC has requested.
+                            III. Ooiaolueion
+                                   Insufficient data*
+                             T53-5695                                             62
+                                                                       SECRET
+
+
+===== PAGE 67 =====
+{"chars": 1416, "method": "embedded", "page": 67}
+
+SECRET
+                        Dobbin« Air Faroe Base« Georgia                     8  February 195?
+                        I*  Pesorlpti'on off Incident
+                             Uilltary personnel observed • red-yallow-whlte stationary objeot fron this
+                        base as well as Kndxvllle, Tannessee* at 21h5 BST which was observed for 13 nliw
+                        utes before slowly disappearing below the horlton* It appeared In the west and
+                        was brighter than re(l obstruction lights on the control tower at Dobbins*
+                        II. Dlaeusslon of Incident
+                             No trlangulatlon fro« the two observing points was made wfcloh would have been
+                        extronely helpful and should be atteapted In sightings cuoh as this. The descrip-
+                        tion and manner of disappearance strongly suggests astronomical sightings at
+                        Presquo Isle APB and MLtohol AFB In October and Deosnber of 1952*
+                        HI« Oonolualon
+                             Probably astrononleal (bright evening star}«
+                                                                63                         T53-3695
+                                                        SECRET
+                                                                                                                   • •*
+
+
+===== PAGE 68 =====
+{"chars": 2018, "method": "embedded", "page": 68}
+
+SECRET
+                     Tunis«  Libya                                       11 February 1953
+                     I«  Deaorlption of Incident
+                          An unidentified object waa observed by the crew of a C-119 aircraft while
+                     «nroute to Tripoli from Tunis. The object appeared very bright with a halo of
+                     diffused light surrounding it and was observed off the right wing of the air-
+                     craft flying at 7«000* on a 170° heading making I.A.S. of 170 knots» Length
+                     of observation varied from 3 to 53 minutes by assorted members of the orew some
+                     of whom stated that it appeared to ascend and then descend slowly*
+                     II. Kscuesion of Incident
+                          Four out of six of the crew stated that« in their opinion* the object was
+                     not a star» whereas the remaining observers would not oonmit themselves on a
+                     eonclusion. Since the sighting seemed to be aatrononioal in nature» Project
+                     Blue Book suhaltted it to its contract astronomer» standard operating procedure
+                     in such oases» It was determined that Venus was probably responsible for the
+                                                                          0
+                     observation in that it appears at an approximate SOU  azimuth in Libya on thla
+                     dat«» and under fair weather condition« would appear very bright« The fact that
+                     it remained almost stationary and was observed for a long period of tine would
+                     support this conclusion.
+                     III. Conclusion
+                          Probably Venus.
+                      T53-3695                              61,
+                                                      SECRET
+                                                                                                                      <•
+
+
+===== PAGE 69 =====
+{"chars": 1498, "method": "embedded", "page": 69}
+
+I
+                                                            SECRET
+                           Lake Charles AFb                                       12 February 1953
+                           I.  Deacrlption of Incident *
+                                A bluish-white object with a tail was observed by six Air Force personnel
+                           in a combined air-visual ,and ground-visual sighting. Time of sighting was for
+                           a vsry short period» a matter of seconds. The air erew involved estimated that
+                           the streaking object was on a level with them and 20 miles distant. The object
+                           «as compared to"* flaming rag thrown in the air". There was no sound whatsoever.
+                           II» Piscussion of Incident
+                                Weather oonditions at- the time of sighting (0600 CST) were CAVU and faci-
+                           litated easy spotting of meteors. This sighting was undoubtedly caused by the
+                                                   n        N
+                           passage of a meteor or  fireball  through the earths atmosphere which had unusual
+                           coloring*
+                          III* Conolusion
+                                Probably astrenomloal.
+                                                                     65                        T53-3695
+                                                            SECRET
+
+
+===== PAGE 70 =====
+{"chars": 2153, "method": "embedded", "page": 70}
+
+SECRET
+                                Ramier, Alabama 16 February 1953
+             ■•
+                                I«  DcBoripfclon of Incident
+                                         Two civilian men at this location sighted an unidentified object as 1630
+                                FST while watching the flight of a B-hl  aircraft cross their field of vision.
+                                A metallic looking object appearing round at one instant and flat the next was
+                                seen at an altitude of about two-thirds that of the B-li7 which ATIC learned was
+                                at 35,000 ft* Its maneuvers consisted of climbing, diving« and sharp angle turns
+                                to the left and right in and around a few scattered clouds and it appeared to be
+                                faster than the B-U7. Total time of sighting was for 20 minutes.
+                                II. Discussion of Incident
+                                         Although the Haxwell Radio Range Station reported no known aircraft other
+              I                 than the B-u7 in the area ATIC feels that, on the basis of the description sub-
+                                mitted by the two relatively Inexperienced observers» they probably sighted a
+                                fighter type aircraft, possibly an F-86, maneuvering in the air space below the
+                                B-U7* To support this conclusion is the fact that the clouds mentioned in the
+                                original report around which the object was sighted, were determined to be at
+                                20,000 ft. At this altitude a fighter aircraft would be hard to distinguish.
+                                The observers dM state, however, that the object appeared to have swept-baok
+                                wings.
+                              III. Coneluaion
+                                         Possibly aircraft.
+                                 T53-3695 66
+                                                                                          SECRET
+
+
+===== PAGE 71 =====
+{"chars": 3080, "method": "embedded", "page": 71}
+
+SECRET
+               Port Austin« Michigan          17 February 1953
+               I. Deaorlptlon of Incident
+                  Kt> S20U EST an unidentified aeriel object waa sighted visually by membora of
+               an AQtcW Squadron at Port Austin. Th@ object was eight to ten miles northwest of
+               their station at an estimated 100' above the horizon. It appeared t^ be larger
+               and brighter than a star and other than changing color» there «re.re no unusual
+               features visible* The objeot was moving south at a lew rate of tipeed and even-
+               tually faded out completely after becoming much less bright in irtensity« .This
+               objeot was viewed visually from 220k GST for five minutes until 2309 EST.
+                  At 2206 EST« the observes tracked the object on a search racial- cat. Position
+               of the objeot on the radar set was 300° moving in a 180° course a( 'ö knots. The
+               objeot was observed at 2208 EST for 1? minutes until 2225 EST. No height finding
+               equipment was available at point of observation« but the observers sstlmated the
+               altitude at 1000• from the radar returns* Weather conditions at tl ae of sighting
+               weret visibility and oeixing - unlimited« with moderate winds fron the west*
+               II. Diacussion of Incident
+                  The possibility of the reported object being a balloon was checked by the re-
+               porting officer* Tine nearest balloon Inunoh station is at Waukegan« ULchlgan«
+               which is liiO miles from Port Austin. A piball type balloon was released from Wau-
+               kegan at 0300Z* It is not likely that this balloon oaussd the sighting because
+               the object in question was sighted at 030l|7*
+                  Both the visual and eleotronlo sightings were made by the same ;ersonnel«
+               consisting of two officers and three almen. AH of these men have three or more
+               years experience in radar. A radar scope camera was installed« but. was not in
+               operation at the time of sighting.
+                  No known meteorological disturbances or activity existed at the time of sight-
+               ing« or ait any time that day*
+                  After checking with surrounding baaea and flight plan sources« it was found
+               that there were no known aircraft in tho general proa.
+                  The planet Venue is very low on tho northwest horizon at this tim» of year and
+               is easily seen. This fact might explain the visual sighting« but VenuM will not
+               show on a radar scope*
+                  Further analysis of this sighting awaits adiabatio weather charts Tor tho date
+               and area of sighting. Until this infornation is reoeived, this report Is carried
+               as unknown.
+               III. Conclusions
+                  Unknown
+                                      6-,'             T55-36y5
+                                  SECRET
+
+
+===== PAGE 72 =====
+{"chars": 1708, "method": "embedded", "page": 72}
+
+SECRET
+                     Fortville, Indiana                                   2j Fabruary 1953
+                     I«  Daacrlptlon of Incident
+                         At 211nZ time a civilian woman located 16 miles northeast of Indianapolis
+                    sighted an unknown flying object appearing as a circular shaped» white object
+                     traveling at a high altitude in a northeasterly direction and reported this
+                     occurrence to the 762nd AC&W Squadron« the nearest Air Force installation. Clear
+                    weather prevailed*
+                     II. Discuasion of Incident
+                          Project Blue Book ascertained that a piball weather balloon was scheduled
+                    for release at 21002 by the Indianapolis U.S. Department of Agriculture Weather
+                     Station and probably caused the submission of this report. The object was seen
+                    approximately 1$ minutes after the balloon's release from Indianapolis and was
+                     carried in a northeasterly direction by the Minds aloft which» for that time of
+                                      o                                                M
+                     day were fro» 2U0  to 260 . This would place the free-floating 30  rubber balloon
+                     almost over Fortville» the location of sighting.
+                    III. Conclusio»
+                         Was balloon.
+                     T53-3695                                68
+                                                     SECRET
+                                                                                                                     .
+
+
+===== PAGE 73 =====
+{"chars": 1087, "method": "embedded", "page": 73}
+
+SECRET
+              Dayton« Ohio                 2k February 1953
+              I«  Peacrlptlon of Incident
+                 A civilian woman eontaetad ATIC ooneaming a yellowish-vhite object which
+              •he had observed at 0U30 EST for two euccessive days for periods ranging from
+              3 to 30 minutes. The object was described as oblong shaped and very low on
+              the horison with the manner of disappearance in both sightings being caused by
+              its sinking below the horison. The object was seen at a due west position each
+              time.
+              11.    Diacussion of Incident
+                 The source, although of average intelligence« is not an experienced observer
+              and it is quite certain that she witnessed the setting of an astronomical body
+              such as Venus«
+             III. Conolvaion
+                 Probably astronomical.
+                                                                I
+         •
+                                    69           T53-3695
+                               SECRET
+
+
+===== PAGE 74 =====
+{"chars": 1574, "method": "embedded", "page": 74}
+
+>
+                                                                       SECRET
+                           QreAt Falls« Montana                                                 25 February 1955
+                           X«  Deaorlptlon of Incldwtt
+                                  H civlllsn man from this location sightad an unldantlfiad aerial objeo« on
+                           three separate OQoasions - 2$ Feb 33 et 00252» 5 liar 53 at 21152, and 6 liar 53
+                           at 1932Z.
+                           II. Plsomslon of Inoldent
+                                 Very little Information has been gathered on this sighting» even a basio
+                           description of the object's appearance has not been submitted to Project Blue
+                           Book.    Airthermoi «„ nothing is known of the obaervfir'a experience level«
+              1            corroborative witnesses» etc«   In the light of the scant information received»
+                           the report has to be carried as insufficimt data for evaluation until an AF
+                           Form 112 arrives*
+                           III. Conclusion
+                                  Insufficient data.
+                                                                                                                                                                I
+                             ,
+                            •i53-3695                                           70
+                                                                       SECRET
+
+
+===== PAGE 75 =====
+{"chars": 1553, "method": "embedded", "page": 75}
+
+SECRET
+                         Pepp«rr«ll Air r'orce Baao, Newfoundland             26 FSsbruary 1953
+                         I. Pegcrlptlon ef Inoid»nt
+                               An Air Fores major and enlisted personnel from this base observed a green
+                         object with a ts'ail of eparlcB traveling downward at a high rate of speed and
+                         disappearing behind mountains to the east. The size of the object was oonpared
+                         to that of the moon. Time of sighting was 1910 local tine and the existing
+                         weather conditions were generally good.
+                          II. Discussion of Incident
+                               Project Blue Bock's contract astronomer is of the opinion that the: object
+                          seen was an exoeptionally bright meteor» The else of the object has probably
+                          been overestimated« two factors sabstantiate the meteor conclusion in this
+                          case« 1) the fact that it followed a downward course and 2) that it gave off
+                          sparks* two characteristics of a coomon meteor. Mo length of observation was
+                          given but it probably was a matter of seconds*
+                          HI« Ocnclusicn
+                               Probably a meteor«
+                '♦
+                                                                    71                        T55-3695
+                                                           SECRET
+
+
+===== PAGE 76 =====
+{"chars": 2085, "method": "embedded", "page": 76}
+
+SECRET
+                       Klamath Falls« Oregon                                        26 Febnmrr 1953
+                       I.  Deecriptlon of Inoldant
+                             At S139 PST a round red stationary object was sighted by a CAA operator for
+                       10 minutes tlme# The objoot seemed to fade in end fad« oui intermittently and
+                       eventually faded out completely. The observer estimated tho unknown to be at a
+                           e                                                                 J
+                       270  «simuth from his position and at an altittle of 10,000 . Weather at the
+                       time of sighting eonsisted of aoattnred clouds et 2,000' with 10 miles visibility,
+          i        ^* Plsottaaion of Incident
+          { ■ Project Blue Book and its contract astronomer evaluat» this report as defin-
+                       itely caused by the astroimmioal body Venus, liuny simllai reports have been re-
+                       ceived by ATIC during February of an object in the western sky appearing to change
+                       color and fading intermittently, and almost all auch r epo .»ta have been found to
+                       be Venue*
+                         1
+                             It i« intareating to note in this end other similar observationa that oxpor-
+                       ienoed CAA and Air fbroe personnel have been understand«Uly confUsnd by this
+                       bright planet, comparatively isolated, low on the horisci and aometimee seen
+                       through a high haae layer causing a rapid change in colcr. Red is the color
+                       given moat often*
+                       III. Conelueion
+                             Waa Venus.
+                        T&5-3':95>                                    72
+                                                             SECRET
+                                                                                                                                        •■s
+
+
+===== PAGE 77 =====
+{"chars": 1797, "method": "embedded", "page": 77}
+
+SECRET
+                          Dover Air vbroe Bnae* Delawar*                     26 February 1953
+                          I.  Desorlption of Incident
+                              At 2130 EST a dull red colored light was observed low on the western horizon
+                         by several Military personnel* The light «as slowly moving fron west to northwest
+                         alternating color trrm yellow, sreen« red» and back to white* After being observed
+                         for «pproxlwr */«ly five «inute«» object disappeared below the horison»
+                          II« Diseussion of Incident
+                               Observers were« in the opinion of the preparing officer» reliable. At the
+                          time o£ sighting« weather was olear« visibility eight miles. r~9k'»  in area on
+                          other missions noticed nothing unusual. Due to the fact that the light was seen
+                         moving from west to northwest low on the horison and than to disappear over the
+                         borison and that the plahet Tenus can be seen in that direotion very plainly during
+                          thi" part of the year* it is quite certain that the light observed was Venus»
+                         ATIC's oontraet astronomer was eonsultsd and he concluded that the object observed
+                         was definitely Venae«
+                         III. OonolusioB
+                               Astronomic«! - Venus.
+                                                                 73                          T55-3695
+                                                          SECRET
+                                                                                                                   -••>
+
+
+===== PAGE 78 =====
+{"chars": 1202, "method": "embedded", "page": 78}
+
+SECRET
+                      Dover Air Fbrco Bma'a,  Delawar«                           SB February 1953
+                     I.  Deaorlptlon of Incident
+                           At 8121 BST four KP personnel obferved • single light of alternating oolwra
+                     with red pradoninant. The light was due west of Dover Air Force Baa« «nd about
+                     £0° above the horlson pursuing a very gradual ooursa fro« west to northwest.
+                     Mo aeuni« smoke or vapor was observed. It appeared to fade sway or disappear
+                     over the herisozu There «as no air traffic In the area.
+                     n. PLecusslon of Incident
+                           As in the oass of thj Dover sighting of 26 Psb 35$  it was the opinion of
+                      AT1AB-5 that Vsnus caused this sighting» ATIC's contract astronomer ma  contacted
+                     and definitely concluded that it «as Venus,
+                      HI. Conclusion
+                           Was yams«
+          l !
+          I
+                      V53-3695                                       7U
+                                                           SECRET
+                L
+
+
+===== PAGE 79 =====
+{"chars": 1180, "method": "embedded", "page": 79}
+
+•
+                                SECRET
+              ßlchfnond, Virginia         2C February 1953
+              I.  Deaoription of Ineidwit
+                 At 3800 EST an Air Poro« oolonal while trcraling at 60 aiph in his auto near
+              Riohnond observed a flash of aetal with a long narrow reotangular contrail travel-
+              ing from south to north. The object orossed the path of the auto fron, left to
+              right traveling at less than Jet speed« The object was observed approximately
+              15 minutes«
+              ZI. Dlseussion of Inoldent
+                 Observer visitsd a friend ^f his about 1 hour later« The friend initiated
+              the oonversatlon by stating that he had seen a bright eontrall in the sky about
+              1000 at a eonslderable distanoe« At 1800 EST on this date the sun was setting«
+              The sun« reflecting from contrail» made it easily visible«
+              III. Oonclusion
+                 Probably contrail of jet aircraft.
+                                    75            T53-3695
+                                SECRET
+                                                               \
+
+
+===== PAGE 80 =====
+{"chars": 1897, "method": "embedded", "page": 80}
+
+"^f^
+                                      SECRET                                   l
+                                      DISTRIBUTION LIST
+                                                             No. Cya
+                 D/l> HQ USAF, ATTNl AFOIN-2A2                  3
+                 Vashlngton 25> D* C.
+                 Commanding Oenwal, Strategic Air Command
+                 ATTNi Intelllgoaca Division« Offutt AFB
+                 Omaha« Habraaka
+                 Commanding Oanaral« Continental Air Conmand
+                 ATTHi Uraotor of Intalllgono«
+                 Mltohal Air Fore« Base, Maw York
+                 Commanding Oanaral« Air D«fanaa Command
+                 ATTNs DC3/I, Alt Air Fore» Basa
+                 Colorado Springa, Colorado
+                 Commanding General, Tactloal Air Command
+                 ATTNi Intelligence Division
+                 Langlagr Air Force Basa, Virginia
+                 Ceanandlng General, Air Training Command
+                 ATTNt Intalllgenoa Division
+                 Soott Air Force Base, Illinois
+                 Ceanandlng Qanaral
+                 Air Research Development Command, ARDC
+                 ATTNl RDOIR
+                 P.O. Box 1395
+                 Baltimore, Maryland
+                 Commanding Qanaral
+                 Wright Alt* Development Center
+                 ATTHi VCCW
+                 Wright-Patteraon Air Force Basa, Ohio
+                 Conmanding General
+                 Wright Air Development Cenver
+                 ATTNt WCOSI
+                 Wright-Patterson Air Force Base, Oluo
+                 Cociinanding General
+                 Wright Air Development Center
+                 ATTHi    WCOWP
+                 Wright-Fatterson Air Force Base, Ohio
+                                            77               T53-3695
+                                       SECRET
+         •
+
+
+===== PAGE 81 =====
+{"chars": 990, "method": "ocr", "page": 81}
+
+SECRET
+
+DISTRIBUTION LIST = Contd
+
+Commanding General
+
+Wright Air Development Center
+ATTN: WCLO
+
+Wright-Patterson Air Fores Pase,
+
+Commanding Generai.
+
+Wright Air Development Center
+ATTN: WCLBE
+
+Wright-Patterson Air Force Base,
+
+Commanding General
+
+Wright Air Development Center
+ATIN: WCLOO=2
+
+Wright-Patterson Air Force Base,
+
+Commanding General
+
+Wright Air Development Center
+ATTN: WCLID ©
+
+Wright-Patterson Air Force Base,
+
+jommanding General
+
+Wright Air Development Center
+ATTN: WCLFO
+
+Wright-Patterson Air Force Base,
+
+“omanding Genoral
+Wright Air Development Genter
+ATTN: WCLGO
+Wright-Patterson Air Force Base,
+
+Commanding CGenen‘al
+
+Wright Air Develerpment Center
+ATTN: WCLNA-5
+
+Wright-Patterson Air Force Base,
+
+Commanding General
+
+Wright Aic Development Center
+ATTN: WCLPP
+
+Wright-Patterson Air Force Base,
+
+Commanding General
+
+wright Air Development Center
+ATTN: WCLRO-1
+
+Wright-Patterson Air Force Base,
+
+153-3695
+
+Ohio
+
+Ohio
+
+Ohio
+
+Ohio
+
+Ohio
+
+Ohio
+
+Ohio
+
+Ohio
+
+Ohio
+
+78
+
+SECRET
+
+
+===== PAGE 82 =====
+{"chars": 1647, "method": "embedded", "page": 82}
+
+SECRET
+                            DISTRIBUTION LIST - Contd
+                                                 No. Cys
+             Conuaanding Oeneral                  1
+             \-Jght Air Development Center
+             ATTNi    WCLSO
+             Wright-Pstterson Air Force Base« Ohio
+             CoMunding General
+             Wright Air Development Center
+             ATTNl WCRO
+             Wright-Patterson Air Force Base, Ohio
+             Comanding General
+             Wright Air Development Center
+             AfTNs    V'CSDO
+             Wright«Patterson Air Force Base« Ohio
+             Commanding General
+             Wright Air Development Center
+             ATTNS wane
+             Wright-Patterson Air Force Base, Ohio
+             Coratanding General
+        5    Wright Air Development Center
+             ATSHt    WCSRP
+             Wright-Patterson Air Force Base, Ohio
+             Conmanding General
+             Wright Air Development Center
+             ATTNt VOTE
+             Wright-Patterson Air Force Base, Ohio
+             Coonandlng General
+             Wright Air Development Center
+             ATTNt WCUA
+             Wright-Patterson Air Force Base, Ohio
+             Assistant Chief of Staff, A-2
+             US Air Forces in Europe
+             APO 633, c/o Postmaetu*
+             New York, New York
+             Document Library
+             Loo  Alamos Scientific Laboratory
+             Box 1663
+             Loa Alamos, Hew Mexico
+                                   79           TS3-3695
+                               SECRET
+        CL_                                                  -     \
+
+
+===== PAGE 83 =====
+{"chars": 741, "method": "ocr", "page": 83}
+
+—— A
+
+—   eS
+
+SECRET
+
+DISTRIBUTION LIST ~ Contd
+
+Commending Guneral
+Headquarters MATS, Andrews AFB
+ATTN: Intelligence Division
+Washington 25, D. C.
+
+Commanding General
+
+Northeast Air Command        ,
+ATTNs Director of Intelligence
+APO 862, c/o Postmaster
+
+New York, New York
+
+Office of Secretary of Defense
+Office of Public Information
+Air Force Press Desk
+
+Pentagon Building
+
+Washington 25, De C.
+
+Commanding General
+
+Far East Air Forces
+
+ATIN: ATIL Office
+
+APO 925, c/o Postmaster
+San Francisco, California
+
+Office of Naval Research
+Code 421
+Washington 25, D. C.
+
+Hq, 500th Air Intelligence
+Service Squadron
+
+AFO 942, c/o Postmaster
+Seattle, Washington
+
+ATI
+ATTA
+ATIAE
+ATIAE-5
+
+Project Stork
+
+T53~3695
+
+80
+SECRET
+
+ee
+
+yee
+
+=)
+
+a ee en ee a
+
+
+===== PAGE 84 =====
+{"chars": 27, "method": "ocr", "page": 84}
+
+UNCLASSIFIETI
+
+UNCLASSIFIED

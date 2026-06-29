@@ -1,0 +1,60 @@
+{"created_utc": "2026-06-23T12:28:11.012698+00:00", "dpi": 400, "effective_psm": 1, "embedded_text_min_chars": 80, "engine": "ghostscript+tesseract", "lang": "eng", "orientation_detection": true, "pages": 2, "psm": 1, "source": "/Users/glennsorrentino/Documents/Personal/UAP/Department of War/Release 1/Release_1/DOW-UAP-D52-Email-Correspondance-NA-August-2024.pdf"}
+
+
+
+===== PAGE 1 =====
+{"chars": 477, "method": "embedded", "page": 1}
+
+(b) (6)
+     CLASSIFICATION: SECRET//NOFORN
+     Good morning,
+
+     Below is the requested additional information (include the year) to the
+     UNCLASS tear line.
+
+
+     Let us know if you have any questions, comments or concerns.
+
+
+     v/r
+     (b) (6)
+     PAROC Intel Data Analysis Technician
+
+     15 AF / DET 1
+
+    (b) (6)
+
+     //UNCLASSIFIED//
+
+     31 OCT 24, U.S Aircraft observed a possible UAP. It appeared to be oval/orb
+                                       1
+
+
+===== PAGE 2 =====
+{"chars": 497, "method": "embedded", "page": 2}
+
+shaped, likely moving at a low speed. The U.S Aircraft had eyes on the poss
+     UAP for over 2 hours.
+
+     //UNCLASSIFIED//
+
+    (b) (6)
+
+     CLASSIFICATION: SECRET//NOFORN
+
+     Hello,
+
+
+     Could you please approve the use of the year this incident took place?
+     Currently you have approved the month and the day, we request it  includes
+     the year.
+
+
+     Thank for your assistance.
+
+
+     V/r
+
+     (b) (6)
+     Information Disclosure Analyst
+                                       2

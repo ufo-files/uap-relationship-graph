@@ -1,0 +1,733 @@
+{"created_utc": "2026-06-23T14:58:54.739475+00:00", "dpi": 400, "effective_psm": 1, "embedded_text_min_chars": 80, "engine": "ghostscript+tesseract", "lang": "eng", "orientation_detection": true, "pages": 15, "psm": 1, "source": "/Users/glennsorrentino/Documents/Personal/UAP/Tridactyl/2018-02-06-PALEO-DNA-MARIA-COMPARAISON-ADN.pdf"}
+
+
+
+===== PAGE 1 =====
+{"chars": 4062, "method": "embedded", "page": 1}
+
+Tel 807 343-8616
+                                                                                                                                             Fax 807 343-8619
+                                                                                                                                     Toll Free 1-866-DNA-LABS
+                                                                                                                                  email paleodna@lakeheadu.ca
+
+
+                     SER066-17 Final Report
+
+                          File #: SER066-17
+
+                          Date:    26 January 2018
+                          Report of Expert
+                          Expert's Name:        Stephen Fratpietro, M.Sc., B.Ed.
+                          Title:                        Technical Manager, Paleo-DNA Laboratory
+
+                          I, the undersigned, as requested by Thierry Jamin, Instituto Inkari-Cusco, submit
+                          my professional opinion in reference to the following matter:  This examination of
+                          exhibits is connected to an ancient DNA analysis.
+
+                          ITEMS EXAMINED:
+                          The following items (see Table 1) were submitted for genetic analysis by Thierry
+                          Jamin, Instituto Inkari-Cusco. These samples were designated the following case
+                          and sample number by the Paleo-DNA Laboratory (PDL):
+
+                         PDL Case                  PDL Sample                   Sample Type                               Comments
+                        Designation                Designation
+                        SER066-17                          1                 Tissue and Bone                   Palm of right hand, Maria
+                        SER066-17                          2                 Tissue and Bone                    Finger of left foot, Maria
+                        SER066-17                          3                          Bone                            Coccyx 1, Maria
+                        SER066-17                          4                          Bone                            Left arm, Maria
+                        SER066-17                          5                          Bone                            Coccyx 2, Maria
+                        SER066-17                          6                          Bone                           Vertebrae, Maria
+                                    Table1. Samples submitted to the Paleo-DNA Laboratory.
+
+
+                          EXAMINATION REQUESTED:   Ancient DNA Analysis:  extraction of DNA,
+                          nuclear DNA feasibility test, and autosomal DNA profiling
+
+                          REQUIREMENTS REQUESTED:  Determine if any genetic information could be
+                          extracted  from  the  sample.    Unless  otherwise  discussed,  the  industry  standard
+                          extraction, purification and amplification protocols were to be used and attempted in this
+                          case.
+                                    The Paleo-DNA Laboratory agreed to work on the project in accordance with
+                          high scientific and professional standards, but as we had not been involved with the
+                          collection and storage of the sample, nor have we inspected the sample, nor have we
+                          assessed  the  condition  of  the  sample,  the  Paleo-DNA  Laboratory  did  not  promise
+                          success in achieving any desired result.   The  Paleo-DNA Laboratory undertook this
+                          project giving no warranty of fitness for a particular purpose, or any other warranty,
+
+                                       1294 Balmoral Street Suite 300 Thunder Bay Ontario Canada P7B 5Z5 www.ancientdna.com
+                                                                                                                                                 1
+
+
+===== PAGE 2 =====
+{"chars": 3160, "method": "embedded", "page": 2}
+
+Tel 807 343-8616
+                                                                                                         Fax 807 343-8619
+                                                                                                   Toll Free 1-866-DNA-LABS
+                                                                                                 email paleodna@lakeheadu.ca
+
+
+                SER066-17 Final Report
+
+                   expressed or implied, on the results of your project or the tests carried out pursuant to
+                   your project.  This includes no guarantee or warranty that the recommended protocol will
+                   achieve your desired results.
+
+                   EXAMINATION METHODOLOGY:
+
+                   All  aDNA samples are prepared pre-amplification in a room dedicated specifically to
+                   limited quantity DNA samples.  This environment is monitored quarterly for the presence
+                   of DNA.  This lab has restricted access and requires protective gear to be worn at all
+                   times:   tyvek  suit  covering  head  and  feet,  gloves,  hairnet,  facemask.   All  persons
+                   entering  this  lab  have  their  DNA  profiled  and  kept  for  future  comparison.
+
+                   Sample Preparation
+                   All  aDNA  samples  are  rinsed  in  ethanol  and  allowed  to  dry.  Each  specimen  is
+                   separately milled and dissolved into extraction buffer
+
+
+                   DNA Extraction
+                   TNE Extraction [Hansen et al, 1974]: Sample 1 to 5
+                   Extraction buffer is made fresh consisting of 2175uL TNE [10mM Tris, 100mM Sodium
+                   Chloride(NaCl),  1mM  Ethylenediaminetetraacetic  acid  disodium  salt  solution(EDTA)],
+                   300uL  20%  sodium  dodecyl  sulphate,  300uL  0.39M  Dithiothreitol,  30uL  20mg/mL
+                   Proteinase  K,  and  195uL  sterile  water.    This  buffer  is  incubated  with  the  sample
+                   overnight at 56°C for 500rpms agitation.  The resulting supernatant is transferred to the
+                   Silica Bead Purification.
+
+                   Total Demineralization [Loreille et al, 2007]: Sample 6
+                   Approximately 1-2g of sample powder is mixed with 9.0mL 0.5M EDTA, 150uL 20%
+                   Lauryl Sarcosinate, and 200uL Proteinase K (20mg/mL) in a sterile 15.0mL tube.  This
+                   reaction is incubated overnight at 56°C with gentle agitation.  The resulting supernatant
+                   is transferred to the Silica Bead Purification.
+
+                   Silica Bead Purification [modified Boom et al, 1990]:
+                   The supernatant is mixed with 18mL 4M Guanidinium Thiocyanate and 15uL silica.  This
+                   is  allowed  to  sit  for  4  hours  at  4°C  [to  allow  DNA  to  bind  to  silica]  after  which  the
+
+                             1294 Balmoral Street Suite 300 Thunder Bay Ontario Canada P7B 5Z5 www.ancientdna.com
+                                                                                                            2
+
+
+===== PAGE 3 =====
+{"chars": 2177, "method": "embedded", "page": 3}
+
+Tel 807 343-8616
+                                                                                                        Fax 807 343-8619
+                                                                                                  Toll Free 1-866-DNA-LABS
+                                                                                                email paleodna@lakeheadu.ca
+
+
+                SER066-17 Final Report
+
+                   supernatant  is  removed  and  the  remaining  silica  washed  with Working Wash  Buffer
+                   (10mM Tris-HCl, 50mM NaCl, 1mM EDTA, anhydrous ethanol) and 100% ethanol, then
+                   allowed to dry.  The silica is resuspended in 55uL sterile water and incubated for 1 hour
+                   at 56°C to allow DNA to unbind from silica and dissolve in the water.  The resulting
+                   supernatant is transferred to the next step.
+
+                   Size Exclusion Column Purification [Matheson et al, 2009]:
+                   The  purified  DNA   extract  is  further  filtered  using  Biorad  Micro  Bio-Spin  P30
+                   Chromatography Columns as per manufacturer’s instructions.
+
+                   **It is important to note that an extraction control (negative) is carried through this entire
+                   process as a quality control measure.**
+
+                   Quantification
+                   Nuclear  DNA  is  targeted  using  Life  Technologies  Quantifiler™  Human  DNA
+                   Quantification kit as per manufacturer’s instructions run on the Cepheid Smart Cycler® II.
+
+                   Fragment Analysis
+
+                   Autosomal  DNA  is  amplified  in  10uL  reactions  using  the  Promega  PowerPlex®  21
+                   System using manufacturer’s cycling parameters.  This PCR reaction batch includes a
+                   positive and negative PCR control.  Each locus is amplified at least twice for replication.
+
+
+                             1294 Balmoral Street Suite 300 Thunder Bay Ontario Canada P7B 5Z5 www.ancientdna.com
+                                                                                                           3
+
+
+===== PAGE 4 =====
+{"chars": 2153, "method": "embedded", "page": 4}
+
+Tel 807 343-8616
+                                                                                                Fax 807 343-8619
+                                                                                           Toll Free 1-866-DNA-LABS
+                                                                                        email paleodna@lakeheadu.ca
+
+
+              SER066-17 Final Report
+
+                  RESULTS:   The results below relate only to the items tested.
+
+
+                  The results for the nuclear DNA feasibility test were as follows:
+
+                                 Sample                            Nuclear DNA Feasibility
+                       Palm of right hand, Maria (1)                        positive
+                        Finger of left foot, Maria (2)                      positive
+                            Coccyx 1, Maria (3)                            negative
+                            Left arm, Maria (4)                            negative
+                            Coccyx 2, Maria (5)                            negative
+                           Vertebrae, Maria (6)                             positive
+
+                  A positive result indicates that there is sufficient nuclear DNA in the extract to
+                  proceed to further autosomal DNA testing.
+
+
+                  Autosomal Analysis
+
+                  Autosomal analysis was performed on the following samples from ‘Maria’: Palm
+                  of  right  hand  (1),  Finger  of  left  foot  (2),  vertebrae  (6).    Each  analysis  was
+                  performed in triplicate. Two  pieces  of  numerical  information  are  produced  for
+                  each DNA marker analyzed.  Since half of the biological mother’s and half of the
+                  biological father’s DNA are passed onto the child, one piece of information from
+                  each marker comes from each biological parent.
+
+
+                          1294 Balmoral Street Suite 300 Thunder Bay Ontario Canada P7B 5Z5 www.ancientdna.com
+                                                                                                   4
+
+
+===== PAGE 5 =====
+{"chars": 3349, "method": "ocr", "page": 5}
+
+CR                                                 Paleo-DNA                                                           Tel 807 343-8616
+= La               Ca            Laboratory                                                  Toll Free 1-866-DNA-LABS
+wy       UNIVERSITY       Centre for Analytical Services
+
+email paleodna@lakeheadu.ca
+
+SER066-17 Final Report
+
+DNA Markers         Palm of right      Finger of left foot (2)        Vertebrae (6)
+Analyzed            hand (1)
+
+AMEL                   X [Y]                      X [Y]                        X,Y
+D3S1358          15,16,17           15,16 [17]           14,15,16,17
+D1S1656           11,14             13,14,15             13,14,15
+D6S1043                   11            14,21.3 [11,18,19,20.3]         14,17,21.3
+D13S317           10,14             9,11,12             10,11,12
+Penta E                NR                    17                    15,17
+D16S539           11 [10,12]             10,11                10,11,12
+D18S51        13,14,17,18 [20]     14,17,18 [13,16]          17,18,20
+D2S1338                17,19                  17,19,20               19,20,23 [22]
+CSF1P0             NR             10,11,12               12
+Penta D                11                    NR                  10,14 [11]
+
+THO1                   7,9.3                    7 [9.3]                    7 [6,9.3]
+
+vWA           16 [18,19]        16 [14,15,17,19]           14,16
+D21S11                 29,32.2                    32.2                29,30,32.2 [31.2]
+D7S820                 10                     11                       11
+D5S818            11,12             7,11,12                11
+
+TPOX                  11                     11                      8,11
+D8S1179         10,14 [8,16]      10,14 [11,12,13, 16]        10,12,14
+D12S391       [16,18]19,20,21        16,19 [21]          16,19 [18,21]
+D19S433           14[13,15,21]             13,15,17             13,14,15 [15.2]
+
+FGA               24 ,25,26              21,25,26                  21,26
+
+Summary of results from three distinct analyses.
+present at one marker.
+
+The following conclusions were drawn from the data obtained:
+
+In some cases more than two alleles were
+
+Results from the three analyses of each sample were combined. Any
+and all major (high level) alleles are stated as such. Any and all minor (low level) alleles are
+denoted with ‘[ ]’. ‘NR’ means no results were obtained.
+
+There is evidence of DNA contamination.
+Palm of right hand (1) contains DNA from more than one individual.
+Finger of left foot (2) contains DNA from more than one individual.
+Vertebrae (6) contains DNA from more than one individual.
+
+The Amelogenin marker [AMEL] (the marker used for sex identification
+
+within this genotyping kit) shows that for each of the three samples tested,
+there is a major component of female DNA and a minor component of
+
+male DNA.
+
+e For each of the samples tested, there is a presence of, at least, one
+female individual and one male individual.
+e Finger of left foot (2) and Vertebrae (6) show evidence of sharing a
+
+common source of DNA.
+
+There is not sufficient data to include nor exclude Palm of right hand (1)
+having a common source of DNA to Finger of left foot (2) and Vertebrae (6)
+with any confidence.
+
+1294 Balmoral Street Suite 300 Thunder Bay Ontario Canada P7B 5Z5 www.ancientdna.com
+
+
+===== PAGE 6 =====
+{"chars": 1231, "method": "embedded", "page": 6}
+
+Tel 807 343-8616
+                                                                Fax 807 343-8619
+                                                            Toll Free 1-866-DNA-LABS
+                                                           email paleodna@lakeheadu.ca
+
+
+          SER066-17 Final Report
+
+            NOTES:
+            Controls were run at every step of the analysis and gave expected results.  The
+            above profiles do not match any staff member or laboratory user at the Paleo-
+            DNA Laboratory, past or present.  This analysis complies with the requirements
+            requested by the client.  Details of the experimental procedures and analysis of
+            this case are found in the case file of the Paleo-DNA laboratory, case number
+            SER066-17.  Your feedback is important to us!  Please fill out our customer
+            survey at http://lucas.lakeheadu.ca/customer-survey.
+
+
+            Technical Manager:                       Date: 06 Feb 2018
+                                 Stephen Fratpietro
+
+
+                  1294 Balmoral Street Suite 300 Thunder Bay Ontario Canada P7B 5Z5 www.ancientdna.com
+                                                                  6
+
+
+===== PAGE 7 =====
+{"chars": 6008, "method": "ocr", "page": 7}
+
+Applied
+Biosystems
+GeneMapper ID v3.2
+
+PDLPCR240-17
+
+Sample Name                                                                                                   Panel                                                                                                                       SQo                                                                                                  sQ
+240-3                                                  PowerPlex 21 v1.1
+| AMEL ||           D3S1358           |           D1S1656                             D6S1043                  |           D13S317                                    Penta E
+i                       1 05                       1 35                      ;                       1 65                      ;                       1 95                                             225                      ;                      255                      285                                             31 5                      345                                             375                                             405                      435                                             465
+3000+
+2000+
+1000+
+01                                     JU           A        nv _ hh                                                                                 A               ae                      A
+240-3                                                         | PowerPlex 21 v1.1                                                                                                          |
+|                    D16S539                    |                                  D18S51                                                                    D2S1338                                                          CSF1PO                                                              Penta D
+1S                       1 05                       1 35                      ;                       1 65                      ;                       1 95                                             225                      ;                      255                      285                                             31 5                      345                                             375                                             405                      435                                             465
+45004.                                                T           T           T           T           T                     T           T           T           T           T                     T           T           T
+1000-+-
+500+
+o LA                                  A                                                                                                         A
+10 12                                  14          18
+11
+240-3                                                         | PowerPlex 21. v1.1
+|                            THO1                            |                                            vWA                                            |                                           D21S11                                           |                          D7S820                                                                D5S818                                                                            TPOX
+1                      1 05                                            1 35                      1 65                      1 95                                            225                      255                      285                                            31 5                                            345                                            375                                            405                                            435                                            465
+1200+     T           T           T           T           T           T           T           T           T                     T           T           T           T           T                     T           T           T                     T                     T           T           T
+800+
+400+
+0          ] [      KL            7 a                  I    NN                     A                                Il                    A                                  A                                                                                               A
+               32.2
+240-3                                                                       | PowerPlex 21 v1.1                                                                                                                                      |
+|                               D8S1179                              |                                D12S391                               |                                   D19S433                                   |                                                                                                                  FGA
+75                       1 05                                             1 35                       1 65                       1 95                                             225                      255                      285                                             31 5                                             345                                             375                                             405                                             435                                             465
+720+
+480+
+240+
+ol       ma      ia               A                                           A                                               A
+a
+10014          19 | 21                             24
+20
+Tue Nov 07,2017 11:47AM, EST                                                                                                          Printed by: stephen                                                                                                                                 Page 1 of 1
+
+
+===== PAGE 8 =====
+{"chars": 4454, "method": "ocr", "page": 8}
+
+Applied
+Biosystems
+GeneMapper ID v3.2
+
+PDLPCR241-17
+
+Sample Name                                                                                            Panel                                                                                                               $Qo                                                                                            $Q
+241-3                                                  PowerPlex_21_ v1.1
+| AMEL ||                D3S1358                |                D1S1656                                        D6S1043                        |                D13S317               |
+75                            105             135                           165                           195                           225             255                           285                           315                           345
+3300+
+2200+
+oh A     Dili                JA             "                 \                 A           \                                        A                                    f\
+    9
+OL
+241-3                                                 PowerPlex 21 v1.1                                                                                            |
+|                                            D16S539                                           |                                                                     D18S51                                                                     |                                                                       D2S1338                                                                       |                                    CSF1PO
+75                            105                           135                           165                           195                           225                           255                           285                           315                           345
+1500+
+1000+
+500+
+o LA                                   A                                                     A                                                       a
+OL       10 11 12                     14    17   19 20                            17
+241-3                                                 | PowerPlex_21_v1.1                                                                                            |
+|                                      THO1                                     ||                                                          vWA                                                          |                                                          D21S11                                                                                             D7S820                                   |                        D5S$818
+75                            105             ;             135                           165                           195                           225             ;             255                           285                           315                           345
+3900+
+2600+
+1300-4         L     h
+oL                              m                   \  _ AA.                A                   NN                          A             J               A
+241-3                                                       —PowerPlex_21_v1.1                                                                                                      |
+|                                          D8S1179                                         |                                           D12$391                                          |                                               D19S433                                               |                                                                          FGA
+75                            105             135             165             195             225             255                           285             315             345
+1200+
+800+-
+400+      th                                          |
+o Lb.             I                I                        =         A          I   a                         —                                   a |                          A                                               nil
+10.       14                16    19 20/21)                         13.2 15                                 25
+4
+
+Fri Nov 17,2017 01:42PM, EST
+
+Printed by: stephen
+
+Page 1 of 1
+
+
+===== PAGE 9 =====
+{"chars": 4929, "method": "ocr", "page": 9}
+
+Applied
+Biosystems
+GeneMapper ID v3.2
+
+PDLPCR025-18
+
+Sample Name                                                                                                   Panel                                                                                                                       SQo                                                                                                  sQ
+25-3                                                   PowerPlex 21 v1.1
+| AMEL ||          D3S1358          |          D1S1656                           D6S1043                           D13S317          |                 Penta E
+1S                           ;                          1 05                          1 35                          1 65                          1 95                                                    225                          255                          285                                                    31 5                          ;                          345                          ;                          375                          405                          435
+1500-+-
+1000-+-
+500+
+0.                                     A             KL                                                                      NK       A
+25-3                                                          | PowerPlex 21 v1.1                                                   |                                                       |
+|                      D16S539                      |                                    D18S51                                                                         D2S1338                                                              CSF1PO                                                       Penta D
+1                           ;                          1 05                          1 35                          1 65                          1 95                                                    225                          255                          285                                                    31 5                          ;                          345                          375                          405                          435
+1800+
+1200+
+600+
+o LA                  A                                                                            A
+10   12                    13                                              19                                                                         11
+11                        14
+25-3                                                          | PowerPlex 21. v1.1                                                   |                                                       |
+|                              THO1                              |                                              vWA                                              |                                             D21S11                                             |                           D7S820                          |                                        D5S818                                                                         TPOX
+75                    105          135          165          195                   225          255          285                   315          345                   375                   405                   435
+1800+
+1200+
+600-+-      |
+ol»  [              ‘         a                      A                    \            A                      A           AN                                 NL
+                                      32.2
+25-3                                                          | PowerPlex 21 v1.1                                                   |                                                       |
+D8S1179                                |                                  D12S391                                                                       D19S433                                    |                                                                                                                       FGA
+1S                           ;                          1 05                          1 35                          1 65                          1 95                                                    225                          255                          285                                                    31 5                                                    345                          ;                          375                          405                          435
+900+
+600-+-
+300+
+0 La                                               Mi                                              _A                                                       a |
+  18 |                                                                       26
+19
+
+Wed Jan 24,2018 11:15AM, EST
+
+Printed by: sfratpietro
+
+Page 1 of 1
+
+
+===== PAGE 10 =====
+{"chars": 4328, "method": "ocr", "page": 10}
+
+Applied
+Biosystems                                                                         PDLPCR241-17
+GeneMapper ID v3.2
+Sample Name                                                                                            Panel                                                                                                               $Qo                                                                                            $Q
+241-4                                                  PowerPlex_21_ v1.1
+| AMEL ||          D3S1358          |          D1S1656                          D6S1043                          D13S317          |                Penta E
+75                 105                 135        165                 195                 225        255        285                 315                 345        375                 405                 435
+3600 |
+2400+
+1200+
+op LA   A  Na            i     aN      i         uel                          A        Un         A                           A
+  9]   213
+OL
+241-4                                                       _PowerPlex_21_v1.1                                                 |                                                     |
+D16S539                                                          D18S51                                                                         D2S1338                                                              CSF1PO                                                     Penta D
+7                 105                 135        165                 195                 225        255        285                 315                 345        375                 405                 435
+5700-+-
+38001
+19001
+ol A                           A                                                                                                                A
+OL        10   12     15              13     16 OL                                  17 (19                                   10
+6         11         16              14    17                                                                              11
+18
+241-4                                                       —PowerPlex_21_v1.1
+|                                THO1                                |                                             vWA                                             |                                            D21S11                                            |                          D7S820                                                                  D5S818                                                                    TPOX
+75                 105                 135        165                 195                 225        255        285                 315                 345        375                 405                 435
+5100 /
+3400+
+1700+
+oli        a.      LA                                NK      a                  A                            BIN                  A                aN              A                PAN                                                   s.
+   9)                                 32.2
+241-4                                                 _PowerPlex_21_v1.1                                            |                                                |
+D8S1179                                 |                                   D12S391                                                                         D19S433                                      |                                                                                                                         FGA
+7s                 105                 135        165                 195                 225        255        285                 315                 345        375                 405                 435
+2700+
+1800+
+900+
+0.   =A                                          A               1                       A                   WULAL           A
+io) (12) 14                 16) 1921                          13, 15) 17
+I
+A 13                                                         13.2
+Printed by: stephen                                                                                                                                    Page 1 of 1
+
+Fri Nov 17,2017 01:44PM, EST
+
+
+===== PAGE 11 =====
+{"chars": 5625, "method": "ocr", "page": 11}
+
+Applied
+Biosystems
+GeneMapper ID v3.2
+
+PDLPCR240-17
+
+Tue Nov 07,2017 11:49AM, EST
+
+Printed by: stephen
+
+Sample Name                                                                                                   Panel                                                                                                                       SQo                                                                                                  sQ
+240-4                                                  PowerPlex 21 v1.1
+| AMEL ||           D3S1358           |           D1S1656                             D6S1043                 |           D13S317                                    Penta E
+1S                                               1 05                                              1 35                       1 65                       1 95                                              225                                              255                                              285                       31 5                                              345                                              375                                              405                                              435                                              465
+4500+
+3000+
+1500-+-
+ol                                    A         a I wl                                  =      \         A            A»           A
+  203
+                                        21.3
+240-4                                                 | PowerPlex 21 v1.1                                                                                            |
+|                    D16S539                    |                                  D18S51                                                                    D2S1338                                                          CSF1PO                                                              Penta D
+1S                                               1 05                                              1 35                       1 65                       1 95                                              225                                              255                                              285                       31 5                                              345                                              375                                              405                                              435                                              465
+3600+
+2400+
+1200+
+lA                          A                                                                                A
+10                          14    17                                  17    20                                  11
+11                              17.2                                                                            12
+18
+240-4                                                 | PowerPlex 21 v1.1                                                                                            |
+|                           THO1                          |                                          vWA                                          |                                          D21S11                                         |                         D7S820                                                             D5S818                                                                         TPOX
+1S                                               1 05                                              1 35                       1 65                       1 95                                              225                                              255                                              285                       31 5                                              345                                              375                                              405                                              435                                              465
+4200+
+2800+
+1400+
+ol  mole  A      A              _—        A             =        A       NL      A        AN
+                                32.2
+240-4                                                                                           | PowerPlex_21_v1.1                                                                                  |                                                                                        |
+|                               D8S1179                               |                                 D12S391                                |                                    D19S433                                   |                                                                                                                     FGA
+1S                                               1 05                                              1 35                       1 65                       1 95                                              225                                              255                                              285                       31 5                                              345                                              375                                              405                                              435                                              465
+2400+
+1600-+-
+800+
+oli     i     I    I          A      I      I    I            A              I    I            A                A      AN
+BIS            16 19 2                        BIS                           a5)
+14 16
+Page 1 of 1
+
+
+===== PAGE 12 =====
+{"chars": 5906, "method": "ocr", "page": 12}
+
+Applied
+Biosystems
+GeneMapper ID v3.2
+
+PDLPCR025-18
+
+Sample Name                                                                                                   Panel                                                                                                                       SQo                                                                                                  sQ
+25-4                                                    PowerPlex 21 v1.1
+| AMEL ||               D3S1358               |               D1S1656                                       D6S1043                                       D13S317               |                        Penta E
+1S                          1 05                          1 35                                                   1 65                                                   1 95                                                   225                         255                         ;                         285                                                   31 5                         345                         ;                         375                                                   405                                                   435
+6900+
+4600-+-
+2300+
+ob       Ly ae                 |           A               hal                                   wit                  oN            A                   -                A
+   9/10                 213                        0
+25-4                                                         | PowerPlex 21 v1.1                                                   |                                                       |
+|                     D16S539                     |                                      D18S51                                                                            D2S1338                                                                CSF1PO                                                      Penta D
+1S                          1 05                          1 35                                                   1 65                                                   1 95                                                   225                         255                         ;                         285                                                   31 5                         345                         ;                         375                                                   405                                                   435
+6000}
+4000-+-
+2000+
+ol                                  A                                                      A                                                        A                                        A
+9 10    12                         12   14      17                                                     19                                                     12
+11                                    15      18                                                     20
+25-4                                                         | PowerPlex 21 v1.1                                                   |                                                       |
+|                           THO1                           |                                                vWA                                               |                                               D21S11                                              |                            D7S820                           |                                          D5S818                                                                       TPOX
+7S                         1 05                         1 35                                                 1 65                                                 1 95                                                 225                        255                        285                                                 31 5                        345                        375                                                 405                                                 435
+6600+
+4400+
+22004     |                                          |
+   9   32.2
+25-4                                                         | PowerPlex 21 v1.1                                                   |                                                       |
+|                                D8S1179                                |                                    D12S391                                                                           D19S433                                       |                                                                                                                          FGA
+1S                          1 05                          1 35                                                   1 65                                                   1 95                                                   225                         255                         ;                         285                                                   31 5                         345                         ;                         375                                                   405                                                   435
+3000+
+2000-+-
+ol                                   A                                     A                                          A                                aN
+10) 1213 | [21                                  B                                                  26
+14                                 20
+Wed Jan 24,2018 11:19AM, EST                                                                                                        Printed by: sfratpietro                                                                                                                               Page 1 of 1
+
+
+===== PAGE 13 =====
+{"chars": 4502, "method": "ocr", "page": 13}
+
+Applied
+
+Biosystems                                                                                                                  PDLPCRO17-18
+GeneMapper ID v3.2
+Sample Name                                                                                                   Panel                                                                                                                       SQo                                                                                                  sQ
+17-3                                                   PowerPlex 21 v1.1
+| AMEL ||            D3S1358            |            D1S1656                              D6S1043                              D13S317           |                     Penta E
+45         1S         105         135         165         195         225         255                 285                 315         345                 375         405                 435
+2100+
+1400+
+700+                                                                                                                                                                  |
+ol                      A   |    A                    |    i          A                   pal                A                     A                                   A                                      A
+17-3                                                          | PowerPlex 21 v1.1                                                   |                                                       |
+D16S539                    |                                 D18S51                                                                   D2S1338                                                         CSF1PO                                                    Penta D
+45         7S         105         135         165         195         225         255                 285                 315         345                 375         405                 435
+2400+
+1600+
+800+
+0                   A                                      A                                                         A
+OL                 11                                           17      20                                                  20                                                     12                                               10
+OL
+17-3                                                          | PowerPlex 21. v1.1                                                                                                          |
+THO1                                                                          vWA                                                                                    D21S11                                                                  D7S820                        |                                     D5S818                                                                      TPOX
+45         75                  105         135         165         195         225                 259                 285                 315         345                 375                 405                 435
+1500+
+1000-+-
+500+                         ]                                         |
+ 31.2
+32.2
+17-3                                                          | PowerPlex 21 v1.1                                                   |                                                       |
+D8S1179                              |                                D12S391                                                                   D19S433                                   |                                                                                                                   FGA
+45         1S         105         135         165         195         225         255                 285                 315         345                 375         405                 435
+1200+
+800+
+ol                 A        JN                          A                                                                                    A                                                                                                                          A
+10           1315
+14
+Fri Jan 19,2018 03:38PM, EST                                                                                                      Printed by: sfratpietro                                                                                                                          Page 1 of 1
+
+
+===== PAGE 14 =====
+{"chars": 4379, "method": "ocr", "page": 14}
+
+Applied
+Biosystems
+GeneMapper ID v3.2
+
+PDLPCR017-18
+
+Sample Name                                                                                                   Panel                                                                                                                       SQo                                                                                                  sQ
+17-4                                                   PowerPlex 21 v1.1
+| AMEL ||          D3S1358          |          D1S1656                          D6S1043                          D13S317          |                Penta E
+1S          105                    135          165          195                    225          255          285          315          345                    375          405          435
+1800+
+1200+
+600+                                                             |
+oF                                     J vl              AL                       |                                                     A                              A                 vi                         A
+17-4                                                          | PowerPlex 21 v1.1                                                   |                                                       |
+D16S539                      |                                     D18S51                                                                          D2S1338                                     |                          CSF1PO                                                      Penta D
+1S       105       135       165       195               225       255       285       315       345               375       405       435
+1200+
+800+
+400+
+o LA                                A                              ;                                                                   A
+10   12    15                     17    20                               19    22                               12                              10 11
+11                                      18                                                     23
+17-4                                                          | PowerPlex 21. v1.1                                                   |                                                       |
+|                            THO1                            ||                                          vWA                                          |                                          D21S11                                         |                         D7S820                                                             D5S818                                                                TPOX
+1S          105                    135                    165          195                    225          255                    285          315                    345                    375                    405                    435
+1200+
+800+
+-    [         L              in          iN
+ob                           y'\             a,                       A                          [              A                           A                                                   I   Kh
+[6\(7|                                              32.9
+17-4                                                                         | PowerPlex 21 v1.1                                                                 |                                                                     |
+|                                  D8S1179                                 |                                   D12S391                                                                         D19S433                                      |                                                                                                                        FGA
+7S       105       135       165       195               225       255               285       315               345               375               405               435
+1800+
+1200+
+600+
+ow   le     J        _A       ~ J\            _A                         _A
+1012) 14                    1619                                   1315                                 21
+13                                                                      14 15.2
+
+Fri Jan 19,2018 03:43PM, EST
+
+Printed by: sfratpietro
+
+Page 1 of 1
+
+
+===== PAGE 15 =====
+{"chars": 5547, "method": "ocr", "page": 15}
+
+Applied
+Biosystems
+GeneMapper ID v3.2
+
+PDLPCR025-18
+
+Wed Jan 24,2018 11:20AM, EST
+
+Printed by: sfratpietro
+
+Sample Name                                                                                                   Panel                                                                                                                       SQo                                                                                                  sQ
+25-5                                                   PowerPlex 21 v1.1
+| AMEL ||           D3S1358           |           D1S1656                            D6S1043                            D13S317                               Penta E
+1S                       1 05                                              1 35                                              1 65                       1 95                                              225                       ;                       255                                              285                                              31 5                       345                       ;                       375                                              405                                              435
+3600+
+2400+
+1200+                                                           hy
+               213
+25-5                                                          | PowerPlex 21 v1.1                                                                                                          |
+|                      D16S539                     |                                   D18S51                                                                       D2S1338                                                            CSF1PO                        |                                  Penta D
+1S                       1 05                                              1 35                                              1 65                       1 95                                              225                       ;                       255                                              285                                              31 5                       345                       ;                       375                                              405                                              435
+2400+
+1600+
+800+
+>                                 A                                                                                                                                          A
+10           15               12          17                                           17. 19        23                            7.3        12                                                    14
+11                            13        17.2                                                20
+18
+25-5                                                          | PowerPlex 21 v1.1                                                   |                                                       |
+|                            THO1                           |                                            vWA                                            |                                           D21S11                                           |                          D7S820                         |                                      D5S818                                                                            TPOX
+1S                       1 05                                              1 35                                              1 65                       1 95                                              225                       ;                       255                                              285                                              31 5                       345                       ;                       375                                              405                                              435
+4800+
+3200+
+1600+                                              j
+ol        ]                         A                     _                                 A                          \ _                    A                                   _A
+31.2
+25-5                                                                         | PowerPlex_21_ v1.1
+|                                D8S1179                               |                                 D12S391                                |                                    D19S433                                    |                                                                                                                    FGA
+7S                       1 05                                              1 35                                              1 65                       1 95                                              225                       255                                              285                                              31 5                       345                       375                                              405                                              435
+1000+
+ol      —     T     T              i       T    I       T              -                 T    CI             A                            I                                                                    A
+910) 12 14                     16 18) 21                               13,15                                              26
+19)                                          15.2
+Page 1 of 1

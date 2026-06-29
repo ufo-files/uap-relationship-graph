@@ -1,0 +1,73 @@
+{"created_utc": "2026-06-23T13:07:21.356374+00:00", "dpi": 400, "effective_psm": 1, "embedded_text_min_chars": 80, "engine": "ghostscript+tesseract", "lang": "eng", "orientation_detection": true, "pages": 7, "psm": 1, "source": "/Users/glennsorrentino/Documents/Personal/UAP/Department of War/Release 3/release_03_documents/DOW-UAP-D085_Transmission-of-CIA-Scientific-Advisory-Panel-Rept_1953.pdf"}
+
+
+
+===== PAGE 1 =====
+{"chars": 10, "method": "ocr", "page": 1}
+
+NND 823015
+
+
+===== PAGE 2 =====
+{"chars": 501, "method": "ocr", "page": 2}
+
+e
+
+ee      ee              :               :       :          )     :      Be           =   a    oe  oe   ae             :              i       طغا                 п         п    oe
+
+Q
+-
+cae
+
+Be
+
+ee          ee
+
+NAN ois 7] elcke
+
+ae
+
+my:
+
+oe
+
+ERA es Pr ae RENE ESOS SELON a STE SHAR BI PDE ERE HOR OAD EE DRED BN SE Ba Ma Bootes IS EN RIBS BEE A PR ET RS RR NE               zs                LES Risa bcp ho cee Aight RUS Cato cota cata                          fi         Rone oe ag rc rate aera nce
+
+
+===== PAGE 3 =====
+{"chars": 24, "method": "ocr", "page": 3}
+
+Baer oie ae rea acc waar
+
+
+===== PAGE 4 =====
+{"chars": 0, "method": "ocr", "page": 4}
+
+
+
+
+===== PAGE 5 =====
+{"chars": 0, "method": "ocr", "page": 5}
+
+
+
+
+===== PAGE 6 =====
+{"chars": 20, "method": "ocr", "page": 6}
+
+ED
+
+Ae
+
+oS
+
+ae
+ce
+
+:
+
+
+===== PAGE 7 =====
+{"chars": 0, "method": "ocr", "page": 7}
+
+

@@ -1,0 +1,8 @@
+{"created_utc": "2026-06-23T12:30:02.925702+00:00", "dpi": 400, "effective_psm": 1, "embedded_text_min_chars": 80, "engine": "ghostscript+tesseract", "lang": "eng", "orientation_detection": true, "pages": 1, "psm": 1, "source": "/Users/glennsorrentino/Documents/Personal/UAP/Department of War/Release 1/Release_1/FBI-Photo-B8.pdf"}
+
+
+
+===== PAGE 1 =====
+{"chars": 0, "method": "ocr", "page": 1}
+
+
