@@ -164,6 +164,90 @@ class BuildGraphParsingTests(unittest.TestCase):
         self.assertEqual(reviewed[0].name, "Senator Harry Reid")
         self.assertEqual(reviewed[0].entity_id, "politicians:senator-harry-reid")
 
+    def test_name_reclassifications_match_normalized_names(self) -> None:
+        mention = self.make_mention("UFO of GOD: The Extraordinary True Story of Chris Bledsoe", "people")
+        review = {
+            "nameReclassifications": {
+                "ufo of god: the extraordinary true story of chris bledsoe": "books",
+            },
+        }
+        reviewed = build_graph.apply_review_to_mentions([mention], review)
+        self.assertEqual(reviewed[0].category, "books")
+        self.assertEqual(reviewed[0].entity_id, "books:ufo-of-god-the-extraordinary-true-story-of-chris-bledsoe")
+
+    def test_merge_target_reclass_survives_display_alias(self) -> None:
+        mention = self.make_mention("Las Vegas", "people")
+        review = {
+            "nameReclassifications": {
+                "las vegas strip": "locations",
+            },
+            "aliases": {
+                "las vegas strip": "Las Vegas",
+            },
+            "nameMerges": {
+                "las vegas": {
+                    "sourceId": "people:las-vegas",
+                    "sourceName": "Las Vegas",
+                    "sourceCategory": "people",
+                    "targetId": "people:las-vegas-strip",
+                    "targetName": "Las Vegas Strip",
+                    "targetCategory": "people",
+                },
+            },
+        }
+        reviewed = build_graph.apply_review_to_mentions([mention], review)
+        self.assertEqual(reviewed[0].name, "Las Vegas")
+        self.assertEqual(reviewed[0].category, "locations")
+        self.assertEqual(reviewed[0].entity_id, "locations:las-vegas")
+
+    def test_manual_relationships_resolve_reviewed_endpoint_ids(self) -> None:
+        def entity(entity_id: str, name: str, category: str) -> build_graph.Entity:
+            return build_graph.Entity(
+                id=entity_id,
+                name=name,
+                canonical_name=build_graph.canonicalize(name, category),
+                category=category,
+                category_label=build_graph.label(category),
+            )
+
+        entities = [
+            entity("politicians:secretary-of-state-hillary-clinton", "Secretary of State Hillary Clinton", "politicians"),
+            entity("politicians:presidents-bill-clinton", "Presidents Bill Clinton", "politicians"),
+        ]
+        review = {
+            "aliases": {
+                "politicians:state-hillary-clinton": "Secretary of State Hillary Clinton",
+                "people:when-bill-clinton": "Presidents Bill Clinton",
+            },
+            "nameReclassifications": {
+                "presidents bill clinton": "politicians",
+            },
+            "nameMerges": {
+                "hillary clinton": {
+                    "sourceId": "people:hillary-clinton",
+                    "sourceName": "Hillary Clinton",
+                    "sourceCategory": "people",
+                    "targetId": "politicians:state-hillary-clinton",
+                    "targetName": "State Hillary Clinton",
+                    "targetCategory": "politicians",
+                },
+            },
+            "manualRelationships": {
+                "people:hillary-clinton--people:when-bill-clinton": {
+                    "sourceId": "people:hillary-clinton",
+                    "sourceName": "Hillary Clinton",
+                    "sourceCategory": "people",
+                    "targetId": "people:when-bill-clinton",
+                    "targetName": "Presidents Bill Clinton",
+                    "targetCategory": "politicians",
+                },
+            },
+        }
+        relationships = build_graph.apply_manual_relationships([], entities, build_graph.normalize_review(review))
+        self.assertEqual(len(relationships), 1)
+        self.assertEqual(relationships[0].source, "politicians:presidents-bill-clinton")
+        self.assertEqual(relationships[0].target, "politicians:secretary-of-state-hillary-clinton")
+
     def test_merge_cycles_prefer_reviewed_non_person_target(self) -> None:
         mention = self.make_mention("Top Secret Operation Paperclip")
         review = {

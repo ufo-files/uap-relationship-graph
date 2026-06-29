@@ -1343,11 +1343,12 @@ def resolve_review_merge_chain(
 
         next_name = clean_text(str(merge["targetName"]))
         next_category = merge.get("targetCategory") if merge.get("targetCategory") in CATEGORY_LABELS else current_category
+        next_category = reviewed_category_for_name(next_name, next_category, name_reclassifications)
         target_id = str(merge.get("targetId") or "")
         next_alias = review_alias_for(target_id, next_name, aliases_by_id, aliases_by_name)
         if next_alias:
             next_name = next_alias
-        next_category = reviewed_category_for_name(next_name, next_category, name_reclassifications)
+            next_category = reviewed_category_for_name(next_name, next_category, name_reclassifications)
         next_id = entity_key(canonicalize(next_name, next_category), next_category)
         next_state = (next_id, normalize_name(next_name), next_category)
         if next_state == state:
@@ -1367,6 +1368,56 @@ def resolve_review_merge_chain(
     return max(enumerate(candidates), key=lambda item: (*candidate_score(item[1]), item[0]))[1]
 
 
+def apply_review_identity(
+    entity_id: str,
+    name: str,
+    category: str,
+    reclassifications: dict[str, Any],
+    name_reclassifications: dict[str, Any],
+    aliases_by_id: dict[str, Any],
+    aliases_by_name: dict[str, Any],
+    merges: dict[str, Any],
+    name_merges: dict[str, Any],
+) -> tuple[str, str, str]:
+    current_id = entity_id
+    current_name = name
+    current_category = category
+
+    alias = review_alias_for(current_id, current_name, aliases_by_id, aliases_by_name)
+    if alias:
+        current_name = alias
+        current_id = entity_key(canonicalize(current_name, current_category), current_category)
+
+    merged_name, merged_category, merged_id = resolve_review_merge_chain(
+        current_id,
+        current_name,
+        current_category,
+        merges,
+        name_merges,
+        aliases_by_id,
+        aliases_by_name,
+        name_reclassifications,
+    )
+    current_name = merged_name
+    current_category = merged_category
+    current_id = merged_id
+
+    target_category = reclassifications.get(current_id) or name_reclassifications.get(normalize_name(current_name))
+    if target_category:
+        current_category = reviewed_category_for_name(current_name, target_category, name_reclassifications)
+        current_id = entity_key(canonicalize(current_name, current_category), current_category)
+
+    alias = review_alias_for(current_id, current_name, aliases_by_id, aliases_by_name)
+    if alias:
+        current_name = alias
+        target_category = name_reclassifications.get(normalize_name(current_name))
+        if target_category:
+            current_category = reviewed_category_for_name(current_name, target_category, name_reclassifications)
+        current_id = entity_key(canonicalize(current_name, current_category), current_category)
+
+    return current_name, current_category, current_id
+
+
 def apply_review_to_mentions(mentions: list[Mention], review: dict[str, Any]) -> list[Mention]:
     false_positives = review.get("falsePositives", {})
     false_ids = set(false_positives.keys())
@@ -1377,7 +1428,7 @@ def apply_review_to_mentions(mentions: list[Mention], review: dict[str, Any]) ->
     }
     omission_names = {normalize_name(name) for name in review.get("omissions", {}).keys()}
     reclassifications = review.get("reclassifications", {})
-    name_reclassifications = review.get("nameReclassifications", {})
+    name_reclassifications = {normalize_name(key): value for key, value in review.get("nameReclassifications", {}).items()}
     raw_aliases = review.get("aliases", {})
     aliases_by_id = {key: value for key, value in raw_aliases.items() if ":" in key}
     aliases_by_name = {normalize_name(key): value for key, value in raw_aliases.items() if ":" not in key}
@@ -1390,40 +1441,21 @@ def apply_review_to_mentions(mentions: list[Mention], review: dict[str, Any]) ->
         if mention.entity_id in false_ids or mention_name in false_names or mention_name in omission_names:
             continue
 
-        alias = review_alias_for(mention.entity_id, mention.name, aliases_by_id, aliases_by_name)
-        if alias:
-            mention.name = alias
-            mention.entity_id = entity_key(canonicalize(alias, mention.category), mention.category)
-            mention_name = normalize_name(mention.name)
-
-        merged_name, merged_category, merged_id = resolve_review_merge_chain(
+        reviewed_name, reviewed_category, reviewed_id = apply_review_identity(
             mention.entity_id,
             mention.name,
             mention.category,
-            merges,
-            name_merges,
+            reclassifications,
+            name_reclassifications,
             aliases_by_id,
             aliases_by_name,
-            name_reclassifications,
+            merges,
+            name_merges,
         )
-        if merged_id != mention.entity_id or merged_name != mention.name or merged_category != mention.category:
-            mention.name = merged_name
-            mention.category = merged_category
-            mention.category_label = label(merged_category)
-            mention.entity_id = merged_id
-            reviewed.append(mention)
-            continue
-
-        target_category = reclassifications.get(mention.entity_id) or name_reclassifications.get(mention_name)
-        if target_category:
-            target_category = reviewed_category_for_name(mention.name, target_category, name_reclassifications)
-            mention.category = target_category
-            mention.category_label = label(mention.category)
-            mention.entity_id = entity_key(canonicalize(mention.name, mention.category), mention.category)
-        alias = review_alias_for(mention.entity_id, mention.name, aliases_by_id, aliases_by_name)
-        if alias:
-            mention.name = alias
-            mention.entity_id = entity_key(canonicalize(alias, mention.category), mention.category)
+        mention.name = reviewed_name
+        mention.category = reviewed_category
+        mention.category_label = label(reviewed_category)
+        mention.entity_id = reviewed_id
         reviewed.append(mention)
     return reviewed
 
@@ -1554,7 +1586,13 @@ def apply_manual_relationships(relationships: list[Relationship], entities: list
     entities_by_name: dict[str, list[Entity]] = defaultdict(list)
     for entity in entities:
         entities_by_name[normalize_name(entity.name)].append(entity)
-    alias_targets = review.get("aliases") or {}
+    raw_aliases = review.get("aliases") or {}
+    aliases_by_id = {key: value for key, value in raw_aliases.items() if ":" in key}
+    aliases_by_name = {normalize_name(key): value for key, value in raw_aliases.items() if ":" not in key}
+    reclassifications = review.get("reclassifications", {})
+    name_reclassifications = {normalize_name(key): value for key, value in review.get("nameReclassifications", {}).items()}
+    merges = review.get("merges", {})
+    name_merges = {normalize_name(key): value for key, value in review.get("nameMerges", {}).items()}
     existing_ids = {relationship.id for relationship in relationships}
     existing_manual_pairs = {
         canonical_manual_relationship_key(relationship.source, relationship.target)
@@ -1566,8 +1604,30 @@ def apply_manual_relationships(relationships: list[Relationship], entities: list
     for key, item in sorted((review.get("manualRelationships") or {}).items()):
         if not isinstance(item, dict):
             continue
-        source = resolve_manual_entity(item, "source", entity_by_id, entities_by_name, alias_targets)
-        target = resolve_manual_entity(item, "target", entity_by_id, entities_by_name, alias_targets)
+        source = resolve_manual_entity(
+            item,
+            "source",
+            entity_by_id,
+            entities_by_name,
+            reclassifications,
+            name_reclassifications,
+            aliases_by_id,
+            aliases_by_name,
+            merges,
+            name_merges,
+        )
+        target = resolve_manual_entity(
+            item,
+            "target",
+            entity_by_id,
+            entities_by_name,
+            reclassifications,
+            name_reclassifications,
+            aliases_by_id,
+            aliases_by_name,
+            merges,
+            name_merges,
+        )
         if not source or not target or source.id == target.id:
             continue
         canonical_key = canonical_manual_relationship_key(source.id, target.id)
@@ -1603,25 +1663,44 @@ def resolve_manual_entity(
     side: str,
     entity_by_id: dict[str, Entity],
     entities_by_name: dict[str, list[Entity]],
-    alias_targets: dict[str, str],
+    reclassifications: dict[str, Any],
+    name_reclassifications: dict[str, Any],
+    aliases_by_id: dict[str, Any],
+    aliases_by_name: dict[str, Any],
+    merges: dict[str, Any],
+    name_merges: dict[str, Any],
 ) -> Entity | None:
     entity_id = item.get(f"{side}Id")
     if entity_id and entity_id in entity_by_id:
         return entity_by_id[entity_id]
-    names = [str(item.get(f"{side}Name") or "")]
-    if entity_id and alias_targets.get(entity_id):
-        names.append(str(alias_targets[entity_id]))
-    normalized_name = normalize_name(names[0])
-    if normalized_name and alias_targets.get(normalized_name):
-        names.append(str(alias_targets[normalized_name]))
+    raw_name = str(item.get(f"{side}Name") or "")
     category = item.get(f"{side}Category")
-    for name_value in names:
+
+    candidates: list[tuple[str, str | None, str | None]] = []
+    if entity_id or raw_name:
+        candidates.append((raw_name, category, str(entity_id or "")))
+        reviewed_name, reviewed_category, reviewed_id = apply_review_identity(
+            str(entity_id or entity_key(canonicalize(raw_name, str(category or "people")), str(category or "people"))),
+            raw_name,
+            str(category or "people"),
+            reclassifications,
+            name_reclassifications,
+            aliases_by_id,
+            aliases_by_name,
+            merges,
+            name_merges,
+        )
+        candidates.append((reviewed_name, reviewed_category, reviewed_id))
+
+    for name_value, candidate_category, candidate_id in candidates:
+        if candidate_id and candidate_id in entity_by_id:
+            return entity_by_id[candidate_id]
         name = normalize_name(name_value)
         if not name:
             continue
         matches = entities_by_name.get(name, [])
-        if category:
-            category_matches = [entity for entity in matches if entity.category == category]
+        if candidate_category:
+            category_matches = [entity for entity in matches if entity.category == candidate_category]
             if len(category_matches) == 1:
                 return category_matches[0]
         if len(matches) == 1:
