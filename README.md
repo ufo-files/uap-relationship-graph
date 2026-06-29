@@ -7,6 +7,8 @@ A static, browser-based relationship graph for exploring entities and connection
 
 Live site: https://ufo-files.github.io/relationship-graph/
 
+Repository: https://github.com/ufo-files/relationship-graph
+
 ## What It Does
 
 The app turns transcript-derived entities into an interactive graph. Categories form the outer structure, entities live inside those categories, and relationships are drawn from co-occurrence and corpus evidence.
@@ -122,5 +124,7 @@ Treat graph findings as leads. Click into nodes and read the transcript evidence
 ## Deployment
 
 The site is hosted with GitHub Pages from the `main` branch root.
+
+Live site: https://ufo-files.github.io/relationship-graph/
 
 Repository: https://github.com/ufo-files/relationship-graph
