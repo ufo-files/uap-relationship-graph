@@ -22,7 +22,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.UFO_FILES_WORKFLOW_TOKEN }}
           ref: ${{ github.ref_name }}
 
       - name: Set up Node
