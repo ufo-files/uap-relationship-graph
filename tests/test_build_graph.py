@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import re
 import tempfile
 import unittest
 from pathlib import Path
@@ -46,6 +47,443 @@ class BuildGraphParsingTests(unittest.TestCase):
             path.write_text(json.dumps({"segments": [{"start": 1.5, "end": 2.25, "text": "Segment text"}]}), encoding="utf-8")
             rows = build_graph.parse_json(path)
         self.assertEqual(rows, [{"start_ms": 1500, "end_ms": 2250, "text": "Segment text"}])
+
+    def test_signal_patterns_reject_numeric_table_fragments(self) -> None:
+        segment = build_graph.Segment(
+            id="s-1",
+            transcript_id="t-1",
+            transcript_title="Sample",
+            source_file="sample.txt",
+            start_ms=0,
+            end_ms=1000,
+            text="See pages 1, 2 and 22, 23. Revision 1.2.3.4 and value 131.882 are table artifacts. Noise was 000 Hz.",
+        )
+        mentions = build_graph.pattern_mentions(segment)
+        self.assertFalse([item for item in mentions if item["category"] in {"gps_coordinates", "ip_addresses", "radio_frequencies", "frequencies"}])
+
+    def test_signal_patterns_keep_contextual_coordinates_and_frequencies(self) -> None:
+        segment = build_graph.Segment(
+            id="s-1",
+            transcript_id="t-1",
+            transcript_title="Sample",
+            source_file="sample.txt",
+            start_ms=0,
+            end_ms=1000,
+            text="GPS coordinates 37.24, -115.81 were logged with VHF radio 131.882, IPv4 203.0.113.10, and a 300 GHz signal.",
+        )
+        mentions = build_graph.pattern_mentions(segment)
+        by_category = {(item["category"], item["name"]) for item in mentions}
+        self.assertIn(("gps_coordinates", "37.24, -115.81"), by_category)
+        self.assertIn(("radio_frequencies", "131.882"), by_category)
+        self.assertIn(("ip_addresses", "203.0.113.10"), by_category)
+        self.assertIn(("frequencies", "300 GHz"), by_category)
+
+    def test_signal_patterns_normalize_frequency_units(self) -> None:
+        segment = build_graph.Segment(
+            id="s-1",
+            transcript_id="t-1",
+            transcript_title="Sample",
+            source_file="sample.txt",
+            start_ms=0,
+            end_ms=1000,
+            text="Signals included 300 megahertz, 300MHz, 16-190kHz, 0.1 to 20 Gigahertz, and 4.76–5.66 terahertz.",
+        )
+        mentions = build_graph.pattern_mentions(segment)
+        names = {item["name"] for item in mentions if item["category"] == "frequencies"}
+        self.assertIn("300 MHz", names)
+        self.assertIn("16-190 kHz", names)
+        self.assertIn("0.1-20 GHz", names)
+        self.assertIn("4.76-5.66 THz", names)
+        self.assertNotIn("300 megahertz", names)
+        self.assertNotIn("300MHz", names)
+        self.assertNotIn("190 kHz", names)
+
+    def test_frequency_category_is_reserved_for_actual_values(self) -> None:
+        entities = json.loads(Path("data/entities.json").read_text(encoding="utf-8"))
+        value_re = re.compile(r"^\d{1,5}(?:\.\d{1,4})?(?:-\d{1,5}(?:\.\d{1,4})?)?\s(?:Hz|kHz|MHz|GHz|THz)$")
+        invalid_names = [entity["name"] for entity in entities if entity["category"] == "frequencies" and not value_re.match(entity["name"])]
+        self.assertEqual(invalid_names, [])
+
+    def test_generated_people_like_categories_do_not_contain_pentagon_or_universal_origin_leaks(self) -> None:
+        entities = json.loads(Path("data/entities.json").read_text(encoding="utf-8"))
+        people_like = {
+            "dangerous_people",
+            "experiencers",
+            "friendly_people",
+            "journalists",
+            "people",
+            "politicians",
+            "professors",
+            "whistleblowers",
+        }
+        leaks = [
+            (entity["category"], entity["name"])
+            for entity in entities
+            if entity["category"] in people_like
+            and ("pentagon" in entity["name"].lower() or "universal origin" in entity["name"].lower())
+        ]
+        self.assertEqual(leaks, [])
+
+    def test_signal_patterns_keep_only_actual_signals_in_signal_categories(self) -> None:
+        segment = build_graph.Segment(
+            id="s-1",
+            transcript_id="t-1",
+            transcript_title="Sample",
+            source_file="sample.txt",
+            start_ms=0,
+            end_ms=1000,
+            text="The report mentioned radio frequencies, radio frequency, guard frequency, ELF waves, ELF wave, UHF band, and extra low frequency.",
+        )
+        mentions = build_graph.pattern_mentions(segment)
+        radio_names = {item["name"] for item in mentions if item["category"] == "radio_frequencies"}
+        frequency_names = {item["name"] for item in mentions if item["category"] == "frequencies"}
+        key_term_names = {item["name"] for item in mentions if item["category"] == "key_terms"}
+        self.assertFalse(radio_names)
+        self.assertIn("radio frequency", key_term_names)
+        self.assertIn("guard frequency", key_term_names)
+        self.assertIn("ELF frequency", key_term_names)
+        self.assertIn("UHF frequency", key_term_names)
+        self.assertIn("extremely low frequency", key_term_names)
+        self.assertNotIn("ELF frequency", frequency_names)
+        self.assertNotIn("UHF frequency", frequency_names)
+        self.assertNotIn("extremely low frequency", frequency_names)
+        self.assertNotIn("ELF waves", frequency_names)
+
+    def test_person_mentions_reject_table_label_phrases(self) -> None:
+        segment = build_graph.Segment(
+            id="s-1",
+            transcript_id="t-1",
+            transcript_title="Sample",
+            source_file="sample.txt",
+            start_ms=0,
+            end_ms=1000,
+            text="The table columns read Date Location Witnesses Description and Location Time Number.",
+        )
+        mentions = build_graph.person_mentions(segment, set())
+        self.assertFalse([item for item in mentions if item["name"] in {"Date Location Witnesses Description", "Location Time Number"}])
+
+    def test_person_mentions_reclassify_named_reports_as_documents(self) -> None:
+        segment = build_graph.Segment(
+            id="s-1",
+            transcript_id="t-1",
+            transcript_title="Sample",
+            source_file="sample.txt",
+            start_ms=0,
+            end_ms=1000,
+            text="The Robertson Panel Report shaped the official response.",
+        )
+        mentions = build_graph.person_mentions(segment, set())
+        self.assertIn(("Robertson Panel Report", "document_names"), {(item["name"], item["category"]) for item in mentions})
+
+    def test_person_mentions_route_generic_aircraft_phrases_to_key_terms(self) -> None:
+        segment = build_graph.Segment(
+            id="s-1",
+            transcript_id="t-1",
+            transcript_title="Sample",
+            source_file="sample.txt",
+            start_ms=0,
+            end_ms=1000,
+            text="The table listed Aircraft Tail Number and Unidentified Aircraft.",
+        )
+        mentions = build_graph.person_mentions(segment, set())
+        by_name = {item["name"]: item["category"] for item in mentions}
+        self.assertEqual(by_name.get("Aircraft Tail Number"), "key_terms")
+        self.assertEqual(by_name.get("Unidentified Aircraft"), "key_terms")
+
+    def test_person_mentions_omit_hard_ocr_non_entities(self) -> None:
+        segment = build_graph.Segment(
+            id="s-1",
+            transcript_id="t-1",
+            transcript_title="Sample",
+            source_file="sample.txt",
+            start_ms=0,
+            end_ms=1000,
+            text="Aircraft Jl, Aircraft Tail Numbenta, Arizona Name, After J., and L. P. were OCR fragments.",
+        )
+        mentions = build_graph.person_mentions(segment, set())
+        names = {item["name"] for item in mentions}
+        self.assertFalse(names.intersection({"Aircraft Jl", "Aircraft Tail Numbenta", "Arizona Name", "After J.", "L. P."}))
+
+    def test_person_mentions_route_structured_field_phrases_to_key_terms(self) -> None:
+        segment = build_graph.Segment(
+            id="s-1",
+            transcript_id="t-1",
+            transcript_title="Sample",
+            source_file="sample.txt",
+            start_ms=0,
+            end_ms=1000,
+            text="Mission Impact, Date Written, First Name Unknown, and Number Per Cent appeared as table labels.",
+        )
+        mentions = build_graph.person_mentions(segment, set())
+        by_name = {item["name"]: item["category"] for item in mentions}
+        self.assertEqual(by_name.get("Mission Impact"), "key_terms")
+        self.assertEqual(by_name.get("Date Written"), "key_terms")
+        self.assertEqual(by_name.get("First Name Unknown"), "key_terms")
+        self.assertNotIn("Number Per Cent", by_name)
+
+    def test_person_mentions_keep_branded_aircraft_orgs_as_contractors(self) -> None:
+        segment = build_graph.Segment(
+            id="s-1",
+            transcript_id="t-1",
+            transcript_title="Sample",
+            source_file="sample.txt",
+            start_ms=0,
+            end_ms=1000,
+            text="Martin Aircraft and Boeing Aircraft Company were both named.",
+        )
+        mentions = build_graph.person_mentions(segment, set())
+        by_name = {item["name"]: item["category"] for item in mentions}
+        self.assertEqual(by_name.get("Martin Aircraft"), "contractors")
+        self.assertEqual(by_name.get("Boeing Aircraft Company"), "companies")
+
+    def test_person_mentions_do_not_make_command_posts_newsrooms(self) -> None:
+        segment = build_graph.Segment(
+            id="s-1",
+            transcript_id="t-1",
+            transcript_title="Sample",
+            source_file="sample.txt",
+            start_ms=0,
+            end_ms=1000,
+            text="The Missile Command Post forwarded the report.",
+        )
+        mentions = build_graph.person_mentions(segment, set())
+        self.assertEqual({item["name"]: item["category"] for item in mentions}.get("Missile Command Post"), "key_terms")
+
+    def test_person_mentions_route_generic_org_descriptors_out_of_people(self) -> None:
+        segment = build_graph.Segment(
+            id="s-1",
+            transcript_id="t-1",
+            transcript_title="Sample",
+            source_file="sample.txt",
+            start_ms=0,
+            end_ms=1000,
+            text="Air Staff, Mission Control, Advanced Systems, and Research Center were listed.",
+        )
+        mentions = build_graph.person_mentions(segment, set())
+        by_name = {item["name"]: item["category"] for item in mentions}
+        self.assertEqual(by_name.get("Air Staff"), "government_agencies")
+        self.assertEqual(by_name.get("Mission Control"), "government_agencies")
+        self.assertEqual(by_name.get("Advanced Systems"), "key_terms")
+        self.assertEqual(by_name.get("Research Center"), "research_groups")
+
+    def test_person_mentions_route_light_phenomena_ocr_variants_to_key_terms(self) -> None:
+        segment = build_graph.Segment(
+            id="s-1",
+            transcript_id="t-1",
+            transcript_title="Sample",
+            source_file="sample.txt",
+            start_ms=0,
+            end_ms=1000,
+            text="The table rows showed 3-Light Phenoa, Light Phenos, and H-Light Phenow.",
+        )
+        mentions = build_graph.person_mentions(segment, set())
+        by_name = {item["name"]: item["category"] for item in mentions}
+        names = {item["name"] for item in mentions}
+        self.assertEqual(by_name.get("Light Phenomena"), "key_terms")
+        self.assertNotIn("Light Phenoa", names)
+        self.assertNotIn("Light Phenos", names)
+        self.assertNotIn("Light Phenow", names)
+
+    def test_curated_galactic_federation_is_key_term_not_person(self) -> None:
+        dictionaries, _ = build_graph.build_dictionaries({})
+        self.assertIn("Galactic Federation", dictionaries["key_terms"])
+
+        mention = self.make_mention("Galactic Federation", "people")
+        review = {"nameReclassifications": {"galactic federation": "key_terms"}}
+        reviewed = build_graph.apply_review_to_mentions([mention], review)
+        self.assertEqual(reviewed[0].category, "key_terms")
+        self.assertEqual(reviewed[0].entity_id, "key_terms:galactic-federation")
+
+    def test_person_mentions_route_signal_tech_phrases_out_of_people(self) -> None:
+        segment = build_graph.Segment(
+            id="s-1",
+            transcript_id="t-1",
+            transcript_title="Sample",
+            source_file="sample.txt",
+            start_ms=0,
+            end_ms=1000,
+            text="Terahertz Electronics and Terahertz High Power Amplifier appeared in the table.",
+        )
+        mentions = build_graph.person_mentions(segment, set())
+        by_name = {item["name"]: item["category"] for item in mentions}
+        self.assertEqual(by_name.get("Terahertz Electronics"), "technology")
+        self.assertEqual(by_name.get("Terahertz High Power Amplifier"), "technology")
+
+    def test_person_mentions_route_non_signal_frequency_concepts_to_key_terms(self) -> None:
+        segment = build_graph.Segment(
+            id="s-1",
+            transcript_id="t-1",
+            transcript_title="Sample",
+            source_file="sample.txt",
+            start_ms=0,
+            end_ms=1000,
+            text="High Frequency Gravitational Waves and Radiofrequency Electromagnetic Fields were listed.",
+        )
+        mentions = build_graph.person_mentions(segment, set())
+        by_name = {item["name"]: item["category"] for item in mentions}
+        self.assertEqual(by_name.get("High Frequency Gravitational Waves"), "key_terms")
+        self.assertEqual(by_name.get("Radio Frequency Electromagnetic Fields"), "key_terms")
+
+    def test_person_mentions_route_bird_table_ocr_artifacts_to_key_terms(self) -> None:
+        segment = build_graph.Segment(
+            id="s-1",
+            transcript_id="t-1",
+            transcript_title="Sample",
+            source_file="sample.txt",
+            start_ms=0,
+            end_ms=1000,
+            text="Birds Ol, Bords Ol, and Birds Clololeeieelsee were OCR table rows.",
+        )
+        mentions = build_graph.person_mentions(segment, set())
+        by_name = {item["name"]: item["category"] for item in mentions}
+        names = {item["name"] for item in mentions}
+        self.assertEqual(by_name.get("Birds"), "key_terms")
+        self.assertNotIn("Birds Ol", names)
+        self.assertNotIn("Bords Ol", names)
+        self.assertNotIn("Birds Clololeeieelsee", names)
+
+    def test_person_mentions_route_pentagon_phrases_out_of_people(self) -> None:
+        segment = build_graph.Segment(
+            id="s-1",
+            transcript_id="t-1",
+            transcript_title="Sample",
+            source_file="sample.txt",
+            start_ms=0,
+            end_ms=1000,
+            text="Pentagon Washington, Pentagon Special Programs, and Vietnam War Pentagon Papers were listed.",
+        )
+        mentions = build_graph.person_mentions(segment, set())
+        by_name = {item["name"]: item["category"] for item in mentions}
+        names = {item["name"] for item in mentions}
+        self.assertEqual(by_name.get("Pentagon"), "government_agencies")
+        self.assertEqual(by_name.get("Pentagon Special Programs"), "key_terms")
+        self.assertEqual(by_name.get("Pentagon Papers"), "leaks")
+        self.assertNotIn("Pentagon Washington", names)
+
+    def test_person_mentions_route_universal_origin_species_out_of_people(self) -> None:
+        segment = build_graph.Segment(
+            id="s-1",
+            transcript_id="t-1",
+            transcript_title="Sample",
+            source_file="sample.txt",
+            start_ms=0,
+            end_ms=1000,
+            text="Procyonans Universal Origin and Zeta Reticulans Universal Origin appeared in the almanac.",
+        )
+        mentions = build_graph.person_mentions(segment, set())
+        by_name = {item["name"]: item["category"] for item in mentions}
+        self.assertEqual(by_name.get("Procyonans Universal Origin"), "alien_species")
+        self.assertEqual(by_name.get("Zeta Reticulans Universal Origin"), "alien_species")
+
+    def test_person_mentions_route_measurement_codebook_fields_to_key_terms(self) -> None:
+        segment = build_graph.Segment(
+            id="s-1",
+            transcript_id="t-1",
+            transcript_title="Sample",
+            source_file="sample.txt",
+            start_ms=0,
+            end_ms=1000,
+            text="Angular Velocity, Angular Velocity Mota, Angular Acceleration Motion, Appearance Bearing, and Disappearance Bearing were table fields.",
+        )
+        mentions = build_graph.person_mentions(segment, set())
+        by_name = {item["name"]: item["category"] for item in mentions}
+        names = {item["name"] for item in mentions}
+        self.assertEqual(by_name.get("Angular Velocity"), "key_terms")
+        self.assertEqual(by_name.get("Angular Acceleration"), "key_terms")
+        self.assertEqual(by_name.get("Appearance Bearing"), "key_terms")
+        self.assertEqual(by_name.get("Disappearance Bearing"), "key_terms")
+        self.assertNotIn("Angular Velocity Mota", names)
+        self.assertNotIn("Angular Acceleration Motion", names)
+
+    def test_person_mentions_keep_news_services_as_newsrooms(self) -> None:
+        segment = build_graph.Segment(
+            id="s-1",
+            transcript_id="t-1",
+            transcript_title="Sample",
+            source_file="sample.txt",
+            start_ms=0,
+            end_ms=1000,
+            text="The Pacific News Service published the item.",
+        )
+        mentions = build_graph.person_mentions(segment, set())
+        self.assertEqual({item["name"]: item["category"] for item in mentions}.get("Pacific News Service"), "newsrooms")
+
+    def test_person_mentions_keep_real_report_titles_as_documents(self) -> None:
+        segment = build_graph.Segment(
+            id="s-1",
+            transcript_id="t-1",
+            transcript_title="Sample",
+            source_file="sample.txt",
+            start_ms=0,
+            end_ms=1000,
+            text="The Condon Report and Air Intelligence Report were cited, but Report In was a bad heading.",
+        )
+        mentions = build_graph.person_mentions(segment, set())
+        by_name = {item["name"]: item["category"] for item in mentions}
+        self.assertEqual(by_name.get("Condon Report"), "document_names")
+        self.assertEqual(by_name.get("Air Intelligence Report"), "document_names")
+        self.assertEqual(by_name.get("Report In"), "key_terms")
+
+    def test_person_mentions_reject_enumerated_date_and_location_fragments(self) -> None:
+        segment = build_graph.Segment(
+            id="s-1",
+            transcript_id="t-1",
+            transcript_title="Sample",
+            source_file="sample.txt",
+            start_ms=0,
+            end_ms=1000,
+            text="A. Date Birth 8/5/30. Section A. Oct 11, 1989. P. M. Friday was noted.",
+        )
+        mentions = build_graph.person_mentions(segment, set())
+        names = {item["name"] for item in mentions}
+        self.assertNotIn("A. Date Birth", names)
+        self.assertNotIn("Section A. Oct", names)
+        self.assertNotIn("P. M. Friday", names)
+
+    def test_person_mentions_preserve_real_initial_surnames(self) -> None:
+        segment = build_graph.Segment(
+            id="s-1",
+            transcript_id="t-1",
+            transcript_title="Sample",
+            source_file="sample.txt",
+            start_ms=0,
+            end_ms=1000,
+            text="Sam D. Page was listed as a relative.",
+        )
+        mentions = build_graph.person_mentions(segment, set())
+        self.assertIn("Sam D. Page", {item["name"] for item in mentions})
+
+    def test_person_mentions_strip_observer_and_pilot_roles(self) -> None:
+        segment = build_graph.Segment(
+            id="s-1",
+            transcript_id="t-1",
+            transcript_title="Sample",
+            source_file="sample.txt",
+            start_ms=0,
+            end_ms=1000,
+            text="Observer John A. Potter and Pilot Joseph A. Walker both filed reports.",
+        )
+        mentions = build_graph.person_mentions(segment, set())
+        names = {item["name"] for item in mentions}
+        self.assertIn("John A. Potter", names)
+        self.assertIn("Joseph A. Walker", names)
+        self.assertNotIn("Observer John A. Potter", names)
+        self.assertNotIn("Pilot Joseph A. Walker", names)
+
+    def test_person_mentions_reclassify_month_context_phrases_as_dates(self) -> None:
+        segment = build_graph.Segment(
+            id="s-1",
+            transcript_id="t-1",
+            transcript_title="Sample",
+            source_file="sample.txt",
+            start_ms=0,
+            end_ms=1000,
+            text="On November the archive changed. Theresa May was also mentioned.",
+        )
+        mentions = build_graph.person_mentions(segment, set())
+        by_name = {item["name"]: item["category"] for item in mentions}
+        self.assertEqual(by_name.get("On November"), "dates_times")
+        self.assertEqual(by_name.get("Theresa May"), "people")
 
     def test_review_export_removes_runtime_source_path(self) -> None:
         review = {

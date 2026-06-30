@@ -418,6 +418,7 @@ DEFAULT_TERMS = {
         "Passport to Magonia",
         "The New Science of UFOs",
         "The Shadow of Time",
+        "A.D. After Disclosure",
     ],
     "locations": [
         "Nevada",
@@ -512,6 +513,7 @@ DEFAULT_TERMS = {
         "noetics",
         "remote viewing",
         "zero point energy",
+        "Galactic Federation",
     ],
     "theories": [
         "interdimensional hypothesis",
@@ -595,6 +597,22 @@ FREQ_RANGE_RE = re.compile(
     r"(?:Hz|kHz|MHz|GHz|THz|hertz|kilohertz|megahertz|gigahertz|terahertz)\b",
     re.I,
 )
+FREQUENCY_UNIT_ALIASES = {
+    "hz": "Hz",
+    "hertz": "Hz",
+    "khz": "kHz",
+    "kilohertz": "kHz",
+    "mhz": "MHz",
+    "megahertz": "MHz",
+    "ghz": "GHz",
+    "gigahertz": "GHz",
+    "thz": "THz",
+    "terahertz": "THz",
+}
+FREQUENCY_BAND_ALIASES = {
+    "extra low frequency": "extremely low frequency",
+}
+FREQUENCY_BAND_CODES = {"elf", "slf", "ulf", "vlf", "lf", "mf", "hf", "vhf", "uhf", "shf", "ehf"}
 FREQ_BAND_RE = re.compile(
     r"\b(?:(?:extremely|extra|very|ultra)\s+low\s+frequency|very\s+high\s+frequency|ultra\s+high\s+frequency|"
     r"(?:ELF|SLF|ULF|VLF|LF|MF|HF|VHF|UHF|SHF|EHF)\s+(?:frequency|frequencies|band|signal|wave|waves))\b",
@@ -602,11 +620,202 @@ FREQ_BAND_RE = re.compile(
 )
 RADIO_TERM_RE = re.compile(r"\b(?:radio frequenc(?:y|ies)|VHF radio|UHF radio|CB radio|guard frequency)\b", re.I)
 RADIO_RE = re.compile(r"\b(?:1[3-7]\d|4[0-9]\d|8[0-9]\d)\.\d{3,4}\b")
+GPS_CONTEXT_RE = re.compile(r"\b(?:gps|coordinates?|coord(?:inate)?s?|latitude|longitude|lat(?:itude)?|lon(?:gitude)?|geolocation|geo[- ]?located)\b", re.I)
+IP_CONTEXT_RE = re.compile(r"\b(?:ip\s+address|ipv4)\b", re.I)
+RADIO_CONTEXT_RE = re.compile(r"\b(?:radio|frequency|frequencies|mhz|vhf|uhf|channel|guard|comm(?:s|unication)?)\b", re.I)
+LIGHT_PHENOMENA_OCR_NAMES = {"light phenoa", "light phenom", "light phenon", "light phenos", "light phenow"}
+BIRD_TABLE_OCR_PREFIXES = {"bicds", "binds", "bird", "birds", "bords"}
+FREQUENCY_CONCEPT_ALIASES = {
+    "frequency affec": ("Frequency Affected", "key_terms"),
+    "frequency affected": ("Frequency Affected", "key_terms"),
+    "frequency ultraviolet frequency": ("Ultraviolet Frequency", "key_terms"),
+    "high frequency active auroral": ("High Frequency Active Auroral Research Program", "government_project_codenames"),
+    "high frequency gravitational wave": ("High Frequency Gravitational Waves", "key_terms"),
+    "high frequency gravitational waves": ("High Frequency Gravitational Waves", "key_terms"),
+    "radio frequency electromagnetic fields": ("Radio Frequency Electromagnetic Fields", "key_terms"),
+    "radiofrequency electromagnetic fields": ("Radio Frequency Electromagnetic Fields", "key_terms"),
+}
+FREQUENCY_KEY_TERM_NAMES = {
+    "charts showing frequency",
+    "effects frequency",
+    "frequency",
+    "frequency distribution",
+    "frequency following response",
+    "guard frequency",
+    "radio frequency",
+    "radio frequencies",
+    "twilight frequency",
+}
+FREQUENCY_TECHNOLOGY_WORDS = {
+    "agile",
+    "digitally",
+    "enabled",
+    "electronic",
+    "electronics",
+    "gap",
+    "integrated",
+    "semiconductor",
+    "sources",
+    "synthesized",
+    "technology",
+    "vacuum",
+    "wide",
+}
+FREQUENCY_SIGNAL_WORDS = {
+    "electric",
+    "electromagnetic",
+    "field",
+    "fields",
+    "gravitational",
+    "infrared",
+    "radio",
+    "super",
+    "ultraviolet",
+    "voice",
+    "wave",
+    "waves",
+}
+SIGNAL_UNIT_WORDS = {
+    "hz",
+    "hertz",
+    "khz",
+    "kilohertz",
+    "mhz",
+    "megahertz",
+    "ghz",
+    "gigahertz",
+    "thz",
+    "terahertz",
+}
+SIGNAL_TECH_WORDS = {
+    "amplifier",
+    "band",
+    "bands",
+    "detector",
+    "device",
+    "electronics",
+    "focal",
+    "frequencies",
+    "frequency",
+    "imaging",
+    "radar",
+    "receiver",
+    "signal",
+    "signals",
+    "transistor",
+    "wave",
+    "waves",
+}
+PENTAGON_DOCUMENT_PHRASE_WORDS = {
+    "allies",
+    "covert",
+    "former",
+    "obtain",
+    "official",
+    "plans",
+    "releases",
+    "reveals",
+    "told",
+    "vietnam",
+}
+PENTAGON_KEY_TERM_PHRASES = {
+    "pentagon monitor": "Pentagon Monitor",
+    "pentagon operational test": "Pentagon Operational Test",
+    "pentagon records group": "Pentagon Records Group",
+    "pentagon special access program": "Pentagon Special Access Program",
+    "pentagon special programs": "Pentagon Special Programs",
+}
+PENTAGON_ORG_PHRASES = {
+    "pentagon information office": "Pentagon Information Office",
+    "pentagon national military": "National Military Command Center",
+}
+UNIVERSAL_ORIGIN_NON_SPECIES_PREFIXES = {
+    "almanac",
+    "camera",
+    "digital",
+}
+MEASUREMENT_FIELD_NAMES = {
+    "angular acceleration": "Angular Acceleration",
+    "angular velocity": "Angular Velocity",
+    "appearance bearing": "Appearance Bearing",
+    "color group": "Color Group",
+    "disappearance bearing": "Disappearance Bearing",
+    "final elevation": "Final Elevation",
+    "initial bearing": "Initial Bearing",
+    "initial elevation": "Initial Elevation",
+    "light brightness": "Light Brightness",
+    "light color": "Light Color",
+    "object color": "Object Color",
+    "orientation": "Orientation",
+    "shape description": "Shape Description",
+    "sound": "Sound",
+    "speed": "Speed",
+}
 DATE_RE = re.compile(
     r"\b(?:\d{1,2}/\d{1,2}/\d{2,4}|\d{4}-\d{2}-\d{2}|"
     r"(?:Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|Jul(?:y)?|Aug(?:ust)?|"
     r"Sep(?:t(?:ember)?)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?)\.?\s+\d{1,2},?\s+\d{2,4}|"
     r"\d{1,2}:\d{2}(?:\s?[ap]\.?m\.?)?)\b",
+    re.I,
+)
+MONTH_OR_WEEKDAY_WORDS = {
+    "jan",
+    "january",
+    "feb",
+    "february",
+    "mar",
+    "march",
+    "apr",
+    "april",
+    "may",
+    "jun",
+    "june",
+    "jul",
+    "july",
+    "aug",
+    "august",
+    "sep",
+    "sept",
+    "september",
+    "oct",
+    "october",
+    "nov",
+    "november",
+    "dec",
+    "december",
+    "monday",
+    "tuesday",
+    "wednesday",
+    "thursday",
+    "friday",
+    "saturday",
+    "sunday",
+}
+DATE_CONTEXT_PREFIXES = {
+    "about",
+    "accepted",
+    "accessed",
+    "after",
+    "around",
+    "before",
+    "between",
+    "by",
+    "during",
+    "early",
+    "effective",
+    "established",
+    "from",
+    "in",
+    "late",
+    "on",
+    "published",
+    "received",
+    "released",
+    "since",
+    "throughout",
+}
+TIME_ZONE_RE = re.compile(
+    r"\b(?:Greenwich|Mountain|Pacific|Central|Eastern|Zulu)(?:\s+[A-Z]\.){0,2}\s+(?:Standard\s+)?Time\b",
     re.I,
 )
 BLOOD_RE = re.compile(r"\b(?:A|B|AB|O)[+-]\b")
@@ -628,10 +837,18 @@ GOVERNMENT_ORG_NAME_RE = re.compile(
     r"Forest\s+Service|Geological\s+Service|Health\s+Service|Selective\s+Service|Strategic\s+Services|Technical\s+Services)\b",
     re.I,
 )
-COMPANY_ORG_NAME_RE = re.compile(r"\b(?:Corporation|Company|Companies|Inc\.?|LLC|Ltd\.?|Limited|Aerospace|Aircraft|Technologies|Systems)\b", re.I)
+COMPANY_ORG_NAME_RE = re.compile(r"\b(?:Corporation|Company|Companies|Co\.?|Inc\.?|LLC|Ltd\.?|Limited)\b", re.I)
+COMPANY_BRAND_RE = re.compile(
+    r"\b(?:Avro|Battelle|Bell|Boeing|Convair|Douglas|Fairchild|General\s+Dynamics|Grumman|Hughes|Lockheed|Martin|McDonnell|Northrop|Raytheon|Vought)\b",
+    re.I,
+)
+GENERIC_AIRCRAFT_OR_TECH_RE = re.compile(r"\b(?:Aerospace|Aircraft|Aeronautics|Systems|Technologies)\b", re.I)
 GOVERNMENT_ROLE_GROUP_RE = re.compile(r"\b(?:Officers|Officials|Agents|Postal\s+Service|Secret\s+Service)\b", re.I)
 RESEARCH_ROLE_GROUP_RE = re.compile(r"\b(?:Scientists|Researchers|Technicians|Engineers)\b", re.I)
-GENERAL_ORG_NAME_RE = re.compile(r"\b(?:Service|Services|Division|Center|Centre|Staff)\b", re.I)
+DOCUMENT_NAME_RE = re.compile(r"\b(?:Act|Award|Form|Medal|Memo|Memorandum|Report|Reports)\b", re.I)
+NEWSROOM_BLOCK_RE = re.compile(r"\b(?:Command\s+Post|Post\s+Office|Network\s+Command|Network\s+Systems)\b", re.I)
+GENERIC_ORG_DESCRIPTOR_RE = re.compile(r"\b(?:Center|Centre|Command|Control|Division|Service|Services|Staff|Systems)\b", re.I)
+SYSTEMS_TERM_RE = re.compile(r"\b(?:Systems|System)\b", re.I)
 NON_PERSON_TOP_CATEGORIES = {
     "companies",
     "contractors",
@@ -735,6 +952,7 @@ NON_ENTITY_LABEL_NAMES = {
     "precoord effectiveness",
     "precoord time",
     "primary sensor",
+    "radar tests conrad okay",
     "request number",
     "sensors available",
     "supported operation",
@@ -760,6 +978,8 @@ STRUCTURED_KEY_TERM_NAMES = {
     "country tasked",
     "chaff designator",
     "et al",
+    "first coordinate",
+    "first name unknown",
     "first seen location",
     "first seen radius",
     "flare designator",
@@ -771,9 +991,24 @@ STRUCTURED_KEY_TERM_NAMES = {
     "kinetic depth accuracy",
     "kinetic trajectory",
     "kinetic trajectory accuracy",
+    "last accuracy",
+    "last coordinate",
+    "last seen radius",
+    "enemy aircraft",
+    "enemy aircraft airspeed",
+    "enemy aircraft altitude",
+    "enemy aircraft heading",
+    "enemy aircraft location",
+    "enemy aircraft nationality",
+    "enemy aircraft type",
+    "fiscal year",
+    "fiscal years",
+    "flying saucer type aircraft",
     "radar software load",
     "radar name",
     "radar warning receiver",
+    "receiver aircraft",
+    "receiver aircraft type",
     "report type",
     "short title",
     "software load",
@@ -783,38 +1018,127 @@ STRUCTURED_KEY_TERM_NAMES = {
     "towed decoy name",
     "towed decoy software load",
     "trajectory",
+    "unidentified aircraft",
+}
+
+FIELD_LABEL_WORDS = {
+    "accuracy",
+    "airspeed",
+    "altitude",
+    "aircraft",
+    "airspace",
+    "caveat",
+    "caveats",
+    "command",
+    "commands",
+    "contact",
+    "coordinate",
+    "coordinates",
+    "data",
+    "date",
+    "description",
+    "designator",
+    "event",
+    "features",
+    "figure",
+    "fiscal",
+    "first",
+    "full",
+    "birth",
+    "case",
+    "incident",
+    "incidents",
+    "initial",
+    "last",
+    "latitude",
+    "load",
+    "location",
+    "locations",
+    "longitude",
+    "mission",
+    "name",
+    "number",
+    "observer",
+    "observers",
+    "order",
+    "other",
+    "page",
+    "radius",
+    "rating",
+    "report",
+    "section",
+    "seen",
+    "short",
+    "software",
+    "station",
+    "submit",
+    "system",
+    "table",
+    "task",
+    "tasking",
+    "time",
+    "title",
+    "trajectory",
+    "type",
+    "witness",
+    "witnesses",
+    "year",
+    "years",
 }
 
 STRUCTURED_KEY_TERM_SUFFIXES = {
     "accuracy",
     "caveats",
     "characteristics",
+    "changed",
+    "date",
     "depth",
     "designator",
+    "impact",
     "info",
     "information",
     "load",
+    "mission",
     "name",
     "order",
+    "page",
     "radius",
+    "section",
+    "time",
     "trajectory",
+    "type",
+    "written",
 }
 
 STRUCTURED_KEY_TERM_PREFIXES = {
     "anomalous",
     "anamolous",
     "associated",
+    "bulk",
     "chaff",
+    "code",
     "country",
+    "current",
+    "date",
+    "description",
+    "due",
     "first",
     "flare",
     "gun",
     "kinetic",
+    "mission",
+    "name",
+    "number",
+    "official",
+    "original",
     "radar",
+    "senate",
     "software",
     "submit",
     "tasking",
+    "time",
     "towed",
+    "white",
 }
 
 NON_ENTITY_LABEL_SUFFIXES = {
@@ -1378,9 +1702,9 @@ def pattern_mentions(segment: Segment) -> list[dict[str, Any]]:
         ("gps_coordinates", GPS_RE, "regex:gps", 0.98, "Matched latitude/longitude coordinate pattern"),
         ("frequencies", FREQ_RE, "regex:frequency", 0.96, "Matched frequency with unit"),
         ("frequencies", FREQ_RANGE_RE, "regex:frequency_range", 0.96, "Matched frequency range with unit"),
-        ("frequencies", FREQ_BAND_RE, "regex:frequency_band", 0.88, "Matched named frequency band"),
+        ("key_terms", FREQ_BAND_RE, "regex:frequency_band", 0.88, "Matched named frequency band term"),
         ("radio_frequencies", RADIO_RE, "regex:radio_frequency", 0.92, "Matched radio-style decimal frequency"),
-        ("radio_frequencies", RADIO_TERM_RE, "regex:radio_frequency_term", 0.84, "Matched radio frequency phrase"),
+        ("key_terms", RADIO_TERM_RE, "regex:radio_frequency_term", 0.84, "Matched generic radio frequency phrase"),
         ("dates_times", DATE_RE, "regex:datetime", 0.86, "Matched date/time expression"),
         ("blood_types", BLOOD_RE, "regex:blood_type", 0.92, "Matched blood type notation"),
         ("patents", PATENT_RE, "regex:patent", 0.72, "Matched patent phrase"),
@@ -1389,6 +1713,14 @@ def pattern_mentions(segment: Segment) -> list[dict[str, Any]]:
             name = match.group(0).strip()
             if category == "websites" and is_ocr_fragment_domain(name):
                 continue
+            if not is_valid_pattern_mention(category, detector, name, text, match.start(), match.end()):
+                continue
+            if detector in {"regex:frequency", "regex:frequency_range"}:
+                name = normalize_frequency_name(name)
+            elif detector == "regex:frequency_band":
+                name = normalize_frequency_band_name(name)
+            elif detector == "regex:radio_frequency_term":
+                name = normalize_radio_frequency_name(name)
             items.append(
                 {
                     "name": name,
@@ -1401,6 +1733,36 @@ def pattern_mentions(segment: Segment) -> list[dict[str, Any]]:
             )
 
     return items
+
+
+def is_valid_pattern_mention(category: str, detector: str, name: str, text: str, start: int, end: int) -> bool:
+    context = text[max(0, start - 90) : min(len(text), end + 90)]
+    if category == "gps_coordinates":
+        return bool(GPS_CONTEXT_RE.search(context)) and gps_coordinate_has_decimal_pair(name)
+    if category == "ip_addresses":
+        return bool(IP_CONTEXT_RE.search(context))
+    if detector == "regex:radio_frequency":
+        return bool(RADIO_CONTEXT_RE.search(context))
+    if detector == "regex:frequency" and is_embedded_frequency_range_tail(text, start):
+        return False
+    if detector in {"regex:frequency", "regex:frequency_range"}:
+        return frequency_has_nonzero_value(name)
+    return True
+
+
+def is_embedded_frequency_range_tail(text: str, start: int) -> bool:
+    prefix = text[max(0, start - 8) : start].lower()
+    return bool(re.search(r"(?:-|–|\bto\s+)$", prefix))
+
+
+def frequency_has_nonzero_value(name: str) -> bool:
+    values = re.findall(r"\d+(?:\.\d+)?", name)
+    return any(float(value) > 0 for value in values)
+
+
+def gps_coordinate_has_decimal_pair(name: str) -> bool:
+    parts = [part.strip() for part in name.split(",", 1)]
+    return len(parts) == 2 and all("." in part for part in parts)
 
 
 def is_ocr_fragment_domain(name: str) -> bool:
@@ -1425,7 +1787,7 @@ def person_mentions(segment: Segment, omit_terms: set[str]) -> list[dict[str, An
     text = segment.text
     for match in PERSON_RE.finditer(text):
         raw = re.sub(
-            r"^(?:Capt(?:ain)?|Col(?:onel)?|Dr|Gen(?:eral)?|Lt|Mr|Mrs|Ms|Prof(?:essor)?|Rep|Sen(?:ator)?|The)\.?\s+",
+            r"^(?:Capt(?:ain)?|Col(?:onel)?|Dr|Gen(?:eral)?|Lt|Mr|Mrs|Ms|Observer|Pilot|Prof(?:essor)?|Rep|Sen(?:ator)?|The)\.?\s+",
             "",
             match.group(0).strip(),
             flags=re.I,
@@ -1438,6 +1800,113 @@ def person_mentions(segment: Segment, omit_terms: set[str]) -> list[dict[str, An
         if any(part.lower() in {"the", "and", "but", "you", "this", "that"} for part in name.split()):
             continue
         context = excerpt(text, match.start(), match.end(), width=220)
+        if is_date_like_name(name):
+            items.append(
+                {
+                    "name": name,
+                    "category": "dates_times",
+                    "detector": "heuristic:date_like_name",
+                    "confidence": 0.7,
+                    "reason": "Date-like phrase matched month or weekday context",
+                    "excerpt": context,
+                }
+            )
+            continue
+        if is_hard_non_entity_name(name):
+            continue
+        if normalize_name(name) in LIGHT_PHENOMENA_OCR_NAMES:
+            items.append(
+                {
+                    "name": "Light Phenomena",
+                    "category": "key_terms",
+                    "detector": "heuristic:light_phenomena_ocr",
+                    "confidence": 0.86,
+                    "reason": "OCR variant matched Light Phenomena key term",
+                    "excerpt": context,
+                }
+            )
+            continue
+        bird_table_name = canonical_bird_table_artifact_name(name)
+        if bird_table_name:
+            items.append(
+                {
+                    "name": bird_table_name,
+                    "category": "key_terms",
+                    "detector": "heuristic:bird_table_ocr",
+                    "confidence": 0.78,
+                    "reason": "OCR-coded table artifact matched Birds key term",
+                    "excerpt": context,
+                }
+            )
+            continue
+        frequency_concept = classify_frequency_concept_name(name)
+        if frequency_concept:
+            frequency_name, frequency_category = frequency_concept
+            items.append(
+                {
+                    "name": frequency_name,
+                    "category": frequency_category,
+                    "detector": "heuristic:frequency_concept",
+                    "confidence": 0.78,
+                    "reason": f"Frequency concept matched {label(frequency_category)}",
+                    "excerpt": context,
+                }
+            )
+            continue
+        universal_origin = classify_universal_origin_name(name)
+        if universal_origin:
+            origin_name, origin_category = universal_origin
+            items.append(
+                {
+                    "name": origin_name,
+                    "category": origin_category,
+                    "detector": "heuristic:universal_origin",
+                    "confidence": 0.8,
+                    "reason": f"Universal Origin phrase matched {label(origin_category)}",
+                    "excerpt": context,
+                }
+            )
+            continue
+        pentagon_phrase = classify_pentagon_phrase_name(name)
+        if pentagon_phrase:
+            pentagon_name, pentagon_category = pentagon_phrase
+            items.append(
+                {
+                    "name": pentagon_name,
+                    "category": pentagon_category,
+                    "detector": "heuristic:pentagon_phrase",
+                    "confidence": 0.78,
+                    "reason": f"Pentagon phrase matched {label(pentagon_category)}",
+                    "excerpt": context,
+                }
+            )
+            continue
+        signal_technology_category = classify_signal_technology_name(name)
+        if signal_technology_category:
+            items.append(
+                {
+                    "name": name,
+                    "category": signal_technology_category,
+                    "detector": "heuristic:signal_technology_name",
+                    "confidence": 0.7,
+                    "reason": f"Signal-unit technical phrase matched {label(signal_technology_category)}",
+                    "excerpt": context,
+                }
+            )
+            continue
+        measurement_field_name = canonical_measurement_field_name(name)
+        if measurement_field_name:
+            items.append(
+                {
+                    "name": measurement_field_name,
+                    "category": "key_terms",
+                    "detector": "heuristic:measurement_field",
+                    "confidence": 0.82,
+                    "reason": "Project Blue Book measurement/codebook field matched key term",
+                    "excerpt": context,
+                }
+            )
+            continue
         structured_label_category = classify_structured_label_name(name)
         if structured_label_category:
             items.append(
@@ -1502,6 +1971,10 @@ def is_non_entity_label(name: str) -> bool:
         return True
     if is_speaker_label_fragment(words):
         return True
+    if is_enumerated_label_fragment(words):
+        return True
+    if is_field_label_only_name(words):
+        return True
     if TABLE_OR_REPORT_LABEL_RE.search(name):
         return True
     if len(words) < 2 or len(words) > 4:
@@ -1511,6 +1984,92 @@ def is_non_entity_label(name: str) -> bool:
     if words[0] == "num":
         return True
     return False
+
+
+def is_hard_non_entity_name(name: str) -> bool:
+    normalized = normalize_name(name)
+    words = normalized.split()
+    if not words:
+        return True
+    if "number per" in normalized or "per cent" in normalized or "pes gent" in normalized or "pex cent" in normalized:
+        return True
+    if all(len(word) == 1 for word in words):
+        return True
+    if len(words) == 2 and words[-1] in {"date", "location", "name", "number", "page", "section", "time"}:
+        return True
+    if words[0] in DATE_CONTEXT_PREFIXES and len(words[-1]) == 1:
+        return True
+    if is_generic_aircraft_junk_phrase(words):
+        return True
+    return False
+
+
+def is_generic_aircraft_junk_phrase(words: list[str]) -> bool:
+    if not words or words[0] != "aircraft":
+        return False
+    if len(words) == 1:
+        return True
+    if any(len(word) <= 2 for word in words[1:]):
+        return True
+    if any(word in {"cailsign", "carri", "commmications", "numbenta", "numbents", "numben"} for word in words[1:]):
+        return True
+    return False
+
+
+def is_enumerated_label_fragment(words: list[str]) -> bool:
+    if len(words) < 2:
+        return False
+    if words[0] in {"section", "see"} and "section" in words:
+        return True
+    if words[0] == "location":
+        return True
+    if len(words[0]) == 1 and any(word in FIELD_LABEL_WORDS or word in MONTH_OR_WEEKDAY_WORDS or word in {"am", "pm"} for word in words[1:]):
+        return True
+    if len(words) >= 3 and len(words[0]) == 1 and len(words[1]) == 1 and any(word in FIELD_LABEL_WORDS or word in MONTH_OR_WEEKDAY_WORDS or word in {"am", "pm"} for word in words[2:]):
+        return True
+    return False
+
+
+def is_generic_aircraft_or_tech_phrase(name: str) -> bool:
+    if not GENERIC_AIRCRAFT_OR_TECH_RE.search(name):
+        return False
+    if COMPANY_BRAND_RE.search(name):
+        return False
+    normalized = normalize_name(name)
+    words = normalized.split()
+    if not words:
+        return False
+    if words[0] in {"aircraft", "aerospace", "aeronautics", "systems", "technologies", "unmanned", "unidentified", "tactical"}:
+        return True
+    if any(word in FIELD_LABEL_WORDS for word in words):
+        return True
+    return False
+
+
+def is_date_like_name(name: str) -> bool:
+    normalized = normalize_name(name)
+    words = normalized.split()
+    if not words:
+        return False
+    has_calendar_word = any(word in MONTH_OR_WEEKDAY_WORDS for word in words)
+    if not has_calendar_word:
+        return False
+    if words[0] in DATE_CONTEXT_PREFIXES:
+        return True
+    if words[0] in MONTH_OR_WEEKDAY_WORDS and any(word in MONTH_OR_WEEKDAY_WORDS or len(word) == 1 for word in words[1:]):
+        return True
+    if all(word in MONTH_OR_WEEKDAY_WORDS or word in DATE_CONTEXT_PREFIXES for word in words):
+        return True
+    return False
+
+
+def is_field_label_only_name(words: list[str]) -> bool:
+    if len(words) < 2 or len(words) > 5:
+        return False
+    trimmed_words = words[1:] if len(words[0]) == 1 else words
+    if len(trimmed_words) < 2:
+        return False
+    return all(word in FIELD_LABEL_WORDS for word in trimmed_words)
 
 
 def is_speaker_label_fragment(words: list[str]) -> bool:
@@ -1529,6 +2088,8 @@ def classify_structured_label_name(name: str) -> str | None:
     words = normalized.split()
     if normalized in STRUCTURED_KEY_TERM_NAMES:
         return "key_terms"
+    if is_generic_aircraft_or_tech_phrase(name):
+        return "key_terms"
     if len(words) < 2 or len(words) > 5:
         return None
     if words[0] in STRUCTURED_KEY_TERM_PREFIXES and words[-1] in STRUCTURED_KEY_TERM_SUFFIXES:
@@ -1536,6 +2097,107 @@ def classify_structured_label_name(name: str) -> str | None:
     if normalized.endswith(" software load"):
         return "key_terms"
     return None
+
+
+def classify_signal_technology_name(name: str) -> str | None:
+    words = set(normalize_name(name).split())
+    if words.intersection(SIGNAL_UNIT_WORDS) and words.intersection(SIGNAL_TECH_WORDS):
+        return "technology"
+    return None
+
+
+def classify_frequency_concept_name(name: str) -> tuple[str, str] | None:
+    normalized = normalize_name(name)
+    if not normalized:
+        return None
+    normalized = normalized.replace("radiofrequency", "radio frequency")
+    words = normalized.split()
+    if not any(word in {"frequency", "frequencies"} for word in words):
+        return None
+    compact_normalized = " ".join(words)
+    if compact_normalized in FREQUENCY_CONCEPT_ALIASES:
+        return FREQUENCY_CONCEPT_ALIASES[compact_normalized]
+    if compact_normalized in FREQUENCY_KEY_TERM_NAMES:
+        return (titleize_words(compact_normalized), "key_terms")
+    if normalized in {"radio frequency", "radio frequencies"}:
+        return ("radio frequency", "key_terms")
+    band_name = normalize_frequency_band_name(normalized)
+    if normalize_name(band_name) != normalized:
+        return (band_name, "key_terms")
+    if normalized in FREQUENCY_BAND_ALIASES:
+        return (FREQUENCY_BAND_ALIASES[normalized], "key_terms")
+    word_set = set(words)
+    if word_set.intersection(FREQUENCY_TECHNOLOGY_WORDS) and not word_set.intersection(FREQUENCY_SIGNAL_WORDS):
+        return (titleize_words(compact_normalized), "technology")
+    return (titleize_words(normalized), "key_terms")
+
+
+def classify_universal_origin_name(name: str) -> tuple[str, str] | None:
+    normalized = normalize_name(name)
+    words = normalized.split()
+    if len(words) < 3 or words[-2:] != ["universal", "origin"]:
+        return None
+    if words[0] in UNIVERSAL_ORIGIN_NON_SPECIES_PREFIXES:
+        return (titleize_words(normalized), "key_terms")
+    return (titleize_words(normalized), "alien_species")
+
+
+def classify_pentagon_phrase_name(name: str) -> tuple[str, str] | None:
+    normalized = normalize_name(name)
+    words = normalized.split()
+    if "pentagon" not in words:
+        return None
+    if normalized == "pentagon":
+        return ("Pentagon", "government_agencies")
+    if "papers" in words:
+        return ("Pentagon Papers", "leaks")
+    if normalized in PENTAGON_ORG_PHRASES:
+        return (PENTAGON_ORG_PHRASES[normalized], "government_agencies")
+    if normalized in PENTAGON_KEY_TERM_PHRASES:
+        return (PENTAGON_KEY_TERM_PHRASES[normalized], "key_terms")
+    if any(word in PENTAGON_DOCUMENT_PHRASE_WORDS for word in words):
+        return (titleize_words(normalized), "document_names")
+    if words[0] == "pentagon" and any(word in {"washington", "air", "our"} for word in words):
+        return ("Pentagon", "government_agencies")
+    if words[0] == "pentagon":
+        return (titleize_words(normalized), "key_terms")
+    return None
+
+
+def canonical_bird_table_artifact_name(name: str) -> str | None:
+    words = normalize_name(name).split()
+    if not words or words[0] not in BIRD_TABLE_OCR_PREFIXES:
+        return None
+    tail = words[1:]
+    if not tail or (len(tail) <= 4 and all(len(word) <= 16 for word in tail)):
+        return "Birds"
+    return None
+
+
+def titleize_words(value: str) -> str:
+    return " ".join(word.upper() if word in FREQUENCY_BAND_CODES else word.capitalize() for word in normalize_name(value).split())
+
+
+def canonical_measurement_field_name(name: str) -> str | None:
+    normalized = normalize_name(name)
+    words = normalized.split()
+    if not words:
+        return None
+    for field, display_name in MEASUREMENT_FIELD_NAMES.items():
+        field_words = field.split()
+        if words[: len(field_words)] == field_words:
+            tail = words[len(field_words) :]
+            if not tail or all(word in FIELD_LABEL_WORDS or len(word) <= 4 for word in tail):
+                return display_name
+        if has_word_sequence(words, field_words) and len(words) <= len(field_words) + 2:
+            return display_name
+    return None
+
+
+def has_word_sequence(words: list[str], sequence: list[str]) -> bool:
+    if len(sequence) > len(words):
+        return False
+    return any(words[index : index + len(sequence)] == sequence for index in range(len(words) - len(sequence) + 1))
 
 
 def classify_military_organization(name: str) -> str | None:
@@ -1552,6 +2214,14 @@ def classify_military_organization(name: str) -> str | None:
 
 
 def classify_non_person_name(name: str) -> str | None:
+    if TIME_ZONE_RE.search(name):
+        return "dates_times"
+    if NEWSROOM_BLOCK_RE.search(name):
+        return "key_terms"
+    if DOCUMENT_NAME_RE.search(name):
+        if is_document_title_fragment(name):
+            return "key_terms"
+        return "document_names"
     if NEWSROOM_NAME_RE.search(name):
         return "newsrooms"
     if UNIVERSITY_NAME_RE.search(name):
@@ -1567,10 +2237,70 @@ def classify_non_person_name(name: str) -> str | None:
     if RESEARCH_ROLE_GROUP_RE.search(name):
         return "research_groups"
     if COMPANY_ORG_NAME_RE.search(name):
+        if is_generic_company_fragment(name):
+            return "key_terms"
         return "companies"
-    if GENERAL_ORG_NAME_RE.search(name):
-        return "companies"
+    if GENERIC_AIRCRAFT_OR_TECH_RE.search(name) and COMPANY_BRAND_RE.search(name):
+        return "contractors"
+    generic_category = classify_generic_org_descriptor_name(name)
+    if generic_category:
+        return generic_category
     return None
+
+
+def classify_generic_org_descriptor_name(name: str) -> str | None:
+    if not GENERIC_ORG_DESCRIPTOR_RE.search(name):
+        return None
+    if NEWSROOM_NAME_RE.search(name) and not NEWSROOM_BLOCK_RE.search(name):
+        return None
+    normalized = normalize_name(name)
+    words = normalized.split()
+    if not words:
+        return None
+    if len(words) <= 2 and SYSTEMS_TERM_RE.search(name):
+        return "key_terms"
+    if any(word in {"mission", "reporting", "tracking", "control", "filter", "operations", "intelligence", "security", "air", "naval", "army", "military", "defense", "space"} for word in words):
+        return "government_agencies"
+    if any(word in {"research", "laboratory", "lab", "scientific", "aeronautical"} for word in words):
+        return "research_groups"
+    if SYSTEMS_TERM_RE.search(name):
+        return "key_terms"
+    return "government_agencies"
+
+
+def is_document_title_fragment(name: str) -> bool:
+    normalized = normalize_name(name)
+    words = normalized.split()
+    if len(words) < 2:
+        return True
+    if normalized in {
+        "also report",
+        "be report",
+        "now report",
+        "others report",
+        "previous report",
+        "report in",
+        "report them",
+    }:
+        return True
+    non_document_words = [word for word in words if word not in {"act", "award", "form", "medal", "memo", "memorandum", "report", "reports"}]
+    if non_document_words and all(word in FIELD_LABEL_WORDS for word in non_document_words):
+        return True
+    return False
+
+
+def is_generic_company_fragment(name: str) -> bool:
+    normalized = normalize_name(name)
+    words = normalized.split()
+    if not words:
+        return True
+    if COMPANY_BRAND_RE.search(name):
+        return False
+    if normalized in {"aircraft co", "aircraft company", "aircraft corporation", "aircraft limited"}:
+        return True
+    if len(words) <= 2 and words[0] in {"aircraft", "company", "corporation", "limited"}:
+        return True
+    return False
 
 
 def classify_person(context: str) -> tuple[str, str, float]:
@@ -3191,9 +3921,50 @@ def normalize_name(value: str) -> str:
     return re.sub(r"[^a-z0-9]+", " ", value.lower()).strip()
 
 
+def normalize_frequency_name(value: str) -> str:
+    cleaned = clean_text(value).replace("–", "-")
+    match = re.match(
+        r"^\s*(\d{1,5}(?:\.\d{1,4})?)\s*(?:(?:to|-)\s*(\d{1,5}(?:\.\d{1,4})?)\s*)?([a-z]+)\s*$",
+        cleaned,
+        re.I,
+    )
+    if not match:
+        return cleaned
+    start, end, unit = match.groups()
+    canonical_unit = FREQUENCY_UNIT_ALIASES.get(unit.lower())
+    if not canonical_unit:
+        return cleaned
+    if end:
+        return f"{start}-{end} {canonical_unit}"
+    return f"{start} {canonical_unit}"
+
+
+def normalize_frequency_band_name(value: str) -> str:
+    cleaned = clean_text(value)
+    normalized = normalize_name(cleaned)
+    if normalized in FREQUENCY_BAND_ALIASES:
+        return FREQUENCY_BAND_ALIASES[normalized]
+    parts = normalized.split()
+    if len(parts) == 2 and parts[0] in FREQUENCY_BAND_CODES and parts[1] in {"band", "frequency", "frequencies", "signal", "wave", "waves"}:
+        return f"{parts[0].upper()} frequency"
+    return cleaned
+
+
+def normalize_radio_frequency_name(value: str) -> str:
+    cleaned = clean_text(value)
+    normalized = normalize_name(cleaned)
+    if normalized in {"radio frequency", "radio frequencies"}:
+        return "radio frequency"
+    return cleaned
+
+
 def canonicalize(name: str, category: str) -> str:
     cleaned = clean_text(name)
-    if category in {"websites", "ip_addresses", "gps_coordinates", "radio_frequencies", "frequencies"}:
+    if category == "frequencies":
+        return normalize_frequency_band_name(normalize_frequency_name(cleaned)).lower()
+    if category == "radio_frequencies":
+        return normalize_radio_frequency_name(cleaned).lower()
+    if category in {"websites", "ip_addresses", "gps_coordinates"}:
         return cleaned.lower()
     return re.sub(r"^(Dr\.|Mr\.|Ms\.|Sen\.|Rep\.)\s+", "", cleaned).strip()
 
@@ -4265,6 +5036,12 @@ __APP_DATA_SCRIPTS__
       };
     }
 
+    function graphLabelTop(pointY) {
+      const topbar = document.querySelector(".topbar");
+      const headerBottom = topbar ? topbar.getBoundingClientRect().bottom : 0;
+      return Math.max(pointY + 6, headerBottom + 8);
+    }
+
     function screenToGraph(x, y) {
       const transform = graphViewportTransform();
       return {
@@ -4280,8 +5057,9 @@ __APP_DATA_SCRIPTS__
       }
       graphLabelsEl.innerHTML = labelItems.map((item) => {
         const point = graphToScreen(item.x, item.y);
+        const top = graphLabelTop(point.y);
         if (item.kind === "annotation") {
-          return '<div class="html-graph-label" aria-hidden="true" style="left:' + point.x.toFixed(1) + 'px;top:' + (point.y + 6).toFixed(1) + 'px">' +
+          return '<div class="html-graph-label" aria-hidden="true" style="left:' + point.x.toFixed(1) + 'px;top:' + top.toFixed(1) + 'px">' +
             '<span class="label-primary">' + esc(item.primary) + '</span>' +
             (item.secondary ? '<span class="label-secondary">' + esc(item.secondary) + '</span>' : '') +
           '</div>';
@@ -4300,7 +5078,7 @@ __APP_DATA_SCRIPTS__
           : item.kind === "category-list"
             ? "Open full entity list"
             : "Open entity";
-        return '<div class="html-graph-label" role="button" tabindex="0" aria-label="' + esc(action + ": " + item.primary + secondary) + '"' + state + ' style="left:' + point.x.toFixed(1) + 'px;top:' + (point.y + 6).toFixed(1) + 'px"' + attr + '>' +
+        return '<div class="html-graph-label" role="button" tabindex="0" aria-label="' + esc(action + ": " + item.primary + secondary) + '"' + state + ' style="left:' + point.x.toFixed(1) + 'px;top:' + top.toFixed(1) + 'px"' + attr + '>' +
           '<span class="label-primary">' + esc(item.primary) + '</span>' +
           (item.secondary ? '<span class="label-secondary">' + esc(item.secondary) + '</span>' : '') +
         '</div>';

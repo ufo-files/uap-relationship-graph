@@ -589,9 +589,9 @@
   <div id="hover-card" class="hover-card" aria-hidden="true"></div>
   <div id="corner-label" class="corner-label" role="status" aria-live="polite"></div>
   </main>
-    <script src="app-data.js?v=e3b0c8dcda0d34b6"></script>
-    <script src="app-data-mentions.js?v=e3b0c8dcda0d34b6"></script>
-    <script src="app-data-relationships.js?v=e3b0c8dcda0d34b6"></script>
+    <script src="app-data.js?v=fc64802d91499c5c"></script>
+    <script src="app-data-mentions.js?v=fc64802d91499c5c"></script>
+    <script src="app-data-relationships.js?v=fc64802d91499c5c"></script>
   <script>
     const RAW = window.TRANSCRIPT_INTELLIGENCE_DATA;
     const REVIEW_KEY = "relationship-graph-reclass";
@@ -1027,6 +1027,12 @@
       };
     }
 
+    function graphLabelTop(pointY) {
+      const topbar = document.querySelector(".topbar");
+      const headerBottom = topbar ? topbar.getBoundingClientRect().bottom : 0;
+      return Math.max(pointY + 6, headerBottom + 8);
+    }
+
     function screenToGraph(x, y) {
       const transform = graphViewportTransform();
       return {
@@ -1042,8 +1048,9 @@
       }
       graphLabelsEl.innerHTML = labelItems.map((item) => {
         const point = graphToScreen(item.x, item.y);
+        const top = graphLabelTop(point.y);
         if (item.kind === "annotation") {
-          return '<div class="html-graph-label" aria-hidden="true" style="left:' + point.x.toFixed(1) + 'px;top:' + (point.y + 6).toFixed(1) + 'px">' +
+          return '<div class="html-graph-label" aria-hidden="true" style="left:' + point.x.toFixed(1) + 'px;top:' + top.toFixed(1) + 'px">' +
             '<span class="label-primary">' + esc(item.primary) + '</span>' +
             (item.secondary ? '<span class="label-secondary">' + esc(item.secondary) + '</span>' : '') +
           '</div>';
@@ -1062,7 +1069,7 @@
           : item.kind === "category-list"
             ? "Open full entity list"
             : "Open entity";
-        return '<div class="html-graph-label" role="button" tabindex="0" aria-label="' + esc(action + ": " + item.primary + secondary) + '"' + state + ' style="left:' + point.x.toFixed(1) + 'px;top:' + (point.y + 6).toFixed(1) + 'px"' + attr + '>' +
+        return '<div class="html-graph-label" role="button" tabindex="0" aria-label="' + esc(action + ": " + item.primary + secondary) + '"' + state + ' style="left:' + point.x.toFixed(1) + 'px;top:' + top.toFixed(1) + 'px"' + attr + '>' +
           '<span class="label-primary">' + esc(item.primary) + '</span>' +
           (item.secondary ? '<span class="label-secondary">' + esc(item.secondary) + '</span>' : '') +
         '</div>';
