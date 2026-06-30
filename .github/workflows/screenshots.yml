@@ -1,0 +1,53 @@
+name: Screenshots
+
+on:
+  push:
+    branches: [main]
+    paths-ignore:
+      - "screenshots/**"
+      - "README.md"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: screenshots-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  capture:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          ref: ${{ github.ref_name }}
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install browser
+        run: npx playwright install --with-deps chromium
+
+      - name: Capture screenshots
+        run: npm run screenshots
+
+      - name: Commit screenshots
+        run: |
+          if git diff --quiet -- screenshots; then
+            echo "Screenshots are already current."
+            exit 0
+          fi
+          git config user.name "ufo-files"
+          git config user.email "297273897+ufo-files@users.noreply.github.com"
+          git add screenshots
+          git commit -m "Update relationship graph screenshots"
+          git push origin "HEAD:${{ github.ref_name }}"

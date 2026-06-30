@@ -18,6 +18,20 @@ Repository: https://github.com/ufo-files/relationship-graph
 
 Source data repository: https://github.com/ufo-files/data
 
+## Screenshots
+
+### Main Graph
+
+![Relationship graph main view](screenshots/relationship-graph-main.png)
+
+### People View
+
+![Relationship graph people view](screenshots/relationship-graph-people.png)
+
+### Event Timeline
+
+![Relationship graph event timeline view](screenshots/relationship-graph-events-timeline.png)
+
 ## What It Does
 
 The app turns transcript-derived entities into an interactive graph. Categories form the outer structure, entities live inside those categories, and relationships are drawn from co-occurrence and corpus evidence.
@@ -48,9 +62,13 @@ The app is fully static. All data needed by the browser is committed in this rep
 
 | File | Purpose |
 | --- | --- |
-| `index.html` | Graph interface and application shell |
+| `index.html` | Graph application shell |
+| `styles.css` | Minimal monochrome graph styling |
+| `app.js` | Graph, timeline, review controls, and browser interaction logic |
 | `app-data.js` | Loader for the exported JSON data |
 | `build_graph.py` | Rebuilds the graph from source transcripts and reclassification data |
+| `scripts/capture_screenshots.js` | Captures README screenshots for the main graph, People view, and Events timeline |
+| `.github/workflows/screenshots.yml` | Refreshes committed screenshots after app rebuilds |
 | `ufo-files/data` | Public source transcripts, OCR text, and `entity-registry.json` |
 | `data/entities.json` | Extracted entities, categories, confidence, counts, and evidence references |
 | `data/relationships.json` | Entity-to-entity relationship records |

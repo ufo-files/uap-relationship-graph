@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "screenshots": "node scripts/capture_screenshots.js",
     "test:a11y": "playwright test"
   },
   "devDependencies": {
