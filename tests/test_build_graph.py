@@ -106,6 +106,32 @@ class BuildGraphParsingTests(unittest.TestCase):
         self.assertNotIn("5000 Hz", names)
         self.assertNotIn("190 kHz", names)
 
+    def test_blood_type_patterns_require_blood_context(self) -> None:
+        ad_segment = build_graph.Segment(
+            id="s-1",
+            transcript_id="t-1",
+            transcript_title="Sample",
+            source_file="sample.txt",
+            start_ms=0,
+            end_ms=1000,
+            text="That's Q-U-A-L-I-A-L-I-F-E dot com slash jesse, J-E-S-S-E, for an extra 15% off.",
+        )
+        blood_segment = build_graph.Segment(
+            id="s-2",
+            transcript_id="t-1",
+            transcript_title="Sample",
+            source_file="sample.txt",
+            start_ms=1000,
+            end_ms=2000,
+            text="The witness described a rare Rh negative blood type, specifically A-.",
+        )
+
+        ad_mentions = build_graph.pattern_mentions(ad_segment)
+        blood_mentions = build_graph.pattern_mentions(blood_segment)
+
+        self.assertFalse([item for item in ad_mentions if item["category"] == "blood_types"])
+        self.assertIn(("blood_types", "A-"), {(item["category"], item["name"]) for item in blood_mentions})
+
     def test_frequency_category_is_reserved_for_actual_values(self) -> None:
         entities = json.loads(Path("data/entities.json").read_text(encoding="utf-8"))
         value_re = re.compile(r"^\d{1,9}(?:\.\d{1,6})?(?:-\d{1,9}(?:\.\d{1,6})?)?\s(?:Hz|kHz|MHz|GHz|THz)$")

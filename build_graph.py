@@ -846,7 +846,11 @@ TIME_ZONE_RE = re.compile(
     r"\b(?:Greenwich|Mountain|Pacific|Central|Eastern|Zulu)(?:\s+[A-Z]\.){0,2}\s+(?:Standard\s+)?Time\b",
     re.I,
 )
-BLOOD_RE = re.compile(r"\b(?:A|B|AB|O)[+-]\b")
+BLOOD_RE = re.compile(r"(?<![A-Za-z]-)(?<![A-Za-z0-9])(?:AB|A|B|O)[+-](?![A-Za-z0-9-])")
+BLOOD_CONTEXT_RE = re.compile(
+    r"\b(?:blood|bloodline|bloodlines|blood\s+type|blood\s+types|type|rh|rhesus|plasma|donor|donors|negative|positive)\b",
+    re.I,
+)
 PATENT_RE = re.compile(r"\b(?:US\s*)?(?:Patent|patent)\s*(?:No\.?\s*)?(?:\d{4,}[A-Z0-9-]*)?\b", re.I)
 PERSON_RE = re.compile(r"\b(?:Dr\.|Mr\.|Ms\.|Sen\.|Rep\.)?\s*(?:[A-Z][a-z]+|[A-Z]\.)\s+(?:[A-Z][a-z]+|[A-Z]\.)(?:\s+(?:[A-Z][a-z]+|[A-Z]\.)){0,2}\b")
 MALFORMED_SERVICE_FRAGMENT_RE = re.compile(r"^S\.\s+(?:Army|Navy|Air\s+Force|Airforce|Aircraft)$", re.I)
@@ -1776,6 +1780,8 @@ def is_valid_pattern_mention(category: str, detector: str, name: str, text: str,
         return False
     if detector in {"regex:frequency", "regex:frequency_range"}:
         return frequency_has_nonzero_value(name)
+    if detector == "regex:blood_type":
+        return bool(BLOOD_CONTEXT_RE.search(context))
     return True
 
 

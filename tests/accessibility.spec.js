@@ -212,6 +212,206 @@ test("mobile category drill-in starts focused on the selected group", async ({ p
   expect(metrics.visibleEntityLabels).toBeGreaterThan(8);
 });
 
+test("events timeline axis is centered in the available vertical space", async ({ page }) => {
+  await page.goto("/");
+
+  const events = page.locator(".html-graph-label[data-label-category='events_claims']");
+  await expect(events).toBeVisible({ timeout: 15000 });
+  await events.click();
+  await page.locator(".timeline-axis").waitFor({ state: "attached" });
+
+  const metrics = await page.evaluate(() => {
+    const svg = document.querySelector("#graph");
+    const axis = document.querySelector(".timeline-axis");
+    const topbar = document.querySelector(".topbar");
+    const corner = document.querySelector("#corner-label");
+    const point = svg.createSVGPoint();
+    point.x = Number(axis.getAttribute("x1"));
+    point.y = Number(axis.getAttribute("y1"));
+    const startScreen = point.matrixTransform(svg.getScreenCTM());
+    point.x = Number(axis.getAttribute("x2"));
+    const endScreen = point.matrixTransform(svg.getScreenCTM());
+    point.x = Number(axis.getAttribute("x1"));
+    const axisScreenY = point.matrixTransform(svg.getScreenCTM()).y;
+    const topbarRect = topbar.getBoundingClientRect();
+    const cornerRect = corner.getBoundingClientRect();
+    const headerInset = Math.max(0, Math.ceil(topbarRect.bottom + 52)) - 20;
+    const cornerInset = cornerRect.width && cornerRect.height ? cornerRect.bottom + 24 : 0;
+    const topInset = Math.max(24, headerInset, cornerInset);
+    const bottomInset = 12;
+    const expectedCenter = topInset + (window.innerHeight - topInset - bottomInset) / 2;
+    return { axisScreenY, expectedCenter, axisLeft: startScreen.x, axisRight: endScreen.x, viewportWidth: window.innerWidth };
+  });
+
+  expect(Math.abs(metrics.axisScreenY - metrics.expectedCenter)).toBeLessThan(18);
+  expect(metrics.axisLeft).toBeLessThanOrEqual(1);
+  expect(metrics.axisRight).toBeGreaterThanOrEqual(metrics.viewportWidth - 1);
+});
+
+test("events timeline labels stay readable inside the viewport", async ({ page }) => {
+  await page.goto("/");
+
+  const events = page.locator(".html-graph-label[data-label-category='events_claims']");
+  await expect(events).toBeVisible({ timeout: 15000 });
+  await events.click();
+  await page.locator(".timeline-axis").waitFor({ state: "attached" });
+
+  const issues = await page.evaluate(() => {
+    const corner = document.querySelector("#corner-label");
+    const cornerRect = corner ? corner.getBoundingClientRect() : null;
+    const labels = Array.from(document.querySelectorAll(".html-graph-label.timeline-date-label, .html-graph-label.timeline-connected-label"))
+      .map((element) => {
+        const rect = element.getBoundingClientRect();
+        return {
+          text: (element.textContent || "").trim().replace(/\s+/g, " "),
+          left: rect.left,
+          right: rect.right,
+          top: rect.top,
+          bottom: rect.bottom,
+          width: rect.width,
+          height: rect.height,
+        };
+      })
+      .filter((rect) => rect.width > 0 && rect.height > 0);
+    const failures = [];
+    for (const label of labels) {
+      if (label.left < 0 || label.right > window.innerWidth || label.top < 0 || label.bottom > window.innerHeight) {
+        failures.push({ type: "viewport", label });
+      }
+      if (cornerRect && cornerRect.width && cornerRect.height) {
+        const overlapX = Math.min(label.right, cornerRect.right) - Math.max(label.left, cornerRect.left);
+        const overlapY = Math.min(label.bottom, cornerRect.bottom) - Math.max(label.top, cornerRect.top);
+        if (overlapX > 2 && overlapY > 2) failures.push({ type: "panel", label, overlapX, overlapY });
+      }
+    }
+    for (let i = 0; i < labels.length; i++) {
+      for (let j = i + 1; j < labels.length; j++) {
+        const a = labels[i];
+        const b = labels[j];
+        const overlapX = Math.min(a.right, b.right) - Math.max(a.left, b.left);
+        const overlapY = Math.min(a.bottom, b.bottom) - Math.max(a.top, b.top);
+        if (overlapX > 5 && overlapY > 5) {
+          failures.push({ type: "collision", a: a.text, b: b.text, overlapX, overlapY });
+        }
+      }
+    }
+    return failures.slice(0, 12);
+  });
+
+  expect(issues).toEqual([]);
+});
+
+test("events timeline drills from decade groups into exact dates", async ({ page }) => {
+  await page.goto("/");
+
+  const events = page.locator(".html-graph-label[data-label-category='events_claims']");
+  await expect(events).toBeVisible({ timeout: 15000 });
+  await events.click();
+  await page.locator(".timeline-axis").waitFor({ state: "attached" });
+
+  const decadeLabel = page.locator(".html-graph-label[data-label-timeline-decade]").first();
+  await expect(decadeLabel).toBeVisible();
+  await expect(decadeLabel).toContainText(/exact date/);
+  await decadeLabel.click();
+
+  await expect(page.locator(".html-graph-label.timeline-date-label").first()).toBeVisible();
+  await expect(page.locator(".html-graph-label[data-label-timeline-decade]")).toHaveCount(0);
+  await expect(page.locator("#status")).toContainText("exact dated source links");
+  const issues = await page.evaluate(() => {
+    const labels = Array.from(document.querySelectorAll(".html-graph-label.timeline-date-label, .html-graph-label.timeline-connected-label"))
+      .map((element) => {
+        const rect = element.getBoundingClientRect();
+        return {
+          text: (element.textContent || "").trim().replace(/\s+/g, " "),
+          left: rect.left,
+          right: rect.right,
+          top: rect.top,
+          bottom: rect.bottom,
+          width: rect.width,
+          height: rect.height,
+        };
+      })
+      .filter((rect) => rect.width > 0 && rect.height > 0);
+    const failures = [];
+    for (const label of labels) {
+      if (label.left < 0 || label.right > window.innerWidth || label.top < 0 || label.bottom > window.innerHeight) {
+        failures.push({ type: "viewport", label });
+      }
+    }
+    for (let i = 0; i < labels.length; i++) {
+      for (let j = i + 1; j < labels.length; j++) {
+        const a = labels[i];
+        const b = labels[j];
+        const overlapX = Math.min(a.right, b.right) - Math.max(a.left, b.left);
+        const overlapY = Math.min(a.bottom, b.bottom) - Math.max(a.top, b.top);
+        if (overlapX > 5 && overlapY > 5) failures.push({ type: "collision", a: a.text, b: b.text, overlapX, overlapY });
+      }
+    }
+    return failures.slice(0, 12);
+  });
+
+  expect(issues).toEqual([]);
+
+  await page.keyboard.press("Escape");
+  await expect(page.locator(".html-graph-label[data-label-timeline-decade]").first()).toBeVisible();
+});
+
+test("events timeline keeps high-confidence exact date relationships", async ({ page }) => {
+  await page.goto("/");
+  await page.waitForFunction(() => typeof buildEventsTimeline === "function");
+
+  const roswellDate = await page.evaluate(() => {
+    const entry = buildEventsTimeline().find((item) => item.iso === "1947-07-08");
+    if (!entry) return null;
+    return {
+      date: entry.displayDate,
+      hasRoswell: entry.events.some((item) => item.entity.id === "locations:roswell"),
+    };
+  });
+
+  expect(roswellDate).toEqual({ date: "July 8, 1947", hasRoswell: true });
+});
+
+test("events timeline renders Roswell in the 1940s overview and drill-in", async ({ page }) => {
+  await page.goto("/");
+
+  const events = page.locator(".html-graph-label[data-label-category='events_claims']");
+  await expect(events).toBeVisible({ timeout: 15000 });
+  await events.click();
+  await page.locator(".timeline-axis").waitFor({ state: "attached" });
+
+  await expect(page.locator(".html-graph-label[data-label-entity='locations:roswell']")).toBeVisible();
+
+  const nineteenForties = page.locator(".html-graph-label[data-label-timeline-decade='decade-1940']");
+  await expect(nineteenForties).toBeVisible();
+  await nineteenForties.click();
+
+  await expect(page.locator(".html-graph-label[data-label-entity='locations:roswell']")).toBeVisible();
+});
+
+test("events timeline excludes broad historical periods as exact-date nodes", async ({ page }) => {
+  await page.goto("/");
+  await page.waitForFunction(() => typeof buildEventsTimeline === "function");
+
+  const broadEvents = await page.evaluate(() => {
+    const broadIds = new Set([
+      "events:civil-war",
+      "events:cold-war",
+      "events:korean-war",
+      "events:second-world-war",
+      "events:vietnam-war",
+      "events:world-war",
+    ]);
+    return buildEventsTimeline().flatMap((entry) =>
+      entry.events
+        .filter((item) => broadIds.has(item.entity.id))
+        .map((item) => ({ date: entry.displayDate, event: item.entity.name }))
+    );
+  });
+
+  expect(broadEvents).toEqual([]);
+});
+
 test("info card close button stays outside the scrollable body", async ({ page }) => {
   await page.goto("/");
 

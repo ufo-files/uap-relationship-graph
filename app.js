@@ -29,6 +29,7 @@ let mode = "categories";
 let activeCategory = null;
 let selectedEntityId = null;
 let eventsClaimsView = "timeline";
+let activeTimelineDecade = null;
 let viewBox = { x: 120, y: 80, w: 1960, h: 1340 };
 let dragStart = null;
 let labelItems = [];
@@ -537,6 +538,7 @@ function setEventsClaimsCornerLabel(view, detail) {
   if (switcher) {
     switcher.addEventListener("change", () => {
       eventsClaimsView = switcher.value === "graph" ? "graph" : "timeline";
+      activeTimelineDecade = null;
       activeCategory = "events_claims";
       selectedEntityId = null;
       mode = "categories";
@@ -586,10 +588,23 @@ function graphToScreen(x, y) {
   };
 }
 
-function graphLabelTop(pointY) {
+function graphLabelTop(pointY, item = null, pointX = null) {
   const topbar = document.querySelector(".topbar");
-  const headerBottom = topbar ? topbar.getBoundingClientRect().bottom : 0;
-  return Math.max(pointY + 6, headerBottom + 8);
+  let safeTop = topbar ? topbar.getBoundingClientRect().bottom + 8 : 8;
+  const width = item ? estimateLabelWidth(item) : 0;
+  const cornerRect = cornerLabelEl ? cornerLabelEl.getBoundingClientRect() : null;
+  if (cornerRect && cornerRect.width && cornerRect.height && Number.isFinite(pointX)) {
+    const left = pointX - width / 2;
+    const right = pointX + width / 2;
+    if (right > cornerRect.left - 8 && left < cornerRect.right + 8) {
+      safeTop = Math.max(safeTop, cornerRect.bottom + 8);
+    }
+  }
+  if (item && item.labelAnchor === "above") {
+    const height = estimateLabelHeight(item, width);
+    return Math.max(pointY - height - 6, safeTop);
+  }
+  return Math.max(pointY + 6, safeTop);
 }
 
 function estimateLabelWidth(item) {
@@ -630,7 +645,7 @@ function renderLabelLayer() {
   }
   const positioned = labelItems.map((item) => {
     const point = graphToScreen(item.x, item.y);
-    return { item, point, top: graphLabelTop(point.y) };
+    return { item, point, top: graphLabelTop(point.y, item, point.x) };
   });
   graphLabelsEl.innerHTML = positioned.map(({ item, point, top }) => {
     if (item.kind === "annotation") {
@@ -643,8 +658,12 @@ function renderLabelLayer() {
       ? ' data-label-category="' + esc(item.id) + '"'
       : item.kind === "category-list"
         ? ' data-label-category-list="' + esc(item.id) + '"'
-        : ' data-label-entity="' + esc(item.id) + '"';
-    const state = ((item.kind === "category" || item.kind === "category-list") && activeCategory === item.id) || (item.kind === "entity" && selectedEntityId === item.id)
+        : item.kind === "timeline-decade"
+          ? ' data-label-timeline-decade="' + esc(item.id) + '"'
+          : ' data-label-entity="' + esc(item.id) + '"';
+    const state = ((item.kind === "category" || item.kind === "category-list") && activeCategory === item.id) ||
+      (item.kind === "entity" && selectedEntityId === item.id) ||
+      (item.kind === "timeline-decade" && activeTimelineDecade === item.decade)
       ? ' aria-current="true"'
       : "";
     const secondary = item.secondary ? ". " + item.secondary : "";
@@ -652,7 +671,9 @@ function renderLabelLayer() {
       ? "Open category"
       : item.kind === "category-list"
         ? "Open full entity list"
-        : "Open entity";
+        : item.kind === "timeline-decade"
+          ? "Open decade"
+          : "Open entity";
     return '<div class="html-graph-label' + (item.className ? ' ' + esc(item.className) : '') + '" role="button" tabindex="0" aria-label="' + esc(action + ": " + item.primary + secondary) + '"' + state + ' style="left:' + point.x.toFixed(1) + 'px;top:' + top.toFixed(1) + 'px"' + attr + '>' +
       '<span class="label-primary">' + esc(item.primary) + '</span>' +
       (item.secondary ? '<span class="label-secondary">' + esc(item.secondary) + '</span>' : '') +
@@ -896,40 +917,48 @@ function renderEventsTimeline(categoryId) {
   const label = DATA.topCategoryLabels[categoryId] || categoryId;
   const categoryLayout = buildCategoryLayout();
   const activeCategoryNode = categoryLayout.nodeById.get(categoryId) || { x: 1100, y: 750, r: 24 };
-  const timeline = buildEventsTimeline();
+  const exactTimeline = buildEventsTimeline();
+  const isTimelineOverview = activeTimelineDecade === null;
+  const timeline = isTimelineOverview
+    ? buildTimelineDecadeEntries(exactTimeline)
+    : exactTimeline.filter((item) => item.date.getUTCFullYear() >= activeTimelineDecade && item.date.getUTCFullYear() < activeTimelineDecade + 10);
   if (!timeline.length) {
+    activeTimelineDecade = null;
     renderCategoryGrid(categoryId);
     return;
   }
   const baseY = 760;
   const startX = 420;
-  const firstYear = timeline[0].date.getUTCFullYear();
-  const lastYear = timeline[timeline.length - 1].date.getUTCFullYear();
-  const timelineStartYear = Math.floor(firstYear / 10) * 10;
-  const timelineEndYear = Math.ceil(lastYear / 10) * 10;
+  const firstYear = activeTimelineDecade === null ? exactTimeline[0].date.getUTCFullYear() : activeTimelineDecade;
+  const lastYear = activeTimelineDecade === null ? exactTimeline[exactTimeline.length - 1].date.getUTCFullYear() : activeTimelineDecade + 10;
+  const timelineStartYear = activeTimelineDecade === null ? Math.floor(firstYear / 10) * 10 : activeTimelineDecade;
+  const timelineEndYear = activeTimelineDecade === null ? Math.ceil(lastYear / 10) * 10 : activeTimelineDecade + 10;
   const timelineStartDate = Date.UTC(timelineStartYear, 0, 1);
   const timelineEndDate = Date.UTC(timelineEndYear, 0, 1);
   const timelineDuration = Math.max(1, timelineEndDate - timelineStartDate);
-  const width = Math.max(4800, (timelineEndYear - timelineStartYear) * 48);
+  const width = isTimelineOverview ? Math.max(4800, (timelineEndYear - timelineStartYear) * 48) : 7200;
   const endX = startX + width;
   const categoryControlNode = { ...activeCategoryNode, x: startX - 230, y: baseY - 430, r: Math.max(18, Math.min(24, activeCategoryNode.r)) };
-  const maxWeight = Math.max(1, ...timeline.map((item) => item.weight));
+  const maxWeight = Math.max(1, ...timeline.map((item) => timelineDateNodeSizeMetric(item)));
   const nodes = [];
   const edges = [];
   const labels = [];
-  const dateNodes = timeline.map((item, index) => {
-    const x = startX + ((item.date.getTime() - timelineStartDate) / timelineDuration) * width;
-    const dateOffset = timelineDateOffset(index);
-    const y = baseY + dateOffset;
-    const node = {
+	  const dateNodes = timeline.map((item, index) => {
+	    const x = startX + ((item.date.getTime() - timelineStartDate) / timelineDuration) * width;
+	    const dateOffset = timelineDateOffset(index);
+	    const y = baseY + dateOffset;
+	    const node = {
       id: item.dateEntity.id,
       x,
       y,
-      r: 9 + Math.sqrt(item.weight / maxWeight) * 9,
-      raw: item.dateEntity,
-      item,
-      labelOffset: 0,
-    };
+	      r: item.isDecade
+	        ? 9 + Math.sqrt(timelineDateNodeSizeMetric(item) / maxWeight) * 28
+	        : 9 + Math.sqrt(timelineDateNodeSizeMetric(item) / maxWeight) * 9,
+	      raw: item.dateEntity,
+	      item,
+	      labelAnchor: y < baseY ? "above" : "below",
+	      labelOffset: 0,
+	    };
     nodes.push(node);
     return node;
   });
@@ -952,18 +981,19 @@ function renderEventsTimeline(categoryId) {
   }
   for (const [dateIndex, dateNode] of dateNodes.entries()) {
     const item = dateNode.item;
-    const eventCount = Math.min(3, item.events.length);
-    for (const [eventIndex, eventItem] of item.events.slice(0, eventCount).entries()) {
-      addTimelineEntity(dateIndex, dateNode, eventItem.entity, eventItem.weight, "event", eventIndex);
+    const eventLimit = item.isDecade ? 8 : 5;
+    const visibleEvents = timelineVisibleSubjects(item.events, eventLimit);
+    for (const [eventIndex, eventItem] of visibleEvents.entries()) {
+      addTimelineEntity(dateIndex, dateNode, eventItem.entity, eventItem.weight, timelineEntityKind(eventItem.entity), eventIndex);
     }
-    const contextCount = Math.min(4, item.context.length);
+    const contextCount = Math.min(item.isDecade ? 3 : 2, item.context.length);
     for (const [contextIndex, contextItem] of item.context.slice(0, contextCount).entries()) {
       addTimelineEntity(dateIndex, dateNode, contextItem.entity, contextItem.weight, "context", contextIndex);
     }
   }
   const entityNodes = Array.from(entityNodesById.values())
     .sort((a, b) => Math.min(...a.dateRefs.map((ref) => ref.dateIndex)) - Math.min(...b.dateRefs.map((ref) => ref.dateIndex)) || entityGraphScore(b.raw) - entityGraphScore(a.raw));
-  const maxEntityWeight = Math.max(1, ...entityNodes.map((node) => node.weight));
+  const maxEntityWeight = Math.max(1, ...entityNodes.map((node) => timelineEntityNodeSizeMetric(node)));
   for (const [nodeIndex, node] of entityNodes.entries()) {
     const firstRef = node.dateRefs.slice().sort((a, b) => a.dateIndex - b.dateIndex || a.rank - b.rank)[0];
     const totalWeight = node.dateRefs.reduce((total, ref) => total + ref.weight, 0) || 1;
@@ -975,45 +1005,48 @@ function renderEventsTimeline(categoryId) {
       : [420, 650, 900, 1160][(firstRef.dateIndex * 2 + firstRef.rank + nodeIndex) % 4];
     node.x = averageX + ((nodeIndex % 9) - 4) * 46;
     node.y = baseY + side * (band + lane * 110) * TIMELINE_VERTICAL_SCALE;
-    node.r = node.kind === "event"
-      ? 8 + Math.sqrt(node.weight / maxEntityWeight) * 9
-      : 4.8 + Math.sqrt(node.weight / maxEntityWeight) * 7;
-    node.isContext = node.kind !== "event";
-    nodes.push(node);
-  }
+	    node.r = node.kind === "event"
+	      ? 8 + Math.sqrt(timelineEntityNodeSizeMetric(node) / maxEntityWeight) * 9
+	      : 4.8 + Math.sqrt(timelineEntityNodeSizeMetric(node) / maxEntityWeight) * 9;
+	    node.isContext = node.kind !== "event";
+	    node.labelAnchor = node.y < baseY ? "above" : "below";
+	    nodes.push(node);
+	  }
   spreadTimelineEntityNodes(entityNodes, baseY);
-  spreadTimelineLabelNodes(dateNodes, entityNodes, baseY, width);
-  const labeledContextIds = new Set(entityNodes
-    .filter((node) => node.isContext)
-    .sort((a, b) => b.weight - a.weight || b.dateRefs.length - a.dateRefs.length || entityGraphScore(b.raw) - entityGraphScore(a.raw))
-    .slice(0, 8)
-    .map((node) => node.entityId));
-  const labeledTimelineNodes = dateNodes.concat(entityNodes.filter((node) => {
-    if (!node.isContext) return true;
-    return node.dateRefs.length >= 2 || labeledContextIds.has(node.entityId);
-  }));
-  for (const node of dateNodes) {
-    labels.push({
-      id: node.item.dateEntity.id,
-      kind: "entity",
-      className: "timeline-date-label",
-      x: node.x,
-      y: node.y + node.r,
-      primary: node.item.displayDate,
-      secondary: node.item.events.length + " " + pluralize("link", node.item.events.length),
-    });
-  }
-  for (const node of entityNodes) {
-    if (node.isContext && node.dateRefs.length < 2 && !labeledContextIds.has(node.entityId)) continue;
-    labels.push({
-      id: node.entityId,
-      kind: "entity",
-      className: "timeline-connected-label",
-      x: node.x,
-      y: node.y + node.r,
-      primary: truncate(entityDisplayName(node.raw), node.kind === "event" ? 24 : 22),
-      secondary: node.dateRefs.length > 1
-        ? node.dateRefs.length + " date links"
+  spreadTimelineLabelNodes(dateNodes, entityNodes, baseY, width, startX, endX);
+  const labeledDateNodes = timelineVisibleDateLabelNodes(dateNodes, isTimelineOverview);
+  let labeledEntityIds = timelineVisibleEntityLabelIds(entityNodes, isTimelineOverview);
+  let labeledEntityNodes = entityNodes.filter((node) => labeledEntityIds.has(node.entityId));
+  labeledEntityNodes = timelineRemoveForcedLabelCollisions(labeledEntityNodes, width);
+  labeledEntityIds = new Set(labeledEntityNodes.map((node) => node.entityId));
+  const labeledTimelineNodes = labeledDateNodes.concat(labeledEntityNodes);
+		  for (const node of labeledDateNodes) {
+		    labels.push({
+		      id: node.item.isDecade ? "decade-" + node.item.decade : node.item.dateEntity.id,
+	      kind: node.item.isDecade ? "timeline-decade" : "entity",
+	      className: "timeline-date-label" + (node.item.isDecade ? " timeline-decade-label" : ""),
+	      x: node.x,
+	      y: timelineLabelReferenceY(node),
+	      labelAnchor: node.labelAnchor,
+	      decade: node.item.decade,
+	      primary: node.item.displayDate,
+	      secondary: node.item.isDecade
+	        ? node.item.dates.length + " exact " + pluralize("date", node.item.dates.length)
+	        : node.item.events.length + " " + pluralize("link", node.item.events.length),
+	    });
+	  }
+	  for (const node of entityNodes) {
+	    if (!labeledEntityIds.has(node.entityId)) continue;
+		    labels.push({
+		      id: node.entityId,
+	      kind: "entity",
+	      className: "timeline-connected-label",
+	      x: node.x,
+	      y: timelineLabelReferenceY(node),
+	      labelAnchor: node.labelAnchor,
+	      primary: truncate(entityDisplayName(node.raw), node.kind === "event" ? 24 : 22),
+	      secondary: node.dateRefs.length > 1
+	        ? node.dateRefs.length + " date links"
         : truncate(node.raw.categoryLabel || node.raw.topCategoryLabel || "Related", 24),
     });
   }
@@ -1044,9 +1077,15 @@ function renderEventsTimeline(categoryId) {
     }).join("") +
     entityLinks.map((edge) => '<line class="timeline-link" x1="' + edge.source.x.toFixed(1) + '" y1="' + edge.source.y.toFixed(1) + '" x2="' + edge.target.x.toFixed(1) + '" y2="' + edge.target.y.toFixed(1) + '" opacity="' + (edge.isContext ? ".14" : ".26") + '"></line>').join("") +
     dateNodes.map((node) => {
-      return '<g class="graph-node" data-entity="' + esc(node.raw.id) + '">' +
+      const nodeAttr = node.item.isDecade
+        ? ' data-timeline-decade="' + esc(node.item.decade) + '"'
+        : ' data-entity="' + esc(node.raw.id) + '"';
+      const title = node.item.isDecade
+        ? node.item.displayDate + " · " + node.item.dates.length + " exact dated " + pluralize("entry", node.item.dates.length) + " · click to drill in"
+        : node.item.displayDate + " · exact parsed date · " + node.item.events.length + " linked " + pluralize("entity", node.item.events.length);
+      return '<g class="graph-node"' + nodeAttr + '>' +
         '<circle class="timeline-date" cx="' + node.x.toFixed(1) + '" cy="' + node.y + '" r="' + node.r.toFixed(1) + '"></circle>' +
-        '<title>' + esc(node.item.displayDate + " · exact parsed date · " + node.item.events.length + " linked " + pluralize("entity", node.item.events.length)) + '</title>' +
+        '<title>' + esc(title) + '</title>' +
       '</g>';
     }).join("") +
     entityNodes.map((node) => {
@@ -1056,23 +1095,29 @@ function renderEventsTimeline(categoryId) {
       '</g>';
     }).join("");
   setGraphLabels(labels);
-  statusEl.textContent = "Events timeline · " + timeline.length.toLocaleString() + " exact dated source links · fuzzy dates excluded";
-  setEventsClaimsCornerLabel("timeline", "Exact parsed dates only · event, document, and source links included");
+  statusEl.textContent = activeTimelineDecade === null
+    ? "Events timeline · " + timeline.length.toLocaleString() + " decade groups · click a decade for exact dates"
+    : activeTimelineDecade + "s timeline · " + timeline.length.toLocaleString() + " exact dated source links · fuzzy dates excluded";
+  setEventsClaimsCornerLabel("timeline", activeTimelineDecade === null
+    ? "Decade groups · drill in for hard dates and linked context"
+    : activeTimelineDecade + "s · exact parsed dates only · event, document, and source links included");
   cardEl.classList.remove("open");
   wireEntityNodes();
-  const timelineMinY = Math.min(
-    ...dateNodes.map((node) => node.y + Math.min(0, node.labelOffset) - node.r - 70),
-    ...entityNodes.map((node) => node.y - node.r - 74)
-  );
-  const timelineMaxY = Math.max(
-    ...dateNodes.map((node) => node.y + Math.max(0, node.labelOffset) + node.r + 84),
-    ...entityNodes.map((node) => node.y + node.r + 92),
-    ...timelineLabelBottomBounds(labeledTimelineNodes, width)
-  );
-  fitTimelineAxisToViewport(startX, endX, timelineMinY, timelineMaxY);
+  wireTimelineNodes();
+		  const labelScale = timelineScale(width);
+		  const timelineMinY = Math.min(
+		    ...nodes.map((node) => node.y - node.r - 16 / labelScale),
+		    ...labeledTimelineNodes.map((node) => timelineNodeLabelRect(node, labelScale).top - 16 / labelScale)
+		  );
+		  const timelineMaxY = Math.max(
+		    ...nodes.map((node) => node.y + node.r + 16 / labelScale),
+		    ...labeledTimelineNodes.map((node) => timelineNodeLabelRect(node, labelScale).bottom + 16 / labelScale),
+		    ...timelineLabelBottomBounds(labeledTimelineNodes, width)
+		  );
+  fitTimelineAxisToViewport(startX, endX, timelineMinY, timelineMaxY, baseY);
 }
 
-function fitTimelineAxisToViewport(startX, endX, minY, maxY) {
+function fitTimelineAxisToViewport(startX, endX, minY, maxY, axisY) {
   const rect = svg.getBoundingClientRect();
   const rectWidth = Math.max(1, rect.width || svg.clientWidth || 1);
   const rectHeight = Math.max(1, rect.height || svg.clientHeight || 1);
@@ -1081,13 +1126,15 @@ function fitTimelineAxisToViewport(startX, endX, minY, maxY) {
   const topInset = Math.max(24, graphHeaderInsetPx() - 20, cornerBottom);
   const bottomInset = 12;
   const availableH = Math.max(180, rectHeight - topInset - bottomInset);
+  const focusY = Number.isFinite(axisY) ? axisY : (minY + maxY) / 2;
+  const centerScreenY = topInset + availableH / 2;
   const width = Math.max(MIN_ZOOM_WIDTH, endX - startX);
   const height = Math.max(MIN_ZOOM_HEIGHT, width / (rectWidth / rectHeight));
   const actualScale = rectWidth / width;
-  const focusY = (minY + maxY) / 2;
+  const centerOffset = centerScreenY / actualScale;
   setViewBox(
     startX,
-    focusY - (topInset + availableH / 2) / actualScale,
+    focusY - centerOffset,
     width,
     height
   );
@@ -1096,6 +1143,135 @@ function fitTimelineAxisToViewport(startX, endX, minY, maxY) {
 function timelineDateOffset(index) {
   const lanes = [-260, 300, -520, 560, -760, 800, -960, 1000];
   return lanes[index % lanes.length] * TIMELINE_VERTICAL_SCALE;
+}
+
+function timelineDateNodeSizeMetric(item) {
+  if (!item || !item.isDecade) return Math.max(1, item ? item.weight : 1);
+  const exactDateCount = item.dates ? item.dates.length : 0;
+  const linkedEntityCount = new Set(
+    (item.events || []).concat(item.context || []).map((entry) => entry.entity && entry.entity.id).filter(Boolean)
+  ).size;
+  return Math.max(1, exactDateCount * 2 + linkedEntityCount);
+}
+
+function timelineEntityKind(entity) {
+  return entity && entity.category === "events" ? "event" : "context";
+}
+
+function timelineEntityNodeSizeMetric(node) {
+  if (!node || !node.raw) return 1;
+  const mentionVolume = Math.sqrt(Math.max(0, node.raw.count || 0)) * 1.6;
+  const relationshipVolume = Math.sqrt(Math.max(0, (relationshipsByEntity.get(node.entityId) || []).length)) * 2.2;
+  return Math.max(1, node.weight + mentionVolume + relationshipVolume);
+}
+
+function timelineVisibleSubjects(subjects, limit) {
+  const sorted = subjects.slice().sort((a, b) => timelineSubjectDisplayScore(b.entity, b.weight) - timelineSubjectDisplayScore(a.entity, a.weight));
+  const selected = [];
+  const selectedIds = new Set();
+  function add(item) {
+    if (!item || !item.entity || selectedIds.has(item.entity.id)) return;
+    selectedIds.add(item.entity.id);
+    selected.push(item);
+  }
+  sorted.filter((item) => timelineShouldForceVisibleSubject(item.entity, item.weight)).forEach(add);
+  const forcedCount = selected.length;
+  sorted.forEach(add);
+  return selected.slice(0, Math.max(limit, forcedCount));
+}
+
+function timelineShouldForceVisibleSubject(entity, weight) {
+  if (!entity) return false;
+  if (entity.id === "locations:roswell") return true;
+  if (entity.id === "events:roswell-incident") return true;
+  return false;
+}
+
+function timelineVisibleDateLabelNodes(dateNodes, isOverview) {
+  if (isOverview) return dateNodes;
+  const limit = 2;
+  const sorted = dateNodes.slice().sort((a, b) => timelineDateLabelScore(b.item) - timelineDateLabelScore(a.item));
+  const selected = new Set();
+  for (const node of sorted) {
+    if (selected.size >= limit && !timelineDateHasForcedSubject(node.item)) continue;
+    selected.add(node);
+  }
+  return dateNodes.filter((node) => selected.has(node));
+}
+
+function timelineDateLabelScore(item) {
+  if (!item) return 0;
+  const subjectScore = Math.max(0, ...(item.events || []).map((entry) => timelineSubjectDisplayScore(entry.entity, entry.weight)));
+  return (item.weight || 0) + subjectScore + ((item.context || []).length * 0.5);
+}
+
+function timelineDateHasForcedSubject(item) {
+  return Boolean(item && (item.events || []).some((entry) => timelineShouldForceVisibleSubject(entry.entity, entry.weight)));
+}
+
+function timelineVisibleEntityLabelIds(entityNodes, isOverview) {
+  const selected = new Set();
+  const eventLimit = isOverview ? 0 : 5;
+  const contextLimit = isOverview ? 2 : 1;
+  const eventNodes = entityNodes.filter((node) => !node.isContext).sort((a, b) => timelineEntityLabelScore(b) - timelineEntityLabelScore(a));
+  const contextNodes = entityNodes
+    .filter((node) => node.isContext && (!timelineIsGenericHub(node.raw) || timelineShouldForceVisibleSubject(node.raw, node.weight)))
+    .sort((a, b) => timelineEntityLabelScore(b) - timelineEntityLabelScore(a));
+  for (const node of entityNodes) {
+    if (timelineShouldForceVisibleSubject(node.raw, node.weight)) selected.add(node.entityId);
+  }
+  eventNodes.slice(0, eventLimit).forEach((node) => selected.add(node.entityId));
+  contextNodes.slice(0, contextLimit).forEach((node) => selected.add(node.entityId));
+  return selected;
+}
+
+function timelineRemoveForcedLabelCollisions(nodes, timelineWidth) {
+  const scale = timelineScale(timelineWidth);
+  const forcedNodes = nodes.filter((node) => timelineShouldForceVisibleSubject(node.raw, node.weight));
+  if (!forcedNodes.length) return nodes;
+  const forcedRects = forcedNodes.map((node) => timelineNodeLabelRect(node, scale));
+  return nodes.filter((node) => {
+    if (timelineShouldForceVisibleSubject(node.raw, node.weight)) return true;
+    const rect = timelineNodeLabelRect(node, scale);
+    return !forcedRects.some((forcedRect) => rectsOverlap(rect, forcedRect, 10 / scale));
+  });
+}
+
+function timelineEntityLabelScore(node) {
+  if (!node) return 0;
+  const multiDateBoost = Math.min(10, Math.max(0, node.dateRefs.length - 1) * 2);
+  return timelineSubjectDisplayScore(node.raw, node.weight) + multiDateBoost + Math.sqrt(Math.max(0, entityGraphScore(node.raw))) * 0.4;
+}
+
+function timelineSubjectDisplayScore(entity, weight) {
+  if (!entity) return weight || 0;
+  const id = entity.id || "";
+  const specificBoost = (
+    entity.category === "events" ||
+    entity.category === "document_names" ||
+    entity.category === "books" ||
+    entity.category === "government_project_codenames" ||
+    id === "locations:roswell"
+  ) ? 16 : 0;
+  const hubPenalty = timelineIsGenericHub(entity) ? 12 : 0;
+  return (weight || 0) + specificBoost - hubPenalty;
+}
+
+function timelineIsGenericHub(entity) {
+  if (!entity) return false;
+  const name = (entity.name || "").toLowerCase();
+  if (entity.category === "government_agencies" && /\b(?:air force|army|navy|department|central intelligence|pentagon)\b/.test(name)) return true;
+  return new Set([
+    "government_agencies:u-s-air-force",
+    "government_agencies:central-intelligence-agency",
+    "government_agencies:department-of-defense",
+    "government_agencies:fbi",
+    "government_agencies:pentagon",
+    "locations:washington",
+    "locations:california",
+    "locations:new-mexico",
+    "newsrooms:the-new-york-times",
+  ]).has(entity.id || "");
 }
 
 function timelineDateLabelXOffset(index) {
@@ -1130,9 +1306,11 @@ function spreadTimelineEntityNodes(nodes, baseY) {
 function timelineNodeLabelItem(node) {
   if (node.item) {
     return {
-      className: "timeline-date-label",
+      className: "timeline-date-label" + (node.item.isDecade ? " timeline-decade-label" : ""),
       primary: node.item.displayDate,
-      secondary: node.item.events.length + " " + pluralize("link", node.item.events.length),
+      secondary: node.item.isDecade
+        ? node.item.dates.length + " exact " + pluralize("date", node.item.dates.length)
+        : node.item.events.length + " " + pluralize("link", node.item.events.length),
     };
   }
   return {
@@ -1149,11 +1327,23 @@ function timelineNodeLabelPriority(node) {
   return node.kind === "event" ? 1 : 2;
 }
 
+function timelineScale(timelineWidth) {
+  const rect = svg.getBoundingClientRect();
+  return Math.max(0.05, (rect.width || svg.clientWidth || 1440) / Math.max(1, timelineWidth));
+}
+
+function timelineLabelReferenceY(node) {
+  return node.labelAnchor === "above" ? node.y - node.r : node.y + node.r;
+}
+
 function timelineNodeLabelRect(node, scale) {
   const item = timelineNodeLabelItem(node);
   const width = estimateLabelWidth(item) / scale;
   const height = estimateLabelHeight(item, estimateLabelWidth(item)) / scale;
-  const top = node.y + node.r + 6 / scale;
+  const referenceY = timelineLabelReferenceY(node);
+  const top = node.labelAnchor === "above"
+    ? referenceY - height - 6 / scale
+    : referenceY + 6 / scale;
   return {
     left: node.x - width / 2,
     right: node.x + width / 2,
@@ -1163,30 +1353,94 @@ function timelineNodeLabelRect(node, scale) {
 }
 
 function timelineLabelBottomBounds(nodes, timelineWidth) {
-  const rect = svg.getBoundingClientRect();
-  const scale = Math.max(0.05, (rect.width || svg.clientWidth || 1440) / Math.max(1, timelineWidth));
+  const scale = timelineScale(timelineWidth);
   return nodes.map((node) => timelineNodeLabelRect(node, scale).bottom + 16 / scale);
 }
 
-function spreadTimelineLabelNodes(dateNodes, entityNodes, baseY, timelineWidth) {
-  const rect = svg.getBoundingClientRect();
-  const scale = Math.max(0.05, (rect.width || svg.clientWidth || 1440) / Math.max(1, timelineWidth));
-  const gap = 7 / scale;
+function clampTimelineLabelNodeX(node, startX, endX, scale) {
+  const item = timelineNodeLabelItem(node);
+  const width = estimateLabelWidth(item) / scale;
+  const margin = 30 / scale;
+  node.x = clamp(node.x, startX + width / 2 + margin, endX - width / 2 - margin);
+}
+
+function spreadTimelineLabelNodes(dateNodes, entityNodes, baseY, timelineWidth, startX, endX) {
+  const scale = timelineScale(timelineWidth);
+  const gap = 24 / scale;
   const step = (28 * TIMELINE_VERTICAL_SCALE) / scale;
   const allNodes = dateNodes.concat(entityNodes)
     .sort((a, b) => timelineNodeLabelPriority(a) - timelineNodeLabelPriority(b) || a.x - b.x || Math.abs(a.y - baseY) - Math.abs(b.y - baseY));
   const placed = [];
-  for (const node of allNodes) {
-    const side = node.y < baseY ? -1 : 1;
-    for (let attempts = 0; attempts < 8; attempts++) {
-      const currentRect = timelineNodeLabelRect(node, scale);
-      const overlap = placed.find((entry) => rectsOverlap(currentRect, entry.rect, gap));
-      if (!overlap) break;
-      const overlapAmount = Math.min(currentRect.bottom, overlap.rect.bottom) - Math.max(currentRect.top, overlap.rect.top);
-      node.y += side * (Math.max(step, overlapAmount + gap));
-    }
-    placed.push({ node, rect: timelineNodeLabelRect(node, scale) });
+	  for (const node of allNodes) {
+	    clampTimelineLabelNodeX(node, startX, endX, scale);
+	    const side = node.y < baseY ? -1 : 1;
+	    for (let attempts = 0; attempts < 24; attempts++) {
+	      const currentRect = timelineNodeLabelRect(node, scale);
+	      const overlap = placed.find((entry) => rectsOverlap(currentRect, entry.rect, gap));
+	      if (!overlap) break;
+	      const overlapAmount = Math.min(currentRect.bottom, overlap.rect.bottom) - Math.max(currentRect.top, overlap.rect.top);
+	      const horizontalOverlap = Math.min(currentRect.right, overlap.rect.right) - Math.max(currentRect.left, overlap.rect.left);
+	      if (!node.item && horizontalOverlap > 0) {
+	        const direction = node.x >= overlap.node.x ? 1 : -1;
+	        node.x += direction * Math.min(360 / scale, horizontalOverlap + gap + 34 / scale);
+	        clampTimelineLabelNodeX(node, startX, endX, scale);
+	      }
+	      node.y += side * (Math.max(step, overlapAmount + gap));
+	    }
+	    placed.push({ node, rect: timelineNodeLabelRect(node, scale) });
   }
+}
+
+function buildTimelineDecadeEntries(entries) {
+  const byDecade = new Map();
+  for (const entry of entries) {
+    const year = entry.date.getUTCFullYear();
+    const decade = Math.floor(year / 10) * 10;
+    if (!byDecade.has(decade)) {
+      byDecade.set(decade, {
+        date: new Date(Date.UTC(decade + 5, 0, 1)),
+        iso: String(decade),
+        displayDate: decade + " - " + (decade + 9),
+        dateEntity: {
+          id: "timeline-decade-" + decade,
+          name: decade + "s",
+          category: "dates_times",
+          categoryLabel: "Decade",
+          topCategory: "events_claims",
+          topCategoryLabel: DATA.topCategoryLabels.events_claims || "Events & Claims",
+        },
+        weight: 0,
+        eventsById: new Map(),
+        contextById: new Map(),
+        dates: [],
+        isDecade: true,
+        decade,
+      });
+    }
+    const bucket = byDecade.get(decade);
+    bucket.weight += entry.weight;
+    bucket.dates.push(entry);
+    for (const eventItem of entry.events || []) {
+      const existing = bucket.eventsById.get(eventItem.entity.id) || { entity: eventItem.entity, weight: 0 };
+      existing.weight += eventItem.weight;
+      bucket.eventsById.set(eventItem.entity.id, existing);
+    }
+    for (const contextItem of entry.context || []) {
+      const existing = bucket.contextById.get(contextItem.entity.id) || { entity: contextItem.entity, weight: 0 };
+      existing.weight += contextItem.weight;
+      bucket.contextById.set(contextItem.entity.id, existing);
+    }
+  }
+  return Array.from(byDecade.values())
+    .map((bucket) => ({
+      ...bucket,
+      events: Array.from(bucket.eventsById.values())
+        .sort((a, b) => b.weight - a.weight || entityGraphScore(b.entity) - entityGraphScore(a.entity)),
+      context: Array.from(bucket.contextById.values())
+        .filter((item) => !bucket.eventsById.has(item.entity.id))
+        .sort((a, b) => b.weight - a.weight || entityGraphScore(b.entity) - entityGraphScore(a.entity)),
+    }))
+    .sort((a, b) => a.decade - b.decade);
 }
 
 function buildEventsTimeline() {
@@ -1234,14 +1488,14 @@ function buildEventsTimeline() {
     const target = entitiesById.get(relationship.target);
     if (!source || !target) continue;
     const dateEntity = source.category === "dates_times" ? source : target.category === "dates_times" ? target : null;
-    const rawEventEntity = source.category === "dates_times" ? target : source;
-    const eventEntity = timelineCanonicalEventEntity(rawEventEntity);
-    if (!dateEntity || !eventEntity) continue;
+    const rawSubjectEntity = source.category === "dates_times" ? target : source;
+    const subjectEntity = timelineCanonicalEventEntity(rawSubjectEntity) || rawSubjectEntity;
+    if (!dateEntity || !subjectEntity) continue;
     const parsed = parseExactDate(dateEntity.name);
     if (!parsed) continue;
-    const relationshipScore = timelineEventDateRelationshipScore(dateEntity, rawEventEntity, eventEntity, relationship);
+    const relationshipScore = timelineDateRelationshipSubjectScore(dateEntity, rawSubjectEntity, subjectEntity, relationship);
     if (!relationshipScore) continue;
-    addTimelineSubject(entriesByKey, parsed, dateEntity, null, eventEntity, relationshipScore);
+    addTimelineSubject(entriesByKey, parsed, dateEntity, null, subjectEntity, relationshipScore);
   }
   addTimelineSourceDateEntries(entriesByKey);
   const entries = Array.from(entriesByKey.values())
@@ -1268,6 +1522,7 @@ function dedupeTimelineEventCandidates(candidates) {
 
 function addTimelineSubject(entriesByKey, parsed, dateEntity, mention, subjectEntity, score) {
   if (!subjectEntity || !score) return;
+  if (timelineIsBroadDurationEvent(subjectEntity)) return;
   const key = parsed.iso + "::" + dateEntity.id;
   if (!entriesByKey.has(key)) {
     entriesByKey.set(key, {
@@ -1289,7 +1544,7 @@ function addTimelineSubject(entriesByKey, parsed, dateEntity, mention, subjectEn
 }
 
 function rationalizeTimelineEntries(entries) {
-  const maxEntries = 64;
+  const maxEntries = 180;
   if (entries.length <= maxEntries) return entries;
   const selected = new Map();
   const add = (entry) => selected.set(entry.iso + "::" + entry.dateEntity.id, entry);
@@ -1300,6 +1555,7 @@ function rationalizeTimelineEntries(entries) {
     byYear.get(year).push(entry);
     if (entry.events.some((item) => item.entity.category === "events")) add(entry);
     if (entry.events.some((item) => item.entity.category === "document_names" && year >= 2010)) add(entry);
+    if (entry.weight >= 12) add(entry);
   }
   for (const [year, yearEntries] of byYear.entries()) {
     yearEntries
@@ -1331,14 +1587,39 @@ function timelineEntryPriority(entry) {
   const hasEvent = entry.events.some((item) => item.entity.category === "events");
   const hasDocument = entry.events.some((item) => item.entity.category === "document_names" || item.entity.category === "books" || item.entity.category === "white_papers" || item.entity.category === "leaks");
   const hasNews = entry.events.some((item) => item.entity.category === "newsrooms" || item.entity.category === "websites");
+  const hasPlaceOrOrg = entry.events.some((item) => (
+    item.entity.category === "locations" ||
+    item.entity.category === "government_agencies" ||
+    item.entity.category === "military_units" ||
+    item.entity.category === "government_project_codenames"
+  ));
   const recent = year >= 2010 ? 4 : 0;
-  return (hasEvent ? 9 : 0) + (hasDocument ? 5 : 0) + (hasNews ? 4 : 0) + recent + Math.min(6, Math.log2(Math.max(1, entry.weight)));
+  return (hasEvent ? 9 : 0) +
+    (hasDocument ? 6 : 0) +
+    (hasNews ? 5 : 0) +
+    (hasPlaceOrOrg ? 4 : 0) +
+    recent +
+    Math.min(12, Math.log2(Math.max(1, entry.weight)) * 1.6);
 }
 
 function timelineSourceSubjectScore(entity) {
   if (entity.category === "document_names" || entity.category === "books" || entity.category === "white_papers" || entity.category === "leaks") return 6;
   if (entity.category === "newsrooms" || entity.category === "websites") return 5;
   return 4;
+}
+
+function timelineIsBroadDurationEvent(entity) {
+  if (!entity || entity.category !== "events") return false;
+  const id = entity.id || "";
+  const name = normalizeText(entity.name);
+  return new Set([
+    "events:civil-war",
+    "events:cold-war",
+    "events:korean-war",
+    "events:second-world-war",
+    "events:vietnam-war",
+    "events:world-war",
+  ]).has(id) || /^(civil war|cold war|korean war|second world war|vietnam war|world war)$/.test(name);
 }
 
 function timelineExplicitSourceSubjects(sentence) {
@@ -1450,6 +1731,28 @@ function timelineEventDateRelationshipScore(dateEntity, rawEventEntity, eventEnt
     }
   }
   return 0;
+}
+
+function timelineDateRelationshipSubjectScore(dateEntity, rawSubjectEntity, subjectEntity, relationship) {
+  if (!dateEntity || !subjectEntity || subjectEntity.category === "dates_times") return 0;
+  const canonicalEvent = timelineCanonicalEventEntity(rawSubjectEntity);
+  if (canonicalEvent) {
+    const eventScore = timelineEventDateRelationshipScore(dateEntity, rawSubjectEntity, canonicalEvent, relationship);
+    if (eventScore) return eventScore;
+  }
+  const weight = relationship.weight || 1;
+  const category = subjectEntity.category;
+  const documentCategories = new Set(["document_names", "books", "white_papers", "leaks", "newsrooms", "websites"]);
+  const placeOrgCategories = new Set(["locations", "government_agencies", "military_units", "companies", "universities", "research_institutions"]);
+  const personCategories = new Set(["people", "politicians", "whistleblowers", "scientists", "professors", "journalists", "experiencers", "military_people"]);
+  let base = 0;
+  if (subjectEntity.category === "events") base = 8;
+  else if (documentCategories.has(category)) base = 7;
+  else if (placeOrgCategories.has(category)) base = 6;
+  else if (personCategories.has(category) && weight >= 20) base = 4;
+  else if (weight >= 32) base = 3;
+  if (!base) return 0;
+  return base + Math.min(12, Math.round(weight / 4));
 }
 
 function timelineEventNames(sourceEntity, canonicalEntity) {
@@ -2500,7 +2803,9 @@ function focusDetailsCard() {
 }
 
 function focusSelectedGraphLabel() {
-  const selectors = selectedEntityId
+  const selectors = activeTimelineDecade !== null
+    ? ['[data-label-timeline-decade="decade-' + cssEscape(activeTimelineDecade) + '"]']
+    : selectedEntityId
     ? ['[data-label-entity="' + cssEscape(selectedEntityId) + '"]']
     : activeCategory
       ? ['[data-label-category="' + cssEscape(activeCategory) + '"]', '[data-label-category-list="' + cssEscape(activeCategory) + '"]']
@@ -2544,22 +2849,36 @@ function wireEntityNodes() {
   });
 }
 
+function wireTimelineNodes() {
+  svg.querySelectorAll("[data-timeline-decade]").forEach((node) => {
+    node.addEventListener("click", () => activateGraphNode(node, { focusGraph: true }));
+  });
+}
+
 function activateGraphNode(node, options = {}) {
   if (!node) return false;
   if (node.dataset.category) {
     activeCategory = node.dataset.category;
     selectedEntityId = null;
+    activeTimelineDecade = null;
     mode = "categories";
   } else if (node.dataset.categoryList) {
     activeCategory = node.dataset.categoryList;
     selectedEntityId = null;
+    activeTimelineDecade = null;
     mode = "category-list";
     hideHoverPreview();
     render();
     if (options.focusGraph) focusSelectedGraphLabel();
     return true;
+  } else if (node.dataset.timelineDecade) {
+    activeCategory = "events_claims";
+    activeTimelineDecade = Number(node.dataset.timelineDecade);
+    selectedEntityId = null;
+    mode = "categories";
   } else if (node.dataset.entity) {
     selectedEntityId = node.dataset.entity;
+    activeTimelineDecade = null;
     mode = "neighborhood";
   } else {
     return false;
@@ -2629,8 +2948,14 @@ function setHoveredNode(node) {
   promoteNode(node);
   node.classList.add("hover");
   if (node.dataset.entity) highlightEntityConnections(node.dataset.entity);
-  const labelKind = node.dataset.entity ? "labelEntity" : node.dataset.categoryList ? "labelCategoryList" : "labelCategory";
-  const id = node.dataset.entity || node.dataset.categoryList || node.dataset.category;
+  const labelKind = node.dataset.entity
+    ? "labelEntity"
+    : node.dataset.categoryList
+      ? "labelCategoryList"
+      : node.dataset.timelineDecade
+        ? "labelTimelineDecade"
+        : "labelCategory";
+  const id = node.dataset.entity || node.dataset.categoryList || (node.dataset.timelineDecade ? "decade-" + node.dataset.timelineDecade : node.dataset.category);
   Array.from(graphLabelsEl.querySelectorAll(".html-graph-label")).forEach((label) => {
     if (label.dataset[labelKind] === id) label.classList.add("hover");
   });
@@ -2658,11 +2983,13 @@ function svgNodeFromLabel(label) {
   if (!label) return null;
   const isEntity = Boolean(label.dataset.labelEntity);
   const isCategoryList = Boolean(label.dataset.labelCategoryList);
-  const id = label.dataset.labelEntity || label.dataset.labelCategoryList || label.dataset.labelCategory;
-  const nodes = svg.querySelectorAll(isEntity ? "[data-entity]" : isCategoryList ? "[data-category-list]" : "[data-category]");
+  const isTimelineDecade = Boolean(label.dataset.labelTimelineDecade);
+  const id = label.dataset.labelEntity || label.dataset.labelCategoryList || label.dataset.labelTimelineDecade || label.dataset.labelCategory;
+  const nodes = svg.querySelectorAll(isEntity ? "[data-entity]" : isCategoryList ? "[data-category-list]" : isTimelineDecade ? "[data-timeline-decade]" : "[data-category]");
   return Array.from(nodes).find((node) => {
     if (isEntity) return node.dataset.entity === id;
     if (isCategoryList) return node.dataset.categoryList === id;
+    if (isTimelineDecade) return "decade-" + node.dataset.timelineDecade === id;
     return node.dataset.category === id;
   }) || null;
 }
@@ -2681,9 +3008,11 @@ function graphNodeKey(node) {
       ? "category-list:" + node.dataset.categoryList
       : node.dataset.category
         ? "category:" + node.dataset.category
-        : node.dataset.homeRoot
-          ? "home-root"
-          : "";
+        : node.dataset.timelineDecade
+          ? "timeline-decade:" + node.dataset.timelineDecade
+          : node.dataset.homeRoot
+            ? "home-root"
+            : "";
 }
 
 function resetHoverZoomActivation() {
@@ -2705,6 +3034,14 @@ function categoryPreview(categoryId) {
     title: label,
     meta: entities.length.toLocaleString() + " entities · " + mentions.toLocaleString() + " mentions",
     body: topEntities ? "Top entities: " + topEntities : "No entities in this group.",
+  };
+}
+
+function timelineDecadePreview(decade) {
+  return {
+    title: decade + "s",
+    meta: "Timeline decade",
+    body: "Click to drill into exact parsed dates and their linked entities.",
   };
 }
 
@@ -2739,6 +3076,8 @@ function showHoverPreview(node, event) {
   }
   const preview = node.dataset.homeRoot
     ? homePreview()
+    : node.dataset.timelineDecade
+    ? timelineDecadePreview(node.dataset.timelineDecade)
     : node.dataset.entity
     ? entityPreview(node.dataset.entity)
     : categoryPreview(node.dataset.categoryList || node.dataset.category);
@@ -2775,6 +3114,7 @@ function searchGraph() {
   if (!query) return;
   const category = Object.entries(DATA.topCategoryLabels).find(([id, label]) => label.toLowerCase().includes(query) || id.toLowerCase().includes(query));
   const entity = DATA.entities.find((item) => item.name.toLowerCase().includes(query));
+  activeTimelineDecade = null;
   if (entity) {
     selectedEntityId = entity.id;
     activeCategory = null;
@@ -2807,6 +3147,15 @@ function stepBackGraph() {
   }
   if (mode === "category-list") {
     selectedEntityId = null;
+    activeTimelineDecade = null;
+    mode = "categories";
+    render();
+    focusSelectedGraphLabel();
+    return true;
+  }
+  if (activeCategory === "events_claims" && activeTimelineDecade !== null) {
+    activeTimelineDecade = null;
+    selectedEntityId = null;
     mode = "categories";
     render();
     focusSelectedGraphLabel();
@@ -2815,6 +3164,7 @@ function stepBackGraph() {
   if (activeCategory) {
     activeCategory = null;
     selectedEntityId = null;
+    activeTimelineDecade = null;
     mode = "categories";
     renderCategories();
     focusSelectedGraphLabel();
@@ -3259,9 +3609,17 @@ function handleGraphWheel(event) {
     renderCategory(activeCategory);
     return;
   }
+  if (event.deltaY > 0 && activeCategory === "events_claims" && activeTimelineDecade !== null && nextW >= CATEGORY_ZOOM_OUT_STEP_UP_WIDTH) {
+    activeTimelineDecade = null;
+    selectedEntityId = null;
+    hideHoverPreview();
+    renderCategory(activeCategory);
+    return;
+  }
   if (event.deltaY > 0 && activeCategory && mode === "categories" && nextW >= CATEGORY_ZOOM_OUT_STEP_UP_WIDTH) {
     activeCategory = null;
     selectedEntityId = null;
+    activeTimelineDecade = null;
     hideHoverPreview();
     renderCategories();
   }

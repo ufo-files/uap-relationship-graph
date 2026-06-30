@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-30T21:37:53.818465+00:00",
+  "generated_at": "2026-06-30T22:34:49.059975+00:00",
   "pipeline": "relationship-graph",
   "reproducibility": {
     "no_openai_api": true,
@@ -18,8 +18,8 @@
       ".txt"
     ],
     "review_input_applied": true,
-    "source_data_dir": "_data/data",
-    "transcript_source_dir": "_data/data/transcripts",
+    "source_data_dir": "../data/data",
+    "transcript_source_dir": "../data/data/transcripts",
     "relationship_window_radius": 4,
     "relationship_window_mentions": 30,
     "relationship_output_limit": 8000,
@@ -29,10 +29,10 @@
   "counts": {
     "transcripts": 302,
     "segments": 217017,
-    "mentions": 108377,
-    "entities": 54019,
+    "mentions": 107570,
+    "entities": 54016,
     "relationships": 8000,
-    "categories": 52
+    "categories": 51
   },
   "input_hashes": {
     "100-000-ufos-are-surrounding-earth-ft-to.tsv": "a26a242213c018b4103b6f29d03f4aab3c1ce7e47d2dc1e0f18c72e16724077a",
@@ -339,7 +339,7 @@
     "why-the-pentagon-tried-to-censor-this-uf.tsv": "e66f4d3cc4202e0fd4d4986c5a4dc2a618df86798adc396d5fc333b004509b23"
   },
   "registry_hash": "85f3c52f306d1891b4a44f68e6527ed66041b2f074dad487cf7915d3740276b3",
-  "pipeline_hash": "8829706702f80d4ca5cac312657445ecefdca6aeb012d2ff3efe5de060f9a638",
+  "pipeline_hash": "423edb081d8d50e88cd9b7f9225eb060a767df900e05f8e5ff63290ca336e9ce",
   "review_counts": {
     "reclassifications": 539,
     "name_reclassifications": 869,
