@@ -589,9 +589,9 @@
   <div id="hover-card" class="hover-card" aria-hidden="true"></div>
   <div id="corner-label" class="corner-label" role="status" aria-live="polite"></div>
   </main>
-    <script src="app-data.js?v=8d873960bb5ca992"></script>
-    <script src="app-data-mentions.js?v=8d873960bb5ca992"></script>
-    <script src="app-data-relationships.js?v=8d873960bb5ca992"></script>
+    <script src="app-data.js?v=e565cbcd67844120"></script>
+    <script src="app-data-mentions.js?v=e565cbcd67844120"></script>
+    <script src="app-data-relationships.js?v=e565cbcd67844120"></script>
   <script>
     const RAW = window.TRANSCRIPT_INTELLIGENCE_DATA;
     const REVIEW_KEY = "relationship-graph-reclass";
@@ -957,52 +957,6 @@
       });
     }
 
-    function fitSelectedEgoGraph(nodes, center) {
-      const items = [center].concat(nodes).filter(Boolean);
-      if (!items.length) return;
-      const rect = svg.getBoundingClientRect();
-      const rectWidth = Math.max(1, rect.width || svg.clientWidth || 1);
-      const rectHeight = Math.max(1, rect.height || svg.clientHeight || 1);
-      const topInset = Math.max(24, graphHeaderInsetPx() - 120);
-      const bottomInset = 32;
-      const leftInset = isCompactViewport() ? 0 : Math.min(graphSidebarInsetPx(), 340);
-      const rightInset = 24;
-      const availableW = Math.max(180, rectWidth - leftInset - rightInset);
-      const availableH = Math.max(180, rectHeight - topInset - bottomInset);
-      const minX = Math.min(...items.map((node) => node.x - node.r));
-      const maxX = Math.max(...items.map((node) => node.x + node.r));
-      const minY = Math.min(...items.map((node) => node.y - node.r));
-      const maxY = Math.max(...items.map((node) => node.y + node.r));
-      const contentW = Math.max(1, maxX - minX);
-      const contentH = Math.max(1, maxY - minY);
-      const heightScale = (availableH * .9) / contentH;
-      const widthScale = (availableW * .94) / contentW;
-      let scale = Math.min(heightScale, widthScale);
-      if (!Number.isFinite(scale) || scale <= 0) scale = 1;
-      scale *= isCompactViewport() ? .96 : 1;
-      let width = clamp(rectWidth / scale, MIN_ZOOM_WIDTH, MAX_ZOOM_WIDTH);
-      let height = width / (rectWidth / rectHeight);
-      if (height < MIN_ZOOM_HEIGHT) {
-        height = MIN_ZOOM_HEIGHT;
-        width = height * (rectWidth / rectHeight);
-      }
-      if (height > MAX_ZOOM_HEIGHT) {
-        height = MAX_ZOOM_HEIGHT;
-        width = height * (rectWidth / rectHeight);
-      }
-      const actualScale = rectWidth / width;
-      const contentCx = (minX + maxX) / 2;
-      const contentCy = (minY + maxY) / 2;
-      const availableCenterX = leftInset + availableW / 2;
-      const availableCenterY = topInset + availableH / 2;
-      setViewBox(
-        contentCx - availableCenterX / actualScale,
-        contentCy - availableCenterY / actualScale,
-        width,
-        height
-      );
-    }
-
     function fitCategoryDrillViewport(activeCategoryNode, nodes) {
       if (!isCompactViewport()) {
         fitNodesToViewport([activeCategoryNode].concat(nodes), { padding: 260, reserveHeader: true, bottomInsetPx: 32 });
@@ -1141,41 +1095,23 @@
       const nodeById = layout.nodeById;
       const maxEdge = layout.maxEdge;
       const edges = layout.edges;
-      const center = layout.center;
-      const spokes = nodes.map((node) => ({ source: center.id, target: node.id, weight: node.count || 1 }));
-      const spokeNodeById = new Map(nodeById);
-      spokeNodeById.set(center.id, center);
-      const maxSpoke = Math.max(1, ...spokes.map((edge) => edge.weight));
-      svg.innerHTML =
-        drawEdges(spokes, spokeNodeById, maxSpoke, "ego-spoke") +
-        drawEdges(edges, nodeById, maxEdge, "ego-context") +
-        '<g class="graph-node home-root" data-home-root="true" aria-hidden="true">' +
-          '<circle cx="' + center.x + '" cy="' + center.y + '" r="' + center.r + '" fill="' + theme.activeHalo + '" stroke="' + theme.primary + '" stroke-width="1" opacity=".92"></circle>' +
-        '</g>' +
-        nodes.map((node) => {
+      svg.innerHTML = drawEdges(edges, nodeById, maxEdge, "category") + nodes.map((node) => {
         return '<g class="graph-node" data-category="' + esc(node.id) + '">' +
           '<circle cx="' + node.x + '" cy="' + node.y + '" r="' + node.r + '" fill="' + theme.primary + '" opacity=".9"></circle>' +
         '</g>';
       }).join("");
-      setGraphLabels([nodeLabel(
-        center.id,
-        "annotation",
-        center,
-        "UFO Files",
-        DATA.manifest.counts.entities.toLocaleString() + " entities",
-        center.r
-      )].concat(nodes.map((node) => nodeLabel(
+      setGraphLabels(nodes.map((node) => nodeLabel(
         node.id,
         "category",
         node,
         truncate(node.label, 24),
         node.count + " entities · " + node.mentions + " mentions"
-      ))));
+      )));
       statusEl.textContent = nodes.length + " groups · " + DATA.manifest.counts.entities.toLocaleString() + " entities · select a group";
       cardEl.classList.remove("open");
       setCornerLabel(null);
       wireCategoryNodes();
-      fitEgoGraph(nodes, center);
+      fitParentGraph();
     }
 
     function buildCategoryLayout() {
@@ -1199,24 +1135,14 @@
         const key = [source.topCategory, target.topCategory].sort().join("::");
         edgeWeights.set(key, (edgeWeights.get(key) || 0) + relationship.weight);
       }
-      const center = {
-        id: "ufo-files-root",
-        label: "UFO Files",
-        x: 1100,
-        y: 750,
-        r: 72,
-        count: DATA.manifest.counts.entities || 0,
-        mentions: DATA.manifest.counts.mentions || 0,
-        raw: { name: "UFO Files" },
-      };
-      const nodes = parentCategoryNodes(categories.sort((a, b) => b.count - a.count), center.x, center.y);
+      const nodes = parentCategoryNodes(categories.sort((a, b) => b.count - a.count), 1100, 750);
       const nodeById = new Map(nodes.map((node) => [node.id, node]));
       const maxEdge = Math.max(1, ...edgeWeights.values());
       const edges = Array.from(edgeWeights.entries()).sort((a, b) => b[1] - a[1]).slice(0, 95).map(([key, weight]) => {
         const [source, target] = key.split("::");
         return { source, target, weight };
       });
-      return { nodes, nodeById, maxEdge, edges, edgeWeights, center };
+      return { nodes, nodeById, maxEdge, edges, edgeWeights };
     }
 
     function renderCategory(categoryId) {
@@ -1748,7 +1674,7 @@
       setCornerLabel(null);
       renderCard(entity, rels);
       wireEntityNodes();
-      fitSelectedEgoGraph(nodes, center);
+      fitEgoGraph(nodes, center);
     }
 
     function relationshipGraphScore(relationship) {
@@ -1800,8 +1726,8 @@
 
     function parentCategoryNodes(categories, cx, cy) {
       const maxCount = Math.max(1, ...categories.map((category) => category.count || 1));
-      const radiusFor = (category) => Math.max(18, Math.min(150, Math.sqrt((category.count || 1) / maxCount) * 150));
-      const outerRadius = 1120;
+      const radiusFor = (category) => Math.max(16, Math.min(190, Math.sqrt((category.count || 1) / maxCount) * 190));
+      const outerRadius = 1850;
       return categories.map((category, index) => {
         const angle = (Math.PI * 2 * index) / Math.max(1, categories.length) - Math.PI / 2;
         return {
@@ -1817,18 +1743,13 @@
       });
     }
 
-    function drawEdges(edges, nodeById, maxEdge, density = "normal") {
+    function drawEdges(edges, nodeById, maxEdge) {
       const theme = currentTheme();
-      const isSpoke = density === "ego-spoke";
-      const isContext = density === "ego-context";
-      const baseWidth = isSpoke ? 0.65 : isContext ? 0.25 : 0.8;
-      const weightWidth = isSpoke ? 4.8 : isContext ? 1.7 : 7;
-      const opacity = isSpoke ? ".34" : isContext ? ".16" : theme.edgeOpacity.high;
       return edges.map((edge) => {
         const source = nodeById.get(edge.source);
         const target = nodeById.get(edge.target);
         if (!source || !target) return "";
-        return '<line class="graph-edge" x1="' + source.x + '" y1="' + source.y + '" x2="' + target.x + '" y2="' + target.y + '" stroke="' + theme.edge + '" stroke-width="' + (baseWidth + (edge.weight / maxEdge) * weightWidth).toFixed(1) + '" opacity="' + opacity + '"></line>';
+        return '<line class="graph-edge" x1="' + source.x + '" y1="' + source.y + '" x2="' + target.x + '" y2="' + target.y + '" stroke="' + theme.edge + '" stroke-width="' + (0.8 + (edge.weight / maxEdge) * 7).toFixed(1) + '" opacity="' + theme.edgeOpacity.high + '"></line>';
       }).join("");
     }
 
@@ -2468,11 +2389,7 @@
         ? "entity:" + node.dataset.entity
         : node.dataset.categoryList
           ? "category-list:" + node.dataset.categoryList
-          : node.dataset.category
-            ? "category:" + node.dataset.category
-            : node.dataset.homeRoot
-              ? "home-root"
-              : "";
+          : "category:" + node.dataset.category;
     }
 
     function resetHoverZoomActivation() {
@@ -2512,23 +2429,12 @@
       };
     }
 
-    function homePreview() {
-      const counts = DATA.manifest.counts || {};
-      return {
-        title: "UFO Files",
-        meta: (counts.entities || DATA.entities.length).toLocaleString() + " entities · " + (counts.relationships || DATA.relationships.length).toLocaleString() + " relationships",
-        body: Object.keys(DATA.topCategoryLabels).length.toLocaleString() + " top-level groups · " + (counts.mentions || DATA.mentions.length).toLocaleString() + " mentions",
-      };
-    }
-
     function showHoverPreview(node, event) {
       if (!node || dragStart) {
         hideHoverPreview();
         return;
       }
-      const preview = node.dataset.homeRoot
-        ? homePreview()
-        : node.dataset.entity
+      const preview = node.dataset.entity
         ? entityPreview(node.dataset.entity)
         : categoryPreview(node.dataset.categoryList || node.dataset.category);
       if (!preview) {
