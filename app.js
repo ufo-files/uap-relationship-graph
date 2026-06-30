@@ -48,7 +48,7 @@ const SECOND_DEGREE_CONTEXT_LIMIT = 12;
 const SECOND_DEGREE_PER_NEIGHBOR_LIMIT = 2;
 const SECOND_DEGREE_EDGE_LIMIT = 24;
 const SECOND_DEGREE_LABEL_LIMIT = 0;
-const TIMELINE_VERTICAL_SCALE = 0.9;
+const TIMELINE_VERTICAL_SCALE = 0.84;
 
 initializeReviewStorage();
 let DATA = applyReviewDecisions(normalizeData(RAW));
@@ -983,6 +983,15 @@ function renderEventsTimeline(categoryId) {
   }
   spreadTimelineEntityNodes(entityNodes, baseY);
   spreadTimelineLabelNodes(dateNodes, entityNodes, baseY, width);
+  const labeledContextIds = new Set(entityNodes
+    .filter((node) => node.isContext)
+    .sort((a, b) => b.weight - a.weight || b.dateRefs.length - a.dateRefs.length || entityGraphScore(b.raw) - entityGraphScore(a.raw))
+    .slice(0, 8)
+    .map((node) => node.entityId));
+  const labeledTimelineNodes = dateNodes.concat(entityNodes.filter((node) => {
+    if (!node.isContext) return true;
+    return node.dateRefs.length >= 2 || labeledContextIds.has(node.entityId);
+  }));
   for (const node of dateNodes) {
     labels.push({
       id: node.item.dateEntity.id,
@@ -994,11 +1003,6 @@ function renderEventsTimeline(categoryId) {
       secondary: node.item.events.length + " " + pluralize("link", node.item.events.length),
     });
   }
-  const labeledContextIds = new Set(entityNodes
-    .filter((node) => node.isContext)
-    .sort((a, b) => b.weight - a.weight || b.dateRefs.length - a.dateRefs.length || entityGraphScore(b.raw) - entityGraphScore(a.raw))
-    .slice(0, 8)
-    .map((node) => node.entityId));
   for (const node of entityNodes) {
     if (node.isContext && node.dateRefs.length < 2 && !labeledContextIds.has(node.entityId)) continue;
     labels.push({
@@ -1062,7 +1066,8 @@ function renderEventsTimeline(categoryId) {
   );
   const timelineMaxY = Math.max(
     ...dateNodes.map((node) => node.y + Math.max(0, node.labelOffset) + node.r + 84),
-    ...entityNodes.map((node) => node.y + node.r + 92)
+    ...entityNodes.map((node) => node.y + node.r + 92),
+    ...timelineLabelBottomBounds(labeledTimelineNodes, width)
   );
   fitTimelineAxisToViewport(startX, endX, timelineMinY, timelineMaxY);
 }
@@ -1071,7 +1076,9 @@ function fitTimelineAxisToViewport(startX, endX, minY, maxY) {
   const rect = svg.getBoundingClientRect();
   const rectWidth = Math.max(1, rect.width || svg.clientWidth || 1);
   const rectHeight = Math.max(1, rect.height || svg.clientHeight || 1);
-  const topInset = Math.max(24, graphHeaderInsetPx() - 20);
+  const cornerRect = cornerLabelEl ? cornerLabelEl.getBoundingClientRect() : null;
+  const cornerBottom = cornerRect && cornerRect.width && cornerRect.height ? cornerRect.bottom + 24 : 0;
+  const topInset = Math.max(24, graphHeaderInsetPx() - 20, cornerBottom);
   const bottomInset = 12;
   const availableH = Math.max(180, rectHeight - topInset - bottomInset);
   const width = Math.max(MIN_ZOOM_WIDTH, endX - startX);
@@ -1153,6 +1160,12 @@ function timelineNodeLabelRect(node, scale) {
     top,
     bottom: top + height,
   };
+}
+
+function timelineLabelBottomBounds(nodes, timelineWidth) {
+  const rect = svg.getBoundingClientRect();
+  const scale = Math.max(0.05, (rect.width || svg.clientWidth || 1440) / Math.max(1, timelineWidth));
+  return nodes.map((node) => timelineNodeLabelRect(node, scale).bottom + 16 / scale);
 }
 
 function spreadTimelineLabelNodes(dateNodes, entityNodes, baseY, timelineWidth) {
