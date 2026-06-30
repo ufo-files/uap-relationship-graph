@@ -30,8 +30,9 @@ def main() -> int:
     source = (ROOT / "build_graph.py").read_text(encoding="utf-8", errors="replace")
     parser = ElementCollector()
     parser.feed(index)
+    styles = collect_document_styles(index, parser)
 
-    errors.extend(check_document(index, parser))
+    errors.extend(check_document(index, styles, parser))
     errors.extend(check_template_source(source))
 
     if errors:
@@ -42,7 +43,25 @@ def main() -> int:
     return 0
 
 
-def check_document(index: str, parser: ElementCollector) -> list[str]:
+def collect_document_styles(index: str, parser: ElementCollector) -> str:
+    styles = [index]
+    for tag, attrs in parser.elements:
+        if tag != "link" or "stylesheet" not in attrs.get("rel", "").lower().split():
+            continue
+        href = attrs.get("href", "").split("?", 1)[0]
+        if not href or re.match(r"^[a-z]+:", href, flags=re.IGNORECASE):
+            continue
+        stylesheet = (ROOT / href.lstrip("./")).resolve()
+        try:
+            stylesheet.relative_to(ROOT)
+        except ValueError:
+            continue
+        if stylesheet.exists():
+            styles.append(stylesheet.read_text(encoding="utf-8", errors="replace"))
+    return "\n".join(styles)
+
+
+def check_document(index: str, styles: str, parser: ElementCollector) -> list[str]:
     errors: list[str] = []
     elements = parser.elements
     by_id = {attrs["id"]: (tag, attrs) for tag, attrs in elements if attrs.get("id")}
@@ -51,7 +70,7 @@ def check_document(index: str, parser: ElementCollector) -> list[str]:
         errors.append("Document must declare html lang=\"en\".")
     if "<title>UFO Files Relationship Graph</title>" not in index:
         errors.append("Document title is missing or unexpected.")
-    if "input:focus-visible" not in index or ".html-graph-label:focus-visible" not in index:
+    if "input:focus-visible" not in styles or ".html-graph-label:focus-visible" not in styles:
         errors.append("Visible focus styles are missing for form controls or graph labels.")
 
     search = by_id.get("search")
