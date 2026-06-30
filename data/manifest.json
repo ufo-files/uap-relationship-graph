@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-30T07:17:07.084118+00:00",
+  "generated_at": "2026-06-30T07:26:39.673154+00:00",
   "pipeline": "relationship-graph",
   "reproducibility": {
     "no_openai_api": true,
@@ -18,8 +18,8 @@
       ".txt"
     ],
     "review_input_applied": true,
-    "source_data_dir": "../uap-data/data",
-    "transcript_source_dir": "../uap-data/data/transcripts",
+    "source_data_dir": "_uap-data/data",
+    "transcript_source_dir": "_uap-data/data/transcripts",
     "relationship_window_radius": 4,
     "relationship_window_mentions": 30,
     "relationship_output_limit": 8000,
