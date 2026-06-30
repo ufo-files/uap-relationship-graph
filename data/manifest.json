@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-30T22:34:49.059975+00:00",
+  "generated_at": "2026-06-30T23:03:38.441792+00:00",
   "pipeline": "relationship-graph",
   "reproducibility": {
     "no_openai_api": true,
@@ -18,8 +18,8 @@
       ".txt"
     ],
     "review_input_applied": true,
-    "source_data_dir": "../data/data",
-    "transcript_source_dir": "../data/data/transcripts",
+    "source_data_dir": "_data/data",
+    "transcript_source_dir": "_data/data/transcripts",
     "relationship_window_radius": 4,
     "relationship_window_mentions": 30,
     "relationship_output_limit": 8000,
