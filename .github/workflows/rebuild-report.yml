@@ -53,10 +53,13 @@ jobs:
         run: python -m json.tool data/reclass.json > /dev/null
 
       - name: Compile builder and validator
-        run: python -m py_compile build_graph.py scripts/validate_repo.py scripts/audit_accessibility.py
+        run: python -m py_compile build_graph.py scripts/convert_ocr_pdfs.py scripts/validate_repo.py scripts/audit_accessibility.py
 
       - name: Run unit tests
         run: python -m unittest discover -s tests -v
+
+      - name: Convert OCR documents
+        run: python scripts/convert_ocr_pdfs.py
 
       - name: Validate repository data
         run: python scripts/validate_repo.py
