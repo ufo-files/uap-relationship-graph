@@ -31,8 +31,16 @@ RELATIONSHIP_WINDOW_MENTION_LIMIT = 30
 RELATIONSHIP_OUTPUT_LIMIT = 8000
 SOURCE_DOCUMENT_DETECTOR = "source_document"
 SOURCE_OUTLET_DETECTOR = "source_outlet"
+SOURCE_TITLE_DETECTOR = "source_title"
 SOURCE_PROVENANCE_DETECTORS = {SOURCE_DOCUMENT_DETECTOR, SOURCE_OUTLET_DETECTOR}
 SOURCE_DOCUMENT_RELATIONSHIP_CATEGORIES = {"frequencies"}
+SOURCE_TITLE_RELATIONSHIP_WEIGHT = 50
+SOURCE_TITLE_EXCLUDED_CATEGORIES = {
+    "document_names",
+    "websites",
+    "ip_addresses",
+    "gps_coordinates",
+}
 SOURCE_OUTLET_RULES = [
     ("American Alchemy", "newsrooms", re.compile(r"\bAmerican\s+Alchemy\b|AmericanAlchemy", re.I)),
 ]
@@ -1337,7 +1345,9 @@ def main() -> None:
     sources = select_transcript_sources()
     segments = load_segments(sources)
     dictionaries, omit_terms = build_dictionaries(registry)
-    mentions = resolve_competing_mentions(extract_mentions(segments, dictionaries, omit_terms))
+    mentions = extract_mentions(segments, dictionaries, omit_terms)
+    mentions = add_source_title_mentions(segments, mentions, dictionaries, omit_terms)
+    mentions = resolve_competing_mentions(mentions)
     mentions = apply_review_to_mentions(mentions, review)
     mentions = add_source_provenance_mentions(segments, mentions)
     entities = build_entities(mentions)
@@ -1528,6 +1538,18 @@ def load_segments(paths: list[Path]) -> list[Segment]:
         rows = parse_source(path)
         transcript_id = slugify(path.stem)
         title = titleize(path.stem)
+        if rows:
+            segments.append(
+                Segment(
+                    id=source_title_segment_id(transcript_id),
+                    transcript_id=transcript_id,
+                    transcript_title=title,
+                    source_file=path.name,
+                    start_ms=-1,
+                    end_ms=0,
+                    text=title,
+                )
+            )
         for index, row in enumerate(rows):
             text = clean_text(row["text"])
             if not text:
@@ -1545,6 +1567,14 @@ def load_segments(paths: list[Path]) -> list[Segment]:
                 )
             )
     return segments
+
+
+def source_title_segment_id(transcript_id: str) -> str:
+    return f"seg-{transcript_id}-title"
+
+
+def is_source_title_segment(segment: Segment) -> bool:
+    return segment.id == source_title_segment_id(segment.transcript_id)
 
 
 def parse_source(path: Path) -> list[dict[str, Any]]:
@@ -1652,6 +1682,8 @@ def extract_mentions(segments: list[Segment], dictionaries: dict[str, list[str]]
     mentions: list[Mention] = []
     seen_mentions: set[tuple[str, str, str]] = set()
     for segment in segments:
+        if is_source_title_segment(segment):
+            continue
         text = segment.text
         lower = text.lower()
 
@@ -1685,6 +1717,82 @@ def extract_mentions(segments: list[Segment], dictionaries: dict[str, list[str]]
 
         for person in person_mentions(segment, omit_terms):
             add_mention(mentions, seen_mentions, segment, **person)
+
+    return mentions
+
+
+def add_source_title_mentions(
+    segments: list[Segment],
+    mentions: list[Mention],
+    dictionaries: dict[str, list[str]],
+    omit_terms: set[str],
+) -> list[Mention]:
+    title_segments = [segment for segment in segments if is_source_title_segment(segment)]
+    if not title_segments:
+        return mentions
+
+    seen_mentions = {(mention.segment_id, mention.entity_id, mention.detector) for mention in mentions}
+    candidates: dict[tuple[str, str], tuple[str, str, float, str]] = {}
+
+    def add_candidate(name: str, category: str, confidence: float, reason: str) -> None:
+        if category in SOURCE_TITLE_EXCLUDED_CATEGORIES:
+            return
+        normalized = normalize_name(name)
+        if len(normalized) < 3 or normalized in omit_terms:
+            return
+        key = (canonicalize(name, category), category)
+        current = candidates.get(key)
+        if current and current[2] >= confidence:
+            return
+        candidates[key] = (name.strip(), category, confidence, reason)
+
+    for category, terms in dictionaries.items():
+        for term in terms:
+            add_candidate(term, category, 0.92, f"Source title matched curated term in {label(category)}")
+
+    for mention in mentions:
+        add_candidate(
+            mention.name,
+            mention.category,
+            min(0.86, max(0.72, mention.confidence * 0.9)),
+            f"Source title matched known corpus entity in {label(mention.category)}",
+        )
+
+    ordered_candidates = sorted(candidates.values(), key=lambda item: (-len(item[0]), item[1], item[0].lower()))
+    for segment in title_segments:
+        title_text = segment.text
+        lower = title_text.lower()
+        for name, category, confidence, reason in ordered_candidates:
+            if name.lower() not in lower:
+                continue
+            pattern = re.compile(r"(?<![A-Za-z0-9])" + re.escape(name) + r"(?![A-Za-z0-9])", re.I)
+            for match in pattern.finditer(title_text):
+                add_mention(
+                    mentions,
+                    seen_mentions,
+                    segment,
+                    name=match.group(0),
+                    category=category,
+                    detector=SOURCE_TITLE_DETECTOR,
+                    confidence=confidence,
+                    reason=reason,
+                    excerpt=excerpt(title_text, match.start(), match.end()),
+                )
+
+        for item in pattern_mentions(segment):
+            if normalize_name(item["name"]) in omit_terms:
+                continue
+            add_mention(
+                mentions,
+                seen_mentions,
+                segment,
+                name=item["name"],
+                category=item["category"],
+                detector=SOURCE_TITLE_DETECTOR,
+                confidence=item["confidence"],
+                reason=f"Source title {item['reason'][0].lower()}{item['reason'][1:]}",
+                excerpt=item["excerpt"],
+            )
 
     return mentions
 
@@ -2685,6 +2793,9 @@ def build_source_document_relationships(mentions: list[Mention], entities: list[
         if mention.detector == SOURCE_OUTLET_DETECTOR:
             target_mentions_by_pair[(document.entity_id, mention.entity_id, "source_outlet")].append(mention)
             continue
+        if mention.detector == SOURCE_TITLE_DETECTOR:
+            target_mentions_by_pair[(document.entity_id, mention.entity_id, "source_mentions")].append(mention)
+            continue
         if mention.detector in SOURCE_PROVENANCE_DETECTORS:
             continue
         if mention.category in SOURCE_DOCUMENT_RELATIONSHIP_CATEGORIES:
@@ -2734,6 +2845,57 @@ def build_source_document_relationships(mentions: list[Mention], entities: list[
     return relationships
 
 
+def build_source_title_relationships(mentions: list[Mention], entities: list[Entity]) -> list[Relationship]:
+    entity_by_id = {entity.id: entity for entity in entities}
+    mentions_by_segment: dict[str, list[Mention]] = defaultdict(list)
+    for mention in mentions:
+        if mention.detector == SOURCE_TITLE_DETECTOR and mention.entity_id in entity_by_id:
+            mentions_by_segment[mention.segment_id].append(mention)
+
+    relationships: list[Relationship] = []
+    seen_pairs: set[tuple[str, str]] = set()
+    for segment_id, segment_mentions in sorted(mentions_by_segment.items()):
+        segment_mentions = dedupe_mentions_for_segment(segment_mentions)
+        segment_mentions.sort(key=lambda mention: (-mention.confidence, mention.name))
+        for i, a in enumerate(segment_mentions):
+            for b in segment_mentions[i + 1 :]:
+                if a.entity_id == b.entity_id:
+                    continue
+                source, target = sorted([a.entity_id, b.entity_id])
+                if (source, target) in seen_pairs:
+                    continue
+                source_entity = entity_by_id.get(source)
+                target_entity = entity_by_id.get(target)
+                if not source_entity or not target_entity:
+                    continue
+                if normalize_name(source_entity.name) == normalize_name(target_entity.name):
+                    continue
+                seen_pairs.add((source, target))
+                evidence = {
+                    "segment_id": segment_id,
+                    "transcript": a.transcript_title,
+                    "timestamp": a.timestamp,
+                    "excerpt": a.excerpt,
+                    "reason": "Source title names both entities",
+                    "relationship_type": "co_mentioned",
+                }
+                relationships.append(
+                    Relationship(
+                        id=f"rel-title-{len(relationships) + 1:06d}",
+                        source=source_entity.id,
+                        target=target_entity.id,
+                        source_name=source_entity.name,
+                        target_name=target_entity.name,
+                        type="co_mentioned",
+                        weight=SOURCE_TITLE_RELATIONSHIP_WEIGHT,
+                        evidence_segment_ids=[segment_id],
+                        evidence=[evidence],
+                        confidence=round((a.confidence + b.confidence) / 2, 3),
+                    )
+                )
+    return relationships
+
+
 def build_relationships(segments: list[Segment], mentions: list[Mention], entities: list[Entity], review: dict[str, Any]) -> list[Relationship]:
     entity_by_id = {entity.id: entity for entity in entities}
     mentions_by_segment: dict[str, list[Mention]] = defaultdict(list)
@@ -2772,7 +2934,6 @@ def build_relationships(segments: list[Segment], mentions: list[Mention], entiti
             window_start = window_segments[0].start_ms
             window_timestamp = format_timestamp(window_start)
             evidence_text = clean_text(window_text[:900])
-
             for i, a in enumerate(window_mentions):
                 for b in window_mentions[i + 1 :]:
                     if a.entity_id == b.entity_id:
@@ -2824,8 +2985,9 @@ def build_relationships(segments: list[Segment], mentions: list[Mention], entiti
             )
         )
     source_relationships = build_source_document_relationships(mentions, entities)[:RELATIONSHIP_OUTPUT_LIMIT]
-    remaining = max(0, RELATIONSHIP_OUTPUT_LIMIT - len(source_relationships))
-    return apply_manual_relationships(source_relationships + relationships[:remaining], entities, review)
+    title_relationships = build_source_title_relationships(mentions, entities)[:RELATIONSHIP_OUTPUT_LIMIT]
+    remaining = max(0, RELATIONSHIP_OUTPUT_LIMIT - len(source_relationships) - len(title_relationships))
+    return apply_manual_relationships(source_relationships + title_relationships + relationships[:remaining], entities, review)
 
 
 def apply_manual_relationships(relationships: list[Relationship], entities: list[Entity], review: dict[str, Any]) -> list[Relationship]:

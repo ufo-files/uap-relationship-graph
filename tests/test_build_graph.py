@@ -166,6 +166,53 @@ class BuildGraphParsingTests(unittest.TestCase):
         self.assertIn(("Transcript One", "1.6 GHz", "source_mentions"), relationship_keys)
         self.assertIn(("Transcript One", "American Alchemy", "source_outlet"), relationship_keys)
 
+    def test_source_titles_are_used_as_relationship_evidence(self) -> None:
+        title_segment = build_graph.Segment(
+            id=build_graph.source_title_segment_id("bob-lazar-travis-walton-finally-meet-t"),
+            transcript_id="bob-lazar-travis-walton-finally-meet-t",
+            transcript_title="Bob Lazar Travis Walton Finally Meet T",
+            source_file="bob-lazar-travis-walton-finally-meet-t.tsv",
+            start_ms=-1,
+            end_ms=0,
+            text="Bob Lazar Travis Walton Finally Meet T",
+        )
+        body_segment = build_graph.Segment(
+            id="seg-bob-lazar-travis-walton-finally-meet-t-00000",
+            transcript_id="bob-lazar-travis-walton-finally-meet-t",
+            transcript_title="Bob Lazar Travis Walton Finally Meet T",
+            source_file="bob-lazar-travis-walton-finally-meet-t.tsv",
+            start_ms=0,
+            end_ms=1000,
+            text="Travis Walton described the encounter.",
+        )
+        dictionaries, omit_terms = build_graph.build_dictionaries({"categories": {}, "omit": []})
+        mentions = build_graph.extract_mentions([title_segment, body_segment], dictionaries, omit_terms)
+        mentions = build_graph.add_source_title_mentions([title_segment, body_segment], mentions, dictionaries, omit_terms)
+        mentions = build_graph.resolve_competing_mentions(mentions)
+        mentions = build_graph.add_source_provenance_mentions([title_segment, body_segment], mentions)
+        entities = build_graph.build_entities(mentions)
+        relationships = build_graph.build_relationships([title_segment, body_segment], mentions, entities, {})
+
+        title_mentions = {
+            (mention.name, mention.category)
+            for mention in mentions
+            if mention.detector == build_graph.SOURCE_TITLE_DETECTOR
+        }
+        self.assertIn(("Bob Lazar", "whistleblowers"), title_mentions)
+        self.assertIn(("Travis Walton", "experiencers"), title_mentions)
+
+        bob_travis_relationship = next(
+            relationship
+            for relationship in relationships
+            if {relationship.source_name, relationship.target_name} == {"Bob Lazar", "Travis Walton"}
+        )
+        self.assertTrue(bob_travis_relationship.id.startswith("rel-title-"))
+        self.assertEqual(bob_travis_relationship.evidence[0]["reason"], "Source title names both entities")
+        self.assertIn(
+            ("Bob Lazar Travis Walton Finally Meet T", "Travis Walton", "source_mentions"),
+            {(relationship.source_name, relationship.target_name, relationship.type) for relationship in relationships},
+        )
+
     def test_generated_people_like_categories_do_not_contain_pentagon_or_universal_origin_leaks(self) -> None:
         entities = json.loads(Path("data/entities.json").read_text(encoding="utf-8"))
         people_like = {
