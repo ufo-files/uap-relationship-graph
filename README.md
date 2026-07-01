@@ -5,8 +5,8 @@
 <!-- dataset-badges:start -->
 ![Transcript Sources](https://img.shields.io/badge/transcript%20sources-304-2b2b2b)
 ![Segments](https://img.shields.io/badge/segments-218%2C822-2b2b2b)
-![Entities](https://img.shields.io/badge/entities-52%2C730-2b2b2b)
-![Mentions](https://img.shields.io/badge/mentions-105%2C784-2b2b2b)
+![Entities](https://img.shields.io/badge/entities-51%2C651-2b2b2b)
+![Mentions](https://img.shields.io/badge/mentions-106%2C099-2b2b2b)
 ![Relationships](https://img.shields.io/badge/relationships-8%2C000-2b2b2b)
 <!-- dataset-badges:end -->
 
@@ -40,8 +40,8 @@ The current export includes:
 
 - 304 transcript sources
 - 218,822 transcript segments
-- 105,784 entity mentions
-- 52,730 entities
+- 106,099 entity mentions
+- 51,651 entities
 - 8,000 relationships
 - 51 categories
 
