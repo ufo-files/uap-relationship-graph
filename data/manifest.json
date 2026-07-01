@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-30T23:55:52.337373+00:00",
+  "generated_at": "2026-07-01T00:44:19.700432+00:00",
   "pipeline": "relationship-graph",
   "reproducibility": {
     "no_openai_api": true,
@@ -27,10 +27,10 @@
     "note": "Generated graph files are overwritten on each rebuild. Long-term reclassification decisions live in data/reclass.json."
   },
   "counts": {
-    "transcripts": 302,
-    "segments": 217017,
-    "mentions": 107570,
-    "entities": 54016,
+    "transcripts": 303,
+    "segments": 217018,
+    "mentions": 107579,
+    "entities": 54023,
     "relationships": 8000,
     "categories": 51
   },
@@ -252,6 +252,7 @@
     "document-tridactyl-powder-supplemental-report.tsv": "1280ebca0612f88e60b52165642398603582f0bae62b91e451561767d55a6e04",
     "document-tridactyl-rapportnazca-olivier-sire-en1-1.tsv": "21061f956d4985af2395330cdf4961a50fc74a3513a6c5c5db6175818835a1ea",
     "document-tridactyl-rgsa247ing-1.tsv": "0d43d81fda0554df5ad02e6cf3f8d2d258180630ade2e53a0262c164afedd215",
+    "document-twitter-dog-whistle-recipe.tsv": "cbad63c37feab94037e7b115ac71ce300dc5472ae476d8bb2b116bf6f5f6a3ce",
     "document-whitepapers-2305-18566v2.tsv": "a38041dbc291d2f6d73e74c584dd419bf80c2f4b2a6470bd3854022438dd6439",
     "document-whitepapers-anomalous-acute-and-subacute-field-effects-on-human-biological-tissues.tsv": "2caafc709fad890fc3cea8dcf27f65e6343cde90bb18c3d7af8204599dd19f99",
     "document-whitepapers-sol-whitepaper-vol1n1.tsv": "1eb4ccfb35497886e7818bb51f096734ff78fb397041b24f52de249d39e03add",
