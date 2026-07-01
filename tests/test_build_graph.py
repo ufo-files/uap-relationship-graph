@@ -34,6 +34,16 @@ class BuildGraphParsingTests(unittest.TestCase):
         self.assertEqual(build_graph.parse_timestamp_ms("01:02,250"), 62250)
         self.assertEqual(build_graph.parse_timestamp_ms("bad"), 0)
 
+    def test_parse_exact_date_uses_only_hard_dates(self) -> None:
+        self.assertEqual(build_graph.parse_exact_date("July 8, 1947").iso, "1947-07-08")
+        self.assertEqual(build_graph.parse_exact_date("8 July 1947").iso, "1947-07-08")
+        self.assertEqual(build_graph.parse_exact_date("7/8/47").iso, "1947-07-08")
+        self.assertIsNone(build_graph.parse_exact_date("on April"))
+        self.assertIsNone(build_graph.parse_exact_date("early April 1947"))
+        self.assertEqual(build_graph.parse_document_date_value("May 2022").precision, "month")
+        self.assertEqual(build_graph.parse_document_date_value("May 2022").iso, "2022-05")
+        self.assertEqual(build_graph.parse_document_date_value("1947").precision, "year")
+
     def test_parse_subtitles(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
             path = Path(tmp) / "sample.srt"
@@ -165,6 +175,144 @@ class BuildGraphParsingTests(unittest.TestCase):
         relationship_keys = {(relationship.source_name, relationship.target_name, relationship.type) for relationship in relationships}
         self.assertIn(("Transcript One", "1.6 GHz", "source_mentions"), relationship_keys)
         self.assertIn(("Transcript One", "American Alchemy", "source_outlet"), relationship_keys)
+
+    def test_source_document_titles_assign_exact_dates(self) -> None:
+        segment = build_graph.Segment(
+            id="s-1",
+            transcript_id="roswell-report",
+            transcript_title="Roswell Report July 8 1947",
+            source_file="roswell-report.tsv",
+            start_ms=0,
+            end_ms=1000,
+            text="The source document discusses Roswell.",
+        )
+        mentions = build_graph.add_source_provenance_mentions([segment], [])
+        entities = build_graph.build_entities(mentions)
+        build_graph.assign_entity_dates([segment], mentions, entities)
+        relationships = build_graph.build_relationships([segment], mentions, entities, {})
+
+        document = next(entity for entity in entities if entity.category == "document_names")
+        self.assertEqual(document.date_iso, "1947-07-08")
+        self.assertEqual(document.date_display, "July 8, 1947")
+        self.assertEqual(document.date_source, "source_title")
+        self.assertIn(("dates_times", "July 8, 1947"), {(entity.category, entity.name) for entity in entities})
+        self.assertIn(
+            ("Roswell Report July 8 1947", "July 8, 1947", "dated_on"),
+            {(relationship.source_name, relationship.target_name, relationship.type) for relationship in relationships},
+        )
+
+    def test_source_document_titles_assign_month_precision_dates(self) -> None:
+        segment = build_graph.Segment(
+            id="s-1",
+            transcript_id="mission-report",
+            transcript_title="Dow Uap D10 Mission Report Middle East May 2022",
+            source_file="mission-report.tsv",
+            start_ms=0,
+            end_ms=1000,
+            text="The source document is a mission report.",
+        )
+        mentions = build_graph.add_source_provenance_mentions([segment], [])
+        entities = build_graph.build_entities(mentions)
+        build_graph.assign_entity_dates([segment], mentions, entities)
+
+        document = next(entity for entity in entities if entity.category == "document_names")
+        self.assertEqual(document.date_iso, "2022-05")
+        self.assertEqual(document.date_display, "May 2022")
+        self.assertEqual(document.date_precision, "month")
+
+    def test_event_dates_require_same_sentence_exact_date(self) -> None:
+        segment = build_graph.Segment(
+            id="s-1",
+            transcript_id="roswell",
+            transcript_title="Roswell",
+            source_file="roswell.tsv",
+            start_ms=0,
+            end_ms=1000,
+            text="The Roswell Incident happened on July 8, 1947, near Roswell, New Mexico.",
+        )
+        mentions: list[build_graph.Mention] = []
+        seen: set[tuple[str, str, str]] = set()
+        for item in build_graph.pattern_mentions(segment):
+            build_graph.add_mention(mentions, seen, segment, **item)
+        build_graph.add_mention(
+            mentions,
+            seen,
+            segment,
+            name="Roswell Incident",
+            category="events",
+            detector="test:event",
+            confidence=1.0,
+            reason="test",
+            excerpt=segment.text,
+        )
+        entities = build_graph.build_entities(mentions)
+        build_graph.assign_entity_dates([segment], mentions, entities)
+
+        event = next(entity for entity in entities if entity.category == "events")
+        self.assertEqual(event.date_iso, "1947-07-08")
+        self.assertEqual(event.date_source, "event_sentence")
+
+    def test_broad_duration_events_do_not_get_single_day_dates(self) -> None:
+        segment = build_graph.Segment(
+            id="s-1",
+            transcript_id="world-war",
+            transcript_title="World War",
+            source_file="world-war.tsv",
+            start_ms=0,
+            end_ms=1000,
+            text="The World War reference appeared beside April 6, 1917, in the source.",
+        )
+        mentions: list[build_graph.Mention] = []
+        seen: set[tuple[str, str, str]] = set()
+        for item in build_graph.pattern_mentions(segment):
+            build_graph.add_mention(mentions, seen, segment, **item)
+        build_graph.add_mention(
+            mentions,
+            seen,
+            segment,
+            name="World War",
+            category="events",
+            detector="test:event",
+            confidence=1.0,
+            reason="test",
+            excerpt=segment.text,
+        )
+        entities = build_graph.build_entities(mentions)
+        build_graph.assign_entity_dates([segment], mentions, entities)
+
+        event = next(entity for entity in entities if entity.category == "events")
+        self.assertIsNone(event.date_iso)
+
+    def test_event_dates_reject_report_date_wording(self) -> None:
+        segment = build_graph.Segment(
+            id="s-1",
+            transcript_id="tic-tac",
+            transcript_title="Tic Tac",
+            source_file="tic-tac.tsv",
+            start_ms=0,
+            end_ms=1000,
+            text="The January 7, 2009, report on his involvement with Tic Tac was forwarded later.",
+        )
+        mentions: list[build_graph.Mention] = []
+        seen: set[tuple[str, str, str]] = set()
+        for item in build_graph.pattern_mentions(segment):
+            build_graph.add_mention(mentions, seen, segment, **item)
+        build_graph.add_mention(
+            mentions,
+            seen,
+            segment,
+            name="Tic Tac",
+            category="events",
+            detector="test:event",
+            confidence=1.0,
+            reason="test",
+            excerpt=segment.text,
+        )
+        entities = build_graph.build_entities(mentions)
+        build_graph.assign_entity_dates([segment], mentions, entities)
+
+        event = next(entity for entity in entities if entity.category == "events")
+        self.assertIsNone(event.date_iso)
 
     def test_source_titles_are_used_as_relationship_evidence(self) -> None:
         title_segment = build_graph.Segment(

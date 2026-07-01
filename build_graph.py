@@ -18,7 +18,7 @@ import os
 import re
 from collections import Counter, defaultdict
 from dataclasses import asdict, dataclass, field
-from datetime import datetime, timezone
+from datetime import date, datetime, timezone
 from pathlib import Path
 from typing import Any
 from urllib.parse import quote
@@ -30,11 +30,13 @@ RELATIONSHIP_WINDOW_RADIUS = 4
 RELATIONSHIP_WINDOW_MENTION_LIMIT = 30
 RELATIONSHIP_OUTPUT_LIMIT = 8000
 SOURCE_DOCUMENT_DETECTOR = "source_document"
+SOURCE_DOCUMENT_DATE_DETECTOR = "source_document_date"
 SOURCE_OUTLET_DETECTOR = "source_outlet"
 SOURCE_TITLE_DETECTOR = "source_title"
-SOURCE_PROVENANCE_DETECTORS = {SOURCE_DOCUMENT_DETECTOR, SOURCE_OUTLET_DETECTOR}
+SOURCE_PROVENANCE_DETECTORS = {SOURCE_DOCUMENT_DETECTOR, SOURCE_DOCUMENT_DATE_DETECTOR, SOURCE_OUTLET_DETECTOR}
 SOURCE_DOCUMENT_RELATIONSHIP_CATEGORIES = {"frequencies"}
 SOURCE_TITLE_RELATIONSHIP_WEIGHT = 50
+DOCUMENT_DATE_CATEGORIES = {"document_names", "books", "white_papers", "leaks"}
 SOURCE_TITLE_EXCLUDED_CATEGORIES = {
     "document_names",
     "websites",
@@ -794,6 +796,46 @@ DATE_RE = re.compile(
     r"\d{1,2}:\d{2}(?:\s?[ap]\.?m\.?)?)\b",
     re.I,
 )
+MONTH_INDEX = {
+    "jan": 1,
+    "january": 1,
+    "feb": 2,
+    "february": 2,
+    "mar": 3,
+    "march": 3,
+    "apr": 4,
+    "april": 4,
+    "may": 5,
+    "jun": 6,
+    "june": 6,
+    "jul": 7,
+    "july": 7,
+    "aug": 8,
+    "august": 8,
+    "sep": 9,
+    "sept": 9,
+    "september": 9,
+    "oct": 10,
+    "october": 10,
+    "nov": 11,
+    "november": 11,
+    "dec": 12,
+    "december": 12,
+}
+MONTH_NAMES = {
+    1: "January",
+    2: "February",
+    3: "March",
+    4: "April",
+    5: "May",
+    6: "June",
+    7: "July",
+    8: "August",
+    9: "September",
+    10: "October",
+    11: "November",
+    12: "December",
+}
 MONTH_OR_WEEKDAY_WORDS = {
     "jan",
     "january",
@@ -1567,6 +1609,14 @@ class Mention:
     reason: str
 
 
+@dataclass(frozen=True)
+class ParsedDate:
+    iso: str
+    display: str
+    precision: str
+    value: date
+
+
 @dataclass
 class Entity:
     id: str
@@ -1580,6 +1630,10 @@ class Entity:
     significance: str = ""
     detectors: list[str] = field(default_factory=list)
     evidence_ids: list[str] = field(default_factory=list)
+    date_iso: str | None = None
+    date_display: str | None = None
+    date_precision: str | None = None
+    date_source: str | None = None
 
 
 @dataclass
@@ -1608,6 +1662,7 @@ def main() -> None:
     mentions = apply_review_to_mentions(mentions, review)
     mentions = add_source_provenance_mentions(segments, mentions)
     entities = build_entities(mentions)
+    assign_entity_dates(segments, mentions, entities)
     relationships = build_relationships(segments, mentions, entities, review)
     graph = build_graph(entities, relationships)
     manifest = build_manifest(sources, segments, mentions, entities, relationships, review)
@@ -2600,6 +2655,142 @@ def is_date_like_name(name: str) -> bool:
     return False
 
 
+def parse_exact_date(value: str) -> ParsedDate | None:
+    text = clean_text(str(value or "")).strip()
+    if not text:
+        return None
+    if re.search(r"^(?:on|in|from|when|about|circa|around|before|after|during)\b", text, re.I):
+        return None
+    if not re.search(r"\d", text):
+        return None
+    if not re.search(r"\b\d{4}\b|\b\d{1,2}/\d{1,2}/\d{2,4}\b", text):
+        return None
+    if re.search(
+        r"\b(?:early|mid|late|spring|summer|fall|winter|morning|afternoon|evening|night|"
+        r"monday|tuesday|wednesday|thursday|friday|saturday|sunday)\b",
+        text,
+        re.I,
+    ):
+        return None
+
+    match = re.match(r"^([A-Za-z]+)\.?\s+(\d{1,2}),?\s*(\d{4})$", text)
+    if match and match.group(1).lower() in MONTH_INDEX:
+        return normalized_exact_date(int(match.group(3)), MONTH_INDEX[match.group(1).lower()], int(match.group(2)))
+
+    match = re.match(r"^(\d{1,2})\s+([A-Za-z]+)\.?\s+(\d{4})$", text)
+    if match and match.group(2).lower() in MONTH_INDEX:
+        return normalized_exact_date(int(match.group(3)), MONTH_INDEX[match.group(2).lower()], int(match.group(1)))
+
+    match = re.match(r"^(\d{4})-(\d{1,2})-(\d{1,2})$", text)
+    if match:
+        return normalized_exact_date(int(match.group(1)), int(match.group(2)), int(match.group(3)))
+
+    match = re.match(r"^(\d{1,2})/(\d{1,2})/(\d{2}|\d{4})$", text)
+    if match:
+        year = int(match.group(3))
+        year = 1900 + year if year < 100 and year >= 30 else 2000 + year if year < 100 else year
+        first = int(match.group(1))
+        second = int(match.group(2))
+        month = second if first > 12 and second <= 12 else first
+        day = first if first > 12 and second <= 12 else second
+        return normalized_exact_date(year, month, day)
+
+    return None
+
+
+def normalized_exact_date(year: int, month: int, day: int) -> ParsedDate | None:
+    if year < 1800 or year > 2100:
+        return None
+    try:
+        value = date(year, month, day)
+    except ValueError:
+        return None
+    display = f"{MONTH_NAMES[month]} {day}, {year}"
+    return ParsedDate(value.isoformat(), display, "day", value)
+
+
+def normalized_month_date(year: int, month: int) -> ParsedDate | None:
+    if year < 1800 or year > 2100:
+        return None
+    try:
+        value = date(year, month, 1)
+    except ValueError:
+        return None
+    return ParsedDate(f"{year:04d}-{month:02d}", f"{MONTH_NAMES[month]} {year}", "month", value)
+
+
+def normalized_year_date(year: int) -> ParsedDate | None:
+    if year < 1800 or year > 2100:
+        return None
+    value = date(year, 1, 1)
+    return ParsedDate(f"{year:04d}", str(year), "year", value)
+
+
+def parse_document_date_value(value: str) -> ParsedDate | None:
+    exact = parse_exact_date(value)
+    if exact:
+        return exact
+    text = clean_text(str(value or "")).strip()
+    months = (
+        r"Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|Jul(?:y)?|"
+        r"Aug(?:ust)?|Sep(?:t|tember)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?"
+    )
+    match = re.match(rf"^({months})\.?\s+(\d{{4}})$", text, re.I)
+    if match and match.group(1).lower() in MONTH_INDEX:
+        return normalized_month_date(int(match.group(2)), MONTH_INDEX[match.group(1).lower()])
+    match = re.match(r"^(\d{4})$", text)
+    if match:
+        return normalized_year_date(int(match.group(1)))
+    return None
+
+
+def extract_title_dates(title: str) -> list[ParsedDate]:
+    text = clean_text(str(title or ""))
+    if not text:
+        return []
+    parsed: list[ParsedDate] = []
+    months = (
+        r"Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|Jul(?:y)?|"
+        r"Aug(?:ust)?|Sep(?:t|tember)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?"
+    )
+    for match in re.finditer(rf"\b({months})\.?\s+(\d{{1,2}}),?\s+(\d{{4}})\b", text, re.I):
+        exact = parse_exact_date(f"{match.group(1)} {match.group(2)}, {match.group(3)}")
+        if exact:
+            parsed.append(exact)
+    for match in re.finditer(rf"\b(\d{{1,2}})\s+({months})\.?\s+(\d{{4}})\b", text, re.I):
+        exact = parse_exact_date(f"{match.group(1)} {match.group(2)} {match.group(3)}")
+        if exact:
+            parsed.append(exact)
+    match = re.search(r"(?:^|\s)(\d{1,2})[\s/-](\d{1,2})[\s/-](\d{2,4})\s*$", text)
+    if match:
+        year = int(match.group(3))
+        year = 1900 + year if year < 100 and year >= 30 else 2000 + year if year < 100 else year
+        first = int(match.group(1))
+        second = int(match.group(2))
+        month = second if first > 12 and second <= 12 else first
+        day = first if first > 12 and second <= 12 else second
+        exact = normalized_exact_date(year, month, day)
+        if exact:
+            parsed.append(exact)
+    for match in re.finditer(rf"\b({months})\.?\s+(\d{{4}})\b", text, re.I):
+        month = MONTH_INDEX.get(match.group(1).lower())
+        year = int(match.group(2))
+        if month and not any(item.value.year == year and item.value.month == month for item in parsed):
+            month_date = normalized_month_date(year, month)
+            if month_date:
+                parsed.append(month_date)
+    for match in re.finditer(r"\b(18\d{2}|19\d{2}|20\d{2}|2100)\b", text):
+        year = int(match.group(1))
+        if not any(item.value.year == year for item in parsed):
+            year_date = normalized_year_date(year)
+            if year_date:
+                parsed.append(year_date)
+    by_iso: dict[str, ParsedDate] = {}
+    for item in parsed:
+        by_iso.setdefault(item.iso, item)
+    return list(by_iso.values())
+
+
 def is_field_label_only_name(words: list[str]) -> bool:
     if len(words) < 2 or len(words) > 5:
         return False
@@ -2948,6 +3139,22 @@ def add_source_provenance_mentions(segments: list[Segment], mentions: list[Menti
             )
             existing.add(document_key)
 
+        for parsed_date in extract_title_dates(document_name):
+            date_entity_id = entity_key(canonicalize(parsed_date.display, "dates_times"), "dates_times")
+            date_key = (transcript_id, date_entity_id, SOURCE_DOCUMENT_DATE_DETECTOR)
+            if date_key in existing:
+                continue
+            append_provenance_mention(
+                mentions,
+                first_segment,
+                parsed_date.display,
+                "dates_times",
+                SOURCE_DOCUMENT_DATE_DETECTOR,
+                "Source document title contains an exact date",
+                f"Source document date: {parsed_date.display} from {document_name}",
+            )
+            existing.add(date_key)
+
         for (outlet_name, outlet_category), evidence_segment in sorted(outlet_matches_by_transcript.get(transcript_id, {}).items()):
             outlet_entity_id = entity_key(canonicalize(outlet_name, outlet_category), outlet_category)
             outlet_key = (transcript_id, outlet_entity_id, SOURCE_OUTLET_DETECTOR)
@@ -3172,6 +3379,225 @@ def build_entities(mentions: list[Mention]) -> list[Entity]:
     return entities
 
 
+def assign_entity_dates(segments: list[Segment], mentions: list[Mention], entities: list[Entity]) -> None:
+    mentions_by_entity: dict[str, list[Mention]] = defaultdict(list)
+    date_mentions_by_segment: dict[str, list[tuple[Mention, ParsedDate]]] = defaultdict(list)
+    segment_text_by_id = {segment.id: segment.text for segment in segments}
+    for mention in mentions:
+        mentions_by_entity[mention.entity_id].append(mention)
+        if mention.category != "dates_times":
+            continue
+        parsed = parse_exact_date(mention.name)
+        if parsed:
+            date_mentions_by_segment[mention.segment_id].append((mention, parsed))
+
+    for entity in entities:
+        if entity.category in DOCUMENT_DATE_CATEGORIES:
+            assign_document_date(entity, mentions_by_entity.get(entity.id, []))
+        elif entity.category == "events":
+            assign_event_date(entity, mentions_by_entity.get(entity.id, []), date_mentions_by_segment, segment_text_by_id)
+
+
+def assign_document_date(entity: Entity, mentions: list[Mention]) -> None:
+    title_candidates = [entity.name]
+    title_candidates.extend(mention.transcript_title for mention in mentions if mention.detector == SOURCE_DOCUMENT_DETECTOR)
+    title_candidates.extend(mention.name for mention in mentions if mention.detector in {SOURCE_DOCUMENT_DETECTOR, SOURCE_TITLE_DETECTOR})
+    for title in title_candidates:
+        dates = extract_title_dates(title)
+        if not dates:
+            continue
+        set_entity_date(entity, dates[0], "source_title")
+        return
+
+
+def assign_event_date(
+    entity: Entity,
+    mentions: list[Mention],
+    date_mentions_by_segment: dict[str, list[tuple[Mention, ParsedDate]]],
+    segment_text_by_id: dict[str, str],
+) -> None:
+    if is_broad_duration_event(entity):
+        return
+    scores: Counter[str] = Counter()
+    parsed_by_iso: dict[str, ParsedDate] = {}
+    for mention in mentions:
+        if mention.detector in SOURCE_PROVENANCE_DETECTORS:
+            continue
+        for date_mention, parsed in date_mentions_by_segment.get(mention.segment_id, []):
+            text = segment_text_by_id.get(mention.segment_id) or mention.excerpt or date_mention.excerpt
+            if not event_sentence_supports_date(text, entity.name, date_mention.name):
+                continue
+            scores[parsed.iso] += 3
+            parsed_by_iso[parsed.iso] = parsed
+    if not scores:
+        return
+    top_iso, top_score = scores.most_common(1)[0]
+    tied = [iso for iso, score in scores.items() if score == top_score]
+    if len(tied) > 1:
+        return
+    set_entity_date(entity, parsed_by_iso[top_iso], "event_sentence")
+
+
+def set_entity_date(entity: Entity, parsed: ParsedDate, source: str) -> None:
+    entity.date_iso = parsed.iso
+    entity.date_display = parsed.display
+    entity.date_precision = parsed.precision
+    entity.date_source = source
+
+
+def same_sentence_contains(text: str, entity_name: str, date_name: str) -> bool:
+    return sentence_containing(text, entity_name, date_name) is not None
+
+
+def event_sentence_supports_date(text: str, entity_name: str, date_name: str) -> bool:
+    sentence = sentence_containing(text, entity_name, date_name)
+    if not sentence:
+        return False
+    return not event_date_sentence_is_document_reference(sentence, date_name)
+
+
+def sentence_containing(text: str, entity_name: str, date_name: str) -> str | None:
+    normalized_entity = normalize_name(entity_name)
+    normalized_date = normalize_name(date_name)
+    if not normalized_entity or not normalized_date:
+        return None
+    for sentence in re.split(r"(?<=[.!?;])\s+", clean_text(text)):
+        normalized_sentence = normalize_name(sentence)
+        if normalized_entity in normalized_sentence and normalized_date in normalized_sentence:
+            return sentence
+    return None
+
+
+def event_date_sentence_is_document_reference(sentence: str, date_name: str) -> bool:
+    normalized_sentence = normalize_name(sentence)
+    normalized_date = normalize_name(date_name)
+    date_index = normalized_sentence.find(normalized_date)
+    if date_index < 0:
+        return False
+    tail = normalized_sentence[date_index + len(normalized_date) : date_index + len(normalized_date) + 90]
+    return bool(
+        re.search(
+            r"\b(?:report|article|email|memo|memorandum|letter|document|paper|publication|book|interview)\b",
+            tail,
+        )
+    )
+
+
+def is_broad_duration_event(entity: Entity) -> bool:
+    if entity.category != "events":
+        return False
+    normalized = normalize_name(entity.name)
+    return entity.id in {
+        "events:civil-war",
+        "events:cold-war",
+        "events:korean-war",
+        "events:second-world-war",
+        "events:vietnam-war",
+        "events:world-war",
+    } or normalized in {
+        "civil war",
+        "cold war",
+        "korean war",
+        "second world war",
+        "vietnam war",
+        "world war",
+    }
+
+
+def build_entity_date_relationships(mentions: list[Mention], entities: list[Entity]) -> list[Relationship]:
+    date_entity_by_iso: dict[str, Entity] = {}
+    for entity in entities:
+        if entity.category != "dates_times":
+            continue
+        parsed = parse_document_date_value(entity.name)
+        if parsed and parsed.iso not in date_entity_by_iso:
+            date_entity_by_iso[parsed.iso] = entity
+
+    date_mentions_by_transcript: dict[tuple[str, str], list[Mention]] = defaultdict(list)
+    date_mentions_by_segment: dict[tuple[str, str], list[Mention]] = defaultdict(list)
+    subject_mentions_by_entity: dict[str, list[Mention]] = defaultdict(list)
+    for mention in mentions:
+        if mention.category == "dates_times":
+            parsed = parse_document_date_value(mention.name)
+            if not parsed:
+                continue
+            date_mentions_by_transcript[(mention.transcript_id, parsed.iso)].append(mention)
+            date_mentions_by_segment[(mention.segment_id, parsed.iso)].append(mention)
+        else:
+            subject_mentions_by_entity[mention.entity_id].append(mention)
+
+    relationships: list[Relationship] = []
+    for subject in sorted(entities, key=lambda item: (item.category, item.name.lower())):
+        if not subject.date_iso or subject.category == "dates_times":
+            continue
+        date_entity = date_entity_by_iso.get(subject.date_iso)
+        if not date_entity:
+            continue
+        evidence_mentions = date_relationship_evidence_mentions(
+            subject,
+            subject_mentions_by_entity.get(subject.id, []),
+            date_mentions_by_transcript,
+            date_mentions_by_segment,
+        )
+        evidence = [
+            {
+                "segment_id": mention.segment_id,
+                "transcript": mention.transcript_title,
+                "timestamp": mention.timestamp,
+                "excerpt": mention.excerpt,
+                "reason": f"{subject.category_label} assigned {subject.date_precision} date from {subject.date_source}",
+                "relationship_type": "dated_on",
+            }
+            for mention in evidence_mentions[:4]
+        ]
+        if not evidence:
+            evidence = [
+                {
+                    "segment_id": "",
+                    "transcript": "",
+                    "timestamp": "",
+                    "excerpt": f"{subject.name} is dated {subject.date_display}",
+                    "reason": f"{subject.category_label} assigned {subject.date_precision} date from {subject.date_source}",
+                    "relationship_type": "dated_on",
+                }
+            ]
+        relationships.append(
+            Relationship(
+                id=f"rel-date-{len(relationships) + 1:06d}",
+                source=subject.id,
+                target=date_entity.id,
+                source_name=subject.name,
+                target_name=date_entity.name,
+                type="dated_on",
+                weight=80 if subject.category in DOCUMENT_DATE_CATEGORIES else 60,
+                evidence_segment_ids=[item["segment_id"] for item in evidence if item["segment_id"]],
+                evidence=evidence,
+                confidence=1.0 if subject.date_source == "source_title" else 0.86,
+            )
+        )
+    return relationships
+
+
+def date_relationship_evidence_mentions(
+    subject: Entity,
+    subject_mentions: list[Mention],
+    date_mentions_by_transcript: dict[tuple[str, str], list[Mention]],
+    date_mentions_by_segment: dict[tuple[str, str], list[Mention]],
+) -> list[Mention]:
+    if not subject.date_iso:
+        return []
+    if subject.category in DOCUMENT_DATE_CATEGORIES:
+        for mention in subject_mentions:
+            matches = date_mentions_by_transcript.get((mention.transcript_id, subject.date_iso), [])
+            if matches:
+                return sorted(matches, key=lambda item: (item.start_ms, item.id))
+    for mention in subject_mentions:
+        matches = date_mentions_by_segment.get((mention.segment_id, subject.date_iso), [])
+        if matches:
+            return sorted(matches, key=lambda item: (item.start_ms, item.id))
+    return []
+
+
 def build_source_document_relationships(mentions: list[Mention], entities: list[Entity]) -> list[Relationship]:
     entity_by_id = {entity.id: entity for entity in entities}
     document_by_transcript: dict[str, Mention] = {}
@@ -3291,6 +3717,7 @@ def build_source_title_relationships(mentions: list[Mention], entities: list[Ent
 
 
 def build_relationships(segments: list[Segment], mentions: list[Mention], entities: list[Entity], review: dict[str, Any]) -> list[Relationship]:
+    assign_entity_dates(segments, mentions, entities)
     entity_by_id = {entity.id: entity for entity in entities}
     mentions_by_segment: dict[str, list[Mention]] = defaultdict(list)
     for mention in mentions:
@@ -3378,10 +3805,11 @@ def build_relationships(segments: list[Segment], mentions: list[Mention], entiti
                 confidence=round(sum(pair_confidence[(source, target, rel_type)]) / max(1, len(pair_confidence[(source, target, rel_type)])), 3),
             )
         )
+    date_relationships = build_entity_date_relationships(mentions, entities)[:RELATIONSHIP_OUTPUT_LIMIT]
     source_relationships = build_source_document_relationships(mentions, entities)[:RELATIONSHIP_OUTPUT_LIMIT]
     title_relationships = build_source_title_relationships(mentions, entities)[:RELATIONSHIP_OUTPUT_LIMIT]
-    remaining = max(0, RELATIONSHIP_OUTPUT_LIMIT - len(source_relationships) - len(title_relationships))
-    return apply_manual_relationships(source_relationships + title_relationships + relationships[:remaining], entities, review)
+    remaining = max(0, RELATIONSHIP_OUTPUT_LIMIT - len(date_relationships) - len(source_relationships) - len(title_relationships))
+    return apply_manual_relationships(date_relationships + source_relationships + title_relationships + relationships[:remaining], entities, review)
 
 
 def apply_manual_relationships(relationships: list[Relationship], entities: list[Entity], review: dict[str, Any]) -> list[Relationship]:
@@ -3602,8 +4030,9 @@ def infer_relationship_type(left_category: str, right_category: str) -> str:
 
 
 def build_graph(entities: list[Entity], relationships: list[Relationship]) -> dict[str, Any]:
-    nodes = [
-        {
+    nodes = []
+    for entity in entities:
+        node = {
             "id": entity.id,
             "label": entity.name,
             "category": entity.category,
@@ -3611,8 +4040,16 @@ def build_graph(entities: list[Entity], relationships: list[Relationship]) -> di
             "count": entity.count,
             "confidence": entity.confidence,
         }
-        for entity in entities
-    ]
+        if entity.date_iso:
+            node.update(
+                {
+                    "dateIso": entity.date_iso,
+                    "dateDisplay": entity.date_display,
+                    "datePrecision": entity.date_precision,
+                    "dateSource": entity.date_source,
+                }
+            )
+        nodes.append(node)
     edges = [
         {
             "id": relationship.id,
@@ -3772,9 +4209,10 @@ def write_report(
             stale_path.unlink()
 
     mention_payload = [asdict_slim_mention(mention) for mention in mentions]
+    entity_payload = [asdict_entity(entity) for entity in entities]
     write_json(DATA_DIR / "segments.json", [asdict(segment) for segment in segments])
     write_json(DATA_DIR / "mentions.json", mention_payload)
-    write_json(DATA_DIR / "entities.json", [asdict(entity) for entity in entities])
+    write_json(DATA_DIR / "entities.json", entity_payload)
     write_json(DATA_DIR / "relationships.json", [asdict(relationship) for relationship in relationships])
     write_json(DATA_DIR / "graph.json", graph)
     write_json(DATA_DIR / "manifest.json", manifest)
@@ -3799,7 +4237,7 @@ def write_report(
 
     app_core_payload = {
         "manifest": manifest,
-        "entities": [asdict(entity) for entity in entities],
+        "entities": entity_payload,
         "mentions": [],
         "relationships": [],
         "segments": [],
@@ -3843,6 +4281,11 @@ def asdict_slim_mention(mention: Mention) -> dict[str, Any]:
         "confidence": mention.confidence,
         "excerpt": mention.excerpt,
     }
+
+
+def asdict_entity(entity: Entity) -> dict[str, Any]:
+    payload = asdict(entity)
+    return {key: value for key, value in payload.items() if value is not None}
 
 
 def write_json(path: Path, payload: Any) -> None:
