@@ -1740,6 +1740,8 @@ def add_source_title_mentions(
         normalized = normalize_name(name)
         if len(normalized) < 3 or normalized in omit_terms:
             return
+        if category in PERSON_LIKE_CATEGORIES and len(normalized.split()) < 2:
+            return
         key = (canonicalize(name, category), category)
         current = candidates.get(key)
         if current and current[2] >= confidence:
@@ -1937,6 +1939,8 @@ def person_mentions(segment: Segment, omit_terms: set[str]) -> list[dict[str, An
         )
         name = re.sub(r"\s+", " ", raw)
         if len(name) < 5 or normalize_name(name) in omit_terms:
+            continue
+        if len(normalize_name(name).split()) < 2:
             continue
         if MALFORMED_SERVICE_FRAGMENT_RE.match(name):
             continue

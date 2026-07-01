@@ -902,6 +902,27 @@ class BuildGraphParsingTests(unittest.TestCase):
         self.assertNotIn("S. Navy", names)
         self.assertNotIn("S. Air Force", names)
 
+    def test_person_heuristic_skips_single_word_title_fragments(self) -> None:
+        segment = build_graph.Segment(
+            id="s-1",
+            transcript_id="t-1",
+            transcript_title="Sample",
+            source_file="sample.txt",
+            start_ms=0,
+            end_ms=1000,
+            text=(
+                "The Western range security analysis covered The Aliens, "
+                "The Flying secret project truth video."
+            ),
+        )
+        people_like = {
+            item["name"].lower()
+            for item in build_graph.person_mentions(segment, set())
+            if item["category"] in build_graph.PERSON_LIKE_CATEGORIES
+        }
+        for name in {"western", "national", "range", "security", "analysis", "aliens", "flying", "secret", "project", "truth", "video"}:
+            self.assertNotIn(name, people_like)
+
     def test_organization_shaped_names_do_not_become_people(self) -> None:
         segment = build_graph.Segment(
             id="s-1",
