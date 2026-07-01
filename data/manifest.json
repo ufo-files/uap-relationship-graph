@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-01T00:44:19.700432+00:00",
+  "generated_at": "2026-07-01T03:57:51.319807+00:00",
   "pipeline": "relationship-graph",
   "reproducibility": {
     "no_openai_api": true,
@@ -27,10 +27,10 @@
     "note": "Generated graph files are overwritten on each rebuild. Long-term reclassification decisions live in data/reclass.json."
   },
   "counts": {
-    "transcripts": 303,
-    "segments": 217018,
-    "mentions": 107579,
-    "entities": 54023,
+    "transcripts": 304,
+    "segments": 218518,
+    "mentions": 107615,
+    "entities": 54034,
     "relationships": 8000,
     "categories": 51
   },
@@ -40,6 +40,7 @@
     "aliens-drove-this-man-insane-ft-greg-bis.tsv": "399a9f3c0ca65432fd06fa983e90f5f3a4a104c43adb4331b267506bf5b7525c",
     "aliens-invented-religion-to-control-huma.tsv": "6ab491ca664b3f980fc97f7d8fa0be88e6d721a0de51ddd3900ea71e94b3e93f",
     "army-captures-live-alien-hospital-report.tsv": "ed8573646f54e86074f5cdcbdfdec943e7ed1df5c96b2c10e1d231876d4a2bd9",
+    "bob-lazar-travis-walton-finally-meet-t.tsv": "7526a4290f75b72ce03b0bf9e72e9e044e4c5ac52aec6cc7571f70c82f1cd9df",
     "breaking-brazils-defense-minister-says.tsv": "44ec32f4e6aea7e85ef06620e12005d77ccf759b3a3707e2bf760736dd402147",
     "breaking-massive-energy-grid-found-benea.tsv": "477a5fcf63b40ce115e48b2e72707d595c33eea41c3272f691b71ceba68d9301",
     "cia-chief-im-a-time-traveler.tsv": "a17e1a1322d42a207380a6b079bad2a70b959317331b37c1c2fb30096fc0fed7",
