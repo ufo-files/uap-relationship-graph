@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-01T17:00:13.040395+00:00",
+  "generated_at": "2026-07-01T17:46:32.056398+00:00",
   "pipeline": "relationship-graph",
   "reproducibility": {
     "no_openai_api": true,
@@ -29,8 +29,8 @@
   "counts": {
     "transcripts": 304,
     "segments": 218822,
-    "mentions": 106099,
-    "entities": 51651,
+    "mentions": 106200,
+    "entities": 51704,
     "relationships": 8000,
     "categories": 51
   },
@@ -341,7 +341,7 @@
     "why-the-pentagon-tried-to-censor-this-uf.tsv": "e66f4d3cc4202e0fd4d4986c5a4dc2a618df86798adc396d5fc333b004509b23"
   },
   "registry_hash": "85f3c52f306d1891b4a44f68e6527ed66041b2f074dad487cf7915d3740276b3",
-  "pipeline_hash": "577541f9b785f1ec39529d65487e4c40a97a62831a3f50553ce18a16908cb977",
+  "pipeline_hash": "265a183b0890437946cd9ea0ea9d6c5a6f524c54d02082273666904f5f000081",
   "review_counts": {
     "reclassifications": 539,
     "name_reclassifications": 870,
