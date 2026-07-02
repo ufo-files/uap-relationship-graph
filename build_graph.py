@@ -2489,6 +2489,8 @@ def person_mentions(segment: Segment, omit_terms: set[str]) -> list[dict[str, An
                 }
             )
             continue
+        if is_field_label_only_name(normalize_name(name).split()):
+            continue
         structured_label_category = classify_structured_label_name(name)
         if structured_label_category:
             items.append(
