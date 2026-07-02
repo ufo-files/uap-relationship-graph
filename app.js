@@ -36,6 +36,7 @@ let dragStart = null;
 let labelItems = [];
 let hoverZoomTarget = null;
 let hoverZoomDelta = 0;
+let zoomOutStepArmedTarget = null;
 let touchState = null;
 const HOVER_ZOOM_ACTIVATE_DELTA = 900;
 const ENTITY_ZOOM_OUT_STEP_UP_WIDTH = 5600;
@@ -1030,8 +1031,8 @@ function renderCategories() {
   const maxSpoke = Math.max(1, ...spokes.map((edge) => edge.weight));
   svg.innerHTML =
     drawEdges(spokes, spokeNodeById, maxSpoke, "ego-spoke") +
-    drawEdges(edges, nodeById, maxEdge, "ego-context") +
-    drawEdges(homeContext.edges, spokeNodeById, homeContext.maxEdge, "ego-context") +
+    drawEdges(edges, nodeById, maxEdge, "home-context") +
+    drawEdges(homeContext.edges, spokeNodeById, homeContext.maxEdge, "home-context") +
     '<g class="graph-node home-root" data-home-root="true" aria-hidden="true">' +
       '<circle cx="' + center.x + '" cy="' + center.y + '" r="' + center.r + '" fill="' + theme.activeHalo + '" stroke="' + theme.primary + '" stroke-width="1" opacity=".92"></circle>' +
     '</g>' +
@@ -1042,7 +1043,7 @@ function renderCategories() {
   }).join("") +
     homeContext.nodes.map((node) => {
       return '<g class="graph-node" data-entity="' + esc(node.raw.id) + '">' +
-        '<circle cx="' + node.x + '" cy="' + node.y + '" r="' + node.r.toFixed(1) + '" fill="' + theme.entityAlt + '" stroke="' + theme.primary + '" stroke-width="1" opacity=".72"></circle>' +
+        '<circle cx="' + node.x + '" cy="' + node.y + '" r="' + node.r.toFixed(1) + '" fill="' + theme.entityAlt + '" stroke="' + theme.primary + '" stroke-width="1" opacity=".78"></circle>' +
         '<title>' + esc(entityDisplayName(node.raw) + " · " + homeBridgeSecondaryLabel(node)) + '</title>' +
       '</g>';
     }).join("");
@@ -1124,7 +1125,7 @@ function buildHomeSecondaryContext(categoryNodes, center) {
   for (const node of nodes) {
     Array.from(node.links.entries())
       .sort((a, b) => b[1] - a[1])
-      .slice(0, 4)
+      .slice(0, 2)
       .forEach(([categoryId, weight]) => {
         if (categoryNodeById.has(categoryId)) edges.push({ source: node.id, target: categoryId, weight });
       });
@@ -1170,7 +1171,7 @@ function buildCategoryLayout() {
   const nodes = parentCategoryNodes(categories.sort((a, b) => b.mentions - a.mentions || b.count - a.count), center.x, center.y);
   const nodeById = new Map(nodes.map((node) => [node.id, node]));
   const maxEdge = Math.max(1, ...edgeWeights.values());
-  const edges = Array.from(edgeWeights.entries()).sort((a, b) => b[1] - a[1]).slice(0, 95).map(([key, weight]) => {
+  const edges = Array.from(edgeWeights.entries()).sort((a, b) => b[1] - a[1]).slice(0, 36).map(([key, weight]) => {
     const [source, target] = key.split("::");
     return { source, target, weight };
   });
@@ -1234,7 +1235,7 @@ function renderCategory(categoryId) {
       id: item.id,
       x: activeCategoryNode.x + Math.cos(angle) * radius,
       y: activeCategoryNode.y + Math.sin(angle) * radius,
-      r: entityMentionRadius(item.entity, maxSharedMentions, 3.5, 18),
+      r: entityMentionRadius(item.entity, maxSharedMentions, 34, 48),
       angle,
       contextRadius: radius,
       weight: item.weight,
@@ -1247,7 +1248,8 @@ function renderCategory(categoryId) {
   const sharedNodeById = new Map(sharedNodes.map((node) => [node.id, node]));
   const sharedNodesSvg = sharedNodes.map((node) => {
     return '<g class="graph-node" data-entity="' + esc(node.id) + '">' +
-      '<circle cx="' + node.x + '" cy="' + node.y + '" r="' + node.r + '" fill="' + theme.entityAlt + '" stroke="' + theme.context + '" stroke-width="1" opacity=".48"></circle>' +
+      '<circle cx="' + node.x + '" cy="' + node.y + '" r="' + node.r + '" fill="none" stroke="' + theme.primary + '" stroke-width="22" vector-effect="non-scaling-stroke" pointer-events="stroke" opacity="0"></circle>' +
+      '<circle cx="' + node.x + '" cy="' + node.y + '" r="' + node.r + '" fill="' + theme.entityAlt + '" stroke="' + theme.context + '" stroke-width="1" opacity=".64"></circle>' +
     '</g>';
   }).join("");
   const contextEdges = Array.from(sharedEdgeWeights.entries())
@@ -1264,7 +1266,7 @@ function renderCategory(categoryId) {
     const outside = sharedNodeById.get(edge.outsideId);
     if (!child || !outside) return "";
     const width = (0.7 + (edge.weight / maxContextEdge) * 3.4).toFixed(1);
-    return '<line x1="' + child.x + '" y1="' + child.y + '" x2="' + outside.x + '" y2="' + outside.y + '" stroke="' + theme.context + '" stroke-width="' + width + '" opacity=".46"></line>';
+    return '<line x1="' + child.x + '" y1="' + child.y + '" x2="' + outside.x + '" y2="' + outside.y + '" stroke="' + theme.context + '" stroke-width="' + width + '" opacity=".6"></line>';
   }).join("");
   svg.innerHTML =
     contextEdgesSvg +
@@ -1576,7 +1578,7 @@ function renderSignalsCategory(categoryId) {
       id: item.id,
       x: activeCategoryNode.x + Math.cos(angle) * radius,
       y: activeCategoryNode.y + Math.sin(angle) * radius,
-      r: entityMentionRadius(item.entity, maxSharedMentions, 3.5, 18),
+      r: entityMentionRadius(item.entity, maxSharedMentions, 34, 48),
       angle,
       contextRadius: radius,
       sourceX: avgX,
@@ -1603,11 +1605,12 @@ function renderSignalsCategory(categoryId) {
     const outside = sharedNodeById.get(edge.outsideId);
     if (!rangeNode || !outside) return "";
     const width = (0.7 + (edge.weight / maxContextEdge) * 3.4).toFixed(1);
-    return '<line x1="' + rangeNode.x + '" y1="' + rangeNode.y + '" x2="' + outside.x + '" y2="' + outside.y + '" stroke="' + theme.context + '" stroke-width="' + width + '" opacity=".46"></line>';
+    return '<line x1="' + rangeNode.x + '" y1="' + rangeNode.y + '" x2="' + outside.x + '" y2="' + outside.y + '" stroke="' + theme.context + '" stroke-width="' + width + '" opacity=".6"></line>';
   }).join("");
   const sharedNodesSvg = sharedNodes.map((node) => {
     return '<g class="graph-node" data-entity="' + esc(node.id) + '">' +
-      '<circle cx="' + node.x + '" cy="' + node.y + '" r="' + node.r + '" fill="' + theme.entityAlt + '" stroke="' + theme.context + '" stroke-width="1" opacity=".48"></circle>' +
+      '<circle cx="' + node.x + '" cy="' + node.y + '" r="' + node.r + '" fill="none" stroke="' + theme.primary + '" stroke-width="22" vector-effect="non-scaling-stroke" pointer-events="stroke" opacity="0"></circle>' +
+      '<circle cx="' + node.x + '" cy="' + node.y + '" r="' + node.r + '" fill="' + theme.entityAlt + '" stroke="' + theme.context + '" stroke-width="1" opacity=".64"></circle>' +
     '</g>';
   }).join("");
   const maxSpoke = Math.max(1, ...groups.map((group) => group.score || group.entities.length));
@@ -1702,7 +1705,7 @@ function renderSignalRangeDrill(categoryId, group, activeCategoryNode) {
       id: item.id,
       x: centerNode.x + Math.cos(angle) * radius,
       y: centerNode.y + Math.sin(angle) * radius,
-      r: entityMentionRadius(item.entity, maxSharedMentions, 3.5, 18),
+      r: entityMentionRadius(item.entity, maxSharedMentions, 34, 48),
       angle,
       contextRadius: radius,
       sourceX: avgX,
@@ -1729,11 +1732,12 @@ function renderSignalRangeDrill(categoryId, group, activeCategoryNode) {
     const outside = sharedNodeById.get(edge.outsideId);
     if (!child || !outside) return "";
     const width = (0.7 + (edge.weight / maxContextEdge) * 3.4).toFixed(1);
-    return '<line x1="' + child.x + '" y1="' + child.y + '" x2="' + outside.x + '" y2="' + outside.y + '" stroke="' + theme.context + '" stroke-width="' + width + '" opacity=".46"></line>';
+    return '<line x1="' + child.x + '" y1="' + child.y + '" x2="' + outside.x + '" y2="' + outside.y + '" stroke="' + theme.context + '" stroke-width="' + width + '" opacity=".6"></line>';
   }).join("");
   const sharedNodesSvg = sharedNodes.map((node) => {
     return '<g class="graph-node" data-entity="' + esc(node.id) + '">' +
-      '<circle cx="' + node.x + '" cy="' + node.y + '" r="' + node.r + '" fill="' + theme.entityAlt + '" stroke="' + theme.context + '" stroke-width="1" opacity=".48"></circle>' +
+      '<circle cx="' + node.x + '" cy="' + node.y + '" r="' + node.r + '" fill="none" stroke="' + theme.primary + '" stroke-width="22" vector-effect="non-scaling-stroke" pointer-events="stroke" opacity="0"></circle>' +
+      '<circle cx="' + node.x + '" cy="' + node.y + '" r="' + node.r + '" fill="' + theme.entityAlt + '" stroke="' + theme.context + '" stroke-width="1" opacity=".64"></circle>' +
     '</g>';
   }).join("");
   svg.innerHTML =
@@ -2725,7 +2729,7 @@ function entityPrimarySort(a, b) {
 }
 
 function mentionRadius(value, maxValue, minRadius = 10, maxRadius = 72) {
-  const normalized = Math.sqrt(Math.max(1, value) / Math.max(1, maxValue));
+  const normalized = Math.pow(Math.max(1, value) / Math.max(1, maxValue), .72);
   return minRadius + normalized * (maxRadius - minRadius);
 }
 
@@ -2932,7 +2936,7 @@ function renderNeighborhood(entity) {
       label: item.entity.name,
       x: center.x + Math.cos(angle) * radius,
       y: center.y + Math.sin(angle) * radius,
-      r: entityMentionRadius(item.entity, maxSecondDegreeMentions, 3, 20),
+      r: entityMentionRadius(item.entity, maxSecondDegreeMentions, 34, 48),
       raw: item.entity,
       anchorId: item.anchorId,
       anchorName: anchorNode?.raw?.name || "",
@@ -2953,18 +2957,19 @@ function renderNeighborhood(entity) {
     const target = nodeById.get(relationship.target);
     if (!source || !target) return "";
     const width = (0.25 + ((relationship.weight || 1) / maxSecondDegreeEdge) * .9).toFixed(1);
-    return '<line class="graph-edge" data-edge="' + esc(relationship.id) + '" x1="' + source.x + '" y1="' + source.y + '" x2="' + target.x + '" y2="' + target.y + '" stroke="' + theme.context + '" stroke-width="' + width + '" opacity=".22"><title>' + esc(connectionCategoryText(relationship)) + '</title></line>';
+    return '<line class="graph-edge" data-edge="' + esc(relationship.id) + '" x1="' + source.x + '" y1="' + source.y + '" x2="' + target.x + '" y2="' + target.y + '" stroke="' + theme.context + '" stroke-width="' + width + '" opacity=".6"><title>' + esc(connectionCategoryText(relationship)) + '</title></line>';
   }).join("");
   const neighborEdgesSvg = neighborRels.map((relationship) => {
     const source = nodeById.get(relationship.source);
     const target = nodeById.get(relationship.target);
     if (!source || !target) return "";
     const width = (0.45 + ((relationship.weight || 1) / maxNeighborEdge) * 2.1).toFixed(1);
-    return '<line class="graph-edge" data-edge="' + esc(relationship.id) + '" x1="' + source.x + '" y1="' + source.y + '" x2="' + target.x + '" y2="' + target.y + '" stroke="' + theme.context + '" stroke-width="' + width + '" opacity=".38"><title>' + esc(connectionCategoryText(relationship)) + '</title></line>';
+    return '<line class="graph-edge" data-edge="' + esc(relationship.id) + '" x1="' + source.x + '" y1="' + source.y + '" x2="' + target.x + '" y2="' + target.y + '" stroke="' + theme.context + '" stroke-width="' + width + '" opacity=".46"><title>' + esc(connectionCategoryText(relationship)) + '</title></line>';
   }).join("");
   const secondDegreeNodesSvg = secondDegreeNodes.map((node) => {
     return '<g class="graph-node context-node" data-entity="' + esc(node.raw.id) + '">' +
-      '<circle cx="' + node.x + '" cy="' + node.y + '" r="' + node.r + '" fill="' + theme.entityAlt + '" stroke="' + theme.context + '" stroke-width="1" opacity=".38"></circle>' +
+      '<circle cx="' + node.x + '" cy="' + node.y + '" r="' + node.r + '" fill="none" stroke="' + theme.primary + '" stroke-width="22" vector-effect="non-scaling-stroke" pointer-events="stroke" opacity="0"></circle>' +
+      '<circle cx="' + node.x + '" cy="' + node.y + '" r="' + node.r + '" fill="' + theme.entityAlt + '" stroke="' + theme.context + '" stroke-width="1" opacity=".58"></circle>' +
       '<title>' + esc(node.raw.name + " · connected through " + node.sourceCount + " direct " + pluralize("neighbor", node.sourceCount)) + '</title>' +
     '</g>';
   }).join("");
@@ -3038,8 +3043,9 @@ function connectionCategoryText(relationship) {
 function radialNodes(items, cx, cy, innerRadius, outerRadius, sizeValue) {
   const values = items.map((item) => Math.max(1, sizeValue(item)));
   const maxValue = Math.max(1, ...values);
-  return items.map((item, index) => {
-    const angle = (Math.PI * 2 * index) / Math.max(1, items.length) - Math.PI / 2;
+  const turns = items.length > 34 ? 1.16 : items.length > 22 ? 1.08 : 1;
+  const nodes = items.map((item, index) => {
+    const angle = (Math.PI * 2 * turns * index) / Math.max(1, items.length) - Math.PI / 2;
     const progress = items.length <= 1 ? 1 : index / (items.length - 1);
     const radius = innerRadius + Math.pow(progress, .62) * (outerRadius - innerRadius);
     const value = Math.max(1, sizeValue(item));
@@ -3048,12 +3054,41 @@ function radialNodes(items, cx, cy, innerRadius, outerRadius, sizeValue) {
       label: item.label || item.name,
       count: item.count || item.entities || 0,
       mentions: item.mentions || value,
+      angle,
+      layoutRadius: radius,
       x: cx + Math.cos(angle) * radius,
       y: cy + Math.sin(angle) * radius,
       r: mentionRadius(value, maxValue, 10, 128),
       raw: item,
     };
   });
+  separateLocalRadialOverlaps(nodes, cx, cy);
+  return nodes;
+}
+
+function separateLocalRadialOverlaps(nodes, cx, cy) {
+  const gap = 10;
+  const maxExtraRadius = 260;
+  for (let pass = 0; pass < 3; pass++) {
+    let moved = false;
+    for (let index = 1; index < nodes.length; index++) {
+      const node = nodes[index];
+      const baseRadius = node.layoutRadius;
+      let radius = node.layoutRadius;
+      for (let previousIndex = Math.max(0, index - 6); previousIndex < index; previousIndex++) {
+        const previous = nodes[previousIndex];
+        const distance = Math.max(1, Math.hypot(node.x - previous.x, node.y - previous.y));
+        const desired = node.r + previous.r + gap;
+        if (distance >= desired) continue;
+        radius = Math.min(baseRadius + maxExtraRadius, radius + desired - distance + gap);
+        node.layoutRadius = radius;
+        node.x = cx + Math.cos(node.angle) * radius;
+        node.y = cy + Math.sin(node.angle) * radius;
+        moved = true;
+      }
+    }
+    if (!moved) break;
+  }
 }
 
 function parentCategoryNodes(categories, cx, cy) {
@@ -3078,10 +3113,11 @@ function parentCategoryNodes(categories, cx, cy) {
 function drawEdges(edges, nodeById, maxEdge, density = "normal") {
   const theme = currentTheme();
   const isSpoke = density === "ego-spoke";
-  const isContext = density === "ego-context";
-  const baseWidth = isSpoke ? 0.65 : isContext ? 0.25 : 0.8;
-  const weightWidth = isSpoke ? 4.8 : isContext ? 1.7 : 7;
-  const opacity = isSpoke ? ".46" : isContext ? ".26" : theme.edgeOpacity.high;
+  const isHomeContext = density === "home-context";
+  const isContext = density === "ego-context" || isHomeContext;
+  const baseWidth = isSpoke ? 0.65 : isHomeContext ? 0.18 : isContext ? 0.25 : 0.8;
+  const weightWidth = isSpoke ? 4.8 : isHomeContext ? 1.05 : isContext ? 1.7 : 7;
+  const opacity = isSpoke ? ".46" : isHomeContext ? ".28" : isContext ? ".6" : theme.edgeOpacity.high;
   return edges.map((edge) => {
     const source = nodeById.get(edge.source);
     const target = nodeById.get(edge.target);
@@ -3790,6 +3826,30 @@ function resetHoverZoomActivation() {
   hoverZoomDelta = 0;
 }
 
+function resetZoomOutStepActivation() {
+  zoomOutStepArmedTarget = null;
+}
+
+function canStepUpFromZoomOut(event, nextWidth, thresholdWidth) {
+  if (event.deltaY <= 0) {
+    resetZoomOutStepActivation();
+    return false;
+  }
+  if (nextWidth < thresholdWidth) {
+    resetZoomOutStepActivation();
+    return false;
+  }
+  const target = [
+    mode,
+    activeCategory || "",
+    selectedEntityId || "",
+    activeTimelineDecade === null ? "" : activeTimelineDecade,
+  ].join(":");
+  if (zoomOutStepArmedTarget === target) return true;
+  zoomOutStepArmedTarget = target;
+  return false;
+}
+
 function categoryPreview(categoryId) {
   const label = DATA.topCategoryLabels[categoryId] || categoryId;
   const entities = DATA.entities.filter((entity) => entity.topCategory === categoryId);
@@ -4363,10 +4423,11 @@ function handleGraphWheel(event) {
       return;
     }
   }
-  if (event.deltaY > 0 && mode === "neighborhood" && nextW >= ENTITY_ZOOM_OUT_STEP_UP_WIDTH) {
+  if (event.deltaY > 0 && mode === "neighborhood" && canStepUpFromZoomOut(event, nextW, ENTITY_ZOOM_OUT_STEP_UP_WIDTH)) {
     selectedEntityId = null;
     mode = "categories";
     hideHoverPreview();
+    resetZoomOutStepActivation();
     if (activeCategory) {
       renderCategory(activeCategory);
     } else {
@@ -4374,25 +4435,28 @@ function handleGraphWheel(event) {
     }
     return;
   }
-  if (event.deltaY > 0 && mode === "category-list" && nextW >= ENTITY_ZOOM_OUT_STEP_UP_WIDTH) {
+  if (event.deltaY > 0 && mode === "category-list" && canStepUpFromZoomOut(event, nextW, ENTITY_ZOOM_OUT_STEP_UP_WIDTH)) {
     selectedEntityId = null;
     mode = "categories";
     hideHoverPreview();
+    resetZoomOutStepActivation();
     renderCategory(activeCategory);
     return;
   }
-  if (event.deltaY > 0 && activeCategory === "events_claims" && activeTimelineDecade !== null && requestedNextW >= CATEGORY_ZOOM_OUT_STEP_UP_WIDTH) {
+  if (event.deltaY > 0 && activeCategory === "events_claims" && activeTimelineDecade !== null && canStepUpFromZoomOut(event, requestedNextW, CATEGORY_ZOOM_OUT_STEP_UP_WIDTH)) {
     activeTimelineDecade = null;
     selectedEntityId = null;
     hideHoverPreview();
+    resetZoomOutStepActivation();
     renderCategory(activeCategory);
     return;
   }
-  if (event.deltaY > 0 && activeCategory && mode === "categories" && requestedNextW >= CATEGORY_ZOOM_OUT_STEP_UP_WIDTH) {
+  if (event.deltaY > 0 && activeCategory && mode === "categories" && canStepUpFromZoomOut(event, requestedNextW, CATEGORY_ZOOM_OUT_STEP_UP_WIDTH)) {
     activeCategory = null;
     selectedEntityId = null;
     activeTimelineDecade = null;
     hideHoverPreview();
+    resetZoomOutStepActivation();
     renderCategories();
   }
 }
