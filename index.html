@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>UFO Files Relationship Graph</title>
+  <link rel="stylesheet" href="styles.css?v=cff87c5ee7f2cadd">
+</head>
+<body>
+  <p id="graph-help" class="sr-only">Interactive relationship graph. Use Tab to move through visible graph labels, Enter or Space to open a category or entity, Escape to move back up the graph, and the search field to jump to a specific label.</p>
+  <main aria-labelledby="app-title">
+  <svg id="graph" role="img" aria-label="Transcript relationship graph" aria-describedby="graph-help status"></svg>
+  <div id="graph-labels" class="graph-label-layer" aria-label="Keyboard accessible graph labels"></div>
+  <div class="topbar">
+    <div class="brand">
+      <a class="owner-label" href="https://github.com/ufo-files">UFO Files</a>
+      <h1 id="app-title" aria-label="UFO Files Relationship Graph">
+        <span class="app-switcher">
+          <span class="app-switcher-text">Relationship Graph</span>
+          <select id="app-switcher" aria-label="Application">
+            <option value="https://ufo-files.github.io/relationship-graph/" selected>Relationship Graph</option>
+            <option value="https://ufo-files.github.io/dog-whistle/">Dog Whistle</option>
+          </select>
+        </span>
+      </h1>
+      <div class="meta" id="status" role="status" aria-live="polite">Loading graph...</div>
+    </div>
+    <form class="controls" id="search-form" role="search" aria-label="Graph search and downloads">
+      <label class="sr-only" for="search">Search entity or category</label>
+      <input id="search" type="search" placeholder="Search entity or category" autocomplete="off">
+      <span id="review-status" class="review-status" role="status" aria-live="polite"></span>
+      <button id="review-false-positives" type="button" hidden>Review false positives</button>
+      <button id="download-review" type="button" hidden>Download reclassified data</button>
+      <button id="download-data" type="button">Download data</button>
+    </form>
+  </div>
+  <section id="node-card" class="node-card" tabindex="-1" aria-live="polite" aria-label="Selected graph item details"></section>
+  <div id="hover-card" class="hover-card" aria-hidden="true"></div>
+  <div id="corner-label" class="corner-label" role="status" aria-live="polite"></div>
+  </main>
+    <script src="app-data.js?v=67f5d35edbd50b06"></script>
+    <script src="app-data-mentions.js?v=67f5d35edbd50b06"></script>
+    <script src="app-data-relationships.js?v=67f5d35edbd50b06"></script>
+  <script src="app.js?v=12d9a2caaa84910e"></script>
+</body>
+</html>
