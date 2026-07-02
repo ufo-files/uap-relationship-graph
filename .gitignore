@@ -4,5 +4,6 @@ __pycache__/
 node_modules/
 test-results/
 playwright-report/
+_data/
 data/documents/
 data/transcripts/

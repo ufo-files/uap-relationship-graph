@@ -75,6 +75,11 @@ jobs:
 
       - name: Commit rebuilt report
         run: |
+          if [ -d _data/.git ]; then
+            git -C _data reset --hard
+            git -C _data clean -fd
+          fi
+
           if git diff --quiet; then
             echo "No generated changes to commit."
             exit 0
@@ -84,10 +89,6 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -A
           git commit -m "Rebuild report from source data"
-          if [ -d _data/.git ]; then
-            git -C _data reset --hard
-            git -C _data clean -fd
-          fi
           git status --short --untracked-files=no
           git fetch origin "${{ github.ref_name }}"
           git rebase "origin/${{ github.ref_name }}"
