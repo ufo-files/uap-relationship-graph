@@ -16,6 +16,7 @@ import json
 import math
 import os
 import re
+import shutil
 from collections import Counter, defaultdict
 from dataclasses import asdict, dataclass, field
 from datetime import date, datetime, timezone
@@ -47,6 +48,8 @@ SOURCE_OUTLET_RULES = [
     ("American Alchemy", "newsrooms", re.compile(r"\bAmerican\s+Alchemy\b|AmericanAlchemy", re.I)),
 ]
 DATA_DIR = ROOT / "data"
+SOURCE_SHARD_DIRS = ("segments", "mentions", "relationships")
+MONOLITHIC_EVIDENCE_FILES = ("segments.json", "mentions.json", "relationships.json")
 DEFAULT_SOURCE_DATA_DIR = ROOT.parent / "data" / "data"
 LEGACY_SOURCE_DATA_DIR = ROOT.parent / "uap-data" / "data"
 CONFIGURED_SOURCE_DATA_DIR = os.environ.get("UFO_FILES_DATA_DIR") or os.environ.get("UAP_DATA_DIR")
@@ -912,7 +915,7 @@ NEWSROOM_NAME_RE = re.compile(
     re.I,
 )
 INSTITUTE_NAME_RE = re.compile(r"\b(?:Institute|Institutes)\b", re.I)
-UNIVERSITY_NAME_RE = re.compile(r"\b(?:University|College|School)\b", re.I)
+UNIVERSITY_NAME_RE = re.compile(r"\b(?:Academy|University|College|School)\b", re.I)
 RESEARCH_ORG_NAME_RE = re.compile(r"\b(?:Laboratory|Laboratories|Labs?|Research\s+Center|Research\s+Institute)\b", re.I)
 GOVERNMENT_ORG_NAME_RE = re.compile(
     r"\b(?:Department|Agency|Administration|Bureau|Office|Ministry|Command|Committee|Commission|Council|Board|Panel|Secretary|"
@@ -1105,6 +1108,9 @@ STRUCTURED_KEY_TERM_NAMES = {
 
 FIELD_LABEL_WORDS = {
     "accuracy",
+    "activity",
+    "activities",
+    "authentication",
     "airspeed",
     "altitude",
     "aircraft",
@@ -1119,6 +1125,7 @@ FIELD_LABEL_WORDS = {
     "data",
     "date",
     "description",
+    "desuiption",
     "designator",
     "event",
     "features",
@@ -1142,19 +1149,23 @@ FIELD_LABEL_WORDS = {
     "number",
     "observer",
     "observers",
+    "observed",
     "order",
     "other",
     "page",
     "radius",
     "rating",
     "report",
+    "reservations",
     "section",
     "seen",
     "short",
+    "sign",
     "software",
     "station",
     "submit",
     "system",
+    "sys",
     "table",
     "task",
     "tasking",
@@ -1170,22 +1181,43 @@ FIELD_LABEL_WORDS = {
 
 STRUCTURED_KEY_TERM_SUFFIXES = {
     "accuracy",
+    "activities",
+    "activity",
+    "area",
+    "areas",
+    "authentication",
+    "book",
+    "call",
     "caveats",
     "characteristics",
     "changed",
+    "copyright",
+    "database",
     "date",
     "depth",
+    "description",
+    "design",
     "designator",
     "impact",
     "info",
     "information",
+    "location",
     "load",
     "mission",
+    "module",
     "name",
     "order",
     "page",
+    "preface",
+    "prepared",
     "radius",
+    "reservations",
     "section",
+    "sign",
+    "status",
+    "sys",
+    "tissue",
+    "tissues",
     "time",
     "trajectory",
     "type",
@@ -1193,29 +1225,42 @@ STRUCTURED_KEY_TERM_SUFFIXES = {
 }
 
 STRUCTURED_KEY_TERM_PREFIXES = {
+    "activity",
+    "activities",
     "anomalous",
     "anamolous",
+    "area",
+    "areas",
     "associated",
+    "book",
     "bulk",
+    "call",
     "chaff",
     "code",
+    "copyright",
     "country",
     "current",
+    "database",
     "date",
+    "design",
     "description",
     "due",
     "first",
     "flare",
     "gun",
     "kinetic",
+    "location",
     "mission",
+    "module",
     "name",
     "number",
     "official",
     "original",
     "radar",
+    "reservations",
     "senate",
     "software",
+    "status",
     "submit",
     "tasking",
     "time",
@@ -1267,15 +1312,26 @@ UAP_OBJECT_WORDS = {
 }
 
 NON_PERSON_CONCEPT_WORDS = {
+    "activities",
+    "activity",
     "analysis",
     "analyses",
     "approach",
+    "area",
+    "areas",
+    "authentication",
+    "book",
     "budget",
+    "call",
     "capability",
     "characteristics",
     "conference",
     "conspiracy",
+    "copyright",
+    "database",
     "development",
+    "description",
+    "design",
     "doctrine",
     "experiment",
     "experiments",
@@ -1284,12 +1340,18 @@ NON_PERSON_CONCEPT_WORDS = {
     "history",
     "information",
     "initiative",
+    "location",
+    "locations",
     "method",
     "methods",
+    "module",
     "phase",
     "phases",
     "plan",
+    "preface",
+    "prepared",
     "publication",
+    "reservations",
     "perspective",
     "property",
     "registration",
@@ -1308,9 +1370,14 @@ NON_PERSON_CONCEPT_WORDS = {
     "symbols",
     "system",
     "systems",
+    "sign",
+    "status",
+    "sys",
     "technology",
     "teachings",
     "theory",
+    "tissue",
+    "tissues",
     "truth",
     "unit",
     "verification",
@@ -1650,6 +1717,62 @@ class Relationship:
     confidence: float = 0.0
 
 
+def infer_source_metadata(path: Path) -> dict[str, str]:
+    stem = slugify(path.stem)
+    title = titleize(path.stem)
+    collection = ""
+    source_type = "recording-transcripts"
+    subtype = "recording"
+
+    if stem.startswith("ebook-"):
+        source_type = "books"
+        subtype = "ebook"
+    elif stem.startswith("document-whitepapers-") or stem.startswith("whitepapers-"):
+        source_type = "whitepapers"
+        subtype = "whitepaper"
+        collection = "whitepapers"
+    elif stem.startswith("document-twitter-") or stem.startswith("twitter-") or stem.startswith("social-") or stem.startswith("x-"):
+        source_type = "news"
+        subtype = "social"
+        collection = "social-media"
+    elif stem.startswith("article-") or stem.startswith("news-") or stem.startswith("nyt-") or stem.startswith("new-york-times-") or stem.startswith("the-new-york-times-") or stem.startswith("washington-post-") or stem.startswith("the-wall-street-"):
+        source_type = "news"
+        subtype = "article"
+        collection = "news-articles"
+    elif stem.startswith("document-patents-") or stem.startswith("patents-"):
+        source_type = "gov-documents"
+        subtype = "patent"
+        collection = "patents"
+    elif stem.startswith("document-dow-release-") or stem.startswith("department-of-war-release-"):
+        source_type = "gov-documents"
+        subtype = "department-of-war-release"
+        match = re.match(r"(?:document-)?(dow-release-\d+|department-of-war-release-\d+)", stem)
+        collection = match.group(1) if match else "department-of-war"
+    elif stem.startswith("document-gov-docs-"):
+        source_type = "gov-documents"
+        subtype = "government-document"
+        collection = "gov-docs"
+    elif stem.startswith("document-project-blue-book-"):
+        source_type = "gov-documents"
+        subtype = "project-blue-book"
+        collection = "project-blue-book"
+    elif stem.startswith("document-"):
+        source_type = "documents"
+        subtype = "document"
+        parts = stem.split("-")
+        collection = "-".join(parts[1:3]) if len(parts) > 2 else "documents"
+
+    return {
+        "id": stem,
+        "title": title,
+        "file": path.name,
+        "sourcePath": display_path(path),
+        "type": source_type,
+        "subtype": subtype,
+        "collection": collection,
+    }
+
+
 def main() -> None:
     review = read_review_input()
     registry = read_registry()
@@ -1666,7 +1789,7 @@ def main() -> None:
     relationships = build_relationships(segments, mentions, entities, review)
     graph = build_graph(entities, relationships)
     manifest = build_manifest(sources, segments, mentions, entities, relationships, review)
-    write_report(segments, mentions, entities, relationships, graph, manifest, review)
+    write_report(sources, segments, mentions, entities, relationships, graph, manifest, review)
     print("Generated index.html")
     print(
         f"Indexed {len(sources)} transcript sources, {len(segments)} segments, "
@@ -4194,6 +4317,7 @@ def update_readme_counts(manifest: dict[str, Any]) -> None:
 
 
 def write_report(
+    sources: list[Path],
     segments: list[Segment],
     mentions: list[Mention],
     entities: list[Entity],
@@ -4207,13 +4331,14 @@ def write_report(
         stale_path = DATA_DIR / stale_name
         if stale_path.exists():
             stale_path.unlink()
+    cleanup_sharded_data_exports()
 
     mention_payload = [asdict_slim_mention(mention) for mention in mentions]
     entity_payload = [asdict_entity(entity) for entity in entities]
-    write_json(DATA_DIR / "segments.json", [asdict(segment) for segment in segments], compact=True)
-    write_json(DATA_DIR / "mentions.json", mention_payload, compact=True)
+    relationship_payload = [asdict(relationship) for relationship in relationships]
+    source_index = write_source_shards(sources, segments, mention_payload, relationship_payload)
+    write_json(DATA_DIR / "sources.json", source_index, compact=True)
     write_json(DATA_DIR / "entities.json", entity_payload, compact=True)
-    write_json(DATA_DIR / "relationships.json", [asdict(relationship) for relationship in relationships], compact=True)
     write_json(DATA_DIR / "graph.json", graph, compact=True)
     write_json(DATA_DIR / "manifest.json", manifest, compact=True)
     write_json(DATA_DIR / "reclass.json", export_review(review))
@@ -4249,7 +4374,7 @@ def write_report(
         "categoryToTop": CATEGORY_TO_TOP,
     }
     app_mentions_json = json.dumps(mention_payload, ensure_ascii=False)
-    app_relationships_json = json.dumps([asdict(relationship) for relationship in relationships], ensure_ascii=False)
+    app_relationships_json = json.dumps(relationship_payload, ensure_ascii=False)
     app_core_json = json.dumps(app_core_payload, ensure_ascii=False)
     app_payload_version = hashlib.sha256(
         (app_core_json + app_mentions_json + app_relationships_json).encode("utf-8")
@@ -4266,8 +4391,92 @@ def write_report(
         "window.TRANSCRIPT_INTELLIGENCE_DATA.relationships = " + app_relationships_json + ";\n",
         encoding="utf-8",
     )
-    (ROOT / "index.html").write_text(render_html(app_payload_version), encoding="utf-8")
+    app_js_version = sha256(ROOT / "app.js")[:16] if (ROOT / "app.js").exists() else app_payload_version
+    styles_version = sha256(ROOT / "styles.css")[:16] if (ROOT / "styles.css").exists() else app_payload_version
+    (ROOT / "index.html").write_text(
+        render_html(app_payload_version, app_js_version=app_js_version, styles_version=styles_version),
+        encoding="utf-8",
+    )
     update_readme_counts(manifest)
+
+
+def cleanup_sharded_data_exports() -> None:
+    for stale_name in MONOLITHIC_EVIDENCE_FILES:
+        stale_path = DATA_DIR / stale_name
+        if stale_path.exists():
+            stale_path.unlink()
+    for shard_dir in SOURCE_SHARD_DIRS:
+        path = DATA_DIR / shard_dir
+        if path.exists():
+            shutil.rmtree(path)
+
+
+def write_source_shards(
+    sources: list[Path],
+    segments: list[Segment],
+    mention_payload: list[dict[str, Any]],
+    relationship_payload: list[dict[str, Any]],
+) -> dict[str, Any]:
+    records = {slugify(path.stem): infer_source_metadata(path) for path in sources}
+    segment_payload = [asdict(segment) for segment in segments]
+    segments_by_source: dict[str, list[dict[str, Any]]] = defaultdict(list)
+    mentions_by_source: dict[str, list[dict[str, Any]]] = defaultdict(list)
+    relationships_by_source: dict[str, list[dict[str, Any]]] = defaultdict(list)
+    segment_source_by_id = {segment["id"]: segment["transcript_id"] for segment in segment_payload}
+
+    for segment in segment_payload:
+        segments_by_source[segment["transcript_id"]].append(segment)
+    for mention in mention_payload:
+        mentions_by_source[mention["transcript_id"]].append(mention)
+    for relationship in relationship_payload:
+        source_ids = {
+            segment_source_by_id[segment_id]
+            for segment_id in relationship.get("evidence_segment_ids", [])
+            if segment_id in segment_source_by_id
+        }
+        if not source_ids:
+            source_ids = {"_review"}
+        for source_id in source_ids:
+            relationships_by_source[source_id].append(relationship)
+
+    source_items: list[dict[str, Any]] = []
+    for source_id, record in sorted(records.items(), key=lambda item: (item[1]["type"], item[1]["title"].lower())):
+        source_type = record["type"]
+        source_record = dict(record)
+        source_record["segmentsPath"] = write_source_shard("segments", source_type, source_id, segments_by_source.get(source_id, []))
+        source_record["mentionsPath"] = write_source_shard("mentions", source_type, source_id, mentions_by_source.get(source_id, []))
+        source_record["relationshipsPath"] = write_source_shard("relationships", source_type, source_id, relationships_by_source.get(source_id, []))
+        source_record["counts"] = {
+            "segments": len(segments_by_source.get(source_id, [])),
+            "mentions": len(mentions_by_source.get(source_id, [])),
+            "relationships": len(relationships_by_source.get(source_id, [])),
+        }
+        source_items.append(source_record)
+
+    review_relationships = relationships_by_source.get("_review", [])
+    review_path = write_source_shard("relationships", "review", "manual-and-unassigned", review_relationships) if review_relationships else None
+    return {
+        "schema": "relationship-graph-source-shards/v1",
+        "sources": source_items,
+        "sourceTypes": {
+            source_type: sum(1 for item in source_items if item["type"] == source_type)
+            for source_type in sorted({item["type"] for item in source_items})
+        },
+        "unassignedRelationshipsPath": review_path,
+        "counts": {
+            "sources": len(source_items),
+            "segments": sum(len(items) for items in segments_by_source.values()),
+            "mentions": sum(len(items) for items in mentions_by_source.values()),
+            "relationships": len(relationship_payload),
+        },
+    }
+
+
+def write_source_shard(kind: str, source_type: str, source_id: str, payload: list[dict[str, Any]]) -> str:
+    path = DATA_DIR / kind / source_type / f"{source_id}.json"
+    path.parent.mkdir(parents=True, exist_ok=True)
+    write_json(path, payload, compact=True)
+    return display_path(path)
 
 
 def asdict_slim_mention(mention: Mention) -> dict[str, Any]:
@@ -4440,10 +4649,17 @@ def sha256(path: Path) -> str:
     return digest.hexdigest()
 
 
-def render_html(app_data_version: str = "") -> str:
-    version = f"?v={app_data_version}" if app_data_version else ""
+def render_html(
+    app_data_version: str = "",
+    *,
+    app_js_version: str | None = None,
+    styles_version: str | None = None,
+) -> str:
+    data_version = f"?v={app_data_version}" if app_data_version else ""
+    script_version = f"?v={app_js_version}" if app_js_version else data_version
+    stylesheet_version = f"?v={styles_version}" if styles_version else data_version
     app_data_scripts = "\n".join(
-        f"    <script src=\"{name}{version}\"></script>"
+        f"    <script src=\"{name}{data_version}\"></script>"
         for name in ("app-data.js", "app-data-mentions.js", "app-data-relationships.js")
     )
     return f"""<!doctype html>
@@ -4452,7 +4668,7 @@ def render_html(app_data_version: str = "") -> str:
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>UFO Files Relationship Graph</title>
-  <link rel="stylesheet" href="styles.css{version}">
+  <link rel="stylesheet" href="styles.css{stylesheet_version}">
 </head>
 <body>
   <p id="graph-help" class="sr-only">Interactive relationship graph. Use Tab to move through visible graph labels, Enter or Space to open a category or entity, Escape to move back up the graph, and the search field to jump to a specific label.</p>
@@ -4487,7 +4703,7 @@ def render_html(app_data_version: str = "") -> str:
   <div id="corner-label" class="corner-label" role="status" aria-live="polite"></div>
   </main>
 {app_data_scripts}
-  <script src="app.js{version}"></script>
+  <script src="app.js{script_version}"></script>
 </body>
 </html>
 """

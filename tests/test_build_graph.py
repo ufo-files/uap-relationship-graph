@@ -58,6 +58,21 @@ class BuildGraphParsingTests(unittest.TestCase):
             rows = build_graph.parse_json(path)
         self.assertEqual(rows, [{"start_ms": 1500, "end_ms": 2250, "text": "Segment text"}])
 
+    def test_source_metadata_classifies_major_corpora(self) -> None:
+        cases = {
+            "ebook-american-cosmic.tsv": ("books", "ebook"),
+            "document-dow-release-3-cia-uap-002.tsv": ("gov-documents", "department-of-war-release"),
+            "document-gov-docs-smith-memo.tsv": ("gov-documents", "government-document"),
+            "document-whitepapers-sol-whitepaper-vol1n1.tsv": ("whitepapers", "whitepaper"),
+            "twitter-dog-whistle-recipe.tsv": ("news", "social"),
+            "the-wall-street-journal-ufo-article.tsv": ("news", "article"),
+            "bob-lazar-travis-walton-finally-meet.tsv": ("recording-transcripts", "recording"),
+        }
+        for filename, expected in cases.items():
+            with self.subTest(filename=filename):
+                metadata = build_graph.infer_source_metadata(Path(filename))
+                self.assertEqual((metadata["type"], metadata["subtype"]), expected)
+
     def test_signal_patterns_reject_numeric_table_fragments(self) -> None:
         segment = build_graph.Segment(
             id="s-1",

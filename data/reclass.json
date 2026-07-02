@@ -51,8 +51,10 @@
     "bulgarian academy": "Bulgarian Academy of Sciences",
     "by gary nolan": "Gary Nolan",
     "byfield brown": "Byfield Brown Effect",
+    "camp hood": "Camp Hood",
     "camp street": "544 Camp Street",
     "charles hall tall whites": "Charles Hall",
+    "chasing shadows": "Chasing Shadows",
     "chris bledsoe copyright": "Chris Bledsoe",
     "civilized society": "Towards a Psycho-Civilized Society",
     "coast guard": "United States Coast Guard",
@@ -153,6 +155,7 @@
     "in plato": "Plato",
     "in portsmouth": "Portsmouth",
     "in saint paul": "Saint Paul's",
+    "in sekret machines": "Sekret Machines",
     "in september": "September 1964",
     "in switzerland": "Switzerland",
     "independent research": "Independent Research and Development",
@@ -186,6 +189,7 @@
     "lockheed martin corporation": "Lockheed Martin",
     "los alamos national": "Los Alamos National Labs",
     "m garland": "Brigadier General William M. Garland",
+    "machines book": "Sekret Machines",
     "marine corps": "United States Marine Corps",
     "medical research": "Kaiser Wilhelm Institute for Medical Research",
     "military_bases:wright-patterson-air-force-base": "Wright-Patterson Air Force Base",
@@ -196,6 +200,7 @@
     "national institute for discovery science": "NIDS",
     "national reconnaissance": "National Reconnaissance Office",
     "natural history": "American Museum of Natural History",
+    "nids": "NIDS",
     "november 24 95": "April 1995",
     "on december": "December 20, 2025",
     "on march": "March 24th, 1967",
@@ -379,6 +384,7 @@
     "scientific revolutions": "Structure of Scientific Revolutions",
     "second empire": "The Spider's Web, Britain's Second Empire",
     "secret machines": "Sekret Machines",
+    "sekret machines book": "Sekret Machines",
     "senator strom thurmond all": "Senator Strom Thurmond",
     "skinwalker ranc": "Skinwalker Ranch",
     "skinwalker ranch": "Skinwalker Ranch",
@@ -402,12 +408,18 @@
     "to chris jr": "Chris Bledsoe Jr",
     "u s army": "United States Army",
     "u s defense intelligence agency": "DIA",
+    "u s marine corps": "United States Marine Corps",
+    "u s navy": "United States Navy",
+    "u.s. marine corps": "United States Marine Corps",
+    "u.s. navy": "United States Navy",
     "under operation paperclip": "Operation Paperclip",
     "universities:at-harvard-medical-school": "Harvard Medical School",
     "universities:harvard": "Harvard University",
     "universities:harvard-college": "Harvard University",
     "us air force": "United States Air Force",
     "us army": "U.S. Army",
+    "us marine corps": "United States Marine Corps",
+    "us navy": "United States Navy",
     "was snyder": "Freddy Snyder",
     "washington d": "Washington D.C.",
     "websites:2-angle": "Angle",
@@ -431,10 +443,50 @@
     "zahi owas": "Zahi Hawass"
   },
   "falsePositives": {
+    "chasing-shadows-copyright": {
+      "category": "people",
+      "categoryLabel": "People",
+      "name": "Chasing Shadows Copyright"
+    },
+    "current-status": {
+      "category": "people",
+      "categoryLabel": "People",
+      "name": "Current Status"
+    },
+    "dangerous_people:an-insiders": {
+      "category": "dangerous_people",
+      "categoryLabel": "Dangerous people",
+      "name": "An Insiders"
+    },
+    "dangerous_people:human-biological-tissues": {
+      "category": "dangerous_people",
+      "categoryLabel": "Dangerous people",
+      "name": "Human Biological Tissues"
+    },
+    "dangerous_people:human-biological-tissues-prepared": {
+      "category": "dangerous_people",
+      "categoryLabel": "Dangerous people",
+      "name": "Human Biological Tissues Prepared"
+    },
     "dates_times:maybe-10-15": {
       "category": "dates_times",
       "categoryLabel": "Dates and times",
       "name": "maybe 10, 15"
+    },
+    "experiencers:camp-hood-reservations": {
+      "category": "experiencers",
+      "categoryLabel": "Experiencers",
+      "name": "Camp Hood Reservations"
+    },
+    "experiencers:human-biological-tissues-preface": {
+      "category": "experiencers",
+      "categoryLabel": "Experiencers",
+      "name": "Human Biological Tissues Preface"
+    },
+    "fawcett-book-no": {
+      "category": "whistleblowers",
+      "categoryLabel": "Whistleblowers",
+      "name": "Fawcett Book No"
     },
     "friendly_people:apparently-dulles": {
       "category": "friendly_people",
@@ -711,6 +763,21 @@
       "categoryLabel": "GPS coordinates",
       "name": "90, 92"
     },
+    "human-biological-tissues": {
+      "category": "dangerous_people",
+      "categoryLabel": "Dangerous people",
+      "name": "Human Biological Tissues"
+    },
+    "human-biological-tissues-preface": {
+      "category": "experiencers",
+      "categoryLabel": "Experiencers",
+      "name": "Human Biological Tissues Preface"
+    },
+    "human-biological-tissues-prepared": {
+      "category": "dangerous_people",
+      "categoryLabel": "Dangerous people",
+      "name": "Human Biological Tissues Prepared"
+    },
     "likely_spies:james-bond": {
       "category": "likely_spies",
       "categoryLabel": "Likely spies",
@@ -720,6 +787,11 @@
       "category": "likely_spies",
       "categoryLabel": "Likely spies",
       "name": "Union Paci"
+    },
+    "overhead-reconnaissance": {
+      "category": "politicians",
+      "categoryLabel": "Politicians",
+      "name": "Overhead Reconnaissance"
     },
     "people:activity-description": {
       "category": "people",
@@ -780,6 +852,16 @@
       "category": "people",
       "categoryLabel": "People",
       "name": "Amn Full Namecia Exemptions"
+    },
+    "people:an-insider": {
+      "category": "people",
+      "categoryLabel": "People",
+      "name": "An Insider"
+    },
+    "people:an-insiders": {
+      "category": "people",
+      "categoryLabel": "People",
+      "name": "An Insiders"
     },
     "people:appendices-appendix": {
       "category": "people",
@@ -1021,6 +1103,11 @@
       "categoryLabel": "People",
       "name": "Calls Noted"
     },
+    "people:camp-hood-area": {
+      "category": "people",
+      "categoryLabel": "People",
+      "name": "Camp Hood Area"
+    },
     "people:cant-evaluation-certain": {
       "category": "people",
       "categoryLabel": "People",
@@ -1236,6 +1323,11 @@
       "categoryLabel": "People",
       "name": "Charles Defense Intelligence"
     },
+    "people:chasing-shadows-copyright": {
+      "category": "people",
+      "categoryLabel": "People",
+      "name": "Chasing Shadows Copyright"
+    },
     "people:check-canadian": {
       "category": "people",
       "categoryLabel": "People",
@@ -1405,6 +1497,11 @@
       "category": "people",
       "categoryLabel": "People",
       "name": "Ctr Full Name"
+    },
+    "people:current-status": {
+      "category": "people",
+      "categoryLabel": "People",
+      "name": "Current Status"
     },
     "people:d-n": {
       "category": "people",
@@ -3621,6 +3718,11 @@
       "categoryLabel": "People",
       "name": "Under Intelligent Control"
     },
+    "people:unk-camp-hood": {
+      "category": "people",
+      "categoryLabel": "People",
+      "name": "Unk Camp Hood"
+    },
     "people:vallee-classification-system": {
       "category": "people",
       "categoryLabel": "People",
@@ -3716,6 +3818,11 @@
       "categoryLabel": "Politicians",
       "name": "Global Security"
     },
+    "politicians:overhead-reconnaissance": {
+      "category": "politicians",
+      "categoryLabel": "Politicians",
+      "name": "Overhead Reconnaissance"
+    },
     "professors:american-jesuit": {
       "category": "professors",
       "categoryLabel": "Professors",
@@ -3735,6 +3842,11 @@
       "category": "professors",
       "categoryLabel": "Professors",
       "name": "New World"
+    },
+    "professors:overhead-reconnaissance": {
+      "category": "professors",
+      "categoryLabel": "Professors",
+      "name": "Overhead Reconnaissance"
     },
     "websites:14-this": {
       "category": "websites",
@@ -3995,6 +4107,11 @@
       "category": "websites",
       "categoryLabel": "Websites",
       "name": "zbiotics.com"
+    },
+    "whistleblowers:fawcett-book-no": {
+      "category": "whistleblowers",
+      "categoryLabel": "Whistleblowers",
+      "name": "Fawcett Book No"
     }
   },
   "generatedAt": "2026-06-29T06:40:33.659Z",
@@ -5041,6 +5158,14 @@
       "targetId": "friendly_people:brandon-fugal",
       "targetName": "Brandon Fugal"
     },
+    "experiencers:camp-hood": {
+      "sourceCategory": "experiencers",
+      "sourceId": "experiencers:camp-hood",
+      "sourceName": "Camp Hood",
+      "targetCategory": "military_bases",
+      "targetId": "military_bases:camp-hood",
+      "targetName": "Camp Hood"
+    },
     "experiencers:celestial-objects": {
       "sourceCategory": "experiencers",
       "sourceId": "experiencers:celestial-objects",
@@ -5680,6 +5805,14 @@
       "targetCategory": "experiencers",
       "targetId": "experiencers:bud-hopkins",
       "targetName": "Bud Hopkins"
+    },
+    "friendly_people:camp-hood": {
+      "sourceCategory": "friendly_people",
+      "sourceId": "friendly_people:camp-hood",
+      "sourceName": "Camp Hood",
+      "targetCategory": "military_bases",
+      "targetId": "military_bases:camp-hood",
+      "targetName": "Camp Hood"
     },
     "friendly_people:charles-manson": {
       "sourceCategory": "friendly_people",
@@ -6601,6 +6734,22 @@
       "targetId": "government_agencies:army-air-forces",
       "targetName": "Army Air Forces"
     },
+    "government_agencies:s-marine-corps": {
+      "sourceCategory": "government_agencies",
+      "sourceId": "government_agencies:s-marine-corps",
+      "sourceName": "S. Marine Corps",
+      "targetCategory": "government_agencies",
+      "targetId": "government_agencies:united-states-marine-corps",
+      "targetName": "United States Marine Corps"
+    },
+    "government_agencies:s-marines-corps": {
+      "sourceCategory": "government_agencies",
+      "sourceId": "government_agencies:s-marines-corps",
+      "sourceName": "S Marines Corps",
+      "targetCategory": "government_agencies",
+      "targetId": "government_agencies:united-states-marine-corps",
+      "targetName": "United States Marine Corps"
+    },
     "government_agencies:secret-national-security-agency": {
       "sourceCategory": "government_agencies",
       "sourceId": "government_agencies:secret-national-security-agency",
@@ -6623,7 +6772,7 @@
       "sourceName": "U.S. Navy",
       "targetCategory": "government_agencies",
       "targetId": "government_agencies:united-states-navy",
-      "targetName": "united states navy"
+      "targetName": "United States Navy"
     },
     "government_agencies:uap-task-force": {
       "sourceCategory": "government_agencies",
@@ -7929,6 +8078,14 @@
       "targetId": "people:tim-taylor",
       "targetName": "Tim Taylor"
     },
+    "people:camp-hood": {
+      "sourceCategory": "people",
+      "sourceId": "people:camp-hood",
+      "sourceName": "Camp Hood",
+      "targetCategory": "military_bases",
+      "targetId": "military_bases:camp-hood",
+      "targetName": "Camp Hood"
+    },
     "people:carl-grillmare": {
       "sourceCategory": "people",
       "sourceId": "people:carl-grillmare",
@@ -7984,6 +8141,14 @@
       "targetCategory": "friendly_people",
       "targetId": "friendly_people:charles-manson",
       "targetName": "Charles Manson"
+    },
+    "people:chasing-shadows": {
+      "sourceCategory": "books",
+      "sourceId": "people:chasing-shadows",
+      "sourceName": "Chasing Shadows",
+      "targetCategory": "books",
+      "targetId": "books:chasing-shadows",
+      "targetName": "Chasing Shadows"
     },
     "people:chris-bledsoe": {
       "sourceCategory": "people",
@@ -9217,6 +9382,14 @@
       "targetId": "whistleblowers:luis-elizondo",
       "targetName": "Luis Elizondo"
     },
+    "people:machines-book": {
+      "sourceCategory": "people",
+      "sourceId": "people:machines-book",
+      "sourceName": "Machines Book",
+      "targetCategory": "books",
+      "targetId": "books:sekret-machines",
+      "targetName": "Sekret Machines"
+    },
     "people:machu-picchu": {
       "sourceCategory": "people",
       "sourceId": "people:machu-picchu",
@@ -9871,6 +10044,14 @@
       "sourceName": "Secret Machines War",
       "targetCategory": "books",
       "targetId": "people:secret-machines",
+      "targetName": "Sekret Machines"
+    },
+    "people:sekret-machines-book": {
+      "sourceCategory": "people",
+      "sourceId": "people:sekret-machines-book",
+      "sourceName": "Sekret Machines Book",
+      "targetCategory": "books",
+      "targetId": "books:sekret-machines",
       "targetName": "Sekret Machines"
     },
     "people:sergeant-sherman": {
@@ -10729,6 +10910,14 @@
       "targetId": "people:robert-bigelow",
       "targetName": "Robert Bigelow"
     },
+    "politicians:camp-hood": {
+      "sourceCategory": "politicians",
+      "sourceId": "politicians:camp-hood",
+      "sourceName": "Camp Hood",
+      "targetCategory": "military_bases",
+      "targetId": "military_bases:camp-hood",
+      "targetName": "Camp Hood"
+    },
     "politicians:colonel-corso": {
       "sourceCategory": "politicians",
       "sourceId": "politicians:colonel-corso",
@@ -11168,6 +11357,14 @@
       "targetCategory": "experiencers",
       "targetId": "experiencers:in-las-vegas",
       "targetName": "In Las Vegas"
+    },
+    "professors:camp-hood": {
+      "sourceCategory": "professors",
+      "sourceId": "professors:camp-hood",
+      "sourceName": "Camp Hood",
+      "targetCategory": "military_bases",
+      "targetId": "military_bases:camp-hood",
+      "targetName": "Camp Hood"
     },
     "professors:carl-grillmayer": {
       "sourceCategory": "professors",
@@ -11937,6 +12134,14 @@
       "targetId": "institutes:national-institute-for-discovery-science",
       "targetName": "National Institute for Discovery Science"
     },
+    "research_groups:nids": {
+      "sourceCategory": "research_groups",
+      "sourceId": "research_groups:nids",
+      "sourceName": "NIDS",
+      "targetCategory": "institutes",
+      "targetId": "institutes:nids",
+      "targetName": "NIDS"
+    },
     "star_systems:pleiades": {
       "sourceCategory": "star_systems",
       "sourceId": "star_systems:pleiades",
@@ -12112,6 +12317,14 @@
       "targetCategory": "people",
       "targetId": "people:in-california",
       "targetName": "In California"
+    },
+    "whistleblowers:in-sekret-machines": {
+      "sourceCategory": "whistleblowers",
+      "sourceId": "whistleblowers:in-sekret-machines",
+      "sourceName": "In Sekret Machines",
+      "targetCategory": "books",
+      "targetId": "books:sekret-machines",
+      "targetName": "Sekret Machines"
     },
     "whistleblowers:indian-head": {
       "sourceCategory": "whistleblowers",
@@ -13379,6 +13592,14 @@
       "targetId": "government_project_codenames:project-blue-book",
       "targetName": "project blue book"
     },
+    "blue book no": {
+      "sourceCategory": "government_project_codenames",
+      "sourceId": "government_project_codenames:project-blue-book",
+      "sourceName": "Blue Book No",
+      "targetCategory": "government_project_codenames",
+      "targetId": "government_project_codenames:project-blue-book",
+      "targetName": "Project Blue Book"
+    },
     "blue caste consciousness abilities": {
       "sourceCategory": "people",
       "sourceId": "people:blue-caste-consciousness-abilities",
@@ -13458,6 +13679,14 @@
       "targetCategory": "experiencers",
       "targetId": "experiencers:bomber-wing",
       "targetName": "Bomber Wing"
+    },
+    "book no": {
+      "sourceCategory": "government_project_codenames",
+      "sourceId": "government_project_codenames:project-blue-book",
+      "sourceName": "Book No",
+      "targetCategory": "government_project_codenames",
+      "targetId": "government_project_codenames:project-blue-book",
+      "targetName": "Project Blue Book"
     },
     "both brent": {
       "sourceCategory": "people",
@@ -13571,6 +13800,14 @@
       "targetId": "whistleblowers:in-california",
       "targetName": "In California"
     },
+    "camp hood": {
+      "sourceCategory": "military_bases",
+      "sourceId": "people:camp-hood",
+      "sourceName": "Camp Hood",
+      "targetCategory": "military_bases",
+      "targetId": "military_bases:camp-hood",
+      "targetName": "Camp Hood"
+    },
     "carl grillmare": {
       "sourceCategory": "people",
       "sourceId": "people:carl-grillmare",
@@ -13666,6 +13903,14 @@
       "targetCategory": "dangerous_people",
       "targetId": "dangerous_people:charles-manson",
       "targetName": "Charles Manson"
+    },
+    "chasing shadows": {
+      "sourceCategory": "books",
+      "sourceId": "people:chasing-shadows",
+      "sourceName": "Chasing Shadows",
+      "targetCategory": "books",
+      "targetId": "books:chasing-shadows",
+      "targetName": "Chasing Shadows"
     },
     "chris bledsoe": {
       "sourceCategory": "experiencers",
@@ -15147,6 +15392,14 @@
       "targetId": "locations:new-mexico",
       "targetName": "New Mexico"
     },
+    "in sekret machines": {
+      "sourceCategory": "books",
+      "sourceId": "books:sekret-machines",
+      "sourceName": "In Sekret Machines",
+      "targetCategory": "books",
+      "targetId": "books:sekret-machines",
+      "targetName": "Sekret Machines"
+    },
     "in vallee": {
       "sourceCategory": "experiencers",
       "sourceId": "experiencers:in-vallee",
@@ -15795,6 +16048,14 @@
       "targetId": "whistleblowers:luis-elizondo",
       "targetName": "Luis Elizondo"
     },
+    "machines book": {
+      "sourceCategory": "books",
+      "sourceId": "books:sekret-machines",
+      "sourceName": "Machines Book",
+      "targetCategory": "books",
+      "targetId": "books:sekret-machines",
+      "targetName": "Sekret Machines"
+    },
     "machu picchu": {
       "sourceCategory": "experiencers",
       "sourceId": "experiencers:machu-picchu",
@@ -16242,6 +16503,14 @@
       "targetCategory": "journalists",
       "targetId": "journalists:nick-cook",
       "targetName": "Nick Cook"
+    },
+    "nids": {
+      "sourceCategory": "research_groups",
+      "sourceId": "research_groups:nids",
+      "sourceName": "NIDS",
+      "targetCategory": "institutes",
+      "targetId": "institutes:nids",
+      "targetName": "NIDS"
     },
     "no casillas": {
       "sourceCategory": "people",
@@ -17099,6 +17368,22 @@
       "targetId": "experiencers:s-house",
       "targetName": "S. House"
     },
+    "s marines corps": {
+      "sourceCategory": "government_agencies",
+      "sourceId": "government_agencies:s-marines-corps",
+      "sourceName": "S Marines Corps",
+      "targetCategory": "government_agencies",
+      "targetId": "government_agencies:united-states-marine-corps",
+      "targetName": "United States Marine Corps"
+    },
+    "s. marine corps": {
+      "sourceCategory": "government_agencies",
+      "sourceId": "government_agencies:s-marine-corps",
+      "sourceName": "S. Marine Corps",
+      "targetCategory": "government_agencies",
+      "targetId": "government_agencies:united-states-marine-corps",
+      "targetName": "United States Marine Corps"
+    },
     "s4": {
       "sourceCategory": "military_bases",
       "sourceId": "military_bases:s4",
@@ -17202,6 +17487,14 @@
       "targetCategory": "people",
       "targetId": "people:national-academies",
       "targetName": "National Academies"
+    },
+    "sekret machines book": {
+      "sourceCategory": "books",
+      "sourceId": "books:sekret-machines",
+      "sourceName": "Sekret Machines Book",
+      "targetCategory": "books",
+      "targetId": "books:sekret-machines",
+      "targetName": "Sekret Machines"
     },
     "senator keating": {
       "sourceCategory": "politicians",
@@ -17898,6 +18191,14 @@
       "targetCategory": "government_agencies",
       "targetId": "government_agencies:united-states-navy",
       "targetName": "united states navy"
+    },
+    "u.s. navy": {
+      "sourceCategory": "government_agencies",
+      "sourceId": "government_agencies:u-s-navy",
+      "sourceName": "U.S. Navy",
+      "targetCategory": "government_agencies",
+      "targetId": "government_agencies:united-states-navy",
+      "targetName": "United States Navy"
     },
     "uap task force": {
       "sourceCategory": "government_agencies",
@@ -18604,14 +18905,16 @@
     "air materiel connnand": "government_agencies",
     "air materiel coumand": "government_agencies",
     "air materiel gon": "government_agencies",
+    "air pentagon": "government_agencies",
     "aircraft callsign": "key_terms",
     "aircraft callsignd": "key_terms",
     "aircraft callsignl": "key_terms",
     "aircratt callsign": "key_terms",
     "al jazeera": "newsrooms",
-    "allen dulles": "people",
     "alien files reopened": "tv_shows",
     "aliens among us mac": "books",
+    "allen dulles": "people",
+    "allies help pentagon obtain": "document_names",
     "alpha albino royal dracs": "alien_species",
     "alr commands": "government_agencies",
     "alr materiel com": "government_agencies",
@@ -18710,6 +19013,7 @@
     "call sign": "key_terms",
     "cambridge": "locations",
     "camp david": "military_bases",
+    "camp hood": "military_bases",
     "camp king": "military_bases",
     "camp street": "locations",
     "canis major": "star_systems",
@@ -18719,6 +19023,7 @@
     "central america": "locations",
     "central intelligence": "government_agencies",
     "chaff designator": "key_terms",
+    "chasing shadows": "books",
     "china lake": "military_bases",
     "chris bledsoe": "friendly_people",
     "city hall": "locations",
@@ -18745,10 +19050,10 @@
     "complaint form": "document_names",
     "condon committee": "government_agencies",
     "condon report": "document_names",
+    "conrad quimby": "people",
     "consciousness": "key_terms",
     "consciousness department": "key_terms",
     "consciousness department it": "key_terms",
-    "conrad quimby": "people",
     "coordination headquarters": "government_agencies",
     "cosmic agenda": "emerging_terminology",
     "cosmic law": "emerging_terminology",
@@ -18826,6 +19131,7 @@
     "for skinwalker": "tv_shows",
     "forbidden science": "books",
     "foreign technology": "government_agencies",
+    "former pentagon official reveals": "document_names",
     "fort belvoir": "military_bases",
     "fort detrick": "military_bases",
     "fort irwin": "military_bases",
@@ -18913,6 +19219,7 @@
     "in ohio": "locations",
     "in portsmouth": "locations",
     "in saint paul": "locations",
+    "in sekret machines": "books",
     "in september": "dates_times",
     "in switzerland": "locations",
     "independent research": "contractors",
@@ -18990,6 +19297,7 @@
     "los angeles": "locations",
     "los angeles county": "locations",
     "lost missiles": "events",
+    "machines book": "books",
     "machu picchu": "locations",
     "major air commands": "government_agencies",
     "major alr commands": "government_agencies",
@@ -19101,15 +19409,17 @@
     "operation prado": "government_project_codenames",
     "operation snow white": "government_project_codenames",
     "orion empire": "alien_species",
+    "our pentagon": "government_agencies",
     "outer knowledge": "emerging_terminology",
     "outer limits": "tv_shows",
+    "overhead reconnaissance program": "key_terms",
     "pacific northwest": "locations",
     "pacific ocean": "locations",
     "palmdale station jail": "locations",
     "palomar observatory": "institutes",
     "pam bondi": "politicians",
-    "papua new guinea": "locations",
     "papoose lake": "locations",
+    "papua new guinea": "locations",
     "patterson air": "government_agencies",
     "patterson air force bases": "government_agencies",
     "patterson air fores pase": "government_agencies",
@@ -19118,7 +19428,20 @@
     "patterson alr force base": "government_agencies",
     "patuxent river": "military_bases",
     "paul bennewitz": "people",
+    "pentagon covert operations since": "document_names",
+    "pentagon john edgar": "government_agencies",
+    "pentagon monitor": "key_terms",
+    "pentagon national military": "government_agencies",
+    "pentagon operational test": "key_terms",
     "pentagon papers": "leaks",
+    "pentagon plans": "document_names",
+    "pentagon records group": "key_terms",
+    "pentagon releases three": "document_names",
+    "pentagon special access program": "key_terms",
+    "pentagon special programs": "key_terms",
+    "pentagon told": "document_names",
+    "pentagon vietnam": "document_names",
+    "pentagon washington": "government_agencies",
     "persinger god": "technology",
     "persinger god helmet": "technology",
     "personnel special assistant": "key_terms",
@@ -19132,6 +19455,7 @@
     "plasma science": "university_departments",
     "plasma science and fusion center": "university_departments",
     "point pleasant": "locations",
+    "police pentagon people": "key_terms",
     "portsmouth": "locations",
     "president barack obama": "politicians",
     "president eisenhower": "politicians",
@@ -19144,6 +19468,7 @@
     "presidents bill clinton": "politicians",
     "probably light phenomenon clouds": "key_terms",
     "probably light phenomenon reeket": "key_terms",
+    "procyonans universal origin": "alien_species",
     "project aquarius": "government_project_codenames",
     "project blue book": "government_project_codenames",
     "project dauphin": "government_project_codenames",
@@ -19217,6 +19542,7 @@
     "security and intelligence directorate": "government_agencies",
     "see massachusetts institute": "universities",
     "sekret machines": "books",
+    "sekret machines book": "books",
     "senate select committee": "government_agencies",
     "senator reid": "politicians",
     "sentient": "key_terms",
@@ -19252,6 +19578,7 @@
     "special assistant": "key_terms",
     "special investigations": "government_agencies",
     "special programs": "government_agencies",
+    "spectal investigations trae pentagon": "government_agencies",
     "stalking the wild pendulum": "books",
     "stanford research institute": "research_groups",
     "star guests": "books",
@@ -19297,6 +19624,7 @@
     "trump media and technology group": "companies",
     "truth social": "companies",
     "twining memo": "document_names",
+    "two pentagon colonels": "key_terms",
     "u s air force office of special investigations": "government_agencies",
     "u.s. house of representatives": "government_agencies",
     "ufo of god": "books",
@@ -19338,6 +19666,7 @@
     "vehicles directorate": "military_bases",
     "venusians universal origin": "alien_species",
     "vietnam war": "events",
+    "vietnam war pentagon papers": "leaks",
     "virgin mary": "people",
     "wall street journal": "newsrooms",
     "walnut creek": "locations",
@@ -19380,29 +19709,7 @@
     "your game girl": "books",
     "zeta reticuli": "star_systems",
     "zora ranch": "locations",
-    "zorro ranch": "locations",
-    "pentagon national military": "government_agencies",
-    "pentagon special programs": "key_terms",
-    "pentagon washington": "government_agencies",
-    "procyonans universal origin": "alien_species",
-    "allies help pentagon obtain": "document_names",
-    "pentagon releases three": "document_names",
-    "former pentagon official reveals": "document_names",
-    "pentagon plans": "document_names",
-    "air pentagon": "government_agencies",
-    "our pentagon": "government_agencies",
-    "pentagon covert operations since": "document_names",
-    "pentagon monitor": "key_terms",
-    "pentagon operational test": "key_terms",
-    "pentagon records group": "key_terms",
-    "pentagon told": "document_names",
-    "pentagon vietnam": "document_names",
-    "police pentagon people": "key_terms",
-    "spectal investigations trae pentagon": "government_agencies",
-    "two pentagon colonels": "key_terms",
-    "vietnam war pentagon papers": "leaks",
-    "pentagon john edgar": "government_agencies",
-    "pentagon special access program": "key_terms"
+    "zorro ranch": "locations"
   },
   "note": "Replace data/reclass.json with this file before rebuilding.",
   "notes": {},
@@ -19417,6 +19724,7 @@
   "reclassifications": {
     "companies:aero-medical-center": "government_agencies",
     "companies:bigelow-advanced-aerospace-space": "contractors",
+    "dangerous_people:allies-help-pentagon-obtain": "document_names",
     "dangerous_people:brooklyn-hall": "locations",
     "dangerous_people:hynek": "people",
     "dangerous_people:nevada-test-site": "locations",
@@ -19426,6 +19734,7 @@
     "experiencers:air-france": "companies",
     "experiencers:ant-people": "religious_texts",
     "experiencers:black-aces": "military_bases",
+    "experiencers:camp-hood": "military_bases",
     "experiencers:close-encounters": "movies",
     "experiencers:common-telescopes": "books",
     "experiencers:cosmic-law": "emerging_terminology",
@@ -19433,6 +19742,8 @@
     "experiencers:john-alexander": "people",
     "experiencers:lockheed-martin": "contractors",
     "experiencers:natural-history": "institutes",
+    "experiencers:pentagon-releases-three": "document_names",
+    "experiencers:pentagon-washington": "government_agencies",
     "experiencers:phoenix-lights": "events",
     "experiencers:ross-goldhart": "journalists",
     "experiencers:s-house": "government_agencies",
@@ -19453,6 +19764,7 @@
     "friendly_people:belief-system": "key_terms",
     "friendly_people:bell-labs": "research_groups",
     "friendly_people:bermuda-triangle": "locations",
+    "friendly_people:camp-hood": "military_bases",
     "friendly_people:civil-air": "government_agencies",
     "friendly_people:development-centers": "research_groups",
     "friendly_people:faded-giant": "books",
@@ -19468,6 +19780,7 @@
     "friendly_people:new-york-city": "locations",
     "friendly_people:philip-j-corso": "people",
     "friendly_people:president-john-kennedy": "politicians",
+    "friendly_people:procyonans-universal-origin": "alien_species",
     "friendly_people:project-orion": "government_project_codenames",
     "friendly_people:project-preserve-destiny": "government_project_codenames",
     "friendly_people:public-standards": "government_agencies",
@@ -19488,8 +19801,11 @@
     "government_project_codenames:sentient": "key_terms",
     "journalists:betty-hill": "experiencers",
     "journalists:eric-davis": "people",
+    "journalists:former-pentagon-official-reveals": "document_names",
     "journalists:j-allen-hynek": "people",
+    "journalists:pentagon-plans": "document_names",
     "journalists:special-investigations": "government_agencies",
+    "key_terms:overhead-reconnaissance-program": "key_terms",
     "leaks:wikileaks": "watchdog_groups",
     "likely_spies:american-psychic-spy-program": "government_agencies",
     "likely_spies:bomb-group-wing": "military_bases",
@@ -19511,8 +19827,10 @@
     "people:after-disclosure": "books",
     "people:air-force-base": "military_bases",
     "people:air-force-research-lab": "government_agencies",
+    "people:air-pentagon": "government_agencies",
     "people:al-jazeera": "newsrooms",
     "people:aliens-among-us-mac": "books",
+    "people:allies-help-pentagon-obtain": "document_names",
     "people:alpha-albino-royal-dracs": "alien_species",
     "people:american-cosmic": "books",
     "people:american-establishment": "books",
@@ -19553,11 +19871,13 @@
     "people:bulgarian-academy": "government_agencies",
     "people:byfield-brown": "theories",
     "people:camp-david": "military_bases",
+    "people:camp-hood": "military_bases",
     "people:camp-street": "locations",
     "people:canis-major": "star_systems",
     "people:cape-canaveral": "locations",
     "people:cape-fear-river": "locations",
     "people:central-america": "locations",
+    "people:chasing-shadows": "books",
     "people:china-lake": "military_bases",
     "people:chris-bledsoe": "friendly_people",
     "people:city-hall": "locations",
@@ -19616,9 +19936,9 @@
     "people:french-academy": "government_agencies",
     "people:french-air-defense": "government_agencies",
     "people:french-morocco": "locations",
-    "people:galactic-federation": "key_terms",
     "people:from-june": "dates_times",
     "people:fukushima-prefecture": "locations",
+    "people:galactic-federation": "key_terms",
     "people:gen-six-productions": "companies",
     "people:george-h": "politicians",
     "people:george-knapp-all": "journalists",
@@ -19682,6 +20002,7 @@
     "people:long-island": "locations",
     "people:los-alamos-national": "locations",
     "people:los-angeles": "locations",
+    "people:machines-book": "books",
     "people:malaysia-airlines": "companies",
     "people:manchurian-candidates": "emerging_terminology",
     "people:manhattan-project": "government_project_codenames",
@@ -19741,13 +20062,23 @@
     "people:operation-prado": "government_project_codenames",
     "people:operation-snow-white": "government_project_codenames",
     "people:orion-empire": "alien_species",
+    "people:our-pentagon": "government_agencies",
     "people:outer-limits": "tv_shows",
     "people:pacific-northwest": "locations",
     "people:pacific-ocean": "locations",
     "people:palomar-observatory": "institutes",
     "people:pam-bondi": "politicians",
     "people:patuxent-river": "military_bases",
+    "people:pentagon-covert-operations-since": "document_names",
+    "people:pentagon-monitor": "key_terms",
+    "people:pentagon-national-military": "government_agencies",
+    "people:pentagon-operational-test": "key_terms",
     "people:pentagon-papers": "leaks",
+    "people:pentagon-records-group": "key_terms",
+    "people:pentagon-special-programs": "key_terms",
+    "people:pentagon-told": "document_names",
+    "people:pentagon-vietnam": "document_names",
+    "people:pentagon-washington": "government_agencies",
     "people:persinger-god": "technology",
     "people:perspective-special-access-program": "government_project_codenames",
     "people:peru": "locations",
@@ -19755,6 +20086,7 @@
     "people:pine-gap": "locations",
     "people:plasma-science": "university_departments",
     "people:point-pleasant": "locations",
+    "people:police-pentagon-people": "key_terms",
     "people:president-eisenhower": "politicians",
     "people:president-kirsan": "politicians",
     "people:president-obama": "politicians",
@@ -19792,6 +20124,7 @@
     "people:secret-mountain": "locations",
     "people:security-administration": "government_agencies",
     "people:security-and-intelligence-directorate": "government_agencies",
+    "people:sekret-machines-book": "books",
     "people:skinwalker-ranch": "locations",
     "people:skinwalker-ranch-research-for": "locations",
     "people:skoda-works": "government_agencies",
@@ -19807,6 +20140,7 @@
     "people:space-kids-camp": "nonprofits",
     "people:space-relations": "books",
     "people:special-programs": "government_agencies",
+    "people:spectal-investigations-trae-pentagon": "government_agencies",
     "people:star-guests": "books",
     "people:star-trek": "tv_shows",
     "people:star-wars": "movies",
@@ -19826,6 +20160,7 @@
     "people:true-legends": "tv_shows",
     "people:truth-social": "companies",
     "people:twining-memo": "document_names",
+    "people:two-pentagon-colonels": "key_terms",
     "people:ufo-of-god": "books",
     "people:uinta-basin": "locations",
     "people:unclassified-logistic-support-facility": "locations",
@@ -19837,6 +20172,7 @@
     "people:vatican-observatory": "research_groups",
     "people:vehicles-directorate": "military_bases",
     "people:vietnam-war": "events",
+    "people:vietnam-war-pentagon-papers": "leaks",
     "people:walnut-creek": "locations",
     "people:warren-commission": "government_project_codenames",
     "people:warsaw-pact": "events",
@@ -19855,11 +20191,16 @@
     "politicians:aerial-phenomena": "key_terms",
     "politicians:barney-hill": "experiencers",
     "politicians:bomb-group": "military_bases",
+    "politicians:camp-hood": "military_bases",
     "politicians:condon-report": "document_names",
     "politicians:democratic-national-committee": "government_agencies",
     "politicians:galacterian-alignment": "theories",
     "politicians:house-oversight-committee": "government_agencies",
     "politicians:national-investigations-committee": "government_agencies",
+    "politicians:pentagon-john-edgar": "government_agencies",
+    "politicians:pentagon-releases-three": "document_names",
+    "politicians:pentagon-special-access-program": "key_terms",
+    "politicians:pentagon-special-programs": "key_terms",
     "politicians:project-grudge": "government_project_codenames",
     "politicians:russian-orthodox": "companies",
     "politicians:senate-select-committee": "government_agencies",
@@ -19872,6 +20213,7 @@
     "professors:atmospheric-physics": "university_departments",
     "professors:atomic-energy-authority": "government_agencies",
     "professors:bill-moore": "people",
+    "professors:camp-hood": "military_bases",
     "professors:camp-king": "military_bases",
     "professors:condon-committee": "government_agencies",
     "professors:december-20-2025": "dates_times",
@@ -19920,40 +20262,15 @@
     "websites:dora-rosenbaum": "books",
     "whistleblowers:california": "locations",
     "whistleblowers:george-knapp": "journalists",
+    "whistleblowers:in-sekret-machines": "books",
     "whistleblowers:jeremy-corbell": "people",
     "whistleblowers:john-podesta": "people",
     "whistleblowers:leslie-kean": "journalists",
     "whistleblowers:nicobar-islands": "locations",
-    "whistleblowers:project-blue-book": "government_project_codenames",
-    "whistleblowers:whitley-strieber": "experiencers",
-    "dangerous_people:allies-help-pentagon-obtain": "document_names",
-    "experiencers:pentagon-releases-three": "document_names",
-    "experiencers:pentagon-washington": "government_agencies",
-    "friendly_people:procyonans-universal-origin": "alien_species",
-    "journalists:former-pentagon-official-reveals": "document_names",
-    "journalists:pentagon-plans": "document_names",
-    "people:air-pentagon": "government_agencies",
-    "people:allies-help-pentagon-obtain": "document_names",
-    "people:our-pentagon": "government_agencies",
-    "people:pentagon-covert-operations-since": "document_names",
-    "people:pentagon-monitor": "key_terms",
-    "people:pentagon-national-military": "government_agencies",
-    "people:pentagon-operational-test": "key_terms",
-    "people:pentagon-records-group": "key_terms",
-    "people:pentagon-special-programs": "key_terms",
-    "people:pentagon-told": "document_names",
-    "people:pentagon-vietnam": "document_names",
-    "people:pentagon-washington": "government_agencies",
-    "people:police-pentagon-people": "key_terms",
-    "people:spectal-investigations-trae-pentagon": "government_agencies",
-    "people:two-pentagon-colonels": "key_terms",
-    "people:vietnam-war-pentagon-papers": "leaks",
-    "politicians:pentagon-john-edgar": "government_agencies",
-    "politicians:pentagon-releases-three": "document_names",
-    "politicians:pentagon-special-access-program": "key_terms",
-    "politicians:pentagon-special-programs": "key_terms",
     "whistleblowers:pentagon-special-programs": "key_terms",
-    "whistleblowers:vietnam-war-pentagon-papers": "leaks"
+    "whistleblowers:project-blue-book": "government_project_codenames",
+    "whistleblowers:vietnam-war-pentagon-papers": "leaks",
+    "whistleblowers:whitley-strieber": "experiencers"
   },
   "removedFalsePositives": {
     "friendly_people:american-alchemist": {

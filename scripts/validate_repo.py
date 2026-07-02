@@ -28,7 +28,13 @@ GENERATED_FILES = {
     "data/reclass-template.json",
     "data/relationships.json",
     "data/segments.json",
+    "data/sources.json",
 }
+GENERATED_DIRECTORIES = (
+    "data/mentions/",
+    "data/relationships/",
+    "data/segments/",
+)
 
 RECLASS_OBJECT_KEYS = {
     "reclassifications",
@@ -199,7 +205,9 @@ def validate_changed_files(path: Path) -> list[str]:
         return [f"Changed-files list does not exist: {path}"]
     changed = [line.strip() for line in path.read_text(encoding="utf-8").splitlines() if line.strip()]
     errors: list[str] = []
-    generated_changes = sorted(item for item in changed if item in GENERATED_FILES)
+    generated_changes = sorted(
+        item for item in changed if item in GENERATED_FILES or item.startswith(GENERATED_DIRECTORIES)
+    )
     source_changes_allow_generated = any(
         item == "build_graph.py"
         or item == ".github/workflows/rebuild-report.yml"

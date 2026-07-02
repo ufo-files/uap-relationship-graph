@@ -3,10 +3,10 @@
 [![Validate](https://github.com/ufo-files/relationship-graph/actions/workflows/validate.yml/badge.svg)](https://github.com/ufo-files/relationship-graph/actions/workflows/validate.yml)
 [![Rebuild Report](https://github.com/ufo-files/relationship-graph/actions/workflows/rebuild-report.yml/badge.svg)](https://github.com/ufo-files/relationship-graph/actions/workflows/rebuild-report.yml)
 <!-- dataset-badges:start -->
-![Transcript Sources](https://img.shields.io/badge/transcript%20sources-311-2b2b2b)
-![Segments](https://img.shields.io/badge/segments-236%2C858-2b2b2b)
-![Entities](https://img.shields.io/badge/entities-51%2C880-2b2b2b)
-![Mentions](https://img.shields.io/badge/mentions-107%2C222-2b2b2b)
+![Transcript Sources](https://img.shields.io/badge/transcript%20sources-303-2b2b2b)
+![Segments](https://img.shields.io/badge/segments-218%2C820-2b2b2b)
+![Entities](https://img.shields.io/badge/entities-51%2C650-2b2b2b)
+![Mentions](https://img.shields.io/badge/mentions-106%2C165-2b2b2b)
 ![Relationships](https://img.shields.io/badge/relationships-8%2C000-2b2b2b)
 <!-- dataset-badges:end -->
 
@@ -38,10 +38,10 @@ The app turns transcript-derived entities into an interactive graph. Categories 
 
 The current export includes:
 
-- 311 transcript sources
-- 236,858 transcript segments
-- 107,222 entity mentions
-- 51,880 entities
+- 303 transcript sources
+- 218,820 transcript segments
+- 106,165 entity mentions
+- 51,650 entities
 - 8,000 relationships
 - 51 categories
 
@@ -70,10 +70,11 @@ The app is fully static. All data needed by the browser is committed in this rep
 | `scripts/capture_screenshots.js` | Captures README screenshots for the main graph, People view, and Events timeline |
 | `.github/workflows/screenshots.yml` | Refreshes committed screenshots after app rebuilds |
 | `ufo-files/data` | Public source transcripts, OCR text, and `entity-registry.json` |
+| `data/sources.json` | Source index with corpus type, subtype, counts, and shard paths |
 | `data/entities.json` | Extracted entities, categories, confidence, counts, and evidence references |
-| `data/relationships.json` | Entity-to-entity relationship records |
-| `data/mentions.json` | Mention-level extraction records |
-| `data/segments.json` | Transcript segment evidence used by the inspector |
+| `data/relationships/` | Source-sharded entity-to-entity relationship records |
+| `data/mentions/` | Source-sharded mention-level extraction records |
+| `data/segments/` | Source-sharded transcript segment evidence used by the inspector |
 | `data/graph.json` | Precomputed graph layout and grouping data |
 | `data/manifest.json` | Build metadata, input hashes, pipeline hash, counts, and reproducibility notes |
 | `data/reclass.json` | Durable reclassification, false-positive, and merge rules |
