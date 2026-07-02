@@ -13,7 +13,7 @@ const THEME = {
   context: "#999999",
   activeHalo: "#ffffff",
   bgStroke: "#f6f5ef",
-  edgeOpacity: { low: ".08", mid: ".16", high: ".34", relationship: ".36" },
+  edgeOpacity: { low: ".14", mid: ".24", high: ".46", relationship: ".5" },
 };
 const svg = document.getElementById("graph");
 const graphLabelsEl = document.getElementById("graph-labels");
@@ -663,11 +663,18 @@ function placeNodesAroundPerimeter(nodes, center, box, primaryNodes) {
     ...primaryNodes.map((node) => Math.hypot(node.x - center.x, node.y - center.y) + (node.r || 0))
   );
   const minContextRadius = primaryRadius + Math.max(720, primaryRadius * .18);
+  const usesRankedContext = nodes.some((node) => Number.isFinite(node.placementRank)) && nodes.every((node) => !node.categoryCount);
   const preferred = nodes.map((node) => {
     const sourceX = node.sourceX || node.x;
     const sourceY = node.sourceY || node.y;
-    return { node, angle: normalizeAngle(Math.atan2(sourceY - center.y, sourceX - center.x)) };
-  }).sort((a, b) => a.angle - b.angle || b.node.weight - a.node.weight);
+    const centroidAngle = normalizeAngle(Math.atan2(sourceY - center.y, sourceX - center.x));
+    const angle = usesRankedContext && Number.isFinite(node.placementRank)
+      ? rankedContextAngle(node.placementRank, nodes.length)
+      : centroidAngle;
+    return { node, angle, centroidAngle };
+  }).sort((a, b) => usesRankedContext
+    ? (a.node.placementRank || 0) - (b.node.placementRank || 0)
+    : a.angle - b.angle || b.node.weight - a.node.weight);
   const blockPad = 54 * Math.max(graphUnitsPerPixelX, graphUnitsPerPixelY);
   const reservedRects = primaryNodes.flatMap((node) => {
     const r = (node.r || 0) + blockPad;
@@ -691,7 +698,7 @@ function placeNodesAroundPerimeter(nodes, center, box, primaryNodes) {
     );
     if (!node.categoryCount) {
       const angle = Math.atan2(y - center.y, x - center.x);
-      label.x = x + Math.sign(Math.cos(angle) || 1) * 360;
+      label.x = x;
       label.y = y;
       label.labelAnchor = Math.sin(angle) > 0 ? "above" : "below";
     }
@@ -739,24 +746,32 @@ function placeNodesAroundPerimeter(nodes, center, box, primaryNodes) {
   });
   const usedSlots = new Set();
   const usedRects = reservedRects.slice();
-  let bestShift = 0;
-  let bestScore = Infinity;
   const slots = preferred.map((_, index) => allSlots[Math.floor(index * slotCount / preferred.length)]);
-  for (let shift = 0; shift < slots.length; shift++) {
-    let score = 0;
-    for (let index = 0; index < preferred.length; index++) {
-      score += angularDistance(preferred[index].angle, slots[(index + shift) % slots.length].angle);
-    }
-    if (score < bestScore) {
-      bestScore = score;
-      bestShift = shift;
+  let bestShift = 0;
+  if (!usesRankedContext) {
+    let bestScore = Infinity;
+    for (let shift = 0; shift < slots.length; shift++) {
+      let score = 0;
+      for (let index = 0; index < preferred.length; index++) {
+        score += angularDistance(preferred[index].angle, slots[(index + shift) % slots.length].angle);
+      }
+      if (score < bestScore) {
+        bestScore = score;
+        bestShift = shift;
+      }
     }
   }
   for (let index = 0; index < preferred.length; index++) {
     const node = preferred[index].node;
-    const preferredSlot = slots[(index + bestShift) % slots.length];
+    const preferredSlot = usesRankedContext
+      ? { angle: preferred[index].angle }
+      : slots[(index + bestShift) % slots.length];
     const candidates = allSlots
-      .map((slot, slotIndex) => ({ slot, slotIndex, score: angularDistance(preferredSlot.angle, slot.angle) + angularDistance(preferred[index].angle, slot.angle) * .25 }))
+      .map((slot, slotIndex) => {
+        const rankScore = angularDistance(preferredSlot.angle, slot.angle);
+        const centroidScore = usesRankedContext ? angularDistance(preferred[index].centroidAngle, slot.angle) * .08 : angularDistance(preferred[index].angle, slot.angle) * .25;
+        return { slot, slotIndex, score: rankScore + centroidScore };
+      })
       .sort((a, b) => a.score - b.score);
     let selected = candidates.find((candidate) => {
       if (usedSlots.has(candidate.slotIndex)) return false;
@@ -776,6 +791,37 @@ function placeNodesAroundPerimeter(nodes, center, box, primaryNodes) {
     usedRects.push(labelRectForNodeAt(node, node.x, node.y));
     usedRects.push(nodeRectForSlot(node, slot));
   }
+}
+
+function rankedContextAngle(rank, count) {
+  const prominentAngles = [
+    Math.PI * 1.5,
+    Math.PI * 1.82,
+    Math.PI * 1.18,
+    0,
+    Math.PI,
+    Math.PI * .18,
+    Math.PI * .82,
+    Math.PI * .5,
+  ];
+  if (rank < prominentAngles.length) return normalizeAngle(prominentAngles[rank]);
+  const remaining = Math.max(1, count - prominentAngles.length);
+  const progress = (rank - prominentAngles.length) / remaining;
+  return normalizeAngle(Math.PI * 2 * progress + Math.PI * .08);
+}
+
+function secondaryContextLabelNode(node, center, secondaryText) {
+  const angle = Math.atan2(node.y - center.y, node.x - center.x);
+  return {
+    id: node.id,
+    kind: "entity",
+    x: node.x,
+    y: node.y,
+    primary: truncate(entityDisplayName(node.raw), 22),
+    secondary: secondaryText,
+    className: "secondary-context-label",
+    labelAnchor: Math.sin(angle) > 0 ? "above" : "below",
+  };
 }
 
 function labelRectInGraph(item, graphUnitsPerPixelX, graphUnitsPerPixelY) {
@@ -1121,7 +1167,7 @@ function buildCategoryLayout() {
     mentions: DATA.manifest.counts.mentions || 0,
     raw: { name: "UFO Files" },
   };
-  const nodes = parentCategoryNodes(categories.sort((a, b) => b.count - a.count), center.x, center.y);
+  const nodes = parentCategoryNodes(categories.sort((a, b) => b.mentions - a.mentions || b.count - a.count), center.x, center.y);
   const nodeById = new Map(nodes.map((node) => [node.id, node]));
   const maxEdge = Math.max(1, ...edgeWeights.values());
   const edges = Array.from(edgeWeights.entries()).sort((a, b) => b[1] - a[1]).slice(0, 95).map(([key, weight]) => {
@@ -1144,7 +1190,7 @@ function renderCategory(categoryId) {
   const label = DATA.topCategoryLabels[categoryId] || categoryId;
   const categoryLayout = buildCategoryLayout();
   const activeCategoryNode = categoryLayout.nodeById.get(categoryId) || { x: 1100, y: 750, r: 24 };
-  const allPrimary = DATA.entities.filter((entity) => entity.topCategory === categoryId).sort((a, b) => entityLinkScore(b) - entityLinkScore(a) || entityGraphScore(b) - entityGraphScore(a));
+  const allPrimary = DATA.entities.filter((entity) => entity.topCategory === categoryId).sort(entityPrimarySort);
   const primary = allPrimary.slice(0, 50);
   const primarySet = new Set(primary.map((entity) => entity.id));
   const rels = DATA.relationships.filter((relationship) => primarySet.has(relationship.source) && primarySet.has(relationship.target)).slice(0, 150);
@@ -1193,6 +1239,7 @@ function renderCategory(categoryId) {
       contextRadius: radius,
       weight: item.weight,
       sourceCount: item.sourceCount,
+      placementRank: index,
       raw: item.entity,
     };
   });
@@ -1217,7 +1264,7 @@ function renderCategory(categoryId) {
     const outside = sharedNodeById.get(edge.outsideId);
     if (!child || !outside) return "";
     const width = (0.7 + (edge.weight / maxContextEdge) * 3.4).toFixed(1);
-    return '<line x1="' + child.x + '" y1="' + child.y + '" x2="' + outside.x + '" y2="' + outside.y + '" stroke="' + theme.context + '" stroke-width="' + width + '" opacity=".2"></line>';
+    return '<line x1="' + child.x + '" y1="' + child.y + '" x2="' + outside.x + '" y2="' + outside.y + '" stroke="' + theme.context + '" stroke-width="' + width + '" opacity=".46"></line>';
   }).join("");
   svg.innerHTML =
     contextEdgesSvg +
@@ -1249,20 +1296,9 @@ function renderCategory(categoryId) {
     "entity",
     node,
     truncate(entityDisplayName(node.raw), 24)
-  ))).concat(sharedLabelNodes.map((node) => {
-    const angle = Math.atan2(node.y - activeCategoryNode.y, node.x - activeCategoryNode.x);
-    const labelOffset = 360;
-    return {
-      id: node.id,
-      kind: "entity",
-      x: node.x + Math.sign(Math.cos(angle) || 1) * labelOffset,
-      y: node.y,
-      primary: truncate(entityDisplayName(node.raw), 22),
-      secondary: node.sourceCount + " connected nodes",
-      className: "secondary-context-label",
-      labelAnchor: Math.sin(angle) > 0 ? "above" : "below",
-    };
-  })));
+  ))).concat(sharedLabelNodes.map((node) =>
+    secondaryContextLabelNode(node, activeCategoryNode, node.sourceCount + " connected nodes")
+  )));
   statusEl.textContent = label + " · select an entity for its direct relationship graph";
   if (categoryId === "events_claims") {
     setEventsClaimsCornerLabel("graph", "Relationship graph · switch back to hard-date timeline");
@@ -1438,7 +1474,7 @@ function renderEventsTimeline(categoryId) {
     dateNodes.map((node) => {
       return '<line class="timeline-date-stem" x1="' + node.x.toFixed(1) + '" y1="' + baseY + '" x2="' + node.x.toFixed(1) + '" y2="' + node.y.toFixed(1) + '"></line>';
     }).join("") +
-    entityLinks.map((edge) => '<line class="timeline-link" x1="' + edge.source.x.toFixed(1) + '" y1="' + edge.source.y.toFixed(1) + '" x2="' + edge.target.x.toFixed(1) + '" y2="' + edge.target.y.toFixed(1) + '" opacity="' + (edge.isContext ? ".14" : ".26") + '"></line>').join("") +
+    entityLinks.map((edge) => '<line class="timeline-link" x1="' + edge.source.x.toFixed(1) + '" y1="' + edge.source.y.toFixed(1) + '" x2="' + edge.target.x.toFixed(1) + '" y2="' + edge.target.y.toFixed(1) + '" opacity="' + (edge.isContext ? ".24" : ".38") + '"></line>').join("") +
     dateNodes.map((node) => {
       const nodeAttr = node.item.isDecade
         ? ' data-timeline-decade="' + esc(node.item.decade) + '"'
@@ -1501,7 +1537,7 @@ function renderSignalsCategory(categoryId) {
     renderSignalRangeDrill(categoryId, selectedGroup, activeCategoryNode);
     return;
   }
-  const nodes = radialNodes(groups, activeCategoryNode.x, activeCategoryNode.y, 1320, 3040, (group) => group.mentions || group.entities.length);
+  const nodes = radialNodes(groups, activeCategoryNode.x, activeCategoryNode.y, 920, 2180, (group) => group.mentions || group.entities.length);
   const nodeById = new Map(nodes.map((node) => [node.id, node]));
   const sharedNeighborById = new Map();
   const sharedEdgeWeights = new Map();
@@ -1547,10 +1583,11 @@ function renderSignalsCategory(categoryId) {
       sourceY: avgY,
       weight: item.weight,
       sourceCount: item.sourceCount,
+      placementRank: index,
       raw: item.entity,
     };
   });
-  spreadContextNodes(sharedNodes, activeCategoryNode);
+  placeDrillContextNodes(sharedNodes, activeCategoryNode, nodes);
   const sharedNodeById = new Map(sharedNodes.map((node) => [node.id, node]));
   const contextEdges = Array.from(sharedEdgeWeights.entries())
     .map(([key, weight]) => {
@@ -1566,7 +1603,7 @@ function renderSignalsCategory(categoryId) {
     const outside = sharedNodeById.get(edge.outsideId);
     if (!rangeNode || !outside) return "";
     const width = (0.7 + (edge.weight / maxContextEdge) * 3.4).toFixed(1);
-    return '<line x1="' + rangeNode.x + '" y1="' + rangeNode.y + '" x2="' + outside.x + '" y2="' + outside.y + '" stroke="' + theme.context + '" stroke-width="' + width + '" opacity=".2"></line>';
+    return '<line x1="' + rangeNode.x + '" y1="' + rangeNode.y + '" x2="' + outside.x + '" y2="' + outside.y + '" stroke="' + theme.context + '" stroke-width="' + width + '" opacity=".46"></line>';
   }).join("");
   const sharedNodesSvg = sharedNodes.map((node) => {
     return '<g class="graph-node" data-entity="' + esc(node.id) + '">' +
@@ -1576,7 +1613,7 @@ function renderSignalsCategory(categoryId) {
   const maxSpoke = Math.max(1, ...groups.map((group) => group.score || group.entities.length));
   svg.innerHTML =
     contextEdgesSvg +
-    nodes.map((node) => '<line class="graph-edge" x1="' + activeCategoryNode.x + '" y1="' + activeCategoryNode.y + '" x2="' + node.x + '" y2="' + node.y + '" stroke="' + theme.edge + '" stroke-width="' + (0.8 + Math.sqrt((node.raw.score || node.raw.entities.length) / maxSpoke) * 2.4).toFixed(1) + '" opacity=".18"></line>').join("") +
+    nodes.map((node) => '<line class="graph-edge" x1="' + activeCategoryNode.x + '" y1="' + activeCategoryNode.y + '" x2="' + node.x + '" y2="' + node.y + '" stroke="' + theme.edge + '" stroke-width="' + (0.8 + Math.sqrt((node.raw.score || node.raw.entities.length) / maxSpoke) * 2.4).toFixed(1) + '" opacity=".3"></line>').join("") +
     '<g class="graph-node" data-category-list="' + esc(categoryId) + '">' +
       '<circle cx="' + activeCategoryNode.x + '" cy="' + activeCategoryNode.y + '" r="' + activeCategoryNode.r + '" fill="' + theme.activeHalo + '" stroke="' + theme.primary + '" stroke-width="1"></circle>' +
     '</g>' +
@@ -1605,14 +1642,9 @@ function renderSignalsCategory(categoryId) {
     rangeId: node.id,
     primary: node.raw.label,
     secondary: frequencyCountLabel(node.raw.entities.length),
-  }))).concat(sharedLabelNodes.map((node) => nodeLabel(
-    node.id,
-    "entity",
-    node,
-    truncate(entityDisplayName(node.raw), 22),
-    node.sourceCount + " connected " + (node.sourceCount === 1 ? "range" : "ranges"),
-    node.r
-  ))));
+  }))).concat(sharedLabelNodes.map((node) =>
+    secondaryContextLabelNode(node, activeCategoryNode, node.sourceCount + " connected " + (node.sourceCount === 1 ? "range" : "ranges"))
+  )));
   statusEl.textContent = label + " · frequencies grouped by range";
   setCornerLabel(label, groups.length + " frequency ranges · select a range for exact signals");
   cardEl.classList.remove("open");
@@ -1624,7 +1656,7 @@ function renderSignalsCategory(categoryId) {
 
 function renderSignalRangeDrill(categoryId, group, activeCategoryNode) {
   const theme = currentTheme();
-  const primary = group.entities.slice(0, 50).sort((a, b) => entityLinkScore(b) - entityLinkScore(a) || entityGraphScore(b) - entityGraphScore(a) || a.name.localeCompare(b.name));
+  const primary = group.entities.slice(0, 50).sort(entityPrimarySort);
   const primarySet = new Set(primary.map((entity) => entity.id));
   const rels = DATA.relationships.filter((relationship) => primarySet.has(relationship.source) && primarySet.has(relationship.target)).slice(0, 150);
   const centerNode = {
@@ -1632,7 +1664,7 @@ function renderSignalRangeDrill(categoryId, group, activeCategoryNode) {
     r: Math.max(18, Math.min(26, activeCategoryNode.r)),
     raw: { name: group.label },
   };
-  const nodes = radialNodes(primary, centerNode.x, centerNode.y, 1320, 3040, (entity) => entity.count || 1);
+  const nodes = radialNodes(primary, centerNode.x, centerNode.y, 1180, 2720, (entity) => entity.count || 1);
   const nodeById = new Map(nodes.map((node) => [node.id, node]));
   const maxEdge = Math.max(1, ...rels.map((relationship) => relationship.weight));
   const sharedNeighborById = new Map();
@@ -1677,10 +1709,11 @@ function renderSignalRangeDrill(categoryId, group, activeCategoryNode) {
       sourceY: avgY,
       weight: item.weight,
       sourceCount: item.sourceCount,
+      placementRank: index,
       raw: item.entity,
     };
   });
-  spreadContextNodes(sharedNodes, centerNode);
+  placeDrillContextNodes(sharedNodes, centerNode, nodes);
   const sharedNodeById = new Map(sharedNodes.map((node) => [node.id, node]));
   const contextEdges = Array.from(sharedEdgeWeights.entries())
     .map(([key, weight]) => {
@@ -1696,7 +1729,7 @@ function renderSignalRangeDrill(categoryId, group, activeCategoryNode) {
     const outside = sharedNodeById.get(edge.outsideId);
     if (!child || !outside) return "";
     const width = (0.7 + (edge.weight / maxContextEdge) * 3.4).toFixed(1);
-    return '<line x1="' + child.x + '" y1="' + child.y + '" x2="' + outside.x + '" y2="' + outside.y + '" stroke="' + theme.context + '" stroke-width="' + width + '" opacity=".2"></line>';
+    return '<line x1="' + child.x + '" y1="' + child.y + '" x2="' + outside.x + '" y2="' + outside.y + '" stroke="' + theme.context + '" stroke-width="' + width + '" opacity=".46"></line>';
   }).join("");
   const sharedNodesSvg = sharedNodes.map((node) => {
     return '<g class="graph-node" data-entity="' + esc(node.id) + '">' +
@@ -1731,14 +1764,9 @@ function renderSignalRangeDrill(categoryId, group, activeCategoryNode) {
     "entity",
     node,
     truncate(entityDisplayName(node.raw), 24)
-  ))).concat(sharedLabelNodes.map((node) => nodeLabel(
-    node.id,
-    "entity",
-    node,
-    truncate(entityDisplayName(node.raw), 22),
-    node.sourceCount + " connected " + (node.sourceCount === 1 ? "frequency" : "frequencies"),
-    node.r
-  ))));
+  ))).concat(sharedLabelNodes.map((node) =>
+    secondaryContextLabelNode(node, centerNode, node.sourceCount + " connected " + (node.sourceCount === 1 ? "frequency" : "frequencies"))
+  )));
   statusEl.textContent = "Signals · " + group.label + " · select a frequency for its direct relationship graph";
   setCornerLabel(group.label, group.entities.length.toLocaleString() + " exact " + (group.entities.length === 1 ? "frequency" : "frequencies"));
   cardEl.classList.remove("open");
@@ -2542,15 +2570,15 @@ function buildSignalRangeGroups() {
     group.entities.push(entity);
     group.count += 1;
     group.mentions += entity.count || 0;
-    group.score += entityLinkScore(entity);
+    group.score += entityMentionScore(entity);
   }
   return Array.from(groupsById.values()).concat(other)
     .filter((group) => group.entities.length)
     .map((group) => ({
       ...group,
-      entities: group.entities.sort((a, b) => entityLinkScore(b) - entityLinkScore(a) || entityGraphScore(b) - entityGraphScore(a) || a.name.localeCompare(b.name)),
+      entities: group.entities.sort(entityPrimarySort),
     }))
-    .sort((a, b) => a.order - b.order);
+    .sort((a, b) => b.mentions - a.mentions || a.order - b.order);
 }
 
 function renderCategoryGrid(categoryId) {
@@ -2558,7 +2586,7 @@ function renderCategoryGrid(categoryId) {
   const label = DATA.topCategoryLabels[categoryId] || categoryId;
   const entities = DATA.entities
     .filter((entity) => entity.topCategory === categoryId)
-    .sort((a, b) => entityLinkScore(b) - entityLinkScore(a) || entityGraphScore(b) - entityGraphScore(a) || a.name.localeCompare(b.name));
+    .sort(entityPrimarySort);
   const scores = entities.map((entity) => entityMentionScore(entity));
   const minScore = Math.min(...scores);
   const maxScore = Math.max(1, ...scores);
@@ -2687,6 +2715,13 @@ function entityLinkScore(entity) {
 
 function entityMentionScore(entity) {
   return Math.max(1, entity?.count || 0);
+}
+
+function entityPrimarySort(a, b) {
+  return entityMentionScore(b) - entityMentionScore(a)
+    || entityLinkScore(b) - entityLinkScore(a)
+    || entityGraphScore(b) - entityGraphScore(a)
+    || entityDisplayName(a).localeCompare(entityDisplayName(b));
 }
 
 function mentionRadius(value, maxValue, minRadius = 10, maxRadius = 72) {
@@ -2918,14 +2953,14 @@ function renderNeighborhood(entity) {
     const target = nodeById.get(relationship.target);
     if (!source || !target) return "";
     const width = (0.25 + ((relationship.weight || 1) / maxSecondDegreeEdge) * .9).toFixed(1);
-    return '<line class="graph-edge" data-edge="' + esc(relationship.id) + '" x1="' + source.x + '" y1="' + source.y + '" x2="' + target.x + '" y2="' + target.y + '" stroke="' + theme.context + '" stroke-width="' + width + '" opacity=".12"><title>' + esc(connectionCategoryText(relationship)) + '</title></line>';
+    return '<line class="graph-edge" data-edge="' + esc(relationship.id) + '" x1="' + source.x + '" y1="' + source.y + '" x2="' + target.x + '" y2="' + target.y + '" stroke="' + theme.context + '" stroke-width="' + width + '" opacity=".22"><title>' + esc(connectionCategoryText(relationship)) + '</title></line>';
   }).join("");
   const neighborEdgesSvg = neighborRels.map((relationship) => {
     const source = nodeById.get(relationship.source);
     const target = nodeById.get(relationship.target);
     if (!source || !target) return "";
     const width = (0.45 + ((relationship.weight || 1) / maxNeighborEdge) * 2.1).toFixed(1);
-    return '<line class="graph-edge" data-edge="' + esc(relationship.id) + '" x1="' + source.x + '" y1="' + source.y + '" x2="' + target.x + '" y2="' + target.y + '" stroke="' + theme.context + '" stroke-width="' + width + '" opacity=".26"><title>' + esc(connectionCategoryText(relationship)) + '</title></line>';
+    return '<line class="graph-edge" data-edge="' + esc(relationship.id) + '" x1="' + source.x + '" y1="' + source.y + '" x2="' + target.x + '" y2="' + target.y + '" stroke="' + theme.context + '" stroke-width="' + width + '" opacity=".38"><title>' + esc(connectionCategoryText(relationship)) + '</title></line>';
   }).join("");
   const secondDegreeNodesSvg = secondDegreeNodes.map((node) => {
     return '<g class="graph-node context-node" data-entity="' + esc(node.raw.id) + '">' +
@@ -3046,7 +3081,7 @@ function drawEdges(edges, nodeById, maxEdge, density = "normal") {
   const isContext = density === "ego-context";
   const baseWidth = isSpoke ? 0.65 : isContext ? 0.25 : 0.8;
   const weightWidth = isSpoke ? 4.8 : isContext ? 1.7 : 7;
-  const opacity = isSpoke ? ".34" : isContext ? ".16" : theme.edgeOpacity.high;
+  const opacity = isSpoke ? ".46" : isContext ? ".26" : theme.edgeOpacity.high;
   return edges.map((edge) => {
     const source = nodeById.get(edge.source);
     const target = nodeById.get(edge.target);
@@ -3059,7 +3094,7 @@ function drawRelationshipEdges(relationships, nodeById, maxEdge, density = "norm
   const theme = currentTheme();
   const baseWidth = density === "drill" ? 0.45 : 0.8;
   const weightWidth = density === "drill" ? 2.6 : 7;
-  const opacity = density === "drill" ? ".24" : theme.edgeOpacity.relationship;
+  const opacity = density === "drill" ? ".54" : theme.edgeOpacity.relationship;
   return relationships.map((relationship) => {
     const source = nodeById.get(relationship.source);
     const target = nodeById.get(relationship.target);
@@ -4314,8 +4349,10 @@ function handleGraphWheel(event) {
   const pointerY = pointer.y;
   const intensity = event.deltaMode === 1 ? 0.08 : 0.0015;
   const factor = clamp(Math.exp(event.deltaY * intensity), 0.82, 1.22);
-  const nextW = clamp(viewBox.w * factor, MIN_ZOOM_WIDTH, MAX_ZOOM_WIDTH);
-  const nextH = clamp(viewBox.h * factor, MIN_ZOOM_HEIGHT, MAX_ZOOM_HEIGHT);
+  const requestedNextW = viewBox.w * factor;
+  const requestedNextH = viewBox.h * factor;
+  const nextW = clamp(requestedNextW, MIN_ZOOM_WIDTH, MAX_ZOOM_WIDTH);
+  const nextH = clamp(requestedNextH, MIN_ZOOM_HEIGHT, MAX_ZOOM_HEIGHT);
   const pointerRatioX = (pointerX - viewBox.x) / viewBox.w;
   const pointerRatioY = (pointerY - viewBox.y) / viewBox.h;
   setViewBox(pointerX - pointerRatioX * nextW, pointerY - pointerRatioY * nextH, nextW, nextH);
@@ -4344,14 +4381,14 @@ function handleGraphWheel(event) {
     renderCategory(activeCategory);
     return;
   }
-  if (event.deltaY > 0 && activeCategory === "events_claims" && activeTimelineDecade !== null && nextW >= CATEGORY_ZOOM_OUT_STEP_UP_WIDTH) {
+  if (event.deltaY > 0 && activeCategory === "events_claims" && activeTimelineDecade !== null && requestedNextW >= CATEGORY_ZOOM_OUT_STEP_UP_WIDTH) {
     activeTimelineDecade = null;
     selectedEntityId = null;
     hideHoverPreview();
     renderCategory(activeCategory);
     return;
   }
-  if (event.deltaY > 0 && activeCategory && mode === "categories" && nextW >= CATEGORY_ZOOM_OUT_STEP_UP_WIDTH) {
+  if (event.deltaY > 0 && activeCategory && mode === "categories" && requestedNextW >= CATEGORY_ZOOM_OUT_STEP_UP_WIDTH) {
     activeCategory = null;
     selectedEntityId = null;
     activeTimelineDecade = null;
