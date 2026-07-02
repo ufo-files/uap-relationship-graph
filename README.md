@@ -3,10 +3,10 @@
 [![Validate](https://github.com/ufo-files/relationship-graph/actions/workflows/validate.yml/badge.svg)](https://github.com/ufo-files/relationship-graph/actions/workflows/validate.yml)
 [![Rebuild Report](https://github.com/ufo-files/relationship-graph/actions/workflows/rebuild-report.yml/badge.svg)](https://github.com/ufo-files/relationship-graph/actions/workflows/rebuild-report.yml)
 <!-- dataset-badges:start -->
-![Transcript Sources](https://img.shields.io/badge/transcript%20sources-304-2b2b2b)
-![Segments](https://img.shields.io/badge/segments-218%2C822-2b2b2b)
-![Entities](https://img.shields.io/badge/entities-51%2C704-2b2b2b)
-![Mentions](https://img.shields.io/badge/mentions-106%2C200-2b2b2b)
+![Transcript Sources](https://img.shields.io/badge/transcript%20sources-311-2b2b2b)
+![Segments](https://img.shields.io/badge/segments-236%2C858-2b2b2b)
+![Entities](https://img.shields.io/badge/entities-51%2C880-2b2b2b)
+![Mentions](https://img.shields.io/badge/mentions-107%2C222-2b2b2b)
 ![Relationships](https://img.shields.io/badge/relationships-8%2C000-2b2b2b)
 <!-- dataset-badges:end -->
 
@@ -38,10 +38,10 @@ The app turns transcript-derived entities into an interactive graph. Categories 
 
 The current export includes:
 
-- 304 transcript sources
-- 218,822 transcript segments
-- 106,200 entity mentions
-- 51,704 entities
+- 311 transcript sources
+- 236,858 transcript segments
+- 107,222 entity mentions
+- 51,880 entities
 - 8,000 relationships
 - 51 categories
 
